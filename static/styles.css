@@ -46,6 +46,7 @@ body {
 }
 
 .background-box {
+	padding-top: 20px;
     background: url(/static/images/noise-overlay.png);
     background-color: #20222E; /*Or:2E3141*/ 
 }
@@ -64,7 +65,7 @@ body {
 }
 
 .table-header {
-	background: #4F505E;
+	background: #3b3d4c;
 	font-family: "Montserrat", sans-serif;
 	font-weight: 300;
 	color: #fff;
@@ -117,12 +118,24 @@ body {
 	width: 12%;
 }
 
+.table-cell--tag {
+	width: 12%;
+}
+
 .table-cell--racer {
 	width: 40%;
 }
 
+.table-cell--team {
+	width: 39%;
+}
+
 .table-cell--wpm {
 	width: 11%;
+}
+
+.table-cell--members {
+	width: 12%;
 }
 
 .table-cell--races {
@@ -184,3 +197,62 @@ body {
 	font-size: 16px;
 }
 
+.icon-text-container {
+	display: flex;
+}
+
+.tab {
+    flex: 0 0 auto;
+    border-radius: 5px 5px 0 0;
+    padding: 20px 22.64px;
+    margin-right: 10px;
+    text-align: left;
+	background: linear-gradient(to bottom, rgba(59, 61, 76, 0.6), #292c3b);
+    color: rgba(255, 255, 255, 0.5);
+    text-decoration: none;
+}
+
+.tab svg {
+	margin-right: 12px;
+}
+
+.tab.is-active {
+    /*box-shadow: 0 1px 10px rgba(2, 2, 2, 0.14);*/
+    font-weight: 600;
+	background: #3b3d4c;
+    color: #fff;
+}
+
+button {
+    overflow: visible;
+    border: 0;
+    letter-spacing: inherit;
+    background: none;
+    cursor: pointer;
+    padding: 0;
+    color: inherit;
+	font-family: "Montserrat", sans-serif;
+    line-height: normal;
+}
+
+.tab.not-active:hover {
+	background: linear-gradient(to bottom, #353846, #2E3141);
+}
+
+.tag-text {
+	color: rgb(150, 209, 243);
+	text-decoration: none;
+	font-family: "Montserrat", sans-serif;
+	font-size: 16px;
+}
+
+.team-text {
+	color: #F9D034;
+	text-decoration: none;
+	font-family: "Montserrat", sans-serif;
+	font-size: 16px;
+}
+
+.team-text:hover {
+	text-decoration: underline;
+}
