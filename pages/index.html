@@ -1,0 +1,55 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NT Leaderboards</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+	<script>
+		var loadingHTML = '<div class="lds-spinner"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>';
+
+		function changeTab(tabName) {
+			// Using fetch to load content from Flask route
+			document.getElementById('background-box').innerHTML = loadingHTML;
+			fetch(`/tab/${tabName}`)
+				.then(response => response.text())
+				.then(data => {
+					document.getElementById('background-box').innerHTML = data;
+				})
+				.catch(error => console.error('Error:', error));
+		}
+
+		function handleDropdownChange() {
+			var tabName = document.querySelector('.dropdown-select').value;
+			document.getElementById('background-box').innerHTML = loadingHTML;
+			fetch(`/tab/${tabName}`)
+				.then(response => response.text())
+				.then(data => {
+					document.getElementById('background-box').innerHTML = data;
+				})
+				.catch(error => console.error('Error:', error));
+		}
+
+		window.onload = function() {
+			changeTab('top_racers_season')
+		}
+	</script>
+</head>
+<body>
+	<div class="logo">
+		<img class="logo-img" src="/static/images/logo.png"/>
+	</div>
+	<main class="content">
+		<div class="banner">
+			<div class="banner-text">Leaderboards</div>
+		</div>
+		<div class="background-box" id="background-box">
+			<!-- Content to be dynamically displayed here -->
+		</div>
+	</main>
+</body>
+</html>
