@@ -1,18 +1,21 @@
-from flask import Flask, render_template, redirect, url_for
+from flask import Flask, render_template
 
+homeTab = 'pages/top_racers_season.html'
 app = Flask(__name__, template_folder='pages')
 
 @app.route('/')
-def home():
-	return redirect(url_for('top_racers'))
+def index():
+	return render_template('index.html')
 
-@app.route('/top_racers')
-def top_racers():
-	return render_template('top_racers.html')
-
-@app.route('/top_teams')
-def top_teams():
-    return render_template('top_teams.html')
+@app.route('/tab/<tabName>')
+def get_tab_content(tabName):
+	try:
+		with open(f'C:\\Projects\\Nitro Type Leaderboards\\NitroType-Leaderboards\\pages\\{tabName}.html', 'r') as file:
+			content = file.read()
+		return content
+	except Exception as e:
+		print(f"Error: {str(e)}")
+		return f"Content for {tabName} not found."
 
 if __name__ == '__main__':
 	app.run()
