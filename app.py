@@ -10,7 +10,7 @@ def index():
 @app.route('/tab/<tabName>')
 def get_tab_content(tabName):
 	try:
-		with open(f'C:\\Projects\\Nitro Type Leaderboards\\NitroType-Leaderboards\\pages\\{tabName}.html', 'r') as file:
+		with open(f'C:\\Projects\\Nitro Type Leaderboards\\NitroType-Leaderboards\\pages\\{tabName}.html', 'r', encoding='utf-8') as file:
 			content = file.read()
 		return content
 	except Exception as e:

@@ -101,12 +101,22 @@ body {
 	font-family: "Montserrat", sans-serif;
 	text-align: left;
 	font-size: 16px;
+	overflow: visible;
 }
 
 /* Both Racers and Teams */
 .table-cell--place {
 	width: 9%;
 	text-align: center;
+}
+.table-cell--wpm {
+	width: 11%;
+}
+.table-cell--races {
+	width: 13%;
+}
+.table-cell--points {
+	width: 15%;
 }
 
 /* Racers */
@@ -119,6 +129,18 @@ body {
 .table-cell--fastest-racer {
 	width: 68%;
 }
+.table-cell--hof-fastest-racer {
+	width: 62%;
+}
+.table-cell--current-wpm {
+	width: 17%;
+}
+.table-cell--18 {
+	width: 18%;
+}
+.table-cell--61 {
+	width: 61%;
+}
 
 /* Teams */
 .table-cell--tag {
@@ -128,19 +150,33 @@ body {
 	width: 39%;
 }
 .table-cell--fastest-team {
-	width: 56%;
+	width: 51%;
+}
+.table-cell--fastest-team-wpm {
+	width: 16%;
 }
 .table-cell--members {
 	width: 12%;
 }
-.table-cell--wpm {
-	width: 11%;
+.table-cell--most-active-team {
+	width: 50%;
 }
-.table-cell--races {
-	width: 13%;
+.table-cell--most-active-teams-races {
+	width: 17%;
 }
-.table-cell--points {
-	width: 15%;
+
+/* Rarest Cars */
+.table-cell--car-name {
+	width: 30%;
+}
+.table-cell--players-own {
+	width: 14%;
+}
+.table-cell--pct-players-own {
+	width: 19%;
+}
+.table-cell--availability {
+	width: 16%;
 }
 
 .medal {
@@ -178,7 +214,7 @@ body {
 }
 
 .display-name {
-	padding-left: 1.2%;
+	padding-left: 0.3%;
 	color: #F9D034;
 	text-decoration: none;
 	font-family: "Montserrat", sans-serif;
@@ -190,7 +226,7 @@ body {
 }
 
 .team-tag {
-	color: rgb(150, 209, 243);
+	/*color: rgb(150, 209, 243);*/
 	font-size: 16px;
 }
 
@@ -237,7 +273,7 @@ button {
 }
 
 .tag-text {
-	color: rgb(150, 209, 243);
+	/*color: rgb(150, 209, 243);*/
 	text-decoration: none;
 	font-family: "Montserrat", sans-serif;
 	font-size: 16px;
@@ -446,4 +482,58 @@ form {
 	text-align: start;
 	font-family: "Montserrat", sans-serif;
 	font-size: 14px;
+}
+
+.page-text-box {
+	background: #3B3D4C;
+	padding: 20px;
+}
+
+.page-text {
+	color: #fff;
+	font-size: 100%;
+	font-family: "Montserrat", sans-serif;
+	padding-bottom: 15px;
+}
+
+.my-profile-link {
+	color: #92daf7;
+}
+
+h2 {
+	color: #D62F3A;
+	margin-bottom: 0px;
+}
+
+.after-header {
+	margin-top: 6px;
+}
+
+.indent-paragraph {
+	text-indent: 35px;
+	margin-bottom: 3px;
+}
+
+.no-top-margin {
+	margin-top: 0px;
+}
+
+.hall-of-fame-button {
+	flex: 1;
+	margin-left: 8px;
+	margin-right: 8px;
+	padding: 4px;
+	font-family: "Montserrat", sans-serif;
+	font-size: 14px;
+	border-width: 1px;
+    border-style: solid;
+	border-radius: 5px;
+}
+
+.hall-of-fame-buttons {
+	overflow: visible;
+	padding-left: 10px;
+	padding-right: 10px;
+	display: flex;
+	box-sizing: inherit;
 }
