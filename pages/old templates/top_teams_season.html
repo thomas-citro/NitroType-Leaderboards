@@ -10,7 +10,7 @@
 				<div class="tab--text">Top Racers</div>
 			</div>
 		</button>
-		<button class="tab not-active" onclick="changeTab('top_teams_season')">
+		<button class="tab is-active">
 			<div class="icon-text-container">
 				<svg xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd" viewBox="0 0 24 24" id="icon-rank-team" width="18" height="18" fill="white">
 					<path
@@ -48,7 +48,7 @@
 				<div class="tab--text">Site Stats</div>
 			</div>
 		</button>
-		<button class="tab is-active">
+		<button class="tab not-active" onclick="changeTab('more_info')">
 			<div class="icon-text-container">
 				<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" id="icon-info" width="18" height="18" fill="white">
 					<path
@@ -59,65 +59,72 @@
 			</div>
 		</button>
 	</div>
-	<div class="page-text-box">
-		<div class="page-text">
-			<h2>Data Updates</h2>
-			<ul class="after-header">
-				<li>Data for these leaderboards will be updated approximately every 7 days.</li>
-				<li>Last update was: January 10th, 2024</li>
-			</ul>
-			<h2>Special Requirements</h2>
-			<p class="after-header indent-paragraph">In order to promote fairness of the leaderboards, I have employed some special requirements for users/teams to be included:</p>
-			<ul class="no-top-margin">
-				<li>Fastest Racers (Season)</li>
-				<ul>
-					<li>Can't be over 250 average wpm.</li>
-					<li>Must have at least 500 alltime races.</li>
-					<li>Must have at least 100 season races.</li>
-					<li>Account must be at least a month old.</li>
-				</ul>
-				<li>Fastest Racers (Alltime)</li>
-				<ul>
-					<li>Can't be over 250 average wpm.</li>
-					<li>Must have at least 500 alltime races.</li>
-					<li>Account must be at least a month old.</li>
-				</ul>
-				<li>Fastest Teams (Season)</li>
-				<ul>
-					<li>Can't be over 250 average wpm.</li>
-					<li>Must have at least 10 members on team.</li>
-					<li>Must have at least 1,000 alltime races.</li>
-					<li>Must have at least 300 season races.</li>
-					<li>Team must be at least a month old.</li>
-				</ul>
-				<li>Fastest Teams (Alltime)</li>
-				<ul>
-					<li>Can't be over 250 average wpm.</li>
-					<li>Must have at least 10 members on team.</li>
-					<li>Must have at least 1,000 alltime races.</li>
-					<li>Team must be at least a month old.</li>
-				</ul>
-				<li>Longest Session</li>
-				<ul>
-					<li>Account must be at least a month old.</li>
-				</ul>
-				<li>Oldest Active Players</li>
-				<ul>
-					<li>To be considered active, a player must be higher than level 1 for the season.</li>
-				</ul>
-			</ul>
-			<br/>
-			<h2>Missing Users or Teams?</h2>
-			<ul class="after-header">
-				<li>If you believe there are any users or teams missing from these leaderboards, please contact me via Discord and send me the username/s and/or team tag/s.</li>
-				<li>My Discord username is: thomas_1213</li>
-			</ul>
-			<br/>
-			<h2>Credits</h2>
-			<ul class="after-header">
-				<li>Leaderboards website created by: <a class="my-profile-link" href="https://www.nitrotype.com/racer/tommy_14" target="_blank">Tommy_14</a></li>
-				<li>Artwork such as cars, logo, background created by: Nitro Type</li>
-			</ul>
+	<div class="divider">
+		<div class="timeframe-buttons">
+			<button type="button" class="timeframe-button active-button">Season</button>
+			<button type="button" class="timeframe-button not-active-button" onclick="changeTab('top_teams_weekly')">Last 7 Days</button>
 		</div>
+		<form>
+			<div class="dropdown" onchange="handleDropdownChange()">
+				<select class="dropdown-select">
+					<option value="top_teams_season" selected>Top Teams</option>
+					<option value="fastest_teams_season">Fastest Teams</option>
+				</select>
+			</div>
+		</form>
 	</div>
+	<table class="table">
+		<thead>
+			<tr class="table-header">
+				<th scope="col" class="table-cell table-cell--place"></th>
+				<th scope="col" class="table-cell table-cell--tag">Tag</th>
+				<th scope="col" class="table-cell table-cell--team">Team</th>
+				<th scope="col" class="table-cell table-cell--members">Members</th>
+				<th scope="col" class="table-cell table-cell--races">Races</th>
+				<th scope="col" class="table-cell table-cell--points">Points</th>
+			</tr>
+		</thead>
+		<tbody class="table-body">
+			<tr class="table-row table-row--gold">
+				<td class="table-cell table-cell--place"><img class="medal" src="/static/images/gold.png"/></td>
+				<td class="table-cell table-cell--tag"><span class="tag-text" style="color: #ee1f25;">[EMZ]</span></td>
+				<td class="table-cell table-cell--team"><a href="https://www.nitrotype.com/team/EMZ" target="_blank" class="team-text">"Elite Mindz"</a></td>
+				<td class="table-cell table-cell--members">47</td>
+				<td class="table-cell table-cell--races">771,698</td>
+				<td class="table-cell table-cell--points">113,678,247</td>
+			</tr>
+			<tr class="table-row table-row--silver">
+				<td class="table-cell table-cell--place"><img class="medal" src="/static/images/silver.png" /></td>
+				<td class="table-cell table-cell--tag"><span class="tag-text" style="color: #fba51a;">[MEYBO]</span></td>
+				<td class="table-cell table-cell--team"><a href="https://www.nitrotype.com/team/MEYBO" target="_blank" class="team-text">"Legends "</a></td>
+				<td class="table-cell table-cell--members">50</td>
+				<td class="table-cell table-cell--races">460,369</td>
+				<td class="table-cell table-cell--points">68,223,884</td>
+			</tr>
+			<tr class="table-row table-row--bronze">
+				<td class="table-cell table-cell--place"><img class="medal" src="/static/images/bronze.png" /></td>
+				<td class="table-cell table-cell--tag"><span class="tag-text" style="color: #ee1f25;">[ZL]</span></td>
+				<td class="table-cell table-cell--team"><a href="https://www.nitrotype.com/team/ZL" target="_blank" class="team-text">"eRacers"</a></td>
+				<td class="table-cell table-cell--members">48</td>
+				<td class="table-cell table-cell--races">483,372</td>
+				<td class="table-cell table-cell--points">66,697,226</td>
+			</tr>
+			<tr class="table-row table-row--nonpodium">
+				<td class="table-cell table-cell--place place-number">4</td>
+				<td class="table-cell table-cell--tag"><span class="tag-text" style="color: #ded2e8;">[0T]</span></td>
+				<td class="table-cell table-cell--team"><a href="https://www.nitrotype.com/team/0T" target="_blank" class="team-text">"Zero Tolerance"</a></td>
+				<td class="table-cell table-cell--members">46</td>
+				<td class="table-cell table-cell--races">352,199</td>
+				<td class="table-cell table-cell--points">53,154,673</td>
+			</tr>
+			<tr class="table-row table-row--nonpodium every-other-row">
+				<td class="table-cell table-cell--place place-number">5</td>
+				<td class="table-cell table-cell--tag"><span class="tag-text" style="color: #9a6db0;">[VDN]</span></td>
+				<td class="table-cell table-cell--team"><a href="https://www.nitrotype.com/team/VDN" target="_blank" class="team-text">"Valedictorian"</a></td>
+				<td class="table-cell table-cell--members">48</td>
+				<td class="table-cell table-cell--races">380,655</td>
+				<td class="table-cell table-cell--points">51,718,239</td>
+			</tr>
+		</tbody>
+	</table>
 </div>

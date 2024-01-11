@@ -30,7 +30,7 @@
 				<div class="tab--text">Hall of Fame</div>
 			</div>
 		</button>
-		<button class="tab not-active" onclick="changeTab('rarest_cars')">
+		<button class="tab is-active">
 			<div class="icon-text-container">
 				<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" id="icon-diamond" width="18" height="18" fill="white">
 					<path
@@ -48,7 +48,7 @@
 				<div class="tab--text">Site Stats</div>
 			</div>
 		</button>
-		<button class="tab is-active">
+		<button class="tab not-active" onclick="changeTab('more_info')">
 			<div class="icon-text-container">
 				<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" id="icon-info" width="18" height="18" fill="white">
 					<path
@@ -59,65 +59,58 @@
 			</div>
 		</button>
 	</div>
-	<div class="page-text-box">
-		<div class="page-text">
-			<h2>Data Updates</h2>
-			<ul class="after-header">
-				<li>Data for these leaderboards will be updated approximately every 7 days.</li>
-				<li>Last update was: January 10th, 2024</li>
-			</ul>
-			<h2>Special Requirements</h2>
-			<p class="after-header indent-paragraph">In order to promote fairness of the leaderboards, I have employed some special requirements for users/teams to be included:</p>
-			<ul class="no-top-margin">
-				<li>Fastest Racers (Season)</li>
-				<ul>
-					<li>Can't be over 250 average wpm.</li>
-					<li>Must have at least 500 alltime races.</li>
-					<li>Must have at least 100 season races.</li>
-					<li>Account must be at least a month old.</li>
-				</ul>
-				<li>Fastest Racers (Alltime)</li>
-				<ul>
-					<li>Can't be over 250 average wpm.</li>
-					<li>Must have at least 500 alltime races.</li>
-					<li>Account must be at least a month old.</li>
-				</ul>
-				<li>Fastest Teams (Season)</li>
-				<ul>
-					<li>Can't be over 250 average wpm.</li>
-					<li>Must have at least 10 members on team.</li>
-					<li>Must have at least 1,000 alltime races.</li>
-					<li>Must have at least 300 season races.</li>
-					<li>Team must be at least a month old.</li>
-				</ul>
-				<li>Fastest Teams (Alltime)</li>
-				<ul>
-					<li>Can't be over 250 average wpm.</li>
-					<li>Must have at least 10 members on team.</li>
-					<li>Must have at least 1,000 alltime races.</li>
-					<li>Team must be at least a month old.</li>
-				</ul>
-				<li>Longest Session</li>
-				<ul>
-					<li>Account must be at least a month old.</li>
-				</ul>
-				<li>Oldest Active Players</li>
-				<ul>
-					<li>To be considered active, a player must be higher than level 1 for the season.</li>
-				</ul>
-			</ul>
-			<br/>
-			<h2>Missing Users or Teams?</h2>
-			<ul class="after-header">
-				<li>If you believe there are any users or teams missing from these leaderboards, please contact me via Discord and send me the username/s and/or team tag/s.</li>
-				<li>My Discord username is: thomas_1213</li>
-			</ul>
-			<br/>
-			<h2>Credits</h2>
-			<ul class="after-header">
-				<li>Leaderboards website created by: <a class="my-profile-link" href="https://www.nitrotype.com/racer/tommy_14" target="_blank">Tommy_14</a></li>
-				<li>Artwork such as cars, logo, background created by: Nitro Type</li>
-			</ul>
-		</div>
-	</div>
+	<table class="table">
+		<thead>
+			<tr class="table-header">
+				<th scope="col" class="table-cell table-cell--place"></th>
+				<th scope="col" class="table-cell table-cell--car">Car</th>
+				<th scope="col" class="table-cell table-cell--car-name"></th>
+				<th scope="col" class="table-cell table-cell--availability">Availability</th>
+				<th scope="col" class="table-cell table-cell--players-own">Players Own</th>
+				<th scope="col" class="table-cell table-cell--pct-players-own">Percent Players Own</th>
+			</tr>
+		</thead>
+		<tbody class="table-body">
+			<tr class="table-row table-row--gold">
+				<td class="table-cell table-cell--place"><img class="medal" src="/static/images/gold.png"/></td>
+				<td class="table-cell table-cell--car"><img class="car-img" src="/static/images/cars/104.png"/></td>
+				<td class="table-cell table-cell--car-name">Corndog's Car</td>
+				<td class="table-cell table-cell--availability">Exclusive</td>
+				<td class="table-cell table-cell--players-own">2</td>
+				<td class="table-cell table-cell--pct-players-own">0.00064%</td>
+			</tr>
+			<tr class="table-row table-row--silver">
+				<td class="table-cell table-cell--place"><img class="medal" src="/static/images/silver.png" /></td>
+				<td class="table-cell table-cell-car"><img class="car-img" src="/static/images/cars/172.png"/></td>
+				<td class="table-cell table-cell--car-name">Travis' Truck</td>
+				<td class="table-cell table-cell--availability">Exclusive</td>
+				<td class="table-cell table-cell--players-own">2</td>
+				<td class="table-cell table-cell--pct-players-own">0.00064%</td>
+			</tr>
+			<tr class="table-row table-row--bronze">
+				<td class="table-cell table-cell--place"><img class="medal" src="/static/images/bronze.png" /></td>
+				<td class="table-cell table-cell-car"><img class="car-img" src="/static/images/cars/203.png"/></td>
+				<td class="table-cell table-cell--car-name">Liberty Danger 9</td>
+				<td class="table-cell table-cell--availability">Exclusive</td>
+				<td class="table-cell table-cell--players-own">2</td>
+				<td class="table-cell table-cell--pct-players-own">0.00064%</td>
+			</tr>
+			<tr class="table-row table-row--nonpodium">
+				<td class="table-cell table-cell--place place-number">4</td>
+				<td class="table-cell table-cell-car"><img class="car-img" src="/static/images/cars/313.png"/></td>
+				<td class="table-cell table-cell--car-name">The Wildflower 750</td>
+				<td class="table-cell table-cell--availability">Obtainable</td>
+				<td class="table-cell table-cell--players-own">2</td>
+				<td class="table-cell table-cell--pct-players-own">0.00064%</td>
+			</tr>
+			<tr class="table-row table-row--nonpodium every-other-row">
+				<td class="table-cell table-cell--place place-number">5</td>
+				<td class="table-cell table-cell-car"><img class="car-img" src="/static/images/cars/345.png"/></td>
+				<td class="table-cell table-cell--car-name">Nitreux Vielleux</td>
+				<td class="table-cell table-cell--availability">Exclusive</td>
+				<td class="table-cell table-cell--players-own">2</td>
+				<td class="table-cell table-cell--pct-players-own">0.00064%</td>
+			</tr>
+		</tbody>
+	</table>
 </div>

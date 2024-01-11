@@ -20,7 +20,7 @@
 				<div class="tab--text">Top Teams</div>
 			</div>
 		</button>
-		<button class="tab not-active" onclick="changeTab('hof_most_active_racers')">
+		<button class="tab is-active">
 			<div class="icon-text-container">
 				<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" id="icon-trophy" width="18" height="18" fill="white">
 					<path
@@ -48,7 +48,7 @@
 				<div class="tab--text">Site Stats</div>
 			</div>
 		</button>
-		<button class="tab is-active">
+		<button class="tab not-active" onclick="changeTab('more_info')">
 			<div class="icon-text-container">
 				<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" id="icon-info" width="18" height="18" fill="white">
 					<path
@@ -59,65 +59,64 @@
 			</div>
 		</button>
 	</div>
-	<div class="page-text-box">
-		<div class="page-text">
-			<h2>Data Updates</h2>
-			<ul class="after-header">
-				<li>Data for these leaderboards will be updated approximately every 7 days.</li>
-				<li>Last update was: January 10th, 2024</li>
-			</ul>
-			<h2>Special Requirements</h2>
-			<p class="after-header indent-paragraph">In order to promote fairness of the leaderboards, I have employed some special requirements for users/teams to be included:</p>
-			<ul class="no-top-margin">
-				<li>Fastest Racers (Season)</li>
-				<ul>
-					<li>Can't be over 250 average wpm.</li>
-					<li>Must have at least 500 alltime races.</li>
-					<li>Must have at least 100 season races.</li>
-					<li>Account must be at least a month old.</li>
-				</ul>
-				<li>Fastest Racers (Alltime)</li>
-				<ul>
-					<li>Can't be over 250 average wpm.</li>
-					<li>Must have at least 500 alltime races.</li>
-					<li>Account must be at least a month old.</li>
-				</ul>
-				<li>Fastest Teams (Season)</li>
-				<ul>
-					<li>Can't be over 250 average wpm.</li>
-					<li>Must have at least 10 members on team.</li>
-					<li>Must have at least 1,000 alltime races.</li>
-					<li>Must have at least 300 season races.</li>
-					<li>Team must be at least a month old.</li>
-				</ul>
-				<li>Fastest Teams (Alltime)</li>
-				<ul>
-					<li>Can't be over 250 average wpm.</li>
-					<li>Must have at least 10 members on team.</li>
-					<li>Must have at least 1,000 alltime races.</li>
-					<li>Team must be at least a month old.</li>
-				</ul>
-				<li>Longest Session</li>
-				<ul>
-					<li>Account must be at least a month old.</li>
-				</ul>
-				<li>Oldest Active Players</li>
-				<ul>
-					<li>To be considered active, a player must be higher than level 1 for the season.</li>
-				</ul>
-			</ul>
-			<br/>
-			<h2>Missing Users or Teams?</h2>
-			<ul class="after-header">
-				<li>If you believe there are any users or teams missing from these leaderboards, please contact me via Discord and send me the username/s and/or team tag/s.</li>
-				<li>My Discord username is: thomas_1213</li>
-			</ul>
-			<br/>
-			<h2>Credits</h2>
-			<ul class="after-header">
-				<li>Leaderboards website created by: <a class="my-profile-link" href="https://www.nitrotype.com/racer/tommy_14" target="_blank">Tommy_14</a></li>
-				<li>Artwork such as cars, logo, background created by: Nitro Type</li>
-			</ul>
+	<div class="divider">
+		<div class="hall-of-fame-buttons">
+			<button type="button" class="hall-of-fame-button not-active-button" onclick="changeTab('hof_most_active_racers')">Most Active Racers</button>
+			<button type="button" class="hall-of-fame-button not-active-button" onclick="changeTab('hof_fastest_racers')">Fastest Racers</button>
+			<button type="button" class="hall-of-fame-button active-button">Most Active Teams</button>
+			<button type="button" class="hall-of-fame-button not-active-button" onclick="changeTab('hof_fastest_teams')">Fastest Teams</button>
+			<button type="button" class="hall-of-fame-button not-active-button" onclick="changeTab('hof_longest_session')">Longest Session</button>
+			<button type="button" class="hall-of-fame-button not-active-button" onclick="changeTab('hof_most_cars_owned')">Most Cars Owned</button>
+			<button type="button" class="hall-of-fame-button not-active-button" onclick="changeTab('hof_most_profile_views')">Most Profile Views</button>
+			<button type="button" class="hall-of-fame-button not-active-button" onclick="changeTab('hof_oldest_active_players')">Oldest Active Players</button>
 		</div>
 	</div>
+	<table class="table">
+		<thead>
+			<tr class="table-header">
+				<th scope="col" class="table-cell table-cell--place"></th>
+				<th scope="col" class="table-cell table-cell--tag">Tag</th>
+				<th scope="col" class="table-cell table-cell--most-active-team">Team</th>
+				<th scope="col" class="table-cell table-cell--members">Members</th>
+				<th scope="col" class="table-cell table-cell--most-active-teams-races">Races</th>
+			</tr>
+		</thead>
+		<tbody class="table-body">
+			<tr class="table-row table-row--gold">
+				<td class="table-cell table-cell--place"><img class="medal" src="/static/images/gold.png"/></td>
+				<td class="table-cell table-cell--tag"><span class="tag-text" style="color: #436fb6;">[SSH]</span></td>
+				<td class="table-cell table-cell--most-active-team"><a href="https://www.nitrotype.com/team/SSH" target="_blank" class="team-text">"Shell  Riders"</a></td>
+				<td class="table-cell table-cell--members">39</td>
+				<td class="table-cell table-cell--most-active-teams-races">8,324,397</td>
+			</tr>
+			<tr class="table-row table-row--silver">
+				<td class="table-cell table-cell--place"><img class="medal" src="/static/images/silver.png" /></td>
+				<td class="table-cell table-cell--tag"><span class="tag-text" style="color: #ee1f25;">[ZL]</span></td>
+				<td class="table-cell table-cell--most-active-team"><a href="https://www.nitrotype.com/team/ZL" target="_blank" class="team-text">"eRacers"</a></td>
+				<td class="table-cell table-cell--members">48</td>
+				<td class="table-cell table-cell--most-active-teams-races">8,051,531</td>
+			</tr>
+			<tr class="table-row table-row--bronze">
+				<td class="table-cell table-cell--place"><img class="medal" src="/static/images/bronze.png" /></td>
+				<td class="table-cell table-cell--tag"><span class="tag-text" style="color: #ea1979;">[PR2W]</span></td>
+				<td class="table-cell table-cell--most-active-team"><a href="https://www.nitrotype.com/team/PR2W" target="_blank" class="team-text">"P1nks  R2  Wild"</a></td>
+				<td class="table-cell table-cell--members">44</td>
+				<td class="table-cell table-cell--most-active-teams-races">6,508,061</td>
+			</tr>
+			<tr class="table-row table-row--nonpodium">
+				<td class="table-cell table-cell--place place-number">4</td>
+				<td class="table-cell table-cell--tag"><span class="tag-text" style="color: #daedfa;">[REB3LS]</span></td>
+				<td class="table-cell table-cell--most-active-team"><a href="https://www.nitrotype.com/team/REB3LS" target="_blank" class="team-text">"Chosen      Ones"</a></td>
+				<td class="table-cell table-cell--members">50</td>
+				<td class="table-cell table-cell--most-active-teams-races">5,994,628</td>
+			</tr>
+			<tr class="table-row table-row--nonpodium every-other-row">
+				<td class="table-cell table-cell--place place-number">5</td>
+				<td class="table-cell table-cell--tag"><span class="tag-text" style="color: #ee1f25;">[TALK]</span></td>
+				<td class="table-cell table-cell--most-active-team"><a href="https://www.nitrotype.com/team/TALK" target="_blank" class="team-text">"RIZE TO THE OCCASION"</a></td>
+				<td class="table-cell table-cell--members">33</td>
+				<td class="table-cell table-cell--most-active-teams-races">4,224,809</td>
+			</tr>
+		</tbody>
+	</table>
 </div>

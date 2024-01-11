@@ -1,3 +1,4 @@
+
 <div class="leaderboard-box">
 	<div class="tabs">
 		<button class="tab not-active" onclick="changeTab('top_racers_season')">
@@ -10,7 +11,7 @@
 				<div class="tab--text">Top Racers</div>
 			</div>
 		</button>
-		<button class="tab not-active" onclick="changeTab('top_teams_season')">
+		<button class="tab is-active">
 			<div class="icon-text-container">
 				<svg xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd" viewBox="0 0 24 24" id="icon-rank-team" width="18" height="18" fill="white">
 					<path
@@ -20,7 +21,7 @@
 				<div class="tab--text">Top Teams</div>
 			</div>
 		</button>
-		<button class="tab is-active">
+		<button class="tab not-active" onclick="changeTab('hof_most_active_racers')">
 			<div class="icon-text-container">
 				<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" id="icon-trophy" width="18" height="18" fill="white">
 					<path
@@ -84,38 +85,703 @@
 		<tbody class="table-body">
 			<tr class="table-row table-row--gold">
 				<td class="table-cell table-cell--place"><img class="medal" src="/static/images/gold.png"/></td>
-				<td class="table-cell table-cell--tag"><span class="tag-text" style="color: #ee1f25;">[P1RC]</span></td>
-				<td class="table-cell table-cell--fastest-team"><a href="https://www.nitrotype.com/team/P1RC" target="_blank" class="team-text">"P1RC UP"</a></td>
-				<td class="table-cell table-cell--members">13</td>
-				<td class="table-cell table-cell--fastest-team-wpm">102</td>
+				<td class="table-cell table-cell--tag"><span class="tag-text" style="color: #ded2e8;">[LOST]</span></td>
+				<td class="table-cell table-cell--fastest-team"><a href="https://www.nitrotype.com/team/LOST" target="_blank" class="team-text">"sorry carrie"</a></td>
+				<td class="table-cell table-cell--members">10</td>
+				<td class="table-cell table-cell--fastest-team-wpm">168</td>
 			</tr>
 			<tr class="table-row table-row--silver">
 				<td class="table-cell table-cell--place"><img class="medal" src="/static/images/silver.png" /></td>
+				<td class="table-cell table-cell--tag"><span class="tag-text" style="color: #40b8ea;">[NBDM]</span></td>
+				<td class="table-cell table-cell--fastest-team"><a href="https://www.nitrotype.com/team/NBDM" target="_blank" class="team-text">"Disc code vmbje4"</a></td>
+				<td class="table-cell table-cell--members">16</td>
+				<td class="table-cell table-cell--fastest-team-wpm">161</td>
+			</tr>
+			<tr class="table-row table-row--bronze">
+				<td class="table-cell table-cell--place"><img class="medal" src="/static/images/bronze.png" /></td>
+				<td class="table-cell table-cell--tag"><span class="tag-text" style="color: #d1499b;">[SO]</span></td>
+				<td class="table-cell table-cell--fastest-team"><a href="https://www.nitrotype.com/team/SO" target="_blank" class="team-text">"consistent"</a></td>
+				<td class="table-cell table-cell--members">12</td>
+				<td class="table-cell table-cell--fastest-team-wpm">155</td>
+			</tr>
+			<tr class="table-row table-row--nonpodium">
+				<td class="table-cell table-cell--place place-number">4</td>
+				<td class="table-cell table-cell--tag"><span class="tag-text" style="color: #c5e2b6;">[ZZ]</span></td>
+				<td class="table-cell table-cell--fastest-team"><a href="https://www.nitrotype.com/team/ZZ" target="_blank" class="team-text">"Zerozone"</a></td>
+				<td class="table-cell table-cell--members">17</td>
+				<td class="table-cell table-cell--fastest-team-wpm">143</td>
+			</tr>
+			<tr class="table-row table-row--nonpodium">
+				<td class="table-cell table-cell--place place-number">5</td>
+				<td class="table-cell table-cell--tag"><span class="tag-text" style="color: #f5eb21;">[SSC1]</span></td>
+				<td class="table-cell table-cell--fastest-team"><a href="https://www.nitrotype.com/team/SSC1" target="_blank" class="team-text">"SSC FINEST"</a></td>
+				<td class="table-cell table-cell--members">15</td>
+				<td class="table-cell table-cell--fastest-team-wpm">131</td>
+			</tr>
+			<tr class="table-row table-row--nonpodium">
+				<td class="table-cell table-cell--place place-number">6</td>
+				<td class="table-cell table-cell--tag"><span class="tag-text" style="color: #436fb6;">[NSD]</span></td>
+				<td class="table-cell table-cell--fastest-team"><a href="https://www.nitrotype.com/team/NSD" target="_blank" class="team-text">"Not So Dead"</a></td>
+				<td class="table-cell table-cell--members">25</td>
+				<td class="table-cell table-cell--fastest-team-wpm">122</td>
+			</tr>
+			<tr class="table-row table-row--nonpodium">
+				<td class="table-cell table-cell--place place-number">7</td>
+				<td class="table-cell table-cell--tag"><span class="tag-text" style="color: #8750a0;">[PRSU]</span></td>
+				<td class="table-cell table-cell--fastest-team"><a href="https://www.nitrotype.com/team/PRSU" target="_blank" class="team-text">"Perpetual Supremacy"</a></td>
+				<td class="table-cell table-cell--members">29</td>
+				<td class="table-cell table-cell--fastest-team-wpm">119</td>
+			</tr>
+			<tr class="table-row table-row--nonpodium">
+				<td class="table-cell table-cell--place place-number">8</td>
+				<td class="table-cell table-cell--tag"><span class="tag-text" style="color: #ee1f25;">[TVX]</span></td>
+				<td class="table-cell table-cell--fastest-team"><a href="https://www.nitrotype.com/team/TVX" target="_blank" class="team-text">"The Come Back"</a></td>
+				<td class="table-cell table-cell--members">37</td>
+				<td class="table-cell table-cell--fastest-team-wpm">118</td>
+			</tr>
+			<tr class="table-row table-row--nonpodium">
+				<td class="table-cell table-cell--place place-number">9</td>
+				<td class="table-cell table-cell--tag"><span class="tag-text" style="color: #fba51a;">[G45]</span></td>
+				<td class="table-cell table-cell--fastest-team"><a href="https://www.nitrotype.com/team/G45" target="_blank" class="team-text">"Global Stars on 45"</a></td>
+				<td class="table-cell table-cell--members">40</td>
+				<td class="table-cell table-cell--fastest-team-wpm">118</td>
+			</tr>
+			<tr class="table-row table-row--nonpodium">
+				<td class="table-cell table-cell--place place-number">10</td>
+				<td class="table-cell table-cell--tag"><span class="tag-text" style="color: #fba51a;">[ZTBS]</span></td>
+				<td class="table-cell table-cell--fastest-team"><a href="https://www.nitrotype.com/team/ZTBS" target="_blank" class="team-text">"Zesty Bois"</a></td>
+				<td class="table-cell table-cell--members">29</td>
+				<td class="table-cell table-cell--fastest-team-wpm">116</td>
+			</tr>
+			<tr class="table-row table-row--nonpodium">
+				<td class="table-cell table-cell--place place-number">11</td>
+				<td class="table-cell table-cell--tag"><span class="tag-text" style="color: #fba51a;">[NBTO]</span></td>
+				<td class="table-cell table-cell--fastest-team"><a href="https://www.nitrotype.com/team/NBTO" target="_blank" class="team-text">"Silent Knights"</a></td>
+				<td class="table-cell table-cell--members">27</td>
+				<td class="table-cell table-cell--fastest-team-wpm">116</td>
+			</tr>
+			<tr class="table-row table-row--nonpodium">
+				<td class="table-cell table-cell--place place-number">12</td>
+				<td class="table-cell table-cell--tag"><span class="tag-text" style="color: #fba51a;">[BARON]</span></td>
+				<td class="table-cell table-cell--fastest-team"><a href="https://www.nitrotype.com/team/BARON" target="_blank" class="team-text">"Nitro Type Barons"</a></td>
+				<td class="table-cell table-cell--members">29</td>
+				<td class="table-cell table-cell--fastest-team-wpm">115</td>
+			</tr>
+			<tr class="table-row table-row--nonpodium">
+				<td class="table-cell table-cell--place place-number">13</td>
+				<td class="table-cell table-cell--tag"><span class="tag-text" style="color: #d1499b;">[NSXT]</span></td>
+				<td class="table-cell table-cell--fastest-team"><a href="https://www.nitrotype.com/team/NSXT" target="_blank" class="team-text">"PatitoJuan"</a></td>
+				<td class="table-cell table-cell--members">17</td>
+				<td class="table-cell table-cell--fastest-team-wpm">114</td>
+			</tr>
+			<tr class="table-row table-row--nonpodium">
+				<td class="table-cell table-cell--place place-number">14</td>
+				<td class="table-cell table-cell--tag"><span class="tag-text" style="color: #5b52a3;">[YX]</span></td>
+				<td class="table-cell table-cell--fastest-team"><a href="https://www.nitrotype.com/team/YX" target="_blank" class="team-text">"Eternal Legends"</a></td>
+				<td class="table-cell table-cell--members">18</td>
+				<td class="table-cell table-cell--fastest-team-wpm">113</td>
+			</tr>
+			<tr class="table-row table-row--nonpodium">
+				<td class="table-cell table-cell--place place-number">15</td>
+				<td class="table-cell table-cell--tag"><span class="tag-text" style="color: #ee1f25;">[SHADQW]</span></td>
+				<td class="table-cell table-cell--fastest-team"><a href="https://www.nitrotype.com/team/SHADQW" target="_blank" class="team-text">"Experienced-Racers"</a></td>
+				<td class="table-cell table-cell--members">31</td>
+				<td class="table-cell table-cell--fastest-team-wpm">113</td>
+			</tr>
+			<tr class="table-row table-row--nonpodium">
+				<td class="table-cell table-cell--place place-number">16</td>
+				<td class="table-cell table-cell--tag"><span class="tag-text" style="color: #71c055;">[NTH]</span></td>
+				<td class="table-cell table-cell--fastest-team"><a href="https://www.nitrotype.com/team/NTH" target="_blank" class="team-text">"slightly retired"</a></td>
+				<td class="table-cell table-cell--members">18</td>
+				<td class="table-cell table-cell--fastest-team-wpm">112</td>
+			</tr>
+			<tr class="table-row table-row--nonpodium">
+				<td class="table-cell table-cell--place place-number">17</td>
+				<td class="table-cell table-cell--tag"><span class="tag-text" style="color: #5b52a3;">[DOK]</span></td>
+				<td class="table-cell table-cell--fastest-team"><a href="https://www.nitrotype.com/team/DOK" target="_blank" class="team-text">"W team for da boys"</a></td>
+				<td class="table-cell table-cell--members">25</td>
+				<td class="table-cell table-cell--fastest-team-wpm">111</td>
+			</tr>
+			<tr class="table-row table-row--nonpodium">
+				<td class="table-cell table-cell--place place-number">18</td>
+				<td class="table-cell table-cell--tag"><span class="tag-text" style="color: #d1499b;">[T4O]</span></td>
+				<td class="table-cell table-cell--fastest-team"><a href="https://www.nitrotype.com/team/T4O" target="_blank" class="team-text">"retired"</a></td>
+				<td class="table-cell table-cell--members">23</td>
+				<td class="table-cell table-cell--fastest-team-wpm">110</td>
+			</tr>
+			<tr class="table-row table-row--nonpodium">
+				<td class="table-cell table-cell--place place-number">19</td>
+				<td class="table-cell table-cell--tag"><span class="tag-text" style="color: #436fb6;">[LATC]</span></td>
+				<td class="table-cell table-cell--fastest-team"><a href="https://www.nitrotype.com/team/LATC" target="_blank" class="team-text">"LosAltosTypingClub"</a></td>
+				<td class="table-cell table-cell--members">14</td>
+				<td class="table-cell table-cell--fastest-team-wpm">110</td>
+			</tr>
+			<tr class="table-row table-row--nonpodium">
+				<td class="table-cell table-cell--place place-number">20</td>
+				<td class="table-cell table-cell--tag"><span class="tag-text" style="color: #746bb0;">[NAVED]</span></td>
+				<td class="table-cell table-cell--fastest-team"><a href="https://www.nitrotype.com/team/NAVED" target="_blank" class="team-text">"add me to join"</a></td>
+				<td class="table-cell table-cell--members">36</td>
+				<td class="table-cell table-cell--fastest-team-wpm">110</td>
+			</tr>
+			<tr class="table-row table-row--nonpodium">
+				<td class="table-cell table-cell--place place-number">21</td>
+				<td class="table-cell table-cell--tag"><span class="tag-text" style="color: #5b52a3;">[CRXV]</span></td>
+				<td class="table-cell table-cell--fastest-team"><a href="https://www.nitrotype.com/team/CRXV" target="_blank" class="team-text">"Captains Akuma"</a></td>
+				<td class="table-cell table-cell--members">12</td>
+				<td class="table-cell table-cell--fastest-team-wpm">110</td>
+			</tr>
+			<tr class="table-row table-row--nonpodium">
+				<td class="table-cell table-cell--place place-number">22</td>
+				<td class="table-cell table-cell--tag"><span class="tag-text" style="color: #9187c0;">[J0Y]</span></td>
+				<td class="table-cell table-cell--fastest-team"><a href="https://www.nitrotype.com/team/J0Y" target="_blank" class="team-text">"30Members-GOLD COMP"</a></td>
+				<td class="table-cell table-cell--members">14</td>
+				<td class="table-cell table-cell--fastest-team-wpm">109</td>
+			</tr>
+			<tr class="table-row table-row--nonpodium">
+				<td class="table-cell table-cell--place place-number">23</td>
+				<td class="table-cell table-cell--tag"><span class="tag-text" style="color: #70c3ed;">[KCAT]</span></td>
+				<td class="table-cell table-cell--fastest-team"><a href="https://www.nitrotype.com/team/KCAT" target="_blank" class="team-text">"5k Races is GOLD"</a></td>
+				<td class="table-cell table-cell--members">49</td>
+				<td class="table-cell table-cell--fastest-team-wpm">108</td>
+			</tr>
+			<tr class="table-row table-row--nonpodium">
+				<td class="table-cell table-cell--place place-number">24</td>
+				<td class="table-cell table-cell--tag"><span class="tag-text" style="color: #f15b40;">[L3]</span></td>
+				<td class="table-cell table-cell--fastest-team"><a href="https://www.nitrotype.com/team/L3" target="_blank" class="team-text">"RACE YALL, RACE"</a></td>
+				<td class="table-cell table-cell--members">50</td>
+				<td class="table-cell table-cell--fastest-team-wpm">108</td>
+			</tr>
+			<tr class="table-row table-row--nonpodium">
+				<td class="table-cell table-cell--place place-number">25</td>
+				<td class="table-cell table-cell--tag"><span class="tag-text" style="color: #8750a0;">[NTM]</span></td>
+				<td class="table-cell table-cell--fastest-team"><a href="https://www.nitrotype.com/team/NTM" target="_blank" class="team-text">"Nitro  Type  Masters"</a></td>
+				<td class="table-cell table-cell--members">46</td>
+				<td class="table-cell table-cell--fastest-team-wpm">108</td>
+			</tr>
+			<tr class="table-row table-row--nonpodium">
+				<td class="table-cell table-cell--place place-number">26</td>
+				<td class="table-cell table-cell--tag"><span class="tag-text" style="color: #ee1f25;">[WO]</span></td>
+				<td class="table-cell table-cell--fastest-team"><a href="https://www.nitrotype.com/team/WO" target="_blank" class="team-text">"World Overtake"</a></td>
+				<td class="table-cell table-cell--members">20</td>
+				<td class="table-cell table-cell--fastest-team-wpm">108</td>
+			</tr>
+			<tr class="table-row table-row--nonpodium">
+				<td class="table-cell table-cell--place place-number">27</td>
+				<td class="table-cell table-cell--tag"><span class="tag-text" style="color: #fcf9d8;">[VVOLF]</span></td>
+				<td class="table-cell table-cell--fastest-team"><a href="https://www.nitrotype.com/team/VVOLF" target="_blank" class="team-text">"Wolves never die"</a></td>
+				<td class="table-cell table-cell--members">37</td>
+				<td class="table-cell table-cell--fastest-team-wpm">108</td>
+			</tr>
+			<tr class="table-row table-row--nonpodium">
+				<td class="table-cell table-cell--place place-number">28</td>
+				<td class="table-cell table-cell--tag"><span class="tag-text" style="color: #ded2e8;">[0T]</span></td>
+				<td class="table-cell table-cell--fastest-team"><a href="https://www.nitrotype.com/team/0T" target="_blank" class="team-text">"Zero Tolerance"</a></td>
+				<td class="table-cell table-cell--members">50</td>
+				<td class="table-cell table-cell--fastest-team-wpm">107</td>
+			</tr>
+			<tr class="table-row table-row--nonpodium">
+				<td class="table-cell table-cell--place place-number">29</td>
+				<td class="table-cell table-cell--tag"><span class="tag-text" style="color: #ee1f25;">[DRPT]</span></td>
+				<td class="table-cell table-cell--fastest-team"><a href="https://www.nitrotype.com/team/DRPT" target="_blank" class="team-text">"ÐrivenRapidTypists"</a></td>
+				<td class="table-cell table-cell--members">19</td>
+				<td class="table-cell table-cell--fastest-team-wpm">106</td>
+			</tr>
+			<tr class="table-row table-row--nonpodium">
+				<td class="table-cell table-cell--place place-number">30</td>
+				<td class="table-cell table-cell--tag"><span class="tag-text" style="color: #8750a0;">[SECT]</span></td>
+				<td class="table-cell table-cell--fastest-team"><a href="https://www.nitrotype.com/team/SECT" target="_blank" class="team-text">"Empyrean Conquerors"</a></td>
+				<td class="table-cell table-cell--members">21</td>
+				<td class="table-cell table-cell--fastest-team-wpm">106</td>
+			</tr>
+			<tr class="table-row table-row--nonpodium">
+				<td class="table-cell table-cell--place place-number">31</td>
+				<td class="table-cell table-cell--tag"><span class="tag-text" style="color: #436fb6;">[FTU]</span></td>
+				<td class="table-cell table-cell--fastest-team"><a href="https://www.nitrotype.com/team/FTU" target="_blank" class="team-text">"FasterThanU"</a></td>
+				<td class="table-cell table-cell--members">49</td>
+				<td class="table-cell table-cell--fastest-team-wpm">105</td>
+			</tr>
+			<tr class="table-row table-row--nonpodium">
+				<td class="table-cell table-cell--place place-number">32</td>
+				<td class="table-cell table-cell--tag"><span class="tag-text" style="color: #ee1f25;">[THEF]</span></td>
+				<td class="table-cell table-cell--fastest-team"><a href="https://www.nitrotype.com/team/THEF" target="_blank" class="team-text">"The Federation"</a></td>
+				<td class="table-cell table-cell--members">11</td>
+				<td class="table-cell table-cell--fastest-team-wpm">105</td>
+			</tr>
+			<tr class="table-row table-row--nonpodium">
+				<td class="table-cell table-cell--place place-number">33</td>
+				<td class="table-cell table-cell--tag"><span class="tag-text" style="color: #8750a0;">[ERC]</span></td>
+				<td class="table-cell table-cell--fastest-team"><a href="https://www.nitrotype.com/team/ERC" target="_blank" class="team-text">"Every Race Counts"</a></td>
+				<td class="table-cell table-cell--members">28</td>
+				<td class="table-cell table-cell--fastest-team-wpm">105</td>
+			</tr>
+			<tr class="table-row table-row--nonpodium">
+				<td class="table-cell table-cell--place place-number">34</td>
+				<td class="table-cell table-cell--tag"><span class="tag-text" style="color: #ee1f25;">[VEN0M]</span></td>
+				<td class="table-cell table-cell--fastest-team"><a href="https://www.nitrotype.com/team/VEN0M" target="_blank" class="team-text">"discord  gg  ntcom"</a></td>
+				<td class="table-cell table-cell--members">50</td>
+				<td class="table-cell table-cell--fastest-team-wpm">105</td>
+			</tr>
+			<tr class="table-row table-row--nonpodium">
+				<td class="table-cell table-cell--place place-number">35</td>
+				<td class="table-cell table-cell--tag"><span class="tag-text" style="color: #d1499b;">[EVOQ]</span></td>
+				<td class="table-cell table-cell--fastest-team"><a href="https://www.nitrotype.com/team/EVOQ" target="_blank" class="team-text">"Myriad Paragon"</a></td>
+				<td class="table-cell table-cell--members">35</td>
+				<td class="table-cell table-cell--fastest-team-wpm">105</td>
+			</tr>
+			<tr class="table-row table-row--nonpodium">
+				<td class="table-cell table-cell--place place-number">36</td>
+				<td class="table-cell table-cell--tag"><span class="tag-text" style="color: #fba51a;">[RISE]</span></td>
+				<td class="table-cell table-cell--fastest-team"><a href="https://www.nitrotype.com/team/RISE" target="_blank" class="team-text">"Rise Of Occasion"</a></td>
+				<td class="table-cell table-cell--members">50</td>
+				<td class="table-cell table-cell--fastest-team-wpm">104</td>
+			</tr>
+			<tr class="table-row table-row--nonpodium">
+				<td class="table-cell table-cell--place place-number">37</td>
+				<td class="table-cell table-cell--tag"><span class="tag-text" style="color: #f5eb21;">[HPBM]</span></td>
+				<td class="table-cell table-cell--fastest-team"><a href="https://www.nitrotype.com/team/HPBM" target="_blank" class="team-text">"HYPERBEAM"</a></td>
+				<td class="table-cell table-cell--members">45</td>
+				<td class="table-cell table-cell--fastest-team-wpm">104</td>
+			</tr>
+			<tr class="table-row table-row--nonpodium">
+				<td class="table-cell table-cell--place place-number">38</td>
+				<td class="table-cell table-cell--tag"><span class="tag-text" style="color: #96d1f3;">[RXL]</span></td>
+				<td class="table-cell table-cell--fastest-team"><a href="https://www.nitrotype.com/team/RXL" target="_blank" class="team-text">"Racing X Legends"</a></td>
+				<td class="table-cell table-cell--members">44</td>
+				<td class="table-cell table-cell--fastest-team-wpm">104</td>
+			</tr>
+			<tr class="table-row table-row--nonpodium">
+				<td class="table-cell table-cell--place place-number">39</td>
+				<td class="table-cell table-cell--tag"><span class="tag-text" style="color: #ee1f25;">[8SK]</span></td>
+				<td class="table-cell table-cell--fastest-team"><a href="https://www.nitrotype.com/team/8SK" target="_blank" class="team-text">"Cosmic Milk Tea"</a></td>
+				<td class="table-cell table-cell--members">11</td>
+				<td class="table-cell table-cell--fastest-team-wpm">104</td>
+			</tr>
+			<tr class="table-row table-row--nonpodium">
+				<td class="table-cell table-cell--place place-number">40</td>
+				<td class="table-cell table-cell--tag"><span class="tag-text" style="color: #ea1979;">[HYR]</span></td>
+				<td class="table-cell table-cell--fastest-team"><a href="https://www.nitrotype.com/team/HYR" target="_blank" class="team-text">"20 MIL COMP"</a></td>
+				<td class="table-cell table-cell--members">11</td>
+				<td class="table-cell table-cell--fastest-team-wpm">104</td>
+			</tr>
+			<tr class="table-row table-row--nonpodium">
+				<td class="table-cell table-cell--place place-number">41</td>
+				<td class="table-cell table-cell--tag"><span class="tag-text" style="color: #ee1f25;">[EMZ]</span></td>
+				<td class="table-cell table-cell--fastest-team"><a href="https://www.nitrotype.com/team/EMZ" target="_blank" class="team-text">"discord gg ntcom"</a></td>
+				<td class="table-cell table-cell--members">48</td>
+				<td class="table-cell table-cell--fastest-team-wpm">103</td>
+			</tr>
+			<tr class="table-row table-row--nonpodium">
+				<td class="table-cell table-cell--place place-number">42</td>
+				<td class="table-cell table-cell--tag"><span class="tag-text" style="color: #40b8ea;">[IBM]</span></td>
+				<td class="table-cell table-cell--fastest-team"><a href="https://www.nitrotype.com/team/IBM" target="_blank" class="team-text">"0110100001101001"</a></td>
+				<td class="table-cell table-cell--members">47</td>
+				<td class="table-cell table-cell--fastest-team-wpm">103</td>
+			</tr>
+			<tr class="table-row table-row--nonpodium">
+				<td class="table-cell table-cell--place place-number">43</td>
+				<td class="table-cell table-cell--tag"><span class="tag-text" style="color: #5b52a3;">[DXH]</span></td>
+				<td class="table-cell table-cell--fastest-team"><a href="https://www.nitrotype.com/team/DXH" target="_blank" class="team-text">"Dxrkness Haunters"</a></td>
+				<td class="table-cell table-cell--members">23</td>
+				<td class="table-cell table-cell--fastest-team-wpm">103</td>
+			</tr>
+			<tr class="table-row table-row--nonpodium">
+				<td class="table-cell table-cell--place place-number">44</td>
+				<td class="table-cell table-cell--tag"><span class="tag-text" style="color: #5b52a3;">[NTL]</span></td>
+				<td class="table-cell table-cell--fastest-team"><a href="https://www.nitrotype.com/team/NTL" target="_blank" class="team-text">"Nitro Type  Legends"</a></td>
+				<td class="table-cell table-cell--members">19</td>
+				<td class="table-cell table-cell--fastest-team-wpm">103</td>
+			</tr>
+			<tr class="table-row table-row--nonpodium">
+				<td class="table-cell table-cell--place place-number">45</td>
+				<td class="table-cell table-cell--tag"><span class="tag-text" style="color: #ea1979;">[TYPALS]</span></td>
+				<td class="table-cell table-cell--fastest-team"><a href="https://www.nitrotype.com/team/TYPALS" target="_blank" class="team-text">"Typing Pals"</a></td>
+				<td class="table-cell table-cell--members">18</td>
+				<td class="table-cell table-cell--fastest-team-wpm">103</td>
+			</tr>
+			<tr class="table-row table-row--nonpodium">
+				<td class="table-cell table-cell--place place-number">46</td>
+				<td class="table-cell table-cell--tag"><span class="tag-text" style="color: #70c3ed;">[K0TR]</span></td>
+				<td class="table-cell table-cell--fastest-team"><a href="https://www.nitrotype.com/team/K0TR" target="_blank" class="team-text">"King 0f The Racers"</a></td>
+				<td class="table-cell table-cell--members">22</td>
+				<td class="table-cell table-cell--fastest-team-wpm">103</td>
+			</tr>
+			<tr class="table-row table-row--nonpodium">
+				<td class="table-cell table-cell--place place-number">47</td>
+				<td class="table-cell table-cell--tag"><span class="tag-text" style="color: #9a6db0;">[VDN]</span></td>
+				<td class="table-cell table-cell--fastest-team"><a href="https://www.nitrotype.com/team/VDN" target="_blank" class="team-text">"discord gg  ntcom"</a></td>
+				<td class="table-cell table-cell--members">42</td>
+				<td class="table-cell table-cell--fastest-team-wpm">102</td>
+			</tr>
+			<tr class="table-row table-row--nonpodium">
+				<td class="table-cell table-cell--place place-number">48</td>
+				<td class="table-cell table-cell--tag"><span class="tag-text" style="color: #436fb6;">[LAW]</span></td>
+				<td class="table-cell table-cell--fastest-team"><a href="https://www.nitrotype.com/team/LAW" target="_blank" class="team-text">"S H I E L D"</a></td>
+				<td class="table-cell table-cell--members">50</td>
+				<td class="table-cell table-cell--fastest-team-wpm">102</td>
+			</tr>
+			<tr class="table-row table-row--nonpodium">
+				<td class="table-cell table-cell--place place-number">49</td>
 				<td class="table-cell table-cell--tag"><span class="tag-text" style="color: #ee1f25;">[KARS]</span></td>
 				<td class="table-cell table-cell--fastest-team"><a href="https://www.nitrotype.com/team/KARS" target="_blank" class="team-text">"ctrl-yeet-delete"</a></td>
 				<td class="table-cell table-cell--members">16</td>
 				<td class="table-cell table-cell--fastest-team-wpm">102</td>
 			</tr>
-			<tr class="table-row table-row--bronze">
-				<td class="table-cell table-cell--place"><img class="medal" src="/static/images/bronze.png" /></td>
-				<td class="table-cell table-cell--tag"><span class="tag-text" style="color: #ee1f25;">[NTRSSS]</span></td>
-				<td class="table-cell table-cell--fastest-team"><a href="https://www.nitrotype.com/team/NTRSSS" target="_blank" class="team-text">"Racers Needed"</a></td>
-				<td class="table-cell table-cell--members">21</td>
-				<td class="table-cell table-cell--fastest-team-wpm">101</td>
+			<tr class="table-row table-row--nonpodium">
+				<td class="table-cell table-cell--place place-number">50</td>
+				<td class="table-cell table-cell--tag"><span class="tag-text" style="color: #ee1f25;">[P1RC]</span></td>
+				<td class="table-cell table-cell--fastest-team"><a href="https://www.nitrotype.com/team/P1RC" target="_blank" class="team-text">"P1RC UP"</a></td>
+				<td class="table-cell table-cell--members">13</td>
+				<td class="table-cell table-cell--fastest-team-wpm">102</td>
 			</tr>
 			<tr class="table-row table-row--nonpodium">
-				<td class="table-cell table-cell--place place-number">4</td>
-				<td class="table-cell table-cell--tag"><span class="tag-text" style="color: #e7f2d4;">[AL3]</span></td>
-				<td class="table-cell table-cell--fastest-team"><a href="https://www.nitrotype.com/team/AL3" target="_blank" class="team-text">"Aesthetic L3gendz"</a></td>
-				<td class="table-cell table-cell--members">32</td>
-				<td class="table-cell table-cell--fastest-team-wpm">101</td>
-			</tr>
-			<tr class="table-row table-row--nonpodium every-other-row">
-				<td class="table-cell table-cell--place place-number">5</td>
+				<td class="table-cell table-cell--place place-number">51</td>
 				<td class="table-cell table-cell--tag"><span class="tag-text" style="color: #fba51a;">[2M1L]</span></td>
 				<td class="table-cell table-cell--fastest-team"><a href="https://www.nitrotype.com/team/2M1L" target="_blank" class="team-text">"1k tm races is 1mil"</a></td>
 				<td class="table-cell table-cell--members">18</td>
 				<td class="table-cell table-cell--fastest-team-wpm">101</td>
+			</tr>
+			<tr class="table-row table-row--nonpodium">
+				<td class="table-cell table-cell--place place-number">52</td>
+				<td class="table-cell table-cell--tag"><span class="tag-text" style="color: #ee1f25;">[NTRSSS]</span></td>
+				<td class="table-cell table-cell--fastest-team"><a href="https://www.nitrotype.com/team/NTRSSS" target="_blank" class="team-text">"Racers Needed"</a></td>
+				<td class="table-cell table-cell--members">16</td>
+				<td class="table-cell table-cell--fastest-team-wpm">101</td>
+			</tr>
+			<tr class="table-row table-row--nonpodium">
+				<td class="table-cell table-cell--place place-number">53</td>
+				<td class="table-cell table-cell--tag"><span class="tag-text" style="color: #e7f2d4;">[AL3]</span></td>
+				<td class="table-cell table-cell--fastest-team"><a href="https://www.nitrotype.com/team/AL3" target="_blank" class="team-text">"Aesthetic L3gendz"</a></td>
+				<td class="table-cell table-cell--members">43</td>
+				<td class="table-cell table-cell--fastest-team-wpm">101</td>
+			</tr>
+			<tr class="table-row table-row--nonpodium">
+				<td class="table-cell table-cell--place place-number">54</td>
+				<td class="table-cell table-cell--tag"><span class="tag-text" style="color: #96d1f3;">[P2P]</span></td>
+				<td class="table-cell table-cell--fastest-team"><a href="https://www.nitrotype.com/team/P2P" target="_blank" class="team-text">"- TOP 50 -"</a></td>
+				<td class="table-cell table-cell--members">24</td>
+				<td class="table-cell table-cell--fastest-team-wpm">101</td>
+			</tr>
+			<tr class="table-row table-row--nonpodium">
+				<td class="table-cell table-cell--place place-number">55</td>
+				<td class="table-cell table-cell--tag"><span class="tag-text" style="color: #96d1f3;">[F1SHE]</span></td>
+				<td class="table-cell table-cell--fastest-team"><a href="https://www.nitrotype.com/team/F1SHE" target="_blank" class="team-text">"EATBIGFISH - COMPS -"</a></td>
+				<td class="table-cell table-cell--members">36</td>
+				<td class="table-cell table-cell--fastest-team-wpm">100</td>
+			</tr>
+			<tr class="table-row table-row--nonpodium">
+				<td class="table-cell table-cell--place place-number">56</td>
+				<td class="table-cell table-cell--tag"><span class="tag-text" style="color: #5b52a3;">[MP23]</span></td>
+				<td class="table-cell table-cell--fastest-team"><a href="https://www.nitrotype.com/team/MP23" target="_blank" class="team-text">"Wolf Pack 23"</a></td>
+				<td class="table-cell table-cell--members">12</td>
+				<td class="table-cell table-cell--fastest-team-wpm">100</td>
+			</tr>
+			<tr class="table-row table-row--nonpodium">
+				<td class="table-cell table-cell--place place-number">57</td>
+				<td class="table-cell table-cell--tag"><span class="tag-text" style="color: #436fb6;">[LX]</span></td>
+				<td class="table-cell table-cell--fastest-team"><a href="https://www.nitrotype.com/team/LX" target="_blank" class="team-text">"Liberal Xotics"</a></td>
+				<td class="table-cell table-cell--members">36</td>
+				<td class="table-cell table-cell--fastest-team-wpm">100</td>
+			</tr>
+			<tr class="table-row table-row--nonpodium">
+				<td class="table-cell table-cell--place place-number">58</td>
+				<td class="table-cell table-cell--tag"><span class="tag-text" style="color: #40b8ea;">[RMSR]</span></td>
+				<td class="table-cell table-cell--fastest-team"><a href="https://www.nitrotype.com/team/RMSR" target="_blank" class="team-text">"rornmidnightspeeders"</a></td>
+				<td class="table-cell table-cell--members">23</td>
+				<td class="table-cell table-cell--fastest-team-wpm">99</td>
+			</tr>
+			<tr class="table-row table-row--nonpodium">
+				<td class="table-cell table-cell--place place-number">59</td>
+				<td class="table-cell table-cell--tag"><span class="tag-text" style="color: #f5eb21;">[KOB3]</span></td>
+				<td class="table-cell table-cell--fastest-team"><a href="https://www.nitrotype.com/team/KOB3" target="_blank" class="team-text">"Da Lakers"</a></td>
+				<td class="table-cell table-cell--members">16</td>
+				<td class="table-cell table-cell--fastest-team-wpm">99</td>
+			</tr>
+			<tr class="table-row table-row--nonpodium">
+				<td class="table-cell table-cell--place place-number">60</td>
+				<td class="table-cell table-cell--tag"><span class="tag-text" style="color: #ea1979;">[WAMZ]</span></td>
+				<td class="table-cell table-cell--fastest-team"><a href="https://www.nitrotype.com/team/WAMZ" target="_blank" class="team-text">"WAMZters"</a></td>
+				<td class="table-cell table-cell--members">11</td>
+				<td class="table-cell table-cell--fastest-team-wpm">99</td>
+			</tr>
+			<tr class="table-row table-row--nonpodium">
+				<td class="table-cell table-cell--place place-number">61</td>
+				<td class="table-cell table-cell--tag"><span class="tag-text" style="color: #40b8ea;">[GLOP]</span></td>
+				<td class="table-cell table-cell--fastest-team"><a href="https://www.nitrotype.com/team/GLOP" target="_blank" class="team-text">"GLOPmaxx"</a></td>
+				<td class="table-cell table-cell--members">30</td>
+				<td class="table-cell table-cell--fastest-team-wpm">98</td>
+			</tr>
+			<tr class="table-row table-row--nonpodium">
+				<td class="table-cell table-cell--place place-number">62</td>
+				<td class="table-cell table-cell--tag"><span class="tag-text" style="color: #40b8ea;">[PARAX]</span></td>
+				<td class="table-cell table-cell--fastest-team"><a href="https://www.nitrotype.com/team/PARAX" target="_blank" class="team-text">"accounts"</a></td>
+				<td class="table-cell table-cell--members">48</td>
+				<td class="table-cell table-cell--fastest-team-wpm">98</td>
+			</tr>
+			<tr class="table-row table-row--nonpodium">
+				<td class="table-cell table-cell--place place-number">63</td>
+				<td class="table-cell table-cell--tag"><span class="tag-text" style="color: #8750a0;">[CLAN]</span></td>
+				<td class="table-cell table-cell--fastest-team"><a href="https://www.nitrotype.com/team/CLAN" target="_blank" class="team-text">"The NT Clan"</a></td>
+				<td class="table-cell table-cell--members">22</td>
+				<td class="table-cell table-cell--fastest-team-wpm">98</td>
+			</tr>
+			<tr class="table-row table-row--nonpodium">
+				<td class="table-cell table-cell--place place-number">64</td>
+				<td class="table-cell table-cell--tag"><span class="tag-text" style="color: #40b8ea;">[WARP]</span></td>
+				<td class="table-cell table-cell--fastest-team"><a href="https://www.nitrotype.com/team/WARP" target="_blank" class="team-text">"WarpSpeed"</a></td>
+				<td class="table-cell table-cell--members">21</td>
+				<td class="table-cell table-cell--fastest-team-wpm">98</td>
+			</tr>
+			<tr class="table-row table-row--nonpodium">
+				<td class="table-cell table-cell--place place-number">65</td>
+				<td class="table-cell table-cell--tag"><span class="tag-text" style="color: #ee1f25;">[DYZ]</span></td>
+				<td class="table-cell table-cell--fastest-team"><a href="https://www.nitrotype.com/team/DYZ" target="_blank" class="team-text">"The Ultra Destroyers"</a></td>
+				<td class="table-cell table-cell--members">38</td>
+				<td class="table-cell table-cell--fastest-team-wpm">98</td>
+			</tr>
+			<tr class="table-row table-row--nonpodium">
+				<td class="table-cell table-cell--place place-number">66</td>
+				<td class="table-cell table-cell--tag"><span class="tag-text" style="color: #9187c0;">[SWAG2]</span></td>
+				<td class="table-cell table-cell--fastest-team"><a href="https://www.nitrotype.com/team/SWAG2" target="_blank" class="team-text">"TooCoolForSchool"</a></td>
+				<td class="table-cell table-cell--members">20</td>
+				<td class="table-cell table-cell--fastest-team-wpm">97</td>
+			</tr>
+			<tr class="table-row table-row--nonpodium">
+				<td class="table-cell table-cell--place place-number">67</td>
+				<td class="table-cell table-cell--tag"><span class="tag-text" style="color: #ee1f25;">[VVS]</span></td>
+				<td class="table-cell table-cell--fastest-team"><a href="https://www.nitrotype.com/team/VVS" target="_blank" class="team-text">"Might Come Back WIP"</a></td>
+				<td class="table-cell table-cell--members">17</td>
+				<td class="table-cell table-cell--fastest-team-wpm">97</td>
+			</tr>
+			<tr class="table-row table-row--nonpodium">
+				<td class="table-cell table-cell--place place-number">68</td>
+				<td class="table-cell table-cell--tag"><span class="tag-text" style="color: #8dd0b6;">[STOPIN]</span></td>
+				<td class="table-cell table-cell--fastest-team"><a href="https://www.nitrotype.com/team/STOPIN" target="_blank" class="team-text">"32 MILLION GAVE AWAY"</a></td>
+				<td class="table-cell table-cell--members">28</td>
+				<td class="table-cell table-cell--fastest-team-wpm">97</td>
+			</tr>
+			<tr class="table-row table-row--nonpodium">
+				<td class="table-cell table-cell--place place-number">69</td>
+				<td class="table-cell table-cell--tag"><span class="tag-text" style="color: #e2f2ea;">[TFV]</span></td>
+				<td class="table-cell table-cell--fastest-team"><a href="https://www.nitrotype.com/team/TFV" target="_blank" class="team-text">"Time for victory"</a></td>
+				<td class="table-cell table-cell--members">11</td>
+				<td class="table-cell table-cell--fastest-team-wpm">97</td>
+			</tr>
+			<tr class="table-row table-row--nonpodium">
+				<td class="table-cell table-cell--place place-number">70</td>
+				<td class="table-cell table-cell--tag"><span class="tag-text" style="color: #ee1f25;">[TBZ]</span></td>
+				<td class="table-cell table-cell--fastest-team"><a href="https://www.nitrotype.com/team/TBZ" target="_blank" class="team-text">"TrailbIazers"</a></td>
+				<td class="table-cell table-cell--members">14</td>
+				<td class="table-cell table-cell--fastest-team-wpm">97</td>
+			</tr>
+			<tr class="table-row table-row--nonpodium">
+				<td class="table-cell table-cell--place place-number">71</td>
+				<td class="table-cell table-cell--tag"><span class="tag-text" style="color: #96d1f3;">[5HRK]</span></td>
+				<td class="table-cell table-cell--fastest-team"><a href="https://www.nitrotype.com/team/5HRK" target="_blank" class="team-text">"SHARKS"</a></td>
+				<td class="table-cell table-cell--members">32</td>
+				<td class="table-cell table-cell--fastest-team-wpm">97</td>
+			</tr>
+			<tr class="table-row table-row--nonpodium">
+				<td class="table-cell table-cell--place place-number">72</td>
+				<td class="table-cell table-cell--tag"><span class="tag-text" style="color: #fba51a;">[STACL]</span></td>
+				<td class="table-cell table-cell--fastest-team"><a href="https://www.nitrotype.com/team/STACL" target="_blank" class="team-text">"Stars Collector"</a></td>
+				<td class="table-cell table-cell--members">20</td>
+				<td class="table-cell table-cell--fastest-team-wpm">96</td>
+			</tr>
+			<tr class="table-row table-row--nonpodium">
+				<td class="table-cell table-cell--place place-number">73</td>
+				<td class="table-cell table-cell--tag"><span class="tag-text" style="color: #f5eb21;">[NTRO]</span></td>
+				<td class="table-cell table-cell--fastest-team"><a href="https://www.nitrotype.com/team/NTRO" target="_blank" class="team-text">"The Nitro Federation"</a></td>
+				<td class="table-cell table-cell--members">25</td>
+				<td class="table-cell table-cell--fastest-team-wpm">96</td>
+			</tr>
+			<tr class="table-row table-row--nonpodium">
+				<td class="table-cell table-cell--place place-number">74</td>
+				<td class="table-cell table-cell--tag"><span class="tag-text" style="color: #ee1f25;">[91]</span></td>
+				<td class="table-cell table-cell--fastest-team"><a href="https://www.nitrotype.com/team/91" target="_blank" class="team-text">"Team 91"</a></td>
+				<td class="table-cell table-cell--members">29</td>
+				<td class="table-cell table-cell--fastest-team-wpm">96</td>
+			</tr>
+			<tr class="table-row table-row--nonpodium">
+				<td class="table-cell table-cell--place place-number">75</td>
+				<td class="table-cell table-cell--tag"><span class="tag-text" style="color: #fba51a;">[MEYBO]</span></td>
+				<td class="table-cell table-cell--fastest-team"><a href="https://www.nitrotype.com/team/MEYBO" target="_blank" class="team-text">"discord gg ntcom "</a></td>
+				<td class="table-cell table-cell--members">43</td>
+				<td class="table-cell table-cell--fastest-team-wpm">96</td>
+			</tr>
+			<tr class="table-row table-row--nonpodium">
+				<td class="table-cell table-cell--place place-number">76</td>
+				<td class="table-cell table-cell--tag"><span class="tag-text" style="color: #ee1f25;">[P1RE]</span></td>
+				<td class="table-cell table-cell--fastest-team"><a href="https://www.nitrotype.com/team/P1RE" target="_blank" class="team-text">"Emp1re Reborn"</a></td>
+				<td class="table-cell table-cell--members">17</td>
+				<td class="table-cell table-cell--fastest-team-wpm">96</td>
+			</tr>
+			<tr class="table-row table-row--nonpodium">
+				<td class="table-cell table-cell--place place-number">77</td>
+				<td class="table-cell table-cell--tag"><span class="tag-text" style="color: #f5eb21;">[DONATS]</span></td>
+				<td class="table-cell table-cell--fastest-team"><a href="https://www.nitrotype.com/team/DONATS" target="_blank" class="team-text">"40 mil comp rn"</a></td>
+				<td class="table-cell table-cell--members">49</td>
+				<td class="table-cell table-cell--fastest-team-wpm">96</td>
+			</tr>
+			<tr class="table-row table-row--nonpodium">
+				<td class="table-cell table-cell--place place-number">78</td>
+				<td class="table-cell table-cell--tag"><span class="tag-text" style="color: #40b8ea;">[NIP]</span></td>
+				<td class="table-cell table-cell--fastest-team"><a href="https://www.nitrotype.com/team/NIP" target="_blank" class="team-text">"We-Race-For-Fun"</a></td>
+				<td class="table-cell table-cell--members">11</td>
+				<td class="table-cell table-cell--fastest-team-wpm">95</td>
+			</tr>
+			<tr class="table-row table-row--nonpodium">
+				<td class="table-cell table-cell--place place-number">79</td>
+				<td class="table-cell table-cell--tag"><span class="tag-text" style="color: #71c055;">[SHWARM]</span></td>
+				<td class="table-cell table-cell--fastest-team"><a href="https://www.nitrotype.com/team/SHWARM" target="_blank" class="team-text">"SHWARM when we done"</a></td>
+				<td class="table-cell table-cell--members">34</td>
+				<td class="table-cell table-cell--fastest-team-wpm">95</td>
+			</tr>
+			<tr class="table-row table-row--nonpodium">
+				<td class="table-cell table-cell--place place-number">80</td>
+				<td class="table-cell table-cell--tag"><span class="tag-text" style="color: #436fb6;">[IXU]</span></td>
+				<td class="table-cell table-cell--fastest-team"><a href="https://www.nitrotype.com/team/IXU" target="_blank" class="team-text">"International Unity"</a></td>
+				<td class="table-cell table-cell--members">12</td>
+				<td class="table-cell table-cell--fastest-team-wpm">95</td>
+			</tr>
+			<tr class="table-row table-row--nonpodium">
+				<td class="table-cell table-cell--place place-number">81</td>
+				<td class="table-cell table-cell--tag"><span class="tag-text" style="color: #ee1f25;">[WW]</span></td>
+				<td class="table-cell table-cell--fastest-team"><a href="https://www.nitrotype.com/team/WW" target="_blank" class="team-text">"the kings win"</a></td>
+				<td class="table-cell table-cell--members">34</td>
+				<td class="table-cell table-cell--fastest-team-wpm">95</td>
+			</tr>
+			<tr class="table-row table-row--nonpodium">
+				<td class="table-cell table-cell--place place-number">82</td>
+				<td class="table-cell table-cell--tag"><span class="tag-text" style="color: #40b8ea;">[GR86]</span></td>
+				<td class="table-cell table-cell--fastest-team"><a href="https://www.nitrotype.com/team/GR86" target="_blank" class="team-text">"Racing Club Alpha"</a></td>
+				<td class="table-cell table-cell--members">30</td>
+				<td class="table-cell table-cell--fastest-team-wpm">95</td>
+			</tr>
+			<tr class="table-row table-row--nonpodium">
+				<td class="table-cell table-cell--place place-number">83</td>
+				<td class="table-cell table-cell--tag"><span class="tag-text" style="color: #ee1f25;">[ZL]</span></td>
+				<td class="table-cell table-cell--fastest-team"><a href="https://www.nitrotype.com/team/ZL" target="_blank" class="team-text">"eRacers"</a></td>
+				<td class="table-cell table-cell--members">49</td>
+				<td class="table-cell table-cell--fastest-team-wpm">95</td>
+			</tr>
+			<tr class="table-row table-row--nonpodium">
+				<td class="table-cell table-cell--place place-number">84</td>
+				<td class="table-cell table-cell--tag"><span class="tag-text" style="color: #ee1f25;">[UT]</span></td>
+				<td class="table-cell table-cell--fastest-team"><a href="https://www.nitrotype.com/team/UT" target="_blank" class="team-text">"Ultra Typers"</a></td>
+				<td class="table-cell table-cell--members">13</td>
+				<td class="table-cell table-cell--fastest-team-wpm">95</td>
+			</tr>
+			<tr class="table-row table-row--nonpodium">
+				<td class="table-cell table-cell--place place-number">85</td>
+				<td class="table-cell table-cell--tag"><span class="tag-text" style="color: #71c055;">[1U1U]</span></td>
+				<td class="table-cell table-cell--fastest-team"><a href="https://www.nitrotype.com/team/1U1U" target="_blank" class="team-text">"BEST TEAM OF ALL YAL"</a></td>
+				<td class="table-cell table-cell--members">50</td>
+				<td class="table-cell table-cell--fastest-team-wpm">94</td>
+			</tr>
+			<tr class="table-row table-row--nonpodium">
+				<td class="table-cell table-cell--place place-number">86</td>
+				<td class="table-cell table-cell--tag"><span class="tag-text" style="color: #ac8bc0;">[B2T]</span></td>
+				<td class="table-cell table-cell--fastest-team"><a href="https://www.nitrotype.com/team/B2T" target="_blank" class="team-text">"Born 2 Type"</a></td>
+				<td class="table-cell table-cell--members">13</td>
+				<td class="table-cell table-cell--fastest-team-wpm">94</td>
+			</tr>
+			<tr class="table-row table-row--nonpodium">
+				<td class="table-cell table-cell--place place-number">87</td>
+				<td class="table-cell table-cell--tag"><span class="tag-text" style="color: #ee1f25;">[XD]</span></td>
+				<td class="table-cell table-cell--fastest-team"><a href="https://www.nitrotype.com/team/XD" target="_blank" class="team-text">"150M COMP NOW"</a></td>
+				<td class="table-cell table-cell--members">42</td>
+				<td class="table-cell table-cell--fastest-team-wpm">94</td>
+			</tr>
+			<tr class="table-row table-row--nonpodium">
+				<td class="table-cell table-cell--place place-number">88</td>
+				<td class="table-cell table-cell--tag"><span class="tag-text" style="color: #aad596;">[QX]</span></td>
+				<td class="table-cell table-cell--fastest-team"><a href="https://www.nitrotype.com/team/QX" target="_blank" class="team-text">"FaYte Faith In Bots"</a></td>
+				<td class="table-cell table-cell--members">24</td>
+				<td class="table-cell table-cell--fastest-team-wpm">94</td>
+			</tr>
+			<tr class="table-row table-row--nonpodium">
+				<td class="table-cell table-cell--place place-number">89</td>
+				<td class="table-cell table-cell--tag"><span class="tag-text" style="color: #40b8ea;">[QED]</span></td>
+				<td class="table-cell table-cell--fastest-team"><a href="https://www.nitrotype.com/team/QED" target="_blank" class="team-text">"Keyboard Kids"</a></td>
+				<td class="table-cell table-cell--members">16</td>
+				<td class="table-cell table-cell--fastest-team-wpm">94</td>
+			</tr>
+			<tr class="table-row table-row--nonpodium">
+				<td class="table-cell table-cell--place place-number">90</td>
+				<td class="table-cell table-cell--tag"><span class="tag-text" style="color: #f5eb21;">[ENTR]</span></td>
+				<td class="table-cell table-cell--fastest-team"><a href="https://www.nitrotype.com/team/ENTR" target="_blank" class="team-text">"Elite NT Racers"</a></td>
+				<td class="table-cell table-cell--members">31</td>
+				<td class="table-cell table-cell--fastest-team-wpm">94</td>
+			</tr>
+			<tr class="table-row table-row--nonpodium">
+				<td class="table-cell table-cell--place place-number">91</td>
+				<td class="table-cell table-cell--tag"><span class="tag-text" style="color: #daedfa;">[XIII]</span></td>
+				<td class="table-cell table-cell--fastest-team"><a href="https://www.nitrotype.com/team/XIII" target="_blank" class="team-text">"Thirteen"</a></td>
+				<td class="table-cell table-cell--members">11</td>
+				<td class="table-cell table-cell--fastest-team-wpm">93</td>
+			</tr>
+			<tr class="table-row table-row--nonpodium">
+				<td class="table-cell table-cell--place place-number">92</td>
+				<td class="table-cell table-cell--tag"><span class="tag-text" style="color: #5b52a3;">[EXRT]</span></td>
+				<td class="table-cell table-cell--fastest-team"><a href="https://www.nitrotype.com/team/EXRT" target="_blank" class="team-text">"ExtraterrestriaI"</a></td>
+				<td class="table-cell table-cell--members">12</td>
+				<td class="table-cell table-cell--fastest-team-wpm">93</td>
+			</tr>
+			<tr class="table-row table-row--nonpodium">
+				<td class="table-cell table-cell--place place-number">93</td>
+				<td class="table-cell table-cell--tag"><span class="tag-text" style="color: #436fb6;">[STTRY]</span></td>
+				<td class="table-cell table-cell--fastest-team"><a href="https://www.nitrotype.com/team/STTRY" target="_blank" class="team-text">"Starry Nights"</a></td>
+				<td class="table-cell table-cell--members">22</td>
+				<td class="table-cell table-cell--fastest-team-wpm">93</td>
+			</tr>
+			<tr class="table-row table-row--nonpodium">
+				<td class="table-cell table-cell--place place-number">94</td>
+				<td class="table-cell table-cell--tag"><span class="tag-text" style="color: #daedfa;">[TOPGOD]</span></td>
+				<td class="table-cell table-cell--fastest-team"><a href="https://www.nitrotype.com/team/TOPGOD" target="_blank" class="team-text">"NitroType Gods"</a></td>
+				<td class="table-cell table-cell--members">40</td>
+				<td class="table-cell table-cell--fastest-team-wpm">92</td>
+			</tr>
+			<tr class="table-row table-row--nonpodium">
+				<td class="table-cell table-cell--place place-number">95</td>
+				<td class="table-cell table-cell--tag"><span class="tag-text" style="color: #436fb6;">[DCMY]</span></td>
+				<td class="table-cell table-cell--fastest-team"><a href="https://www.nitrotype.com/team/DCMY" target="_blank" class="team-text">"Duke City Mythicals"</a></td>
+				<td class="table-cell table-cell--members">25</td>
+				<td class="table-cell table-cell--fastest-team-wpm">92</td>
+			</tr>
+			<tr class="table-row table-row--nonpodium">
+				<td class="table-cell table-cell--place place-number">96</td>
+				<td class="table-cell table-cell--tag"><span class="tag-text" style="color: #ee1f25;">[NBR]</span></td>
+				<td class="table-cell table-cell--fastest-team"><a href="https://www.nitrotype.com/team/NBR" target="_blank" class="team-text">"Nitro Buckets"</a></td>
+				<td class="table-cell table-cell--members">49</td>
+				<td class="table-cell table-cell--fastest-team-wpm">92</td>
+			</tr>
+			<tr class="table-row table-row--nonpodium">
+				<td class="table-cell table-cell--place place-number">97</td>
+				<td class="table-cell table-cell--tag"><span class="tag-text" style="color: #c5acd3;">[0T7]</span></td>
+				<td class="table-cell table-cell--fastest-team"><a href="https://www.nitrotype.com/team/0T7" target="_blank" class="team-text">"froggyniku9000+"</a></td>
+				<td class="table-cell table-cell--members">21</td>
+				<td class="table-cell table-cell--fastest-team-wpm">92</td>
+			</tr>
+			<tr class="table-row table-row--nonpodium">
+				<td class="table-cell table-cell--place place-number">98</td>
+				<td class="table-cell table-cell--tag"><span class="tag-text" style="color: #40b8ea;">[AUTHOR]</span></td>
+				<td class="table-cell table-cell--fastest-team"><a href="https://www.nitrotype.com/team/AUTHOR" target="_blank" class="team-text">"Authors"</a></td>
+				<td class="table-cell table-cell--members">39</td>
+				<td class="table-cell table-cell--fastest-team-wpm">92</td>
+			</tr>
+			<tr class="table-row table-row--nonpodium">
+				<td class="table-cell table-cell--place place-number">99</td>
+				<td class="table-cell table-cell--tag"><span class="tag-text" style="color: #71c055;">[R3]</span></td>
+				<td class="table-cell table-cell--fastest-team"><a href="https://www.nitrotype.com/team/R3" target="_blank" class="team-text">"Regeneration Third"</a></td>
+				<td class="table-cell table-cell--members">20</td>
+				<td class="table-cell table-cell--fastest-team-wpm">91</td>
+			</tr>
+			<tr class="table-row table-row--nonpodium">
+				<td class="table-cell table-cell--place place-number">100</td>
+				<td class="table-cell table-cell--tag"><span class="tag-text" style="color: #f5eb21;">[SIL]</span></td>
+				<td class="table-cell table-cell--fastest-team"><a href="https://www.nitrotype.com/team/SIL" target="_blank" class="team-text">"Sinaloas"</a></td>
+				<td class="table-cell table-cell--members">23</td>
+				<td class="table-cell table-cell--fastest-team-wpm">91</td>
 			</tr>
 		</tbody>
 	</table>
