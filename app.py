@@ -10,12 +10,13 @@ def index():
 @app.route('/tab/<tabName>')
 def get_tab_content(tabName):
 	try:
-		with open(f'pages\\{tabName}.html', 'r', encoding='utf-8') as file:
-			content = file.read()
-		return content
+		return render_template(f'{tabName}.html')
+		#with open(f'pages\\{tabName}.html', 'r', encoding='utf-8') as file:
+		#	content = file.read()
+		#return content
 	except Exception as e:
-		print(f"Error: {str(e)}")
-		return f"Content for {tabName} not found."
+		#print(f"Error: {str(e)}")
+		return f"Content for {tabName} not found.\nError: {str(e)}"
 
 if __name__ == '__main__':
 	app.run()
