@@ -104,81 +104,6 @@ body {
 	overflow: visible;
 }
 
-/* Both Racers and Teams */
-.table-cell--place {
-	width: 9%;
-	text-align: center;
-}
-.table-cell--wpm {
-	width: 11%;
-}
-.table-cell--races {
-	width: 13%;
-}
-.table-cell--points {
-	width: 15%;
-}
-
-/* Racers */
-.table-cell--car {
-	width: 12%;
-}
-.table-cell--racer {
-	width: 40%;
-}
-.table-cell--fastest-racer {
-	width: 68%;
-}
-.table-cell--hof-fastest-racer {
-	width: 62%;
-}
-.table-cell--current-wpm {
-	width: 17%;
-}
-.table-cell--18 {
-	width: 18%;
-}
-.table-cell--61 {
-	width: 61%;
-}
-
-/* Teams */
-.table-cell--tag {
-	width: 12%;
-}
-.table-cell--team {
-	width: 39%;
-}
-.table-cell--fastest-team {
-	width: 51%;
-}
-.table-cell--fastest-team-wpm {
-	width: 16%;
-}
-.table-cell--members {
-	width: 12%;
-}
-.table-cell--most-active-team {
-	width: 50%;
-}
-.table-cell--most-active-teams-races {
-	width: 17%;
-}
-
-/* Rarest Cars */
-.table-cell--car-name {
-	width: 30%;
-}
-.table-cell--players-own {
-	width: 14%;
-}
-.table-cell--pct-players-own {
-	width: 19%;
-}
-.table-cell--availability {
-	width: 16%;
-}
-
 .medal {
 	max-width: 100%;
 	height: auto;
@@ -192,6 +117,29 @@ body {
 	height: auto;
 	display: block;
 	text-align: center;
+}
+
+.stats-car {
+	width: 90px;
+	height: auto;
+	padding: 0;
+	margin-left: 5px;
+	margin-right: 2px;
+	margin-top: 0;
+	margin-bottom: 0;
+	vertical-align: middle;
+}
+
+li {
+	margin-bottom: 5px;
+}
+
+.extra-space {
+	margin-bottom: 8px;
+}
+
+.no-space {
+	margin: 0;
 }
 
 .place-number {
@@ -215,7 +163,6 @@ body {
 
 .display-name {
 	padding-left: 0.3%;
-	color: #F9D034;
 	text-decoration: none;
 	font-family: "Montserrat", sans-serif;
 	font-size: 16px;
@@ -519,15 +466,18 @@ h2 {
 }
 
 .hall-of-fame-button {
-	flex: 1;
+	flex: 1 0 14%;
 	margin-left: 8px;
 	margin-right: 8px;
+	margin-bottom: 4px;
+	margin-top: 4px;
 	padding: 4px;
 	font-family: "Montserrat", sans-serif;
 	font-size: 14px;
 	border-width: 1px;
     border-style: solid;
 	border-radius: 5px;
+	box-sizing: border-box;
 }
 
 .hall-of-fame-buttons {
@@ -536,4 +486,9 @@ h2 {
 	padding-right: 10px;
 	display: flex;
 	box-sizing: inherit;
+	flex-wrap: wrap;
+}
+
+.not-visible-button {
+	visibility: hidden;
 }

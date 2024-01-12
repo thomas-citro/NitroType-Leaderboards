@@ -1,877 +1,2189 @@
 
-<div class="leaderboard-box">
-	<div class="tabs">
-		<button class="tab not-active" onclick="changeTab('top_racers_season')">
-			<div class="icon-text-container">
-				<svg xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd" viewBox="0 0 24 24" id="icon-rank" width="18" height="18" fill="white">
-					<path
-						d="M3.19 19.989L1 20.292l1.594 1.532L2.205 24l1.949-1.043L6.104 24l-.389-2.176 1.594-1.532-2.19-.303L4.154 18l-.964 1.989zm8 0L9 20.292l1.594 1.532L10.205 24l1.949-1.043L14.104 24l-.389-2.176 1.594-1.532-2.19-.303L12.154 18l-.964 1.989zm7.691 0l-2.19.303 1.594 1.532L17.896 24l1.949-1.043L21.795 24l-.389-2.176L23 20.292l-2.19-.303L19.845 18l-.964 1.989zm-.129-7.171c-2.436-.562-5.206-1.055-4.108-3.129C17.986 3.376 15.53 0 12 0 8.401 0 6.004 3.506 9.356 9.689c1.131 2.086-1.725 2.579-4.109 3.129-2.176.502-2.258 1.583-2.251 3.474L3 17h18l.003-.686c.008-1.904-.066-2.992-2.251-3.496z"
-					/>
-				</svg>
-				<div class="tab--text">Top Racers</div>
-			</div>
-		</button>
-		<button class="tab not-active" onclick="changeTab('top_teams_season')">
-			<div class="icon-text-container">
-				<svg xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd" viewBox="0 0 24 24" id="icon-rank-team" width="18" height="18" fill="white">
-					<path
-						d="M20.624 22.474L19 21.605l-1.625.869.324-1.813-1.328-1.277 1.825-.252.804-1.658.804 1.658 1.825.252-1.329 1.277.324 1.813zm-7 0L12 21.605l-1.625.869.325-1.813-1.329-1.277 1.825-.252.804-1.658.804 1.658 1.825.252-1.329 1.277.324 1.813zm-7 0L5 21.605l-1.625.869.325-1.813-1.329-1.277 1.825-.252L5 17.474l.804 1.658 1.825.252L6.3 20.661l.324 1.813zM23 15.974H1a1 1 0 00-1 1v6a1 1 0 001 1h22a1 1 0 001-1v-6a1 1 0 00-1-1zm-22.998-1H5c.008-1.214-.001-2.289 0-3.013.005-3.993 1.749-3.116 1.749-6.663 0-1.507-.983-2.324-2.248-2.324-1.869 0-3.169 1.787-1.399 5.129.581 1.099-.62 1.359-1.91 1.657C.074 10.018 0 10.807 0 11.753l.002 3.221zM22.808 9.76c-1.29-.298-2.491-.558-1.91-1.657 1.77-3.342.47-5.129-1.399-5.129-1.265 0-2.248.817-2.248 2.324 0 3.324 1.719 2.704 1.749 6.676.008.972-.009 1.311 0 3h4.998L24 11.753c0-.946-.074-1.735-1.192-1.993zm-4.811 5.214H6.002L6 11.848c0-1.258.1-2.482 1.588-2.826 1.684-.389 3.344-.736 2.545-2.209-2.366-4.364-.674-6.839 1.866-6.839 2.491 0 4.226 2.383 1.866 6.839-.775 1.464.826 1.812 2.545 2.209 1.49.344 1.589 1.569 1.589 2.829l-.002 3.123z"
-					/>
-				</svg>
-				<div class="tab--text">Top Teams</div>
-			</div>
-		</button>
-		<button class="tab not-active" onclick="changeTab('hof_most_active_racers')">
-			<div class="icon-text-container">
-				<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" id="icon-trophy" width="18" height="18" fill="white">
-					<path
-						d="M13.408 18C13.906 14.053 19 10.803 19 1H5c0 9.803 5.105 13.053 5.604 17h2.804zM9.794 6.528l1.46-.202L11.897 5l.643 1.326 1.46.202-1.063 1.021.26 1.451-1.3-.695-1.3.695.26-1.451-1.063-1.021zm-3.803 4.128c.286.638.585 1.231.882 1.783C2.808 11.091.372 7.105 0 3h4.077c.036.482.08.955.139 1.405H1.527c.427 2.001 1.549 4.729 4.464 6.251zM16 21.619V23H8v-1.381c1.941 0 2.369-1.433 2.571-2.619h2.866c.193 1.187.565 2.619 2.563 2.619zM24 3c-.372 4.105-2.808 8.091-6.873 9.438.297-.552.596-1.145.882-1.783 2.915-1.521 4.037-4.25 4.464-6.251h-2.688c.059-.45.103-.922.139-1.405H24z"
-					/>
-				</svg>
-				<div class="tab--text">Hall of Fame</div>
-			</div>
-		</button>
-		<button class="tab is-active">
-			<div class="icon-text-container">
-				<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" id="icon-diamond" width="18" height="18" fill="white">
-					<path
-						d="M18 1H6.084L0 8l12 15L24 8.083 18 1zM6.333 9l3.231 7.753L3.361 9h2.972zM15.5 9L12 17.4 8.5 9h7zM9.135 7L12 3.562 14.865 7h-5.73zm8.532 2h3.028l-6.283 7.811L17.667 9zm2.794-2h-2.992l-3.334-4h2.938l3.388 4zM6.996 3h2.869L6.531 7H3.52l3.476-4z"
-					/>
-				</svg>
-				<div class="tab--text">Rarest Cars</div>
-			</div>
-		</button>
-		<button class="tab not-active" onclick="changeTab('site_stats')">
-			<div class="icon-text-container">
-				<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" id="icon-chart" width="18" height="18" fill="white">
-					<path d="M7 19H1V8h6v11zm8-18H9v18h6V1zm8 11h-6v7h6v-7zm1 9H0v2h24v-2z" />
-				</svg>
-				<div class="tab--text">Site Stats</div>
-			</div>
-		</button>
-		<button class="tab not-active" onclick="changeTab('more_info')">
-			<div class="icon-text-container">
-				<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" id="icon-info" width="18" height="18" fill="white">
-					<path
-						d="M12 2c5.514 0 10 4.486 10 10s-4.486 10-10 10S2 17.514 2 12 6.486 2 12 2zm0-2C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm-.001 5.75c.69 0 1.251.56 1.251 1.25s-.561 1.25-1.251 1.25a1.25 1.25 0 010-2.5zM14 18h-4v-1c.484-.179 1-.201 1-.735v-4.467c0-.534-.516-.618-1-.797v-1h3v6.265c0 .535.517.558 1 .735V18z"
-					/>
-				</svg>
-				<div class="tab--text">More Info</div>
-			</div>
-		</button>
+	<div class="leaderboard-box">
+	
+		<div class="tabs">
+	
+			<button class="tab not-active" onclick="changeTab('top_racers_season')">
+				<div class="icon-text-container">
+					<svg xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd" viewBox="0 0 24 24" id="icon-rank" width="18" height="18" fill="white">
+						<path
+							d="M3.19 19.989L1 20.292l1.594 1.532L2.205 24l1.949-1.043L6.104 24l-.389-2.176 1.594-1.532-2.19-.303L4.154 18l-.964 1.989zm8 0L9 20.292l1.594 1.532L10.205 24l1.949-1.043L14.104 24l-.389-2.176 1.594-1.532-2.19-.303L12.154 18l-.964 1.989zm7.691 0l-2.19.303 1.594 1.532L17.896 24l1.949-1.043L21.795 24l-.389-2.176L23 20.292l-2.19-.303L19.845 18l-.964 1.989zm-.129-7.171c-2.436-.562-5.206-1.055-4.108-3.129C17.986 3.376 15.53 0 12 0 8.401 0 6.004 3.506 9.356 9.689c1.131 2.086-1.725 2.579-4.109 3.129-2.176.502-2.258 1.583-2.251 3.474L3 17h18l.003-.686c.008-1.904-.066-2.992-2.251-3.496z"
+						/>
+					</svg>
+					<div class="tab--text">Top Racers</div>
+				</div>
+			</button>
+	
+			<button class="tab not-active" onclick="changeTab('top_teams_season')">
+				<div class="icon-text-container">
+					<svg xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd" viewBox="0 0 24 24" id="icon-rank-team" width="18" height="18" fill="white">
+						<path
+							d="M20.624 22.474L19 21.605l-1.625.869.324-1.813-1.328-1.277 1.825-.252.804-1.658.804 1.658 1.825.252-1.329 1.277.324 1.813zm-7 0L12 21.605l-1.625.869.325-1.813-1.329-1.277 1.825-.252.804-1.658.804 1.658 1.825.252-1.329 1.277.324 1.813zm-7 0L5 21.605l-1.625.869.325-1.813-1.329-1.277 1.825-.252L5 17.474l.804 1.658 1.825.252L6.3 20.661l.324 1.813zM23 15.974H1a1 1 0 00-1 1v6a1 1 0 001 1h22a1 1 0 001-1v-6a1 1 0 00-1-1zm-22.998-1H5c.008-1.214-.001-2.289 0-3.013.005-3.993 1.749-3.116 1.749-6.663 0-1.507-.983-2.324-2.248-2.324-1.869 0-3.169 1.787-1.399 5.129.581 1.099-.62 1.359-1.91 1.657C.074 10.018 0 10.807 0 11.753l.002 3.221zM22.808 9.76c-1.29-.298-2.491-.558-1.91-1.657 1.77-3.342.47-5.129-1.399-5.129-1.265 0-2.248.817-2.248 2.324 0 3.324 1.719 2.704 1.749 6.676.008.972-.009 1.311 0 3h4.998L24 11.753c0-.946-.074-1.735-1.192-1.993zm-4.811 5.214H6.002L6 11.848c0-1.258.1-2.482 1.588-2.826 1.684-.389 3.344-.736 2.545-2.209-2.366-4.364-.674-6.839 1.866-6.839 2.491 0 4.226 2.383 1.866 6.839-.775 1.464.826 1.812 2.545 2.209 1.49.344 1.589 1.569 1.589 2.829l-.002 3.123z"
+						/>
+					</svg>
+					<div class="tab--text">Top Teams</div>
+				</div>
+			</button>
+	
+			<button class="tab not-active" onclick="changeTab('hof_most_active_racers')">
+				<div class="icon-text-container">
+					<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" id="icon-trophy" width="18" height="18" fill="white">
+						<path
+							d="M13.408 18C13.906 14.053 19 10.803 19 1H5c0 9.803 5.105 13.053 5.604 17h2.804zM9.794 6.528l1.46-.202L11.897 5l.643 1.326 1.46.202-1.063 1.021.26 1.451-1.3-.695-1.3.695.26-1.451-1.063-1.021zm-3.803 4.128c.286.638.585 1.231.882 1.783C2.808 11.091.372 7.105 0 3h4.077c.036.482.08.955.139 1.405H1.527c.427 2.001 1.549 4.729 4.464 6.251zM16 21.619V23H8v-1.381c1.941 0 2.369-1.433 2.571-2.619h2.866c.193 1.187.565 2.619 2.563 2.619zM24 3c-.372 4.105-2.808 8.091-6.873 9.438.297-.552.596-1.145.882-1.783 2.915-1.521 4.037-4.25 4.464-6.251h-2.688c.059-.45.103-.922.139-1.405H24z"
+						/>
+					</svg>
+					<div class="tab--text">Hall of Fame</div>
+				</div>
+			</button>
+	
+			<button class="tab is-active">
+				<div class="icon-text-container">
+					<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" id="icon-diamond" width="18" height="18" fill="white">
+						<path
+							d="M18 1H6.084L0 8l12 15L24 8.083 18 1zM6.333 9l3.231 7.753L3.361 9h2.972zM15.5 9L12 17.4 8.5 9h7zM9.135 7L12 3.562 14.865 7h-5.73zm8.532 2h3.028l-6.283 7.811L17.667 9zm2.794-2h-2.992l-3.334-4h2.938l3.388 4zM6.996 3h2.869L6.531 7H3.52l3.476-4z"
+						/>
+					</svg>
+					<div class="tab--text">Rarest Cars</div>
+				</div>
+			</button>
+	
+			<button class="tab not-active" onclick="changeTab('site_stats')">
+				<div class="icon-text-container">
+					<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" id="icon-chart" width="18" height="18" fill="white">
+						<path d="M7 19H1V8h6v11zm8-18H9v18h6V1zm8 11h-6v7h6v-7zm1 9H0v2h24v-2z" />
+					</svg>
+					<div class="tab--text">Site Stats</div>
+				</div>
+			</button>
+	
+			<button class="tab not-active" onclick="changeTab('more_info')">
+				<div class="icon-text-container">
+					<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" id="icon-info" width="18" height="18" fill="white">
+						<path
+							d="M12 2c5.514 0 10 4.486 10 10s-4.486 10-10 10S2 17.514 2 12 6.486 2 12 2zm0-2C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm-.001 5.75c.69 0 1.251.56 1.251 1.25s-.561 1.25-1.251 1.25a1.25 1.25 0 010-2.5zM14 18h-4v-1c.484-.179 1-.201 1-.735v-4.467c0-.534-.516-.618-1-.797v-1h3v6.265c0 .535.517.558 1 .735V18z"
+						/>
+					</svg>
+					<div class="tab--text">More Info</div>
+				</div>
+			</button>
+	
+		</div>
+	
+		<table class="table">
+	
+			<thead>
+				<tr class="table-header">
+					<th scope="col" class="table-cell" style="width: 9%;"></th>
+					<th scope="col" class="table-cell" style="width: 12%;">Car</th>
+					<th scope="col" class="table-cell" style="width: 30%;"></th>
+					<th scope="col" class="table-cell" style="width: 16%;">Availability</th>
+					<th scope="col" class="table-cell" style="width: 14%;">Players Own</th>
+					<th scope="col" class="table-cell" style="width: 19%;">Percent Players Own</th>
+				</tr>
+			</thead>
+	
+			<tbody class="table-body">
+	
+				<tr class="table-row table-row--gold">
+					<td class="table-cell table-cell--place" KeyError><img class="medal" src="/static/images/gold.png"/></td>
+	
+					<td class="table-cell" style="width: 12%;"><img class="car-img" src="/static/images/cars/
+	104.png"/></td>
+	
+					<td class="table-cell" style="width: 30%;">
+	Corndog's Car</td>
+	
+					<td class="table-cell" style="width: 16%;">
+	Exclusive</td>
+	
+					<td class="table-cell" style="width: 14%;">
+	2</td>
+	
+					<td class="table-cell" style="width: 19%;">
+	0.00058%</td>
+	
+				</tr>
+	
+				<tr class="table-row table-row--silver">
+					<td class="table-cell table-cell--place" KeyError><img class="medal" src="/static/images/silver.png" /></td>
+	
+					<td class="table-cell" style="width: 12%;"><img class="car-img" src="/static/images/cars/
+	172.png"/></td>
+	
+					<td class="table-cell" style="width: 30%;">
+	Travis' Truck</td>
+	
+					<td class="table-cell" style="width: 16%;">
+	Exclusive</td>
+	
+					<td class="table-cell" style="width: 14%;">
+	2</td>
+	
+					<td class="table-cell" style="width: 19%;">
+	0.00058%</td>
+	
+				</tr>
+	
+				<tr class="table-row table-row--bronze">
+					<td class="table-cell table-cell--place" KeyError><img class="medal" src="/static/images/bronze.png" /></td>
+	
+					<td class="table-cell" style="width: 12%;"><img class="car-img" src="/static/images/cars/
+	203.png"/></td>
+	
+					<td class="table-cell" style="width: 30%;">
+	Liberty Danger 9</td>
+	
+					<td class="table-cell" style="width: 16%;">
+	Exclusive</td>
+	
+					<td class="table-cell" style="width: 14%;">
+	2</td>
+	
+					<td class="table-cell" style="width: 19%;">
+	0.00058%</td>
+	
+				</tr>
+	
+				<tr class="table-row table-row--nonpodium">
+					<td class="table-cell table-cell--place place-number" KeyError>
+	4</td>
+	
+					<td class="table-cell" style="width: 12%;"><img class="car-img" src="/static/images/cars/
+	313.png"/></td>
+	
+					<td class="table-cell" style="width: 30%;">
+	The Wildflower 750</td>
+	
+					<td class="table-cell" style="width: 16%;">
+	Obtainable</td>
+	
+					<td class="table-cell" style="width: 14%;">
+	2</td>
+	
+					<td class="table-cell" style="width: 19%;">
+	0.00058%</td>
+	
+				</tr>
+	
+				<tr class="table-row table-row--nonpodium">
+					<td class="table-cell table-cell--place place-number" KeyError>
+	5</td>
+	
+					<td class="table-cell" style="width: 12%;"><img class="car-img" src="/static/images/cars/
+	345.png"/></td>
+	
+					<td class="table-cell" style="width: 30%;">
+	Nitreux Vielleux</td>
+	
+					<td class="table-cell" style="width: 16%;">
+	Exclusive</td>
+	
+					<td class="table-cell" style="width: 14%;">
+	2</td>
+	
+					<td class="table-cell" style="width: 19%;">
+	0.00058%</td>
+	
+				</tr>
+	
+				<tr class="table-row table-row--nonpodium">
+					<td class="table-cell table-cell--place place-number" KeyError>
+	6</td>
+	
+					<td class="table-cell" style="width: 12%;"><img class="car-img" src="/static/images/cars/
+	333.png"/></td>
+	
+					<td class="table-cell" style="width: 30%;">
+	Liberty YT-5K</td>
+	
+					<td class="table-cell" style="width: 16%;">
+	Obtainable</td>
+	
+					<td class="table-cell" style="width: 14%;">
+	3</td>
+	
+					<td class="table-cell" style="width: 19%;">
+	0.00087%</td>
+	
+				</tr>
+	
+				<tr class="table-row table-row--nonpodium">
+					<td class="table-cell table-cell--place place-number" KeyError>
+	7</td>
+	
+					<td class="table-cell" style="width: 12%;"><img class="car-img" src="/static/images/cars/
+	204.png"/></td>
+	
+					<td class="table-cell" style="width: 30%;">
+	The Wild 500</td>
+	
+					<td class="table-cell" style="width: 16%;">
+	Obtainable</td>
+	
+					<td class="table-cell" style="width: 14%;">
+	4</td>
+	
+					<td class="table-cell" style="width: 19%;">
+	0.00116%</td>
+	
+				</tr>
+	
+				<tr class="table-row table-row--nonpodium">
+					<td class="table-cell table-cell--place place-number" KeyError>
+	8</td>
+	
+					<td class="table-cell" style="width: 12%;"><img class="car-img" src="/static/images/cars/
+	175.png"/></td>
+	
+					<td class="table-cell" style="width: 30%;">
+	NT Gold</td>
+	
+					<td class="table-cell" style="width: 16%;">
+	Exclusive</td>
+	
+					<td class="table-cell" style="width: 14%;">
+	5</td>
+	
+					<td class="table-cell" style="width: 19%;">
+	0.00145%</td>
+	
+				</tr>
+	
+				<tr class="table-row table-row--nonpodium">
+					<td class="table-cell table-cell--place place-number" KeyError>
+	9</td>
+	
+					<td class="table-cell" style="width: 12%;"><img class="car-img" src="/static/images/cars/
+	170.png"/></td>
+	
+					<td class="table-cell" style="width: 30%;">
+	can hav nt g0ld plx?</td>
+	
+					<td class="table-cell" style="width: 16%;">
+	Exclusive</td>
+	
+					<td class="table-cell" style="width: 14%;">
+	7</td>
+	
+					<td class="table-cell" style="width: 19%;">
+	0.00203%</td>
+	
+				</tr>
+	
+				<tr class="table-row table-row--nonpodium">
+					<td class="table-cell table-cell--place place-number" KeyError>
+	10</td>
+	
+					<td class="table-cell" style="width: 12%;"><img class="car-img" src="/static/images/cars/
+	166.png"/></td>
+	
+					<td class="table-cell" style="width: 30%;">
+	The Wildflower</td>
+	
+					<td class="table-cell" style="width: 16%;">
+	Obtainable</td>
+	
+					<td class="table-cell" style="width: 14%;">
+	42</td>
+	
+					<td class="table-cell" style="width: 19%;">
+	0.01219%</td>
+	
+				</tr>
+	
+				<tr class="table-row table-row--nonpodium">
+					<td class="table-cell table-cell--place place-number" KeyError>
+	11</td>
+	
+					<td class="table-cell" style="width: 12%;"><img class="car-img" src="/static/images/cars/
+	153.png"/></td>
+	
+					<td class="table-cell" style="width: 30%;">
+	Blitz GT 20.0</td>
+	
+					<td class="table-cell" style="width: 16%;">
+	Obtainable</td>
+	
+					<td class="table-cell" style="width: 14%;">
+	62</td>
+	
+					<td class="table-cell" style="width: 19%;">
+	0.01799%</td>
+	
+				</tr>
+	
+				<tr class="table-row table-row--nonpodium">
+					<td class="table-cell table-cell--place place-number" KeyError>
+	12</td>
+	
+					<td class="table-cell" style="width: 12%;"><img class="car-img" src="/static/images/cars/
+	137.png"/></td>
+	
+					<td class="table-cell" style="width: 30%;">
+	Blitz McLaro SHS 15.0</td>
+	
+					<td class="table-cell" style="width: 16%;">
+	Obtainable</td>
+	
+					<td class="table-cell" style="width: 14%;">
+	114</td>
+	
+					<td class="table-cell" style="width: 19%;">
+	0.03308%</td>
+	
+				</tr>
+	
+				<tr class="table-row table-row--nonpodium">
+					<td class="table-cell table-cell--place place-number" KeyError>
+	13</td>
+	
+					<td class="table-cell" style="width: 12%;"><img class="car-img" src="/static/images/cars/
+	129.png"/></td>
+	
+					<td class="table-cell" style="width: 30%;">
+	Blitz McLaro SLR 12.5</td>
+	
+					<td class="table-cell" style="width: 16%;">
+	Obtainable</td>
+	
+					<td class="table-cell" style="width: 14%;">
+	161</td>
+	
+					<td class="table-cell" style="width: 19%;">
+	0.04671%</td>
+	
+				</tr>
+	
+				<tr class="table-row table-row--nonpodium">
+					<td class="table-cell table-cell--place place-number" KeyError>
+	14</td>
+	
+					<td class="table-cell" style="width: 12%;"><img class="car-img" src="/static/images/cars/
+	124.png"/></td>
+	
+					<td class="table-cell" style="width: 30%;">
+	Blitz McLaro SLR</td>
+	
+					<td class="table-cell" style="width: 16%;">
+	Obtainable</td>
+	
+					<td class="table-cell" style="width: 14%;">
+	239</td>
+	
+					<td class="table-cell" style="width: 19%;">
+	0.06935%</td>
+	
+				</tr>
+	
+				<tr class="table-row table-row--nonpodium">
+					<td class="table-cell table-cell--place place-number" KeyError>
+	15</td>
+	
+					<td class="table-cell" style="width: 12%;"><img class="car-img" src="/static/images/cars/
+	155.png"/></td>
+	
+					<td class="table-cell" style="width: 30%;">
+	NitroPAC</td>
+	
+					<td class="table-cell" style="width: 16%;">
+	Obtainable</td>
+	
+					<td class="table-cell" style="width: 14%;">
+	239</td>
+	
+					<td class="table-cell" style="width: 19%;">
+	0.06935%</td>
+	
+				</tr>
+	
+				<tr class="table-row table-row--nonpodium">
+					<td class="table-cell table-cell--place place-number" KeyError>
+	16</td>
+	
+					<td class="table-cell" style="width: 12%;"><img class="car-img" src="/static/images/cars/
+	85.png"/></td>
+	
+					<td class="table-cell" style="width: 30%;">
+	Liberty '41 Woodie Sunshine</td>
+	
+					<td class="table-cell" style="width: 16%;">
+	Obtainable</td>
+	
+					<td class="table-cell" style="width: 14%;">
+	298</td>
+	
+					<td class="table-cell" style="width: 19%;">
+	0.08647%</td>
+	
+				</tr>
+	
+				<tr class="table-row table-row--nonpodium">
+					<td class="table-cell table-cell--place place-number" KeyError>
+	17</td>
+	
+					<td class="table-cell" style="width: 12%;"><img class="car-img" src="/static/images/cars/
+	88.png"/></td>
+	
+					<td class="table-cell" style="width: 30%;">
+	Hang Fifteen</td>
+	
+					<td class="table-cell" style="width: 16%;">
+	Obtainable</td>
+	
+					<td class="table-cell" style="width: 14%;">
+	301</td>
+	
+					<td class="table-cell" style="width: 19%;">
+	0.08734%</td>
+	
+				</tr>
+	
+				<tr class="table-row table-row--nonpodium">
+					<td class="table-cell table-cell--place place-number" KeyError>
+	18</td>
+	
+					<td class="table-cell" style="width: 12%;"><img class="car-img" src="/static/images/cars/
+	95.png"/></td>
+	
+					<td class="table-cell" style="width: 30%;">
+	Blitz Police Cruiser</td>
+	
+					<td class="table-cell" style="width: 16%;">
+	Obtainable</td>
+	
+					<td class="table-cell" style="width: 14%;">
+	348</td>
+	
+					<td class="table-cell" style="width: 19%;">
+	0.10097%</td>
+	
+				</tr>
+	
+				<tr class="table-row table-row--nonpodium">
+					<td class="table-cell table-cell--place place-number" KeyError>
+	19</td>
+	
+					<td class="table-cell" style="width: 12%;"><img class="car-img" src="/static/images/cars/
+	162.png"/></td>
+	
+					<td class="table-cell" style="width: 30%;">
+	S'cool B.U.S.</td>
+	
+					<td class="table-cell" style="width: 16%;">
+	Obtainable</td>
+	
+					<td class="table-cell" style="width: 14%;">
+	356</td>
+	
+					<td class="table-cell" style="width: 19%;">
+	0.10329%</td>
+	
+				</tr>
+	
+				<tr class="table-row table-row--nonpodium">
+					<td class="table-cell table-cell--place place-number" KeyError>
+	20</td>
+	
+					<td class="table-cell" style="width: 12%;"><img class="car-img" src="/static/images/cars/
+	195.png"/></td>
+	
+					<td class="table-cell" style="width: 30%;">
+	Cold Snap</td>
+	
+					<td class="table-cell" style="width: 16%;">
+	Obtainable</td>
+	
+					<td class="table-cell" style="width: 14%;">
+	372</td>
+	
+					<td class="table-cell" style="width: 19%;">
+	0.10794%</td>
+	
+				</tr>
+	
+				<tr class="table-row table-row--nonpodium">
+					<td class="table-cell table-cell--place place-number" KeyError>
+	21</td>
+	
+					<td class="table-cell" style="width: 12%;"><img class="car-img" src="/static/images/cars/
+	113.png"/></td>
+	
+					<td class="table-cell" style="width: 30%;">
+	Kringle 4000 XL</td>
+	
+					<td class="table-cell" style="width: 16%;">
+	Obtainable</td>
+	
+					<td class="table-cell" style="width: 14%;">
+	413</td>
+	
+					<td class="table-cell" style="width: 19%;">
+	0.11983%</td>
+	
+				</tr>
+	
+				<tr class="table-row table-row--nonpodium">
+					<td class="table-cell table-cell--place place-number" KeyError>
+	22</td>
+	
+					<td class="table-cell" style="width: 12%;"><img class="car-img" src="/static/images/cars/
+	107.png"/></td>
+	
+					<td class="table-cell" style="width: 30%;">
+	Fonicci Lacan Hypersport</td>
+	
+					<td class="table-cell" style="width: 16%;">
+	Obtainable</td>
+	
+					<td class="table-cell" style="width: 14%;">
+	602</td>
+	
+					<td class="table-cell" style="width: 19%;">
+	0.17467%</td>
+	
+				</tr>
+	
+				<tr class="table-row table-row--nonpodium">
+					<td class="table-cell table-cell--place place-number" KeyError>
+	23</td>
+	
+					<td class="table-cell" style="width: 12%;"><img class="car-img" src="/static/images/cars/
+	297.png"/></td>
+	
+					<td class="table-cell" style="width: 30%;">
+	Elfmobile '21</td>
+	
+					<td class="table-cell" style="width: 16%;">
+	Obtainable</td>
+	
+					<td class="table-cell" style="width: 14%;">
+	611</td>
+	
+					<td class="table-cell" style="width: 19%;">
+	0.17728%</td>
+	
+				</tr>
+	
+				<tr class="table-row table-row--nonpodium">
+					<td class="table-cell table-cell--place place-number" KeyError>
+	24</td>
+	
+					<td class="table-cell" style="width: 12%;"><img class="car-img" src="/static/images/cars/
+	119.png"/></td>
+	
+					<td class="table-cell" style="width: 30%;">
+	Kringle 5000</td>
+	
+					<td class="table-cell" style="width: 16%;">
+	Obtainable</td>
+	
+					<td class="table-cell" style="width: 14%;">
+	620</td>
+	
+					<td class="table-cell" style="width: 19%;">
+	0.1799%</td>
+	
+				</tr>
+	
+				<tr class="table-row table-row--nonpodium">
+					<td class="table-cell table-cell--place place-number" KeyError>
+	25</td>
+	
+					<td class="table-cell" style="width: 12%;"><img class="car-img" src="/static/images/cars/
+	118.png"/></td>
+	
+					<td class="table-cell" style="width: 30%;">
+	The Candy Hauler</td>
+	
+					<td class="table-cell" style="width: 16%;">
+	Obtainable</td>
+	
+					<td class="table-cell" style="width: 14%;">
+	653</td>
+	
+					<td class="table-cell" style="width: 19%;">
+	0.18947%</td>
+	
+				</tr>
+	
+				<tr class="table-row table-row--nonpodium">
+					<td class="table-cell table-cell--place place-number" KeyError>
+	26</td>
+	
+					<td class="table-cell" style="width: 12%;"><img class="car-img" src="/static/images/cars/
+	121.png"/></td>
+	
+					<td class="table-cell" style="width: 30%;">
+	Wrapped Wracer GT</td>
+	
+					<td class="table-cell" style="width: 16%;">
+	Obtainable</td>
+	
+					<td class="table-cell" style="width: 14%;">
+	660</td>
+	
+					<td class="table-cell" style="width: 19%;">
+	0.1915%</td>
+	
+				</tr>
+	
+				<tr class="table-row table-row--nonpodium">
+					<td class="table-cell table-cell--place place-number" KeyError>
+	27</td>
+	
+					<td class="table-cell" style="width: 12%;"><img class="car-img" src="/static/images/cars/
+	198.png"/></td>
+	
+					<td class="table-cell" style="width: 30%;">
+	Golden Ticket</td>
+	
+					<td class="table-cell" style="width: 16%;">
+	Obtainable</td>
+	
+					<td class="table-cell" style="width: 14%;">
+	671</td>
+	
+					<td class="table-cell" style="width: 19%;">
+	0.19469%</td>
+	
+				</tr>
+	
+				<tr class="table-row table-row--nonpodium">
+					<td class="table-cell table-cell--place place-number" KeyError>
+	28</td>
+	
+					<td class="table-cell" style="width: 12%;"><img class="car-img" src="/static/images/cars/
+	131.png"/></td>
+	
+					<td class="table-cell" style="width: 30%;">
+	Nitro-o'-the-Wisp</td>
+	
+					<td class="table-cell" style="width: 16%;">
+	Obtainable</td>
+	
+					<td class="table-cell" style="width: 14%;">
+	718</td>
+	
+					<td class="table-cell" style="width: 19%;">
+	0.20833%</td>
+	
+				</tr>
+	
+				<tr class="table-row table-row--nonpodium">
+					<td class="table-cell table-cell--place place-number" KeyError>
+	29</td>
+	
+					<td class="table-cell" style="width: 12%;"><img class="car-img" src="/static/images/cars/
+	146.png"/></td>
+	
+					<td class="table-cell" style="width: 30%;">
+	The Dark Chocolate Knight</td>
+	
+					<td class="table-cell" style="width: 16%;">
+	Obtainable</td>
+	
+					<td class="table-cell" style="width: 14%;">
+	748</td>
+	
+					<td class="table-cell" style="width: 19%;">
+	0.21703%</td>
+	
+				</tr>
+	
+				<tr class="table-row table-row--nonpodium">
+					<td class="table-cell table-cell--place place-number" KeyError>
+	30</td>
+	
+					<td class="table-cell" style="width: 12%;"><img class="car-img" src="/static/images/cars/
+	105.png"/></td>
+	
+					<td class="table-cell" style="width: 30%;">
+	Liberty '14 Mantaray</td>
+	
+					<td class="table-cell" style="width: 16%;">
+	Obtainable</td>
+	
+					<td class="table-cell" style="width: 14%;">
+	773</td>
+	
+					<td class="table-cell" style="width: 19%;">
+	0.22429%</td>
+	
+				</tr>
+	
+				<tr class="table-row table-row--nonpodium">
+					<td class="table-cell table-cell--place place-number" KeyError>
+	31</td>
+	
+					<td class="table-cell" style="width: 12%;"><img class="car-img" src="/static/images/cars/
+	141.png"/></td>
+	
+					<td class="table-cell" style="width: 30%;">
+	Track-o'-Lantern</td>
+	
+					<td class="table-cell" style="width: 16%;">
+	Obtainable</td>
+	
+					<td class="table-cell" style="width: 14%;">
+	809</td>
+	
+					<td class="table-cell" style="width: 19%;">
+	0.23473%</td>
+	
+				</tr>
+	
+				<tr class="table-row table-row--nonpodium">
+					<td class="table-cell table-cell--place place-number" KeyError>
+	32</td>
+	
+					<td class="table-cell" style="width: 12%;"><img class="car-img" src="/static/images/cars/
+	71.png"/></td>
+	
+					<td class="table-cell" style="width: 30%;">
+	Shadow XMaxx Tree</td>
+	
+					<td class="table-cell" style="width: 16%;">
+	Obtainable</td>
+	
+					<td class="table-cell" style="width: 14%;">
+	920</td>
+	
+					<td class="table-cell" style="width: 19%;">
+	0.26694%</td>
+	
+				</tr>
+	
+				<tr class="table-row table-row--nonpodium">
+					<td class="table-cell table-cell--place place-number" KeyError>
+	33</td>
+	
+					<td class="table-cell" style="width: 12%;"><img class="car-img" src="/static/images/cars/
+	169.png"/></td>
+	
+					<td class="table-cell" style="width: 30%;">
+	The Goldray</td>
+	
+					<td class="table-cell" style="width: 16%;">
+	Obtainable</td>
+	
+					<td class="table-cell" style="width: 14%;">
+	947</td>
+	
+					<td class="table-cell" style="width: 19%;">
+	0.27478%</td>
+	
+				</tr>
+	
+				<tr class="table-row table-row--nonpodium">
+					<td class="table-cell table-cell--place place-number" KeyError>
+	34</td>
+	
+					<td class="table-cell" style="width: 12%;"><img class="car-img" src="/static/images/cars/
+	133.png"/></td>
+	
+					<td class="table-cell" style="width: 30%;">
+	XMaxx Xxpress XXL</td>
+	
+					<td class="table-cell" style="width: 16%;">
+	Obtainable</td>
+	
+					<td class="table-cell" style="width: 14%;">
+	949</td>
+	
+					<td class="table-cell" style="width: 19%;">
+	0.27536%</td>
+	
+				</tr>
+	
+				<tr class="table-row table-row--nonpodium">
+					<td class="table-cell table-cell--place place-number" KeyError>
+	35</td>
+	
+					<td class="table-cell" style="width: 12%;"><img class="car-img" src="/static/images/cars/
+	134.png"/></td>
+	
+					<td class="table-cell" style="width: 30%;">
+	Gilded Xxpress</td>
+	
+					<td class="table-cell" style="width: 16%;">
+	Obtainable</td>
+	
+					<td class="table-cell" style="width: 14%;">
+	1055</td>
+	
+					<td class="table-cell" style="width: 19%;">
+	0.30611%</td>
+	
+				</tr>
+	
+				<tr class="table-row table-row--nonpodium">
+					<td class="table-cell table-cell--place place-number" KeyError>
+	36</td>
+	
+					<td class="table-cell" style="width: 12%;"><img class="car-img" src="/static/images/cars/
+	89.png"/></td>
+	
+					<td class="table-cell" style="width: 30%;">
+	Wach 6</td>
+	
+					<td class="table-cell" style="width: 16%;">
+	Obtainable</td>
+	
+					<td class="table-cell" style="width: 14%;">
+	1064</td>
+	
+					<td class="table-cell" style="width: 19%;">
+	0.30872%</td>
+	
+				</tr>
+	
+				<tr class="table-row table-row--nonpodium">
+					<td class="table-cell table-cell--place place-number" KeyError>
+	37</td>
+	
+					<td class="table-cell" style="width: 12%;"><img class="car-img" src="/static/images/cars/
+	185.png"/></td>
+	
+					<td class="table-cell" style="width: 30%;">
+	Gold Standard</td>
+	
+					<td class="table-cell" style="width: 16%;">
+	Obtainable</td>
+	
+					<td class="table-cell" style="width: 14%;">
+	1096</td>
+	
+					<td class="table-cell" style="width: 19%;">
+	0.31801%</td>
+	
+				</tr>
+	
+				<tr class="table-row table-row--nonpodium">
+					<td class="table-cell table-cell--place place-number" KeyError>
+	38</td>
+	
+					<td class="table-cell" style="width: 12%;"><img class="car-img" src="/static/images/cars/
+	282.png"/></td>
+	
+					<td class="table-cell" style="width: 30%;">
+	Ghoul Bus</td>
+	
+					<td class="table-cell" style="width: 16%;">
+	Obtainable</td>
+	
+					<td class="table-cell" style="width: 14%;">
+	1175</td>
+	
+					<td class="table-cell" style="width: 19%;">
+	0.34093%</td>
+	
+				</tr>
+	
+				<tr class="table-row table-row--nonpodium">
+					<td class="table-cell table-cell--place place-number" KeyError>
+	39</td>
+	
+					<td class="table-cell" style="width: 12%;"><img class="car-img" src="/static/images/cars/
+	213.png"/></td>
+	
+					<td class="table-cell" style="width: 30%;">
+	Timber Speeder</td>
+	
+					<td class="table-cell" style="width: 16%;">
+	Obtainable</td>
+	
+					<td class="table-cell" style="width: 14%;">
+	1274</td>
+	
+					<td class="table-cell" style="width: 19%;">
+	0.36966%</td>
+	
+				</tr>
+	
+				<tr class="table-row table-row--nonpodium">
+					<td class="table-cell table-cell--place place-number" KeyError>
+	40</td>
+	
+					<td class="table-cell" style="width: 12%;"><img class="car-img" src="/static/images/cars/
+	103.png"/></td>
+	
+					<td class="table-cell" style="width: 30%;">
+	The Golden Gift</td>
+	
+					<td class="table-cell" style="width: 16%;">
+	Obtainable</td>
+	
+					<td class="table-cell" style="width: 14%;">
+	1284</td>
+	
+					<td class="table-cell" style="width: 19%;">
+	0.37256%</td>
+	
+				</tr>
+	
+				<tr class="table-row table-row--nonpodium">
+					<td class="table-cell table-cell--place place-number" KeyError>
+	41</td>
+	
+					<td class="table-cell" style="width: 12%;"><img class="car-img" src="/static/images/cars/
+	336.png"/></td>
+	
+					<td class="table-cell" style="width: 30%;">
+	Maxx'd-Out Shadow Tree</td>
+	
+					<td class="table-cell" style="width: 16%;">
+	Obtainable</td>
+	
+					<td class="table-cell" style="width: 14%;">
+	1384</td>
+	
+					<td class="table-cell" style="width: 19%;">
+	0.40157%</td>
+	
+				</tr>
+	
+				<tr class="table-row table-row--nonpodium">
+					<td class="table-cell table-cell--place place-number" KeyError>
+	42</td>
+	
+					<td class="table-cell" style="width: 12%;"><img class="car-img" src="/static/images/cars/
+	328.png"/></td>
+	
+					<td class="table-cell" style="width: 30%;">
+	Boatie Classic</td>
+	
+					<td class="table-cell" style="width: 16%;">
+	Obtainable</td>
+	
+					<td class="table-cell" style="width: 14%;">
+	1386</td>
+	
+					<td class="table-cell" style="width: 19%;">
+	0.40215%</td>
+	
+				</tr>
+	
+				<tr class="table-row table-row--nonpodium">
+					<td class="table-cell table-cell--place place-number" KeyError>
+	43</td>
+	
+					<td class="table-cell" style="width: 12%;"><img class="car-img" src="/static/images/cars/
+	82.png"/></td>
+	
+					<td class="table-cell" style="width: 30%;">
+	Hang Ten</td>
+	
+					<td class="table-cell" style="width: 16%;">
+	Obtainable</td>
+	
+					<td class="table-cell" style="width: 14%;">
+	1392</td>
+	
+					<td class="table-cell" style="width: 19%;">
+	0.40389%</td>
+	
+				</tr>
+	
+				<tr class="table-row table-row--nonpodium">
+					<td class="table-cell table-cell--place place-number" KeyError>
+	44</td>
+	
+					<td class="table-cell" style="width: 12%;"><img class="car-img" src="/static/images/cars/
+	183.png"/></td>
+	
+					<td class="table-cell" style="width: 30%;">
+	The Goldfish</td>
+	
+					<td class="table-cell" style="width: 16%;">
+	Obtainable</td>
+	
+					<td class="table-cell" style="width: 14%;">
+	1399</td>
+	
+					<td class="table-cell" style="width: 19%;">
+	0.40592%</td>
+	
+				</tr>
+	
+				<tr class="table-row table-row--nonpodium">
+					<td class="table-cell table-cell--place place-number" KeyError>
+	45</td>
+	
+					<td class="table-cell" style="width: 12%;"><img class="car-img" src="/static/images/cars/
+	337.png"/></td>
+	
+					<td class="table-cell" style="width: 30%;">
+	Corsa Festivi-X</td>
+	
+					<td class="table-cell" style="width: 16%;">
+	Obtainable</td>
+	
+					<td class="table-cell" style="width: 14%;">
+	1478</td>
+	
+					<td class="table-cell" style="width: 19%;">
+	0.42885%</td>
+	
+				</tr>
+	
+				<tr class="table-row table-row--nonpodium">
+					<td class="table-cell table-cell--place place-number" KeyError>
+	46</td>
+	
+					<td class="table-cell" style="width: 12%;"><img class="car-img" src="/static/images/cars/
+	136.png"/></td>
+	
+					<td class="table-cell" style="width: 30%;">
+	Corsa Xmaxx LT-C</td>
+	
+					<td class="table-cell" style="width: 16%;">
+	Obtainable</td>
+	
+					<td class="table-cell" style="width: 14%;">
+	1485</td>
+	
+					<td class="table-cell" style="width: 19%;">
+	0.43088%</td>
+	
+				</tr>
+	
+				<tr class="table-row table-row--nonpodium">
+					<td class="table-cell table-cell--place place-number" KeyError>
+	47</td>
+	
+					<td class="table-cell" style="width: 12%;"><img class="car-img" src="/static/images/cars/
+	319.png"/></td>
+	
+					<td class="table-cell" style="width: 30%;">
+	Winson Velox</td>
+	
+					<td class="table-cell" style="width: 16%;">
+	Obtainable</td>
+	
+					<td class="table-cell" style="width: 14%;">
+	1492</td>
+	
+					<td class="table-cell" style="width: 19%;">
+	0.43291%</td>
+	
+				</tr>
+	
+				<tr class="table-row table-row--nonpodium">
+					<td class="table-cell table-cell--place place-number" KeyError>
+	48</td>
+	
+					<td class="table-cell" style="width: 12%;"><img class="car-img" src="/static/images/cars/
+	132.png"/></td>
+	
+					<td class="table-cell" style="width: 30%;">
+	XMaxx Xxpress</td>
+	
+					<td class="table-cell" style="width: 16%;">
+	Obtainable</td>
+	
+					<td class="table-cell" style="width: 14%;">
+	1493</td>
+	
+					<td class="table-cell" style="width: 19%;">
+	0.4332%</td>
+	
+				</tr>
+	
+				<tr class="table-row table-row--nonpodium">
+					<td class="table-cell table-cell--place place-number" KeyError>
+	49</td>
+	
+					<td class="table-cell" style="width: 12%;"><img class="car-img" src="/static/images/cars/
+	163.png"/></td>
+	
+					<td class="table-cell" style="width: 30%;">
+	Konirra AU-79</td>
+	
+					<td class="table-cell" style="width: 16%;">
+	Obtainable</td>
+	
+					<td class="table-cell" style="width: 14%;">
+	1528</td>
+	
+					<td class="table-cell" style="width: 19%;">
+	0.44335%</td>
+	
+				</tr>
+	
+				<tr class="table-row table-row--nonpodium">
+					<td class="table-cell table-cell--place place-number" KeyError>
+	50</td>
+	
+					<td class="table-cell" style="width: 12%;"><img class="car-img" src="/static/images/cars/
+	342.png"/></td>
+	
+					<td class="table-cell" style="width: 30%;">
+	RMS Unsinkable</td>
+	
+					<td class="table-cell" style="width: 16%;">
+	Obtainable</td>
+	
+					<td class="table-cell" style="width: 14%;">
+	1536</td>
+	
+					<td class="table-cell" style="width: 19%;">
+	0.44568%</td>
+	
+				</tr>
+	
+				<tr class="table-row table-row--nonpodium">
+					<td class="table-cell table-cell--place place-number" KeyError>
+	51</td>
+	
+					<td class="table-cell" style="width: 12%;"><img class="car-img" src="/static/images/cars/
+	151.png"/></td>
+	
+					<td class="table-cell" style="width: 30%;">
+	Eggcedes</td>
+	
+					<td class="table-cell" style="width: 16%;">
+	Obtainable</td>
+	
+					<td class="table-cell" style="width: 14%;">
+	1538</td>
+	
+					<td class="table-cell" style="width: 19%;">
+	0.44626%</td>
+	
+				</tr>
+	
+				<tr class="table-row table-row--nonpodium">
+					<td class="table-cell table-cell--place place-number" KeyError>
+	52</td>
+	
+					<td class="table-cell" style="width: 12%;"><img class="car-img" src="/static/images/cars/
+	77.png"/></td>
+	
+					<td class="table-cell" style="width: 30%;">
+	The Pirc</td>
+	
+					<td class="table-cell" style="width: 16%;">
+	Obtainable</td>
+	
+					<td class="table-cell" style="width: 14%;">
+	1586</td>
+	
+					<td class="table-cell" style="width: 19%;">
+	0.46018%</td>
+	
+				</tr>
+	
+				<tr class="table-row table-row--nonpodium">
+					<td class="table-cell table-cell--place place-number" KeyError>
+	53</td>
+	
+					<td class="table-cell" style="width: 12%;"><img class="car-img" src="/static/images/cars/
+	122.png"/></td>
+	
+					<td class="table-cell" style="width: 30%;">
+	Holiday Hero</td>
+	
+					<td class="table-cell" style="width: 16%;">
+	Obtainable</td>
+	
+					<td class="table-cell" style="width: 14%;">
+	1587</td>
+	
+					<td class="table-cell" style="width: 19%;">
+	0.46047%</td>
+	
+				</tr>
+	
+				<tr class="table-row table-row--nonpodium">
+					<td class="table-cell table-cell--place place-number" KeyError>
+	54</td>
+	
+					<td class="table-cell" style="width: 12%;"><img class="car-img" src="/static/images/cars/
+	286.png"/></td>
+	
+					<td class="table-cell" style="width: 30%;">
+	Harvestall Tractor</td>
+	
+					<td class="table-cell" style="width: 16%;">
+	Obtainable</td>
+	
+					<td class="table-cell" style="width: 14%;">
+	1646</td>
+	
+					<td class="table-cell" style="width: 19%;">
+	0.47759%</td>
+	
+				</tr>
+	
+				<tr class="table-row table-row--nonpodium">
+					<td class="table-cell table-cell--place place-number" KeyError>
+	55</td>
+	
+					<td class="table-cell" style="width: 12%;"><img class="car-img" src="/static/images/cars/
+	227.png"/></td>
+	
+					<td class="table-cell" style="width: 30%;">
+	Maxxbilt Jetro</td>
+	
+					<td class="table-cell" style="width: 16%;">
+	Obtainable</td>
+	
+					<td class="table-cell" style="width: 14%;">
+	1706</td>
+	
+					<td class="table-cell" style="width: 19%;">
+	0.495%</td>
+	
+				</tr>
+	
+				<tr class="table-row table-row--nonpodium">
+					<td class="table-cell table-cell--place place-number" KeyError>
+	56</td>
+	
+					<td class="table-cell" style="width: 12%;"><img class="car-img" src="/static/images/cars/
+	160.png"/></td>
+	
+					<td class="table-cell" style="width: 30%;">
+	Golden Breeze</td>
+	
+					<td class="table-cell" style="width: 16%;">
+	Obtainable</td>
+	
+					<td class="table-cell" style="width: 14%;">
+	1727</td>
+	
+					<td class="table-cell" style="width: 19%;">
+	0.5011%</td>
+	
+				</tr>
+	
+				<tr class="table-row table-row--nonpodium">
+					<td class="table-cell table-cell--place place-number" KeyError>
+	57</td>
+	
+					<td class="table-cell" style="width: 12%;"><img class="car-img" src="/static/images/cars/
+	193.png"/></td>
+	
+					<td class="table-cell" style="width: 30%;">
+	Gingerbread GT</td>
+	
+					<td class="table-cell" style="width: 16%;">
+	Obtainable</td>
+	
+					<td class="table-cell" style="width: 14%;">
+	1754</td>
+	
+					<td class="table-cell" style="width: 19%;">
+	0.50893%</td>
+	
+				</tr>
+	
+				<tr class="table-row table-row--nonpodium">
+					<td class="table-cell table-cell--place place-number" KeyError>
+	58</td>
+	
+					<td class="table-cell" style="width: 12%;"><img class="car-img" src="/static/images/cars/
+	285.png"/></td>
+	
+					<td class="table-cell" style="width: 30%;">
+	Hay a Truck</td>
+	
+					<td class="table-cell" style="width: 16%;">
+	Obtainable</td>
+	
+					<td class="table-cell" style="width: 14%;">
+	1822</td>
+	
+					<td class="table-cell" style="width: 19%;">
+	0.52866%</td>
+	
+				</tr>
+	
+				<tr class="table-row table-row--nonpodium">
+					<td class="table-cell table-cell--place place-number" KeyError>
+	59</td>
+	
+					<td class="table-cell" style="width: 12%;"><img class="car-img" src="/static/images/cars/
+	280.png"/></td>
+	
+					<td class="table-cell" style="width: 30%;">
+	S'cool B.U.S. Wildn</td>
+	
+					<td class="table-cell" style="width: 16%;">
+	Obtainable</td>
+	
+					<td class="table-cell" style="width: 14%;">
+	1837</td>
+	
+					<td class="table-cell" style="width: 19%;">
+	0.53301%</td>
+	
+				</tr>
+	
+				<tr class="table-row table-row--nonpodium">
+					<td class="table-cell table-cell--place place-number" KeyError>
+	60</td>
+	
+					<td class="table-cell" style="width: 12%;"><img class="car-img" src="/static/images/cars/
+	102.png"/></td>
+	
+					<td class="table-cell" style="width: 30%;">
+	Winson Dark Elf</td>
+	
+					<td class="table-cell" style="width: 16%;">
+	Obtainable</td>
+	
+					<td class="table-cell" style="width: 14%;">
+	1841</td>
+	
+					<td class="table-cell" style="width: 19%;">
+	0.53417%</td>
+	
+				</tr>
+	
+				<tr class="table-row table-row--nonpodium">
+					<td class="table-cell table-cell--place place-number" KeyError>
+	61</td>
+	
+					<td class="table-cell" style="width: 12%;"><img class="car-img" src="/static/images/cars/
+	99.png"/></td>
+	
+					<td class="table-cell" style="width: 30%;">
+	Wreath Racer</td>
+	
+					<td class="table-cell" style="width: 16%;">
+	Obtainable</td>
+	
+					<td class="table-cell" style="width: 14%;">
+	1868</td>
+	
+					<td class="table-cell" style="width: 19%;">
+	0.54201%</td>
+	
+				</tr>
+	
+				<tr class="table-row table-row--nonpodium">
+					<td class="table-cell table-cell--place place-number" KeyError>
+	62</td>
+	
+					<td class="table-cell" style="width: 12%;"><img class="car-img" src="/static/images/cars/
+	123.png"/></td>
+	
+					<td class="table-cell" style="width: 30%;">
+	Kringle 5000 L.T.</td>
+	
+					<td class="table-cell" style="width: 16%;">
+	Obtainable</td>
+	
+					<td class="table-cell" style="width: 14%;">
+	1881</td>
+	
+					<td class="table-cell" style="width: 19%;">
+	0.54578%</td>
+	
+				</tr>
+	
+				<tr class="table-row table-row--nonpodium">
+					<td class="table-cell table-cell--place place-number" KeyError>
+	63</td>
+	
+					<td class="table-cell" style="width: 12%;"><img class="car-img" src="/static/images/cars/
+	140.png"/></td>
+	
+					<td class="table-cell" style="width: 30%;">
+	Bozz Strykist 1300 XT-LR</td>
+	
+					<td class="table-cell" style="width: 16%;">
+	Obtainable</td>
+	
+					<td class="table-cell" style="width: 14%;">
+	1943</td>
+	
+					<td class="table-cell" style="width: 19%;">
+	0.56377%</td>
+	
+				</tr>
+	
+				<tr class="table-row table-row--nonpodium">
+					<td class="table-cell table-cell--place place-number" KeyError>
+	64</td>
+	
+					<td class="table-cell" style="width: 12%;"><img class="car-img" src="/static/images/cars/
+	100.png"/></td>
+	
+					<td class="table-cell" style="width: 30%;">
+	Santa's Buggy</td>
+	
+					<td class="table-cell" style="width: 16%;">
+	Obtainable</td>
+	
+					<td class="table-cell" style="width: 14%;">
+	2000</td>
+	
+					<td class="table-cell" style="width: 19%;">
+	0.58031%</td>
+	
+				</tr>
+	
+				<tr class="table-row table-row--nonpodium">
+					<td class="table-cell table-cell--place place-number" KeyError>
+	65</td>
+	
+					<td class="table-cell" style="width: 12%;"><img class="car-img" src="/static/images/cars/
+	128.png"/></td>
+	
+					<td class="table-cell" style="width: 30%;">
+	Y.A.C.H.T.</td>
+	
+					<td class="table-cell" style="width: 16%;">
+	Obtainable</td>
+	
+					<td class="table-cell" style="width: 14%;">
+	2031</td>
+	
+					<td class="table-cell" style="width: 19%;">
+	0.5893%</td>
+	
+				</tr>
+	
+				<tr class="table-row table-row--nonpodium">
+					<td class="table-cell table-cell--place place-number" KeyError>
+	66</td>
+	
+					<td class="table-cell" style="width: 12%;"><img class="car-img" src="/static/images/cars/
+	331.png"/></td>
+	
+					<td class="table-cell" style="width: 30%;">
+	Nitreux F1</td>
+	
+					<td class="table-cell" style="width: 16%;">
+	Obtainable</td>
+	
+					<td class="table-cell" style="width: 14%;">
+	2043</td>
+	
+					<td class="table-cell" style="width: 19%;">
+	0.59278%</td>
+	
+				</tr>
+	
+				<tr class="table-row table-row--nonpodium">
+					<td class="table-cell table-cell--place place-number" KeyError>
+	67</td>
+	
+					<td class="table-cell" style="width: 12%;"><img class="car-img" src="/static/images/cars/
+	362.png"/></td>
+	
+					<td class="table-cell" style="width: 30%;">
+	Fonicci Hyperion SS</td>
+	
+					<td class="table-cell" style="width: 16%;">
+	Obtainable</td>
+	
+					<td class="table-cell" style="width: 14%;">
+	2118</td>
+	
+					<td class="table-cell" style="width: 19%;">
+	0.61455%</td>
+	
+				</tr>
+	
+				<tr class="table-row table-row--nonpodium">
+					<td class="table-cell table-cell--place place-number" KeyError>
+	68</td>
+	
+					<td class="table-cell" style="width: 12%;"><img class="car-img" src="/static/images/cars/
+	59.png"/></td>
+	
+					<td class="table-cell" style="width: 30%;">
+	NASA Shuttle</td>
+	
+					<td class="table-cell" style="width: 16%;">
+	Obtainable</td>
+	
+					<td class="table-cell" style="width: 14%;">
+	2222</td>
+	
+					<td class="table-cell" style="width: 19%;">
+	0.64472%</td>
+	
+				</tr>
+	
+				<tr class="table-row table-row--nonpodium">
+					<td class="table-cell table-cell--place place-number" KeyError>
+	69</td>
+	
+					<td class="table-cell" style="width: 12%;"><img class="car-img" src="/static/images/cars/
+	159.png"/></td>
+	
+					<td class="table-cell" style="width: 30%;">
+	HoverJet 5000 Mk. 3</td>
+	
+					<td class="table-cell" style="width: 16%;">
+	Obtainable</td>
+	
+					<td class="table-cell" style="width: 14%;">
+	2313</td>
+	
+					<td class="table-cell" style="width: 19%;">
+	0.67113%</td>
+	
+				</tr>
+	
+				<tr class="table-row table-row--nonpodium">
+					<td class="table-cell table-cell--place place-number" KeyError>
+	70</td>
+	
+					<td class="table-cell" style="width: 12%;"><img class="car-img" src="/static/images/cars/
+	357.png"/></td>
+	
+					<td class="table-cell" style="width: 30%;">
+	Konirra Apex</td>
+	
+					<td class="table-cell" style="width: 16%;">
+	Obtainable</td>
+	
+					<td class="table-cell" style="width: 14%;">
+	2356</td>
+	
+					<td class="table-cell" style="width: 19%;">
+	0.6836%</td>
+	
+				</tr>
+	
+				<tr class="table-row table-row--nonpodium">
+					<td class="table-cell table-cell--place place-number" KeyError>
+	71</td>
+	
+					<td class="table-cell" style="width: 12%;"><img class="car-img" src="/static/images/cars/
+	115.png"/></td>
+	
+					<td class="table-cell" style="width: 30%;">
+	Liberty Six Four</td>
+	
+					<td class="table-cell" style="width: 16%;">
+	Obtainable</td>
+	
+					<td class="table-cell" style="width: 14%;">
+	2386</td>
+	
+					<td class="table-cell" style="width: 19%;">
+	0.69231%</td>
+	
+				</tr>
+	
+				<tr class="table-row table-row--nonpodium">
+					<td class="table-cell table-cell--place place-number" KeyError>
+	72</td>
+	
+					<td class="table-cell" style="width: 12%;"><img class="car-img" src="/static/images/cars/
+	110.png"/></td>
+	
+					<td class="table-cell" style="width: 30%;">
+	Hammer Wheels</td>
+	
+					<td class="table-cell" style="width: 16%;">
+	Obtainable</td>
+	
+					<td class="table-cell" style="width: 14%;">
+	2396</td>
+	
+					<td class="table-cell" style="width: 19%;">
+	0.69521%</td>
+	
+				</tr>
+	
+				<tr class="table-row table-row--nonpodium">
+					<td class="table-cell table-cell--place place-number" KeyError>
+	73</td>
+	
+					<td class="table-cell" style="width: 12%;"><img class="car-img" src="/static/images/cars/
+	308.png"/></td>
+	
+					<td class="table-cell" style="width: 30%;">
+	Bozz Advent</td>
+	
+					<td class="table-cell" style="width: 16%;">
+	Obtainable</td>
+	
+					<td class="table-cell" style="width: 14%;">
+	2440</td>
+	
+					<td class="table-cell" style="width: 19%;">
+	0.70797%</td>
+	
+				</tr>
+	
+				<tr class="table-row table-row--nonpodium">
+					<td class="table-cell table-cell--place place-number" KeyError>
+	74</td>
+	
+					<td class="table-cell" style="width: 12%;"><img class="car-img" src="/static/images/cars/
+	197.png"/></td>
+	
+					<td class="table-cell" style="width: 30%;">
+	The Rocket Klaus</td>
+	
+					<td class="table-cell" style="width: 16%;">
+	Obtainable</td>
+	
+					<td class="table-cell" style="width: 14%;">
+	2463</td>
+	
+					<td class="table-cell" style="width: 19%;">
+	0.71465%</td>
+	
+				</tr>
+	
+				<tr class="table-row table-row--nonpodium">
+					<td class="table-cell table-cell--place place-number" KeyError>
+	75</td>
+	
+					<td class="table-cell" style="width: 12%;"><img class="car-img" src="/static/images/cars/
+	144.png"/></td>
+	
+					<td class="table-cell" style="width: 30%;">
+	Missile Toe</td>
+	
+					<td class="table-cell" style="width: 16%;">
+	Obtainable</td>
+	
+					<td class="table-cell" style="width: 14%;">
+	2471</td>
+	
+					<td class="table-cell" style="width: 19%;">
+	0.71697%</td>
+	
+				</tr>
+	
+				<tr class="table-row table-row--nonpodium">
+					<td class="table-cell table-cell--place place-number" KeyError>
+	76</td>
+	
+					<td class="table-cell" style="width: 12%;"><img class="car-img" src="/static/images/cars/
+	311.png"/></td>
+	
+					<td class="table-cell" style="width: 30%;">
+	Radon 620</td>
+	
+					<td class="table-cell" style="width: 16%;">
+	Obtainable</td>
+	
+					<td class="table-cell" style="width: 14%;">
+	2497</td>
+	
+					<td class="table-cell" style="width: 19%;">
+	0.72451%</td>
+	
+				</tr>
+	
+				<tr class="table-row table-row--nonpodium">
+					<td class="table-cell table-cell--place place-number" KeyError>
+	77</td>
+	
+					<td class="table-cell" style="width: 12%;"><img class="car-img" src="/static/images/cars/
+	244.png"/></td>
+	
+					<td class="table-cell" style="width: 30%;">
+	Maxxbilt Ice Hauler</td>
+	
+					<td class="table-cell" style="width: 16%;">
+	Obtainable</td>
+	
+					<td class="table-cell" style="width: 14%;">
+	2552</td>
+	
+					<td class="table-cell" style="width: 19%;">
+	0.74047%</td>
+	
+				</tr>
+	
+				<tr class="table-row table-row--nonpodium">
+					<td class="table-cell table-cell--place place-number" KeyError>
+	78</td>
+	
+					<td class="table-cell" style="width: 12%;"><img class="car-img" src="/static/images/cars/
+	215.png"/></td>
+	
+					<td class="table-cell" style="width: 30%;">
+	Webmobile Spider</td>
+	
+					<td class="table-cell" style="width: 16%;">
+	Obtainable</td>
+	
+					<td class="table-cell" style="width: 14%;">
+	2561</td>
+	
+					<td class="table-cell" style="width: 19%;">
+	0.74308%</td>
+	
+				</tr>
+	
+				<tr class="table-row table-row--nonpodium">
+					<td class="table-cell table-cell--place place-number" KeyError>
+	79</td>
+	
+					<td class="table-cell" style="width: 12%;"><img class="car-img" src="/static/images/cars/
+	150.png"/></td>
+	
+					<td class="table-cell" style="width: 30%;">
+	Egg Beater</td>
+	
+					<td class="table-cell" style="width: 16%;">
+	Obtainable</td>
+	
+					<td class="table-cell" style="width: 14%;">
+	2677</td>
+	
+					<td class="table-cell" style="width: 19%;">
+	0.77674%</td>
+	
+				</tr>
+	
+				<tr class="table-row table-row--nonpodium">
+					<td class="table-cell table-cell--place place-number" KeyError>
+	80</td>
+	
+					<td class="table-cell" style="width: 12%;"><img class="car-img" src="/static/images/cars/
+	274.png"/></td>
+	
+					<td class="table-cell" style="width: 30%;">
+	Hydrova OG</td>
+	
+					<td class="table-cell" style="width: 16%;">
+	Obtainable</td>
+	
+					<td class="table-cell" style="width: 14%;">
+	2697</td>
+	
+					<td class="table-cell" style="width: 19%;">
+	0.78254%</td>
+	
+				</tr>
+	
+				<tr class="table-row table-row--nonpodium">
+					<td class="table-cell table-cell--place place-number" KeyError>
+	81</td>
+	
+					<td class="table-cell" style="width: 12%;"><img class="car-img" src="/static/images/cars/
+	210.png"/></td>
+	
+					<td class="table-cell" style="width: 30%;">
+	Chompus' Wild Ride</td>
+	
+					<td class="table-cell" style="width: 16%;">
+	Obtainable</td>
+	
+					<td class="table-cell" style="width: 14%;">
+	2700</td>
+	
+					<td class="table-cell" style="width: 19%;">
+	0.78341%</td>
+	
+				</tr>
+	
+				<tr class="table-row table-row--nonpodium">
+					<td class="table-cell table-cell--place place-number" KeyError>
+	82</td>
+	
+					<td class="table-cell" style="width: 12%;"><img class="car-img" src="/static/images/cars/
+	224.png"/></td>
+	
+					<td class="table-cell" style="width: 30%;">
+	The Festivitank</td>
+	
+					<td class="table-cell" style="width: 16%;">
+	Obtainable</td>
+	
+					<td class="table-cell" style="width: 14%;">
+	2709</td>
+	
+					<td class="table-cell" style="width: 19%;">
+	0.78603%</td>
+	
+				</tr>
+	
+				<tr class="table-row table-row--nonpodium">
+					<td class="table-cell table-cell--place place-number" KeyError>
+	83</td>
+	
+					<td class="table-cell" style="width: 12%;"><img class="car-img" src="/static/images/cars/
+	301.png"/></td>
+	
+					<td class="table-cell" style="width: 30%;">
+	Snowcat Luxe</td>
+	
+					<td class="table-cell" style="width: 16%;">
+	Obtainable</td>
+	
+					<td class="table-cell" style="width: 14%;">
+	2729</td>
+	
+					<td class="table-cell" style="width: 19%;">
+	0.79183%</td>
+	
+				</tr>
+	
+				<tr class="table-row table-row--nonpodium">
+					<td class="table-cell table-cell--place place-number" KeyError>
+	84</td>
+	
+					<td class="table-cell" style="width: 12%;"><img class="car-img" src="/static/images/cars/
+	315.png"/></td>
+	
+					<td class="table-cell" style="width: 30%;">
+	Corsa Tiesto "Coldsnap"</td>
+	
+					<td class="table-cell" style="width: 16%;">
+	Obtainable</td>
+	
+					<td class="table-cell" style="width: 14%;">
+	2796</td>
+	
+					<td class="table-cell" style="width: 19%;">
+	0.81127%</td>
+	
+				</tr>
+	
+				<tr class="table-row table-row--nonpodium">
+					<td class="table-cell table-cell--place place-number" KeyError>
+	85</td>
+	
+					<td class="table-cell" style="width: 12%;"><img class="car-img" src="/static/images/cars/
+	346.png"/></td>
+	
+					<td class="table-cell" style="width: 30%;">
+	Mach 10 Maverick</td>
+	
+					<td class="table-cell" style="width: 16%;">
+	Obtainable</td>
+	
+					<td class="table-cell" style="width: 14%;">
+	2868</td>
+	
+					<td class="table-cell" style="width: 19%;">
+	0.83216%</td>
+	
+				</tr>
+	
+				<tr class="table-row table-row--nonpodium">
+					<td class="table-cell table-cell--place place-number" KeyError>
+	86</td>
+	
+					<td class="table-cell" style="width: 12%;"><img class="car-img" src="/static/images/cars/
+	142.png"/></td>
+	
+					<td class="table-cell" style="width: 30%;">
+	Gingerbread Racer</td>
+	
+					<td class="table-cell" style="width: 16%;">
+	Obtainable</td>
+	
+					<td class="table-cell" style="width: 14%;">
+	2871</td>
+	
+					<td class="table-cell" style="width: 19%;">
+	0.83303%</td>
+	
+				</tr>
+	
+				<tr class="table-row table-row--nonpodium">
+					<td class="table-cell table-cell--place place-number" KeyError>
+	87</td>
+	
+					<td class="table-cell" style="width: 12%;"><img class="car-img" src="/static/images/cars/
+	174.png"/></td>
+	
+					<td class="table-cell" style="width: 30%;">
+	The Silent Knight</td>
+	
+					<td class="table-cell" style="width: 16%;">
+	Obtainable</td>
+	
+					<td class="table-cell" style="width: 14%;">
+	2872</td>
+	
+					<td class="table-cell" style="width: 19%;">
+	0.83332%</td>
+	
+				</tr>
+	
+				<tr class="table-row table-row--nonpodium">
+					<td class="table-cell table-cell--place place-number" KeyError>
+	88</td>
+	
+					<td class="table-cell" style="width: 12%;"><img class="car-img" src="/static/images/cars/
+	70.png"/></td>
+	
+					<td class="table-cell" style="width: 30%;">
+	XMaxx Tree Racer</td>
+	
+					<td class="table-cell" style="width: 16%;">
+	Obtainable</td>
+	
+					<td class="table-cell" style="width: 14%;">
+	2881</td>
+	
+					<td class="table-cell" style="width: 19%;">
+	0.83593%</td>
+	
+				</tr>
+	
+				<tr class="table-row table-row--nonpodium">
+					<td class="table-cell table-cell--place place-number" KeyError>
+	89</td>
+	
+					<td class="table-cell" style="width: 12%;"><img class="car-img" src="/static/images/cars/
+	171.png"/></td>
+	
+					<td class="table-cell" style="width: 30%;">
+	Liberty Wraptor</td>
+	
+					<td class="table-cell" style="width: 16%;">
+	Obtainable</td>
+	
+					<td class="table-cell" style="width: 14%;">
+	2887</td>
+	
+					<td class="table-cell" style="width: 19%;">
+	0.83767%</td>
+	
+				</tr>
+	
+				<tr class="table-row table-row--nonpodium">
+					<td class="table-cell table-cell--place place-number" KeyError>
+	90</td>
+	
+					<td class="table-cell" style="width: 12%;"><img class="car-img" src="/static/images/cars/
+	318.png"/></td>
+	
+					<td class="table-cell" style="width: 30%;">
+	AU-79 Mk. 18</td>
+	
+					<td class="table-cell" style="width: 16%;">
+	Obtainable</td>
+	
+					<td class="table-cell" style="width: 14%;">
+	2909</td>
+	
+					<td class="table-cell" style="width: 19%;">
+	0.84406%</td>
+	
+				</tr>
+	
+				<tr class="table-row table-row--nonpodium">
+					<td class="table-cell table-cell--place place-number" KeyError>
+	91</td>
+	
+					<td class="table-cell" style="width: 12%;"><img class="car-img" src="/static/images/cars/
+	350.png"/></td>
+	
+					<td class="table-cell" style="width: 30%;">
+	Viper Vortex</td>
+	
+					<td class="table-cell" style="width: 16%;">
+	Obtainable</td>
+	
+					<td class="table-cell" style="width: 14%;">
+	2912</td>
+	
+					<td class="table-cell" style="width: 19%;">
+	0.84493%</td>
+	
+				</tr>
+	
+				<tr class="table-row table-row--nonpodium">
+					<td class="table-cell table-cell--place place-number" KeyError>
+	92</td>
+	
+					<td class="table-cell" style="width: 12%;"><img class="car-img" src="/static/images/cars/
+	299.png"/></td>
+	
+					<td class="table-cell" style="width: 30%;">
+	Party Sleigh Neon</td>
+	
+					<td class="table-cell" style="width: 16%;">
+	Obtainable</td>
+	
+					<td class="table-cell" style="width: 14%;">
+	2948</td>
+	
+					<td class="table-cell" style="width: 19%;">
+	0.85537%</td>
+	
+				</tr>
+	
+				<tr class="table-row table-row--nonpodium">
+					<td class="table-cell table-cell--place place-number" KeyError>
+	93</td>
+	
+					<td class="table-cell" style="width: 12%;"><img class="car-img" src="/static/images/cars/
+	143.png"/></td>
+	
+					<td class="table-cell" style="width: 30%;">
+	Gingerbread Racer H&T</td>
+	
+					<td class="table-cell" style="width: 16%;">
+	Obtainable</td>
+	
+					<td class="table-cell" style="width: 14%;">
+	3005</td>
+	
+					<td class="table-cell" style="width: 19%;">
+	0.87191%</td>
+	
+				</tr>
+	
+				<tr class="table-row table-row--nonpodium">
+					<td class="table-cell table-cell--place place-number" KeyError>
+	94</td>
+	
+					<td class="table-cell" style="width: 12%;"><img class="car-img" src="/static/images/cars/
+	314.png"/></td>
+	
+					<td class="table-cell" style="width: 30%;">
+	Sour Truck</td>
+	
+					<td class="table-cell" style="width: 16%;">
+	Obtainable</td>
+	
+					<td class="table-cell" style="width: 14%;">
+	3046</td>
+	
+					<td class="table-cell" style="width: 19%;">
+	0.88381%</td>
+	
+				</tr>
+	
+				<tr class="table-row table-row--nonpodium">
+					<td class="table-cell table-cell--place place-number" KeyError>
+	95</td>
+	
+					<td class="table-cell" style="width: 12%;"><img class="car-img" src="/static/images/cars/
+	98.png"/></td>
+	
+					<td class="table-cell" style="width: 30%;">
+	Pumpkin Hauler</td>
+	
+					<td class="table-cell" style="width: 16%;">
+	Obtainable</td>
+	
+					<td class="table-cell" style="width: 14%;">
+	3118</td>
+	
+					<td class="table-cell" style="width: 19%;">
+	0.9047%</td>
+	
+				</tr>
+	
+				<tr class="table-row table-row--nonpodium">
+					<td class="table-cell table-cell--place place-number" KeyError>
+	96</td>
+	
+					<td class="table-cell" style="width: 12%;"><img class="car-img" src="/static/images/cars/
+	75.png"/></td>
+	
+					<td class="table-cell" style="width: 30%;">
+	Flux Capacitor</td>
+	
+					<td class="table-cell" style="width: 16%;">
+	Obtainable</td>
+	
+					<td class="table-cell" style="width: 14%;">
+	3221</td>
+	
+					<td class="table-cell" style="width: 19%;">
+	0.93458%</td>
+	
+				</tr>
+	
+				<tr class="table-row table-row--nonpodium">
+					<td class="table-cell table-cell--place place-number" KeyError>
+	97</td>
+	
+					<td class="table-cell" style="width: 12%;"><img class="car-img" src="/static/images/cars/
+	68.png"/></td>
+	
+					<td class="table-cell" style="width: 30%;">
+	F4U Corsair</td>
+	
+					<td class="table-cell" style="width: 16%;">
+	Obtainable</td>
+	
+					<td class="table-cell" style="width: 14%;">
+	3258</td>
+	
+					<td class="table-cell" style="width: 19%;">
+	0.94532%</td>
+	
+				</tr>
+	
+				<tr class="table-row table-row--nonpodium">
+					<td class="table-cell table-cell--place place-number" KeyError>
+	98</td>
+	
+					<td class="table-cell" style="width: 12%;"><img class="car-img" src="/static/images/cars/
+	181.png"/></td>
+	
+					<td class="table-cell" style="width: 30%;">
+	Sandstorm</td>
+	
+					<td class="table-cell" style="width: 16%;">
+	Obtainable</td>
+	
+					<td class="table-cell" style="width: 14%;">
+	3394</td>
+	
+					<td class="table-cell" style="width: 19%;">
+	0.98478%</td>
+	
+				</tr>
+	
+				<tr class="table-row table-row--nonpodium">
+					<td class="table-cell table-cell--place place-number" KeyError>
+	99</td>
+	
+					<td class="table-cell" style="width: 12%;"><img class="car-img" src="/static/images/cars/
+	120.png"/></td>
+	
+					<td class="table-cell" style="width: 30%;">
+	Wrapped Wracer</td>
+	
+					<td class="table-cell" style="width: 16%;">
+	Obtainable</td>
+	
+					<td class="table-cell" style="width: 14%;">
+	3411</td>
+	
+					<td class="table-cell" style="width: 19%;">
+	0.98971%</td>
+	
+				</tr>
+	
+				<tr class="table-row table-row--nonpodium">
+					<td class="table-cell table-cell--place place-number" KeyError>
+	100</td>
+	
+					<td class="table-cell" style="width: 12%;"><img class="car-img" src="/static/images/cars/
+	58.png"/></td>
+	
+					<td class="table-cell" style="width: 30%;">
+	F-35 JSF</td>
+	
+					<td class="table-cell" style="width: 16%;">
+	Obtainable</td>
+	
+					<td class="table-cell" style="width: 14%;">
+	3418</td>
+	
+					<td class="table-cell" style="width: 19%;">
+	0.99175%</td>
+	
+				</tr>
+	
+			</tbody>
+	
+		</table>
+	
 	</div>
-	<table class="table">
-		<thead>
-			<tr class="table-header">
-				<th scope="col" class="table-cell table-cell--place"></th>
-				<th scope="col" class="table-cell table-cell--car">Car</th>
-				<th scope="col" class="table-cell table-cell--car-name"></th>
-				<th scope="col" class="table-cell table-cell--availability">Availability</th>
-				<th scope="col" class="table-cell table-cell--players-own">Players Own</th>
-				<th scope="col" class="table-cell table-cell--pct-players-own">Percent Players Own</th>
-			</tr>
-		</thead>
-		<tbody class="table-body">
-			<tr class="table-row table-row--gold">
-				<td class="table-cell table-cell--place"><img class="medal" src="/static/images/gold.png"/></td>
-				<td class="table-cell table-cell-car"><img class="car-img" src="/static/images/cars/104.png"/></td>
-				<td class="table-cell table-cell--car-name">Corndog's Car</td>
-				<td class="table-cell table-cell--availability">Exclusive</td>
-				<td class="table-cell table-cell--players-own">2</td>
-				<td class="table-cell table-cell--pct-players-own">0.00058%</td>
-			</tr>
-			<tr class="table-row table-row--silver">
-				<td class="table-cell table-cell--place"><img class="medal" src="/static/images/silver.png" /></td>
-				<td class="table-cell table-cell-car"><img class="car-img" src="/static/images/cars/172.png"/></td>
-				<td class="table-cell table-cell--car-name">Travis' Truck</td>
-				<td class="table-cell table-cell--availability">Exclusive</td>
-				<td class="table-cell table-cell--players-own">2</td>
-				<td class="table-cell table-cell--pct-players-own">0.00058%</td>
-			</tr>
-			<tr class="table-row table-row--bronze">
-				<td class="table-cell table-cell--place"><img class="medal" src="/static/images/bronze.png" /></td>
-				<td class="table-cell table-cell-car"><img class="car-img" src="/static/images/cars/203.png"/></td>
-				<td class="table-cell table-cell--car-name">Liberty Danger 9</td>
-				<td class="table-cell table-cell--availability">Exclusive</td>
-				<td class="table-cell table-cell--players-own">2</td>
-				<td class="table-cell table-cell--pct-players-own">0.00058%</td>
-			</tr>
-			<tr class="table-row table-row--nonpodium">
-				<td class="table-cell table-cell--place place-number">4</td>
-				<td class="table-cell table-cell-car"><img class="car-img" src="/static/images/cars/313.png"/></td>
-				<td class="table-cell table-cell--car-name">The Wildflower 750</td>
-				<td class="table-cell table-cell--availability">Obtainable</td>
-				<td class="table-cell table-cell--players-own">2</td>
-				<td class="table-cell table-cell--pct-players-own">0.00058%</td>
-			</tr>
-			<tr class="table-row table-row--nonpodium">
-				<td class="table-cell table-cell--place place-number">5</td>
-				<td class="table-cell table-cell-car"><img class="car-img" src="/static/images/cars/345.png"/></td>
-				<td class="table-cell table-cell--car-name">Nitreux Vielleux</td>
-				<td class="table-cell table-cell--availability">Exclusive</td>
-				<td class="table-cell table-cell--players-own">2</td>
-				<td class="table-cell table-cell--pct-players-own">0.00058%</td>
-			</tr>
-			<tr class="table-row table-row--nonpodium">
-				<td class="table-cell table-cell--place place-number">6</td>
-				<td class="table-cell table-cell-car"><img class="car-img" src="/static/images/cars/333.png"/></td>
-				<td class="table-cell table-cell--car-name">Liberty YT-5K</td>
-				<td class="table-cell table-cell--availability">Obtainable</td>
-				<td class="table-cell table-cell--players-own">3</td>
-				<td class="table-cell table-cell--pct-players-own">0.00087%</td>
-			</tr>
-			<tr class="table-row table-row--nonpodium">
-				<td class="table-cell table-cell--place place-number">7</td>
-				<td class="table-cell table-cell-car"><img class="car-img" src="/static/images/cars/204.png"/></td>
-				<td class="table-cell table-cell--car-name">The Wild 500</td>
-				<td class="table-cell table-cell--availability">Obtainable</td>
-				<td class="table-cell table-cell--players-own">4</td>
-				<td class="table-cell table-cell--pct-players-own">0.00116%</td>
-			</tr>
-			<tr class="table-row table-row--nonpodium">
-				<td class="table-cell table-cell--place place-number">8</td>
-				<td class="table-cell table-cell-car"><img class="car-img" src="/static/images/cars/175.png"/></td>
-				<td class="table-cell table-cell--car-name">NT Gold</td>
-				<td class="table-cell table-cell--availability">Exclusive</td>
-				<td class="table-cell table-cell--players-own">5</td>
-				<td class="table-cell table-cell--pct-players-own">0.00145%</td>
-			</tr>
-			<tr class="table-row table-row--nonpodium">
-				<td class="table-cell table-cell--place place-number">9</td>
-				<td class="table-cell table-cell-car"><img class="car-img" src="/static/images/cars/170.png"/></td>
-				<td class="table-cell table-cell--car-name">can hav nt g0ld plx?</td>
-				<td class="table-cell table-cell--availability">Exclusive</td>
-				<td class="table-cell table-cell--players-own">7</td>
-				<td class="table-cell table-cell--pct-players-own">0.00203%</td>
-			</tr>
-			<tr class="table-row table-row--nonpodium">
-				<td class="table-cell table-cell--place place-number">10</td>
-				<td class="table-cell table-cell-car"><img class="car-img" src="/static/images/cars/166.png"/></td>
-				<td class="table-cell table-cell--car-name">The Wildflower</td>
-				<td class="table-cell table-cell--availability">Obtainable</td>
-				<td class="table-cell table-cell--players-own">42</td>
-				<td class="table-cell table-cell--pct-players-own">0.01219%</td>
-			</tr>
-			<tr class="table-row table-row--nonpodium">
-				<td class="table-cell table-cell--place place-number">11</td>
-				<td class="table-cell table-cell-car"><img class="car-img" src="/static/images/cars/153.png"/></td>
-				<td class="table-cell table-cell--car-name">Blitz GT 20.0</td>
-				<td class="table-cell table-cell--availability">Obtainable</td>
-				<td class="table-cell table-cell--players-own">62</td>
-				<td class="table-cell table-cell--pct-players-own">0.018%</td>
-			</tr>
-			<tr class="table-row table-row--nonpodium">
-				<td class="table-cell table-cell--place place-number">12</td>
-				<td class="table-cell table-cell-car"><img class="car-img" src="/static/images/cars/137.png"/></td>
-				<td class="table-cell table-cell--car-name">Blitz McLaro SHS 15.0</td>
-				<td class="table-cell table-cell--availability">Obtainable</td>
-				<td class="table-cell table-cell--players-own">114</td>
-				<td class="table-cell table-cell--pct-players-own">0.0331%</td>
-			</tr>
-			<tr class="table-row table-row--nonpodium">
-				<td class="table-cell table-cell--place place-number">13</td>
-				<td class="table-cell table-cell-car"><img class="car-img" src="/static/images/cars/129.png"/></td>
-				<td class="table-cell table-cell--car-name">Blitz McLaro SLR 12.5</td>
-				<td class="table-cell table-cell--availability">Obtainable</td>
-				<td class="table-cell table-cell--players-own">160</td>
-				<td class="table-cell table-cell--pct-players-own">0.04645%</td>
-			</tr>
-			<tr class="table-row table-row--nonpodium">
-				<td class="table-cell table-cell--place place-number">14</td>
-				<td class="table-cell table-cell-car"><img class="car-img" src="/static/images/cars/124.png"/></td>
-				<td class="table-cell table-cell--car-name">Blitz McLaro SLR</td>
-				<td class="table-cell table-cell--availability">Obtainable</td>
-				<td class="table-cell table-cell--players-own">237</td>
-				<td class="table-cell table-cell--pct-players-own">0.0688%</td>
-			</tr>
-			<tr class="table-row table-row--nonpodium">
-				<td class="table-cell table-cell--place place-number">15</td>
-				<td class="table-cell table-cell-car"><img class="car-img" src="/static/images/cars/155.png"/></td>
-				<td class="table-cell table-cell--car-name">NitroPAC</td>
-				<td class="table-cell table-cell--availability">Obtainable</td>
-				<td class="table-cell table-cell--players-own">238</td>
-				<td class="table-cell table-cell--pct-players-own">0.06909%</td>
-			</tr>
-			<tr class="table-row table-row--nonpodium">
-				<td class="table-cell table-cell--place place-number">16</td>
-				<td class="table-cell table-cell-car"><img class="car-img" src="/static/images/cars/85.png"/></td>
-				<td class="table-cell table-cell--car-name">Liberty '41 Woodie Sunshine</td>
-				<td class="table-cell table-cell--availability">Obtainable</td>
-				<td class="table-cell table-cell--players-own">297</td>
-				<td class="table-cell table-cell--pct-players-own">0.08622%</td>
-			</tr>
-			<tr class="table-row table-row--nonpodium">
-				<td class="table-cell table-cell--place place-number">17</td>
-				<td class="table-cell table-cell-car"><img class="car-img" src="/static/images/cars/88.png"/></td>
-				<td class="table-cell table-cell--car-name">Hang Fifteen</td>
-				<td class="table-cell table-cell--availability">Obtainable</td>
-				<td class="table-cell table-cell--players-own">300</td>
-				<td class="table-cell table-cell--pct-players-own">0.08709%</td>
-			</tr>
-			<tr class="table-row table-row--nonpodium">
-				<td class="table-cell table-cell--place place-number">18</td>
-				<td class="table-cell table-cell-car"><img class="car-img" src="/static/images/cars/95.png"/></td>
-				<td class="table-cell table-cell--car-name">Blitz Police Cruiser</td>
-				<td class="table-cell table-cell--availability">Obtainable</td>
-				<td class="table-cell table-cell--players-own">345</td>
-				<td class="table-cell table-cell--pct-players-own">0.10016%</td>
-			</tr>
-			<tr class="table-row table-row--nonpodium">
-				<td class="table-cell table-cell--place place-number">19</td>
-				<td class="table-cell table-cell-car"><img class="car-img" src="/static/images/cars/162.png"/></td>
-				<td class="table-cell table-cell--car-name">S'cool B.U.S.</td>
-				<td class="table-cell table-cell--availability">Obtainable</td>
-				<td class="table-cell table-cell--players-own">353</td>
-				<td class="table-cell table-cell--pct-players-own">0.10248%</td>
-			</tr>
-			<tr class="table-row table-row--nonpodium">
-				<td class="table-cell table-cell--place place-number">20</td>
-				<td class="table-cell table-cell-car"><img class="car-img" src="/static/images/cars/195.png"/></td>
-				<td class="table-cell table-cell--car-name">Cold Snap</td>
-				<td class="table-cell table-cell--availability">Obtainable</td>
-				<td class="table-cell table-cell--players-own">370</td>
-				<td class="table-cell table-cell--pct-players-own">0.10742%</td>
-			</tr>
-			<tr class="table-row table-row--nonpodium">
-				<td class="table-cell table-cell--place place-number">21</td>
-				<td class="table-cell table-cell-car"><img class="car-img" src="/static/images/cars/113.png"/></td>
-				<td class="table-cell table-cell--car-name">Kringle 4000 XL</td>
-				<td class="table-cell table-cell--availability">Obtainable</td>
-				<td class="table-cell table-cell--players-own">412</td>
-				<td class="table-cell table-cell--pct-players-own">0.11961%</td>
-			</tr>
-			<tr class="table-row table-row--nonpodium">
-				<td class="table-cell table-cell--place place-number">22</td>
-				<td class="table-cell table-cell-car"><img class="car-img" src="/static/images/cars/107.png"/></td>
-				<td class="table-cell table-cell--car-name">Fonicci Lacan Hypersport</td>
-				<td class="table-cell table-cell--availability">Obtainable</td>
-				<td class="table-cell table-cell--players-own">597</td>
-				<td class="table-cell table-cell--pct-players-own">0.17332%</td>
-			</tr>
-			<tr class="table-row table-row--nonpodium">
-				<td class="table-cell table-cell--place place-number">23</td>
-				<td class="table-cell table-cell-car"><img class="car-img" src="/static/images/cars/297.png"/></td>
-				<td class="table-cell table-cell--car-name">Elfmobile '21</td>
-				<td class="table-cell table-cell--availability">Obtainable</td>
-				<td class="table-cell table-cell--players-own">604</td>
-				<td class="table-cell table-cell--pct-players-own">0.17535%</td>
-			</tr>
-			<tr class="table-row table-row--nonpodium">
-				<td class="table-cell table-cell--place place-number">24</td>
-				<td class="table-cell table-cell-car"><img class="car-img" src="/static/images/cars/119.png"/></td>
-				<td class="table-cell table-cell--car-name">Kringle 5000</td>
-				<td class="table-cell table-cell--availability">Obtainable</td>
-				<td class="table-cell table-cell--players-own">615</td>
-				<td class="table-cell table-cell--pct-players-own">0.17854%</td>
-			</tr>
-			<tr class="table-row table-row--nonpodium">
-				<td class="table-cell table-cell--place place-number">25</td>
-				<td class="table-cell table-cell-car"><img class="car-img" src="/static/images/cars/118.png"/></td>
-				<td class="table-cell table-cell--car-name">The Candy Hauler</td>
-				<td class="table-cell table-cell--availability">Obtainable</td>
-				<td class="table-cell table-cell--players-own">647</td>
-				<td class="table-cell table-cell--pct-players-own">0.18783%</td>
-			</tr>
-			<tr class="table-row table-row--nonpodium">
-				<td class="table-cell table-cell--place place-number">26</td>
-				<td class="table-cell table-cell-car"><img class="car-img" src="/static/images/cars/121.png"/></td>
-				<td class="table-cell table-cell--car-name">Wrapped Wracer GT</td>
-				<td class="table-cell table-cell--availability">Obtainable</td>
-				<td class="table-cell table-cell--players-own">658</td>
-				<td class="table-cell table-cell--pct-players-own">0.19102%</td>
-			</tr>
-			<tr class="table-row table-row--nonpodium">
-				<td class="table-cell table-cell--place place-number">27</td>
-				<td class="table-cell table-cell-car"><img class="car-img" src="/static/images/cars/198.png"/></td>
-				<td class="table-cell table-cell--car-name">Golden Ticket</td>
-				<td class="table-cell table-cell--availability">Obtainable</td>
-				<td class="table-cell table-cell--players-own">665</td>
-				<td class="table-cell table-cell--pct-players-own">0.19306%</td>
-			</tr>
-			<tr class="table-row table-row--nonpodium">
-				<td class="table-cell table-cell--place place-number">28</td>
-				<td class="table-cell table-cell-car"><img class="car-img" src="/static/images/cars/131.png"/></td>
-				<td class="table-cell table-cell--car-name">Nitro-o'-the-Wisp</td>
-				<td class="table-cell table-cell--availability">Obtainable</td>
-				<td class="table-cell table-cell--players-own">711</td>
-				<td class="table-cell table-cell--pct-players-own">0.20641%</td>
-			</tr>
-			<tr class="table-row table-row--nonpodium">
-				<td class="table-cell table-cell--place place-number">29</td>
-				<td class="table-cell table-cell-car"><img class="car-img" src="/static/images/cars/146.png"/></td>
-				<td class="table-cell table-cell--car-name">The Dark Chocolate Knight</td>
-				<td class="table-cell table-cell--availability">Obtainable</td>
-				<td class="table-cell table-cell--players-own">743</td>
-				<td class="table-cell table-cell--pct-players-own">0.2157%</td>
-			</tr>
-			<tr class="table-row table-row--nonpodium">
-				<td class="table-cell table-cell--place place-number">30</td>
-				<td class="table-cell table-cell-car"><img class="car-img" src="/static/images/cars/105.png"/></td>
-				<td class="table-cell table-cell--car-name">Liberty '14 Mantaray</td>
-				<td class="table-cell table-cell--availability">Obtainable</td>
-				<td class="table-cell table-cell--players-own">766</td>
-				<td class="table-cell table-cell--pct-players-own">0.22238%</td>
-			</tr>
-			<tr class="table-row table-row--nonpodium">
-				<td class="table-cell table-cell--place place-number">31</td>
-				<td class="table-cell table-cell-car"><img class="car-img" src="/static/images/cars/141.png"/></td>
-				<td class="table-cell table-cell--car-name">Track-o'-Lantern</td>
-				<td class="table-cell table-cell--availability">Obtainable</td>
-				<td class="table-cell table-cell--players-own">803</td>
-				<td class="table-cell table-cell--pct-players-own">0.23312%</td>
-			</tr>
-			<tr class="table-row table-row--nonpodium">
-				<td class="table-cell table-cell--place place-number">32</td>
-				<td class="table-cell table-cell-car"><img class="car-img" src="/static/images/cars/71.png"/></td>
-				<td class="table-cell table-cell--car-name">Shadow XMaxx Tree</td>
-				<td class="table-cell table-cell--availability">Obtainable</td>
-				<td class="table-cell table-cell--players-own">913</td>
-				<td class="table-cell table-cell--pct-players-own">0.26505%</td>
-			</tr>
-			<tr class="table-row table-row--nonpodium">
-				<td class="table-cell table-cell--place place-number">33</td>
-				<td class="table-cell table-cell-car"><img class="car-img" src="/static/images/cars/133.png"/></td>
-				<td class="table-cell table-cell--car-name">XMaxx Xxpress XXL</td>
-				<td class="table-cell table-cell--availability">Obtainable</td>
-				<td class="table-cell table-cell--players-own">941</td>
-				<td class="table-cell table-cell--pct-players-own">0.27318%</td>
-			</tr>
-			<tr class="table-row table-row--nonpodium">
-				<td class="table-cell table-cell--place place-number">34</td>
-				<td class="table-cell table-cell-car"><img class="car-img" src="/static/images/cars/169.png"/></td>
-				<td class="table-cell table-cell--car-name">The Goldray</td>
-				<td class="table-cell table-cell--availability">Obtainable</td>
-				<td class="table-cell table-cell--players-own">941</td>
-				<td class="table-cell table-cell--pct-players-own">0.27318%</td>
-			</tr>
-			<tr class="table-row table-row--nonpodium">
-				<td class="table-cell table-cell--place place-number">35</td>
-				<td class="table-cell table-cell-car"><img class="car-img" src="/static/images/cars/134.png"/></td>
-				<td class="table-cell table-cell--car-name">Gilded Xxpress</td>
-				<td class="table-cell table-cell--availability">Obtainable</td>
-				<td class="table-cell table-cell--players-own">1049</td>
-				<td class="table-cell table-cell--pct-players-own">0.30454%</td>
-			</tr>
-			<tr class="table-row table-row--nonpodium">
-				<td class="table-cell table-cell--place place-number">36</td>
-				<td class="table-cell table-cell-car"><img class="car-img" src="/static/images/cars/89.png"/></td>
-				<td class="table-cell table-cell--car-name">Wach 6</td>
-				<td class="table-cell table-cell--availability">Obtainable</td>
-				<td class="table-cell table-cell--players-own">1056</td>
-				<td class="table-cell table-cell--pct-players-own">0.30657%</td>
-			</tr>
-			<tr class="table-row table-row--nonpodium">
-				<td class="table-cell table-cell--place place-number">37</td>
-				<td class="table-cell table-cell-car"><img class="car-img" src="/static/images/cars/185.png"/></td>
-				<td class="table-cell table-cell--car-name">Gold Standard</td>
-				<td class="table-cell table-cell--availability">Obtainable</td>
-				<td class="table-cell table-cell--players-own">1088</td>
-				<td class="table-cell table-cell--pct-players-own">0.31586%</td>
-			</tr>
-			<tr class="table-row table-row--nonpodium">
-				<td class="table-cell table-cell--place place-number">38</td>
-				<td class="table-cell table-cell-car"><img class="car-img" src="/static/images/cars/282.png"/></td>
-				<td class="table-cell table-cell--car-name">Ghoul Bus</td>
-				<td class="table-cell table-cell--availability">Obtainable</td>
-				<td class="table-cell table-cell--players-own">1166</td>
-				<td class="table-cell table-cell--pct-players-own">0.3385%</td>
-			</tr>
-			<tr class="table-row table-row--nonpodium">
-				<td class="table-cell table-cell--place place-number">39</td>
-				<td class="table-cell table-cell-car"><img class="car-img" src="/static/images/cars/213.png"/></td>
-				<td class="table-cell table-cell--car-name">Timber Speeder</td>
-				<td class="table-cell table-cell--availability">Obtainable</td>
-				<td class="table-cell table-cell--players-own">1268</td>
-				<td class="table-cell table-cell--pct-players-own">0.36811%</td>
-			</tr>
-			<tr class="table-row table-row--nonpodium">
-				<td class="table-cell table-cell--place place-number">40</td>
-				<td class="table-cell table-cell-car"><img class="car-img" src="/static/images/cars/103.png"/></td>
-				<td class="table-cell table-cell--car-name">The Golden Gift</td>
-				<td class="table-cell table-cell--availability">Obtainable</td>
-				<td class="table-cell table-cell--players-own">1276</td>
-				<td class="table-cell table-cell--pct-players-own">0.37044%</td>
-			</tr>
-			<tr class="table-row table-row--nonpodium">
-				<td class="table-cell table-cell--place place-number">41</td>
-				<td class="table-cell table-cell-car"><img class="car-img" src="/static/images/cars/336.png"/></td>
-				<td class="table-cell table-cell--car-name">Maxx'd-Out Shadow Tree</td>
-				<td class="table-cell table-cell--availability">Obtainable</td>
-				<td class="table-cell table-cell--players-own">1378</td>
-				<td class="table-cell table-cell--pct-players-own">0.40005%</td>
-			</tr>
-			<tr class="table-row table-row--nonpodium">
-				<td class="table-cell table-cell--place place-number">42</td>
-				<td class="table-cell table-cell-car"><img class="car-img" src="/static/images/cars/328.png"/></td>
-				<td class="table-cell table-cell--car-name">Boatie Classic</td>
-				<td class="table-cell table-cell--availability">Obtainable</td>
-				<td class="table-cell table-cell--players-own">1379</td>
-				<td class="table-cell table-cell--pct-players-own">0.40034%</td>
-			</tr>
-			<tr class="table-row table-row--nonpodium">
-				<td class="table-cell table-cell--place place-number">43</td>
-				<td class="table-cell table-cell-car"><img class="car-img" src="/static/images/cars/82.png"/></td>
-				<td class="table-cell table-cell--car-name">Hang Ten</td>
-				<td class="table-cell table-cell--availability">Obtainable</td>
-				<td class="table-cell table-cell--players-own">1387</td>
-				<td class="table-cell table-cell--pct-players-own">0.40266%</td>
-			</tr>
-			<tr class="table-row table-row--nonpodium">
-				<td class="table-cell table-cell--place place-number">44</td>
-				<td class="table-cell table-cell-car"><img class="car-img" src="/static/images/cars/183.png"/></td>
-				<td class="table-cell table-cell--car-name">The Goldfish</td>
-				<td class="table-cell table-cell--availability">Obtainable</td>
-				<td class="table-cell table-cell--players-own">1389</td>
-				<td class="table-cell table-cell--pct-players-own">0.40324%</td>
-			</tr>
-			<tr class="table-row table-row--nonpodium">
-				<td class="table-cell table-cell--place place-number">45</td>
-				<td class="table-cell table-cell-car"><img class="car-img" src="/static/images/cars/337.png"/></td>
-				<td class="table-cell table-cell--car-name">Corsa Festivi-X</td>
-				<td class="table-cell table-cell--availability">Obtainable</td>
-				<td class="table-cell table-cell--players-own">1471</td>
-				<td class="table-cell table-cell--pct-players-own">0.42705%</td>
-			</tr>
-			<tr class="table-row table-row--nonpodium">
-				<td class="table-cell table-cell--place place-number">46</td>
-				<td class="table-cell table-cell-car"><img class="car-img" src="/static/images/cars/136.png"/></td>
-				<td class="table-cell table-cell--car-name">Corsa Xmaxx LT-C</td>
-				<td class="table-cell table-cell--availability">Obtainable</td>
-				<td class="table-cell table-cell--players-own">1477</td>
-				<td class="table-cell table-cell--pct-players-own">0.42879%</td>
-			</tr>
-			<tr class="table-row table-row--nonpodium">
-				<td class="table-cell table-cell--place place-number">47</td>
-				<td class="table-cell table-cell-car"><img class="car-img" src="/static/images/cars/319.png"/></td>
-				<td class="table-cell table-cell--car-name">Winson Velox</td>
-				<td class="table-cell table-cell--availability">Obtainable</td>
-				<td class="table-cell table-cell--players-own">1484</td>
-				<td class="table-cell table-cell--pct-players-own">0.43082%</td>
-			</tr>
-			<tr class="table-row table-row--nonpodium">
-				<td class="table-cell table-cell--place place-number">48</td>
-				<td class="table-cell table-cell-car"><img class="car-img" src="/static/images/cars/132.png"/></td>
-				<td class="table-cell table-cell--car-name">XMaxx Xxpress</td>
-				<td class="table-cell table-cell--availability">Obtainable</td>
-				<td class="table-cell table-cell--players-own">1489</td>
-				<td class="table-cell table-cell--pct-players-own">0.43227%</td>
-			</tr>
-			<tr class="table-row table-row--nonpodium">
-				<td class="table-cell table-cell--place place-number">49</td>
-				<td class="table-cell table-cell-car"><img class="car-img" src="/static/images/cars/163.png"/></td>
-				<td class="table-cell table-cell--car-name">Konirra AU-79</td>
-				<td class="table-cell table-cell--availability">Obtainable</td>
-				<td class="table-cell table-cell--players-own">1518</td>
-				<td class="table-cell table-cell--pct-players-own">0.44069%</td>
-			</tr>
-			<tr class="table-row table-row--nonpodium">
-				<td class="table-cell table-cell--place place-number">50</td>
-				<td class="table-cell table-cell-car"><img class="car-img" src="/static/images/cars/342.png"/></td>
-				<td class="table-cell table-cell--car-name">RMS Unsinkable</td>
-				<td class="table-cell table-cell--availability">Obtainable</td>
-				<td class="table-cell table-cell--players-own">1528</td>
-				<td class="table-cell table-cell--pct-players-own">0.4436%</td>
-			</tr>
-			<tr class="table-row table-row--nonpodium">
-				<td class="table-cell table-cell--place place-number">51</td>
-				<td class="table-cell table-cell-car"><img class="car-img" src="/static/images/cars/151.png"/></td>
-				<td class="table-cell table-cell--car-name">Eggcedes</td>
-				<td class="table-cell table-cell--availability">Obtainable</td>
-				<td class="table-cell table-cell--players-own">1529</td>
-				<td class="table-cell table-cell--pct-players-own">0.44389%</td>
-			</tr>
-			<tr class="table-row table-row--nonpodium">
-				<td class="table-cell table-cell--place place-number">52</td>
-				<td class="table-cell table-cell-car"><img class="car-img" src="/static/images/cars/77.png"/></td>
-				<td class="table-cell table-cell--car-name">The Pirc</td>
-				<td class="table-cell table-cell--availability">Obtainable</td>
-				<td class="table-cell table-cell--players-own">1575</td>
-				<td class="table-cell table-cell--pct-players-own">0.45724%</td>
-			</tr>
-			<tr class="table-row table-row--nonpodium">
-				<td class="table-cell table-cell--place place-number">53</td>
-				<td class="table-cell table-cell-car"><img class="car-img" src="/static/images/cars/122.png"/></td>
-				<td class="table-cell table-cell--car-name">Holiday Hero</td>
-				<td class="table-cell table-cell--availability">Obtainable</td>
-				<td class="table-cell table-cell--players-own">1578</td>
-				<td class="table-cell table-cell--pct-players-own">0.45811%</td>
-			</tr>
-			<tr class="table-row table-row--nonpodium">
-				<td class="table-cell table-cell--place place-number">54</td>
-				<td class="table-cell table-cell-car"><img class="car-img" src="/static/images/cars/286.png"/></td>
-				<td class="table-cell table-cell--car-name">Harvestall Tractor</td>
-				<td class="table-cell table-cell--availability">Obtainable</td>
-				<td class="table-cell table-cell--players-own">1638</td>
-				<td class="table-cell table-cell--pct-players-own">0.47553%</td>
-			</tr>
-			<tr class="table-row table-row--nonpodium">
-				<td class="table-cell table-cell--place place-number">55</td>
-				<td class="table-cell table-cell-car"><img class="car-img" src="/static/images/cars/227.png"/></td>
-				<td class="table-cell table-cell--car-name">Maxxbilt Jetro</td>
-				<td class="table-cell table-cell--availability">Obtainable</td>
-				<td class="table-cell table-cell--players-own">1699</td>
-				<td class="table-cell table-cell--pct-players-own">0.49324%</td>
-			</tr>
-			<tr class="table-row table-row--nonpodium">
-				<td class="table-cell table-cell--place place-number">56</td>
-				<td class="table-cell table-cell-car"><img class="car-img" src="/static/images/cars/160.png"/></td>
-				<td class="table-cell table-cell--car-name">Golden Breeze</td>
-				<td class="table-cell table-cell--availability">Obtainable</td>
-				<td class="table-cell table-cell--players-own">1716</td>
-				<td class="table-cell table-cell--pct-players-own">0.49817%</td>
-			</tr>
-			<tr class="table-row table-row--nonpodium">
-				<td class="table-cell table-cell--place place-number">57</td>
-				<td class="table-cell table-cell-car"><img class="car-img" src="/static/images/cars/193.png"/></td>
-				<td class="table-cell table-cell--car-name">Gingerbread GT</td>
-				<td class="table-cell table-cell--availability">Obtainable</td>
-				<td class="table-cell table-cell--players-own">1748</td>
-				<td class="table-cell table-cell--pct-players-own">0.50746%</td>
-			</tr>
-			<tr class="table-row table-row--nonpodium">
-				<td class="table-cell table-cell--place place-number">58</td>
-				<td class="table-cell table-cell-car"><img class="car-img" src="/static/images/cars/285.png"/></td>
-				<td class="table-cell table-cell--car-name">Hay a Truck</td>
-				<td class="table-cell table-cell--availability">Obtainable</td>
-				<td class="table-cell table-cell--players-own">1812</td>
-				<td class="table-cell table-cell--pct-players-own">0.52604%</td>
-			</tr>
-			<tr class="table-row table-row--nonpodium">
-				<td class="table-cell table-cell--place place-number">59</td>
-				<td class="table-cell table-cell-car"><img class="car-img" src="/static/images/cars/280.png"/></td>
-				<td class="table-cell table-cell--car-name">S'cool B.U.S. Wildn</td>
-				<td class="table-cell table-cell--availability">Obtainable</td>
-				<td class="table-cell table-cell--players-own">1826</td>
-				<td class="table-cell table-cell--pct-players-own">0.53011%</td>
-			</tr>
-			<tr class="table-row table-row--nonpodium">
-				<td class="table-cell table-cell--place place-number">60</td>
-				<td class="table-cell table-cell-car"><img class="car-img" src="/static/images/cars/102.png"/></td>
-				<td class="table-cell table-cell--car-name">Winson Dark Elf</td>
-				<td class="table-cell table-cell--availability">Obtainable</td>
-				<td class="table-cell table-cell--players-own">1831</td>
-				<td class="table-cell table-cell--pct-players-own">0.53156%</td>
-			</tr>
-			<tr class="table-row table-row--nonpodium">
-				<td class="table-cell table-cell--place place-number">61</td>
-				<td class="table-cell table-cell-car"><img class="car-img" src="/static/images/cars/99.png"/></td>
-				<td class="table-cell table-cell--car-name">Wreath Racer</td>
-				<td class="table-cell table-cell--availability">Obtainable</td>
-				<td class="table-cell table-cell--players-own">1863</td>
-				<td class="table-cell table-cell--pct-players-own">0.54085%</td>
-			</tr>
-			<tr class="table-row table-row--nonpodium">
-				<td class="table-cell table-cell--place place-number">62</td>
-				<td class="table-cell table-cell-car"><img class="car-img" src="/static/images/cars/123.png"/></td>
-				<td class="table-cell table-cell--car-name">Kringle 5000 L.T.</td>
-				<td class="table-cell table-cell--availability">Obtainable</td>
-				<td class="table-cell table-cell--players-own">1872</td>
-				<td class="table-cell table-cell--pct-players-own">0.54346%</td>
-			</tr>
-			<tr class="table-row table-row--nonpodium">
-				<td class="table-cell table-cell--place place-number">63</td>
-				<td class="table-cell table-cell-car"><img class="car-img" src="/static/images/cars/140.png"/></td>
-				<td class="table-cell table-cell--car-name">Bozz Strykist 1300 XT-LR</td>
-				<td class="table-cell table-cell--availability">Obtainable</td>
-				<td class="table-cell table-cell--players-own">1938</td>
-				<td class="table-cell table-cell--pct-players-own">0.56262%</td>
-			</tr>
-			<tr class="table-row table-row--nonpodium">
-				<td class="table-cell table-cell--place place-number">64</td>
-				<td class="table-cell table-cell-car"><img class="car-img" src="/static/images/cars/100.png"/></td>
-				<td class="table-cell table-cell--car-name">Santa's Buggy</td>
-				<td class="table-cell table-cell--availability">Obtainable</td>
-				<td class="table-cell table-cell--players-own">1991</td>
-				<td class="table-cell table-cell--pct-players-own">0.57801%</td>
-			</tr>
-			<tr class="table-row table-row--nonpodium">
-				<td class="table-cell table-cell--place place-number">65</td>
-				<td class="table-cell table-cell-car"><img class="car-img" src="/static/images/cars/128.png"/></td>
-				<td class="table-cell table-cell--car-name">Y.A.C.H.T.</td>
-				<td class="table-cell table-cell--availability">Obtainable</td>
-				<td class="table-cell table-cell--players-own">2022</td>
-				<td class="table-cell table-cell--pct-players-own">0.58701%</td>
-			</tr>
-			<tr class="table-row table-row--nonpodium">
-				<td class="table-cell table-cell--place place-number">66</td>
-				<td class="table-cell table-cell-car"><img class="car-img" src="/static/images/cars/331.png"/></td>
-				<td class="table-cell table-cell--car-name">Nitreux F1</td>
-				<td class="table-cell table-cell--availability">Obtainable</td>
-				<td class="table-cell table-cell--players-own">2034</td>
-				<td class="table-cell table-cell--pct-players-own">0.59049%</td>
-			</tr>
-			<tr class="table-row table-row--nonpodium">
-				<td class="table-cell table-cell--place place-number">67</td>
-				<td class="table-cell table-cell-car"><img class="car-img" src="/static/images/cars/362.png"/></td>
-				<td class="table-cell table-cell--car-name">Fonicci Hyperion SS</td>
-				<td class="table-cell table-cell--availability">Obtainable</td>
-				<td class="table-cell table-cell--players-own">2112</td>
-				<td class="table-cell table-cell--pct-players-own">0.61314%</td>
-			</tr>
-			<tr class="table-row table-row--nonpodium">
-				<td class="table-cell table-cell--place place-number">68</td>
-				<td class="table-cell table-cell-car"><img class="car-img" src="/static/images/cars/59.png"/></td>
-				<td class="table-cell table-cell--car-name">NASA Shuttle</td>
-				<td class="table-cell table-cell--availability">Obtainable</td>
-				<td class="table-cell table-cell--players-own">2209</td>
-				<td class="table-cell table-cell--pct-players-own">0.6413%</td>
-			</tr>
-			<tr class="table-row table-row--nonpodium">
-				<td class="table-cell table-cell--place place-number">69</td>
-				<td class="table-cell table-cell-car"><img class="car-img" src="/static/images/cars/159.png"/></td>
-				<td class="table-cell table-cell--car-name">HoverJet 5000 Mk. 3</td>
-				<td class="table-cell table-cell--availability">Obtainable</td>
-				<td class="table-cell table-cell--players-own">2302</td>
-				<td class="table-cell table-cell--pct-players-own">0.6683%</td>
-			</tr>
-			<tr class="table-row table-row--nonpodium">
-				<td class="table-cell table-cell--place place-number">70</td>
-				<td class="table-cell table-cell-car"><img class="car-img" src="/static/images/cars/357.png"/></td>
-				<td class="table-cell table-cell--car-name">Konirra Apex</td>
-				<td class="table-cell table-cell--availability">Obtainable</td>
-				<td class="table-cell table-cell--players-own">2347</td>
-				<td class="table-cell table-cell--pct-players-own">0.68136%</td>
-			</tr>
-			<tr class="table-row table-row--nonpodium">
-				<td class="table-cell table-cell--place place-number">71</td>
-				<td class="table-cell table-cell-car"><img class="car-img" src="/static/images/cars/115.png"/></td>
-				<td class="table-cell table-cell--car-name">Liberty Six Four</td>
-				<td class="table-cell table-cell--availability">Obtainable</td>
-				<td class="table-cell table-cell--players-own">2378</td>
-				<td class="table-cell table-cell--pct-players-own">0.69036%</td>
-			</tr>
-			<tr class="table-row table-row--nonpodium">
-				<td class="table-cell table-cell--place place-number">72</td>
-				<td class="table-cell table-cell-car"><img class="car-img" src="/static/images/cars/110.png"/></td>
-				<td class="table-cell table-cell--car-name">Hammer Wheels</td>
-				<td class="table-cell table-cell--availability">Obtainable</td>
-				<td class="table-cell table-cell--players-own">2388</td>
-				<td class="table-cell table-cell--pct-players-own">0.69326%</td>
-			</tr>
-			<tr class="table-row table-row--nonpodium">
-				<td class="table-cell table-cell--place place-number">73</td>
-				<td class="table-cell table-cell-car"><img class="car-img" src="/static/images/cars/308.png"/></td>
-				<td class="table-cell table-cell--car-name">Bozz Advent</td>
-				<td class="table-cell table-cell--availability">Obtainable</td>
-				<td class="table-cell table-cell--players-own">2429</td>
-				<td class="table-cell table-cell--pct-players-own">0.70517%</td>
-			</tr>
-			<tr class="table-row table-row--nonpodium">
-				<td class="table-cell table-cell--place place-number">74</td>
-				<td class="table-cell table-cell-car"><img class="car-img" src="/static/images/cars/197.png"/></td>
-				<td class="table-cell table-cell--car-name">The Rocket Klaus</td>
-				<td class="table-cell table-cell--availability">Obtainable</td>
-				<td class="table-cell table-cell--players-own">2448</td>
-				<td class="table-cell table-cell--pct-players-own">0.71068%</td>
-			</tr>
-			<tr class="table-row table-row--nonpodium">
-				<td class="table-cell table-cell--place place-number">75</td>
-				<td class="table-cell table-cell-car"><img class="car-img" src="/static/images/cars/144.png"/></td>
-				<td class="table-cell table-cell--car-name">Missile Toe</td>
-				<td class="table-cell table-cell--availability">Obtainable</td>
-				<td class="table-cell table-cell--players-own">2466</td>
-				<td class="table-cell table-cell--pct-players-own">0.71591%</td>
-			</tr>
-			<tr class="table-row table-row--nonpodium">
-				<td class="table-cell table-cell--place place-number">76</td>
-				<td class="table-cell table-cell-car"><img class="car-img" src="/static/images/cars/311.png"/></td>
-				<td class="table-cell table-cell--car-name">Radon 620</td>
-				<td class="table-cell table-cell--availability">Obtainable</td>
-				<td class="table-cell table-cell--players-own">2485</td>
-				<td class="table-cell table-cell--pct-players-own">0.72142%</td>
-			</tr>
-			<tr class="table-row table-row--nonpodium">
-				<td class="table-cell table-cell--place place-number">77</td>
-				<td class="table-cell table-cell-car"><img class="car-img" src="/static/images/cars/244.png"/></td>
-				<td class="table-cell table-cell--car-name">Maxxbilt Ice Hauler</td>
-				<td class="table-cell table-cell--availability">Obtainable</td>
-				<td class="table-cell table-cell--players-own">2540</td>
-				<td class="table-cell table-cell--pct-players-own">0.73739%</td>
-			</tr>
-			<tr class="table-row table-row--nonpodium">
-				<td class="table-cell table-cell--place place-number">78</td>
-				<td class="table-cell table-cell-car"><img class="car-img" src="/static/images/cars/215.png"/></td>
-				<td class="table-cell table-cell--car-name">Webmobile Spider</td>
-				<td class="table-cell table-cell--availability">Obtainable</td>
-				<td class="table-cell table-cell--players-own">2546</td>
-				<td class="table-cell table-cell--pct-players-own">0.73913%</td>
-			</tr>
-			<tr class="table-row table-row--nonpodium">
-				<td class="table-cell table-cell--place place-number">79</td>
-				<td class="table-cell table-cell-car"><img class="car-img" src="/static/images/cars/150.png"/></td>
-				<td class="table-cell table-cell--car-name">Egg Beater</td>
-				<td class="table-cell table-cell--availability">Obtainable</td>
-				<td class="table-cell table-cell--players-own">2666</td>
-				<td class="table-cell table-cell--pct-players-own">0.77397%</td>
-			</tr>
-			<tr class="table-row table-row--nonpodium">
-				<td class="table-cell table-cell--place place-number">80</td>
-				<td class="table-cell table-cell-car"><img class="car-img" src="/static/images/cars/274.png"/></td>
-				<td class="table-cell table-cell--car-name">Hydrova OG</td>
-				<td class="table-cell table-cell--availability">Obtainable</td>
-				<td class="table-cell table-cell--players-own">2684</td>
-				<td class="table-cell table-cell--pct-players-own">0.7792%</td>
-			</tr>
-			<tr class="table-row table-row--nonpodium">
-				<td class="table-cell table-cell--place place-number">81</td>
-				<td class="table-cell table-cell-car"><img class="car-img" src="/static/images/cars/210.png"/></td>
-				<td class="table-cell table-cell--car-name">Chompus' Wild Ride</td>
-				<td class="table-cell table-cell--availability">Obtainable</td>
-				<td class="table-cell table-cell--players-own">2686</td>
-				<td class="table-cell table-cell--pct-players-own">0.77978%</td>
-			</tr>
-			<tr class="table-row table-row--nonpodium">
-				<td class="table-cell table-cell--place place-number">82</td>
-				<td class="table-cell table-cell-car"><img class="car-img" src="/static/images/cars/224.png"/></td>
-				<td class="table-cell table-cell--car-name">The Festivitank</td>
-				<td class="table-cell table-cell--availability">Obtainable</td>
-				<td class="table-cell table-cell--players-own">2697</td>
-				<td class="table-cell table-cell--pct-players-own">0.78297%</td>
-			</tr>
-			<tr class="table-row table-row--nonpodium">
-				<td class="table-cell table-cell--place place-number">83</td>
-				<td class="table-cell table-cell-car"><img class="car-img" src="/static/images/cars/301.png"/></td>
-				<td class="table-cell table-cell--car-name">Snowcat Luxe</td>
-				<td class="table-cell table-cell--availability">Obtainable</td>
-				<td class="table-cell table-cell--players-own">2715</td>
-				<td class="table-cell table-cell--pct-players-own">0.78819%</td>
-			</tr>
-			<tr class="table-row table-row--nonpodium">
-				<td class="table-cell table-cell--place place-number">84</td>
-				<td class="table-cell table-cell-car"><img class="car-img" src="/static/images/cars/315.png"/></td>
-				<td class="table-cell table-cell--car-name">Corsa Tiesto "Coldsnap"</td>
-				<td class="table-cell table-cell--availability">Obtainable</td>
-				<td class="table-cell table-cell--players-own">2785</td>
-				<td class="table-cell table-cell--pct-players-own">0.80852%</td>
-			</tr>
-			<tr class="table-row table-row--nonpodium">
-				<td class="table-cell table-cell--place place-number">85</td>
-				<td class="table-cell table-cell-car"><img class="car-img" src="/static/images/cars/346.png"/></td>
-				<td class="table-cell table-cell--car-name">Mach 10 Maverick</td>
-				<td class="table-cell table-cell--availability">Obtainable</td>
-				<td class="table-cell table-cell--players-own">2860</td>
-				<td class="table-cell table-cell--pct-players-own">0.83029%</td>
-			</tr>
-			<tr class="table-row table-row--nonpodium">
-				<td class="table-cell table-cell--place place-number">86</td>
-				<td class="table-cell table-cell-car"><img class="car-img" src="/static/images/cars/142.png"/></td>
-				<td class="table-cell table-cell--car-name">Gingerbread Racer</td>
-				<td class="table-cell table-cell--availability">Obtainable</td>
-				<td class="table-cell table-cell--players-own">2861</td>
-				<td class="table-cell table-cell--pct-players-own">0.83058%</td>
-			</tr>
-			<tr class="table-row table-row--nonpodium">
-				<td class="table-cell table-cell--place place-number">87</td>
-				<td class="table-cell table-cell-car"><img class="car-img" src="/static/images/cars/174.png"/></td>
-				<td class="table-cell table-cell--car-name">The Silent Knight</td>
-				<td class="table-cell table-cell--availability">Obtainable</td>
-				<td class="table-cell table-cell--players-own">2862</td>
-				<td class="table-cell table-cell--pct-players-own">0.83087%</td>
-			</tr>
-			<tr class="table-row table-row--nonpodium">
-				<td class="table-cell table-cell--place place-number">88</td>
-				<td class="table-cell table-cell-car"><img class="car-img" src="/static/images/cars/70.png"/></td>
-				<td class="table-cell table-cell--car-name">XMaxx Tree Racer</td>
-				<td class="table-cell table-cell--availability">Obtainable</td>
-				<td class="table-cell table-cell--players-own">2872</td>
-				<td class="table-cell table-cell--pct-players-own">0.83377%</td>
-			</tr>
-			<tr class="table-row table-row--nonpodium">
-				<td class="table-cell table-cell--place place-number">89</td>
-				<td class="table-cell table-cell-car"><img class="car-img" src="/static/images/cars/171.png"/></td>
-				<td class="table-cell table-cell--car-name">Liberty Wraptor</td>
-				<td class="table-cell table-cell--availability">Obtainable</td>
-				<td class="table-cell table-cell--players-own">2876</td>
-				<td class="table-cell table-cell--pct-players-own">0.83493%</td>
-			</tr>
-			<tr class="table-row table-row--nonpodium">
-				<td class="table-cell table-cell--place place-number">90</td>
-				<td class="table-cell table-cell-car"><img class="car-img" src="/static/images/cars/318.png"/></td>
-				<td class="table-cell table-cell--car-name">AU-79 Mk. 18</td>
-				<td class="table-cell table-cell--availability">Obtainable</td>
-				<td class="table-cell table-cell--players-own">2895</td>
-				<td class="table-cell table-cell--pct-players-own">0.84045%</td>
-			</tr>
-			<tr class="table-row table-row--nonpodium">
-				<td class="table-cell table-cell--place place-number">91</td>
-				<td class="table-cell table-cell-car"><img class="car-img" src="/static/images/cars/350.png"/></td>
-				<td class="table-cell table-cell--car-name">Viper Vortex</td>
-				<td class="table-cell table-cell--availability">Obtainable</td>
-				<td class="table-cell table-cell--players-own">2902</td>
-				<td class="table-cell table-cell--pct-players-own">0.84248%</td>
-			</tr>
-			<tr class="table-row table-row--nonpodium">
-				<td class="table-cell table-cell--place place-number">92</td>
-				<td class="table-cell table-cell-car"><img class="car-img" src="/static/images/cars/299.png"/></td>
-				<td class="table-cell table-cell--car-name">Party Sleigh Neon</td>
-				<td class="table-cell table-cell--availability">Obtainable</td>
-				<td class="table-cell table-cell--players-own">2936</td>
-				<td class="table-cell table-cell--pct-players-own">0.85235%</td>
-			</tr>
-			<tr class="table-row table-row--nonpodium">
-				<td class="table-cell table-cell--place place-number">93</td>
-				<td class="table-cell table-cell-car"><img class="car-img" src="/static/images/cars/143.png"/></td>
-				<td class="table-cell table-cell--car-name">Gingerbread Racer H&T</td>
-				<td class="table-cell table-cell--availability">Obtainable</td>
-				<td class="table-cell table-cell--players-own">2995</td>
-				<td class="table-cell table-cell--pct-players-own">0.86948%</td>
-			</tr>
-			<tr class="table-row table-row--nonpodium">
-				<td class="table-cell table-cell--place place-number">94</td>
-				<td class="table-cell table-cell-car"><img class="car-img" src="/static/images/cars/314.png"/></td>
-				<td class="table-cell table-cell--car-name">Sour Truck</td>
-				<td class="table-cell table-cell--availability">Obtainable</td>
-				<td class="table-cell table-cell--players-own">3034</td>
-				<td class="table-cell table-cell--pct-players-own">0.8808%</td>
-			</tr>
-			<tr class="table-row table-row--nonpodium">
-				<td class="table-cell table-cell--place place-number">95</td>
-				<td class="table-cell table-cell-car"><img class="car-img" src="/static/images/cars/98.png"/></td>
-				<td class="table-cell table-cell--car-name">Pumpkin Hauler</td>
-				<td class="table-cell table-cell--availability">Obtainable</td>
-				<td class="table-cell table-cell--players-own">3106</td>
-				<td class="table-cell table-cell--pct-players-own">0.90171%</td>
-			</tr>
-			<tr class="table-row table-row--nonpodium">
-				<td class="table-cell table-cell--place place-number">96</td>
-				<td class="table-cell table-cell-car"><img class="car-img" src="/static/images/cars/75.png"/></td>
-				<td class="table-cell table-cell--car-name">Flux Capacitor</td>
-				<td class="table-cell table-cell--availability">Obtainable</td>
-				<td class="table-cell table-cell--players-own">3209</td>
-				<td class="table-cell table-cell--pct-players-own">0.93161%</td>
-			</tr>
-			<tr class="table-row table-row--nonpodium">
-				<td class="table-cell table-cell--place place-number">97</td>
-				<td class="table-cell table-cell-car"><img class="car-img" src="/static/images/cars/68.png"/></td>
-				<td class="table-cell table-cell--car-name">F4U Corsair</td>
-				<td class="table-cell table-cell--availability">Obtainable</td>
-				<td class="table-cell table-cell--players-own">3243</td>
-				<td class="table-cell table-cell--pct-players-own">0.94148%</td>
-			</tr>
-			<tr class="table-row table-row--nonpodium">
-				<td class="table-cell table-cell--place place-number">98</td>
-				<td class="table-cell table-cell-car"><img class="car-img" src="/static/images/cars/181.png"/></td>
-				<td class="table-cell table-cell--car-name">Sandstorm</td>
-				<td class="table-cell table-cell--availability">Obtainable</td>
-				<td class="table-cell table-cell--players-own">3379</td>
-				<td class="table-cell table-cell--pct-players-own">0.98096%</td>
-			</tr>
-			<tr class="table-row table-row--nonpodium">
-				<td class="table-cell table-cell--place place-number">99</td>
-				<td class="table-cell table-cell-car"><img class="car-img" src="/static/images/cars/120.png"/></td>
-				<td class="table-cell table-cell--car-name">Wrapped Wracer</td>
-				<td class="table-cell table-cell--availability">Obtainable</td>
-				<td class="table-cell table-cell--players-own">3399</td>
-				<td class="table-cell table-cell--pct-players-own">0.98677%</td>
-			</tr>
-			<tr class="table-row table-row--nonpodium">
-				<td class="table-cell table-cell--place place-number">100</td>
-				<td class="table-cell table-cell-car"><img class="car-img" src="/static/images/cars/58.png"/></td>
-				<td class="table-cell table-cell--car-name">F-35 JSF</td>
-				<td class="table-cell table-cell--availability">Obtainable</td>
-				<td class="table-cell table-cell--players-own">3404</td>
-				<td class="table-cell table-cell--pct-players-own">0.98822%</td>
-			</tr>
-		</tbody>
-	</table>
-</div>
+	
