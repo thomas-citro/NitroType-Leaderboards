@@ -548,6 +548,27 @@ h2 {
 	flex-wrap: wrap;
 }
 
+.hof-heading {
+	text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+	color: #fff;
+	text-align: center;
+	font-size: 18px;
+	font-family: "Montserrat", sans-serif;
+	font-weight: bold;
+	border-bottom: 1px solid #fff;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 8px;
+	margin-bottom: 4px;
+	width: 20%;
+}
+
+.hof-heading-container {
+	width: 100%;
+	text-align: center;
+	/*margin-left: 8px;*/
+}
+
 .not-visible-button {
 	visibility: hidden;
 }
