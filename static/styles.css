@@ -385,6 +385,13 @@ button {
 	display: flex;
 }
 
+.divider3 {
+	background: #3B3D4C;
+	padding: 0;
+	box-shadow:inset 0px -2px 0px 0px #61626E;
+	display: flex;
+}
+
 form {
 	align-self: center;
 	margin-left: auto;
@@ -415,6 +422,10 @@ form {
 	font-size: 14px;
 }
 
+.width100 {
+	width: 100%;
+}
+
 .board-description-icon {
 	margin-left: 25px;
 }
@@ -433,6 +444,23 @@ form {
 	font-weight: 300;
 	line-height: 1.6;
 	box-sizing: inherit;
+}
+
+.dropdown-speed {
+	text-align: left;
+	color: #fff;
+	font-size: 100%;
+	font-family: "Montserrat", sans-serif;
+	font-weight: 300;
+	line-height: 1.6;
+	box-sizing: inherit;
+	margin-left: 10px;
+}
+
+.speed-form {
+	display: flex;
+	align-items: center;
+	margin-right: 0;
 }
 
 .dropdown-select {
@@ -527,7 +555,7 @@ h2 {
 .donor-message {
 	color: #F9D034;
 	text-align: left;
-	font-size: 16px;
+	font-size: 14px;
 	font-family: "Montserrat", sans-serif;
 }
 

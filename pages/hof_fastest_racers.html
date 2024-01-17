@@ -69,7 +69,7 @@
 	
 		</div>
 	
-		<div class="divider">
+		<div class="divider2">
 	
 			<div class="hall-of-fame-buttons">
 				<button type="button" class="hall-of-fame-button not-active-button" onclick="changeTab('hof_most_active_racers')">Most Active Racers</button>
@@ -88,6 +88,22 @@
 	
 		</div>
 	
+		<div class="divider3">
+	
+		<div class="board-description width100">
+			<form class="speed-form">
+				<label for="dropdown-avg-speed">Speed based on: </label>
+				<div class="dropdown-speed">
+					<select id="dropdown-avg-speed" class="dropdown-select" onchange="handleDropdownChange()">
+						<option value="hof_fastest_racers" selected>Average WPM</option>
+						<option value="hof_fastest_racers_top_wpm">Highest WPM</option>
+					</select>
+				</div>
+			</form>
+		</div>
+	
+		</div>
+	
 		<table class="table">
 	
 			<thead>
@@ -95,7 +111,7 @@
 					<th scope="col" class="table-cell" style="width: 9%;"></th>
 					<th scope="col" class="table-cell" style="width: 12%;">Racer</th>
 					<th scope="col" class="table-cell" style="width: 62%;"></th>
-					<th scope="col" class="table-cell" style="width: 17%;">Current WPM</th>
+					<th scope="col" class="table-cell" style="width: 17%;">Average WPM</th>
 				</tr>
 			</thead>
 	
