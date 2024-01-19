@@ -168,6 +168,13 @@ li {
 	width: 20px;
 }
 
+.admin-img {
+	width: 70px;
+	margin-left: 4px;
+	vertical-align: middle;
+	transform: translateY(-2px);
+}
+
 .display-name {
 	padding-left: 0.3%;
 	text-decoration: none;
