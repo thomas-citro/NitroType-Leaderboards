@@ -103,6 +103,15 @@
 			/>
 		</svg>
 		<span class="board-description-text">Send cash to <a href="https://www.nitrotype.com/racer/tommy_14" target="_blank" class="my-profile-link">Tommy_14</a> to get added! Message me on Discord your donor message. My Discord username is: <span style="color: #F9D034;">thomas_1213</span></span>
+		<form class="cash-form">
+			<label for="dropdown-nt-cash" class="cash-label">Cash type: </label>
+			<div class="dropdown-cash">
+				<select id="dropdown-nt-cash" class="dropdown-select" onchange="handleDropdownChange()">
+					<option value="hof_top_donors" selected>Nitro Type Cash</option>
+					<option value="hof_top_donors_real_cash">Real Cash</option>
+				</select>
+			</div>
+		</form>
 	</div>
 	
 		<table class="table">
@@ -136,7 +145,7 @@
 	m                                                 </a>
 						<br><span class="title">"Shattered"</span>
 					</td>
-					<td class="table-cell" style="width: 32%;"><span class="donor-message">"botting is bad"</span></td>				<td class="table-cell" style="width: 16%;"><span class="cash-symbol">$</span><span class="nitro-cash">1,000,000,000</span></td>
+					<td class="table-cell" style="width: 32%;"><span class="donor-message">"botting is bad"</span></td>				<td class="table-cell" style="width: 16%;"><span class="cash-symbol">$</span><span class="cash">1,000,000,000</span></td>
 				</tr>
 	
 				<tr class="table-row table-row--silver">
@@ -156,7 +165,7 @@
 	lil tecca</a>
 						<br><span class="title">"Filthy Rich"</span>
 					</td>
-					<td class="table-cell" style="width: 32%;"><span class="donor-message"></span></td>				<td class="table-cell" style="width: 16%;"><span class="cash-symbol">$</span><span class="nitro-cash">200,000,000</span></td>
+					<td class="table-cell" style="width: 32%;"><span class="donor-message"></span></td>				<td class="table-cell" style="width: 16%;"><span class="cash-symbol">$</span><span class="cash">200,000,000</span></td>
 				</tr>
 	
 				<tr class="table-row table-row--bronze">
@@ -176,7 +185,7 @@
 	veimos</a>
 						<br><span class="title">"I Love Dogs"</span>
 					</td>
-					<td class="table-cell" style="width: 32%;"><span class="donor-message">"Sensational"</span></td>				<td class="table-cell" style="width: 16%;"><span class="cash-symbol">$</span><span class="nitro-cash">130,000,000</span></td>
+					<td class="table-cell" style="width: 32%;"><span class="donor-message">"Sensational"</span></td>				<td class="table-cell" style="width: 16%;"><span class="cash-symbol">$</span><span class="cash">130,000,000</span></td>
 				</tr>
 	
 				<tr class="table-row table-row--nonpodium">
@@ -197,7 +206,7 @@
 	discordgg ntcom</a>
 						<br><span class="title">"Celebrity"</span>
 					</td>
-					<td class="table-cell" style="width: 32%;"><span class="donor-message">"https://discord.gg/ntcom"</span></td>				<td class="table-cell" style="width: 16%;"><span class="cash-symbol">$</span><span class="nitro-cash">90,000,000</span></td>
+					<td class="table-cell" style="width: 32%;"><span class="donor-message">"https://discord.gg/ntcom"</span></td>				<td class="table-cell" style="width: 16%;"><span class="cash-symbol">$</span><span class="cash">90,000,000</span></td>
 				</tr>
 	
 				<tr class="table-row table-row--nonpodium">
@@ -218,7 +227,7 @@
 	Nate Dogg 185 WPM</a>
 						<br><span class="title">"Please Subscribe"</span>
 					</td>
-					<td class="table-cell" style="width: 32%;"><span class="donor-message">"DomiN8TE"</span></td>				<td class="table-cell" style="width: 16%;"><span class="cash-symbol">$</span><span class="nitro-cash">77,777,777</span></td>
+					<td class="table-cell" style="width: 32%;"><span class="donor-message">"DomiN8TE"</span></td>				<td class="table-cell" style="width: 16%;"><span class="cash-symbol">$</span><span class="cash">77,777,777</span></td>
 				</tr>
 	
 				<tr class="table-row table-row--nonpodium">
@@ -239,7 +248,7 @@
 	chill wt</a>
 						<br><span class="title">"Winter Besties"</span>
 					</td>
-					<td class="table-cell" style="width: 32%;"><span class="donor-message">"VDN ON TOP"</span></td>				<td class="table-cell" style="width: 16%;"><span class="cash-symbol">$</span><span class="nitro-cash">70,000,000</span></td>
+					<td class="table-cell" style="width: 32%;"><span class="donor-message">"VDN ON TOP"</span></td>				<td class="table-cell" style="width: 16%;"><span class="cash-symbol">$</span><span class="cash">70,000,000</span></td>
 				</tr>
 	
 				<tr class="table-row table-row--nonpodium">
@@ -260,7 +269,7 @@
 	JJokesYT</a>
 						<br><span class="title">"Summer Rider"</span>
 					</td>
-					<td class="table-cell" style="width: 32%;"><span class="donor-message">"Co-Cap me NOW"</span></td>				<td class="table-cell" style="width: 16%;"><span class="cash-symbol">$</span><span class="nitro-cash">51,000,000</span></td>
+					<td class="table-cell" style="width: 32%;"><span class="donor-message">"Co-Cap me NOW"</span></td>				<td class="table-cell" style="width: 16%;"><span class="cash-symbol">$</span><span class="cash">51,000,000</span></td>
 				</tr>
 	
 				<tr class="table-row table-row--nonpodium">
@@ -281,7 +290,7 @@
 	Hammerhead</a>
 						<br><span class="title">"Aquarian Conqueror"</span>
 					</td>
-					<td class="table-cell" style="width: 32%;"><span class="donor-message"></span></td>				<td class="table-cell" style="width: 16%;"><span class="cash-symbol">$</span><span class="nitro-cash">25,000,000</span></td>
+					<td class="table-cell" style="width: 32%;"><span class="donor-message"></span></td>				<td class="table-cell" style="width: 16%;"><span class="cash-symbol">$</span><span class="cash">25,000,000</span></td>
 				</tr>
 	
 				<tr class="table-row table-row--nonpodium">
@@ -302,7 +311,7 @@
 	SmartDerek</a>
 						<br><span class="title">"Huge Baller"</span>
 					</td>
-					<td class="table-cell" style="width: 32%;"><span class="donor-message">"hi"</span></td>				<td class="table-cell" style="width: 16%;"><span class="cash-symbol">$</span><span class="nitro-cash">15,000,000</span></td>
+					<td class="table-cell" style="width: 32%;"><span class="donor-message">"hi"</span></td>				<td class="table-cell" style="width: 16%;"><span class="cash-symbol">$</span><span class="cash">15,000,000</span></td>
 				</tr>
 	
 				<tr class="table-row table-row--nonpodium">
@@ -323,7 +332,7 @@
 	Snowball Mateo 2024</a>
 						<br><span class="title">"Lightspeed"</span>
 					</td>
-					<td class="table-cell" style="width: 32%;"><span class="donor-message">"I Love This LeaderBoard"</span></td>				<td class="table-cell" style="width: 16%;"><span class="cash-symbol">$</span><span class="nitro-cash">10,000,001</span></td>
+					<td class="table-cell" style="width: 32%;"><span class="donor-message">"I Love This LeaderBoard"</span></td>				<td class="table-cell" style="width: 16%;"><span class="cash-symbol">$</span><span class="cash">10,000,001</span></td>
 				</tr>
 	
 				<tr class="table-row table-row--nonpodium">
@@ -344,7 +353,7 @@
 	Tarif </a>
 						<br><span class="title">"Three Commas Club"</span>
 					</td>
-					<td class="table-cell" style="width: 32%;"><span class="donor-message">"Raw Racing Recruit"</span></td>				<td class="table-cell" style="width: 16%;"><span class="cash-symbol">$</span><span class="nitro-cash">10,000,000</span></td>
+					<td class="table-cell" style="width: 32%;"><span class="donor-message">"Raw Racing Recruit"</span></td>				<td class="table-cell" style="width: 16%;"><span class="cash-symbol">$</span><span class="cash">10,000,000</span></td>
 				</tr>
 	
 				<tr class="table-row table-row--nonpodium">
@@ -365,7 +374,7 @@
 	Vielle</a>
 						<br><span class="title">"Legendary"</span>
 					</td>
-					<td class="table-cell" style="width: 32%;"><span class="donor-message"></span></td>				<td class="table-cell" style="width: 16%;"><span class="cash-symbol">$</span><span class="nitro-cash">10,000,000</span></td>
+					<td class="table-cell" style="width: 32%;"><span class="donor-message"></span></td>				<td class="table-cell" style="width: 16%;"><span class="cash-symbol">$</span><span class="cash">10,000,000</span></td>
 				</tr>
 	
 				<tr class="table-row table-row--nonpodium">
@@ -386,7 +395,7 @@
 	existence</a>
 						<br><span class="title">"Algebra Ace"</span>
 					</td>
-					<td class="table-cell" style="width: 32%;"><span class="donor-message">"sites.google.com/view/existencenitrotype"</span></td>				<td class="table-cell" style="width: 16%;"><span class="cash-symbol">$</span><span class="nitro-cash">9,200,000</span></td>
+					<td class="table-cell" style="width: 32%;"><span class="donor-message">"sites.google.com/view/existencenitrotype"</span></td>				<td class="table-cell" style="width: 16%;"><span class="cash-symbol">$</span><span class="cash">9,200,000</span></td>
 				</tr>
 	
 				<tr class="table-row table-row--nonpodium">
@@ -407,7 +416,7 @@
 	-Hal0-</a>
 						<br><span class="title">"Trail Angel"</span>
 					</td>
-					<td class="table-cell" style="width: 32%;"><span class="donor-message">"I love morries"</span></td>				<td class="table-cell" style="width: 16%;"><span class="cash-symbol">$</span><span class="nitro-cash">6,942,069</span></td>
+					<td class="table-cell" style="width: 32%;"><span class="donor-message">"I love morries"</span></td>				<td class="table-cell" style="width: 16%;"><span class="cash-symbol">$</span><span class="cash">6,942,069</span></td>
 				</tr>
 	
 				<tr class="table-row table-row--nonpodium">
@@ -428,7 +437,7 @@
 	Wolfy likes cheese</a>
 						<br><span class="title">"The Practicer"</span>
 					</td>
-					<td class="table-cell" style="width: 32%;"><span class="donor-message"></span></td>				<td class="table-cell" style="width: 16%;"><span class="cash-symbol">$</span><span class="nitro-cash">5,000,000</span></td>
+					<td class="table-cell" style="width: 32%;"><span class="donor-message"></span></td>				<td class="table-cell" style="width: 16%;"><span class="cash-symbol">$</span><span class="cash">5,000,000</span></td>
 				</tr>
 	
 				<tr class="table-row table-row--nonpodium">
@@ -449,7 +458,7 @@
 	ginfio_dot_com</a>
 						<br><span class="title">"Secret Agent"</span>
 					</td>
-					<td class="table-cell" style="width: 32%;"><span class="donor-message">"Thomas is the goat"</span></td>				<td class="table-cell" style="width: 16%;"><span class="cash-symbol">$</span><span class="nitro-cash">4,928,619</span></td>
+					<td class="table-cell" style="width: 32%;"><span class="donor-message">"Thomas is the goat"</span></td>				<td class="table-cell" style="width: 16%;"><span class="cash-symbol">$</span><span class="cash">4,928,619</span></td>
 				</tr>
 	
 				<tr class="table-row table-row--nonpodium">
@@ -470,12 +479,33 @@
 	Kruizer</a>
 						<br><span class="title">"Nitro Wealthy"</span>
 					</td>
-					<td class="table-cell" style="width: 32%;"><span class="donor-message"></span></td>				<td class="table-cell" style="width: 16%;"><span class="cash-symbol">$</span><span class="nitro-cash">1,000,000</span></td>
+					<td class="table-cell" style="width: 32%;"><span class="donor-message"></span></td>				<td class="table-cell" style="width: 16%;"><span class="cash-symbol">$</span><span class="cash">1,000,000</span></td>
 				</tr>
 	
 				<tr class="table-row table-row--nonpodium">
 					<td class="table-cell table-cell--place place-number" style="width: 9%;">
 	18</td>
+	
+					<td class="table-cell" style="width: 12%;"><img class="car-img" src="/static/images/cars/
+	95.png"/></td>
+	
+					<td class="table-cell" style="width: 31%;">
+	
+						<img class="gold-img" src="/static/images/gold-membership.png"/>
+	
+						<span class="team-tag" style="color: #8750a0;">[FASZ]</span>
+	
+						<a class="display-name" style="color: #F9D034;" href="https://www.nitrotype.com/racer/
+	ntboss_the_best" target="_blank">
+	Grayson</a>
+						<br><span class="title">"Happy Vibes :)"</span>
+					</td>
+					<td class="table-cell" style="width: 32%;"><span class="donor-message">"Thomas The Train On Top"</span></td>				<td class="table-cell" style="width: 16%;"><span class="cash-symbol">$</span><span class="cash">1,000,000</span></td>
+				</tr>
+	
+				<tr class="table-row table-row--nonpodium">
+					<td class="table-cell table-cell--place place-number" style="width: 9%;">
+	19</td>
 	
 					<td class="table-cell" style="width: 12%;"><img class="car-img" src="/static/images/cars/painted/
 	88_large_1_320.png"/></td>
@@ -491,12 +521,12 @@
 	TTV x YT is mirciy</a>
 						<br><span class="title">"Sp3llchekcer"</span>
 					</td>
-					<td class="table-cell" style="width: 32%;"><span class="donor-message">"Flooded The Face"</span></td>				<td class="table-cell" style="width: 16%;"><span class="cash-symbol">$</span><span class="nitro-cash">999,999</span></td>
+					<td class="table-cell" style="width: 32%;"><span class="donor-message">"Flooded The Face"</span></td>				<td class="table-cell" style="width: 16%;"><span class="cash-symbol">$</span><span class="cash">999,999</span></td>
 				</tr>
 	
 				<tr class="table-row table-row--nonpodium">
 					<td class="table-cell table-cell--place place-number" style="width: 9%;">
-	19</td>
+	20</td>
 	
 					<td class="table-cell" style="width: 12%;"><img class="car-img" src="/static/images/cars/painted/
 	56drxchfg_large_320.png"/></td>
@@ -512,12 +542,12 @@
 	༺JesusLovesYou༻</a>
 						<br><span class="title">"Sp3llchekcer"</span>
 					</td>
-					<td class="table-cell" style="width: 32%;"><span class="donor-message"></span></td>				<td class="table-cell" style="width: 16%;"><span class="cash-symbol">$</span><span class="nitro-cash">300,131</span></td>
+					<td class="table-cell" style="width: 32%;"><span class="donor-message"></span></td>				<td class="table-cell" style="width: 16%;"><span class="cash-symbol">$</span><span class="cash">300,131</span></td>
 				</tr>
 	
 				<tr class="table-row table-row--nonpodium">
 					<td class="table-cell table-cell--place place-number" style="width: 9%;">
-	20</td>
+	21</td>
 	
 					<td class="table-cell" style="width: 12%;"><img class="car-img" src="/static/images/cars/painted/
 	73_large_1_260.png"/></td>
@@ -533,12 +563,33 @@
 	Illusion</a>
 						<br><span class="title">"Ultimate Racer"</span>
 					</td>
-					<td class="table-cell" style="width: 32%;"><span class="donor-message"></span></td>				<td class="table-cell" style="width: 16%;"><span class="cash-symbol">$</span><span class="nitro-cash">300,000</span></td>
+					<td class="table-cell" style="width: 32%;"><span class="donor-message"></span></td>				<td class="table-cell" style="width: 16%;"><span class="cash-symbol">$</span><span class="cash">300,000</span></td>
 				</tr>
 	
 				<tr class="table-row table-row--nonpodium">
 					<td class="table-cell table-cell--place place-number" style="width: 9%;">
-	21</td>
+	22</td>
+	
+					<td class="table-cell" style="width: 12%;"><img class="car-img" src="/static/images/cars/
+	76.png"/></td>
+	
+					<td class="table-cell" style="width: 31%;">
+	
+						<img class="gold-img" src="/static/images/gold-membership.png"/>
+	
+						<span class="team-tag" style="color: #9a6db0;">[VDN]</span>
+	
+						<a class="display-name" style="color: #F9D034;" href="https://www.nitrotype.com/racer/
+	pwneedsqueen" target="_blank">
+	PW 10kNM</a>
+						<br><span class="title">"My Popsicle Melted"</span>
+					</td>
+					<td class="table-cell" style="width: 32%;"><span class="donor-message"></span></td>				<td class="table-cell" style="width: 16%;"><span class="cash-symbol">$</span><span class="cash">227,370</span></td>
+				</tr>
+	
+				<tr class="table-row table-row--nonpodium">
+					<td class="table-cell table-cell--place place-number" style="width: 9%;">
+	23</td>
 	
 					<td class="table-cell" style="width: 12%;"><img class="car-img" src="/static/images/cars/painted/
 	56drxchfg_large_220.png"/></td>
@@ -554,12 +605,12 @@
 	_-Enzo-_</a>
 						<br><span class="title">"Happy Vibes :)"</span>
 					</td>
-					<td class="table-cell" style="width: 32%;"><span class="donor-message"></span></td>				<td class="table-cell" style="width: 16%;"><span class="cash-symbol">$</span><span class="nitro-cash">202,203</span></td>
+					<td class="table-cell" style="width: 32%;"><span class="donor-message"></span></td>				<td class="table-cell" style="width: 16%;"><span class="cash-symbol">$</span><span class="cash">202,203</span></td>
 				</tr>
 	
 				<tr class="table-row table-row--nonpodium">
 					<td class="table-cell table-cell--place place-number" style="width: 9%;">
-	22</td>
+	24</td>
 	
 					<td class="table-cell" style="width: 12%;"><img class="car-img" src="/static/images/cars/
 	95.png"/></td>
@@ -575,12 +626,52 @@
 	Emperor</a>
 						<br><span class="title">"Lord of the Practice"</span>
 					</td>
-					<td class="table-cell" style="width: 32%;"><span class="donor-message"></span></td>				<td class="table-cell" style="width: 16%;"><span class="cash-symbol">$</span><span class="nitro-cash">202,202</span></td>
+					<td class="table-cell" style="width: 32%;"><span class="donor-message"></span></td>				<td class="table-cell" style="width: 16%;"><span class="cash-symbol">$</span><span class="cash">202,202</span></td>
 				</tr>
 	
 				<tr class="table-row table-row--nonpodium">
 					<td class="table-cell table-cell--place place-number" style="width: 9%;">
-	23</td>
+	25</td>
+	
+					<td class="table-cell" style="width: 12%;"><img class="car-img" src="/static/images/cars/painted/
+	xmaxxhyper_large_180.png"/></td>
+	
+					<td class="table-cell" style="width: 31%;">
+	
+						<img class="gold-img" src="/static/images/gold-membership.png"/>
+	
+						<a class="display-name" style="color: #F9D034;" href="https://www.nitrotype.com/racer/
+	princewarrior606" target="_blank">
+	JusThinkinOfHer</a>
+						<br><span class="title">"Frosty Flyer"</span>
+					</td>
+					<td class="table-cell" style="width: 32%;"><span class="donor-message"></span></td>				<td class="table-cell" style="width: 16%;"><span class="cash-symbol">$</span><span class="cash">200,000</span></td>
+				</tr>
+	
+				<tr class="table-row table-row--nonpodium">
+					<td class="table-cell table-cell--place place-number" style="width: 9%;">
+	26</td>
+	
+					<td class="table-cell" style="width: 12%;"><img class="car-img" src="/static/images/cars/painted/
+	83_large_1_20.png"/></td>
+	
+					<td class="table-cell" style="width: 31%;">
+	
+						<img class="gold-img" src="/static/images/gold-membership.png"/>
+	
+						<span class="team-tag" style="color: #70c3ed;">[KCAT]</span>
+	
+						<a class="display-name" style="color: #F9D034;" href="https://www.nitrotype.com/racer/
+	valour_for_1st" target="_blank">
+	 Will </a>
+						<br><span class="title">"Cuts the Line"</span>
+					</td>
+					<td class="table-cell" style="width: 32%;"><span class="donor-message"></span></td>				<td class="table-cell" style="width: 16%;"><span class="cash-symbol">$</span><span class="cash">123,456</span></td>
+				</tr>
+	
+				<tr class="table-row table-row--nonpodium">
+					<td class="table-cell table-cell--place place-number" style="width: 9%;">
+	27</td>
 	
 					<td class="table-cell" style="width: 12%;"><img class="car-img" src="/static/images/cars/painted/
 	xmaxxhyper_large_300.png"/></td>
@@ -596,12 +687,12 @@
 	Vielle</a>
 						<br><span class="title">"Happy Vibes :)"</span>
 					</td>
-					<td class="table-cell" style="width: 32%;"><span class="donor-message"></span></td>				<td class="table-cell" style="width: 16%;"><span class="cash-symbol">$</span><span class="nitro-cash">121,580</span></td>
+					<td class="table-cell" style="width: 32%;"><span class="donor-message"></span></td>				<td class="table-cell" style="width: 16%;"><span class="cash-symbol">$</span><span class="cash">121,580</span></td>
 				</tr>
 	
 				<tr class="table-row table-row--nonpodium">
 					<td class="table-cell table-cell--place place-number" style="width: 9%;">
-	24</td>
+	28</td>
 	
 					<td class="table-cell" style="width: 12%;"><img class="car-img" src="/static/images/cars/
 	213.png"/></td>
@@ -617,12 +708,33 @@
 	yakeru</a>
 						<br><span class="title">"California Dreamin'"</span>
 					</td>
-					<td class="table-cell" style="width: 32%;"><span class="donor-message"></span></td>				<td class="table-cell" style="width: 16%;"><span class="cash-symbol">$</span><span class="nitro-cash">111,111</span></td>
+					<td class="table-cell" style="width: 32%;"><span class="donor-message"></span></td>				<td class="table-cell" style="width: 16%;"><span class="cash-symbol">$</span><span class="cash">111,111</span></td>
 				</tr>
 	
 				<tr class="table-row table-row--nonpodium">
 					<td class="table-cell table-cell--place place-number" style="width: 9%;">
-	25</td>
+	29</td>
+	
+					<td class="table-cell" style="width: 12%;"><img class="car-img" src="/static/images/cars/
+	318.png"/></td>
+	
+					<td class="table-cell" style="width: 31%;">
+	
+						<img class="gold-img" src="/static/images/gold-membership.png"/>
+	
+						<span class="team-tag" style="color: #5b52a3;">[QUOKKA]</span>
+	
+						<a class="display-name" style="color: #F9D034;" href="https://www.nitrotype.com/racer/
+	quokka_drew1" target="_blank">
+	Quokka_Poodle1</a>
+						<br><span class="title">"The Diamond Racer"</span>
+					</td>
+					<td class="table-cell" style="width: 32%;"><span class="donor-message"></span></td>				<td class="table-cell" style="width: 16%;"><span class="cash-symbol">$</span><span class="cash">100,003</span></td>
+				</tr>
+	
+				<tr class="table-row table-row--nonpodium">
+					<td class="table-cell table-cell--place place-number" style="width: 9%;">
+	30</td>
 	
 					<td class="table-cell" style="width: 12%;"><img class="car-img" src="/static/images/cars/painted/
 	213_large_1_180.png"/></td>
@@ -638,12 +750,12 @@
 	scruffles11 </a>
 						<br><span class="title">"Happy Vibes :)"</span>
 					</td>
-					<td class="table-cell" style="width: 32%;"><span class="donor-message"></span></td>				<td class="table-cell" style="width: 16%;"><span class="cash-symbol">$</span><span class="nitro-cash">100,001</span></td>
+					<td class="table-cell" style="width: 32%;"><span class="donor-message"></span></td>				<td class="table-cell" style="width: 16%;"><span class="cash-symbol">$</span><span class="cash">100,001</span></td>
 				</tr>
 	
 				<tr class="table-row table-row--nonpodium">
 					<td class="table-cell table-cell--place place-number" style="width: 9%;">
-	26</td>
+	31</td>
 	
 					<td class="table-cell" style="width: 12%;"><img class="car-img" src="/static/images/cars/painted/
 	154_large_1_220.png"/></td>
@@ -659,12 +771,12 @@
 	sixtwosix</a>
 						<br><span class="title">"Rocky"</span>
 					</td>
-					<td class="table-cell" style="width: 32%;"><span class="donor-message"></span></td>				<td class="table-cell" style="width: 16%;"><span class="cash-symbol">$</span><span class="nitro-cash">100,000</span></td>
+					<td class="table-cell" style="width: 32%;"><span class="donor-message"></span></td>				<td class="table-cell" style="width: 16%;"><span class="cash-symbol">$</span><span class="cash">100,000</span></td>
 				</tr>
 	
 				<tr class="table-row table-row--nonpodium">
 					<td class="table-cell table-cell--place place-number" style="width: 9%;">
-	27</td>
+	32</td>
 	
 					<td class="table-cell" style="width: 12%;"><img class="car-img" src="/static/images/cars/painted/
 	68_large_1_340.png"/></td>
@@ -680,12 +792,12 @@
 	-A--I-</a>
 						<br><span class="title">"Lightspeed"</span>
 					</td>
-					<td class="table-cell" style="width: 32%;"><span class="donor-message"></span></td>				<td class="table-cell" style="width: 16%;"><span class="cash-symbol">$</span><span class="nitro-cash">100,000</span></td>
+					<td class="table-cell" style="width: 32%;"><span class="donor-message"></span></td>				<td class="table-cell" style="width: 16%;"><span class="cash-symbol">$</span><span class="cash">100,000</span></td>
 				</tr>
 	
 				<tr class="table-row table-row--nonpodium">
 					<td class="table-cell table-cell--place place-number" style="width: 9%;">
-	28</td>
+	33</td>
 	
 					<td class="table-cell" style="width: 12%;"><img class="car-img" src="/static/images/cars/
 	362.png"/></td>
@@ -701,7 +813,28 @@
 	epiccity</a>
 						<br><span class="title">"The Smasher"</span>
 					</td>
-					<td class="table-cell" style="width: 32%;"><span class="donor-message"></span></td>				<td class="table-cell" style="width: 16%;"><span class="cash-symbol">$</span><span class="nitro-cash">100,000</span></td>
+					<td class="table-cell" style="width: 32%;"><span class="donor-message"></span></td>				<td class="table-cell" style="width: 16%;"><span class="cash-symbol">$</span><span class="cash">100,000</span></td>
+				</tr>
+	
+				<tr class="table-row table-row--nonpodium">
+					<td class="table-cell table-cell--place place-number" style="width: 9%;">
+	34</td>
+	
+					<td class="table-cell" style="width: 12%;"><img class="car-img" src="/static/images/cars/
+	278.png"/></td>
+	
+					<td class="table-cell" style="width: 31%;">
+	
+						<img class="gold-img" src="/static/images/gold-membership.png"/>
+	
+						<span class="team-tag" style="color: #9bca3c;">[TOA]</span>
+	
+						<a class="display-name" style="color: #F9D034;" href="https://www.nitrotype.com/racer/
+	5b6fe3c1656df2f3ea7ae2fc44ff4daa" target="_blank">
+	_-NoobBird39-_</a>
+						<br><span class="title">":D"</span>
+					</td>
+					<td class="table-cell" style="width: 32%;"><span class="donor-message"></span></td>				<td class="table-cell" style="width: 16%;"><span class="cash-symbol">$</span><span class="cash">100,000</span></td>
 				</tr>
 	
 			</tbody>
