@@ -137,6 +137,11 @@ body {
 	vertical-align: middle;
 }
 
+.graph {
+	width: 90%;
+	align-self: center;
+}
+
 li {
 	margin-bottom: 5px;
 }
