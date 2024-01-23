@@ -1,0 +1,1505 @@
+
+	<div class="leaderboard-box">
+	
+		<div class="tabs">
+	
+			<button class="tab not-active" onclick="changeTab('top_racers_season')">
+				<div class="icon-text-container">
+					<svg xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd" viewBox="0 0 24 24" id="icon-rank" width="18" height="18" fill="white">
+						<path
+							d="M3.19 19.989L1 20.292l1.594 1.532L2.205 24l1.949-1.043L6.104 24l-.389-2.176 1.594-1.532-2.19-.303L4.154 18l-.964 1.989zm8 0L9 20.292l1.594 1.532L10.205 24l1.949-1.043L14.104 24l-.389-2.176 1.594-1.532-2.19-.303L12.154 18l-.964 1.989zm7.691 0l-2.19.303 1.594 1.532L17.896 24l1.949-1.043L21.795 24l-.389-2.176L23 20.292l-2.19-.303L19.845 18l-.964 1.989zm-.129-7.171c-2.436-.562-5.206-1.055-4.108-3.129C17.986 3.376 15.53 0 12 0 8.401 0 6.004 3.506 9.356 9.689c1.131 2.086-1.725 2.579-4.109 3.129-2.176.502-2.258 1.583-2.251 3.474L3 17h18l.003-.686c.008-1.904-.066-2.992-2.251-3.496z"
+						/>
+					</svg>
+					<div class="tab--text">Top Racers</div>
+				</div>
+			</button>
+	
+			<button class="tab is-active">
+				<div class="icon-text-container">
+					<svg xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd" viewBox="0 0 24 24" id="icon-rank-team" width="18" height="18" fill="white">
+						<path
+							d="M20.624 22.474L19 21.605l-1.625.869.324-1.813-1.328-1.277 1.825-.252.804-1.658.804 1.658 1.825.252-1.329 1.277.324 1.813zm-7 0L12 21.605l-1.625.869.325-1.813-1.329-1.277 1.825-.252.804-1.658.804 1.658 1.825.252-1.329 1.277.324 1.813zm-7 0L5 21.605l-1.625.869.325-1.813-1.329-1.277 1.825-.252L5 17.474l.804 1.658 1.825.252L6.3 20.661l.324 1.813zM23 15.974H1a1 1 0 00-1 1v6a1 1 0 001 1h22a1 1 0 001-1v-6a1 1 0 00-1-1zm-22.998-1H5c.008-1.214-.001-2.289 0-3.013.005-3.993 1.749-3.116 1.749-6.663 0-1.507-.983-2.324-2.248-2.324-1.869 0-3.169 1.787-1.399 5.129.581 1.099-.62 1.359-1.91 1.657C.074 10.018 0 10.807 0 11.753l.002 3.221zM22.808 9.76c-1.29-.298-2.491-.558-1.91-1.657 1.77-3.342.47-5.129-1.399-5.129-1.265 0-2.248.817-2.248 2.324 0 3.324 1.719 2.704 1.749 6.676.008.972-.009 1.311 0 3h4.998L24 11.753c0-.946-.074-1.735-1.192-1.993zm-4.811 5.214H6.002L6 11.848c0-1.258.1-2.482 1.588-2.826 1.684-.389 3.344-.736 2.545-2.209-2.366-4.364-.674-6.839 1.866-6.839 2.491 0 4.226 2.383 1.866 6.839-.775 1.464.826 1.812 2.545 2.209 1.49.344 1.589 1.569 1.589 2.829l-.002 3.123z"
+						/>
+					</svg>
+					<div class="tab--text">Top Teams</div>
+				</div>
+			</button>
+	
+			<button class="tab not-active" onclick="changeTab('hof_most_active_racers')">
+				<div class="icon-text-container">
+					<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" id="icon-trophy" width="18" height="18" fill="white">
+						<path
+							d="M13.408 18C13.906 14.053 19 10.803 19 1H5c0 9.803 5.105 13.053 5.604 17h2.804zM9.794 6.528l1.46-.202L11.897 5l.643 1.326 1.46.202-1.063 1.021.26 1.451-1.3-.695-1.3.695.26-1.451-1.063-1.021zm-3.803 4.128c.286.638.585 1.231.882 1.783C2.808 11.091.372 7.105 0 3h4.077c.036.482.08.955.139 1.405H1.527c.427 2.001 1.549 4.729 4.464 6.251zM16 21.619V23H8v-1.381c1.941 0 2.369-1.433 2.571-2.619h2.866c.193 1.187.565 2.619 2.563 2.619zM24 3c-.372 4.105-2.808 8.091-6.873 9.438.297-.552.596-1.145.882-1.783 2.915-1.521 4.037-4.25 4.464-6.251h-2.688c.059-.45.103-.922.139-1.405H24z"
+						/>
+					</svg>
+					<div class="tab--text">Hall of Fame</div>
+				</div>
+			</button>
+	
+			<button class="tab not-active" onclick="changeTab('rarest_cars')">
+				<div class="icon-text-container">
+					<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" id="icon-diamond" width="18" height="18" fill="white">
+						<path
+							d="M18 1H6.084L0 8l12 15L24 8.083 18 1zM6.333 9l3.231 7.753L3.361 9h2.972zM15.5 9L12 17.4 8.5 9h7zM9.135 7L12 3.562 14.865 7h-5.73zm8.532 2h3.028l-6.283 7.811L17.667 9zm2.794-2h-2.992l-3.334-4h2.938l3.388 4zM6.996 3h2.869L6.531 7H3.52l3.476-4z"
+						/>
+					</svg>
+					<div class="tab--text">Rarest Cars</div>
+				</div>
+			</button>
+	
+			<button class="tab not-active" onclick="changeTab('site_stats')">
+				<div class="icon-text-container">
+					<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" id="icon-chart" width="18" height="18" fill="white">
+						<path d="M7 19H1V8h6v11zm8-18H9v18h6V1zm8 11h-6v7h6v-7zm1 9H0v2h24v-2z" />
+					</svg>
+					<div class="tab--text">Site Stats</div>
+				</div>
+			</button>
+	
+			<button class="tab not-active" onclick="changeTab('more_info')">
+				<div class="icon-text-container">
+					<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" id="icon-info" width="18" height="18" fill="white">
+						<path
+							d="M12 2c5.514 0 10 4.486 10 10s-4.486 10-10 10S2 17.514 2 12 6.486 2 12 2zm0-2C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm-.001 5.75c.69 0 1.251.56 1.251 1.25s-.561 1.25-1.251 1.25a1.25 1.25 0 010-2.5zM14 18h-4v-1c.484-.179 1-.201 1-.735v-4.467c0-.534-.516-.618-1-.797v-1h3v6.265c0 .535.517.558 1 .735V18z"
+						/>
+					</svg>
+					<div class="tab--text">More Info</div>
+				</div>
+			</button>
+	
+		</div>
+	
+		<div class="divider">
+	
+			<div class="timeframe-buttons">
+				<button type="button" class="timeframe-button active-button">Season</button>
+			</div>
+			<form>
+				<div class="dropdown" onchange="handleDropdownChange()">
+					<select class="dropdown-select">
+						<option value="top_teams_season">Top Teams</option>
+						<option value="fastest_teams_season">Fastest Teams</option>
+						<option value="most_accurate_teams_season" selected>Most Accurate Teams</option>
+					</select>
+				</div>
+			</form>
+	
+		</div>
+	
+		<table class="table">
+	
+			<thead>
+				<tr class="table-header">
+					<th scope="col" class="table-cell" style="width: 9%;"></th>
+					<th scope="col" class="table-cell" style="width: 12%;">Tag</th>
+					<th scope="col" class="table-cell" style="width: 46%;">Team</th>
+					<th scope="col" class="table-cell" style="width: 15%;">Members</th>
+					<th scope="col" class="table-cell" style="width: 18%;">Accuracy</th>
+				</tr>
+			</thead>
+	
+			<tbody class="table-body">
+	
+				<tr class="table-row table-row--gold">
+					<td class="table-cell table-cell--place" KeyError><img class="medal" src="/static/images/gold.png"/></td>
+	
+					<td KeyError><span class="tag-text" style="color: #436fb6;">[BESTKT]</span></td>
+					<td KeyError><a href="https://www.nitrotype.com/team/BESTKT" target="_blank" class="team-text">"BEST  KID TYPERS"</a></td>
+					<td KeyError>
+	10</td>
+	
+					<td KeyError>
+	99.8503%</td>
+	
+				</tr>
+	
+				<tr class="table-row table-row--silver">
+					<td class="table-cell table-cell--place" KeyError><img class="medal" src="/static/images/silver.png" /></td>
+	
+					<td KeyError><span class="tag-text" style="color: #436fb6;">[WSOM]</span></td>
+					<td KeyError><a href="https://www.nitrotype.com/team/WSOM" target="_blank" class="team-text">" Nitro Racers "</a></td>
+					<td KeyError>
+	25</td>
+	
+					<td KeyError>
+	99.4164%</td>
+	
+				</tr>
+	
+				<tr class="table-row table-row--bronze">
+					<td class="table-cell table-cell--place" KeyError><img class="medal" src="/static/images/bronze.png" /></td>
+	
+					<td KeyError><span class="tag-text" style="color: #f15f90;">[CAT13]</span></td>
+					<td KeyError><a href="https://www.nitrotype.com/team/CAT13" target="_blank" class="team-text">"KITTENS RULE"</a></td>
+					<td KeyError>
+	20</td>
+	
+					<td KeyError>
+	99.1709%</td>
+	
+				</tr>
+	
+				<tr class="table-row table-row--nonpodium">
+					<td class="table-cell table-cell--place place-number" KeyError>
+	4</td>
+	
+					<td KeyError><span class="tag-text" style="color: #436fb6;">[FFNT]</span></td>
+					<td KeyError><a href="https://www.nitrotype.com/team/FFNT" target="_blank" class="team-text">"Fun with Friends NT"</a></td>
+					<td KeyError>
+	15</td>
+	
+					<td KeyError>
+	98.7022%</td>
+	
+				</tr>
+	
+				<tr class="table-row table-row--nonpodium">
+					<td class="table-cell table-cell--place place-number" KeyError>
+	5</td>
+	
+					<td KeyError><span class="tag-text" style="color: #5b52a3;">[UID]</span></td>
+					<td KeyError><a href="https://www.nitrotype.com/team/UID" target="_blank" class="team-text">"Unity In Diversity"</a></td>
+					<td KeyError>
+	14</td>
+	
+					<td KeyError>
+	98.5809%</td>
+	
+				</tr>
+	
+				<tr class="table-row table-row--nonpodium">
+					<td class="table-cell table-cell--place place-number" KeyError>
+	6</td>
+	
+					<td KeyError><span class="tag-text" style="color: #5b52a3;">[59]</span></td>
+					<td KeyError><a href="https://www.nitrotype.com/team/59" target="_blank" class="team-text">"59 Days"</a></td>
+					<td KeyError>
+	12</td>
+	
+					<td KeyError>
+	98.465%</td>
+	
+				</tr>
+	
+				<tr class="table-row table-row--nonpodium">
+					<td class="table-cell table-cell--place place-number" KeyError>
+	7</td>
+	
+					<td KeyError><span class="tag-text" style="color: #f5eb21;">[ORCA]</span></td>
+					<td KeyError><a href="https://www.nitrotype.com/team/ORCA" target="_blank" class="team-text">"Ocean Rulers"</a></td>
+					<td KeyError>
+	35</td>
+	
+					<td KeyError>
+	98.4386%</td>
+	
+				</tr>
+	
+				<tr class="table-row table-row--nonpodium">
+					<td class="table-cell table-cell--place place-number" KeyError>
+	8</td>
+	
+					<td KeyError><span class="tag-text" style="color: #ac8bc0;">[B2T]</span></td>
+					<td KeyError><a href="https://www.nitrotype.com/team/B2T" target="_blank" class="team-text">"Born 2 Type"</a></td>
+					<td KeyError>
+	13</td>
+	
+					<td KeyError>
+	98.4113%</td>
+	
+				</tr>
+	
+				<tr class="table-row table-row--nonpodium">
+					<td class="table-cell table-cell--place place-number" KeyError>
+	9</td>
+	
+					<td KeyError><span class="tag-text" style="color: #f9a98e;">[WHEELT]</span></td>
+					<td KeyError><a href="https://www.nitrotype.com/team/WHEELT" target="_blank" class="team-text">"WheelOfTime"</a></td>
+					<td KeyError>
+	24</td>
+	
+					<td KeyError>
+	98.2201%</td>
+	
+				</tr>
+	
+				<tr class="table-row table-row--nonpodium">
+					<td class="table-cell table-cell--place place-number" KeyError>
+	10</td>
+	
+					<td KeyError><span class="tag-text" style="color: #f5eb21;">[YELL0W]</span></td>
+					<td KeyError><a href="https://www.nitrotype.com/team/YELL0W" target="_blank" class="team-text">"Happy Daysy"</a></td>
+					<td KeyError>
+	47</td>
+	
+					<td KeyError>
+	98.0896%</td>
+	
+				</tr>
+	
+				<tr class="table-row table-row--nonpodium">
+					<td class="table-cell table-cell--place place-number" KeyError>
+	11</td>
+	
+					<td KeyError><span class="tag-text" style="color: #f5eb21;">[GLH5]</span></td>
+					<td KeyError><a href="https://www.nitrotype.com/team/GLH5" target="_blank" class="team-text">"Good Luck High Five"</a></td>
+					<td KeyError>
+	10</td>
+	
+					<td KeyError>
+	97.9991%</td>
+	
+				</tr>
+	
+				<tr class="table-row table-row--nonpodium">
+					<td class="table-cell table-cell--place place-number" KeyError>
+	12</td>
+	
+					<td KeyError><span class="tag-text" style="color: #71c055;">[NTDT]</span></td>
+					<td KeyError><a href="https://www.nitrotype.com/team/NTDT" target="_blank" class="team-text">"NitroType Dream Team"</a></td>
+					<td KeyError>
+	43</td>
+	
+					<td KeyError>
+	97.9786%</td>
+	
+				</tr>
+	
+				<tr class="table-row table-row--nonpodium">
+					<td class="table-cell table-cell--place place-number" KeyError>
+	13</td>
+	
+					<td KeyError><span class="tag-text" style="color: #e0efd8;">[5RB]</span></td>
+					<td KeyError><a href="https://www.nitrotype.com/team/5RB" target="_blank" class="team-text">"MRVazquezWilliams"</a></td>
+					<td KeyError>
+	36</td>
+	
+					<td KeyError>
+	97.9746%</td>
+	
+				</tr>
+	
+				<tr class="table-row table-row--nonpodium">
+					<td class="table-cell table-cell--place place-number" KeyError>
+	14</td>
+	
+					<td KeyError><span class="tag-text" style="color: #d1499b;">[EVOQ]</span></td>
+					<td KeyError><a href="https://www.nitrotype.com/team/EVOQ" target="_blank" class="team-text">"Myriad Paragon"</a></td>
+					<td KeyError>
+	48</td>
+	
+					<td KeyError>
+	97.9344%</td>
+	
+				</tr>
+	
+				<tr class="table-row table-row--nonpodium">
+					<td class="table-cell table-cell--place place-number" KeyError>
+	15</td>
+	
+					<td KeyError><span class="tag-text" style="color: #71c6a5;">[KAPI]</span></td>
+					<td KeyError><a href="https://www.nitrotype.com/team/KAPI" target="_blank" class="team-text">"u r chicken dinner"</a></td>
+					<td KeyError>
+	13</td>
+	
+					<td KeyError>
+	97.89%</td>
+	
+				</tr>
+	
+				<tr class="table-row table-row--nonpodium">
+					<td class="table-cell table-cell--place place-number" KeyError>
+	16</td>
+	
+					<td KeyError><span class="tag-text" style="color: #f15b40;">[DOG]</span></td>
+					<td KeyError><a href="https://www.nitrotype.com/team/DOG" target="_blank" class="team-text">"D O G"</a></td>
+					<td KeyError>
+	47</td>
+	
+					<td KeyError>
+	97.8389%</td>
+	
+				</tr>
+	
+				<tr class="table-row table-row--nonpodium">
+					<td class="table-cell table-cell--place place-number" KeyError>
+	17</td>
+	
+					<td KeyError><span class="tag-text" style="color: #40b8ea;">[IC3YY]</span></td>
+					<td KeyError><a href="https://www.nitrotype.com/team/IC3YY" target="_blank" class="team-text">"ic3yyyyyy"</a></td>
+					<td KeyError>
+	38</td>
+	
+					<td KeyError>
+	97.814%</td>
+	
+				</tr>
+	
+				<tr class="table-row table-row--nonpodium">
+					<td class="table-cell table-cell--place place-number" KeyError>
+	18</td>
+	
+					<td KeyError><span class="tag-text" style="color: #ffeacd;">[K]</span></td>
+					<td KeyError><a href="https://www.nitrotype.com/team/K" target="_blank" class="team-text">"<script></script>"</a></td>
+					<td KeyError>
+	13</td>
+	
+					<td KeyError>
+	97.7988%</td>
+	
+				</tr>
+	
+				<tr class="table-row table-row--nonpodium">
+					<td class="table-cell table-cell--place place-number" KeyError>
+	19</td>
+	
+					<td KeyError><span class="tag-text" style="color: #ee1f25;">[IRS]</span></td>
+					<td KeyError><a href="https://www.nitrotype.com/team/IRS" target="_blank" class="team-text">"Evasion"</a></td>
+					<td KeyError>
+	11</td>
+	
+					<td KeyError>
+	97.7951%</td>
+	
+				</tr>
+	
+				<tr class="table-row table-row--nonpodium">
+					<td class="table-cell table-cell--place place-number" KeyError>
+	20</td>
+	
+					<td KeyError><span class="tag-text" style="color: #f5eb21;">[PDCMS]</span></td>
+					<td KeyError><a href="https://www.nitrotype.com/team/PDCMS" target="_blank" class="team-text">"Palm Desert Charter"</a></td>
+					<td KeyError>
+	17</td>
+	
+					<td KeyError>
+	97.7249%</td>
+	
+				</tr>
+	
+				<tr class="table-row table-row--nonpodium">
+					<td class="table-cell table-cell--place place-number" KeyError>
+	21</td>
+	
+					<td KeyError><span class="tag-text" style="color: #436fb6;">[MUS1C3]</span></td>
+					<td KeyError><a href="https://www.nitrotype.com/team/MUS1C3" target="_blank" class="team-text">"The Piano Guys"</a></td>
+					<td KeyError>
+	12</td>
+	
+					<td KeyError>
+	97.71%</td>
+	
+				</tr>
+	
+				<tr class="table-row table-row--nonpodium">
+					<td class="table-cell table-cell--place place-number" KeyError>
+	22</td>
+	
+					<td KeyError><span class="tag-text" style="color: #8750a0;">[SECT]</span></td>
+					<td KeyError><a href="https://www.nitrotype.com/team/SECT" target="_blank" class="team-text">"Empyrean Conquerors"</a></td>
+					<td KeyError>
+	21</td>
+	
+					<td KeyError>
+	97.7036%</td>
+	
+				</tr>
+	
+				<tr class="table-row table-row--nonpodium">
+					<td class="table-cell table-cell--place place-number" KeyError>
+	23</td>
+	
+					<td KeyError><span class="tag-text" style="color: #889bce;">[MEMEZ]</span></td>
+					<td KeyError><a href="https://www.nitrotype.com/team/MEMEZ" target="_blank" class="team-text">"A1 Original Sauces"</a></td>
+					<td KeyError>
+	25</td>
+	
+					<td KeyError>
+	97.6521%</td>
+	
+				</tr>
+	
+				<tr class="table-row table-row--nonpodium">
+					<td class="table-cell table-cell--place place-number" KeyError>
+	24</td>
+	
+					<td KeyError><span class="tag-text" style="color: #d3cfe8;">[GTXX]</span></td>
+					<td KeyError><a href="https://www.nitrotype.com/team/GTXX" target="_blank" class="team-text">"rockin monkeys"</a></td>
+					<td KeyError>
+	14</td>
+	
+					<td KeyError>
+	97.6269%</td>
+	
+				</tr>
+	
+				<tr class="table-row table-row--nonpodium">
+					<td class="table-cell table-cell--place place-number" KeyError>
+	25</td>
+	
+					<td KeyError><span class="tag-text" style="color: #fba51a;">[NBTO]</span></td>
+					<td KeyError><a href="https://www.nitrotype.com/team/NBTO" target="_blank" class="team-text">"Silent Knights"</a></td>
+					<td KeyError>
+	26</td>
+	
+					<td KeyError>
+	97.5925%</td>
+	
+				</tr>
+	
+				<tr class="table-row table-row--nonpodium">
+					<td class="table-cell table-cell--place place-number" KeyError>
+	26</td>
+	
+					<td KeyError><span class="tag-text" style="color: #40b8ea;">[KIPRO]</span></td>
+					<td KeyError><a href="https://www.nitrotype.com/team/KIPRO" target="_blank" class="team-text">"Kiboard Dojo"</a></td>
+					<td KeyError>
+	14</td>
+	
+					<td KeyError>
+	97.5516%</td>
+	
+				</tr>
+	
+				<tr class="table-row table-row--nonpodium">
+					<td class="table-cell table-cell--place place-number" KeyError>
+	27</td>
+	
+					<td KeyError><span class="tag-text" style="color: #436fb6;">[IASDFI]</span></td>
+					<td KeyError><a href="https://www.nitrotype.com/team/IASDFI" target="_blank" class="team-text">"beep beep Im a sheep"</a></td>
+					<td KeyError>
+	10</td>
+	
+					<td KeyError>
+	97.546%</td>
+	
+				</tr>
+	
+				<tr class="table-row table-row--nonpodium">
+					<td class="table-cell table-cell--place place-number" KeyError>
+	28</td>
+	
+					<td KeyError><span class="tag-text" style="color: #5b52a3;">[YX]</span></td>
+					<td KeyError><a href="https://www.nitrotype.com/team/YX" target="_blank" class="team-text">"Eternal Legends"</a></td>
+					<td KeyError>
+	18</td>
+	
+					<td KeyError>
+	97.5259%</td>
+	
+				</tr>
+	
+				<tr class="table-row table-row--nonpodium">
+					<td class="table-cell table-cell--place place-number" KeyError>
+	29</td>
+	
+					<td KeyError><span class="tag-text" style="color: #5b52a3;">[CP101]</span></td>
+					<td KeyError><a href="https://www.nitrotype.com/team/CP101" target="_blank" class="team-text">"Cardinal Pride 101"</a></td>
+					<td KeyError>
+	12</td>
+	
+					<td KeyError>
+	97.4626%</td>
+	
+				</tr>
+	
+				<tr class="table-row table-row--nonpodium">
+					<td class="table-cell table-cell--place place-number" KeyError>
+	30</td>
+	
+					<td KeyError><span class="tag-text" style="color: #8750a0;">[3XPERT]</span></td>
+					<td KeyError><a href="https://www.nitrotype.com/team/3XPERT" target="_blank" class="team-text">"Experienced Typers"</a></td>
+					<td KeyError>
+	36</td>
+	
+					<td KeyError>
+	97.4413%</td>
+	
+				</tr>
+	
+				<tr class="table-row table-row--nonpodium">
+					<td class="table-cell table-cell--place place-number" KeyError>
+	31</td>
+	
+					<td KeyError><span class="tag-text" style="color: #40b8ea;">[AMMO]</span></td>
+					<td KeyError><a href="https://www.nitrotype.com/team/AMMO" target="_blank" class="team-text">"Active Members Only"</a></td>
+					<td KeyError>
+	22</td>
+	
+					<td KeyError>
+	97.4204%</td>
+	
+				</tr>
+	
+				<tr class="table-row table-row--nonpodium">
+					<td class="table-cell table-cell--place place-number" KeyError>
+	32</td>
+	
+					<td KeyError><span class="tag-text" style="color: #ee1f25;">[AX123]</span></td>
+					<td KeyError><a href="https://www.nitrotype.com/team/AX123" target="_blank" class="team-text">"SPEEEEEEEED RACERS"</a></td>
+					<td KeyError>
+	28</td>
+	
+					<td KeyError>
+	97.3677%</td>
+	
+				</tr>
+	
+				<tr class="table-row table-row--nonpodium">
+					<td class="table-cell table-cell--place place-number" KeyError>
+	33</td>
+	
+					<td KeyError><span class="tag-text" style="color: #70c3ed;">[JEEPR]</span></td>
+					<td KeyError><a href="https://www.nitrotype.com/team/JEEPR" target="_blank" class="team-text">"BEATNGU"</a></td>
+					<td KeyError>
+	27</td>
+	
+					<td KeyError>
+	97.2708%</td>
+	
+				</tr>
+	
+				<tr class="table-row table-row--nonpodium">
+					<td class="table-cell table-cell--place place-number" KeyError>
+	34</td>
+	
+					<td KeyError><span class="tag-text" style="color: #436fb6;">[SSH]</span></td>
+					<td KeyError><a href="https://www.nitrotype.com/team/SSH" target="_blank" class="team-text">"Shell  Riders"</a></td>
+					<td KeyError>
+	47</td>
+	
+					<td KeyError>
+	97.2649%</td>
+	
+				</tr>
+	
+				<tr class="table-row table-row--nonpodium">
+					<td class="table-cell table-cell--place place-number" KeyError>
+	35</td>
+	
+					<td KeyError><span class="tag-text" style="color: #9bca3c;">[AGNCY]</span></td>
+					<td KeyError><a href="https://www.nitrotype.com/team/AGNCY" target="_blank" class="team-text">"-The Agency"</a></td>
+					<td KeyError>
+	12</td>
+	
+					<td KeyError>
+	97.2396%</td>
+	
+				</tr>
+	
+				<tr class="table-row table-row--nonpodium">
+					<td class="table-cell table-cell--place place-number" KeyError>
+	36</td>
+	
+					<td KeyError><span class="tag-text" style="color: #40b8ea;">[TN4E]</span></td>
+					<td KeyError><a href="https://www.nitrotype.com/team/TN4E" target="_blank" class="team-text">"Tactical Noobs Elite"</a></td>
+					<td KeyError>
+	31</td>
+	
+					<td KeyError>
+	97.1887%</td>
+	
+				</tr>
+	
+				<tr class="table-row table-row--nonpodium">
+					<td class="table-cell table-cell--place place-number" KeyError>
+	37</td>
+	
+					<td KeyError><span class="tag-text" style="color: #6783c2;">[BOOH]</span></td>
+					<td KeyError><a href="https://www.nitrotype.com/team/BOOH" target="_blank" class="team-text">"lets rock"</a></td>
+					<td KeyError>
+	14</td>
+	
+					<td KeyError>
+	97.1318%</td>
+	
+				</tr>
+	
+				<tr class="table-row table-row--nonpodium">
+					<td class="table-cell table-cell--place place-number" KeyError>
+	38</td>
+	
+					<td KeyError><span class="tag-text" style="color: #8eca76;">[WONTYP]</span></td>
+					<td KeyError><a href="https://www.nitrotype.com/team/WONTYP" target="_blank" class="team-text">"The Wonder Typers"</a></td>
+					<td KeyError>
+	18</td>
+	
+					<td KeyError>
+	97.1278%</td>
+	
+				</tr>
+	
+				<tr class="table-row table-row--nonpodium">
+					<td class="table-cell table-cell--place place-number" KeyError>
+	39</td>
+	
+					<td KeyError><span class="tag-text" style="color: #436fb6;">[LEGO]</span></td>
+					<td KeyError><a href="https://www.nitrotype.com/team/LEGO" target="_blank" class="team-text">"Leg Godt"</a></td>
+					<td KeyError>
+	44</td>
+	
+					<td KeyError>
+	97.1215%</td>
+	
+				</tr>
+	
+				<tr class="table-row table-row--nonpodium">
+					<td class="table-cell table-cell--place place-number" KeyError>
+	40</td>
+	
+					<td KeyError><span class="tag-text" style="color: #40b8ea;">[JDM]</span></td>
+					<td KeyError><a href="https://www.nitrotype.com/team/JDM" target="_blank" class="team-text">"JDM HEROS"</a></td>
+					<td KeyError>
+	50</td>
+	
+					<td KeyError>
+	97.1021%</td>
+	
+				</tr>
+	
+				<tr class="table-row table-row--nonpodium">
+					<td class="table-cell table-cell--place place-number" KeyError>
+	41</td>
+	
+					<td KeyError><span class="tag-text" style="color: #ee1f25;">[DOST]</span></td>
+					<td KeyError><a href="https://www.nitrotype.com/team/DOST" target="_blank" class="team-text">"DOST IS LIFE"</a></td>
+					<td KeyError>
+	20</td>
+	
+					<td KeyError>
+	97.0923%</td>
+	
+				</tr>
+	
+				<tr class="table-row table-row--nonpodium">
+					<td class="table-cell table-cell--place place-number" KeyError>
+	42</td>
+	
+					<td KeyError><span class="tag-text" style="color: #71c055;">[ASB]</span></td>
+					<td KeyError><a href="https://www.nitrotype.com/team/ASB" target="_blank" class="team-text">"Typing Eagles"</a></td>
+					<td KeyError>
+	10</td>
+	
+					<td KeyError>
+	97.0912%</td>
+	
+				</tr>
+	
+				<tr class="table-row table-row--nonpodium">
+					<td class="table-cell table-cell--place place-number" KeyError>
+	43</td>
+	
+					<td KeyError><span class="tag-text" style="color: #fba51a;">[BARON]</span></td>
+					<td KeyError><a href="https://www.nitrotype.com/team/BARON" target="_blank" class="team-text">"Nitro Type Barons"</a></td>
+					<td KeyError>
+	26</td>
+	
+					<td KeyError>
+	97.037%</td>
+	
+				</tr>
+	
+				<tr class="table-row table-row--nonpodium">
+					<td class="table-cell table-cell--place place-number" KeyError>
+	44</td>
+	
+					<td KeyError><span class="tag-text" style="color: #f5eb21;">[SCFS]</span></td>
+					<td KeyError><a href="https://www.nitrotype.com/team/SCFS" target="_blank" class="team-text">"THE GOLDEN T E A M"</a></td>
+					<td KeyError>
+	11</td>
+	
+					<td KeyError>
+	97.0224%</td>
+	
+				</tr>
+	
+				<tr class="table-row table-row--nonpodium">
+					<td class="table-cell table-cell--place place-number" KeyError>
+	45</td>
+	
+					<td KeyError><span class="tag-text" style="color: #71c055;">[TELT]</span></td>
+					<td KeyError><a href="https://www.nitrotype.com/team/TELT" target="_blank" class="team-text">"The ELITE 532"</a></td>
+					<td KeyError>
+	11</td>
+	
+					<td KeyError>
+	97.0032%</td>
+	
+				</tr>
+	
+				<tr class="table-row table-row--nonpodium">
+					<td class="table-cell table-cell--place place-number" KeyError>
+	46</td>
+	
+					<td KeyError><span class="tag-text" style="color: #f5eb21;">[PURR]</span></td>
+					<td KeyError><a href="https://www.nitrotype.com/team/PURR" target="_blank" class="team-text">"PERFECTO"</a></td>
+					<td KeyError>
+	21</td>
+	
+					<td KeyError>
+	96.9872%</td>
+	
+				</tr>
+	
+				<tr class="table-row table-row--nonpodium">
+					<td class="table-cell table-cell--place place-number" KeyError>
+	47</td>
+	
+					<td KeyError><span class="tag-text" style="color: #fba51a;">[FBMM]</span></td>
+					<td KeyError><a href="https://www.nitrotype.com/team/FBMM" target="_blank" class="team-text">"Forever Bout Money"</a></td>
+					<td KeyError>
+	27</td>
+	
+					<td KeyError>
+	96.9629%</td>
+	
+				</tr>
+	
+				<tr class="table-row table-row--nonpodium">
+					<td class="table-cell table-cell--place place-number" KeyError>
+	48</td>
+	
+					<td KeyError><span class="tag-text" style="color: #9bca3c;">[SORC]</span></td>
+					<td KeyError><a href="https://www.nitrotype.com/team/SORC" target="_blank" class="team-text">"SORC Base"</a></td>
+					<td KeyError>
+	13</td>
+	
+					<td KeyError>
+	96.9486%</td>
+	
+				</tr>
+	
+				<tr class="table-row table-row--nonpodium">
+					<td class="table-cell table-cell--place place-number" KeyError>
+	49</td>
+	
+					<td KeyError><span class="tag-text" style="color: #40b8ea;">[2G00D]</span></td>
+					<td KeyError><a href="https://www.nitrotype.com/team/2G00D" target="_blank" class="team-text">"SimplyBuiltDifferent"</a></td>
+					<td KeyError>
+	18</td>
+	
+					<td KeyError>
+	96.9328%</td>
+	
+				</tr>
+	
+				<tr class="table-row table-row--nonpodium">
+					<td class="table-cell table-cell--place place-number" KeyError>
+	50</td>
+	
+					<td KeyError><span class="tag-text" style="color: #436fb6;">[ASNT]</span></td>
+					<td KeyError><a href="https://www.nitrotype.com/team/ASNT" target="_blank" class="team-text">"Awesome NT Sleighers"</a></td>
+					<td KeyError>
+	17</td>
+	
+					<td KeyError>
+	96.9192%</td>
+	
+				</tr>
+	
+				<tr class="table-row table-row--nonpodium">
+					<td class="table-cell table-cell--place place-number" KeyError>
+	51</td>
+	
+					<td KeyError><span class="tag-text" style="color: #ee1f25;">[THEF]</span></td>
+					<td KeyError><a href="https://www.nitrotype.com/team/THEF" target="_blank" class="team-text">"The Federation"</a></td>
+					<td KeyError>
+	10</td>
+	
+					<td KeyError>
+	96.8958%</td>
+	
+				</tr>
+	
+				<tr class="table-row table-row--nonpodium">
+					<td class="table-cell table-cell--place place-number" KeyError>
+	52</td>
+	
+					<td KeyError><span class="tag-text" style="color: #436fb6;">[2T]</span></td>
+					<td KeyError><a href="https://www.nitrotype.com/team/2T" target="_blank" class="team-text">"2 Tempted"</a></td>
+					<td KeyError>
+	16</td>
+	
+					<td KeyError>
+	96.8611%</td>
+	
+				</tr>
+	
+				<tr class="table-row table-row--nonpodium">
+					<td class="table-cell table-cell--place place-number" KeyError>
+	53</td>
+	
+					<td KeyError><span class="tag-text" style="color: #71c055;">[ACRACY]</span></td>
+					<td KeyError><a href="https://www.nitrotype.com/team/ACRACY" target="_blank" class="team-text">"FREE CASH PRIZEs"</a></td>
+					<td KeyError>
+	15</td>
+	
+					<td KeyError>
+	96.8238%</td>
+	
+				</tr>
+	
+				<tr class="table-row table-row--nonpodium">
+					<td class="table-cell table-cell--place place-number" KeyError>
+	54</td>
+	
+					<td KeyError><span class="tag-text" style="color: #6783c2;">[DXW]</span></td>
+					<td KeyError><a href="https://www.nitrotype.com/team/DXW" target="_blank" class="team-text">"Dominate X Win"</a></td>
+					<td KeyError>
+	21</td>
+	
+					<td KeyError>
+	96.8021%</td>
+	
+				</tr>
+	
+				<tr class="table-row table-row--nonpodium">
+					<td class="table-cell table-cell--place place-number" KeyError>
+	55</td>
+	
+					<td KeyError><span class="tag-text" style="color: #ee1f25;">[CSR2]</span></td>
+					<td KeyError><a href="https://www.nitrotype.com/team/CSR2" target="_blank" class="team-text">"LIFE IS FUN!!"</a></td>
+					<td KeyError>
+	14</td>
+	
+					<td KeyError>
+	96.7994%</td>
+	
+				</tr>
+	
+				<tr class="table-row table-row--nonpodium">
+					<td class="table-cell table-cell--place place-number" KeyError>
+	56</td>
+	
+					<td KeyError><span class="tag-text" style="color: #d1499b;">[SXN]</span></td>
+					<td KeyError><a href="https://www.nitrotype.com/team/SXN" target="_blank" class="team-text">"BACK ACTIVE"</a></td>
+					<td KeyError>
+	38</td>
+	
+					<td KeyError>
+	96.7964%</td>
+	
+				</tr>
+	
+				<tr class="table-row table-row--nonpodium">
+					<td class="table-cell table-cell--place place-number" KeyError>
+	57</td>
+	
+					<td KeyError><span class="tag-text" style="color: #fdb64d;">[REMA]</span></td>
+					<td KeyError><a href="https://www.nitrotype.com/team/REMA" target="_blank" class="team-text">"Remarkably Adroit"</a></td>
+					<td KeyError>
+	37</td>
+	
+					<td KeyError>
+	96.7746%</td>
+	
+				</tr>
+	
+				<tr class="table-row table-row--nonpodium">
+					<td class="table-cell table-cell--place place-number" KeyError>
+	58</td>
+	
+					<td KeyError><span class="tag-text" style="color: #ee1f25;">[PT6]</span></td>
+					<td KeyError><a href="https://www.nitrotype.com/team/PT6" target="_blank" class="team-text">"PRO TYPIST6"</a></td>
+					<td KeyError>
+	10</td>
+	
+					<td KeyError>
+	96.7665%</td>
+	
+				</tr>
+	
+				<tr class="table-row table-row--nonpodium">
+					<td class="table-cell table-cell--place place-number" KeyError>
+	59</td>
+	
+					<td KeyError><span class="tag-text" style="color: #436fb6;">[LVX]</span></td>
+					<td KeyError><a href="https://www.nitrotype.com/team/LVX" target="_blank" class="team-text">"Limitless Victory"</a></td>
+					<td KeyError>
+	50</td>
+	
+					<td KeyError>
+	96.7589%</td>
+	
+				</tr>
+	
+				<tr class="table-row table-row--nonpodium">
+					<td class="table-cell table-cell--place place-number" KeyError>
+	60</td>
+	
+					<td KeyError><span class="tag-text" style="color: #f5eb21;">[S0RC]</span></td>
+					<td KeyError><a href="https://www.nitrotype.com/team/S0RC" target="_blank" class="team-text">"Solar   Racers"</a></td>
+					<td KeyError>
+	42</td>
+	
+					<td KeyError>
+	96.7488%</td>
+	
+				</tr>
+	
+				<tr class="table-row table-row--nonpodium">
+					<td class="table-cell table-cell--place place-number" KeyError>
+	61</td>
+	
+					<td KeyError><span class="tag-text" style="color: #ee1f25;">[KTGHY]</span></td>
+					<td KeyError><a href="https://www.nitrotype.com/team/KTGHY" target="_blank" class="team-text">"Blood gang soowoo"</a></td>
+					<td KeyError>
+	37</td>
+	
+					<td KeyError>
+	96.7488%</td>
+	
+				</tr>
+	
+				<tr class="table-row table-row--nonpodium">
+					<td class="table-cell table-cell--place place-number" KeyError>
+	62</td>
+	
+					<td KeyError><span class="tag-text" style="color: #f5eb21;">[CTC]</span></td>
+					<td KeyError><a href="https://www.nitrotype.com/team/CTC" target="_blank" class="team-text">"Crushin Cavaliers"</a></td>
+					<td KeyError>
+	42</td>
+	
+					<td KeyError>
+	96.7385%</td>
+	
+				</tr>
+	
+				<tr class="table-row table-row--nonpodium">
+					<td class="table-cell table-cell--place place-number" KeyError>
+	63</td>
+	
+					<td KeyError><span class="tag-text" style="color: #d771ad;">[APLPIE]</span></td>
+					<td KeyError><a href="https://www.nitrotype.com/team/APLPIE" target="_blank" class="team-text">"o0o0o0o0o0o"</a></td>
+					<td KeyError>
+	46</td>
+	
+					<td KeyError>
+	96.7281%</td>
+	
+				</tr>
+	
+				<tr class="table-row table-row--nonpodium">
+					<td class="table-cell table-cell--place place-number" KeyError>
+	64</td>
+	
+					<td KeyError><span class="tag-text" style="color: #faf5b3;">[PROTON]</span></td>
+					<td KeyError><a href="https://www.nitrotype.com/team/PROTON" target="_blank" class="team-text">"Positively Charged"</a></td>
+					<td KeyError>
+	16</td>
+	
+					<td KeyError>
+	96.6994%</td>
+	
+				</tr>
+	
+				<tr class="table-row table-row--nonpodium">
+					<td class="table-cell table-cell--place place-number" KeyError>
+	65</td>
+	
+					<td KeyError><span class="tag-text" style="color: #71c055;">[FUTR3]</span></td>
+					<td KeyError><a href="https://www.nitrotype.com/team/FUTR3" target="_blank" class="team-text">"Determined_Future"</a></td>
+					<td KeyError>
+	14</td>
+	
+					<td KeyError>
+	96.6968%</td>
+	
+				</tr>
+	
+				<tr class="table-row table-row--nonpodium">
+					<td class="table-cell table-cell--place place-number" KeyError>
+	66</td>
+	
+					<td KeyError><span class="tag-text" style="color: #9bca3c;">[RACE13]</span></td>
+					<td KeyError><a href="https://www.nitrotype.com/team/RACE13" target="_blank" class="team-text">"RACERS ARE READY"</a></td>
+					<td KeyError>
+	43</td>
+	
+					<td KeyError>
+	96.6854%</td>
+	
+				</tr>
+	
+				<tr class="table-row table-row--nonpodium">
+					<td class="table-cell table-cell--place place-number" KeyError>
+	67</td>
+	
+					<td KeyError><span class="tag-text" style="color: #ee1f25;">[TVX]</span></td>
+					<td KeyError><a href="https://www.nitrotype.com/team/TVX" target="_blank" class="team-text">"Home Of The Great"</a></td>
+					<td KeyError>
+	49</td>
+	
+					<td KeyError>
+	96.6837%</td>
+	
+				</tr>
+	
+				<tr class="table-row table-row--nonpodium">
+					<td class="table-cell table-cell--place place-number" KeyError>
+	68</td>
+	
+					<td KeyError><span class="tag-text" style="color: #71c055;">[HWS]</span></td>
+					<td KeyError><a href="https://www.nitrotype.com/team/HWS" target="_blank" class="team-text">"Homerow WarriorS"</a></td>
+					<td KeyError>
+	27</td>
+	
+					<td KeyError>
+	96.6795%</td>
+	
+				</tr>
+	
+				<tr class="table-row table-row--nonpodium">
+					<td class="table-cell table-cell--place place-number" KeyError>
+	69</td>
+	
+					<td KeyError><span class="tag-text" style="color: #70c3ed;">[CLIX7]</span></td>
+					<td KeyError><a href="https://www.nitrotype.com/team/CLIX7" target="_blank" class="team-text">"clix is the best"</a></td>
+					<td KeyError>
+	35</td>
+	
+					<td KeyError>
+	96.6646%</td>
+	
+				</tr>
+	
+				<tr class="table-row table-row--nonpodium">
+					<td class="table-cell table-cell--place place-number" KeyError>
+	70</td>
+	
+					<td KeyError><span class="tag-text" style="color: #d1499b;">[UCR]</span></td>
+					<td KeyError><a href="https://www.nitrotype.com/team/UCR" target="_blank" class="team-text">"Under Cover Racers"</a></td>
+					<td KeyError>
+	13</td>
+	
+					<td KeyError>
+	96.6603%</td>
+	
+				</tr>
+	
+				<tr class="table-row table-row--nonpodium">
+					<td class="table-cell table-cell--place place-number" KeyError>
+	71</td>
+	
+					<td KeyError><span class="tag-text" style="color: #f58566;">[3AC]</span></td>
+					<td KeyError><a href="https://www.nitrotype.com/team/3AC" target="_blank" class="team-text">"Threes a Crowd"</a></td>
+					<td KeyError>
+	19</td>
+	
+					<td KeyError>
+	96.6404%</td>
+	
+				</tr>
+	
+				<tr class="table-row table-row--nonpodium">
+					<td class="table-cell table-cell--place place-number" KeyError>
+	72</td>
+	
+					<td KeyError><span class="tag-text" style="color: #ded2e8;">[0T]</span></td>
+					<td KeyError><a href="https://www.nitrotype.com/team/0T" target="_blank" class="team-text">"Zero Tolerance"</a></td>
+					<td KeyError>
+	50</td>
+	
+					<td KeyError>
+	96.6386%</td>
+	
+				</tr>
+	
+				<tr class="table-row table-row--nonpodium">
+					<td class="table-cell table-cell--place place-number" KeyError>
+	73</td>
+	
+					<td KeyError><span class="tag-text" style="color: #889bce;">[GE9X]</span></td>
+					<td KeyError><a href="https://www.nitrotype.com/team/GE9X" target="_blank" class="team-text">"Explosive"</a></td>
+					<td KeyError>
+	13</td>
+	
+					<td KeyError>
+	96.6352%</td>
+	
+				</tr>
+	
+				<tr class="table-row table-row--nonpodium">
+					<td class="table-cell table-cell--place place-number" KeyError>
+	74</td>
+	
+					<td KeyError><span class="tag-text" style="color: #fba51a;">[STACL]</span></td>
+					<td KeyError><a href="https://www.nitrotype.com/team/STACL" target="_blank" class="team-text">"Stars Collector"</a></td>
+					<td KeyError>
+	16</td>
+	
+					<td KeyError>
+	96.5978%</td>
+	
+				</tr>
+	
+				<tr class="table-row table-row--nonpodium">
+					<td class="table-cell table-cell--place place-number" KeyError>
+	75</td>
+	
+					<td KeyError><span class="tag-text" style="color: #ee1f25;">[BAHS]</span></td>
+					<td KeyError><a href="https://www.nitrotype.com/team/BAHS" target="_blank" class="team-text">"Big Red Pride"</a></td>
+					<td KeyError>
+	19</td>
+	
+					<td KeyError>
+	96.5906%</td>
+	
+				</tr>
+	
+				<tr class="table-row table-row--nonpodium">
+					<td class="table-cell table-cell--place place-number" KeyError>
+	76</td>
+	
+					<td KeyError><span class="tag-text" style="color: #daedfa;">[TOPGOD]</span></td>
+					<td KeyError><a href="https://www.nitrotype.com/team/TOPGOD" target="_blank" class="team-text">"NitroType Gods"</a></td>
+					<td KeyError>
+	42</td>
+	
+					<td KeyError>
+	96.5892%</td>
+	
+				</tr>
+	
+				<tr class="table-row table-row--nonpodium">
+					<td class="table-cell table-cell--place place-number" KeyError>
+	77</td>
+	
+					<td KeyError><span class="tag-text" style="color: #436fb6;">[4NU]</span></td>
+					<td KeyError><a href="https://www.nitrotype.com/team/4NU" target="_blank" class="team-text">"-Awesome Nitro users"</a></td>
+					<td KeyError>
+	49</td>
+	
+					<td KeyError>
+	96.5877%</td>
+	
+				</tr>
+	
+				<tr class="table-row table-row--nonpodium">
+					<td class="table-cell table-cell--place place-number" KeyError>
+	78</td>
+	
+					<td KeyError><span class="tag-text" style="color: #436fb6;">[RVRM]</span></td>
+					<td KeyError><a href="https://www.nitrotype.com/team/RVRM" target="_blank" class="team-text">"RV Racing Mustangs"</a></td>
+					<td KeyError>
+	37</td>
+	
+					<td KeyError>
+	96.5484%</td>
+	
+				</tr>
+	
+				<tr class="table-row table-row--nonpodium">
+					<td class="table-cell table-cell--place place-number" KeyError>
+	79</td>
+	
+					<td KeyError><span class="tag-text" style="color: #71c055;">[1U1U]</span></td>
+					<td KeyError><a href="https://www.nitrotype.com/team/1U1U" target="_blank" class="team-text">"BEST TEAM OF ALL YAL"</a></td>
+					<td KeyError>
+	46</td>
+	
+					<td KeyError>
+	96.5466%</td>
+	
+				</tr>
+	
+				<tr class="table-row table-row--nonpodium">
+					<td class="table-cell table-cell--place place-number" KeyError>
+	80</td>
+	
+					<td KeyError><span class="tag-text" style="color: #5b52a3;">[CUTIE9]</span></td>
+					<td KeyError><a href="https://www.nitrotype.com/team/CUTIE9" target="_blank" class="team-text">"My accounts119"</a></td>
+					<td KeyError>
+	14</td>
+	
+					<td KeyError>
+	96.5424%</td>
+	
+				</tr>
+	
+				<tr class="table-row table-row--nonpodium">
+					<td class="table-cell table-cell--place place-number" KeyError>
+	81</td>
+	
+					<td KeyError><span class="tag-text" style="color: #ea1979;">[FLMNGO]</span></td>
+					<td KeyError><a href="https://www.nitrotype.com/team/FLMNGO" target="_blank" class="team-text">"Closed"</a></td>
+					<td KeyError>
+	15</td>
+	
+					<td KeyError>
+	96.523%</td>
+	
+				</tr>
+	
+				<tr class="table-row table-row--nonpodium">
+					<td class="table-cell table-cell--place place-number" KeyError>
+	82</td>
+	
+					<td KeyError><span class="tag-text" style="color: #ee1f25;">[RTH]</span></td>
+					<td KeyError><a href="https://www.nitrotype.com/team/RTH" target="_blank" class="team-text">"ReleaseTheHounds"</a></td>
+					<td KeyError>
+	24</td>
+	
+					<td KeyError>
+	96.5198%</td>
+	
+				</tr>
+	
+				<tr class="table-row table-row--nonpodium">
+					<td class="table-cell table-cell--place place-number" KeyError>
+	83</td>
+	
+					<td KeyError><span class="tag-text" style="color: #ee1f25;">[SWB]</span></td>
+					<td KeyError><a href="https://www.nitrotype.com/team/SWB" target="_blank" class="team-text">"SWEATY BOIIISS"</a></td>
+					<td KeyError>
+	14</td>
+	
+					<td KeyError>
+	96.5021%</td>
+	
+				</tr>
+	
+				<tr class="table-row table-row--nonpodium">
+					<td class="table-cell table-cell--place place-number" KeyError>
+	84</td>
+	
+					<td KeyError><span class="tag-text" style="color: #40b8ea;">[F4TES]</span></td>
+					<td KeyError><a href="https://www.nitrotype.com/team/F4TES" target="_blank" class="team-text">"taking a break rn"</a></td>
+					<td KeyError>
+	50</td>
+	
+					<td KeyError>
+	96.4941%</td>
+	
+				</tr>
+	
+				<tr class="table-row table-row--nonpodium">
+					<td class="table-cell table-cell--place place-number" KeyError>
+	85</td>
+	
+					<td KeyError><span class="tag-text" style="color: #6783c2;">[MIZZZ]</span></td>
+					<td KeyError><a href="https://www.nitrotype.com/team/MIZZZ" target="_blank" class="team-text">"Chamss"</a></td>
+					<td KeyError>
+	39</td>
+	
+					<td KeyError>
+	96.4922%</td>
+	
+				</tr>
+	
+				<tr class="table-row table-row--nonpodium">
+					<td class="table-cell table-cell--place place-number" KeyError>
+	86</td>
+	
+					<td KeyError><span class="tag-text" style="color: #71c055;">[CVR]</span></td>
+					<td KeyError><a href="https://www.nitrotype.com/team/CVR" target="_blank" class="team-text">"CV Rockets"</a></td>
+					<td KeyError>
+	21</td>
+	
+					<td KeyError>
+	96.448%</td>
+	
+				</tr>
+	
+				<tr class="table-row table-row--nonpodium">
+					<td class="table-cell table-cell--place place-number" KeyError>
+	87</td>
+	
+					<td KeyError><span class="tag-text" style="color: #71c055;">[TPIF]</span></td>
+					<td KeyError><a href="https://www.nitrotype.com/team/TPIF" target="_blank" class="team-text">"THE PEOPLE IN FRONT"</a></td>
+					<td KeyError>
+	32</td>
+	
+					<td KeyError>
+	96.4312%</td>
+	
+				</tr>
+	
+				<tr class="table-row table-row--nonpodium">
+					<td class="table-cell table-cell--place place-number" KeyError>
+	88</td>
+	
+					<td KeyError><span class="tag-text" style="color: #e7f2d4;">[AL3]</span></td>
+					<td KeyError><a href="https://www.nitrotype.com/team/AL3" target="_blank" class="team-text">"Aesthetic L3gendz"</a></td>
+					<td KeyError>
+	50</td>
+	
+					<td KeyError>
+	96.423%</td>
+	
+				</tr>
+	
+				<tr class="table-row table-row--nonpodium">
+					<td class="table-cell table-cell--place place-number" KeyError>
+	89</td>
+	
+					<td KeyError><span class="tag-text" style="color: #ee1f25;">[LDT]</span></td>
+					<td KeyError><a href="https://www.nitrotype.com/team/LDT" target="_blank" class="team-text">"Legend Dream Typers"</a></td>
+					<td KeyError>
+	34</td>
+	
+					<td KeyError>
+	96.3903%</td>
+	
+				</tr>
+	
+				<tr class="table-row table-row--nonpodium">
+					<td class="table-cell table-cell--place place-number" KeyError>
+	90</td>
+	
+					<td KeyError><span class="tag-text" style="color: #96d1f3;">[F1SHE]</span></td>
+					<td KeyError><a href="https://www.nitrotype.com/team/F1SHE" target="_blank" class="team-text">"EATBIGFISH - COMPS -"</a></td>
+					<td KeyError>
+	37</td>
+	
+					<td KeyError>
+	96.3687%</td>
+	
+				</tr>
+	
+				<tr class="table-row table-row--nonpodium">
+					<td class="table-cell table-cell--place place-number" KeyError>
+	91</td>
+	
+					<td KeyError><span class="tag-text" style="color: #40b8ea;">[J0Y]</span></td>
+					<td KeyError><a href="https://www.nitrotype.com/team/J0Y" target="_blank" class="team-text">"G0LD C0MP RN"</a></td>
+					<td KeyError>
+	35</td>
+	
+					<td KeyError>
+	96.3645%</td>
+	
+				</tr>
+	
+				<tr class="table-row table-row--nonpodium">
+					<td class="table-cell table-cell--place place-number" KeyError>
+	92</td>
+	
+					<td KeyError><span class="tag-text" style="color: #40b8ea;">[IBM]</span></td>
+					<td KeyError><a href="https://www.nitrotype.com/team/IBM" target="_blank" class="team-text">"0110100001101001"</a></td>
+					<td KeyError>
+	48</td>
+	
+					<td KeyError>
+	96.342%</td>
+	
+				</tr>
+	
+				<tr class="table-row table-row--nonpodium">
+					<td class="table-cell table-cell--place place-number" KeyError>
+	93</td>
+	
+					<td KeyError><span class="tag-text" style="color: #d1499b;">[WNDY]</span></td>
+					<td KeyError><a href="https://www.nitrotype.com/team/WNDY" target="_blank" class="team-text">"Swift Runners"</a></td>
+					<td KeyError>
+	18</td>
+	
+					<td KeyError>
+	96.3238%</td>
+	
+				</tr>
+	
+				<tr class="table-row table-row--nonpodium">
+					<td class="table-cell table-cell--place place-number" KeyError>
+	94</td>
+	
+					<td KeyError><span class="tag-text" style="color: #ee1f25;">[BLZR]</span></td>
+					<td KeyError><a href="https://www.nitrotype.com/team/BLZR" target="_blank" class="team-text">"Blazing Racers"</a></td>
+					<td KeyError>
+	32</td>
+	
+					<td KeyError>
+	96.3129%</td>
+	
+				</tr>
+	
+				<tr class="table-row table-row--nonpodium">
+					<td class="table-cell table-cell--place place-number" KeyError>
+	95</td>
+	
+					<td KeyError><span class="tag-text" style="color: #ee1f25;">[TALK]</span></td>
+					<td KeyError><a href="https://www.nitrotype.com/team/TALK" target="_blank" class="team-text">"RIZE TO THE OCCASION"</a></td>
+					<td KeyError>
+	40</td>
+	
+					<td KeyError>
+	96.3084%</td>
+	
+				</tr>
+	
+				<tr class="table-row table-row--nonpodium">
+					<td class="table-cell table-cell--place place-number" KeyError>
+	96</td>
+	
+					<td KeyError><span class="tag-text" style="color: #40b8ea;">[FR0ZE]</span></td>
+					<td KeyError><a href="https://www.nitrotype.com/team/FR0ZE" target="_blank" class="team-text">"I-C-E-K-I-N-G-S"</a></td>
+					<td KeyError>
+	46</td>
+	
+					<td KeyError>
+	96.2974%</td>
+	
+				</tr>
+	
+				<tr class="table-row table-row--nonpodium">
+					<td class="table-cell table-cell--place place-number" KeyError>
+	97</td>
+	
+					<td KeyError><span class="tag-text" style="color: #40b8ea;">[JWHW]</span></td>
+					<td KeyError><a href="https://www.nitrotype.com/team/JWHW" target="_blank" class="team-text">"H0WLING W0LVES"</a></td>
+					<td KeyError>
+	14</td>
+	
+					<td KeyError>
+	96.2923%</td>
+	
+				</tr>
+	
+				<tr class="table-row table-row--nonpodium">
+					<td class="table-cell table-cell--place place-number" KeyError>
+	98</td>
+	
+					<td KeyError><span class="tag-text" style="color: #ee1f25;">[CRUIZ]</span></td>
+					<td KeyError><a href="https://www.nitrotype.com/team/CRUIZ" target="_blank" class="team-text">"Cruizerz"</a></td>
+					<td KeyError>
+	46</td>
+	
+					<td KeyError>
+	96.292%</td>
+	
+				</tr>
+	
+				<tr class="table-row table-row--nonpodium">
+					<td class="table-cell table-cell--place place-number" KeyError>
+	99</td>
+	
+					<td KeyError><span class="tag-text" style="color: #5b52a3;">[LHST]</span></td>
+					<td KeyError><a href="https://www.nitrotype.com/team/LHST" target="_blank" class="team-text">"High Typing"</a></td>
+					<td KeyError>
+	26</td>
+	
+					<td KeyError>
+	96.2903%</td>
+	
+				</tr>
+	
+				<tr class="table-row table-row--nonpodium">
+					<td class="table-cell table-cell--place place-number" KeyError>
+	100</td>
+	
+					<td KeyError><span class="tag-text" style="color: #436fb6;">[3313]</span></td>
+					<td KeyError><a href="https://www.nitrotype.com/team/3313" target="_blank" class="team-text">"the drag racers"</a></td>
+					<td KeyError>
+	33</td>
+	
+					<td KeyError>
+	96.2838%</td>
+	
+				</tr>
+	
+			</tbody>
+	
+		</table>
+	
+	</div>
+	
