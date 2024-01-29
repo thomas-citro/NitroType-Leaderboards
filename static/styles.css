@@ -208,8 +208,8 @@ li {
 .tab {
     flex: 0 0 auto;
     border-radius: 5px 5px 0 0;
-    padding: 20px 22.64px;
-    margin-right: 8.5px;
+    padding: 20px 14px;
+    margin-right: 6px;
     text-align: left;
 	background: linear-gradient(to bottom, rgba(59, 61, 76, 0.6), #292c3b);
     color: rgba(255, 255, 255, 0.5);
@@ -217,7 +217,7 @@ li {
 }
 
 .tab svg {
-	margin-right: 12px;
+	margin-right: 8px;
 }
 
 .tab.is-active {
@@ -520,7 +520,9 @@ form {
     border: 1px solid #666;
     display: block;
     line-height: normal;
-    padding: 10px 60px 10px 15px;
+	padding-bottom: 10px;
+	padding-left: 15px;
+	padding-top: 10px;
     cursor: pointer;
 	text-transform: none;
 	color: inherit;
@@ -533,6 +535,26 @@ form {
 	text-align: start;
 	font-family: "Montserrat", sans-serif;
 	font-size: 14px;
+}
+
+.dropdown-select-racers {
+	padding-right: 90px;
+}
+
+.dropdown-select-teams {
+	padding-right: 50px;
+}
+
+.dropdown-select-seasons {
+	padding-right: 90px;
+}
+
+.dropdown-select-speed {
+	padding-right: 80px;
+}
+
+.dropdown-select-donations {
+	padding-right: 70px;
 }
 
 .page-text-box {
@@ -647,6 +669,69 @@ h2 {
 	font-family: "Montserrat", sans-serif;
 	text-align: left;
 	font-size: 17px;
+}
+
+.past-season-banner {
+	padding-top: 30px;
+	display: block;
+	background-attachment: scroll, scroll;
+	background-clip: border-box;
+	background-color: rgba(0, 0, 0, 0);
+	background-image: url(/static/images/seasons-banner.png), linear-gradient(to right, rgb(41, 44, 59), rgba(2, 2, 2, 0.8));
+	background-origin: padding-box, padding-box;
+	background-position-x: 85%, 0%;
+	background-position-y: 0%, 0%;
+	background-repeat: no-repeat, repeat;
+	background-size: auto, auto;
+	box-sizing: border-box;
+	text-size-adjust: 100%;
+	line-height: 1.6;
+}
+
+.split-div {
+	display: flex;
+	align-items: flex-start;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+.season-details-div {
+	display: block;
+	padding-right: 20px;
+	flex-grow: 1;
+	/*width: 72%;*/
+}
+
+.seasons-dropdown-div {
+	display: block;
+	flex-shrink: 0;
+	/*width: 28%;*/
+}
+
+.season-title {
+	display: block;
+	font-family: "Montserrat", sans-serif;
+	font-size: 51px;
+	font-weight: 600;
+	margin-bottom: 10px;
+	color: #F9D034;
+}
+
+.season-date-container {
+	display: block;
+	border-left-color: #1C99F4;
+	border-left-style: solid;
+	border-left-width: 5px;
+	margin-bottom: 20px;
+	padding-left: 15px;
+}
+
+.season-date {
+	display: inline;
+	font-family: "Montserrat", sans-serif;
+	font-size: 20px;
+	font-weight: 300;
+	color: #fff;
 }
 
 @font-face {
