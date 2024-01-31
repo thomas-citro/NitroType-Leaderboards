@@ -431,6 +431,10 @@ form {
 	overflow: visible;
 }
 
+.form-seasons {
+	margin: 0;
+}
+
 .board-description {
 	background: #3B3D4C;
 	padding-top: 15px;
@@ -546,7 +550,7 @@ form {
 }
 
 .dropdown-select-seasons {
-	padding-right: 90px;
+	padding-right: 45px;
 }
 
 .dropdown-select-speed {
