@@ -1,0 +1,321 @@
+
+	<div class="leaderboard-box">
+	
+		<div class="tabs">
+	
+			<button class="tab not-active" onclick="changeTab('top_racers_season')">
+				<div class="icon-text-container">
+					<svg xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd" viewBox="0 0 24 24" id="icon-rank" width="18" height="18" fill="white">
+						<path
+							d="M3.19 19.989L1 20.292l1.594 1.532L2.205 24l1.949-1.043L6.104 24l-.389-2.176 1.594-1.532-2.19-.303L4.154 18l-.964 1.989zm8 0L9 20.292l1.594 1.532L10.205 24l1.949-1.043L14.104 24l-.389-2.176 1.594-1.532-2.19-.303L12.154 18l-.964 1.989zm7.691 0l-2.19.303 1.594 1.532L17.896 24l1.949-1.043L21.795 24l-.389-2.176L23 20.292l-2.19-.303L19.845 18l-.964 1.989zm-.129-7.171c-2.436-.562-5.206-1.055-4.108-3.129C17.986 3.376 15.53 0 12 0 8.401 0 6.004 3.506 9.356 9.689c1.131 2.086-1.725 2.579-4.109 3.129-2.176.502-2.258 1.583-2.251 3.474L3 17h18l.003-.686c.008-1.904-.066-2.992-2.251-3.496z"
+						/>
+					</svg>
+					<div class="tab--text">Top Racers</div>
+				</div>
+			</button>
+	
+			<button class="tab not-active" onclick="changeTab('top_teams_season')">
+				<div class="icon-text-container">
+					<svg xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd" viewBox="0 0 24 24" id="icon-rank-team" width="18" height="18" fill="white">
+						<path
+							d="M20.624 22.474L19 21.605l-1.625.869.324-1.813-1.328-1.277 1.825-.252.804-1.658.804 1.658 1.825.252-1.329 1.277.324 1.813zm-7 0L12 21.605l-1.625.869.325-1.813-1.329-1.277 1.825-.252.804-1.658.804 1.658 1.825.252-1.329 1.277.324 1.813zm-7 0L5 21.605l-1.625.869.325-1.813-1.329-1.277 1.825-.252L5 17.474l.804 1.658 1.825.252L6.3 20.661l.324 1.813zM23 15.974H1a1 1 0 00-1 1v6a1 1 0 001 1h22a1 1 0 001-1v-6a1 1 0 00-1-1zm-22.998-1H5c.008-1.214-.001-2.289 0-3.013.005-3.993 1.749-3.116 1.749-6.663 0-1.507-.983-2.324-2.248-2.324-1.869 0-3.169 1.787-1.399 5.129.581 1.099-.62 1.359-1.91 1.657C.074 10.018 0 10.807 0 11.753l.002 3.221zM22.808 9.76c-1.29-.298-2.491-.558-1.91-1.657 1.77-3.342.47-5.129-1.399-5.129-1.265 0-2.248.817-2.248 2.324 0 3.324 1.719 2.704 1.749 6.676.008.972-.009 1.311 0 3h4.998L24 11.753c0-.946-.074-1.735-1.192-1.993zm-4.811 5.214H6.002L6 11.848c0-1.258.1-2.482 1.588-2.826 1.684-.389 3.344-.736 2.545-2.209-2.366-4.364-.674-6.839 1.866-6.839 2.491 0 4.226 2.383 1.866 6.839-.775 1.464.826 1.812 2.545 2.209 1.49.344 1.589 1.569 1.589 2.829l-.002 3.123z"
+						/>
+					</svg>
+					<div class="tab--text">Top Teams</div>
+				</div>
+			</button>
+	
+			<button class="tab is-active">
+				<div class="icon-text-container">
+					<svg xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd" width="18px" height="18px" id="icon-wreath" viewBox="0 0 512 512" fill="white">
+						<path 
+							d="M137.273 41c1.41 59.526 16.381 119.035 35.125 167.77 19.69 51.191 44.086 90.988 57.965 104.867l2.637 2.636V343h46v-26.727l2.637-2.636c13.879-13.88 38.275-53.676 57.965-104.867 18.744-48.735 33.715-108.244 35.125-167.77zm-50.605 68.295c-17.97 6.05-32.296 18.214-37.625 30.367-3.015 6.875-3.48 13.44-.988 20.129.285.766.62 1.54.996 2.318a119.032 119.032 0 0 1 8.504-4.812l6.277-3.215 4.621 5.326c5.137 5.92 9.61 12.37 13.422 19.125 2.573-3.06 5.207-7.864 7.05-14.037 4.491-15.034 4.322-36.95-2.257-55.201zm338.664 0c-6.58 18.25-6.748 40.167-2.258 55.201 1.844 6.173 4.478 10.977 7.051 14.037 3.813-6.756 8.285-13.205 13.422-19.125l4.621-5.326 6.277 3.215a119.033 119.033 0 0 1 8.504 4.812c.375-.779.71-1.552.996-2.318 2.492-6.689 2.027-13.254-.988-20.129-5.329-12.153-19.655-24.317-37.625-30.367zm-365.975 67.74c-20.251 12.486-34.121 31.475-36.746 47.973-1.447 9.1.09 17.224 5.323 24.545 1.66 2.324 3.743 4.594 6.304 6.76a116.606 116.606 0 0 1 11.44-14.977l4.72-5.24 6.217 3.33c7.91 4.236 15.262 9.424 21.94 15.252.973-3.633 1.619-7.892 1.773-12.616.636-19.438-6.762-45.536-20.97-65.027zm393.286 0c-14.21 19.49-21.607 45.59-20.971 65.027.154 4.724.8 8.983 1.773 12.616 6.678-5.828 14.03-11.016 21.94-15.252l6.217-3.33 4.72 5.24a116.606 116.606 0 0 1 11.44 14.976c2.56-2.165 4.643-4.435 6.304-6.76 5.233-7.32 6.77-15.444 5.323-24.544-2.625-16.498-16.495-35.487-36.746-47.973zM54.4 259.133c-14.394 18.806-20.496 41.413-17.004 57.748 1.928 9.014 6.298 16.078 13.844 21.078 4.944 3.276 11.48 5.7 19.94 6.645a120.631 120.631 0 0 1 7.101-17.852l3.125-6.338 6.9 1.535c4.095.911 8.133 2.046 12.094 3.377-.373-3.838-1.309-8.185-2.925-12.82-6.416-18.396-22.749-40.184-43.075-53.373zm403.2 0c-20.326 13.189-36.66 34.977-43.075 53.373-1.616 4.635-2.552 8.982-2.925 12.82a119.337 119.337 0 0 1 12.093-3.377l6.9-1.535 3.126 6.338a120.63 120.63 0 0 1 7.101 17.852c8.46-.944 14.996-3.37 19.94-6.645 7.546-5 11.916-12.065 13.844-21.078 3.492-16.335-2.61-38.942-17.004-57.748zM91.5 341.527c-9.285 23.14-9.027 47.85-.709 63.54 4.57 8.619 11.106 14.607 20.268 17.562 4.586 1.479 9.957 2.19 16.185 1.803-2.135-11.155-2.771-22.97-1.756-34.938l.602-7.074 7.02-1.065a129.43 129.43 0 0 1 13.458-1.312c.554-.025 1.107-.04 1.66-.059-12.419-15.776-33.883-31.43-56.728-38.457zm329 0c-22.845 7.027-44.31 22.68-56.729 38.457.554.019 1.107.034 1.66.059 4.5.206 8.995.637 13.46 1.312l7.02 1.065.6 7.074c1.016 11.967.38 23.783-1.755 34.938 6.228.386 11.6-.324 16.185-1.803 9.162-2.955 15.699-8.943 20.268-17.563 8.318-15.69 8.576-40.4-.709-63.539zM199.729 361c-1.943 7.383-6.045 14.043-11.366 19.363a46.544 46.544 0 0 1-3.484 3.125c14.804 3.295 28.659 8.692 40.404 15.46 2.384-5.36 5.376-10.345 9.408-14.534C239.96 378.942 247.51 375 256 375c8.491 0 16.041 3.942 21.309 9.414 4.032 4.19 7.024 9.175 9.408 14.533 11.815-6.808 25.766-12.23 40.67-15.52a48.107 48.107 0 0 1-3.739-3.413c-5.227-5.333-9.27-11.852-11.261-19.014zM256 393c-3.434 0-5.635 1.084-8.34 3.895-2.704 2.81-5.395 7.52-7.527 13.298-4.265 11.556-6.343 27-7.156 38.446-1.07 15.043 3 33.368 12.285 40.06 4.733 3.412 16.743 3.412 21.476 0 9.285-6.692 13.355-25.017 12.285-40.06-.813-11.446-2.891-26.89-7.156-38.446-2.132-5.777-4.823-10.488-7.527-13.298-2.705-2.81-4.906-3.895-8.34-3.895zm-103.521 4.979c-1.714-.008-3.424.022-5.127.09-1.405.055-2.77.281-4.164.39-.418 27.817 9.816 53.543 24.994 66.644 8.264 7.134 17.586 10.772 28.35 10.157 5.908-.338 12.394-2.03 19.374-5.52-1.27-7.665-1.377-15.42-.883-22.379.632-8.89 1.852-19.962 4.479-30.877-17.16-10.686-42.426-18.395-67.023-18.506zm207.042 0c-24.597.11-49.863 7.82-67.023 18.505 2.627 10.915 3.847 21.987 4.479 30.877.494 6.958.387 14.714-.883 22.38 6.98 3.49 13.466 5.181 19.375 5.519 10.763.615 20.085-3.023 28.35-10.156 15.177-13.102 25.411-38.828 24.993-66.645-1.393-.109-2.76-.335-4.164-.39a116.32 116.32 0 0 0-5.127-.09z"
+						/>
+					</svg>
+					<div class="tab--text">Past Seasons</div>
+				</div>
+			</button>
+	
+			<button class="tab not-active" onclick="changeTab('hof_most_active_racers')">
+				<div class="icon-text-container">
+					<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" id="icon-trophy" width="18" height="18" fill="white">
+						<path
+							d="M13.408 18C13.906 14.053 19 10.803 19 1H5c0 9.803 5.105 13.053 5.604 17h2.804zM9.794 6.528l1.46-.202L11.897 5l.643 1.326 1.46.202-1.063 1.021.26 1.451-1.3-.695-1.3.695.26-1.451-1.063-1.021zm-3.803 4.128c.286.638.585 1.231.882 1.783C2.808 11.091.372 7.105 0 3h4.077c.036.482.08.955.139 1.405H1.527c.427 2.001 1.549 4.729 4.464 6.251zM16 21.619V23H8v-1.381c1.941 0 2.369-1.433 2.571-2.619h2.866c.193 1.187.565 2.619 2.563 2.619zM24 3c-.372 4.105-2.808 8.091-6.873 9.438.297-.552.596-1.145.882-1.783 2.915-1.521 4.037-4.25 4.464-6.251h-2.688c.059-.45.103-.922.139-1.405H24z"
+						/>
+					</svg>
+					<div class="tab--text">Hall of Fame</div>
+				</div>
+			</button>
+	
+			<button class="tab not-active" onclick="changeTab('rarest_cars')">
+				<div class="icon-text-container">
+					<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" id="icon-diamond" width="18" height="18" fill="white">
+						<path
+							d="M18 1H6.084L0 8l12 15L24 8.083 18 1zM6.333 9l3.231 7.753L3.361 9h2.972zM15.5 9L12 17.4 8.5 9h7zM9.135 7L12 3.562 14.865 7h-5.73zm8.532 2h3.028l-6.283 7.811L17.667 9zm2.794-2h-2.992l-3.334-4h2.938l3.388 4zM6.996 3h2.869L6.531 7H3.52l3.476-4z"
+						/>
+					</svg>
+					<div class="tab--text">Rarest Cars</div>
+				</div>
+			</button>
+	
+			<button class="tab not-active" onclick="changeTab('site_stats')">
+				<div class="icon-text-container">
+					<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" id="icon-chart" width="18" height="18" fill="white">
+						<path d="M7 19H1V8h6v11zm8-18H9v18h6V1zm8 11h-6v7h6v-7zm1 9H0v2h24v-2z" />
+					</svg>
+					<div class="tab--text">Site Stats</div>
+				</div>
+			</button>
+	
+			<button class="tab not-active" onclick="changeTab('more_info')">
+				<div class="icon-text-container">
+					<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" id="icon-info" width="18" height="18" fill="white">
+						<path
+							d="M12 2c5.514 0 10 4.486 10 10s-4.486 10-10 10S2 17.514 2 12 6.486 2 12 2zm0-2C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm-.001 5.75c.69 0 1.251.56 1.251 1.25s-.561 1.25-1.251 1.25a1.25 1.25 0 010-2.5zM14 18h-4v-1c.484-.179 1-.201 1-.735v-4.467c0-.534-.516-.618-1-.797v-1h3v6.265c0 .535.517.558 1 .735V18z"
+						/>
+					</svg>
+					<div class="tab--text">More Info</div>
+				</div>
+			</button>
+	
+		</div>
+	
+		<div class="divider">
+			<div class="timeframe-buttons">			<button type="button" class="timeframe-button not-active-button" onclick="changeTab('season_14_racers')">Top Racers</button>			<button type="button" class="timeframe-button active-button">Top Teams</button>		</div>
+		</div>
+	
+	<div class="past-season-banner">
+		<div class="split-div">
+			<div class="season-details-div">
+				<span class="season-title">Season 14</span>
+				<div class="season-date-container">
+					<span class="season-date">May 23, 2018 - Jun 15, 2018</span>
+				</div>
+			</div>
+			<div class="seasons-dropdown-div">
+				<form class="form-seasons">
+					<div class="dropdown">
+						<select class="dropdown-select dropdown-select-seasons" onchange="handleDropdownChange()">
+							<option value="season_0.5_teams">Season 0.5</option>)						<option value="season_1_teams">Season 1</option>)						<option value="season_2_teams">Season 2</option>)						<option value="season_3_teams">Season 3</option>)						<option value="season_4_teams">Season 4</option>)						<option value="season_5_teams">Season 5</option>)						<option value="season_6_teams">Season 6</option>)						<option value="season_7_teams">Season 7</option>)						<option value="season_8_teams">Season 8</option>)						<option value="season_9_teams">Season 9 (Xmaxx 2017)</option>)						<option value="season_10_teams">Season 10</option>)						<option value="season_11_teams">Season 11</option>)						<option value="season_12_teams">Season 12</option>)						<option value="season_13_teams">Season 13 PAC!</option>)						<option value="season_14_teams" selected>Season 14</option>)						<option value="season_15_teams">Season 15</option>)						<option value="season_16_teams">Season 16</option>)						<option value="season_B2S2018_teams">Back 2 School (2018)</option>)						<option value="season_17_teams">Season 17</option>)						<option value="season_18_teams">Season 18 (Xmaxx 2018)</option>)						<option value="season_19_teams">Season 19</option>)						<option value="season_20_teams">Season 20</option>)						<option value="season_21_teams">Season 21</option>)						<option value="season_22_teams">Season 22</option>)						<option value="season_23_teams">Season 23 (Back 2 School)</option>)						<option value="season_24_teams">Season 24</option>)						<option value="season_25_teams">Season 25 (Xmaxx 2019)</option>)						<option value="season_26_teams">Season 26</option>)						<option value="season_27_teams">Season 27 (Neon Spring)</option>)						<option value="season_28_teams">Season 28 (Wampus World)</option>)						<option value="season_29_teams">Season 29</option>)						<option value="season_50_teams">Season 50 (Xmaxx 2023)</option>)
+						</select>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+	
+		<table class="table">
+	
+			<thead>
+				<tr class="table-header">
+					<th scope="col" class="table-cell" style="width: 9%;"></th>
+					<th scope="col" class="table-cell" style="width: 13%;">Tag</th>
+					<th scope="col" class="table-cell" style="width: 19%;">Captain</th>
+					<th scope="col" class="table-cell" style="width: 17%;">Created</th>
+					<th scope="col" class="table-cell" style="width: 15%;">Disbanded?</th>
+					<th scope="col" class="table-cell" style="width: 13%;">Races</th>
+					<th scope="col" class="table-cell" style="width: 14%;">Points</th>
+				</tr>
+			</thead>
+	
+			<tbody class="table-body">
+	
+				<tr class="table-row table-row--gold">
+					<td class="table-cell table-cell--place" style="width: 9%;"><img class="medal" src="/static/images/gold.png"/></td>
+	
+							<td class="table-cell" style="width: 13%;"><span><a class="tag-text tag-link" style="color: #436fb6;" href="https://www.nitrotype.com/team/SSH" target="_blank">[SSH]</a></span></td>
+					<td class="table-cell" style="width: 19%;">
+	<a class="captain-name-activated" href="https://www.nitrotype.com/racer/volatile" target="_blank">volatile</a></td>
+					<td class="table-cell" style="width: 17%;">
+	2014-12-11</td>
+	
+					<td class="table-cell" style="width: 15%;">
+	No</td>
+	
+					<td class="table-cell" style="width: 13%;">
+	92,907</td>
+	
+					<td class="table-cell" style="width: 14%;">
+	12,816,390</td>
+	
+				<tr class="table-row table-row--silver">
+					<td class="table-cell table-cell--place" style="width: 9%;"><img class="medal" src="/static/images/silver.png" /></td>
+	
+							<td class="table-cell" style="width: 13%;"><span><a class="tag-text tag-link" style="color: #9a6db0;" href="https://www.nitrotype.com/team/NTA" target="_blank">[NTA]</a></span></td>
+					<td class="table-cell" style="width: 19%;">
+	<a class="captain-name-activated" href="https://www.nitrotype.com/racer/jjohnson757" target="_blank">iloveshoes2</a></td>
+					<td class="table-cell" style="width: 17%;">
+	2014-06-13</td>
+	
+					<td class="table-cell" style="width: 15%;">
+	No</td>
+	
+					<td class="table-cell" style="width: 13%;">
+	67,521</td>
+	
+					<td class="table-cell" style="width: 14%;">
+	8,844,142</td>
+	
+				<tr class="table-row table-row--bronze">
+					<td class="table-cell table-cell--place" style="width: 9%;"><img class="medal" src="/static/images/bronze.png" /></td>
+	
+					<td class="table-cell" style="width: 13%;"><span class="tag-text" style="color: #f5eb21;">[IRAN]</span></td>
+	
+					<td class="captain-name-deactivated" class="table-cell" style="width: 19%;">Mohammad</td>
+	
+					<td class="table-cell" style="width: 17%;">
+	2017-12-07</td>
+	
+					<td class="table-cell" style="width: 15%;">
+	Yes</td>
+	
+					<td class="table-cell" style="width: 13%;">
+	57,757</td>
+	
+					<td class="table-cell" style="width: 14%;">
+	7,404,461</td>
+	
+				<tr class="table-row table-row--nonpodium">
+					<td class="table-cell table-cell--place place-number" style="width: 9%;">
+	4</td>
+	
+					<td class="table-cell" style="width: 13%;"><span class="tag-text" style="color: #70c3ed;">[C0CO]</span></td>
+	
+					<td class="captain-name-deactivated" class="table-cell" style="width: 19%;">Davidott10</td>
+	
+					<td class="table-cell" style="width: 17%;">
+	2018-03-27</td>
+	
+					<td class="table-cell" style="width: 15%;">
+	Yes</td>
+	
+					<td class="table-cell" style="width: 13%;">
+	41,513</td>
+	
+					<td class="table-cell" style="width: 14%;">
+	4,979,923</td>
+	
+				<tr class="table-row table-row--nonpodium">
+					<td class="table-cell table-cell--place place-number" style="width: 9%;">
+	5</td>
+	
+					<td class="table-cell" style="width: 13%;"><span class="tag-text" style="color: #ffd8a1;">[ESCL]</span></td>
+	
+					<td class="table-cell" style="width: 19%;">
+	<a class="captain-name-activated" href="https://www.nitrotype.com/racer/calebkaleb" target="_blank">calebkaleb</a></td>
+					<td class="table-cell" style="width: 17%;">
+	Unknown</td>
+	
+					<td class="table-cell" style="width: 15%;">
+	Yes</td>
+	
+					<td class="table-cell" style="width: 13%;">
+	28,322</td>
+	
+					<td class="table-cell" style="width: 14%;">
+	3,544,913</td>
+	
+				<tr class="table-row table-row--nonpodium">
+					<td class="table-cell table-cell--place place-number" style="width: 9%;">
+	6</td>
+	
+							<td class="table-cell" style="width: 13%;"><span><a class="tag-text tag-link" style="color: #c1dd89;" href="https://www.nitrotype.com/team/DSNT" target="_blank">[DSNT]</a></span></td>
+					<td class="table-cell" style="width: 19%;">
+	<a class="captain-name-activated" href="https://www.nitrotype.com/racer/agento" target="_blank">agento</a></td>
+					<td class="table-cell" style="width: 17%;">
+	2017-09-19</td>
+	
+					<td class="table-cell" style="width: 15%;">
+	No</td>
+	
+					<td class="table-cell" style="width: 13%;">
+	25,525</td>
+	
+					<td class="table-cell" style="width: 14%;">
+	3,152,295</td>
+	
+				<tr class="table-row table-row--nonpodium">
+					<td class="table-cell table-cell--place place-number" style="width: 9%;">
+	7</td>
+	
+							<td class="table-cell" style="width: 13%;"><span><a class="tag-text tag-link" style="color: #f9f18c;" href="https://www.nitrotype.com/team/STPR" target="_blank">[STPR]</a></span></td>
+					<td class="table-cell" style="width: 19%;">
+	<a class="captain-name-activated" href="https://www.nitrotype.com/racer/paulamirada2" target="_blank">paulamirada2</a></td>
+					<td class="table-cell" style="width: 17%;">
+	2015-05-12</td>
+	
+					<td class="table-cell" style="width: 15%;">
+	No</td>
+	
+					<td class="table-cell" style="width: 13%;">
+	22,691</td>
+	
+					<td class="table-cell" style="width: 14%;">
+	2,922,904</td>
+	
+				<tr class="table-row table-row--nonpodium">
+					<td class="table-cell table-cell--place place-number" style="width: 9%;">
+	8</td>
+	
+					<td class="table-cell" style="width: 13%;"><span class="tag-text" style="color: #436fb6;">[SSNK]</span></td>
+	
+					<td class="table-cell" style="width: 19%;">
+	<a class="captain-name-activated" href="https://www.nitrotype.com/racer/wolves101" target="_blank">Basilisk</a></td>
+					<td class="table-cell" style="width: 17%;">
+	Unknown</td>
+	
+					<td class="table-cell" style="width: 15%;">
+	Yes</td>
+	
+					<td class="table-cell" style="width: 13%;">
+	23,165</td>
+	
+					<td class="table-cell" style="width: 14%;">
+	2,814,530</td>
+	
+				<tr class="table-row table-row--nonpodium">
+					<td class="table-cell table-cell--place place-number" style="width: 9%;">
+	9</td>
+	
+					<td class="table-cell" style="width: 13%;"><span class="tag-text" style="color: #71c055;">[RCWS]</span></td>
+	
+					<td class="table-cell" style="width: 19%;">
+	<a class="captain-name-activated" href="https://www.nitrotype.com/racer/starboystellan" target="_blank">starboystellan</a></td>
+					<td class="table-cell" style="width: 17%;">
+	2018-03-31</td>
+	
+					<td class="table-cell" style="width: 15%;">
+	Yes</td>
+	
+					<td class="table-cell" style="width: 13%;">
+	20,884</td>
+	
+					<td class="table-cell" style="width: 14%;">
+	2,636,741</td>
+	
+				<tr class="table-row table-row--nonpodium">
+					<td class="table-cell table-cell--place place-number" style="width: 9%;">
+	10</td>
+	
+					<td class="table-cell" style="width: 13%;"><span class="tag-text" style="color: #f3eb67;">[REV]</span></td>
+	
+					<td class="table-cell" style="width: 19%;">
+	<a class="captain-name-activated" href="https://www.nitrotype.com/racer/rlepardo" target="_blank">RacerRalph</a></td>
+					<td class="table-cell" style="width: 17%;">
+	2018-01-08</td>
+	
+					<td class="table-cell" style="width: 15%;">
+	Yes</td>
+	
+					<td class="table-cell" style="width: 13%;">
+	16,881</td>
+	
+					<td class="table-cell" style="width: 14%;">
+	2,291,703</td>
+	
+			</tbody>
+	
+		</table>
+	
+	</div>
+	
