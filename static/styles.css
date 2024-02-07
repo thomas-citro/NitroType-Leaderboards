@@ -46,7 +46,10 @@ body {
 }
 
 .leaderboard-box {
-	padding: 20px 20px 20px 20px;
+	padding-left: 20px;
+	padding-right: 20px;
+	padding-top: 20px;
+	padding-bottom: 50px;
 }
 
 .leaderboard-box-extra-space {
@@ -304,6 +307,12 @@ button {
 
 .team-text:hover {
 	text-decoration: underline;
+}
+
+.custom-title {
+	color: #F9D034;
+	font-family: "Montserrat", sans-serif;
+	font-size: 16px;
 }
 
 .background-box {
@@ -757,10 +766,30 @@ h2 {
 	/*width: 28%;*/
 }
 
-.season-title {
+.season-title-short {
 	display: block;
 	font-family: "Montserrat", sans-serif;
 	font-size: 51px;
+	font-weight: 600;
+	margin-bottom: 10px;
+	color: #F9D034;
+}
+
+.season-title-medium {
+	display: block;
+	font-family: "Montserrat", sans-serif;
+	font-size: 42px;
+	line-height: 81.6px;
+	font-weight: 600;
+	margin-bottom: 10px;
+	color: #F9D034;
+}
+
+.season-title-long {
+	display: block;
+	font-family: "Montserrat", sans-serif;
+	font-size: 35px;
+	line-height: 81.6px;
 	font-weight: 600;
 	margin-bottom: 10px;
 	color: #F9D034;
