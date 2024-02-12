@@ -418,10 +418,40 @@ button {
 	box-sizing: inherit;
 }
 
+.timeframe-button {
+	margin-left: 10px;
+	margin-right: 10px;
+	padding: 15px;
+	font-family: "Montserrat", sans-serif;
+	font-size: 14px;
+	border-width: 1px;
+    border-style: solid;
+	border-radius: 5px;
+}
+
 .active-button {
 	background: #167ac3;
     border-color: transparent;
     color: #fff;
+}
+
+.page-buttons {
+	overflow: visible;
+	padding-left: 20px;
+	padding-right: 20px;
+	display: flex;
+	box-sizing: inherit;
+}
+
+.page-button {
+	margin-left: 4px;
+	margin-right: 4px;
+	padding: 15px;
+	font-family: "Montserrat", sans-serif;
+	font-size: 14px;
+	border-width: 1px;
+    border-style: solid;
+	border-radius: 5px;
 }
 
 .not-active-button {
@@ -435,17 +465,6 @@ button {
     background: #585e7d;
     box-shadow: inset 0px -3px 0px 0px rgba(2, 2, 2, 0.3), 0 0.5em 0.5em -0.4em rgba(2, 2, 2, 0.75);
     color: #e2e3eb;
-}
-
-.timeframe-button {
-	margin-left: 10px;
-	margin-right: 10px;
-	padding: 15px;
-	font-family: "Montserrat", sans-serif;
-	font-size: 14px;
-	border-width: 1px;
-    border-style: solid;
-	border-radius: 5px;
 }
 
 .divider {
