@@ -444,14 +444,28 @@ button {
 }
 
 .page-button {
-	margin-left: 4px;
-	margin-right: 4px;
-	padding: 15px;
+	margin-left: 5px;
+	margin-right: 5px;
+	padding-top: 13px;
+	padding-bottom: 13px;
+	padding-left: 15px;
+	padding-right: 15px;
 	font-family: "Montserrat", sans-serif;
 	font-size: 14px;
 	border-width: 1px;
     border-style: solid;
 	border-radius: 5px;
+}
+
+.multi-page-title {
+	font-family: "Montserrat", sans-serif;
+	font-size: 16px;
+	color: #e2e3eb;
+	font-weight: bold;
+	display: flex;
+	align-self: center;
+	padding-left: 10px;
+	padding-right: 10px;
 }
 
 .not-active-button {
@@ -482,9 +496,23 @@ button {
 	display: flex;
 }
 
+.divider2-w-bottom-margin {
+	background: #3B3D4C;
+	padding-top: 15px;
+	padding-bottom: 15px;
+	display: flex;
+}
+
 .divider3 {
 	background: #3B3D4C;
 	padding: 0;
+	box-shadow:inset 0px -2px 0px 0px #61626E;
+	display: flex;
+}
+
+.divider3-w-bottom-margin {
+	background: #3B3D4C;
+	padding-bottom: 17px;
 	box-shadow:inset 0px -2px 0px 0px #61626E;
 	display: flex;
 }
