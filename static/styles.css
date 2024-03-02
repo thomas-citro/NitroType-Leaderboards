@@ -29,9 +29,12 @@ body {
 	background: linear-gradient(90deg, #1C99F4 60%, #167ac3 100%);
 	padding: 20px;
 	border-radius: 20px 20px 0 0;
+	display: flex;
 }
 
 .banner-text {
+	display: flex;
+	width: 50%;
 	color: #fff;
 	box-sizing: inherit;
 	margin: 0.67em 0;
@@ -43,6 +46,23 @@ body {
 	font-size: 25px;
 	margin-bottom: 0;
 	text-shadow: 0 2px 2px rgba(2, 2, 2, 0.25);
+}
+
+.last-data-update-stamp {
+	color: #F9D034;
+	font-weight: 500;
+	text-shadow: 0 1px 1px rgba(2, 2, 2, 0.25);
+	padding-left: 10px;
+}
+
+.last-data-update {
+	display: flex;
+	width: 50%;
+	justify-content: right;
+	font-weight: 400;
+	font-size: 18px;
+	font-family: "Montserrat", sans-serif;
+	color: #fff;
 }
 
 .leaderboard-box {
@@ -295,6 +315,22 @@ button {
 }
 
 .tag-link:hover {
+	text-decoration: underline;
+}
+
+.user-team-tag-link {
+	text-decoration: none;
+}
+
+.user-team-tag-link:hover {
+	text-decoration: underline;
+}
+
+.tag-text-link {
+	text-decoration: none;
+}
+
+.tag-text-link:hover {
 	text-decoration: underline;
 }
 
