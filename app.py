@@ -14,5 +14,12 @@ def get_tab_content(tabName):
 	except Exception as e:
 		return f"Content for {tabName} not found.\nError: {str(e)}"
 
+@app.route('/data_update_timestamp')
+def get_data_update_timestamp():
+	try:
+		return render_template(f'last_data_update_timestamp.html')
+	except Exception as e:
+		return "N/A"
+
 if __name__ == '__main__':
 	app.run()

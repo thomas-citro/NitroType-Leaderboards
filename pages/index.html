@@ -40,8 +40,18 @@
 				.catch(error => console.error('Error:', error));
 		}
 
+		function loadDataUpdateTimestamp() {
+			fetch(`/data_update_timestamp`)
+				.then(response => response.text())
+				.then(data => {
+					document.getElementById('last-data-update').innerHTML = data;
+				})
+				.catch(error => console.error('Error:', error));
+		}
+
 		window.onload = function() {
-			changeTab('top_racers_season')
+			changeTab('top_racers_season');
+			//loadDataUpdateTimestamp();
 		}
 	</script>
 </head>
@@ -52,6 +62,11 @@
 	<main class="content">
 		<div class="banner">
 			<div class="banner-text">Leaderboards</div>
+			<div class="last-data-update" id="last-data-update">
+				<!-- Content to be dynamically displayed here -->
+			</div>
+			<!-- <object type="text/plain" data="data/last_data_update_timestamp.txt" id="last-data-update-stamp"></object> -->
+			<!-- <embed src="data/last_data_update_timestamp.txt"> -->
 		</div>
 		<div class="background-box" id="background-box">
 			<!-- Content to be dynamically displayed here -->
