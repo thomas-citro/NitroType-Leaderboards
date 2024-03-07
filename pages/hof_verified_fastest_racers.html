@@ -1,5 +1,5 @@
 
-	<div class="leaderboard-box leaderboard-box-extra-space">
+	<div class="leaderboard-box">
 	
 		<div class="tabs">
 	
@@ -86,13 +86,13 @@
 				<div class="hof-heading-container"><div class="hof-heading">Player Hall of Fame</div></div>
 				<button type="button" class="hall-of-fame-button not-active-button" onclick="changeTab('hof_most_active_racers')">Most Active Racers</button>
 				<button type="button" class="hall-of-fame-button not-active-button" onclick="changeTab('hof_fastest_racers')">Fastest Racers</button>
-				<button type="button" class="hall-of-fame-button not-active-button" onclick="changeTab('hof_verified_fastest_racers')">Verified Fastest Racers</button>
+				<button type="button" class="hall-of-fame-button active-button">Verified Fastest Racers</button>
 				<button type="button" class="hall-of-fame-button not-active-button" onclick="changeTab('hof_longest_session')">Longest Session</button>
 				<button type="button" class="hall-of-fame-button not-active-button" onclick="changeTab('hof_most_cars_owned')">Most Cars Owned</button>
 				<button type="button" class="hall-of-fame-button not-active-button" onclick="changeTab('hof_most_profile_views')">Most Profile Views</button>
 				<button type="button" class="hall-of-fame-button not-active-button" onclick="changeTab('hof_oldest_active_players')">Oldest Active Players</button>
 				<button type="button" class="hall-of-fame-button not-active-button" onclick="changeTab('hof_most_player_races_per_day')">Most Races Per Day (Player)</button>
-				<button type="button" class="hall-of-fame-button active-button">Top Donors</button>
+				<button type="button" class="hall-of-fame-button not-active-button" onclick="changeTab('hof_top_donors')">Top Donors</button>
 				<button type="button" class="hall-of-fame-button not-visible-button"></button>
 				<button type="button" class="hall-of-fame-button not-visible-button"></button>
 				<button type="button" class="hall-of-fame-button not-visible-button"></button>
@@ -114,16 +114,13 @@
 				d="M12 2c5.514 0 10 4.486 10 10s-4.486 10-10 10S2 17.514 2 12 6.486 2 12 2zm0-2C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm-.001 5.75c.69 0 1.251.56 1.251 1.25s-.561 1.25-1.251 1.25a1.25 1.25 0 010-2.5zM14 18h-4v-1c.484-.179 1-.201 1-.735v-4.467c0-.534-.516-.618-1-.797v-1h3v6.265c0 .535.517.558 1 .735V18z"
 			/>
 		</svg>
-		<span class="board-description-text">To get added, message me on Discord to get my CashApp, Venmo, or Zelle. My Discord username is: <span style="color: #F9D034;">thomas_1213</span></span>
-		<form class="cash-form">
-			<label for="dropdown-real-cash" class="cash-label">Cash type: </label>
-			<div class="dropdown-cash">
-				<select id="dropdown-real-cash" class="dropdown-select dropdown-select-donations" onchange="handleDropdownChange()">
-					<option value="hof_top_donors">Nitro Type Cash</option>
-					<option value="hof_top_donors_real_cash" selected>Real Cash</option>
-				</select>
-			</div>
-		</form>
+		<span class="board-description-text">To be included on this leaderboard, the following requirements are in place:
+			<ol style="margin-block-start: 5px;">
+				<li>Record a video of your race that shows both the screen and your keyboard.</li>
+				<li>The speed must be over 120 wpm.</li>
+				<li>Publish the video and send me the link on Discord. My Discord username is: <span style="color: #F9D034;">thomas_1213</span></li>
+			</ol>
+		</span>
 	</div>
 	
 		<table class="table">
@@ -132,9 +129,10 @@
 				<tr class="table-header">
 					<th scope="col" class="table-cell" style="width: 9%;"></th>
 					<th scope="col" class="table-cell" style="width: 12%;">Racer</th>
-					<th scope="col" class="table-cell" style="width: 31%;"></th>
-					<th scope="col" class="table-cell" style="width: 34%;">Donor Message</th>
-					<th scope="col" class="table-cell" style="width: 14%;">Total Donations</th>
+					<th scope="col" class="table-cell" style="width: 37%;"></th>
+					<th scope="col" class="table-cell" style="width: 11%;">WPM</th>
+					<th scope="col" class="table-cell" style="width: 16%;">Typing Method</th>
+					<th scope="col" class="table-cell" style="width: 15%;">Video Proof</th>
 				</tr>
 			</thead>
 	
@@ -143,44 +141,203 @@
 				<tr class="table-row table-row--gold">
 					<td class="table-cell table-cell--place" style="width: 9%;"><img class="medal" src="/static/images/gold.png"/></td>
 	
-					<td class="table-cell" style="width: 12%;"><img class="car-img" src="/static/images/cars/painted/
-	libertys7a_large_240.png"/></td>
+					<td class="table-cell" style="width: 12%;"><img class="car-img" src="/static/images/cars/
+	9.png"/></td>
 	
-					<td class="table-cell" style="width: 31%;">
+					<td class="table-cell" style="width: 37%;">
 	
-						<img class="gold-img" src="/static/images/gold-membership.png"/>
+	<span class="deactivated-display-name">	
+	mythicalrocket</span>
 	
-						<span class="team-tag" style="color: #8750a0;">[<a class="team-tag user-team-tag-link" style="color: #8750a0;" href="https://www.nitrotype.com/team/FASZ" target="_blank">FASZ</a>]</span>
-	
-						<a class="display-name display-name-gold" href="https://www.nitrotype.com/racer/
-	kamryn234t54345" target="_blank">
-	༺Survivor༻</a>
-						<br><span class="title">"Celebrity"</span>
 					</td>
-					<td class="table-cell" style="width: 34%;"><span class="donor-message">"FASZ Will Go Down In NT History. Mark My Words!"</span></td>				<td class="table-cell" style="width: 14%;"><span class="real-cash">$</span><span class="cash">9</span></td>
-				</tr>
 	
+					<td class="table-cell" style="width: 11%;">
+	240</td>
+	
+					<td class="table-cell" style="width: 16%;">
+	QWERTY</td>
+					<td class="table-cell" style="width: 15%;"><a href="https://www.tiktok.com/@mythical.rocket/video/7245791167244242222" target="_blank" class="video-link">Video URL</a></td>
 				<tr class="table-row table-row--silver">
 					<td class="table-cell table-cell--place" style="width: 9%;"><img class="medal" src="/static/images/silver.png" /></td>
 	
-					<td class="table-cell" style="width: 12%;"><img class="car-img" src="/static/images/cars/painted/
-	166_large_1_280.png"/></td>
+					<td class="table-cell" style="width: 12%;"><img class="car-img" src="/static/images/cars/
+	122.png"/></td>
 	
-					<td class="table-cell" style="width: 31%;">
+					<td class="table-cell" style="width: 37%;">
 	
-						<span class="team-tag" style="color: #9a6db0;">[<a class="team-tag user-team-tag-link" style="color: #9a6db0;" href="https://www.nitrotype.com/team/VDN" target="_blank">VDN</a>]</span>
+						<img class="gold-img" src="/static/images/gold-membership.png"/>
+	
+						<a class="display-name display-name-gold" href="https://www.nitrotype.com/racer/
+	joshua728" target="_blank">
+	joshuu</a>
+						<br><span class="title">"Speed Champion"</span>
+					</td>
+	
+					<td class="table-cell" style="width: 11%;">
+	219</td>
+	
+					<td class="table-cell" style="width: 16%;">
+	QWERTY</td>
+					<td class="table-cell" style="width: 15%;"><a href="https://www.youtube.com/watch?v=PcW6n-F22LQ" target="_blank" class="video-link">Video URL</a></td>
+				<tr class="table-row table-row--bronze">
+					<td class="table-cell table-cell--place" style="width: 9%;"><img class="medal" src="/static/images/bronze.png" /></td>
+	
+					<td class="table-cell" style="width: 12%;"><img class="car-img" src="/static/images/cars/
+	53.png"/></td>
+	
+					<td class="table-cell" style="width: 37%;">
 	
 						<a class="display-name display-name-basic" href="https://www.nitrotype.com/racer/
-	solicitary" target="_blank">
-	solicitary</a>
-						<br><span class="title">"Valedictorian"</span>
+	shozey" target="_blank">
+	8shaz8</a>
+						<br><span class="title">"No Nitros Needed"</span>
 					</td>
-					<td class="table-cell" style="width: 34%;"><span class="donor-message"></span></td>				<td class="table-cell" style="width: 14%;"><span class="real-cash">$</span><span class="cash">5</span></td>
-				</tr>
 	
-			</tbody>
+					<td class="table-cell" style="width: 11%;">
+	219</td>
 	
-		</table>
+					<td class="table-cell" style="width: 16%;">
+	QWERTY</td>
+					<td class="table-cell" style="width: 15%;"><a href="https://www.youtube.com/watch?v=AaT_FpdF0cs" target="_blank" class="video-link">Video URL</a></td>
+				<tr class="table-row table-row--nonpodium">
+					<td class="table-cell table-cell--place place-number" style="width: 9%;">
+	4</td>
 	
-	</div>
+					<td class="table-cell" style="width: 12%;"><img class="car-img" src="/static/images/cars/
+	52.png"/></td>
 	
+					<td class="table-cell" style="width: 37%;">
+	
+						<img class="gold-img" src="/static/images/gold-membership.png"/>
+	
+						<a class="display-name display-name-gold" href="https://www.nitrotype.com/racer/
+	400731" target="_blank">
+	arenasnow</a>
+						<br><span class="title">"Wampus Thwamper"</span>
+					</td>
+	
+					<td class="table-cell" style="width: 11%;">
+	205</td>
+	
+					<td class="table-cell" style="width: 16%;">
+	QWERTY</td>
+					<td class="table-cell" style="width: 15%;"><a href="https://www.youtube.com/watch?v=glTXpseqZts" target="_blank" class="video-link">Video URL</a></td>
+				<tr class="table-row table-row--nonpodium">
+					<td class="table-cell table-cell--place place-number" style="width: 9%;">
+	5</td>
+	
+					<td class="table-cell" style="width: 12%;"><img class="car-img" src="/static/images/cars/
+	332.png"/></td>
+	
+					<td class="table-cell" style="width: 37%;">
+	
+						<img class="gold-img" src="/static/images/gold-membership.png"/>
+	
+						<a class="display-name display-name-gold" href="https://www.nitrotype.com/racer/
+	hi_i_am_epic" target="_blank">
+	NoThisIsJohn</a>
+						<br><span class="title">"Verified YouTuber"</span>
+					</td>
+	
+					<td class="table-cell" style="width: 11%;">
+	200</td>
+	
+					<td class="table-cell" style="width: 16%;">
+	DVORAK</td>
+					<td class="table-cell" style="width: 15%;"><a href="https://www.youtube.com/watch?v=iyxWWeXIP80" target="_blank" class="video-link">Video URL</a></td>
+				<tr class="table-row table-row--nonpodium">
+					<td class="table-cell table-cell--place place-number" style="width: 9%;">
+	6</td>
+	
+					<td class="table-cell" style="width: 12%;"><img class="car-img" src="/static/images/cars/
+	101.png"/></td>
+	
+					<td class="table-cell" style="width: 37%;">
+	
+						<img class="gold-img" src="/static/images/gold-membership.png"/>
+	
+						<span class="team-tag" style="color: #5b52a3;">[<a class="team-tag user-team-tag-link" style="color: #5b52a3;" href="https://www.nitrotype.com/team/FLPR" target="_blank">FLPR</a>]</span>
+	
+						<a class="display-name display-name-gold" href="https://www.nitrotype.com/racer/
+	penguintyper" target="_blank">
+	Penguin Typer</a>
+						<br><span class="title">"Please Subscribe"</span>
+					</td>
+	
+					<td class="table-cell" style="width: 11%;">
+	159</td>
+	
+					<td class="table-cell" style="width: 16%;">
+	Two Finger</td>
+					<td class="table-cell" style="width: 15%;"><a href="https://www.youtube.com/watch?v=udE86luqLQY" target="_blank" class="video-link">Video URL</a></td>
+				<tr class="table-row table-row--nonpodium">
+					<td class="table-cell table-cell--place place-number" style="width: 9%;">
+	7</td>
+	
+					<td class="table-cell" style="width: 12%;"><img class="car-img" src="/static/images/cars/painted/
+	tbd_large_120.png"/></td>
+	
+					<td class="table-cell" style="width: 37%;">
+	
+						<img class="gold-img" src="/static/images/gold-membership.png"/>
+	
+						<span class="team-tag" style="color: #ee1f25;">[<a class="team-tag user-team-tag-link" style="color: #ee1f25;" href="https://www.nitrotype.com/team/SHADQW" target="_blank">SHADQW</a>]</span>
+	
+						<a class="display-name display-name-gold" href="https://www.nitrotype.com/racer/
+	experiencedracer" target="_blank">
+	Experienced Racer YT</a>
+						<br><span class="title">"Keyboard Cat"</span>
+					</td>
+	
+					<td class="table-cell" style="width: 11%;">
+	159</td>
+	
+					<td class="table-cell" style="width: 16%;">
+	QWERTY</td>
+					<td class="table-cell" style="width: 15%;"><a href="https://www.youtube.com/watch?v=tOa0vxrlMIQ" target="_blank" class="video-link">Video URL</a></td>
+				<tr class="table-row table-row--nonpodium">
+					<td class="table-cell table-cell--place place-number" style="width: 9%;">
+	8</td>
+	
+					<td class="table-cell" style="width: 12%;"><img class="car-img" src="/static/images/cars/
+	281.png"/></td>
+	
+					<td class="table-cell" style="width: 37%;">
+	
+						<span class="team-tag" style="color: #ee1f25;">[<a class="team-tag user-team-tag-link" style="color: #ee1f25;" href="https://www.nitrotype.com/team/DX" target="_blank">DX</a>]</span>
+	
+						<a class="display-name display-name-basic" href="https://www.nitrotype.com/racer/
+	eddiethemagicmonk" target="_blank">
+	Eddie the Magic Monk</a>
+						<br><span class="title">"Crazy About Typing"</span>
+					</td>
+	
+					<td class="table-cell" style="width: 11%;">
+	144</td>
+	
+					<td class="table-cell" style="width: 16%;">
+	QWERTY</td>
+					<td class="table-cell" style="width: 15%;"><a href="https://www.youtube.com/watch?v=Nwy9LKMP1Lo" target="_blank" class="video-link">Video URL</a></td>
+				<tr class="table-row table-row--nonpodium">
+					<td class="table-cell table-cell--place place-number" style="width: 9%;">
+	9</td>
+	
+					<td class="table-cell" style="width: 12%;"><img class="car-img" src="/static/images/cars/
+	362.png"/></td>
+	
+					<td class="table-cell" style="width: 37%;">
+	
+						<img class="gold-img" src="/static/images/gold-membership.png"/>
+	
+						<a class="display-name display-name-gold" href="https://www.nitrotype.com/racer/
+	537565" target="_blank">
+	NitroTypistYT</a>
+						<br><span class="title">"Verified YouTuber"</span>
+					</td>
+	
+					<td class="table-cell" style="width: 11%;">
+	136</td>
+	
+					<td class="table-cell" style="width: 16%;">
+	QWERTY</td>
+					<td class="table-cell" style="width: 15%;"><a href="https://www.youtube.com/watch?v=b3emNghIdyc" target="_blank" class="video-link">Video URL</a></td>

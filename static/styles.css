@@ -714,6 +714,16 @@ form {
 	color: #92daf7;
 }
 
+.video-link {
+	font-family: "Montserrat", sans-serif;
+	color: #92daf7;
+	text-decoration: none;
+}
+
+.video-link:hover {
+	text-decoration: underline;
+}
+
 h2 {
 	color: #D62F3A;
 	margin-bottom: 0px;
