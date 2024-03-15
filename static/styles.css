@@ -587,6 +587,17 @@ form {
 	font-size: 14px;
 }
 
+.board-description-donors {
+	background: #3B3D4C;
+	margin: 0;
+	text-align: left;
+	box-shadow:inset 0px -2px 0px 0px #61626E;
+	display: flex;
+	color: #CDCDCD;
+	font-family: "Montserrat", sans-serif;
+	font-size: 14px;
+}
+
 .width100 {
 	width: 100%;
 }
@@ -597,6 +608,11 @@ form {
 
 .board-description-text {
 	margin-left: 7px;
+}
+
+.board-description-text-donors {
+	width: 100%;
+	margin-left: 8px;
 }
 
 .dropdown {
@@ -623,11 +639,14 @@ form {
 }
 
 .cash-label {
-	width: 75px;
-	margin-left: 20px;
+	display: flex;
+	width: 28%;
+	align-self: center;
 }
 
 .dropdown-cash {
+	width: 72%;
+	display: flex;
 	text-align: left;
 	color: #fff;
 	font-size: 100%;
@@ -635,7 +654,6 @@ form {
 	font-weight: 300;
 	line-height: 1.6;
 	box-sizing: inherit;
-	margin-left: 10px;
 }
 
 .speed-form {
@@ -646,8 +664,16 @@ form {
 
 .cash-form {
 	display: flex;
-	align-items: center;
-	margin-right: 0;
+	margin: 0;
+	width: 33%;
+}
+
+.board-description-flexbox {
+	display: flex;
+	width: 67%;
+	padding-right: 10px;
+	padding-top: 15px;
+	padding-bottom: 15px;
 }
 
 .dropdown-select {
