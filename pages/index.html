@@ -18,6 +18,7 @@
 	</script>
 	<script>
 		var loadingHTML = '<div class="lds-spinner"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>';
+		var searchSelection = "none";
 
 		function changeTab(tabName) {
 			document.getElementById('background-box').innerHTML = loadingHTML;
@@ -52,6 +53,164 @@
 		window.onload = function() {
 			changeTab('top_racers_season');
 			loadDataUpdateTimestamp();
+		}
+
+		function userSearch() {
+			if (searchSelection == "user") {
+				searchSelection = "none";
+			} else {
+				searchSelection = "user";
+				var inputBox = document.getElementById("user-search-input");
+				inputBox.value = "";
+			}
+			toggleButtonClasses();
+			toggleContainerDisplays();
+		}
+
+		function teamSearch() {
+			if (searchSelection == "team") {
+				searchSelection = "none";
+			} else {
+				searchSelection = "team";
+				var inputBox = document.getElementById("team-search-input");
+				inputBox.value = "";
+			}
+			toggleButtonClasses();
+			toggleContainerDisplays();
+		}
+
+		function toggleButtonClasses() {
+			var userBtn = document.getElementById("user-search-button");
+			var teamBtn = document.getElementById("team-search-button");
+			if (searchSelection == "team") {
+				userBtn.classList.remove("active-search-button");
+				userBtn.classList.add("not-active-search-button");
+				teamBtn.classList.remove("not-active-search-button");
+				teamBtn.classList.add("active-search-button");
+			} else if (searchSelection == "user") {
+				teamBtn.classList.remove("active-search-button");
+				teamBtn.classList.add("not-active-search-button");
+				userBtn.classList.remove("not-active-search-button");
+				userBtn.classList.add("active-search-button");
+			} else {
+				userBtn.classList.remove("active-search-button");
+				userBtn.classList.add("not-active-search-button");
+				teamBtn.classList.remove("active-search-button");
+				teamBtn.classList.add("not-active-search-button");
+			}
+		}
+
+		function toggleContainerDisplays() {
+			var userContainer = document.getElementById("user-search-container");
+			var teamContainer = document.getElementById("team-search-container");
+			var searchResultsBox = document.getElementById("search-results-container");
+			var inputBox;
+			searchResultsBox.style.display = "none";
+			if (searchSelection == "team") {
+				userContainer.style.display = "none";
+				teamContainer.style.display = "block";
+				inputBox = document.getElementById("team-search-input");
+				inputBox.focus();
+			} else if (searchSelection == "user") {
+				userContainer.style.display = "block";
+				teamContainer.style.display = "none";
+				inputBox = document.getElementById("user-search-input");
+				inputBox.focus();
+			} else {
+				userContainer.style.display = "none";
+				teamContainer.style.display = "none";
+			}
+		}
+
+		function searchSubmit(searchType) {
+			var filePath = "";
+			if (searchType == "user") {
+				var inputBox = document.getElementById("user-search-input");
+				var username = inputBox.value;
+				fetch(`/users_in_lbs/${username}`)
+					.then(response => response.text())
+					.then(data => {
+						displayResults('user', data, username);
+					})
+					.catch(error => console.error('Error:', error));
+			} else {
+				var inputBox = document.getElementById("team-search-input");
+				var teamTag = inputBox.value;
+				fetch(`/teams_in_lbs/${teamTag}`)
+					.then(response => response.text())
+					.then(data => {
+						displayResults('team', data, teamTag);
+					})
+					.catch(error => console.error('Error:', error));
+			}
+
+		}
+
+		function handleKeyPress(event, searchType) {
+			if (event.keyCode === 13) {
+				event.preventDefault();
+				searchSubmit(searchType);
+			}
+		}
+
+		function formatText(input, searchType) {
+			var value = input.value;
+			if (searchType == "user") {
+				value = value.replace(/[^a-zA-Z0-9_]/g, '');
+				input.value = value.toLowerCase().substring(0, 32);
+			} else {
+				value = value.replace(/[^a-zA-Z0-9]/g, '');
+				input.value = value.toUpperCase().substring(0, 6);
+			}
+		}
+
+		function displayResults(searchType, response, searchInput) {
+			var searchResultsBox = document.getElementById("search-results-container");
+			searchResultsBox.style.display = "none"; // We don't want to display it until after we've formatted the results
+			document.querySelectorAll('.search-entry').forEach(element => {
+				element.textContent = searchInput;
+			})
+			var userNotFound = document.getElementById("search-results-user-not-found");
+			var userFound = document.getElementById("search-results-user-found");
+			var teamNotFound = document.getElementById("search-results-team-not-found");
+			var teamFound = document.getElementById("search-results-team-found");
+			userNotFound.style.display = "none";
+			userFound.style.display = "none";
+			teamNotFound.style.display = "none";
+			teamFound.style.display = "none";
+			if (response == "N/A") {
+				if (searchType == "user") {
+					userNotFound.style.display = "block";
+				} else {
+					teamNotFound.style.display = "block";
+				}
+			} else {
+				console.log("response:", response);
+				var responseObj = JSON.parse(response);
+				console.log("responseObj:", responseObj);
+				var responseObjList;
+				var htmlToWrite = "";
+				var resultsList;
+				htmlToWrite += '<ol style="margin-top: 6px;">';
+				if (searchType == "user") {
+					responseObjList = responseObj.rankings
+					userFound.style.display = "block";
+					resultsListHtml = document.getElementById("user-search-found-list");
+				} else {
+					responseObjList = responseObj
+					teamFound.style.display = "block";
+					resultsListHtml = document.getElementById("team-search-found-list");
+				}
+				for (var i = 0; i < responseObjList.length; i++) {
+					var myDict = responseObjList[i];
+					htmlToWrite += "<li>";
+					htmlToWrite += '<span style="color: #F9D034;">' + responseObjList[i].leaderboard + '</span> - ranked #' + responseObjList[i].rank;
+					htmlToWrite += "</li>";
+				}
+				htmlToWrite += "</ol>";
+				resultsListHtml.innerHTML = htmlToWrite;
+			}
+			searchResultsBox.style.display = "block"; // Display search results
 		}
 	</script>
 </head>

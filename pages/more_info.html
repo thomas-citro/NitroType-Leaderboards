@@ -82,11 +82,53 @@
 	
 		<div class="page-text-box">
 			<div class="page-text">
+				<div class="search-container" style="display: block;">
+					<h2>Search</h2>
+					<p style="margin-bottom: 6px; margin-top: 6px; margin-left: 5px;">Search to see if a user or team is on any of the leaderboards:</p>
+					<div class="search-buttons">
+						<button id="user-search-button" class="search-button not-active-search-button" onclick="userSearch()">User Search</button>
+						<button id="team-search-button" class="search-button not-active-search-button" onclick="teamSearch()">Team Search</button>
+					</div>
+					<div id="user-search-container" style="display: none;">
+						<form class="search-form">
+							<label for="username-input" style="margin-right: 6px;">Enter username:</label>
+							<input type="text" id="user-search-input" name="username-input" placeholder="moilyn" onkeydown="handleKeyPress(event, 'user')" oninput="formatText(this, 'user')"/>
+							<input type="button" value="OK" onclick="searchSubmit('user')"/>
+						</form>
+					</div>
+					<div id="team-search-container" style="display: none;">
+						<form class="search-form">
+							<label for="team-tag-input" style="margin-right: 6px;">Enter team tag:</label>
+							<input type="text" id="team-search-input" name="team-tag-input" placeholder="SSH" onkeydown="handleKeyPress(event, 'team')" oninput="formatText(this, 'team')"/>
+							<input type="button" value="OK" onclick="searchSubmit('team')"/>
+						</form>
+					</div>
+					<div id="search-results-container" style="display: none;">
+						<div id="search-results-user-not-found" style="display: none;">
+							<div class="search-not-found-text">There are no users in the leaderboards with the username: <span class="search-entry not-found-search"></span></div>
+						</div>
+
+						<div id="search-results-user-found" style="display: none;">
+							<div class="search-found-header">The user <span class="search-entry found-search"></span> appears on the following leaderboards:</div>
+							<div id="user-search-found-list"></div>
+						</div>
+
+						<div id="search-results-team-not-found" style="display: none;">
+							<div class="search-not-found-text">There are no teams in the leaderboards with the tag: <span class="search-entry not-found-search"></span></div>
+						</div>
+
+						<div id="search-results-team-found" style="display: none;">
+							<div class="search-found-header">The team <span class="search-entry found-search"></span> appears on the following leaderboards:</div>
+							<div id="team-search-found-list"></div>
+						</div>
+					</div>
+				</div>
+				<br/>
 				<h2>Data Updates</h2>
 				<ul class="after-header">
 					<li>Data updates are performed daily.</li>
-					<li>Number of users in my database: <span style="color: #F9D034;">3,855,641</span></li>
-					<li>Number of teams in my database: <span style="color: #F9D034;">227,546</span></li>
+					<li>Number of users in my database: <span style="color: #F9D034;">3,860,565</span></li>
+					<li>Number of teams in my database: <span style="color: #F9D034;">230,422</span></li>
 				</ul>
 				<br/>
 				<h2>Special Requirements</h2>
@@ -181,7 +223,6 @@
 				<h2>Upcoming Updates</h2>
 				<ul class="after-header">
 					<li>Expanding top teams on 'Past Seasons' page to the top 100 for seasons 0.5 - 29.</li>
-					<li>A search function so you can see if a certain user or team is on any of the leaderboards.</li>
 					<li>A toggle on the 'Rarest Cars' page to show the users who own the top rarest cars.</li>
 				</ul>
 				<br/>
@@ -344,6 +385,10 @@
 					<ul>
 						<li>Added top teams of seasons 36 - 42 to the 'Past Seasons' page.</li>
 						<li>All top teams leaderboards of 'Past Seasons' are in one standardized format which includes a column for the team captain.</li>
+					</ul>
+					<li>V2.7 (3/25/24)</li>
+					<ul>
+						<li>Added search function on the top of the 'More Info' page so you can search to see if a user or team is on any of the leaderboards.</li>
 					</ul>
 				</ul>
 			</div>
