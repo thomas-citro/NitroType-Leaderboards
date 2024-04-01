@@ -1,7 +1,44 @@
 {
-    "EMZ": [
+    "BB": [
         {
             "rank": 1,
+            "leaderboard": "Top Teams (This Season)",
+            "html": "top_teams_season"
+        },
+        {
+            "rank": 1,
+            "leaderboard": "Top Teams (Last 24 Hours)",
+            "html": "top_teams_daily"
+        },
+        {
+            "rank": 14,
+            "leaderboard": "Fastest Teams (This Season)",
+            "html": "fastest_teams_season"
+        },
+        {
+            "rank": 25,
+            "leaderboard": "Most Accurate Teams (This Season)",
+            "html": "most_accurate_teams_season"
+        },
+        {
+            "rank": 34,
+            "leaderboard": "Fastest Teams",
+            "html": "hof_fastest_teams"
+        },
+        {
+            "rank": 34,
+            "leaderboard": "Most Accurate Teams",
+            "html": "hof_most_accurate_teams"
+        },
+        {
+            "rank": 41,
+            "leaderboard": "Most Team Page Views",
+            "html": "hof_most_team_views"
+        }
+    ],
+    "EMZ": [
+        {
+            "rank": 2,
             "leaderboard": "Top Teams (This Season)",
             "html": "top_teams_season"
         },
@@ -11,7 +48,7 @@
             "html": "top_teams_weekly"
         },
         {
-            "rank": 1,
+            "rank": 2,
             "leaderboard": "Top Teams (Last 24 Hours)",
             "html": "top_teams_daily"
         },
@@ -21,7 +58,7 @@
             "html": "fastest_teams_season"
         },
         {
-            "rank": 19,
+            "rank": 23,
             "leaderboard": "Most Accurate Teams (This Season)",
             "html": "most_accurate_teams_season"
         },
@@ -31,7 +68,7 @@
             "html": "hof_most_active_teams"
         },
         {
-            "rank": 33,
+            "rank": 32,
             "leaderboard": "Fastest Teams",
             "html": "hof_fastest_teams"
         },
@@ -73,7 +110,7 @@
     ],
     "VDN": [
         {
-            "rank": 2,
+            "rank": 3,
             "leaderboard": "Top Teams (This Season)",
             "html": "top_teams_season"
         },
@@ -83,17 +120,17 @@
             "html": "top_teams_weekly"
         },
         {
-            "rank": 2,
+            "rank": 3,
             "leaderboard": "Top Teams (Last 24 Hours)",
             "html": "top_teams_daily"
         },
         {
-            "rank": 13,
+            "rank": 11,
             "leaderboard": "Fastest Teams (This Season)",
             "html": "fastest_teams_season"
         },
         {
-            "rank": 22,
+            "rank": 21,
             "leaderboard": "Most Accurate Teams (This Season)",
             "html": "most_accurate_teams_season"
         },
@@ -103,7 +140,7 @@
             "html": "hof_most_active_teams"
         },
         {
-            "rank": 32,
+            "rank": 33,
             "leaderboard": "Fastest Teams",
             "html": "hof_fastest_teams"
         },
@@ -130,27 +167,27 @@
     ],
     "ZL": [
         {
-            "rank": 3,
+            "rank": 4,
             "leaderboard": "Top Teams (This Season)",
             "html": "top_teams_season"
         },
         {
-            "rank": 6,
+            "rank": 7,
             "leaderboard": "Top Teams (Last 7 Days)",
             "html": "top_teams_weekly"
         },
         {
-            "rank": 3,
+            "rank": 4,
             "leaderboard": "Top Teams (Last 24 Hours)",
             "html": "top_teams_daily"
         },
         {
-            "rank": 32,
+            "rank": 33,
             "leaderboard": "Fastest Teams (This Season)",
             "html": "fastest_teams_season"
         },
         {
-            "rank": 17,
+            "rank": 18,
             "leaderboard": "Most Accurate Teams (This Season)",
             "html": "most_accurate_teams_season"
         },
@@ -160,12 +197,12 @@
             "html": "hof_most_active_teams"
         },
         {
-            "rank": 68,
+            "rank": 69,
             "leaderboard": "Fastest Teams",
             "html": "hof_fastest_teams"
         },
         {
-            "rank": 71,
+            "rank": 72,
             "leaderboard": "Most Accurate Teams",
             "html": "hof_most_accurate_teams"
         },
@@ -222,17 +259,17 @@
     ],
     "HSTY": [
         {
-            "rank": 4,
+            "rank": 5,
             "leaderboard": "Top Teams (This Season)",
             "html": "top_teams_season"
         },
         {
-            "rank": 20,
+            "rank": 19,
             "leaderboard": "Top Teams (Last 7 Days)",
             "html": "top_teams_weekly"
         },
         {
-            "rank": 7,
+            "rank": 5,
             "leaderboard": "Top Teams (Last 24 Hours)",
             "html": "top_teams_daily"
         },
@@ -242,17 +279,17 @@
             "html": "fastest_teams_season"
         },
         {
-            "rank": 24,
+            "rank": 30,
             "leaderboard": "Most Accurate Teams (This Season)",
             "html": "most_accurate_teams_season"
         },
         {
-            "rank": 93,
+            "rank": 89,
             "leaderboard": "Most Active Teams",
             "html": "hof_most_active_teams"
         },
         {
-            "rank": 7,
+            "rank": 6,
             "leaderboard": "Fastest Teams",
             "html": "hof_fastest_teams"
         },
@@ -262,7 +299,7 @@
             "html": "hof_most_accurate_teams"
         },
         {
-            "rank": 21,
+            "rank": 19,
             "leaderboard": "Most Races Per Day",
             "html": "hof_most_team_races_per_day"
         },
@@ -279,7 +316,7 @@
     ],
     "XD": [
         {
-            "rank": 5,
+            "rank": 6,
             "leaderboard": "Top Teams (This Season)",
             "html": "top_teams_season"
         },
@@ -294,12 +331,12 @@
             "html": "top_teams_daily"
         },
         {
-            "rank": 64,
+            "rank": 65,
             "leaderboard": "Fastest Teams (This Season)",
             "html": "fastest_teams_season"
         },
         {
-            "rank": 53,
+            "rank": 54,
             "leaderboard": "Most Accurate Teams (This Season)",
             "html": "most_accurate_teams_season"
         },
@@ -314,7 +351,7 @@
             "html": "hof_most_team_views"
         },
         {
-            "rank": 10,
+            "rank": 9,
             "leaderboard": "Most Races Per Day",
             "html": "hof_most_team_races_per_day"
         },
@@ -329,56 +366,91 @@
             "html": "season_51_teams"
         }
     ],
-    "KORT": [
-        {
-            "rank": 6,
-            "leaderboard": "Top Teams (This Season)",
-            "html": "top_teams_season"
-        },
-        {
-            "rank": 4,
-            "leaderboard": "Top Teams (Last 24 Hours)",
-            "html": "top_teams_daily"
-        }
-    ],
-    "LV": [
+    "P20W": [
         {
             "rank": 7,
             "leaderboard": "Top Teams (This Season)",
             "html": "top_teams_season"
         },
         {
-            "rank": 9,
+            "rank": 30,
             "leaderboard": "Top Teams (Last 7 Days)",
             "html": "top_teams_weekly"
         },
         {
-            "rank": 12,
+            "rank": 7,
             "leaderboard": "Top Teams (Last 24 Hours)",
             "html": "top_teams_daily"
         },
         {
-            "rank": 15,
+            "rank": 29,
             "leaderboard": "Fastest Teams (This Season)",
             "html": "fastest_teams_season"
         },
         {
-            "rank": 32,
+            "rank": 45,
             "leaderboard": "Most Accurate Teams (This Season)",
             "html": "most_accurate_teams_season"
         },
         {
-            "rank": 95,
-            "leaderboard": "Most Active Teams",
-            "html": "hof_most_active_teams"
-        },
-        {
-            "rank": 49,
+            "rank": 68,
             "leaderboard": "Fastest Teams",
             "html": "hof_fastest_teams"
         },
         {
-            "rank": 48,
+            "rank": 73,
+            "leaderboard": "Most Accurate Teams",
+            "html": "hof_most_accurate_teams"
+        },
+        {
+            "rank": 30,
+            "leaderboard": "Most Races Per Day",
+            "html": "hof_most_team_races_per_day"
+        },
+        {
+            "rank": 30,
+            "leaderboard": "Season 51: Top Teams",
+            "html": "season_51_teams"
+        }
+    ],
+    "LV": [
+        {
+            "rank": 8,
+            "leaderboard": "Top Teams (This Season)",
+            "html": "top_teams_season"
+        },
+        {
+            "rank": 8,
+            "leaderboard": "Top Teams (Last 7 Days)",
+            "html": "top_teams_weekly"
+        },
+        {
+            "rank": 11,
+            "leaderboard": "Top Teams (Last 24 Hours)",
+            "html": "top_teams_daily"
+        },
+        {
+            "rank": 17,
+            "leaderboard": "Fastest Teams (This Season)",
+            "html": "fastest_teams_season"
+        },
+        {
+            "rank": 26,
+            "leaderboard": "Most Accurate Teams (This Season)",
+            "html": "most_accurate_teams_season"
+        },
+        {
+            "rank": 93,
+            "leaderboard": "Most Active Teams",
+            "html": "hof_most_active_teams"
+        },
+        {
+            "rank": 50,
+            "leaderboard": "Fastest Teams",
+            "html": "hof_fastest_teams"
+        },
+        {
+            "rank": 49,
             "leaderboard": "Most Accurate Teams",
             "html": "hof_most_accurate_teams"
         },
@@ -393,63 +465,6 @@
             "html": "season_51_teams"
         }
     ],
-    "RISE": [
-        {
-            "rank": 8,
-            "leaderboard": "Top Teams (This Season)",
-            "html": "top_teams_season"
-        },
-        {
-            "rank": 3,
-            "leaderboard": "Top Teams (Last 7 Days)",
-            "html": "top_teams_weekly"
-        },
-        {
-            "rank": 5,
-            "leaderboard": "Top Teams (Last 24 Hours)",
-            "html": "top_teams_daily"
-        },
-        {
-            "rank": 2,
-            "leaderboard": "Fastest Teams (This Season)",
-            "html": "fastest_teams_season"
-        },
-        {
-            "rank": 39,
-            "leaderboard": "Most Accurate Teams (This Season)",
-            "html": "most_accurate_teams_season"
-        },
-        {
-            "rank": 33,
-            "leaderboard": "Most Active Teams",
-            "html": "hof_most_active_teams"
-        },
-        {
-            "rank": 11,
-            "leaderboard": "Fastest Teams",
-            "html": "hof_fastest_teams"
-        },
-        {
-            "rank": 93,
-            "leaderboard": "Most Team Page Views",
-            "html": "hof_most_team_views"
-        },
-        {
-            "rank": 23,
-            "leaderboard": "Most Races Per Day",
-            "html": "hof_most_team_races_per_day"
-        },
-        {
-            "rank": 17,
-            "leaderboard": "Season 50: Top Teams",
-            "html": "season_50_teams"
-        },
-        {
-            "rank": 11,
-            "leaderboard": "Season 51: Top Teams",
-            "html": "season_51_teams"
-        }
-    ],
     "GN": [
         {
             "rank": 9,
@@ -457,7 +472,7 @@
             "html": "top_teams_season"
         },
         {
-            "rank": 13,
+            "rank": 9,
             "leaderboard": "Top Teams (Last 24 Hours)",
             "html": "top_teams_daily"
         },
@@ -487,16 +502,11 @@
             "html": "season_42_teams"
         }
     ],
-    "UC": [
+    "S8": [
         {
             "rank": 10,
             "leaderboard": "Top Teams (This Season)",
             "html": "top_teams_season"
-        },
-        {
-            "rank": 16,
-            "leaderboard": "Top Teams (Last 7 Days)",
-            "html": "top_teams_weekly"
         },
         {
             "rank": 8,
@@ -504,12 +514,153 @@
             "html": "top_teams_daily"
         },
         {
-            "rank": 52,
+            "rank": 22,
+            "leaderboard": "Season 51: Top Teams",
+            "html": "season_51_teams"
+        }
+    ],
+    "RISE": [
+        {
+            "rank": 11,
+            "leaderboard": "Top Teams (This Season)",
+            "html": "top_teams_season"
+        },
+        {
+            "rank": 3,
+            "leaderboard": "Top Teams (Last 7 Days)",
+            "html": "top_teams_weekly"
+        },
+        {
+            "rank": 10,
+            "leaderboard": "Top Teams (Last 24 Hours)",
+            "html": "top_teams_daily"
+        },
+        {
+            "rank": 2,
             "leaderboard": "Fastest Teams (This Season)",
             "html": "fastest_teams_season"
         },
         {
-            "rank": 31,
+            "rank": 35,
+            "leaderboard": "Most Accurate Teams (This Season)",
+            "html": "most_accurate_teams_season"
+        },
+        {
+            "rank": 33,
+            "leaderboard": "Most Active Teams",
+            "html": "hof_most_active_teams"
+        },
+        {
+            "rank": 11,
+            "leaderboard": "Fastest Teams",
+            "html": "hof_fastest_teams"
+        },
+        {
+            "rank": 94,
+            "leaderboard": "Most Team Page Views",
+            "html": "hof_most_team_views"
+        },
+        {
+            "rank": 23,
+            "leaderboard": "Most Races Per Day",
+            "html": "hof_most_team_races_per_day"
+        },
+        {
+            "rank": 17,
+            "leaderboard": "Season 50: Top Teams",
+            "html": "season_50_teams"
+        },
+        {
+            "rank": 11,
+            "leaderboard": "Season 51: Top Teams",
+            "html": "season_51_teams"
+        }
+    ],
+    "0T": [
+        {
+            "rank": 12,
+            "leaderboard": "Top Teams (This Season)",
+            "html": "top_teams_season"
+        },
+        {
+            "rank": 9,
+            "leaderboard": "Top Teams (Last 7 Days)",
+            "html": "top_teams_weekly"
+        },
+        {
+            "rank": 12,
+            "leaderboard": "Top Teams (Last 24 Hours)",
+            "html": "top_teams_daily"
+        },
+        {
+            "rank": 32,
+            "leaderboard": "Fastest Teams (This Season)",
+            "html": "fastest_teams_season"
+        },
+        {
+            "rank": 50,
+            "leaderboard": "Most Accurate Teams (This Season)",
+            "html": "most_accurate_teams_season"
+        },
+        {
+            "rank": 25,
+            "leaderboard": "Most Active Teams",
+            "html": "hof_most_active_teams"
+        },
+        {
+            "rank": 16,
+            "leaderboard": "Fastest Teams",
+            "html": "hof_fastest_teams"
+        },
+        {
+            "rank": 37,
+            "leaderboard": "Most Accurate Teams",
+            "html": "hof_most_accurate_teams"
+        },
+        {
+            "rank": 54,
+            "leaderboard": "Most Team Page Views",
+            "html": "hof_most_team_views"
+        },
+        {
+            "rank": 7,
+            "leaderboard": "Most Races Per Day",
+            "html": "hof_most_team_races_per_day"
+        },
+        {
+            "rank": 6,
+            "leaderboard": "Season 50: Top Teams",
+            "html": "season_50_teams"
+        },
+        {
+            "rank": 10,
+            "leaderboard": "Season 51: Top Teams",
+            "html": "season_51_teams"
+        }
+    ],
+    "UC": [
+        {
+            "rank": 13,
+            "leaderboard": "Top Teams (This Season)",
+            "html": "top_teams_season"
+        },
+        {
+            "rank": 17,
+            "leaderboard": "Top Teams (Last 7 Days)",
+            "html": "top_teams_weekly"
+        },
+        {
+            "rank": 13,
+            "leaderboard": "Top Teams (Last 24 Hours)",
+            "html": "top_teams_daily"
+        },
+        {
+            "rank": 53,
+            "leaderboard": "Fastest Teams (This Season)",
+            "html": "fastest_teams_season"
+        },
+        {
+            "rank": 33,
             "leaderboard": "Most Accurate Teams (This Season)",
             "html": "most_accurate_teams_season"
         },
@@ -529,66 +680,19 @@
             "html": "season_51_teams"
         }
     ],
-    "P20W": [
-        {
-            "rank": 11,
-            "leaderboard": "Top Teams (This Season)",
-            "html": "top_teams_season"
-        },
-        {
-            "rank": 34,
-            "leaderboard": "Top Teams (Last 7 Days)",
-            "html": "top_teams_weekly"
-        },
-        {
-            "rank": 11,
-            "leaderboard": "Top Teams (Last 24 Hours)",
-            "html": "top_teams_daily"
-        },
-        {
-            "rank": 26,
-            "leaderboard": "Fastest Teams (This Season)",
-            "html": "fastest_teams_season"
-        },
-        {
-            "rank": 41,
-            "leaderboard": "Most Accurate Teams (This Season)",
-            "html": "most_accurate_teams_season"
-        },
-        {
-            "rank": 67,
-            "leaderboard": "Fastest Teams",
-            "html": "hof_fastest_teams"
-        },
-        {
-            "rank": 72,
-            "leaderboard": "Most Accurate Teams",
-            "html": "hof_most_accurate_teams"
-        },
-        {
-            "rank": 31,
-            "leaderboard": "Most Races Per Day",
-            "html": "hof_most_team_races_per_day"
-        },
-        {
-            "rank": 30,
-            "leaderboard": "Season 51: Top Teams",
-            "html": "season_51_teams"
-        }
-    ],
     "OG": [
         {
-            "rank": 12,
+            "rank": 14,
             "leaderboard": "Top Teams (This Season)",
             "html": "top_teams_season"
         },
         {
-            "rank": 10,
+            "rank": 14,
             "leaderboard": "Top Teams (Last 24 Hours)",
             "html": "top_teams_daily"
         },
         {
-            "rank": 29,
+            "rank": 20,
             "leaderboard": "Fastest Teams (This Season)",
             "html": "fastest_teams_season"
         },
@@ -598,12 +702,12 @@
             "html": "most_accurate_teams_season"
         },
         {
-            "rank": 29,
+            "rank": 28,
             "leaderboard": "Most Active Teams",
             "html": "hof_most_active_teams"
         },
         {
-            "rank": 87,
+            "rank": 88,
             "leaderboard": "Most Accurate Teams",
             "html": "hof_most_accurate_teams"
         },
@@ -625,17 +729,17 @@
     ],
     "1U1U": [
         {
-            "rank": 13,
+            "rank": 15,
             "leaderboard": "Top Teams (This Season)",
             "html": "top_teams_season"
         },
         {
-            "rank": 17,
+            "rank": 18,
             "leaderboard": "Top Teams (Last 7 Days)",
             "html": "top_teams_weekly"
         },
         {
-            "rank": 14,
+            "rank": 15,
             "leaderboard": "Top Teams (Last 24 Hours)",
             "html": "top_teams_daily"
         },
@@ -645,7 +749,7 @@
             "html": "fastest_teams_season"
         },
         {
-            "rank": 12,
+            "rank": 13,
             "leaderboard": "Most Accurate Teams (This Season)",
             "html": "most_accurate_teams_season"
         },
@@ -660,7 +764,7 @@
             "html": "hof_fastest_teams"
         },
         {
-            "rank": 69,
+            "rank": 70,
             "leaderboard": "Most Accurate Teams",
             "html": "hof_most_accurate_teams"
         },
@@ -687,32 +791,32 @@
     ],
     "DREMRS": [
         {
-            "rank": 14,
+            "rank": 16,
             "leaderboard": "Top Teams (This Season)",
             "html": "top_teams_season"
         },
         {
-            "rank": 54,
+            "rank": 38,
             "leaderboard": "Top Teams (Last 7 Days)",
             "html": "top_teams_weekly"
         },
         {
-            "rank": 21,
+            "rank": 17,
             "leaderboard": "Top Teams (Last 24 Hours)",
             "html": "top_teams_daily"
         },
         {
-            "rank": 22,
+            "rank": 25,
             "leaderboard": "Fastest Teams (This Season)",
             "html": "fastest_teams_season"
         },
         {
-            "rank": 29,
+            "rank": 32,
             "leaderboard": "Most Accurate Teams (This Season)",
             "html": "most_accurate_teams_season"
         },
         {
-            "rank": 52,
+            "rank": 51,
             "leaderboard": "Most Active Teams",
             "html": "hof_most_active_teams"
         },
@@ -722,7 +826,7 @@
             "html": "hof_fastest_teams"
         },
         {
-            "rank": 72,
+            "rank": 73,
             "leaderboard": "Most Team Page Views",
             "html": "hof_most_team_views"
         },
@@ -747,9 +851,56 @@
             "html": "season_51_teams"
         }
     ],
+    "ELVTD": [
+        {
+            "rank": 17,
+            "leaderboard": "Top Teams (This Season)",
+            "html": "top_teams_season"
+        },
+        {
+            "rank": 16,
+            "leaderboard": "Top Teams (Last 7 Days)",
+            "html": "top_teams_weekly"
+        },
+        {
+            "rank": 16,
+            "leaderboard": "Top Teams (Last 24 Hours)",
+            "html": "top_teams_daily"
+        },
+        {
+            "rank": 58,
+            "leaderboard": "Fastest Teams (This Season)",
+            "html": "fastest_teams_season"
+        },
+        {
+            "rank": 22,
+            "leaderboard": "Most Accurate Teams (This Season)",
+            "html": "most_accurate_teams_season"
+        },
+        {
+            "rank": 44,
+            "leaderboard": "Most Active Teams",
+            "html": "hof_most_active_teams"
+        },
+        {
+            "rank": 44,
+            "leaderboard": "Fastest Teams",
+            "html": "hof_fastest_teams"
+        },
+        {
+            "rank": 31,
+            "leaderboard": "Most Races Per Day",
+            "html": "hof_most_team_races_per_day"
+        },
+        {
+            "rank": 43,
+            "leaderboard": "Season 51: Top Teams",
+            "html": "season_51_teams"
+        }
+    ],
     "EVOQ": [
         {
-            "rank": 15,
+            "rank": 18,
             "leaderboard": "Top Teams (This Season)",
             "html": "top_teams_season"
         },
@@ -759,7 +910,7 @@
             "html": "top_teams_weekly"
         },
         {
-            "rank": 17,
+            "rank": 18,
             "leaderboard": "Top Teams (Last 24 Hours)",
             "html": "top_teams_daily"
         },
@@ -779,7 +930,7 @@
             "html": "hof_most_active_teams"
         },
         {
-            "rank": 34,
+            "rank": 35,
             "leaderboard": "Fastest Teams",
             "html": "hof_fastest_teams"
         },
@@ -789,7 +940,7 @@
             "html": "hof_most_accurate_teams"
         },
         {
-            "rank": 95,
+            "rank": 96,
             "leaderboard": "Most Team Page Views",
             "html": "hof_most_team_views"
         },
@@ -829,26 +980,9 @@
             "html": "season_42_teams"
         }
     ],
-    "S8": [
+    "IBD": [
         {
-            "rank": 16,
-            "leaderboard": "Top Teams (This Season)",
-            "html": "top_teams_season"
-        },
-        {
-            "rank": 15,
-            "leaderboard": "Top Teams (Last 24 Hours)",
-            "html": "top_teams_daily"
-        },
-        {
-            "rank": 22,
-            "leaderboard": "Season 51: Top Teams",
-            "html": "season_51_teams"
-        }
-    ],
-    "ELVTD": [
-        {
-            "rank": 17,
+            "rank": 19,
             "leaderboard": "Top Teams (This Season)",
             "html": "top_teams_season"
         },
@@ -858,121 +992,12 @@
             "html": "top_teams_weekly"
         },
         {
-            "rank": 9,
-            "leaderboard": "Top Teams (Last 24 Hours)",
-            "html": "top_teams_daily"
-        },
-        {
-            "rank": 56,
-            "leaderboard": "Fastest Teams (This Season)",
-            "html": "fastest_teams_season"
-        },
-        {
-            "rank": 23,
-            "leaderboard": "Most Accurate Teams (This Season)",
-            "html": "most_accurate_teams_season"
-        },
-        {
-            "rank": 44,
-            "leaderboard": "Most Active Teams",
-            "html": "hof_most_active_teams"
-        },
-        {
-            "rank": 41,
-            "leaderboard": "Fastest Teams",
-            "html": "hof_fastest_teams"
-        },
-        {
-            "rank": 30,
-            "leaderboard": "Most Races Per Day",
-            "html": "hof_most_team_races_per_day"
-        },
-        {
-            "rank": 43,
-            "leaderboard": "Season 51: Top Teams",
-            "html": "season_51_teams"
-        }
-    ],
-    "0T": [
-        {
-            "rank": 18,
-            "leaderboard": "Top Teams (This Season)",
-            "html": "top_teams_season"
-        },
-        {
-            "rank": 10,
-            "leaderboard": "Top Teams (Last 7 Days)",
-            "html": "top_teams_weekly"
-        },
-        {
-            "rank": 16,
-            "leaderboard": "Top Teams (Last 24 Hours)",
-            "html": "top_teams_daily"
-        },
-        {
-            "rank": 47,
-            "leaderboard": "Fastest Teams (This Season)",
-            "html": "fastest_teams_season"
-        },
-        {
-            "rank": 50,
-            "leaderboard": "Most Accurate Teams (This Season)",
-            "html": "most_accurate_teams_season"
-        },
-        {
-            "rank": 25,
-            "leaderboard": "Most Active Teams",
-            "html": "hof_most_active_teams"
-        },
-        {
-            "rank": 15,
-            "leaderboard": "Fastest Teams",
-            "html": "hof_fastest_teams"
-        },
-        {
-            "rank": 36,
-            "leaderboard": "Most Accurate Teams",
-            "html": "hof_most_accurate_teams"
-        },
-        {
-            "rank": 53,
-            "leaderboard": "Most Team Page Views",
-            "html": "hof_most_team_views"
-        },
-        {
-            "rank": 7,
-            "leaderboard": "Most Races Per Day",
-            "html": "hof_most_team_races_per_day"
-        },
-        {
-            "rank": 6,
-            "leaderboard": "Season 50: Top Teams",
-            "html": "season_50_teams"
-        },
-        {
-            "rank": 10,
-            "leaderboard": "Season 51: Top Teams",
-            "html": "season_51_teams"
-        }
-    ],
-    "IBD": [
-        {
             "rank": 19,
-            "leaderboard": "Top Teams (This Season)",
-            "html": "top_teams_season"
-        },
-        {
-            "rank": 19,
-            "leaderboard": "Top Teams (Last 7 Days)",
-            "html": "top_teams_weekly"
-        },
-        {
-            "rank": 27,
             "leaderboard": "Top Teams (Last 24 Hours)",
             "html": "top_teams_daily"
         },
         {
-            "rank": 89,
+            "rank": 87,
             "leaderboard": "Most Races Per Day",
             "html": "hof_most_team_races_per_day"
         },
@@ -982,14 +1007,26 @@
             "html": "season_51_teams"
         }
     ],
-    "PR2W": [
+    "KORT": [
         {
             "rank": 20,
             "leaderboard": "Top Teams (This Season)",
             "html": "top_teams_season"
         },
         {
-            "rank": 23,
+            "rank": 21,
+            "leaderboard": "Top Teams (Last 24 Hours)",
+            "html": "top_teams_daily"
+        }
+    ],
+    "PR2W": [
+        {
+            "rank": 21,
+            "leaderboard": "Top Teams (This Season)",
+            "html": "top_teams_season"
+        },
+        {
+            "rank": 24,
             "leaderboard": "Top Teams (Last 7 Days)",
             "html": "top_teams_weekly"
         },
@@ -1004,7 +1041,7 @@
             "html": "fastest_teams_season"
         },
         {
-            "rank": 44,
+            "rank": 46,
             "leaderboard": "Most Accurate Teams (This Season)",
             "html": "most_accurate_teams_season"
         },
@@ -1024,7 +1061,7 @@
             "html": "hof_oldest_active_teams"
         },
         {
-            "rank": 9,
+            "rank": 10,
             "leaderboard": "Most Races Per Day",
             "html": "hof_most_team_races_per_day"
         },
@@ -1081,17 +1118,17 @@
     ],
     "V1TAL": [
         {
-            "rank": 21,
+            "rank": 22,
             "leaderboard": "Top Teams (This Season)",
             "html": "top_teams_season"
         },
         {
-            "rank": 12,
+            "rank": 13,
             "leaderboard": "Top Teams (Last 7 Days)",
             "html": "top_teams_weekly"
         },
         {
-            "rank": 19,
+            "rank": 22,
             "leaderboard": "Top Teams (Last 24 Hours)",
             "html": "top_teams_daily"
         },
@@ -1103,44 +1140,44 @@
     ],
     "C4N32": [
         {
-            "rank": 22,
+            "rank": 23,
             "leaderboard": "Top Teams (This Season)",
             "html": "top_teams_season"
         },
         {
-            "rank": 65,
+            "rank": 66,
             "leaderboard": "Fastest Teams (This Season)",
             "html": "fastest_teams_season"
         },
         {
-            "rank": 69,
+            "rank": 70,
             "leaderboard": "Most Accurate Teams (This Season)",
             "html": "most_accurate_teams_season"
         }
     ],
     "BEEHVE": [
         {
-            "rank": 23,
+            "rank": 24,
             "leaderboard": "Top Teams (This Season)",
             "html": "top_teams_season"
         },
         {
-            "rank": 25,
+            "rank": 23,
             "leaderboard": "Top Teams (Last 7 Days)",
             "html": "top_teams_weekly"
         },
         {
-            "rank": 31,
+            "rank": 32,
             "leaderboard": "Top Teams (Last 24 Hours)",
             "html": "top_teams_daily"
         },
         {
-            "rank": 67,
+            "rank": 68,
             "leaderboard": "Fastest Teams (This Season)",
             "html": "fastest_teams_season"
         },
         {
-            "rank": 55,
+            "rank": 56,
             "leaderboard": "Most Accurate Teams (This Season)",
             "html": "most_accurate_teams_season"
         },
@@ -1150,7 +1187,7 @@
             "html": "hof_most_active_teams"
         },
         {
-            "rank": 61,
+            "rank": 62,
             "leaderboard": "Most Team Page Views",
             "html": "hof_most_team_views"
         },
@@ -1172,27 +1209,27 @@
     ],
     "TCHR": [
         {
-            "rank": 24,
+            "rank": 25,
             "leaderboard": "Top Teams (This Season)",
             "html": "top_teams_season"
         },
         {
-            "rank": 48,
+            "rank": 46,
             "leaderboard": "Top Teams (Last 7 Days)",
             "html": "top_teams_weekly"
         },
         {
-            "rank": 34,
+            "rank": 35,
             "leaderboard": "Top Teams (Last 24 Hours)",
             "html": "top_teams_daily"
         },
         {
-            "rank": 58,
+            "rank": 59,
             "leaderboard": "Fastest Teams (This Season)",
             "html": "fastest_teams_season"
         },
         {
-            "rank": 48,
+            "rank": 49,
             "leaderboard": "Most Accurate Teams (This Season)",
             "html": "most_accurate_teams_season"
         },
@@ -1264,7 +1301,7 @@
     ],
     "BION": [
         {
-            "rank": 25,
+            "rank": 26,
             "leaderboard": "Top Teams (This Season)",
             "html": "top_teams_season"
         },
@@ -1274,7 +1311,7 @@
             "html": "top_teams_weekly"
         },
         {
-            "rank": 18,
+            "rank": 20,
             "leaderboard": "Top Teams (Last 24 Hours)",
             "html": "top_teams_daily"
         },
@@ -1291,19 +1328,19 @@
     ],
     "TM": [
         {
-            "rank": 26,
+            "rank": 27,
             "leaderboard": "Top Teams (This Season)",
             "html": "top_teams_season"
         },
         {
-            "rank": 33,
+            "rank": 34,
             "leaderboard": "Top Teams (Last 24 Hours)",
             "html": "top_teams_daily"
         }
     ],
     "SCD": [
         {
-            "rank": 27,
+            "rank": 28,
             "leaderboard": "Top Teams (This Season)",
             "html": "top_teams_season"
         },
@@ -1313,7 +1350,7 @@
             "html": "top_teams_weekly"
         },
         {
-            "rank": 25,
+            "rank": 27,
             "leaderboard": "Top Teams (Last 24 Hours)",
             "html": "top_teams_daily"
         },
@@ -1323,7 +1360,7 @@
             "html": "fastest_teams_season"
         },
         {
-            "rank": 20,
+            "rank": 19,
             "leaderboard": "Most Accurate Teams (This Season)",
             "html": "most_accurate_teams_season"
         },
@@ -1333,7 +1370,7 @@
             "html": "hof_fastest_teams"
         },
         {
-            "rank": 52,
+            "rank": 53,
             "leaderboard": "Most Accurate Teams",
             "html": "hof_most_accurate_teams"
         },
@@ -1350,12 +1387,12 @@
     ],
     "VZ": [
         {
-            "rank": 28,
+            "rank": 29,
             "leaderboard": "Top Teams (This Season)",
             "html": "top_teams_season"
         },
         {
-            "rank": 30,
+            "rank": 31,
             "leaderboard": "Top Teams (Last 24 Hours)",
             "html": "top_teams_daily"
         },
@@ -1367,86 +1404,86 @@
     ],
     "MVNCH": [
         {
-            "rank": 29,
+            "rank": 30,
             "leaderboard": "Top Teams (This Season)",
             "html": "top_teams_season"
         }
     ],
     "LOVTOO": [
         {
-            "rank": 30,
+            "rank": 31,
             "leaderboard": "Top Teams (This Season)",
             "html": "top_teams_season"
         },
         {
-            "rank": 79,
+            "rank": 81,
             "leaderboard": "Fastest Teams (This Season)",
             "html": "fastest_teams_season"
         },
         {
-            "rank": 79,
+            "rank": 81,
             "leaderboard": "Most Accurate Teams (This Season)",
             "html": "most_accurate_teams_season"
         }
     ],
     "MLFGNG": [
         {
-            "rank": 31,
+            "rank": 32,
             "leaderboard": "Top Teams (This Season)",
             "html": "top_teams_season"
         }
     ],
     "W2G4U": [
         {
-            "rank": 32,
+            "rank": 33,
             "leaderboard": "Top Teams (This Season)",
             "html": "top_teams_season"
         }
     ],
     "UGR": [
         {
-            "rank": 33,
+            "rank": 34,
             "leaderboard": "Top Teams (This Season)",
             "html": "top_teams_season"
         }
     ],
     "WO0DA": [
         {
-            "rank": 34,
+            "rank": 35,
             "leaderboard": "Top Teams (This Season)",
             "html": "top_teams_season"
         },
         {
-            "rank": 28,
+            "rank": 29,
             "leaderboard": "Top Teams (Last 24 Hours)",
             "html": "top_teams_daily"
         }
     ],
     "SLUPY": [
         {
-            "rank": 35,
+            "rank": 36,
             "leaderboard": "Top Teams (This Season)",
             "html": "top_teams_season"
         },
         {
-            "rank": 80,
+            "rank": 82,
             "leaderboard": "Fastest Teams (This Season)",
             "html": "fastest_teams_season"
         },
         {
-            "rank": 76,
+            "rank": 78,
             "leaderboard": "Most Accurate Teams (This Season)",
             "html": "most_accurate_teams_season"
         }
     ],
     "CHES": [
         {
-            "rank": 36,
+            "rank": 37,
             "leaderboard": "Top Teams (This Season)",
             "html": "top_teams_season"
         },
         {
-            "rank": 22,
+            "rank": 25,
             "leaderboard": "Top Teams (Last 24 Hours)",
             "html": "top_teams_daily"
         },
@@ -1468,39 +1505,39 @@
     ],
     "TCPB0T": [
         {
-            "rank": 37,
+            "rank": 38,
             "leaderboard": "Top Teams (This Season)",
             "html": "top_teams_season"
         },
         {
-            "rank": 69,
+            "rank": 70,
             "leaderboard": "Fastest Teams (This Season)",
             "html": "fastest_teams_season"
         },
         {
-            "rank": 72,
+            "rank": 73,
             "leaderboard": "Most Accurate Teams (This Season)",
             "html": "most_accurate_teams_season"
         }
     ],
     "S0RC": [
         {
-            "rank": 38,
+            "rank": 39,
             "leaderboard": "Top Teams (This Season)",
             "html": "top_teams_season"
         },
         {
-            "rank": 39,
+            "rank": 42,
             "leaderboard": "Top Teams (Last 7 Days)",
             "html": "top_teams_weekly"
         },
         {
-            "rank": 66,
+            "rank": 67,
             "leaderboard": "Top Teams (Last 24 Hours)",
             "html": "top_teams_daily"
         },
         {
-            "rank": 23,
+            "rank": 24,
             "leaderboard": "Fastest Teams (This Season)",
             "html": "fastest_teams_season"
         },
@@ -1515,7 +1552,7 @@
             "html": "hof_most_active_teams"
         },
         {
-            "rank": 91,
+            "rank": 92,
             "leaderboard": "Fastest Teams",
             "html": "hof_fastest_teams"
         },
@@ -1582,56 +1619,56 @@
     ],
     "UIWF": [
         {
-            "rank": 39,
+            "rank": 40,
             "leaderboard": "Top Teams (This Season)",
             "html": "top_teams_season"
         },
         {
-            "rank": 78,
+            "rank": 80,
             "leaderboard": "Fastest Teams (This Season)",
             "html": "fastest_teams_season"
         },
         {
-            "rank": 71,
+            "rank": 72,
             "leaderboard": "Most Accurate Teams (This Season)",
             "html": "most_accurate_teams_season"
         }
     ],
     "EIOS": [
         {
-            "rank": 40,
+            "rank": 41,
             "leaderboard": "Top Teams (This Season)",
             "html": "top_teams_season"
         },
         {
-            "rank": 66,
+            "rank": 67,
             "leaderboard": "Fastest Teams (This Season)",
             "html": "fastest_teams_season"
         },
         {
-            "rank": 57,
+            "rank": 58,
             "leaderboard": "Most Accurate Teams (This Season)",
             "html": "most_accurate_teams_season"
         }
     ],
     "NXC": [
         {
-            "rank": 41,
+            "rank": 42,
             "leaderboard": "Top Teams (This Season)",
             "html": "top_teams_season"
         },
         {
-            "rank": 42,
+            "rank": 39,
             "leaderboard": "Top Teams (Last 7 Days)",
             "html": "top_teams_weekly"
         },
         {
-            "rank": 65,
+            "rank": 66,
             "leaderboard": "Top Teams (Last 24 Hours)",
             "html": "top_teams_daily"
         },
         {
-            "rank": 11,
+            "rank": 12,
             "leaderboard": "Fastest Teams (This Season)",
             "html": "fastest_teams_season"
         },
@@ -1641,12 +1678,12 @@
             "html": "most_accurate_teams_season"
         },
         {
-            "rank": 69,
+            "rank": 70,
             "leaderboard": "Fastest Teams",
             "html": "hof_fastest_teams"
         },
         {
-            "rank": 67,
+            "rank": 68,
             "leaderboard": "Most Accurate Teams",
             "html": "hof_most_accurate_teams"
         },
@@ -1663,7 +1700,7 @@
     ],
     "MOD737": [
         {
-            "rank": 42,
+            "rank": 43,
             "leaderboard": "Top Teams (This Season)",
             "html": "top_teams_season"
         },
@@ -1685,12 +1722,12 @@
     ],
     "SM": [
         {
-            "rank": 43,
+            "rank": 44,
             "leaderboard": "Top Teams (This Season)",
             "html": "top_teams_season"
         },
         {
-            "rank": 23,
+            "rank": 26,
             "leaderboard": "Top Teams (Last 24 Hours)",
             "html": "top_teams_daily"
         },
@@ -1702,12 +1739,12 @@
     ],
     "RBOW": [
         {
-            "rank": 44,
+            "rank": 45,
             "leaderboard": "Top Teams (This Season)",
             "html": "top_teams_season"
         },
         {
-            "rank": 46,
+            "rank": 47,
             "leaderboard": "Top Teams (Last 24 Hours)",
             "html": "top_teams_daily"
         },
@@ -1719,44 +1756,44 @@
     ],
     "GOOFU": [
         {
-            "rank": 45,
+            "rank": 46,
             "leaderboard": "Top Teams (This Season)",
             "html": "top_teams_season"
         },
         {
-            "rank": 75,
+            "rank": 77,
             "leaderboard": "Fastest Teams (This Season)",
             "html": "fastest_teams_season"
         },
         {
-            "rank": 74,
+            "rank": 75,
             "leaderboard": "Most Accurate Teams (This Season)",
             "html": "most_accurate_teams_season"
         }
     ],
     "CRUIZ": [
         {
-            "rank": 46,
+            "rank": 47,
             "leaderboard": "Top Teams (This Season)",
             "html": "top_teams_season"
         },
         {
-            "rank": 47,
+            "rank": 40,
             "leaderboard": "Top Teams (Last 7 Days)",
             "html": "top_teams_weekly"
         },
         {
-            "rank": 68,
+            "rank": 69,
             "leaderboard": "Top Teams (Last 24 Hours)",
             "html": "top_teams_daily"
         },
         {
-            "rank": 45,
+            "rank": 47,
             "leaderboard": "Fastest Teams (This Season)",
             "html": "fastest_teams_season"
         },
         {
-            "rank": 38,
+            "rank": 40,
             "leaderboard": "Most Accurate Teams (This Season)",
             "html": "most_accurate_teams_season"
         },
@@ -1788,7 +1825,7 @@
     ],
     "SP1": [
         {
-            "rank": 47,
+            "rank": 48,
             "leaderboard": "Top Teams (This Season)",
             "html": "top_teams_season"
         },
@@ -1798,22 +1835,22 @@
             "html": "top_teams_weekly"
         },
         {
-            "rank": 77,
+            "rank": 78,
             "leaderboard": "Top Teams (Last 24 Hours)",
             "html": "top_teams_daily"
         },
         {
-            "rank": 59,
+            "rank": 60,
             "leaderboard": "Fastest Teams (This Season)",
             "html": "fastest_teams_season"
         },
         {
-            "rank": 67,
+            "rank": 68,
             "leaderboard": "Most Accurate Teams (This Season)",
             "html": "most_accurate_teams_season"
         },
         {
-            "rank": 58,
+            "rank": 59,
             "leaderboard": "Most Races Per Day",
             "html": "hof_most_team_races_per_day"
         },
@@ -1825,27 +1862,27 @@
     ],
     "SHIV3R": [
         {
-            "rank": 48,
+            "rank": 49,
             "leaderboard": "Top Teams (This Season)",
             "html": "top_teams_season"
         },
         {
-            "rank": 38,
+            "rank": 35,
             "leaderboard": "Top Teams (Last 7 Days)",
             "html": "top_teams_weekly"
         },
         {
-            "rank": 39,
+            "rank": 40,
             "leaderboard": "Top Teams (Last 24 Hours)",
             "html": "top_teams_daily"
         },
         {
-            "rank": 50,
+            "rank": 51,
             "leaderboard": "Fastest Teams (This Season)",
             "html": "fastest_teams_season"
         },
         {
-            "rank": 61,
+            "rank": 62,
             "leaderboard": "Most Accurate Teams (This Season)",
             "html": "most_accurate_teams_season"
         },
@@ -1862,46 +1899,46 @@
     ],
     "VOTEDT": [
         {
-            "rank": 49,
+            "rank": 50,
             "leaderboard": "Top Teams (This Season)",
             "html": "top_teams_season"
         }
     ],
     "MALK": [
         {
-            "rank": 50,
+            "rank": 51,
             "leaderboard": "Top Teams (This Season)",
             "html": "top_teams_season"
         },
         {
-            "rank": 72,
+            "rank": 73,
             "leaderboard": "Fastest Teams (This Season)",
             "html": "fastest_teams_season"
         },
         {
-            "rank": 66,
+            "rank": 67,
             "leaderboard": "Most Accurate Teams (This Season)",
             "html": "most_accurate_teams_season"
         }
     ],
     "R3PUBS": [
         {
-            "rank": 51,
+            "rank": 52,
             "leaderboard": "Top Teams (This Season)",
             "html": "top_teams_season"
         },
         {
-            "rank": 41,
+            "rank": 44,
             "leaderboard": "Top Teams (Last 7 Days)",
             "html": "top_teams_weekly"
         },
         {
-            "rank": 61,
+            "rank": 62,
             "leaderboard": "Top Teams (Last 24 Hours)",
             "html": "top_teams_daily"
         },
         {
-            "rank": 28,
+            "rank": 30,
             "leaderboard": "Fastest Teams (This Season)",
             "html": "fastest_teams_season"
         },
@@ -1911,12 +1948,12 @@
             "html": "most_accurate_teams_season"
         },
         {
-            "rank": 48,
+            "rank": 49,
             "leaderboard": "Fastest Teams",
             "html": "hof_fastest_teams"
         },
         {
-            "rank": 65,
+            "rank": 66,
             "leaderboard": "Most Accurate Teams",
             "html": "hof_most_accurate_teams"
         },
@@ -1933,51 +1970,51 @@
     ],
     "ARRIZZ": [
         {
-            "rank": 52,
+            "rank": 53,
             "leaderboard": "Top Teams (This Season)",
             "html": "top_teams_season"
         }
     ],
     "COCOA1": [
         {
-            "rank": 53,
+            "rank": 54,
             "leaderboard": "Top Teams (This Season)",
             "html": "top_teams_season"
         },
         {
-            "rank": 76,
+            "rank": 78,
             "leaderboard": "Fastest Teams (This Season)",
             "html": "fastest_teams_season"
         },
         {
-            "rank": 77,
+            "rank": 79,
             "leaderboard": "Most Accurate Teams (This Season)",
             "html": "most_accurate_teams_season"
         }
     ],
     "RRR1": [
         {
-            "rank": 54,
+            "rank": 55,
             "leaderboard": "Top Teams (This Season)",
             "html": "top_teams_season"
         },
         {
-            "rank": 79,
+            "rank": 76,
             "leaderboard": "Top Teams (Last 7 Days)",
             "html": "top_teams_weekly"
         },
         {
-            "rank": 32,
+            "rank": 33,
             "leaderboard": "Top Teams (Last 24 Hours)",
             "html": "top_teams_daily"
         },
         {
-            "rank": 19,
+            "rank": 21,
             "leaderboard": "Fastest Teams (This Season)",
             "html": "fastest_teams_season"
         },
         {
-            "rank": 25,
+            "rank": 24,
             "leaderboard": "Most Accurate Teams (This Season)",
             "html": "most_accurate_teams_season"
         },
@@ -2064,95 +2101,95 @@
     ],
     "AUTYPR": [
         {
-            "rank": 55,
+            "rank": 56,
             "leaderboard": "Top Teams (This Season)",
             "html": "top_teams_season"
         },
         {
-            "rank": 84,
+            "rank": 85,
             "leaderboard": "Top Teams (Last 24 Hours)",
             "html": "top_teams_daily"
         }
     ],
     "R8YAL": [
         {
-            "rank": 56,
+            "rank": 57,
             "leaderboard": "Top Teams (This Season)",
             "html": "top_teams_season"
         }
     ],
     "MIG3TY": [
         {
-            "rank": 57,
+            "rank": 58,
             "leaderboard": "Top Teams (This Season)",
             "html": "top_teams_season"
         },
         {
-            "rank": 81,
+            "rank": 68,
             "leaderboard": "Top Teams (Last 7 Days)",
             "html": "top_teams_weekly"
         },
         {
-            "rank": 47,
+            "rank": 48,
             "leaderboard": "Top Teams (Last 24 Hours)",
             "html": "top_teams_daily"
         },
         {
-            "rank": 30,
+            "rank": 31,
             "leaderboard": "Fastest Teams (This Season)",
             "html": "fastest_teams_season"
         },
         {
-            "rank": 40,
+            "rank": 41,
             "leaderboard": "Most Accurate Teams (This Season)",
             "html": "most_accurate_teams_season"
         },
         {
-            "rank": 51,
+            "rank": 52,
             "leaderboard": "Fastest Teams",
             "html": "hof_fastest_teams"
         }
     ],
     "TTMAN": [
         {
-            "rank": 58,
+            "rank": 59,
             "leaderboard": "Top Teams (This Season)",
             "html": "top_teams_season"
         },
         {
-            "rank": 77,
+            "rank": 79,
             "leaderboard": "Fastest Teams (This Season)",
             "html": "fastest_teams_season"
         },
         {
-            "rank": 59,
+            "rank": 60,
             "leaderboard": "Most Accurate Teams (This Season)",
             "html": "most_accurate_teams_season"
         }
     ],
     "O4": [
         {
-            "rank": 59,
+            "rank": 60,
             "leaderboard": "Top Teams (This Season)",
             "html": "top_teams_season"
         },
         {
-            "rank": 88,
+            "rank": 89,
             "leaderboard": "Top Teams (Last 24 Hours)",
             "html": "top_teams_daily"
         },
         {
-            "rank": 12,
+            "rank": 13,
             "leaderboard": "Fastest Teams (This Season)",
             "html": "fastest_teams_season"
         },
         {
-            "rank": 21,
+            "rank": 20,
             "leaderboard": "Most Accurate Teams (This Season)",
             "html": "most_accurate_teams_season"
         },
         {
-            "rank": 53,
+            "rank": 54,
             "leaderboard": "Fastest Teams",
             "html": "hof_fastest_teams"
         },
@@ -2164,65 +2201,65 @@
     ],
     "FBOX": [
         {
-            "rank": 60,
+            "rank": 61,
             "leaderboard": "Top Teams (This Season)",
             "html": "top_teams_season"
         },
         {
-            "rank": 99,
+            "rank": 67,
             "leaderboard": "Top Teams (Last 7 Days)",
             "html": "top_teams_weekly"
         },
         {
-            "rank": 41,
+            "rank": 42,
             "leaderboard": "Top Teams (Last 24 Hours)",
             "html": "top_teams_daily"
         }
     ],
     "CRACK6": [
         {
-            "rank": 61,
+            "rank": 62,
             "leaderboard": "Top Teams (This Season)",
             "html": "top_teams_season"
         },
         {
-            "rank": 73,
+            "rank": 74,
             "leaderboard": "Fastest Teams (This Season)",
             "html": "fastest_teams_season"
         },
         {
-            "rank": 70,
+            "rank": 71,
             "leaderboard": "Most Accurate Teams (This Season)",
             "html": "most_accurate_teams_season"
         }
     ],
     "SALTY0": [
         {
-            "rank": 62,
+            "rank": 63,
             "leaderboard": "Top Teams (This Season)",
             "html": "top_teams_season"
         }
     ],
     "FLYKOB": [
         {
-            "rank": 63,
+            "rank": 64,
             "leaderboard": "Top Teams (This Season)",
             "html": "top_teams_season"
         }
     ],
     "RT20K": [
         {
-            "rank": 64,
+            "rank": 65,
             "leaderboard": "Top Teams (This Season)",
             "html": "top_teams_season"
         },
         {
-            "rank": 37,
+            "rank": 33,
             "leaderboard": "Top Teams (Last 7 Days)",
             "html": "top_teams_weekly"
         },
         {
-            "rank": 62,
+            "rank": 63,
             "leaderboard": "Top Teams (Last 24 Hours)",
             "html": "top_teams_daily"
         },
@@ -2234,46 +2271,46 @@
     ],
     "JVT": [
         {
-            "rank": 65,
+            "rank": 66,
             "leaderboard": "Top Teams (This Season)",
             "html": "top_teams_season"
         },
         {
-            "rank": 71,
+            "rank": 74,
             "leaderboard": "Top Teams (Last 7 Days)",
             "html": "top_teams_weekly"
         },
         {
-            "rank": 43,
+            "rank": 44,
             "leaderboard": "Top Teams (Last 24 Hours)",
             "html": "top_teams_daily"
         }
     ],
     "WEREFR": [
         {
-            "rank": 66,
+            "rank": 67,
             "leaderboard": "Top Teams (This Season)",
             "html": "top_teams_season"
         }
     ],
     "2GT": [
         {
-            "rank": 67,
+            "rank": 68,
             "leaderboard": "Top Teams (This Season)",
             "html": "top_teams_season"
         },
         {
-            "rank": 76,
+            "rank": 86,
             "leaderboard": "Top Teams (Last 7 Days)",
             "html": "top_teams_weekly"
         },
         {
-            "rank": 45,
+            "rank": 46,
             "leaderboard": "Top Teams (Last 24 Hours)",
             "html": "top_teams_daily"
         },
         {
-            "rank": 42,
+            "rank": 44,
             "leaderboard": "Fastest Teams (This Season)",
             "html": "fastest_teams_season"
         },
@@ -2290,107 +2327,112 @@
     ],
     "VKS": [
         {
-            "rank": 68,
+            "rank": 69,
             "leaderboard": "Top Teams (This Season)",
             "html": "top_teams_season"
         },
         {
-            "rank": 90,
+            "rank": 81,
             "leaderboard": "Top Teams (Last 7 Days)",
             "html": "top_teams_weekly"
         },
         {
-            "rank": 87,
+            "rank": 88,
             "leaderboard": "Top Teams (Last 24 Hours)",
             "html": "top_teams_daily"
         },
         {
-            "rank": 51,
+            "rank": 52,
             "leaderboard": "Fastest Teams (This Season)",
             "html": "fastest_teams_season"
         },
         {
-            "rank": 47,
+            "rank": 48,
             "leaderboard": "Most Accurate Teams (This Season)",
             "html": "most_accurate_teams_season"
         }
     ],
     "3VOL3E": [
         {
-            "rank": 69,
+            "rank": 70,
             "leaderboard": "Top Teams (This Season)",
             "html": "top_teams_season"
         },
         {
-            "rank": 70,
+            "rank": 71,
             "leaderboard": "Fastest Teams (This Season)",
             "html": "fastest_teams_season"
         },
         {
-            "rank": 75,
+            "rank": 77,
             "leaderboard": "Most Accurate Teams (This Season)",
             "html": "most_accurate_teams_season"
         }
     ],
     "WASLAT": [
         {
-            "rank": 70,
+            "rank": 71,
             "leaderboard": "Top Teams (This Season)",
             "html": "top_teams_season"
         }
     ],
     "NVR": [
         {
-            "rank": 71,
+            "rank": 72,
             "leaderboard": "Top Teams (This Season)",
             "html": "top_teams_season"
         },
         {
-            "rank": 48,
+            "rank": 49,
             "leaderboard": "Top Teams (Last 24 Hours)",
             "html": "top_teams_daily"
         },
         {
-            "rank": 40,
+            "rank": 42,
             "leaderboard": "Fastest Teams (This Season)",
             "html": "fastest_teams_season"
         },
         {
-            "rank": 28,
+            "rank": 29,
             "leaderboard": "Most Accurate Teams (This Season)",
             "html": "most_accurate_teams_season"
         },
         {
-            "rank": 99,
+            "rank": 100,
             "leaderboard": "Most Accurate Teams",
             "html": "hof_most_accurate_teams"
         }
     ],
     "E2A": [
         {
-            "rank": 72,
+            "rank": 73,
             "leaderboard": "Top Teams (This Season)",
             "html": "top_teams_season"
         },
         {
-            "rank": 64,
+            "rank": 65,
             "leaderboard": "Top Teams (Last 24 Hours)",
             "html": "top_teams_daily"
         }
     ],
     "LANDOL": [
         {
-            "rank": 73,
+            "rank": 74,
             "leaderboard": "Top Teams (This Season)",
             "html": "top_teams_season"
         },
         {
-            "rank": 42,
+            "rank": 92,
+            "leaderboard": "Top Teams (Last 7 Days)",
+            "html": "top_teams_weekly"
+        },
+        {
+            "rank": 43,
             "leaderboard": "Top Teams (Last 24 Hours)",
             "html": "top_teams_daily"
         },
         {
-            "rank": 41,
+            "rank": 43,
             "leaderboard": "Fastest Teams (This Season)",
             "html": "fastest_teams_season"
         },
@@ -2405,7 +2447,7 @@
             "html": "hof_most_active_teams"
         },
         {
-            "rank": 53,
+            "rank": 54,
             "leaderboard": "Most Accurate Teams",
             "html": "hof_most_accurate_teams"
         },
@@ -2417,12 +2459,17 @@
     ],
     "TF": [
         {
-            "rank": 74,
+            "rank": 75,
             "leaderboard": "Top Teams (This Season)",
             "html": "top_teams_season"
         },
         {
-            "rank": 63,
+            "rank": 84,
+            "leaderboard": "Top Teams (Last 7 Days)",
+            "html": "top_teams_weekly"
+        },
+        {
+            "rank": 64,
             "leaderboard": "Top Teams (Last 24 Hours)",
             "html": "top_teams_daily"
         },
@@ -2454,22 +2501,22 @@
     ],
     "VG": [
         {
-            "rank": 75,
+            "rank": 76,
             "leaderboard": "Top Teams (This Season)",
             "html": "top_teams_season"
         },
         {
-            "rank": 7,
+            "rank": 6,
             "leaderboard": "Top Teams (Last 7 Days)",
             "html": "top_teams_weekly"
         },
         {
-            "rank": 29,
+            "rank": 30,
             "leaderboard": "Top Teams (Last 24 Hours)",
             "html": "top_teams_daily"
         },
         {
-            "rank": 60,
+            "rank": 61,
             "leaderboard": "Fastest Teams (This Season)",
             "html": "fastest_teams_season"
         },
@@ -2484,12 +2531,12 @@
             "html": "hof_most_active_teams"
         },
         {
-            "rank": 66,
+            "rank": 67,
             "leaderboard": "Fastest Teams",
             "html": "hof_fastest_teams"
         },
         {
-            "rank": 37,
+            "rank": 38,
             "leaderboard": "Most Accurate Teams",
             "html": "hof_most_accurate_teams"
         },
@@ -2501,24 +2548,24 @@
     ],
     "ZAQWXS": [
         {
-            "rank": 76,
+            "rank": 77,
             "leaderboard": "Top Teams (This Season)",
             "html": "top_teams_season"
         }
     ],
     "PATCHY": [
         {
-            "rank": 77,
+            "rank": 78,
             "leaderboard": "Top Teams (This Season)",
             "html": "top_teams_season"
         },
         {
-            "rank": 87,
+            "rank": 97,
             "leaderboard": "Top Teams (Last 7 Days)",
             "html": "top_teams_weekly"
         },
         {
-            "rank": 54,
+            "rank": 55,
             "leaderboard": "Top Teams (Last 24 Hours)",
             "html": "top_teams_daily"
         },
@@ -2535,49 +2582,49 @@
     ],
     "SW1FTI": [
         {
-            "rank": 78,
+            "rank": 79,
             "leaderboard": "Top Teams (This Season)",
             "html": "top_teams_season"
         },
         {
-            "rank": 52,
+            "rank": 53,
             "leaderboard": "Top Teams (Last 24 Hours)",
             "html": "top_teams_daily"
         },
         {
-            "rank": 38,
+            "rank": 40,
             "leaderboard": "Fastest Teams (This Season)",
             "html": "fastest_teams_season"
         },
         {
-            "rank": 27,
+            "rank": 28,
             "leaderboard": "Most Accurate Teams (This Season)",
             "html": "most_accurate_teams_season"
         }
     ],
     "SSH": [
         {
-            "rank": 79,
+            "rank": 80,
             "leaderboard": "Top Teams (This Season)",
             "html": "top_teams_season"
         },
         {
-            "rank": 59,
+            "rank": 58,
             "leaderboard": "Top Teams (Last 7 Days)",
             "html": "top_teams_weekly"
         },
         {
-            "rank": 67,
+            "rank": 68,
             "leaderboard": "Top Teams (Last 24 Hours)",
             "html": "top_teams_daily"
         },
         {
-            "rank": 39,
+            "rank": 41,
             "leaderboard": "Fastest Teams (This Season)",
             "html": "fastest_teams_season"
         },
         {
-            "rank": 33,
+            "rank": 34,
             "leaderboard": "Most Accurate Teams (This Season)",
             "html": "most_accurate_teams_season"
         },
@@ -2592,7 +2639,7 @@
             "html": "hof_most_active_teams"
         },
         {
-            "rank": 55,
+            "rank": 56,
             "leaderboard": "Most Accurate Teams",
             "html": "hof_most_accurate_teams"
         },
@@ -2607,7 +2654,7 @@
             "html": "hof_oldest_active_teams"
         },
         {
-            "rank": 20,
+            "rank": 21,
             "leaderboard": "Most Races Per Day",
             "html": "hof_most_team_races_per_day"
         },
@@ -2809,37 +2856,37 @@
     ],
     "PIGFLY": [
         {
-            "rank": 80,
+            "rank": 81,
             "leaderboard": "Top Teams (This Season)",
             "html": "top_teams_season"
         },
         {
-            "rank": 44,
+            "rank": 55,
             "leaderboard": "Top Teams (Last 7 Days)",
             "html": "top_teams_weekly"
         },
         {
-            "rank": 51,
+            "rank": 52,
             "leaderboard": "Top Teams (Last 24 Hours)",
             "html": "top_teams_daily"
         },
         {
-            "rank": 33,
+            "rank": 36,
             "leaderboard": "Fastest Teams (This Season)",
             "html": "fastest_teams_season"
         },
         {
-            "rank": 34,
+            "rank": 36,
             "leaderboard": "Most Accurate Teams (This Season)",
             "html": "most_accurate_teams_season"
         },
         {
-            "rank": 95,
+            "rank": 96,
             "leaderboard": "Most Accurate Teams",
             "html": "hof_most_accurate_teams"
         },
         {
-            "rank": 59,
+            "rank": 58,
             "leaderboard": "Most Races Per Day",
             "html": "hof_most_team_races_per_day"
         },
@@ -2851,36 +2898,36 @@
     ],
     "3MUSK": [
         {
-            "rank": 81,
+            "rank": 82,
             "leaderboard": "Top Teams (This Season)",
             "html": "top_teams_season"
         },
         {
-            "rank": 55,
+            "rank": 56,
             "leaderboard": "Top Teams (Last 24 Hours)",
             "html": "top_teams_daily"
         }
     ],
     "CLEANX": [
         {
-            "rank": 82,
+            "rank": 83,
             "leaderboard": "Top Teams (This Season)",
             "html": "top_teams_season"
         }
     ],
     "DOG": [
         {
-            "rank": 83,
+            "rank": 84,
             "leaderboard": "Top Teams (This Season)",
             "html": "top_teams_season"
         },
         {
-            "rank": 91,
+            "rank": 92,
             "leaderboard": "Top Teams (Last 24 Hours)",
             "html": "top_teams_daily"
         },
         {
-            "rank": 14,
+            "rank": 15,
             "leaderboard": "Fastest Teams (This Season)",
             "html": "fastest_teams_season"
         },
@@ -2895,7 +2942,7 @@
             "html": "hof_most_active_teams"
         },
         {
-            "rank": 57,
+            "rank": 58,
             "leaderboard": "Most Accurate Teams",
             "html": "hof_most_accurate_teams"
         },
@@ -3012,27 +3059,27 @@
     ],
     "INCOGN": [
         {
-            "rank": 84,
+            "rank": 85,
             "leaderboard": "Top Teams (This Season)",
             "html": "top_teams_season"
         },
         {
-            "rank": 86,
+            "rank": 98,
             "leaderboard": "Top Teams (Last 7 Days)",
             "html": "top_teams_weekly"
         },
         {
-            "rank": 53,
+            "rank": 54,
             "leaderboard": "Top Teams (Last 24 Hours)",
             "html": "top_teams_daily"
         },
         {
-            "rank": 34,
+            "rank": 37,
             "leaderboard": "Fastest Teams (This Season)",
             "html": "fastest_teams_season"
         },
         {
-            "rank": 37,
+            "rank": 39,
             "leaderboard": "Most Accurate Teams (This Season)",
             "html": "most_accurate_teams_season"
         },
@@ -3044,12 +3091,12 @@
     ],
     "SMA5H": [
         {
-            "rank": 85,
+            "rank": 86,
             "leaderboard": "Top Teams (This Season)",
             "html": "top_teams_season"
         },
         {
-            "rank": 97,
+            "rank": 98,
             "leaderboard": "Top Teams (Last 24 Hours)",
             "html": "top_teams_daily"
         },
@@ -3069,7 +3116,7 @@
             "html": "hof_most_active_teams"
         },
         {
-            "rank": 79,
+            "rank": 80,
             "leaderboard": "Most Team Page Views",
             "html": "hof_most_team_views"
         },
@@ -3091,27 +3138,27 @@
     ],
     "NTA3": [
         {
-            "rank": 86,
+            "rank": 87,
             "leaderboard": "Top Teams (This Season)",
             "html": "top_teams_season"
         },
         {
-            "rank": 57,
+            "rank": 53,
             "leaderboard": "Top Teams (Last 7 Days)",
             "html": "top_teams_weekly"
         },
         {
-            "rank": 90,
+            "rank": 91,
             "leaderboard": "Top Teams (Last 24 Hours)",
             "html": "top_teams_daily"
         },
         {
-            "rank": 49,
+            "rank": 50,
             "leaderboard": "Fastest Teams (This Season)",
             "html": "fastest_teams_season"
         },
         {
-            "rank": 18,
+            "rank": 17,
             "leaderboard": "Most Accurate Teams (This Season)",
             "html": "most_accurate_teams_season"
         },
@@ -3138,22 +3185,17 @@
     ],
     "REBE1S": [
         {
-            "rank": 87,
+            "rank": 88,
             "leaderboard": "Top Teams (This Season)",
             "html": "top_teams_season"
         },
         {
-            "rank": 52,
+            "rank": 54,
             "leaderboard": "Top Teams (Last 7 Days)",
             "html": "top_teams_weekly"
         },
         {
-            "rank": 100,
-            "leaderboard": "Top Teams (Last 24 Hours)",
-            "html": "top_teams_daily"
-        },
-        {
-            "rank": 25,
+            "rank": 27,
             "leaderboard": "Fastest Teams (This Season)",
             "html": "fastest_teams_season"
         },
@@ -3163,51 +3205,51 @@
             "html": "most_accurate_teams_season"
         },
         {
-            "rank": 87,
+            "rank": 88,
             "leaderboard": "Fastest Teams",
             "html": "hof_fastest_teams"
         },
         {
-            "rank": 40,
+            "rank": 41,
             "leaderboard": "Most Accurate Teams",
             "html": "hof_most_accurate_teams"
         }
     ],
     "LOSE68": [
         {
-            "rank": 88,
+            "rank": 89,
             "leaderboard": "Top Teams (This Season)",
             "html": "top_teams_season"
         }
     ],
     "J0Y": [
         {
-            "rank": 89,
+            "rank": 90,
             "leaderboard": "Top Teams (This Season)",
             "html": "top_teams_season"
         },
         {
-            "rank": 45,
+            "rank": 47,
             "leaderboard": "Top Teams (Last 7 Days)",
             "html": "top_teams_weekly"
         },
         {
-            "rank": 49,
+            "rank": 50,
             "leaderboard": "Top Teams (Last 24 Hours)",
             "html": "top_teams_daily"
         },
         {
-            "rank": 24,
+            "rank": 26,
             "leaderboard": "Fastest Teams (This Season)",
             "html": "fastest_teams_season"
         },
         {
-            "rank": 13,
+            "rank": 12,
             "leaderboard": "Most Accurate Teams (This Season)",
             "html": "most_accurate_teams_season"
         },
         {
-            "rank": 51,
+            "rank": 52,
             "leaderboard": "Most Active Teams",
             "html": "hof_most_active_teams"
         },
@@ -3217,7 +3259,7 @@
             "html": "hof_fastest_teams"
         },
         {
-            "rank": 68,
+            "rank": 69,
             "leaderboard": "Most Accurate Teams",
             "html": "hof_most_accurate_teams"
         },
@@ -3244,14 +3286,14 @@
     ],
     "UABUM": [
         {
-            "rank": 90,
+            "rank": 91,
             "leaderboard": "Top Teams (This Season)",
             "html": "top_teams_season"
         }
     ],
     "CPR": [
         {
-            "rank": 91,
+            "rank": 92,
             "leaderboard": "Top Teams (This Season)",
             "html": "top_teams_season"
         },
@@ -3263,14 +3305,14 @@
     ],
     "ELITE7": [
         {
-            "rank": 92,
+            "rank": 93,
             "leaderboard": "Top Teams (This Season)",
             "html": "top_teams_season"
         }
     ],
     "G1": [
         {
-            "rank": 93,
+            "rank": 94,
             "leaderboard": "Top Teams (This Season)",
             "html": "top_teams_season"
         },
@@ -3280,17 +3322,17 @@
             "html": "top_teams_weekly"
         },
         {
-            "rank": 70,
+            "rank": 71,
             "leaderboard": "Top Teams (Last 24 Hours)",
             "html": "top_teams_daily"
         },
         {
-            "rank": 62,
+            "rank": 63,
             "leaderboard": "Fastest Teams (This Season)",
             "html": "fastest_teams_season"
         },
         {
-            "rank": 56,
+            "rank": 57,
             "leaderboard": "Most Accurate Teams (This Season)",
             "html": "most_accurate_teams_season"
         },
@@ -3307,27 +3349,27 @@
     ],
     "HV": [
         {
-            "rank": 94,
+            "rank": 95,
             "leaderboard": "Top Teams (This Season)",
             "html": "top_teams_season"
         },
         {
-            "rank": 92,
+            "rank": 77,
             "leaderboard": "Top Teams (Last 7 Days)",
             "html": "top_teams_weekly"
         },
         {
-            "rank": 98,
+            "rank": 99,
             "leaderboard": "Top Teams (Last 24 Hours)",
             "html": "top_teams_daily"
         },
         {
-            "rank": 36,
+            "rank": 38,
             "leaderboard": "Fastest Teams (This Season)",
             "html": "fastest_teams_season"
         },
         {
-            "rank": 35,
+            "rank": 37,
             "leaderboard": "Most Accurate Teams (This Season)",
             "html": "most_accurate_teams_season"
         },
@@ -3354,31 +3396,31 @@
     ],
     "LARIZZ": [
         {
-            "rank": 95,
+            "rank": 96,
             "leaderboard": "Top Teams (This Season)",
             "html": "top_teams_season"
         }
     ],
     "RGEARG": [
         {
-            "rank": 96,
+            "rank": 97,
             "leaderboard": "Top Teams (This Season)",
             "html": "top_teams_season"
         }
     ],
     "NBDM": [
         {
-            "rank": 97,
+            "rank": 98,
             "leaderboard": "Top Teams (This Season)",
             "html": "top_teams_season"
         },
         {
-            "rank": 71,
+            "rank": 72,
             "leaderboard": "Fastest Teams (This Season)",
             "html": "fastest_teams_season"
         },
         {
-            "rank": 26,
+            "rank": 27,
             "leaderboard": "Most Accurate Teams (This Season)",
             "html": "most_accurate_teams_season"
         },
@@ -3390,29 +3432,22 @@
     ],
     "7XX": [
         {
-            "rank": 98,
+            "rank": 99,
             "leaderboard": "Top Teams (This Season)",
             "html": "top_teams_season"
         },
         {
-            "rank": 46,
+            "rank": 48,
             "leaderboard": "Fastest Teams (This Season)",
             "html": "fastest_teams_season"
         },
         {
-            "rank": 51,
+            "rank": 53,
             "leaderboard": "Most Accurate Teams (This Season)",
             "html": "most_accurate_teams_season"
         }
     ],
     "LAGGGY": [
-        {
-            "rank": 99,
-            "leaderboard": "Top Teams (This Season)",
-            "html": "top_teams_season"
-        }
-    ],
-    "D2B2": [
         {
             "rank": 100,
             "leaderboard": "Top Teams (This Season)",
@@ -3421,12 +3456,12 @@
     ],
     "MEYBO": [
         {
-            "rank": 8,
+            "rank": 10,
             "leaderboard": "Top Teams (Last 7 Days)",
             "html": "top_teams_weekly"
         },
         {
-            "rank": 20,
+            "rank": 23,
             "leaderboard": "Top Teams (Last 24 Hours)",
             "html": "top_teams_daily"
         },
@@ -3436,7 +3471,7 @@
             "html": "hof_most_active_teams"
         },
         {
-            "rank": 58,
+            "rank": 59,
             "leaderboard": "Fastest Teams",
             "html": "hof_fastest_teams"
         },
@@ -3483,7 +3518,7 @@
             "html": "hof_fastest_teams"
         },
         {
-            "rank": 47,
+            "rank": 48,
             "leaderboard": "Most Accurate Teams",
             "html": "hof_most_accurate_teams"
         },
@@ -3505,12 +3540,12 @@
     ],
     "R2V": [
         {
-            "rank": 13,
+            "rank": 12,
             "leaderboard": "Top Teams (Last 7 Days)",
             "html": "top_teams_weekly"
         },
         {
-            "rank": 26,
+            "rank": 28,
             "leaderboard": "Top Teams (Last 24 Hours)",
             "html": "top_teams_daily"
         },
@@ -3539,12 +3574,12 @@
     ],
     "DNIM": [
         {
-            "rank": 18,
+            "rank": 20,
             "leaderboard": "Top Teams (Last 7 Days)",
             "html": "top_teams_weekly"
         },
         {
-            "rank": 40,
+            "rank": 41,
             "leaderboard": "Top Teams (Last 24 Hours)",
             "html": "top_teams_daily"
         },
@@ -3573,7 +3608,7 @@
             "html": "top_teams_weekly"
         },
         {
-            "rank": 35,
+            "rank": 36,
             "leaderboard": "Most Accurate Teams",
             "html": "hof_most_accurate_teams"
         },
@@ -3583,14 +3618,46 @@
             "html": "season_51_teams"
         }
     ],
-    "R3": [
+    "UPR": [
         {
-            "rank": 24,
+            "rank": 25,
             "leaderboard": "Top Teams (Last 7 Days)",
             "html": "top_teams_weekly"
         },
         {
-            "rank": 36,
+            "rank": 38,
+            "leaderboard": "Top Teams (Last 24 Hours)",
+            "html": "top_teams_daily"
+        },
+        {
+            "rank": 29,
+            "leaderboard": "Fastest Teams",
+            "html": "hof_fastest_teams"
+        },
+        {
+            "rank": 87,
+            "leaderboard": "Most Accurate Teams",
+            "html": "hof_most_accurate_teams"
+        },
+        {
+            "rank": 69,
+            "leaderboard": "Most Races Per Day",
+            "html": "hof_most_team_races_per_day"
+        },
+        {
+            "rank": 71,
+            "leaderboard": "Season 51: Top Teams",
+            "html": "season_51_teams"
+        }
+    ],
+    "R3": [
+        {
+            "rank": 26,
+            "leaderboard": "Top Teams (Last 7 Days)",
+            "html": "top_teams_weekly"
+        },
+        {
+            "rank": 37,
             "leaderboard": "Top Teams (Last 24 Hours)",
             "html": "top_teams_daily"
         },
@@ -3600,17 +3667,17 @@
             "html": "hof_most_active_teams"
         },
         {
-            "rank": 78,
+            "rank": 79,
             "leaderboard": "Fastest Teams",
             "html": "hof_fastest_teams"
         },
         {
-            "rank": 62,
+            "rank": 63,
             "leaderboard": "Most Team Page Views",
             "html": "hof_most_team_views"
         },
         {
-            "rank": 54,
+            "rank": 53,
             "leaderboard": "Most Races Per Day",
             "html": "hof_most_team_races_per_day"
         },
@@ -3652,56 +3719,24 @@
     ],
     "NJC": [
         {
-            "rank": 26,
-            "leaderboard": "Top Teams (Last 7 Days)",
-            "html": "top_teams_weekly"
-        }
-    ],
-    "UPR": [
-        {
             "rank": 27,
             "leaderboard": "Top Teams (Last 7 Days)",
             "html": "top_teams_weekly"
-        },
-        {
-            "rank": 37,
-            "leaderboard": "Top Teams (Last 24 Hours)",
-            "html": "top_teams_daily"
-        },
-        {
-            "rank": 29,
-            "leaderboard": "Fastest Teams",
-            "html": "hof_fastest_teams"
-        },
-        {
-            "rank": 86,
-            "leaderboard": "Most Accurate Teams",
-            "html": "hof_most_accurate_teams"
-        },
-        {
-            "rank": 69,
-            "leaderboard": "Most Races Per Day",
-            "html": "hof_most_team_races_per_day"
-        },
-        {
-            "rank": 71,
-            "leaderboard": "Season 51: Top Teams",
-            "html": "season_51_teams"
         }
     ],
     "CE": [
         {
-            "rank": 30,
+            "rank": 31,
             "leaderboard": "Top Teams (Last 7 Days)",
             "html": "top_teams_weekly"
         },
         {
-            "rank": 35,
+            "rank": 36,
             "leaderboard": "Top Teams (Last 24 Hours)",
             "html": "top_teams_daily"
         },
         {
-            "rank": 41,
+            "rank": 42,
             "leaderboard": "Most Races Per Day",
             "html": "hof_most_team_races_per_day"
         },
@@ -3711,73 +3746,24 @@
             "html": "season_51_teams"
         }
     ],
-    "NTP": [
-        {
-            "rank": 31,
-            "leaderboard": "Top Teams (Last 7 Days)",
-            "html": "top_teams_weekly"
-        },
-        {
-            "rank": 72,
-            "leaderboard": "Top Teams (Last 24 Hours)",
-            "html": "top_teams_daily"
-        },
-        {
-            "rank": 7,
-            "leaderboard": "Fastest Teams (This Season)",
-            "html": "fastest_teams_season"
-        },
-        {
-            "rank": 30,
-            "leaderboard": "Most Accurate Teams (This Season)",
-            "html": "most_accurate_teams_season"
-        },
-        {
-            "rank": 45,
-            "leaderboard": "Fastest Teams",
-            "html": "hof_fastest_teams"
-        },
-        {
-            "rank": 45,
-            "leaderboard": "Most Accurate Teams",
-            "html": "hof_most_accurate_teams"
-        },
-        {
-            "rank": 50,
-            "leaderboard": "Season 51: Top Teams",
-            "html": "season_51_teams"
-        }
-    ],
-    "3VAN": [
+    "XGS": [
         {
             "rank": 32,
             "leaderboard": "Top Teams (Last 7 Days)",
             "html": "top_teams_weekly"
         },
         {
-            "rank": 96,
-            "leaderboard": "Top Teams (Last 24 Hours)",
-            "html": "top_teams_daily"
-        }
-    ],
-    "XGS": [
-        {
-            "rank": 33,
-            "leaderboard": "Top Teams (Last 7 Days)",
-            "html": "top_teams_weekly"
-        },
-        {
-            "rank": 60,
+            "rank": 61,
             "leaderboard": "Top Teams (Last 24 Hours)",
             "html": "top_teams_daily"
         },
         {
-            "rank": 48,
+            "rank": 49,
             "leaderboard": "Fastest Teams (This Season)",
             "html": "fastest_teams_season"
         },
         {
-            "rank": 58,
+            "rank": 59,
             "leaderboard": "Most Accurate Teams (This Season)",
             "html": "most_accurate_teams_season"
         },
@@ -3787,24 +3773,39 @@
             "html": "season_51_teams"
         }
     ],
-    "PZVL": [
+    "NTP": [
         {
-            "rank": 35,
+            "rank": 34,
             "leaderboard": "Top Teams (Last 7 Days)",
             "html": "top_teams_weekly"
         },
         {
-            "rank": 95,
+            "rank": 73,
             "leaderboard": "Top Teams (Last 24 Hours)",
             "html": "top_teams_daily"
         },
         {
-            "rank": 41,
+            "rank": 7,
+            "leaderboard": "Fastest Teams (This Season)",
+            "html": "fastest_teams_season"
+        },
+        {
+            "rank": 31,
+            "leaderboard": "Most Accurate Teams (This Season)",
+            "html": "most_accurate_teams_season"
+        },
+        {
+            "rank": 46,
+            "leaderboard": "Fastest Teams",
+            "html": "hof_fastest_teams"
+        },
+        {
+            "rank": 46,
             "leaderboard": "Most Accurate Teams",
             "html": "hof_most_accurate_teams"
         },
         {
-            "rank": 47,
+            "rank": 50,
             "leaderboard": "Season 51: Top Teams",
             "html": "season_51_teams"
         }
@@ -3816,7 +3817,7 @@
             "html": "top_teams_weekly"
         },
         {
-            "rank": 86,
+            "rank": 87,
             "leaderboard": "Top Teams (Last 24 Hours)",
             "html": "top_teams_daily"
         },
@@ -3826,12 +3827,12 @@
             "html": "hof_most_active_teams"
         },
         {
-            "rank": 76,
+            "rank": 77,
             "leaderboard": "Fastest Teams",
             "html": "hof_fastest_teams"
         },
         {
-            "rank": 56,
+            "rank": 57,
             "leaderboard": "Most Team Page Views",
             "html": "hof_most_team_views"
         },
@@ -3851,11 +3852,38 @@
             "html": "season_51_teams"
         }
     ],
-    "EXNG": [
+    "3VAN": [
         {
-            "rank": 40,
+            "rank": 37,
             "leaderboard": "Top Teams (Last 7 Days)",
             "html": "top_teams_weekly"
+        },
+        {
+            "rank": 97,
+            "leaderboard": "Top Teams (Last 24 Hours)",
+            "html": "top_teams_daily"
+        }
+    ],
+    "PZVL": [
+        {
+            "rank": 41,
+            "leaderboard": "Top Teams (Last 7 Days)",
+            "html": "top_teams_weekly"
+        },
+        {
+            "rank": 96,
+            "leaderboard": "Top Teams (Last 24 Hours)",
+            "html": "top_teams_daily"
+        },
+        {
+            "rank": 42,
+            "leaderboard": "Most Accurate Teams",
+            "html": "hof_most_accurate_teams"
+        },
+        {
+            "rank": 47,
+            "leaderboard": "Season 51: Top Teams",
+            "html": "season_51_teams"
         }
     ],
     "TBZ": [
@@ -3870,12 +3898,12 @@
             "html": "hof_most_active_teams"
         },
         {
-            "rank": 64,
+            "rank": 65,
             "leaderboard": "Fastest Teams",
             "html": "hof_fastest_teams"
         },
         {
-            "rank": 66,
+            "rank": 67,
             "leaderboard": "Most Accurate Teams",
             "html": "hof_most_accurate_teams"
         },
@@ -3945,142 +3973,16 @@
             "html": "season_40_teams"
         }
     ],
-    "73": [
-        {
-            "rank": 46,
-            "leaderboard": "Top Teams (Last 7 Days)",
-            "html": "top_teams_weekly"
-        },
-        {
-            "rank": 71,
-            "leaderboard": "Top Teams (Last 24 Hours)",
-            "html": "top_teams_daily"
-        },
-        {
-            "rank": 89,
-            "leaderboard": "Most Accurate Teams",
-            "html": "hof_most_accurate_teams"
-        },
-        {
-            "rank": 77,
-            "leaderboard": "Most Races Per Day",
-            "html": "hof_most_team_races_per_day"
-        },
-        {
-            "rank": 41,
-            "leaderboard": "Season 51: Top Teams",
-            "html": "season_51_teams"
-        }
-    ],
-    "HONT": [
-        {
-            "rank": 49,
-            "leaderboard": "Top Teams (Last 7 Days)",
-            "html": "top_teams_weekly"
-        },
-        {
-            "rank": 44,
-            "leaderboard": "Top Teams (Last 24 Hours)",
-            "html": "top_teams_daily"
-        },
-        {
-            "rank": 27,
-            "leaderboard": "Fastest Teams (This Season)",
-            "html": "fastest_teams_season"
-        },
-        {
-            "rank": 46,
-            "leaderboard": "Most Accurate Teams (This Season)",
-            "html": "most_accurate_teams_season"
-        },
-        {
-            "rank": 54,
-            "leaderboard": "Most Active Teams",
-            "html": "hof_most_active_teams"
-        },
-        {
-            "rank": 87,
-            "leaderboard": "Most Team Page Views",
-            "html": "hof_most_team_views"
-        },
-        {
-            "rank": 21,
-            "leaderboard": "Oldest Active Teams",
-            "html": "hof_oldest_active_teams"
-        },
-        {
-            "rank": 94,
-            "leaderboard": "Most Races Per Day",
-            "html": "hof_most_team_races_per_day"
-        },
-        {
-            "rank": 36,
-            "leaderboard": "Season 50: Top Teams",
-            "html": "season_50_teams"
-        },
-        {
-            "rank": 54,
-            "leaderboard": "Season 51: Top Teams",
-            "html": "season_51_teams"
-        },
-        {
-            "rank": 41,
-            "leaderboard": "Season 38: Top Teams",
-            "html": "season_38_teams"
-        }
-    ],
     "ERD": [
         {
-            "rank": 50,
+            "rank": 45,
             "leaderboard": "Top Teams (Last 7 Days)",
             "html": "top_teams_weekly"
-        }
-    ],
-    "KCAT": [
-        {
-            "rank": 53,
-            "leaderboard": "Top Teams (Last 7 Days)",
-            "html": "top_teams_weekly"
-        },
-        {
-            "rank": 59,
-            "leaderboard": "Top Teams (Last 24 Hours)",
-            "html": "top_teams_daily"
-        },
-        {
-            "rank": 16,
-            "leaderboard": "Fastest Teams (This Season)",
-            "html": "fastest_teams_season"
-        },
-        {
-            "rank": 14,
-            "leaderboard": "Most Accurate Teams (This Season)",
-            "html": "most_accurate_teams_season"
-        },
-        {
-            "rank": 94,
-            "leaderboard": "Most Active Teams",
-            "html": "hof_most_active_teams"
-        },
-        {
-            "rank": 22,
-            "leaderboard": "Fastest Teams",
-            "html": "hof_fastest_teams"
-        },
-        {
-            "rank": 67,
-            "leaderboard": "Most Races Per Day",
-            "html": "hof_most_team_races_per_day"
-        },
-        {
-            "rank": 76,
-            "leaderboard": "Season 51: Top Teams",
-            "html": "season_51_teams"
         }
     ],
     "FTU": [
         {
-            "rank": 55,
+            "rank": 48,
             "leaderboard": "Top Teams (Last 7 Days)",
             "html": "top_teams_weekly"
         },
@@ -4095,7 +3997,7 @@
             "html": "hof_fastest_teams"
         },
         {
-            "rank": 78,
+            "rank": 79,
             "leaderboard": "Most Accurate Teams",
             "html": "hof_most_accurate_teams"
         },
@@ -4135,6 +4037,132 @@
             "html": "season_40_teams"
         }
     ],
+    "73": [
+        {
+            "rank": 49,
+            "leaderboard": "Top Teams (Last 7 Days)",
+            "html": "top_teams_weekly"
+        },
+        {
+            "rank": 72,
+            "leaderboard": "Top Teams (Last 24 Hours)",
+            "html": "top_teams_daily"
+        },
+        {
+            "rank": 90,
+            "leaderboard": "Most Accurate Teams",
+            "html": "hof_most_accurate_teams"
+        },
+        {
+            "rank": 77,
+            "leaderboard": "Most Races Per Day",
+            "html": "hof_most_team_races_per_day"
+        },
+        {
+            "rank": 41,
+            "leaderboard": "Season 51: Top Teams",
+            "html": "season_51_teams"
+        }
+    ],
+    "KCAT": [
+        {
+            "rank": 50,
+            "leaderboard": "Top Teams (Last 7 Days)",
+            "html": "top_teams_weekly"
+        },
+        {
+            "rank": 60,
+            "leaderboard": "Top Teams (Last 24 Hours)",
+            "html": "top_teams_daily"
+        },
+        {
+            "rank": 16,
+            "leaderboard": "Fastest Teams (This Season)",
+            "html": "fastest_teams_season"
+        },
+        {
+            "rank": 14,
+            "leaderboard": "Most Accurate Teams (This Season)",
+            "html": "most_accurate_teams_season"
+        },
+        {
+            "rank": 95,
+            "leaderboard": "Most Active Teams",
+            "html": "hof_most_active_teams"
+        },
+        {
+            "rank": 22,
+            "leaderboard": "Fastest Teams",
+            "html": "hof_fastest_teams"
+        },
+        {
+            "rank": 67,
+            "leaderboard": "Most Races Per Day",
+            "html": "hof_most_team_races_per_day"
+        },
+        {
+            "rank": 76,
+            "leaderboard": "Season 51: Top Teams",
+            "html": "season_51_teams"
+        }
+    ],
+    "HONT": [
+        {
+            "rank": 52,
+            "leaderboard": "Top Teams (Last 7 Days)",
+            "html": "top_teams_weekly"
+        },
+        {
+            "rank": 45,
+            "leaderboard": "Top Teams (Last 24 Hours)",
+            "html": "top_teams_daily"
+        },
+        {
+            "rank": 28,
+            "leaderboard": "Fastest Teams (This Season)",
+            "html": "fastest_teams_season"
+        },
+        {
+            "rank": 47,
+            "leaderboard": "Most Accurate Teams (This Season)",
+            "html": "most_accurate_teams_season"
+        },
+        {
+            "rank": 54,
+            "leaderboard": "Most Active Teams",
+            "html": "hof_most_active_teams"
+        },
+        {
+            "rank": 88,
+            "leaderboard": "Most Team Page Views",
+            "html": "hof_most_team_views"
+        },
+        {
+            "rank": 21,
+            "leaderboard": "Oldest Active Teams",
+            "html": "hof_oldest_active_teams"
+        },
+        {
+            "rank": 94,
+            "leaderboard": "Most Races Per Day",
+            "html": "hof_most_team_races_per_day"
+        },
+        {
+            "rank": 36,
+            "leaderboard": "Season 50: Top Teams",
+            "html": "season_50_teams"
+        },
+        {
+            "rank": 54,
+            "leaderboard": "Season 51: Top Teams",
+            "html": "season_51_teams"
+        },
+        {
+            "rank": 41,
+            "leaderboard": "Season 38: Top Teams",
+            "html": "season_38_teams"
+        }
+    ],
     "BLZN": [
         {
             "rank": 56,
@@ -4142,154 +4170,29 @@
             "html": "top_teams_weekly"
         },
         {
-            "rank": 93,
+            "rank": 94,
             "leaderboard": "Top Teams (Last 24 Hours)",
             "html": "top_teams_daily"
-        },
-        {
-            "rank": 82,
-            "leaderboard": "Fastest Teams",
-            "html": "hof_fastest_teams"
-        },
-        {
-            "rank": 53,
-            "leaderboard": "Most Races Per Day",
-            "html": "hof_most_team_races_per_day"
-        },
-        {
-            "rank": 60,
-            "leaderboard": "Season 51: Top Teams",
-            "html": "season_51_teams"
-        }
-    ],
-    "DRVN": [
-        {
-            "rank": 58,
-            "leaderboard": "Top Teams (Last 7 Days)",
-            "html": "top_teams_weekly"
-        },
-        {
-            "rank": 99,
-            "leaderboard": "Top Teams (Last 24 Hours)",
-            "html": "top_teams_daily"
-        },
-        {
-            "rank": 91,
-            "leaderboard": "Most Active Teams",
-            "html": "hof_most_active_teams"
-        },
-        {
-            "rank": 58,
-            "leaderboard": "Season 50: Top Teams",
-            "html": "season_50_teams"
         },
         {
             "rank": 84,
-            "leaderboard": "Season 51: Top Teams",
-            "html": "season_51_teams"
-        }
-    ],
-    "CLUR": [
-        {
-            "rank": 60,
-            "leaderboard": "Top Teams (Last 7 Days)",
-            "html": "top_teams_weekly"
-        }
-    ],
-    "G99": [
-        {
-            "rank": 61,
-            "leaderboard": "Top Teams (Last 7 Days)",
-            "html": "top_teams_weekly"
-        }
-    ],
-    "AL3": [
-        {
-            "rank": 62,
-            "leaderboard": "Top Teams (Last 7 Days)",
-            "html": "top_teams_weekly"
-        },
-        {
-            "rank": 74,
-            "leaderboard": "Top Teams (Last 24 Hours)",
-            "html": "top_teams_daily"
-        },
-        {
-            "rank": 17,
-            "leaderboard": "Fastest Teams (This Season)",
-            "html": "fastest_teams_season"
-        },
-        {
-            "rank": 6,
-            "leaderboard": "Most Accurate Teams (This Season)",
-            "html": "most_accurate_teams_season"
-        },
-        {
-            "rank": 72,
-            "leaderboard": "Most Active Teams",
-            "html": "hof_most_active_teams"
-        },
-        {
-            "rank": 47,
             "leaderboard": "Fastest Teams",
             "html": "hof_fastest_teams"
         },
         {
-            "rank": 59,
-            "leaderboard": "Most Accurate Teams",
-            "html": "hof_most_accurate_teams"
-        },
-        {
-            "rank": 91,
-            "leaderboard": "Oldest Active Teams",
-            "html": "hof_oldest_active_teams"
-        },
-        {
-            "rank": 56,
+            "rank": 54,
             "leaderboard": "Most Races Per Day",
             "html": "hof_most_team_races_per_day"
         },
         {
-            "rank": 29,
-            "leaderboard": "Season 50: Top Teams",
-            "html": "season_50_teams"
-        },
-        {
-            "rank": 59,
-            "leaderboard": "Season 51: Top Teams",
-            "html": "season_51_teams"
-        }
-    ],
-    "YELL0W": [
-        {
-            "rank": 64,
-            "leaderboard": "Top Teams (Last 7 Days)",
-            "html": "top_teams_weekly"
-        },
-        {
-            "rank": 4,
-            "leaderboard": "Most Accurate Teams",
-            "html": "hof_most_accurate_teams"
-        },
-        {
-            "rank": 83,
-            "leaderboard": "Most Races Per Day",
-            "html": "hof_most_team_races_per_day"
-        },
-        {
-            "rank": 98,
-            "leaderboard": "Season 50: Top Teams",
-            "html": "season_50_teams"
-        },
-        {
-            "rank": 79,
+            "rank": 60,
             "leaderboard": "Season 51: Top Teams",
             "html": "season_51_teams"
         }
     ],
     "VEN0M": [
         {
-            "rank": 65,
+            "rank": 57,
             "leaderboard": "Top Teams (Last 7 Days)",
             "html": "top_teams_weekly"
         },
@@ -4299,12 +4202,12 @@
             "html": "hof_most_active_teams"
         },
         {
-            "rank": 98,
+            "rank": 99,
             "leaderboard": "Most Team Page Views",
             "html": "hof_most_team_views"
         },
         {
-            "rank": 19,
+            "rank": 20,
             "leaderboard": "Most Races Per Day",
             "html": "hof_most_team_races_per_day"
         },
@@ -4319,26 +4222,41 @@
             "html": "season_41_teams"
         }
     ],
-    "KAU": [
+    "DRVN": [
         {
-            "rank": 66,
+            "rank": 59,
             "leaderboard": "Top Teams (Last 7 Days)",
             "html": "top_teams_weekly"
         },
         {
+            "rank": 100,
+            "leaderboard": "Top Teams (Last 24 Hours)",
+            "html": "top_teams_daily"
+        },
+        {
+            "rank": 92,
+            "leaderboard": "Most Active Teams",
+            "html": "hof_most_active_teams"
+        },
+        {
             "rank": 58,
+            "leaderboard": "Season 50: Top Teams",
+            "html": "season_50_teams"
+        },
+        {
+            "rank": 84,
             "leaderboard": "Season 51: Top Teams",
             "html": "season_51_teams"
         }
     ],
     "RU": [
         {
-            "rank": 67,
+            "rank": 60,
             "leaderboard": "Top Teams (Last 7 Days)",
             "html": "top_teams_weekly"
         },
         {
-            "rank": 80,
+            "rank": 81,
             "leaderboard": "Top Teams (Last 24 Hours)",
             "html": "top_teams_daily"
         },
@@ -4348,12 +4266,12 @@
             "html": "hof_most_active_teams"
         },
         {
-            "rank": 79,
+            "rank": 80,
             "leaderboard": "Fastest Teams",
             "html": "hof_fastest_teams"
         },
         {
-            "rank": 66,
+            "rank": 67,
             "leaderboard": "Most Team Page Views",
             "html": "hof_most_team_views"
         },
@@ -4378,9 +4296,73 @@
             "html": "season_51_teams"
         }
     ],
+    "G99": [
+        {
+            "rank": 61,
+            "leaderboard": "Top Teams (Last 7 Days)",
+            "html": "top_teams_weekly"
+        }
+    ],
+    "AL3": [
+        {
+            "rank": 62,
+            "leaderboard": "Top Teams (Last 7 Days)",
+            "html": "top_teams_weekly"
+        },
+        {
+            "rank": 75,
+            "leaderboard": "Top Teams (Last 24 Hours)",
+            "html": "top_teams_daily"
+        },
+        {
+            "rank": 19,
+            "leaderboard": "Fastest Teams (This Season)",
+            "html": "fastest_teams_season"
+        },
+        {
+            "rank": 6,
+            "leaderboard": "Most Accurate Teams (This Season)",
+            "html": "most_accurate_teams_season"
+        },
+        {
+            "rank": 72,
+            "leaderboard": "Most Active Teams",
+            "html": "hof_most_active_teams"
+        },
+        {
+            "rank": 48,
+            "leaderboard": "Fastest Teams",
+            "html": "hof_fastest_teams"
+        },
+        {
+            "rank": 60,
+            "leaderboard": "Most Accurate Teams",
+            "html": "hof_most_accurate_teams"
+        },
+        {
+            "rank": 91,
+            "leaderboard": "Oldest Active Teams",
+            "html": "hof_oldest_active_teams"
+        },
+        {
+            "rank": 56,
+            "leaderboard": "Most Races Per Day",
+            "html": "hof_most_team_races_per_day"
+        },
+        {
+            "rank": 29,
+            "leaderboard": "Season 50: Top Teams",
+            "html": "season_50_teams"
+        },
+        {
+            "rank": 59,
+            "leaderboard": "Season 51: Top Teams",
+            "html": "season_51_teams"
+        }
+    ],
     "PACS": [
         {
-            "rank": 68,
+            "rank": 64,
             "leaderboard": "Top Teams (Last 7 Days)",
             "html": "top_teams_weekly"
         },
@@ -4390,86 +4372,65 @@
             "html": "season_50_teams"
         }
     ],
-    "GH64": [
+    "YELL0W": [
+        {
+            "rank": 65,
+            "leaderboard": "Top Teams (Last 7 Days)",
+            "html": "top_teams_weekly"
+        },
+        {
+            "rank": 4,
+            "leaderboard": "Most Accurate Teams",
+            "html": "hof_most_accurate_teams"
+        },
+        {
+            "rank": 83,
+            "leaderboard": "Most Races Per Day",
+            "html": "hof_most_team_races_per_day"
+        },
+        {
+            "rank": 98,
+            "leaderboard": "Season 50: Top Teams",
+            "html": "season_50_teams"
+        },
+        {
+            "rank": 79,
+            "leaderboard": "Season 51: Top Teams",
+            "html": "season_51_teams"
+        }
+    ],
+    "KAU": [
+        {
+            "rank": 66,
+            "leaderboard": "Top Teams (Last 7 Days)",
+            "html": "top_teams_weekly"
+        },
+        {
+            "rank": 58,
+            "leaderboard": "Season 51: Top Teams",
+            "html": "season_51_teams"
+        }
+    ],
+    "EXRD": [
         {
             "rank": 69,
             "leaderboard": "Top Teams (Last 7 Days)",
             "html": "top_teams_weekly"
         }
     ],
-    "BEAN45": [
+    "N8TE": [
         {
             "rank": 70,
             "leaderboard": "Top Teams (Last 7 Days)",
             "html": "top_teams_weekly"
-        }
-    ],
-    "VNS": [
-        {
-            "rank": 72,
-            "leaderboard": "Top Teams (Last 7 Days)",
-            "html": "top_teams_weekly"
-        }
-    ],
-    "EXRD": [
-        {
-            "rank": 73,
-            "leaderboard": "Top Teams (Last 7 Days)",
-            "html": "top_teams_weekly"
-        }
-    ],
-    "M3TRO": [
-        {
-            "rank": 74,
-            "leaderboard": "Top Teams (Last 7 Days)",
-            "html": "top_teams_weekly"
         },
         {
-            "rank": 61,
-            "leaderboard": "Most Active Teams",
-            "html": "hof_most_active_teams"
-        },
-        {
-            "rank": 73,
-            "leaderboard": "Most Team Page Views",
-            "html": "hof_most_team_views"
-        },
-        {
-            "rank": 55,
-            "leaderboard": "Most Races Per Day",
-            "html": "hof_most_team_races_per_day"
-        },
-        {
-            "rank": 41,
-            "leaderboard": "Season 50: Top Teams",
-            "html": "season_50_teams"
-        },
-        {
-            "rank": 55,
-            "leaderboard": "Season 51: Top Teams",
-            "html": "season_51_teams"
-        }
-    ],
-    "NT3R": [
-        {
-            "rank": 75,
-            "leaderboard": "Top Teams (Last 7 Days)",
-            "html": "top_teams_weekly"
-        }
-    ],
-    "N8TE": [
-        {
-            "rank": 77,
-            "leaderboard": "Top Teams (Last 7 Days)",
-            "html": "top_teams_weekly"
-        },
-        {
-            "rank": 61,
+            "rank": 62,
             "leaderboard": "Fastest Teams (This Season)",
             "html": "fastest_teams_season"
         },
         {
-            "rank": 63,
+            "rank": 64,
             "leaderboard": "Most Accurate Teams (This Season)",
             "html": "most_accurate_teams_season"
         },
@@ -4549,58 +4510,104 @@
             "html": "season_42_teams"
         }
     ],
-    "BIBL3": [
+    "BEAN45": [
         {
-            "rank": 78,
+            "rank": 71,
+            "leaderboard": "Top Teams (Last 7 Days)",
+            "html": "top_teams_weekly"
+        }
+    ],
+    "M3TRO": [
+        {
+            "rank": 72,
             "leaderboard": "Top Teams (Last 7 Days)",
             "html": "top_teams_weekly"
         },
         {
-            "rank": 94,
-            "leaderboard": "Top Teams (Last 24 Hours)",
-            "html": "top_teams_daily"
+            "rank": 61,
+            "leaderboard": "Most Active Teams",
+            "html": "hof_most_active_teams"
         },
         {
-            "rank": 57,
-            "leaderboard": "Fastest Teams (This Season)",
-            "html": "fastest_teams_season"
+            "rank": 74,
+            "leaderboard": "Most Team Page Views",
+            "html": "hof_most_team_views"
         },
         {
-            "rank": 80,
-            "leaderboard": "Most Accurate Teams (This Season)",
-            "html": "most_accurate_teams_season"
-        },
-        {
-            "rank": 42,
+            "rank": 55,
             "leaderboard": "Most Races Per Day",
             "html": "hof_most_team_races_per_day"
         },
         {
-            "rank": 32,
+            "rank": 41,
             "leaderboard": "Season 50: Top Teams",
             "html": "season_50_teams"
         },
         {
-            "rank": 51,
+            "rank": 55,
             "leaderboard": "Season 51: Top Teams",
             "html": "season_51_teams"
         }
     ],
-    "MENACE": [
+    "GH64": [
         {
-            "rank": 80,
+            "rank": 73,
+            "leaderboard": "Top Teams (Last 7 Days)",
+            "html": "top_teams_weekly"
+        }
+    ],
+    "EVSC": [
+        {
+            "rank": 75,
             "leaderboard": "Top Teams (Last 7 Days)",
             "html": "top_teams_weekly"
         },
         {
+            "rank": 86,
+            "leaderboard": "Top Teams (Last 24 Hours)",
+            "html": "top_teams_daily"
+        },
+        {
+            "rank": 55,
+            "leaderboard": "Fastest Teams (This Season)",
+            "html": "fastest_teams_season"
+        },
+        {
+            "rank": 51,
+            "leaderboard": "Most Accurate Teams (This Season)",
+            "html": "most_accurate_teams_season"
+        }
+    ],
+    "SRT": [
+        {
             "rank": 78,
-            "leaderboard": "Season 51: Top Teams",
-            "html": "season_51_teams"
+            "leaderboard": "Top Teams (Last 7 Days)",
+            "html": "top_teams_weekly"
+        },
+        {
+            "rank": 82,
+            "leaderboard": "Top Teams (Last 24 Hours)",
+            "html": "top_teams_daily"
+        },
+        {
+            "rank": 56,
+            "leaderboard": "Fastest Teams (This Season)",
+            "html": "fastest_teams_season"
+        },
+        {
+            "rank": 44,
+            "leaderboard": "Most Accurate Teams (This Season)",
+            "html": "most_accurate_teams_season"
+        },
+        {
+            "rank": 7,
+            "leaderboard": "Oldest Active Teams",
+            "html": "hof_oldest_active_teams"
         }
     ],
     "TVX": [
         {
-            "rank": 82,
+            "rank": 79,
             "leaderboard": "Top Teams (Last 7 Days)",
             "html": "top_teams_weekly"
         },
@@ -4625,57 +4632,153 @@
             "html": "season_51_teams"
         }
     ],
-    "UP": [
+    "MENACE": [
         {
-            "rank": 83,
+            "rank": 80,
             "leaderboard": "Top Teams (Last 7 Days)",
             "html": "top_teams_weekly"
         },
         {
-            "rank": 28,
-            "leaderboard": "Season 50: Top Teams",
-            "html": "season_50_teams"
+            "rank": 78,
+            "leaderboard": "Season 51: Top Teams",
+            "html": "season_51_teams"
+        }
+    ],
+    "MED13L": [
+        {
+            "rank": 82,
+            "leaderboard": "Top Teams (Last 7 Days)",
+            "html": "top_teams_weekly"
+        },
+        {
+            "rank": 62,
+            "leaderboard": "Oldest Active Teams",
+            "html": "hof_oldest_active_teams"
         }
     ],
     "S1NGE": [
         {
-            "rank": 84,
+            "rank": 83,
             "leaderboard": "Top Teams (Last 7 Days)",
             "html": "top_teams_weekly"
         }
     ],
-    "RWEC": [
+    "JL7": [
         {
             "rank": 85,
             "leaderboard": "Top Teams (Last 7 Days)",
             "html": "top_teams_weekly"
+        },
+        {
+            "rank": 70,
+            "leaderboard": "Top Teams (Last 24 Hours)",
+            "html": "top_teams_daily"
         }
     ],
-    "EVSC": [
+    "B2T": [
+        {
+            "rank": 87,
+            "leaderboard": "Top Teams (Last 7 Days)",
+            "html": "top_teams_weekly"
+        },
+        {
+            "rank": 17,
+            "leaderboard": "Most Active Teams",
+            "html": "hof_most_active_teams"
+        },
+        {
+            "rank": 74,
+            "leaderboard": "Fastest Teams",
+            "html": "hof_fastest_teams"
+        },
+        {
+            "rank": 35,
+            "leaderboard": "Most Team Page Views",
+            "html": "hof_most_team_views"
+        },
+        {
+            "rank": 17,
+            "leaderboard": "Oldest Active Teams",
+            "html": "hof_oldest_active_teams"
+        },
+        {
+            "rank": 32,
+            "leaderboard": "Most Races Per Day",
+            "html": "hof_most_team_races_per_day"
+        },
+        {
+            "rank": 96,
+            "leaderboard": "Season 51: Top Teams",
+            "html": "season_51_teams"
+        },
+        {
+            "rank": 17,
+            "leaderboard": "Season 37: Top Teams",
+            "html": "season_37_teams"
+        },
+        {
+            "rank": 89,
+            "leaderboard": "Season 39: Top Teams",
+            "html": "season_39_teams"
+        },
+        {
+            "rank": 96,
+            "leaderboard": "Season 40: Top Teams",
+            "html": "season_40_teams"
+        },
+        {
+            "rank": 88,
+            "leaderboard": "Season 42: Top Teams",
+            "html": "season_42_teams"
+        }
+    ],
+    "BIBL3": [
         {
             "rank": 88,
             "leaderboard": "Top Teams (Last 7 Days)",
             "html": "top_teams_weekly"
         },
         {
-            "rank": 85,
+            "rank": 95,
             "leaderboard": "Top Teams (Last 24 Hours)",
             "html": "top_teams_daily"
         },
         {
-            "rank": 54,
+            "rank": 57,
             "leaderboard": "Fastest Teams (This Season)",
             "html": "fastest_teams_season"
         },
         {
-            "rank": 49,
+            "rank": 82,
             "leaderboard": "Most Accurate Teams (This Season)",
             "html": "most_accurate_teams_season"
+        },
+        {
+            "rank": 41,
+            "leaderboard": "Most Races Per Day",
+            "html": "hof_most_team_races_per_day"
+        },
+        {
+            "rank": 32,
+            "leaderboard": "Season 50: Top Teams",
+            "html": "season_50_teams"
+        },
+        {
+            "rank": 51,
+            "leaderboard": "Season 51: Top Teams",
+            "html": "season_51_teams"
+        }
+    ],
+    "D36": [
+        {
+            "rank": 89,
+            "leaderboard": "Top Teams (Last 7 Days)",
+            "html": "top_teams_weekly"
         }
     ],
     "STRE4K": [
         {
-            "rank": 89,
+            "rank": 90,
             "leaderboard": "Top Teams (Last 7 Days)",
             "html": "top_teams_weekly"
         },
@@ -4685,7 +4788,7 @@
             "html": "hof_most_active_teams"
         },
         {
-            "rank": 86,
+            "rank": 87,
             "leaderboard": "Most Team Page Views",
             "html": "hof_most_team_views"
         },
@@ -4695,7 +4798,7 @@
             "html": "hof_oldest_active_teams"
         },
         {
-            "rank": 65,
+            "rank": 64,
             "leaderboard": "Most Races Per Day",
             "html": "hof_most_team_races_per_day"
         },
@@ -4710,28 +4813,45 @@
             "html": "season_51_teams"
         }
     ],
-    "MED13L": [
+    "BGS07": [
         {
             "rank": 91,
             "leaderboard": "Top Teams (Last 7 Days)",
             "html": "top_teams_weekly"
         },
         {
-            "rank": 62,
-            "leaderboard": "Oldest Active Teams",
-            "html": "hof_oldest_active_teams"
+            "rank": 93,
+            "leaderboard": "Top Teams (Last 24 Hours)",
+            "html": "top_teams_daily"
+        },
+        {
+            "rank": 34,
+            "leaderboard": "Fastest Teams (This Season)",
+            "html": "fastest_teams_season"
+        },
+        {
+            "rank": 55,
+            "leaderboard": "Most Accurate Teams (This Season)",
+            "html": "most_accurate_teams_season"
         }
     ],
-    "D36": [
+    "RWEC": [
         {
             "rank": 93,
             "leaderboard": "Top Teams (Last 7 Days)",
             "html": "top_teams_weekly"
         }
     ],
-    "D3MNS": [
+    "ELIGOR": [
         {
             "rank": 94,
+            "leaderboard": "Top Teams (Last 7 Days)",
+            "html": "top_teams_weekly"
+        }
+    ],
+    "D3MNS": [
+        {
+            "rank": 95,
             "leaderboard": "Top Teams (Last 7 Days)",
             "html": "top_teams_weekly"
         },
@@ -4741,9 +4861,48 @@
             "html": "hof_oldest_active_teams"
         }
     ],
+    "EXTRME": [
+        {
+            "rank": 96,
+            "leaderboard": "Top Teams (Last 7 Days)",
+            "html": "top_teams_weekly"
+        },
+        {
+            "rank": 84,
+            "leaderboard": "Season 50: Top Teams",
+            "html": "season_50_teams"
+        }
+    ],
+    "CCTV": [
+        {
+            "rank": 99,
+            "leaderboard": "Top Teams (Last 7 Days)",
+            "html": "top_teams_weekly"
+        },
+        {
+            "rank": 80,
+            "leaderboard": "Most Active Teams",
+            "html": "hof_most_active_teams"
+        },
+        {
+            "rank": 86,
+            "leaderboard": "Season 50: Top Teams",
+            "html": "season_50_teams"
+        },
+        {
+            "rank": 94,
+            "leaderboard": "Season 51: Top Teams",
+            "html": "season_51_teams"
+        },
+        {
+            "rank": 48,
+            "leaderboard": "Season 40: Top Teams",
+            "html": "season_40_teams"
+        }
+    ],
     "SIMMAX": [
         {
-            "rank": 95,
+            "rank": 100,
             "leaderboard": "Top Teams (Last 7 Days)",
             "html": "top_teams_weekly"
         },
@@ -4753,64 +4912,16 @@
             "html": "season_50_teams"
         }
     ],
-    "JL7": [
-        {
-            "rank": 96,
-            "leaderboard": "Top Teams (Last 7 Days)",
-            "html": "top_teams_weekly"
-        },
-        {
-            "rank": 69,
-            "leaderboard": "Top Teams (Last 24 Hours)",
-            "html": "top_teams_daily"
-        }
-    ],
-    "BGS07": [
-        {
-            "rank": 97,
-            "leaderboard": "Top Teams (Last 7 Days)",
-            "html": "top_teams_weekly"
-        },
-        {
-            "rank": 92,
-            "leaderboard": "Top Teams (Last 24 Hours)",
-            "html": "top_teams_daily"
-        },
-        {
-            "rank": 31,
-            "leaderboard": "Fastest Teams (This Season)",
-            "html": "fastest_teams_season"
-        },
-        {
-            "rank": 54,
-            "leaderboard": "Most Accurate Teams (This Season)",
-            "html": "most_accurate_teams_season"
-        }
-    ],
-    "II": [
-        {
-            "rank": 98,
-            "leaderboard": "Top Teams (Last 7 Days)",
-            "html": "top_teams_weekly"
-        }
-    ],
-    "ELIGOR": [
-        {
-            "rank": 100,
-            "leaderboard": "Top Teams (Last 7 Days)",
-            "html": "top_teams_weekly"
-        }
-    ],
     "SZ": [
         {
-            "rank": 38,
+            "rank": 39,
             "leaderboard": "Top Teams (Last 24 Hours)",
             "html": "top_teams_daily"
         }
     ],
     "WDLA": [
         {
-            "rank": 50,
+            "rank": 51,
             "leaderboard": "Top Teams (Last 24 Hours)",
             "html": "top_teams_daily"
         },
@@ -4822,12 +4933,12 @@
     ],
     "YTRN": [
         {
-            "rank": 56,
+            "rank": 57,
             "leaderboard": "Top Teams (Last 24 Hours)",
             "html": "top_teams_daily"
         },
         {
-            "rank": 37,
+            "rank": 39,
             "leaderboard": "Fastest Teams (This Season)",
             "html": "fastest_teams_season"
         },
@@ -4844,35 +4955,35 @@
     ],
     "W0LF7": [
         {
-            "rank": 57,
+            "rank": 58,
             "leaderboard": "Top Teams (Last 24 Hours)",
             "html": "top_teams_daily"
         }
     ],
     "VUS": [
         {
-            "rank": 58,
+            "rank": 59,
             "leaderboard": "Top Teams (Last 24 Hours)",
             "html": "top_teams_daily"
         }
     ],
     "SCOOBD": [
         {
-            "rank": 73,
+            "rank": 74,
             "leaderboard": "Top Teams (Last 24 Hours)",
             "html": "top_teams_daily"
         }
     ],
     "FVF": [
         {
-            "rank": 75,
+            "rank": 76,
             "leaderboard": "Top Teams (Last 24 Hours)",
             "html": "top_teams_daily"
         }
     ],
     "VL": [
         {
-            "rank": 76,
+            "rank": 77,
             "leaderboard": "Top Teams (Last 24 Hours)",
             "html": "top_teams_daily"
         },
@@ -4884,17 +4995,17 @@
     ],
     "BANVDN": [
         {
-            "rank": 78,
+            "rank": 79,
             "leaderboard": "Top Teams (Last 24 Hours)",
             "html": "top_teams_daily"
         },
         {
-            "rank": 21,
+            "rank": 23,
             "leaderboard": "Fastest Teams (This Season)",
             "html": "fastest_teams_season"
         },
         {
-            "rank": 36,
+            "rank": 38,
             "leaderboard": "Most Accurate Teams (This Season)",
             "html": "most_accurate_teams_season"
         },
@@ -4916,41 +5027,19 @@
     ],
     "RFTP": [
         {
-            "rank": 79,
+            "rank": 80,
             "leaderboard": "Top Teams (Last 24 Hours)",
             "html": "top_teams_daily"
         },
         {
-            "rank": 39,
+            "rank": 40,
             "leaderboard": "Most Accurate Teams",
             "html": "hof_most_accurate_teams"
         }
     ],
-    "SRT": [
-        {
-            "rank": 81,
-            "leaderboard": "Top Teams (Last 24 Hours)",
-            "html": "top_teams_daily"
-        },
-        {
-            "rank": 55,
-            "leaderboard": "Fastest Teams (This Season)",
-            "html": "fastest_teams_season"
-        },
-        {
-            "rank": 45,
-            "leaderboard": "Most Accurate Teams (This Season)",
-            "html": "most_accurate_teams_season"
-        },
-        {
-            "rank": 7,
-            "leaderboard": "Oldest Active Teams",
-            "html": "hof_oldest_active_teams"
-        }
-    ],
     "SZL": [
         {
-            "rank": 82,
+            "rank": 83,
             "leaderboard": "Top Teams (Last 24 Hours)",
             "html": "top_teams_daily"
         },
@@ -4962,7 +5051,7 @@
     ],
     "M8O": [
         {
-            "rank": 83,
+            "rank": 84,
             "leaderboard": "Top Teams (Last 24 Hours)",
             "html": "top_teams_daily"
         },
@@ -4979,7 +5068,7 @@
     ],
     "DSX": [
         {
-            "rank": 89,
+            "rank": 90,
             "leaderboard": "Top Teams (Last 24 Hours)",
             "html": "top_teams_daily"
         },
@@ -5008,29 +5097,29 @@
     ],
     "JCDFOS": [
         {
-            "rank": 20,
+            "rank": 22,
             "leaderboard": "Fastest Teams (This Season)",
             "html": "fastest_teams_season"
         },
         {
-            "rank": 65,
+            "rank": 66,
             "leaderboard": "Most Accurate Teams (This Season)",
             "html": "most_accurate_teams_season"
         },
         {
-            "rank": 61,
+            "rank": 62,
             "leaderboard": "Fastest Teams",
             "html": "hof_fastest_teams"
         }
     ],
     "FLPR": [
         {
-            "rank": 43,
+            "rank": 45,
             "leaderboard": "Fastest Teams (This Season)",
             "html": "fastest_teams_season"
         },
         {
-            "rank": 64,
+            "rank": 65,
             "leaderboard": "Most Accurate Teams (This Season)",
             "html": "most_accurate_teams_season"
         },
@@ -5057,29 +5146,24 @@
     ],
     "RCKTS": [
         {
-            "rank": 44,
+            "rank": 46,
             "leaderboard": "Fastest Teams (This Season)",
             "html": "fastest_teams_season"
         },
         {
-            "rank": 60,
+            "rank": 61,
             "leaderboard": "Most Accurate Teams (This Season)",
             "html": "most_accurate_teams_season"
-        },
-        {
-            "rank": 100,
-            "leaderboard": "Fastest Teams",
-            "html": "hof_fastest_teams"
         }
     ],
     "W4MFUS": [
         {
-            "rank": 53,
+            "rank": 54,
             "leaderboard": "Fastest Teams (This Season)",
             "html": "fastest_teams_season"
         },
         {
-            "rank": 62,
+            "rank": 63,
             "leaderboard": "Most Accurate Teams (This Season)",
             "html": "most_accurate_teams_season"
         },
@@ -5091,36 +5175,48 @@
     ],
     "BOTSSS": [
         {
-            "rank": 63,
+            "rank": 64,
             "leaderboard": "Fastest Teams (This Season)",
             "html": "fastest_teams_season"
         },
         {
-            "rank": 73,
+            "rank": 74,
             "leaderboard": "Most Accurate Teams (This Season)",
             "html": "most_accurate_teams_season"
         }
     ],
     "1L1L1L": [
         {
-            "rank": 68,
+            "rank": 69,
             "leaderboard": "Fastest Teams (This Season)",
             "html": "fastest_teams_season"
         },
         {
-            "rank": 78,
+            "rank": 80,
             "leaderboard": "Most Accurate Teams (This Season)",
             "html": "most_accurate_teams_season"
         }
     ],
     "MUNDY": [
         {
-            "rank": 74,
+            "rank": 75,
             "leaderboard": "Fastest Teams (This Season)",
             "html": "fastest_teams_season"
         },
         {
-            "rank": 68,
+            "rank": 69,
+            "leaderboard": "Most Accurate Teams (This Season)",
+            "html": "most_accurate_teams_season"
+        }
+    ],
+    "GTYUIK": [
+        {
+            "rank": 76,
+            "leaderboard": "Fastest Teams (This Season)",
+            "html": "fastest_teams_season"
+        },
+        {
+            "rank": 76,
             "leaderboard": "Most Accurate Teams (This Season)",
             "html": "most_accurate_teams_season"
         }
@@ -5892,7 +5988,7 @@
             "html": "hof_most_active_teams"
         },
         {
-            "rank": 86,
+            "rank": 87,
             "leaderboard": "Fastest Teams",
             "html": "hof_fastest_teams"
         },
@@ -5957,58 +6053,6 @@
             "html": "season_42_teams"
         }
     ],
-    "B2T": [
-        {
-            "rank": 17,
-            "leaderboard": "Most Active Teams",
-            "html": "hof_most_active_teams"
-        },
-        {
-            "rank": 73,
-            "leaderboard": "Fastest Teams",
-            "html": "hof_fastest_teams"
-        },
-        {
-            "rank": 35,
-            "leaderboard": "Most Team Page Views",
-            "html": "hof_most_team_views"
-        },
-        {
-            "rank": 17,
-            "leaderboard": "Oldest Active Teams",
-            "html": "hof_oldest_active_teams"
-        },
-        {
-            "rank": 32,
-            "leaderboard": "Most Races Per Day",
-            "html": "hof_most_team_races_per_day"
-        },
-        {
-            "rank": 96,
-            "leaderboard": "Season 51: Top Teams",
-            "html": "season_51_teams"
-        },
-        {
-            "rank": 17,
-            "leaderboard": "Season 37: Top Teams",
-            "html": "season_37_teams"
-        },
-        {
-            "rank": 89,
-            "leaderboard": "Season 39: Top Teams",
-            "html": "season_39_teams"
-        },
-        {
-            "rank": 96,
-            "leaderboard": "Season 40: Top Teams",
-            "html": "season_40_teams"
-        },
-        {
-            "rank": 88,
-            "leaderboard": "Season 42: Top Teams",
-            "html": "season_42_teams"
-        }
-    ],
     "5HRK": [
         {
             "rank": 18,
@@ -6016,12 +6060,12 @@
             "html": "hof_most_active_teams"
         },
         {
-            "rank": 59,
+            "rank": 60,
             "leaderboard": "Fastest Teams",
             "html": "hof_fastest_teams"
         },
         {
-            "rank": 81,
+            "rank": 82,
             "leaderboard": "Most Accurate Teams",
             "html": "hof_most_accurate_teams"
         },
@@ -6219,7 +6263,7 @@
             "html": "hof_most_active_teams"
         },
         {
-            "rank": 35,
+            "rank": 36,
             "leaderboard": "Fastest Teams",
             "html": "hof_fastest_teams"
         },
@@ -6271,12 +6315,12 @@
     ],
     "TESM": [
         {
-            "rank": 28,
+            "rank": 29,
             "leaderboard": "Most Active Teams",
             "html": "hof_most_active_teams"
         },
         {
-            "rank": 41,
+            "rank": 42,
             "leaderboard": "Most Team Page Views",
             "html": "hof_most_team_views"
         },
@@ -6308,7 +6352,7 @@
             "html": "hof_most_active_teams"
         },
         {
-            "rank": 43,
+            "rank": 44,
             "leaderboard": "Most Team Page Views",
             "html": "hof_most_team_views"
         },
@@ -6409,7 +6453,7 @@
             "html": "hof_most_active_teams"
         },
         {
-            "rank": 50,
+            "rank": 51,
             "leaderboard": "Most Team Page Views",
             "html": "hof_most_team_views"
         },
@@ -6456,7 +6500,7 @@
             "html": "hof_most_active_teams"
         },
         {
-            "rank": 51,
+            "rank": 52,
             "leaderboard": "Most Team Page Views",
             "html": "hof_most_team_views"
         },
@@ -6515,12 +6559,12 @@
             "html": "hof_most_active_teams"
         },
         {
-            "rank": 73,
+            "rank": 75,
             "leaderboard": "Most Accurate Teams",
             "html": "hof_most_accurate_teams"
         },
         {
-            "rank": 64,
+            "rank": 65,
             "leaderboard": "Most Team Page Views",
             "html": "hof_most_team_views"
         },
@@ -6572,7 +6616,7 @@
             "html": "hof_most_active_teams"
         },
         {
-            "rank": 60,
+            "rank": 61,
             "leaderboard": "Most Team Page Views",
             "html": "hof_most_team_views"
         },
@@ -6589,12 +6633,12 @@
             "html": "hof_most_active_teams"
         },
         {
-            "rank": 92,
+            "rank": 93,
             "leaderboard": "Most Accurate Teams",
             "html": "hof_most_accurate_teams"
         },
         {
-            "rank": 81,
+            "rank": 82,
             "leaderboard": "Most Team Page Views",
             "html": "hof_most_team_views"
         },
@@ -6621,7 +6665,7 @@
             "html": "hof_most_active_teams"
         },
         {
-            "rank": 56,
+            "rank": 57,
             "leaderboard": "Fastest Teams",
             "html": "hof_fastest_teams"
         },
@@ -6663,7 +6707,7 @@
             "html": "hof_most_active_teams"
         },
         {
-            "rank": 67,
+            "rank": 68,
             "leaderboard": "Most Team Page Views",
             "html": "hof_most_team_views"
         },
@@ -6685,7 +6729,7 @@
             "html": "hof_most_active_teams"
         },
         {
-            "rank": 48,
+            "rank": 49,
             "leaderboard": "Most Team Page Views",
             "html": "hof_most_team_views"
         },
@@ -6702,7 +6746,7 @@
             "html": "hof_most_active_teams"
         },
         {
-            "rank": 70,
+            "rank": 71,
             "leaderboard": "Most Team Page Views",
             "html": "hof_most_team_views"
         },
@@ -6734,7 +6778,7 @@
             "html": "hof_most_active_teams"
         },
         {
-            "rank": 75,
+            "rank": 76,
             "leaderboard": "Most Team Page Views",
             "html": "hof_most_team_views"
         },
@@ -6756,12 +6800,12 @@
             "html": "hof_most_active_teams"
         },
         {
-            "rank": 91,
+            "rank": 92,
             "leaderboard": "Most Accurate Teams",
             "html": "hof_most_accurate_teams"
         },
         {
-            "rank": 45,
+            "rank": 46,
             "leaderboard": "Most Team Page Views",
             "html": "hof_most_team_views"
         },
@@ -6793,7 +6837,7 @@
             "html": "hof_most_active_teams"
         },
         {
-            "rank": 88,
+            "rank": 89,
             "leaderboard": "Most Team Page Views",
             "html": "hof_most_team_views"
         }
@@ -6805,7 +6849,7 @@
             "html": "hof_most_active_teams"
         },
         {
-            "rank": 77,
+            "rank": 78,
             "leaderboard": "Most Team Page Views",
             "html": "hof_most_team_views"
         },
@@ -6827,7 +6871,7 @@
             "html": "hof_most_active_teams"
         },
         {
-            "rank": 49,
+            "rank": 50,
             "leaderboard": "Most Team Page Views",
             "html": "hof_most_team_views"
         }
@@ -6839,7 +6883,7 @@
             "html": "hof_most_active_teams"
         },
         {
-            "rank": 69,
+            "rank": 70,
             "leaderboard": "Most Team Page Views",
             "html": "hof_most_team_views"
         },
@@ -6856,7 +6900,7 @@
             "html": "hof_most_active_teams"
         },
         {
-            "rank": 80,
+            "rank": 81,
             "leaderboard": "Most Team Page Views",
             "html": "hof_most_team_views"
         },
@@ -6903,7 +6947,7 @@
             "html": "hof_most_active_teams"
         },
         {
-            "rank": 59,
+            "rank": 60,
             "leaderboard": "Most Team Page Views",
             "html": "hof_most_team_views"
         }
@@ -6920,12 +6964,12 @@
             "html": "hof_fastest_teams"
         },
         {
-            "rank": 85,
+            "rank": 86,
             "leaderboard": "Most Accurate Teams",
             "html": "hof_most_accurate_teams"
         },
         {
-            "rank": 63,
+            "rank": 64,
             "leaderboard": "Most Team Page Views",
             "html": "hof_most_team_views"
         },
@@ -6957,7 +7001,7 @@
             "html": "hof_most_active_teams"
         },
         {
-            "rank": 89,
+            "rank": 90,
             "leaderboard": "Most Team Page Views",
             "html": "hof_most_team_views"
         },
@@ -6984,12 +7028,12 @@
             "html": "hof_fastest_teams"
         },
         {
-            "rank": 79,
+            "rank": 81,
             "leaderboard": "Most Accurate Teams",
             "html": "hof_most_accurate_teams"
         },
         {
-            "rank": 52,
+            "rank": 53,
             "leaderboard": "Most Team Page Views",
             "html": "hof_most_team_views"
         },
@@ -7048,7 +7092,7 @@
             "html": "hof_fastest_teams"
         },
         {
-            "rank": 97,
+            "rank": 98,
             "leaderboard": "Most Team Page Views",
             "html": "hof_most_team_views"
         },
@@ -7070,7 +7114,7 @@
             "html": "hof_most_active_teams"
         },
         {
-            "rank": 65,
+            "rank": 66,
             "leaderboard": "Most Team Page Views",
             "html": "hof_most_team_views"
         },
@@ -7102,7 +7146,7 @@
             "html": "hof_most_active_teams"
         },
         {
-            "rank": 63,
+            "rank": 64,
             "leaderboard": "Fastest Teams",
             "html": "hof_fastest_teams"
         },
@@ -7113,28 +7157,6 @@
         },
         {
             "rank": 79,
-            "leaderboard": "Season 40: Top Teams",
-            "html": "season_40_teams"
-        }
-    ],
-    "CCTV": [
-        {
-            "rank": 80,
-            "leaderboard": "Most Active Teams",
-            "html": "hof_most_active_teams"
-        },
-        {
-            "rank": 86,
-            "leaderboard": "Season 50: Top Teams",
-            "html": "season_50_teams"
-        },
-        {
-            "rank": 94,
-            "leaderboard": "Season 51: Top Teams",
-            "html": "season_51_teams"
-        },
-        {
-            "rank": 48,
             "leaderboard": "Season 40: Top Teams",
             "html": "season_40_teams"
         }
@@ -7198,7 +7220,7 @@
             "html": "hof_most_active_teams"
         },
         {
-            "rank": 94,
+            "rank": 95,
             "leaderboard": "Most Team Page Views",
             "html": "hof_most_team_views"
         },
@@ -7240,7 +7262,7 @@
             "html": "hof_most_active_teams"
         },
         {
-            "rank": 96,
+            "rank": 97,
             "leaderboard": "Most Team Page Views",
             "html": "hof_most_team_views"
         },
@@ -7291,7 +7313,7 @@
             "html": "hof_most_active_teams"
         },
         {
-            "rank": 84,
+            "rank": 85,
             "leaderboard": "Most Team Page Views",
             "html": "hof_most_team_views"
         }
@@ -7303,11 +7325,6 @@
             "html": "hof_most_active_teams"
         },
         {
-            "rank": 100,
-            "leaderboard": "Most Team Page Views",
-            "html": "hof_most_team_views"
-        },
-        {
             "rank": 94,
             "leaderboard": "Season 36: Top Teams",
             "html": "season_36_teams"
@@ -7315,7 +7332,7 @@
     ],
     "TREU": [
         {
-            "rank": 89,
+            "rank": 90,
             "leaderboard": "Most Active Teams",
             "html": "hof_most_active_teams"
         },
@@ -7337,19 +7354,19 @@
     ],
     "RRN": [
         {
-            "rank": 90,
+            "rank": 91,
             "leaderboard": "Most Active Teams",
             "html": "hof_most_active_teams"
         },
         {
-            "rank": 68,
+            "rank": 69,
             "leaderboard": "Most Team Page Views",
             "html": "hof_most_team_views"
         }
     ],
     "BETEEV": [
         {
-            "rank": 92,
+            "rank": 94,
             "leaderboard": "Most Active Teams",
             "html": "hof_most_active_teams"
         },
@@ -7424,7 +7441,7 @@
     ],
     "MISERY": [
         {
-            "rank": 6,
+            "rank": 7,
             "leaderboard": "Fastest Teams",
             "html": "hof_fastest_teams"
         },
@@ -7441,7 +7458,7 @@
             "html": "hof_fastest_teams"
         },
         {
-            "rank": 42,
+            "rank": 43,
             "leaderboard": "Most Accurate Teams",
             "html": "hof_most_accurate_teams"
         },
@@ -7489,7 +7506,7 @@
     ],
     "YOURD": [
         {
-            "rank": 16,
+            "rank": 15,
             "leaderboard": "Fastest Teams",
             "html": "hof_fastest_teams"
         },
@@ -7518,12 +7535,12 @@
             "html": "hof_fastest_teams"
         },
         {
-            "rank": 93,
+            "rank": 94,
             "leaderboard": "Most Accurate Teams",
             "html": "hof_most_accurate_teams"
         },
         {
-            "rank": 74,
+            "rank": 75,
             "leaderboard": "Most Team Page Views",
             "html": "hof_most_team_views"
         }
@@ -7547,7 +7564,7 @@
             "html": "hof_fastest_teams"
         },
         {
-            "rank": 96,
+            "rank": 97,
             "leaderboard": "Most Accurate Teams",
             "html": "hof_most_accurate_teams"
         },
@@ -7612,26 +7629,26 @@
     ],
     "KARS": [
         {
-            "rank": 36,
+            "rank": 37,
             "leaderboard": "Fastest Teams",
             "html": "hof_fastest_teams"
         }
     ],
     "WARP": [
         {
-            "rank": 37,
+            "rank": 38,
             "leaderboard": "Fastest Teams",
             "html": "hof_fastest_teams"
         },
         {
-            "rank": 76,
+            "rank": 77,
             "leaderboard": "Most Accurate Teams",
             "html": "hof_most_accurate_teams"
         }
     ],
     "LIN0": [
         {
-            "rank": 38,
+            "rank": 39,
             "leaderboard": "Fastest Teams",
             "html": "hof_fastest_teams"
         },
@@ -7643,19 +7660,19 @@
     ],
     "TEAM": [
         {
-            "rank": 39,
+            "rank": 40,
             "leaderboard": "Fastest Teams",
             "html": "hof_fastest_teams"
         }
     ],
     "D37": [
         {
-            "rank": 40,
+            "rank": 41,
             "leaderboard": "Fastest Teams",
             "html": "hof_fastest_teams"
         },
         {
-            "rank": 34,
+            "rank": 35,
             "leaderboard": "Most Accurate Teams",
             "html": "hof_most_accurate_teams"
         },
@@ -7672,7 +7689,7 @@
             "html": "hof_fastest_teams"
         },
         {
-            "rank": 75,
+            "rank": 76,
             "leaderboard": "Most Accurate Teams",
             "html": "hof_most_accurate_teams"
         }
@@ -7686,12 +7703,12 @@
     ],
     "F1SHE": [
         {
-            "rank": 44,
+            "rank": 45,
             "leaderboard": "Fastest Teams",
             "html": "hof_fastest_teams"
         },
         {
-            "rank": 46,
+            "rank": 47,
             "leaderboard": "Most Accurate Teams",
             "html": "hof_most_accurate_teams"
         },
@@ -7703,12 +7720,12 @@
     ],
     "ENTR": [
         {
-            "rank": 46,
+            "rank": 47,
             "leaderboard": "Fastest Teams",
             "html": "hof_fastest_teams"
         },
         {
-            "rank": 82,
+            "rank": 83,
             "leaderboard": "Most Accurate Teams",
             "html": "hof_most_accurate_teams"
         },
@@ -7740,7 +7757,7 @@
     ],
     "BIGBUM": [
         {
-            "rank": 50,
+            "rank": 51,
             "leaderboard": "Fastest Teams",
             "html": "hof_fastest_teams"
         },
@@ -7752,7 +7769,7 @@
     ],
     "SHRK": [
         {
-            "rank": 52,
+            "rank": 53,
             "leaderboard": "Fastest Teams",
             "html": "hof_fastest_teams"
         },
@@ -7764,26 +7781,26 @@
     ],
     "MYHOMI": [
         {
-            "rank": 54,
+            "rank": 55,
             "leaderboard": "Fastest Teams",
             "html": "hof_fastest_teams"
         }
     ],
     "DYZ": [
         {
-            "rank": 55,
+            "rank": 56,
             "leaderboard": "Fastest Teams",
             "html": "hof_fastest_teams"
         }
     ],
     "STACL": [
         {
-            "rank": 57,
+            "rank": 58,
             "leaderboard": "Fastest Teams",
             "html": "hof_fastest_teams"
         },
         {
-            "rank": 98,
+            "rank": 99,
             "leaderboard": "Most Accurate Teams",
             "html": "hof_most_accurate_teams"
         },
@@ -7805,19 +7822,19 @@
     ],
     "R0Y4LZ": [
         {
-            "rank": 60,
+            "rank": 61,
             "leaderboard": "Fastest Teams",
             "html": "hof_fastest_teams"
         }
     ],
     "SAFFY": [
         {
-            "rank": 62,
+            "rank": 63,
             "leaderboard": "Fastest Teams",
             "html": "hof_fastest_teams"
         },
         {
-            "rank": 38,
+            "rank": 39,
             "leaderboard": "Most Accurate Teams",
             "html": "hof_most_accurate_teams"
         },
@@ -7829,7 +7846,7 @@
     ],
     "SHWARM": [
         {
-            "rank": 65,
+            "rank": 66,
             "leaderboard": "Fastest Teams",
             "html": "hof_fastest_teams"
         },
@@ -7841,63 +7858,63 @@
     ],
     "7R": [
         {
-            "rank": 70,
+            "rank": 71,
             "leaderboard": "Fastest Teams",
             "html": "hof_fastest_teams"
         }
     ],
     "P0ISON": [
         {
-            "rank": 71,
+            "rank": 72,
             "leaderboard": "Fastest Teams",
             "html": "hof_fastest_teams"
         }
     ],
     "SWAG2": [
         {
-            "rank": 72,
+            "rank": 73,
             "leaderboard": "Fastest Teams",
             "html": "hof_fastest_teams"
         }
     ],
     "PEPPER": [
         {
-            "rank": 74,
+            "rank": 75,
             "leaderboard": "Fastest Teams",
             "html": "hof_fastest_teams"
         }
     ],
     "TSUNNY": [
         {
-            "rank": 75,
+            "rank": 76,
             "leaderboard": "Fastest Teams",
             "html": "hof_fastest_teams"
         }
     ],
     "MAJIN": [
         {
-            "rank": 77,
+            "rank": 78,
             "leaderboard": "Fastest Teams",
             "html": "hof_fastest_teams"
         }
     ],
     "N1R": [
         {
-            "rank": 80,
+            "rank": 81,
             "leaderboard": "Fastest Teams",
             "html": "hof_fastest_teams"
         }
     ],
     "STUPIT": [
         {
-            "rank": 81,
+            "rank": 82,
             "leaderboard": "Fastest Teams",
             "html": "hof_fastest_teams"
         }
     ],
     "DONATS": [
         {
-            "rank": 84,
+            "rank": 85,
             "leaderboard": "Fastest Teams",
             "html": "hof_fastest_teams"
         },
@@ -7914,33 +7931,33 @@
     ],
     "NBR": [
         {
-            "rank": 85,
+            "rank": 86,
             "leaderboard": "Fastest Teams",
             "html": "hof_fastest_teams"
         }
     ],
     "DCMY": [
         {
-            "rank": 88,
+            "rank": 89,
             "leaderboard": "Fastest Teams",
             "html": "hof_fastest_teams"
         },
         {
-            "rank": 60,
+            "rank": 61,
             "leaderboard": "Most Accurate Teams",
             "html": "hof_most_accurate_teams"
         }
     ],
     "AUTHOR": [
         {
-            "rank": 89,
+            "rank": 90,
             "leaderboard": "Fastest Teams",
             "html": "hof_fastest_teams"
         }
     ],
     "APLPIE": [
         {
-            "rank": 90,
+            "rank": 91,
             "leaderboard": "Fastest Teams",
             "html": "hof_fastest_teams"
         },
@@ -7952,14 +7969,14 @@
     ],
     "SIL": [
         {
-            "rank": 92,
+            "rank": 93,
             "leaderboard": "Fastest Teams",
             "html": "hof_fastest_teams"
         }
     ],
     "STTRY": [
         {
-            "rank": 93,
+            "rank": 94,
             "leaderboard": "Fastest Teams",
             "html": "hof_fastest_teams"
         },
@@ -7971,7 +7988,7 @@
     ],
     "NTS": [
         {
-            "rank": 94,
+            "rank": 95,
             "leaderboard": "Fastest Teams",
             "html": "hof_fastest_teams"
         },
@@ -7988,21 +8005,21 @@
     ],
     "Y0L01": [
         {
-            "rank": 95,
+            "rank": 96,
             "leaderboard": "Fastest Teams",
             "html": "hof_fastest_teams"
         }
     ],
     "EROS": [
         {
-            "rank": 96,
+            "rank": 97,
             "leaderboard": "Fastest Teams",
             "html": "hof_fastest_teams"
         }
     ],
     "TEZ": [
         {
-            "rank": 97,
+            "rank": 98,
             "leaderboard": "Fastest Teams",
             "html": "hof_fastest_teams"
         },
@@ -8019,19 +8036,19 @@
     ],
     "CFGR": [
         {
-            "rank": 98,
+            "rank": 99,
             "leaderboard": "Fastest Teams",
             "html": "hof_fastest_teams"
         }
     ],
     "EDIAGD": [
         {
-            "rank": 99,
+            "rank": 100,
             "leaderboard": "Fastest Teams",
             "html": "hof_fastest_teams"
         },
         {
-            "rank": 49,
+            "rank": 50,
             "leaderboard": "Most Accurate Teams",
             "html": "hof_most_accurate_teams"
         }
@@ -8064,7 +8081,7 @@
             "html": "hof_most_accurate_teams"
         },
         {
-            "rank": 54,
+            "rank": 55,
             "leaderboard": "Most Team Page Views",
             "html": "hof_most_team_views"
         }
@@ -8118,77 +8135,77 @@
     ],
     "BEST10": [
         {
-            "rank": 43,
+            "rank": 44,
             "leaderboard": "Most Accurate Teams",
             "html": "hof_most_accurate_teams"
         }
     ],
     "10K": [
         {
-            "rank": 44,
+            "rank": 45,
             "leaderboard": "Most Accurate Teams",
             "html": "hof_most_accurate_teams"
         }
     ],
     "LUVIT": [
         {
-            "rank": 50,
+            "rank": 51,
             "leaderboard": "Most Accurate Teams",
             "html": "hof_most_accurate_teams"
         }
     ],
     "PAW5": [
         {
-            "rank": 51,
+            "rank": 52,
             "leaderboard": "Most Accurate Teams",
             "html": "hof_most_accurate_teams"
         }
     ],
     "FFNT": [
         {
-            "rank": 54,
+            "rank": 55,
             "leaderboard": "Most Accurate Teams",
             "html": "hof_most_accurate_teams"
         }
     ],
     "S6S": [
         {
-            "rank": 56,
+            "rank": 57,
             "leaderboard": "Most Accurate Teams",
             "html": "hof_most_accurate_teams"
         }
     ],
     "SO6": [
         {
-            "rank": 58,
+            "rank": 59,
             "leaderboard": "Most Accurate Teams",
             "html": "hof_most_accurate_teams"
         }
     ],
     "F4TES": [
         {
-            "rank": 61,
+            "rank": 62,
             "leaderboard": "Most Accurate Teams",
             "html": "hof_most_accurate_teams"
         }
     ],
     "HJKSD": [
         {
-            "rank": 62,
+            "rank": 63,
             "leaderboard": "Most Accurate Teams",
             "html": "hof_most_accurate_teams"
         }
     ],
     "AUST": [
         {
-            "rank": 63,
+            "rank": 64,
             "leaderboard": "Most Accurate Teams",
             "html": "hof_most_accurate_teams"
         }
     ],
     "FLMNGO": [
         {
-            "rank": 64,
+            "rank": 65,
             "leaderboard": "Most Accurate Teams",
             "html": "hof_most_accurate_teams"
         },
@@ -8200,49 +8217,49 @@
     ],
     "PVVB": [
         {
-            "rank": 70,
+            "rank": 71,
             "leaderboard": "Most Accurate Teams",
             "html": "hof_most_accurate_teams"
         }
     ],
     "HAODE": [
         {
-            "rank": 77,
+            "rank": 78,
             "leaderboard": "Most Accurate Teams",
             "html": "hof_most_accurate_teams"
         }
     ],
     "S4LT": [
         {
-            "rank": 83,
+            "rank": 84,
             "leaderboard": "Most Accurate Teams",
             "html": "hof_most_accurate_teams"
         }
     ],
     "STCLOU": [
         {
-            "rank": 84,
+            "rank": 85,
             "leaderboard": "Most Accurate Teams",
             "html": "hof_most_accurate_teams"
         }
     ],
     "18": [
         {
-            "rank": 88,
+            "rank": 89,
             "leaderboard": "Most Accurate Teams",
             "html": "hof_most_accurate_teams"
         }
     ],
     "BIGHUG": [
         {
-            "rank": 90,
+            "rank": 91,
             "leaderboard": "Most Accurate Teams",
             "html": "hof_most_accurate_teams"
         }
     ],
     "LAW": [
         {
-            "rank": 94,
+            "rank": 95,
             "leaderboard": "Most Accurate Teams",
             "html": "hof_most_accurate_teams"
         },
@@ -8259,21 +8276,9 @@
     ],
     "DOLAA": [
         {
-            "rank": 97,
+            "rank": 98,
             "leaderboard": "Most Accurate Teams",
             "html": "hof_most_accurate_teams"
-        }
-    ],
-    "RPTRZ": [
-        {
-            "rank": 100,
-            "leaderboard": "Most Accurate Teams",
-            "html": "hof_most_accurate_teams"
-        },
-        {
-            "rank": 8,
-            "leaderboard": "Oldest Active Teams",
-            "html": "hof_oldest_active_teams"
         }
     ],
     "UV": [
@@ -8401,7 +8406,7 @@
     ],
     "NTSS": [
         {
-            "rank": 42,
+            "rank": 43,
             "leaderboard": "Most Team Page Views",
             "html": "hof_most_team_views"
         },
@@ -8433,7 +8438,7 @@
     ],
     "SLDR": [
         {
-            "rank": 44,
+            "rank": 45,
             "leaderboard": "Most Team Page Views",
             "html": "hof_most_team_views"
         },
@@ -8465,7 +8470,7 @@
     ],
     "LERS": [
         {
-            "rank": 46,
+            "rank": 47,
             "leaderboard": "Most Team Page Views",
             "html": "hof_most_team_views"
         },
@@ -8502,14 +8507,14 @@
     ],
     "EM0": [
         {
-            "rank": 47,
+            "rank": 48,
             "leaderboard": "Most Team Page Views",
             "html": "hof_most_team_views"
         }
     ],
     "EL1TE": [
         {
-            "rank": 55,
+            "rank": 56,
             "leaderboard": "Most Team Page Views",
             "html": "hof_most_team_views"
         },
@@ -8526,7 +8531,7 @@
     ],
     "NTL": [
         {
-            "rank": 57,
+            "rank": 58,
             "leaderboard": "Most Team Page Views",
             "html": "hof_most_team_views"
         },
@@ -8538,7 +8543,7 @@
     ],
     "LION5": [
         {
-            "rank": 58,
+            "rank": 59,
             "leaderboard": "Most Team Page Views",
             "html": "hof_most_team_views"
         },
@@ -8560,14 +8565,14 @@
     ],
     "KNY": [
         {
-            "rank": 71,
+            "rank": 72,
             "leaderboard": "Most Team Page Views",
             "html": "hof_most_team_views"
         }
     ],
     "OV": [
         {
-            "rank": 76,
+            "rank": 77,
             "leaderboard": "Most Team Page Views",
             "html": "hof_most_team_views"
         },
@@ -8579,14 +8584,14 @@
     ],
     "SCREAM": [
         {
-            "rank": 78,
+            "rank": 79,
             "leaderboard": "Most Team Page Views",
             "html": "hof_most_team_views"
         }
     ],
     "CHIL": [
         {
-            "rank": 82,
+            "rank": 83,
             "leaderboard": "Most Team Page Views",
             "html": "hof_most_team_views"
         },
@@ -8613,7 +8618,7 @@
     ],
     "TPX": [
         {
-            "rank": 83,
+            "rank": 84,
             "leaderboard": "Most Team Page Views",
             "html": "hof_most_team_views"
         },
@@ -8645,21 +8650,21 @@
     ],
     "T4O": [
         {
-            "rank": 85,
+            "rank": 86,
             "leaderboard": "Most Team Page Views",
             "html": "hof_most_team_views"
         }
     ],
     "BKYS": [
         {
-            "rank": 90,
+            "rank": 91,
             "leaderboard": "Most Team Page Views",
             "html": "hof_most_team_views"
         }
     ],
     "2GRS": [
         {
-            "rank": 91,
+            "rank": 92,
             "leaderboard": "Most Team Page Views",
             "html": "hof_most_team_views"
         },
@@ -8671,7 +8676,7 @@
     ],
     "CR0W5": [
         {
-            "rank": 92,
+            "rank": 93,
             "leaderboard": "Most Team Page Views",
             "html": "hof_most_team_views"
         },
@@ -8693,7 +8698,7 @@
     ],
     "MEMEZ": [
         {
-            "rank": 99,
+            "rank": 100,
             "leaderboard": "Most Team Page Views",
             "html": "hof_most_team_views"
         },
@@ -8701,6 +8706,13 @@
             "rank": 93,
             "leaderboard": "Season 37: Top Teams",
             "html": "season_37_teams"
+        }
+    ],
+    "RPTRZ": [
+        {
+            "rank": 8,
+            "leaderboard": "Oldest Active Teams",
+            "html": "hof_oldest_active_teams"
         }
     ],
     "XXMADX": [
@@ -9147,7 +9159,7 @@
     ],
     "300R": [
         {
-            "rank": 64,
+            "rank": 65,
             "leaderboard": "Most Races Per Day",
             "html": "hof_most_team_races_per_day"
         },
@@ -9217,7 +9229,7 @@
     ],
     "JSTC": [
         {
-            "rank": 87,
+            "rank": 89,
             "leaderboard": "Most Races Per Day",
             "html": "hof_most_team_races_per_day"
         }
@@ -10797,6 +10809,13 @@
             "html": "season_50_teams"
         }
     ],
+    "UP": [
+        {
+            "rank": 28,
+            "leaderboard": "Season 50: Top Teams",
+            "html": "season_50_teams"
+        }
+    ],
     "HLWN": [
         {
             "rank": 31,
@@ -11011,13 +11030,6 @@
     "W7VE": [
         {
             "rank": 83,
-            "leaderboard": "Season 50: Top Teams",
-            "html": "season_50_teams"
-        }
-    ],
-    "EXTRME": [
-        {
-            "rank": 84,
             "leaderboard": "Season 50: Top Teams",
             "html": "season_50_teams"
         }
