@@ -798,7 +798,12 @@ form {
 }
 
 .my-profile-link {
+	text-decoration: none;
 	color: #92daf7;
+}
+
+.my-profile-link:hover {
+	text-decoration: underline;
 }
 
 .video-link {
