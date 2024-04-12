@@ -997,6 +997,104 @@ h2 {
 	color: #fff;
 }
 
+.relative-box {
+	position: relative;
+}
+
+.owners-button {
+	bottom: 12px;
+	left: 43%;
+	right: 0;
+	width: fit-content;
+	position: absolute;
+	margin-left: auto;
+	margin-right: auto;
+	appearance: none;
+	background-color: #FAFBFC;
+	border: 1px solid rgba(27, 31, 35, 0.15);
+	border-radius: 6px;
+	box-shadow: rgba(27, 31, 35, 0.04) 0 1px 0, rgba(255, 255, 255, 0.25) 0 1px 0 inset;
+	box-sizing: border-box;
+	color: #24292E;
+	cursor: pointer;
+	display: inline-block;
+	font-family: "Montserrat", sans-serif;
+	font-size: 11px;
+	font-weight: 800;
+	list-style: none;
+	padding: 1px 5px;
+	transition: background-color 0.2s cubic-bezier(0.3, 0, 0.5, 1);
+	user-select: none;
+	-webkit-user-select: none;
+	touch-action: manipulation;
+	vertical-align: middle;
+	white-space: nowrap;
+	word-wrap: break-word;
+}
+   
+.owners-button:hover {
+	/*background-color: #F3F4F6;*/
+	background-color: #dadada;
+	text-decoration: none;
+	transition-duration: 0.1s;
+}
+
+.owners-button:focus {
+	outline: 1px transparent;
+}
+
+.owners-button:before {
+	display: none;
+}
+
+.car-owners-display-box {
+	/*background-color: #303343;*/
+	/*background-color: #a5a5a5;*/
+	background-color: #3B3D4C;
+	margin-left: 4%;
+	margin-right: 4%;
+	padding-left: 2%;
+	padding-top: 8px;
+	padding-bottom: 15px;
+	border-left: 2px solid white;
+	border-right: 2px solid white;
+	max-width: 928px;
+}
+
+.car-owners-header {
+	font-family: "Montserrat", sans-serif;
+	font-size: 16px;
+	text-align: center;
+	color: #000000;
+	font-weight: bold;
+	padding-bottom: 6px;
+}
+
+.car-owners {
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+}
+
+.car-owner {
+	font-family: "Montserrat", sans-serif;
+	font-weight: normal;
+	color: #fff;
+	font-size: 13px;
+	width: 24%;
+}
+
+.car-owner-name {
+	text-decoration: none;
+	color: #92daf7;
+	padding-left: 1px;
+	margin-bottom: 1px;
+}
+
+.car-owner-name:hover {
+	text-decoration: underline;
+}
+
 @font-face {
 	font-family: 'nitrocash';
 	/*src: url(/static/fonts/nitro-cash.ttf) format("ttf");*/

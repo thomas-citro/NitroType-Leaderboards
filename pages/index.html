@@ -212,6 +212,24 @@
 			}
 			searchResultsBox.style.display = "block"; // Display search results
 		}
+
+		function showCarOwners(boxNumber) {
+			var ownersBox = document.getElementById("owners-box-" + boxNumber.toString());
+			var showButton = document.getElementById("show-owners-button-" + boxNumber.toString());
+			var hideButton = document.getElementById("hide-owners-button-" + boxNumber.toString());
+			ownersBox.style.display = "block";
+			showButton.style.display = "none";
+			hideButton.style.display = "block";
+		}
+
+		function hideCarOwners(boxNumber) {
+			var ownersBox = document.getElementById("owners-box-" + boxNumber.toString());
+			var showButton = document.getElementById("show-owners-button-" + boxNumber.toString());
+			var hideButton = document.getElementById("hide-owners-button-" + boxNumber.toString());
+			ownersBox.style.display = "none";
+			showButton.style.display = "block";
+			hideButton.style.display = "none";
+		}
 	</script>
 </head>
 <body>
