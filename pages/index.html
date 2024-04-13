@@ -19,6 +19,7 @@
 	<script>
 		var loadingHTML = '<div class="lds-spinner"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>';
 		var searchSelection = "none";
+		var carOwnersPageNums = [];
 
 		function changeTab(tabName) {
 			document.getElementById('background-box').innerHTML = loadingHTML;
@@ -213,22 +214,74 @@
 			searchResultsBox.style.display = "block"; // Display search results
 		}
 
-		function showCarOwners(boxNumber) {
+		function showCarOwners(boxNumber, numPages, numBoxes) {
+			initializePageNumbersForBoxes(numBoxes);
 			var ownersBox = document.getElementById("owners-box-" + boxNumber.toString());
 			var showButton = document.getElementById("show-owners-button-" + boxNumber.toString());
 			var hideButton = document.getElementById("hide-owners-button-" + boxNumber.toString());
+			var carOwnersDiv = document.getElementById("car-owners-" + boxNumber.toString() + "-" + carOwnersPageNums[boxNumber - 1].toString());
 			ownersBox.style.display = "block";
 			showButton.style.display = "none";
 			hideButton.style.display = "block";
+			carOwnersDiv.style.display = "flex";
+			if (numPages > 1) {
+				hideOrShowNavButtons(boxNumber, numPages);
+			}
 		}
 
-		function hideCarOwners(boxNumber) {
+		function hideCarOwners(boxNumber, numPages, numBoxes) {
+			initializePageNumbersForBoxes(numBoxes);
 			var ownersBox = document.getElementById("owners-box-" + boxNumber.toString());
 			var showButton = document.getElementById("show-owners-button-" + boxNumber.toString());
 			var hideButton = document.getElementById("hide-owners-button-" + boxNumber.toString());
+			var carOwnersDiv = document.getElementById("car-owners-" + boxNumber.toString() + "-" + carOwnersPageNums[boxNumber - 1].toString());
 			ownersBox.style.display = "none";
 			showButton.style.display = "block";
 			hideButton.style.display = "none";
+			carOwnersDiv.style.display = "none";
+		}
+
+		function nextOwnersPage(boxNumber, numPages, numBoxes) {
+			initializePageNumbersForBoxes(numBoxes);
+			var curCarOwnersDiv = document.getElementById("car-owners-" + boxNumber.toString() + "-" + carOwnersPageNums[boxNumber - 1].toString());
+			curCarOwnersDiv.style.display = "none";
+			carOwnersPageNums[boxNumber - 1]++;
+			var newCarOwnersDiv = document.getElementById("car-owners-" + boxNumber.toString() + "-" + carOwnersPageNums[boxNumber - 1].toString());
+			newCarOwnersDiv.style.display = "flex";
+			hideOrShowNavButtons(boxNumber, numPages);
+		}
+
+		function prevOwnersPage(boxNumber, numPages, numBoxes) {
+			initializePageNumbersForBoxes(numBoxes);
+			var curCarOwnersDiv = document.getElementById("car-owners-" + boxNumber.toString() + "-" + carOwnersPageNums[boxNumber - 1].toString());
+			curCarOwnersDiv.style.display = "none";
+			carOwnersPageNums[boxNumber - 1]--;
+			var newCarOwnersDiv = document.getElementById("car-owners-" + boxNumber.toString() + "-" + carOwnersPageNums[boxNumber - 1].toString());
+			newCarOwnersDiv.style.display = "flex";
+			hideOrShowNavButtons(boxNumber, numPages);
+		}
+
+		function initializePageNumbersForBoxes(numBoxes) {
+			if (carOwnersPageNums.length != numBoxes) {
+				for (let i = 0; i < numBoxes; i++) {
+					carOwnersPageNums.push(1);
+				}
+			}
+		}
+
+		function hideOrShowNavButtons(boxNumber, numPages) {
+			var nextButton = document.getElementById("next-owners-button-" + boxNumber.toString());
+			var prevButton = document.getElementById("prev-owners-button-" + boxNumber.toString());
+			if (carOwnersPageNums[boxNumber - 1] == 1) {
+				prevButton.style.display = "none";
+			} else {
+				prevButton.style.display = "block";
+			}
+			if (carOwnersPageNums[boxNumber - 1] == numPages) {
+				nextButton.style.display = "none";
+			} else {
+				nextButton.style.display = "block";
+			}
 		}
 	</script>
 </head>
