@@ -166,8 +166,6 @@ body {
 	align-self: center;
 	margin-top: 10px;
 	margin-bottom: 10px;
-	margin-left: auto;
-	margin-right: auto;
 }
 
 li {
@@ -1164,6 +1162,17 @@ h2 {
 
 .owners-nav-button:before {
 	display: none;
+}
+
+#speed-zones-graph-div {
+	/*display: flex;
+	align-self: center;
+	margin-left: auto;
+	margin-right: auto;*/
+	margin-top: 10px;
+	margin-bottom: 10px;
+	width: 100%;
+	height: 820px;
 }
 
 @font-face {

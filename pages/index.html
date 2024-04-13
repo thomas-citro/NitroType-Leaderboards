@@ -16,6 +16,8 @@
 		gtag('js', new Date());
 		gtag('config', 'G-62TWY6L47K');
 	</script>
+	<!-- Plotly.js -->
+	<script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
 	<script>
 		var loadingHTML = '<div class="lds-spinner"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>';
 		var searchSelection = "none";
@@ -282,6 +284,102 @@
 			} else {
 				nextButton.style.display = "block";
 			}
+		}
+
+		function openSiteStatsPage(speedZonesAll, speedZonesActive, speedZonesGold) {
+			changeTab('site_stats');
+			var zoneLabels = [
+				'1-10 wpm ', '11-20 wpm ', '21-25 wpm ', '26-30 wpm ', '31-35 wpm ', '36-40 wpm ', 
+				'41-45 wpm ', '46-50 wpm ', '51-55 wpm ', '56-60 wpm ', '61-65 wpm ', '66-70 wpm ', 
+				'71-80 wpm ', '81-90 wpm ', '91-100 wpm ', '101-110 wpm ', '111-120 wpm ', 
+				'121-140 wpm ', '141-160 wpm ', '161-180 wpm ', '181+ wpm '
+			];
+			zoneLabels.reverse();
+			speedZonesAll.reverse();
+			speedZonesActive.reverse();
+			speedZonesGold.reverse();
+			var trace1 = {
+				x: speedZonesAll,
+				y: zoneLabels,
+				name: 'All Players',
+				type: 'bar',
+				orientation: 'h',
+				marker: {
+					color: 'blue'
+				}
+			};
+			var trace2 = {
+				x: speedZonesActive,
+				y: zoneLabels,
+				name: 'Active Players',
+				type: 'bar',
+				orientation: 'h',
+				marker: {
+					color: 'green'
+				}
+			};
+			var trace3 = {
+				x: speedZonesGold,
+				y: zoneLabels,
+				name: 'Gold Members',
+				type: 'bar',
+				orientation: 'h',
+				marker: {
+					color: 'gold'
+				}
+			};
+			var data = [trace1, trace2, trace3];
+			var layout = {
+				barmode: 'group',
+				legend: {
+					orientation: 'h',
+					xanchor: 'center',
+					x: 0.45,
+					y: 1.05
+				},
+				xaxis: {
+					title: 'Number of Players',
+					showline: true,
+					linewidth: 1,
+					linecolor: 'black'
+				},
+				yaxis: {
+					//title: 'Speed Zone',
+					title: '',
+					showline: true,
+					linewidth: 1,
+					linecolor: 'black'
+				},
+				title: {
+					text: 'Player Speed Zones Distribution',
+					font: {
+						family: 'Arial, sans-serif',
+						size: 22,
+						color: '#000000',
+						weight: 'bold'
+					}
+				},
+				plot_bgcolor: 'rgb(240, 240, 240)',
+				margin: {
+					l: 85,
+					r: 10
+				}
+			};
+
+			var observer = new MutationObserver(function(mutations) {
+				mutations.forEach(function(mutation) {
+					if (document.getElementById('speed-zones-graph-div')) {
+						observer.disconnect();
+						divForGraph = document.getElementById('speed-zones-graph-div');
+						Plotly.newPlot(divForGraph, data, layout);
+					}
+				});
+			});
+			
+			observer.observe(document.body, {
+				childList: true,
+				subtree: true
+			});
 		}
 	</script>
 </head>
