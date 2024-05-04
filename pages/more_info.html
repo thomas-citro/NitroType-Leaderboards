@@ -58,7 +58,7 @@
 				</div>
 			</button>
 	
-			<button class="tab not-active" onclick="openSiteStatsPage([268685, 1276183, 805218, 723340, 577579, 434127, 318531, 236337, 175982, 129737, 96640, 72315, 93692, 50989, 27342, 14594, 8802, 49907, 31357, 1306, 2188], [1201, 26567, 28996, 33745, 34005, 30070, 24898, 20424, 15910, 12335, 9450, 7386, 9754, 5535, 3081, 1646, 905, 868, 201, 70, 78], [52, 1121, 1506, 2108, 2297, 2189, 2131, 1929, 1845, 1780, 1546, 1386, 2413, 1932, 1537, 994, 687, 657, 161, 50, 48])">
+			<button class="tab not-active" onclick="openSiteStatsPage([269171, 1277973, 806261, 724447, 578464, 434907, 319128, 236726, 176405, 130033, 96847, 72499, 93957, 51126, 27482, 14634, 8851, 49883, 31361, 1314, 2197], [1237, 26914, 29401, 34208, 34398, 30493, 25172, 20565, 16141, 12523, 9539, 7460, 9871, 5585, 3153, 1660, 940, 839, 199, 73, 81], [55, 1117, 1512, 2124, 2275, 2205, 2152, 1908, 1845, 1793, 1513, 1385, 2419, 1958, 1527, 1012, 699, 632, 154, 51, 49])">
 				<div class="icon-text-container">
 					<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" id="icon-chart" width="18" height="18" fill="white">
 						<path d="M7 19H1V8h6v11zm8-18H9v18h6V1zm8 11h-6v7h6v-7zm1 9H0v2h24v-2z" />
@@ -92,14 +92,14 @@
 					<div id="user-search-container" style="display: none;">
 						<form class="search-form">
 							<label for="username-input" style="margin-right: 6px;">Enter username:</label>
-							<input type="text" id="user-search-input" name="username-input" placeholder="moilyn" onkeydown="handleKeyPress(event, 'user')" oninput="formatText(this, 'user')"/>
+							<input type="text" class="search-input-box" id="user-search-input" name="username-input" placeholder="moilyn" onkeydown="handleKeyPress(event, 'user')" oninput="formatText(this, 'user')"/>
 							<input type="button" value="OK" onclick="searchSubmit('user')"/>
 						</form>
 					</div>
 					<div id="team-search-container" style="display: none;">
 						<form class="search-form">
 							<label for="team-tag-input" style="margin-right: 6px;">Enter team tag:</label>
-							<input type="text" id="team-search-input" name="team-tag-input" placeholder="SSH" onkeydown="handleKeyPress(event, 'team')" oninput="formatText(this, 'team')"/>
+							<input type="text" class="search-input-box" id="team-search-input" name="team-tag-input" placeholder="SSH" onkeydown="handleKeyPress(event, 'team')" oninput="formatText(this, 'team')"/>
 							<input type="button" value="OK" onclick="searchSubmit('team')"/>
 						</form>
 					</div>
@@ -127,8 +127,8 @@
 				<h2>Data Updates</h2>
 				<ul class="after-header">
 					<li>Data updates are performed daily. Join our Discord server to receive daily update pings: <a class="my-profile-link" href="https://discord.gg/wTmzbRm5eS" target="_blank">https://discord.gg/wTmzbRm5eS</a></li>
-					<li>Number of users in my database: <span style="color: #F9D034;">6,350,321</span></li>
-					<li>Number of teams in my database: <span style="color: #F9D034;">268,352</span></li>
+					<li>Number of users in my database: <span style="color: #F9D034;">6,357,960</span></li>
+					<li>Number of teams in my database: <span style="color: #F9D034;">269,858</span></li>
 				</ul>
 				<br/>
 				<h2>Special Requirements</h2>
@@ -222,7 +222,7 @@
 				<br/>
 				<h2>Upcoming Updates</h2>
 				<ul class="after-header">
-					<li>To be determined...</li>
+					<li>Adding 'Most Leaderboards Placed' leaderboards for players and teams in hall of fame.</li>
 				</ul>
 				<br/>
 				<h2>Site Update History</h2>
@@ -413,6 +413,13 @@
 					<li>V3.0.1 (5/3/24)</li>
 					<ul>
 						<li>Implemented some minor edits and bug fixes.</li>
+					</ul>
+					<li>V3.1 (5/4/24)</li>
+					<ul>
+						<li>Added magnifying glass icon to user/team search boxes.</li>
+						<li>The user's display name is now shown in parentheses upon successful user search.</li>
+						<li>Added functionality to user/team search so that you can click a leaderboard from the search results and it will automatically navigate you there.</li>
+						<li>Made it so that when you return to the 'More Info' page, it will keep the previous search results open.</li>
 					</ul>
 				</ul>
 			</div>

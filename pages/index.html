@@ -20,15 +20,33 @@
 	<script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
 	<script>
 		var loadingHTML = '<div class="lds-spinner"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>';
-		var searchSelection = "none";
+		var searchSelection;
+		var lastSearch = '';
 		var carOwnersPageNums = [];
+		var searchResultRowFound = false;
 
-		function changeTab(tabName) {
-			document.getElementById('background-box').innerHTML = loadingHTML;
+		function changeTab(tabName, pageUp = false) {
 			fetch(`/tab/${tabName}`)
 				.then(response => response.text())
 				.then(data => {
 					document.getElementById('background-box').innerHTML = data;
+					if (pageUp) {
+						document.documentElement.scrollTop = 0; // For modern browsers
+						document.body.scrollTop = 0; // For older browsers
+					}
+					if (tabName == 'more_info') {
+						toggleButtonClasses();
+						toggleContainerDisplays();
+						if (searchSelection == "user") {
+							var inputBox = document.getElementById("user-search-input");
+							inputBox.value = lastSearch;
+							searchSubmit("user");
+						} else if (searchSelection == "team") {
+							var inputBox = document.getElementById("team-search-input");
+							inputBox.value = lastSearch;
+							searchSubmit("team");
+						}
+					}
 				})
 				.catch(error => console.error('Error:', error));
 		}
@@ -54,6 +72,7 @@
 		}
 
 		window.onload = function() {
+			searchSelection = "none";
 			changeTab('top_racers_season');
 			loadDataUpdateTimestamp();
 		}
@@ -130,6 +149,7 @@
 			if (searchType == "user") {
 				var inputBox = document.getElementById("user-search-input");
 				var username = inputBox.value;
+				lastSearch = inputBox.value;
 				fetch(`/users_in_lbs/${username}`)
 					.then(response => response.text())
 					.then(data => {
@@ -139,6 +159,7 @@
 			} else {
 				var inputBox = document.getElementById("team-search-input");
 				var teamTag = inputBox.value;
+				lastSearch = inputBox.value;
 				fetch(`/teams_in_lbs/${teamTag}`)
 					.then(response => response.text())
 					.then(data => {
@@ -170,13 +191,11 @@
 		function displayResults(searchType, response, searchInput) {
 			var searchResultsBox = document.getElementById("search-results-container");
 			searchResultsBox.style.display = "none"; // We don't want to display it until after we've formatted the results
-			document.querySelectorAll('.search-entry').forEach(element => {
-				element.textContent = searchInput;
-			})
 			var userNotFound = document.getElementById("search-results-user-not-found");
 			var userFound = document.getElementById("search-results-user-found");
 			var teamNotFound = document.getElementById("search-results-team-not-found");
 			var teamFound = document.getElementById("search-results-team-found");
+			var searchInputDisplay = searchInput;
 			userNotFound.style.display = "none";
 			userFound.style.display = "none";
 			teamNotFound.style.display = "none";
@@ -188,9 +207,9 @@
 					teamNotFound.style.display = "block";
 				}
 			} else {
-				console.log("response:", response);
+				//console.log("response:", response);
 				var responseObj = JSON.parse(response);
-				console.log("responseObj:", responseObj);
+				//console.log("responseObj:", responseObj);
 				var responseObjList;
 				var htmlToWrite = "";
 				var resultsList;
@@ -198,6 +217,7 @@
 				if (searchType == "user") {
 					responseObjList = responseObj.rankings
 					userFound.style.display = "block";
+					searchInputDisplay += ' (' + responseObj.display_name + ')'
 					resultsListHtml = document.getElementById("user-search-found-list");
 				} else {
 					responseObjList = responseObj
@@ -207,12 +227,17 @@
 				for (var i = 0; i < responseObjList.length; i++) {
 					var myDict = responseObjList[i];
 					htmlToWrite += "<li>";
-					htmlToWrite += '<span style="color: #F9D034;">' + responseObjList[i].leaderboard + '</span> - ranked #' + responseObjList[i].rank;
+					htmlToWrite += '<span style="color: #F9D034;" onclick="goToSearchResult(';
+					htmlToWrite += "'" + responseObjList[i].html + "', '" + searchType + "', '" + searchInput + "'";
+					htmlToWrite += ')" class="leaderboard-of-search-result">' + responseObjList[i].leaderboard + '</span> - ranked #' + responseObjList[i].rank;
 					htmlToWrite += "</li>";
 				}
 				htmlToWrite += "</ol>";
 				resultsListHtml.innerHTML = htmlToWrite;
 			}
+			document.querySelectorAll('.search-entry').forEach(element => {
+				element.textContent = searchInputDisplay;
+			})
 			searchResultsBox.style.display = "block"; // Display search results
 		}
 
@@ -283,6 +308,43 @@
 				nextButton.style.display = "none";
 			} else {
 				nextButton.style.display = "block";
+			}
+		}
+
+		function goToSearchResult(tab, searchType, searchInput) {
+			changeTab(tab, true);
+			searchResultRowFound = false;
+			intervalId = setInterval(() => findRowForSearch(searchType, searchInput), 200); // check every 200 milliseconds
+			setTimeout(() => {
+				if (!searchResultRowFound) {
+					console.log("Element not found after 5 seconds.");
+				}
+				clearInterval(intervalId);
+			}, 3000); // 3 second timeout
+		}
+
+		function findRowForSearch(searchType, searchInput) {
+			if (searchResultRowFound) {
+				return;
+			}
+			const links = document.querySelectorAll('a');
+			for (let link of links) {
+				const href = link.getAttribute('href');
+				if (href && ((href.includes('nitrotype.com/racer/') && searchType == 'user') || (href.includes('nitrotype.com/team/') && searchType == 'team'))) {
+					if (href.includes(searchInput)) {
+						link.scrollIntoView({
+							behavior: 'smooth',
+							block: 'center'
+						});
+						searchResultRowFound = true;
+						let tableRow = link.parentElement.parentElement;
+						//tableRow.classList.add('table-row--highlighted');
+						//setTimeout(() => {
+						//	tableRow.classList.remove('table-row--highlighted');
+						//}, 1000); // 1 second delay
+						break;
+					}
+				}
 			}
 		}
 
