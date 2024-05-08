@@ -556,10 +556,56 @@ button {
 	background-image: url(/static/images/searchicon.png);
 	background-repeat: no-repeat;
 	padding-left: 30px;
-	width: 25%;
 	background-position-x: 3px;
 	background-size: contain;
-	/*margin-right: 3px;*/
+	width: 85%;
+}
+
+.search-ok-button {
+	width: 15%;
+}
+
+.search-suggestions {
+	width: 86%;
+	border-left: 1px solid #61626E;
+	border-right: 1px solid #61626E;
+	border-bottom: 1px solid #61626E;
+	background-color: white;
+}
+
+.search-inputs-suggestions {
+	display: flex;
+	flex-direction: column;
+	width: 35%;
+}
+
+.suggestions-list {
+	list-style: none;
+	width: 100%;
+	padding: 0;
+	margin-top: 2px;
+	margin-bottom: 0px;
+}
+
+.suggestion {
+	font-family: "Montserrat", sans-serif;
+	color: black;
+	font-size: 12px;
+	padding-bottom: 2px;
+	margin: 0;
+	background-color: white;
+	padding-left: 1px;
+	text-overflow: ellipsis;
+}
+
+.suggestion:hover {
+	background-color: #C9C9C9;
+}
+
+.search-inputs {
+	display: flex;
+	flex-direction: row;
+	height: 25.6px;
 }
 
 .multi-page-title {

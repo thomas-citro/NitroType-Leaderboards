@@ -133,11 +133,13 @@
 				teamContainer.style.display = "block";
 				inputBox = document.getElementById("team-search-input");
 				inputBox.focus();
+				getSearchSuggestions('', 'team');
 			} else if (searchSelection == "user") {
 				userContainer.style.display = "block";
 				teamContainer.style.display = "none";
 				inputBox = document.getElementById("user-search-input");
 				inputBox.focus();
+				getSearchSuggestions('', 'user');
 			} else {
 				userContainer.style.display = "none";
 				teamContainer.style.display = "none";
@@ -146,6 +148,7 @@
 
 		function searchSubmit(searchType) {
 			var filePath = "";
+			getSearchSuggestions('', searchType);
 			if (searchType == "user") {
 				var inputBox = document.getElementById("user-search-input");
 				var username = inputBox.value;
@@ -177,15 +180,28 @@
 			}
 		}
 
+		/*function handleBlur(searchType) {
+			getSearchSuggestions('', searchType);
+		}*/
+
+		function handleFocus(input, searchType) {
+			if (input.value.length != 0) {
+				formatText(input, searchType);
+			}
+		}
+
 		function formatText(input, searchType) {
-			var value = input.value;
+			let value = input.value;
+			let newValue;
 			if (searchType == "user") {
 				value = value.replace(/[^a-zA-Z0-9_]/g, '');
-				input.value = value.toLowerCase().substring(0, 32);
+				newValue = value.toLowerCase().substring(0, 32);
 			} else {
 				value = value.replace(/[^a-zA-Z0-9]/g, '');
-				input.value = value.toUpperCase().substring(0, 6);
+				newValue = value.toUpperCase().substring(0, 6);
 			}
+			input.value = newValue;
+			getSearchSuggestions(newValue, searchType);
 		}
 
 		function displayResults(searchType, response, searchInput) {
@@ -207,9 +223,7 @@
 					teamNotFound.style.display = "block";
 				}
 			} else {
-				//console.log("response:", response);
 				var responseObj = JSON.parse(response);
-				//console.log("responseObj:", responseObj);
 				var responseObjList;
 				var htmlToWrite = "";
 				var resultsList;
@@ -317,7 +331,7 @@
 			intervalId = setInterval(() => findRowForSearch(searchType, searchInput), 200); // check every 200 milliseconds
 			setTimeout(() => {
 				if (!searchResultRowFound) {
-					console.log("Element not found after 5 seconds.");
+					console.log("Element not found after 3 seconds.");
 				}
 				clearInterval(intervalId);
 			}, 3000); // 3 second timeout
@@ -327,25 +341,77 @@
 			if (searchResultRowFound) {
 				return;
 			}
-			const links = document.querySelectorAll('a');
-			for (let link of links) {
-				const href = link.getAttribute('href');
-				if (href && ((href.includes('nitrotype.com/racer/') && searchType == 'user') || (href.includes('nitrotype.com/team/') && searchType == 'team'))) {
-					if (href.includes(searchInput)) {
-						link.scrollIntoView({
-							behavior: 'smooth',
-							block: 'center'
-						});
-						searchResultRowFound = true;
-						let tableRow = link.parentElement.parentElement;
-						//tableRow.classList.add('table-row--highlighted');
-						//setTimeout(() => {
-						//	tableRow.classList.remove('table-row--highlighted');
-						//}, 1000); // 1 second delay
-						break;
-					}
-				}
+			let tableRow = document.querySelector('tr[lookupID="' + searchInput + '"]');
+			if (tableRow !== null) {
+				tableRow.scrollIntoView({
+					behavior: 'smooth',
+					block: 'center'
+				});
+				searchResultRowFound = true;
+				//tableRow.classList.add('table-row--highlighted');
+				//setTimeout(() => {
+				//	tableRow.classList.remove('table-row--highlighted');
+				//}, 1000); // 1 second delay
 			}
+		}
+
+		function getSearchSuggestions(currentInput, searchType) {
+			if (currentInput.trim().length == 0) {
+				showSearchSuggestions(searchType, "N/A", currentInput);
+				return;
+			}
+			if (searchType == "user") {
+				fetch(`/user_suggestions/${currentInput}`)
+					.then(response => response.text())
+					.then(data => {
+						showSearchSuggestions('user', data, currentInput);
+					})
+					.catch(error => console.error('Error:', error));
+			} else {
+				fetch(`/team_suggestions/${currentInput}`)
+					.then(response => response.text())
+					.then(data => {
+						showSearchSuggestions('team', data, currentInput);
+					})
+					.catch(error => console.error('Error:', error));
+			}
+		}
+
+		function suggestionClick(item, searchType) {
+			let inputContainer = document.getElementById(searchType + "-search-input");
+			inputContainer.value = item;
+			searchSubmit(searchType);
+		}
+
+		function showSearchSuggestions(searchType, response) {
+			let container = document.getElementById(searchType + "-suggestions");
+			container.style.display = "none";
+			if (response == "N/A") {
+				return;
+			}
+			let suggestionsHtml = "";
+			suggestionsHtml += '<ul class="suggestions-list">';
+			let responseList= JSON.parse(response);
+			for (let j = 0; j < responseList.length; j++) {
+				let curItem;
+				if (searchType == "user") {
+					curItem = responseList[j].substring(0, responseList[j].indexOf(" ("));
+				} else {
+					curItem = responseList[j];
+				}
+				suggestionsHtml += '<li class="suggestion" onclick="suggestionClick(';
+				suggestionsHtml += "'";
+				suggestionsHtml += curItem;
+				suggestionsHtml += "', '";
+				suggestionsHtml += searchType;
+				suggestionsHtml += "'";
+				suggestionsHtml += ')">';
+				suggestionsHtml += responseList[j];
+				suggestionsHtml += '</li>';
+			}
+			suggestionsHtml += '</ul>';
+			container.innerHTML = suggestionsHtml;
+			container.style.display = "block";
 		}
 
 		function openSiteStatsPage(speedZonesAll, speedZonesActive, speedZonesGold) {

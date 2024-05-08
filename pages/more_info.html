@@ -92,15 +92,25 @@
 					<div id="user-search-container" style="display: none;">
 						<form class="search-form">
 							<label for="username-input" style="margin-right: 6px;">Enter username:</label>
-							<input type="text" class="search-input-box" id="user-search-input" name="username-input" placeholder="moilyn" onkeydown="handleKeyPress(event, 'user')" oninput="formatText(this, 'user')"/>
-							<input type="button" value="OK" onclick="searchSubmit('user')"/>
+							<div class="search-inputs-suggestions">
+								<div class="search-inputs">
+									<input type="text" class="search-input-box" id="user-search-input" name="username-input" placeholder="moilyn" onkeydown="handleKeyPress(event, 'user')" oninput="formatText(this, 'user')" onfocus="handleFocus(this, 'user')"/>
+									<input type="button" class="search-ok-button" value="OK" onclick="searchSubmit('user')"/>
+								</div>
+								<div class="search-suggestions" id="user-suggestions"></div>
+							</div>
 						</form>
 					</div>
 					<div id="team-search-container" style="display: none;">
 						<form class="search-form">
 							<label for="team-tag-input" style="margin-right: 6px;">Enter team tag:</label>
-							<input type="text" class="search-input-box" id="team-search-input" name="team-tag-input" placeholder="SSH" onkeydown="handleKeyPress(event, 'team')" oninput="formatText(this, 'team')"/>
-							<input type="button" value="OK" onclick="searchSubmit('team')"/>
+							<div class="search-inputs-suggestions">
+								<div class="search-inputs">
+									<input type="text" class="search-input-box" id="team-search-input" name="team-tag-input" placeholder="SSH" onkeydown="handleKeyPress(event, 'team')" oninput="formatText(this, 'team')" onfocus="handleFocus(this, 'team')"/>
+									<input type="button" class="search-ok-button" value="OK" onclick="searchSubmit('team')"/>
+								</div>
+								<div class="search-suggestions" id="team-suggestions"></div>
+							</div>
 						</form>
 					</div>
 					<div id="search-results-container" style="display: none;">
@@ -420,6 +430,11 @@
 						<li>The user's display name is now shown in parentheses upon successful user search.</li>
 						<li>Added functionality to user/team search so that you can click a leaderboard from the search results and it will automatically navigate you there.</li>
 						<li>Made it so that when you return to the 'More Info' page, it will keep the previous search results open.</li>
+					</ul>
+					<li>V3.2 (5/8/24)</li>
+					<ul>
+						<li>Autocomplete/suggestions functionality added to search.</li>
+						<li>Can search by display name now as well.</li>
 					</ul>
 				</ul>
 			</div>
