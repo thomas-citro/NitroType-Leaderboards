@@ -458,6 +458,7 @@
 			};
 			var data = [trace1, trace2, trace3];
 			var layout = {
+				width: 920,
 				barmode: 'group',
 				legend: {
 					orientation: 'h',
@@ -469,14 +470,20 @@
 					title: 'Number of Players',
 					showline: true,
 					linewidth: 1,
-					linecolor: 'black'
+					linecolor: 'black',
+					fixedrange: true,
+					//tickformat: '.3s'
+					tickformat: ','
 				},
 				yaxis: {
 					//title: 'Speed Zone',
 					title: '',
 					showline: true,
 					linewidth: 1,
-					linecolor: 'black'
+					linecolor: 'black',
+					fixedrange: true,
+					//tickformat: '.3s'
+					tickformat: ','
 				},
 				title: {
 					text: 'Player Speed Zones Distribution',
