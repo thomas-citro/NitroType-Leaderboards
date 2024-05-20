@@ -1070,8 +1070,11 @@ h2 {
 }
 
 .owners-button {
-	bottom: 12px;
+	/*bottom: 12px;
 	left: 43%;
+	right: 0;*/
+	bottom: 33.5px;
+	left: 82%;
 	right: 0;
 	width: fit-content;
 	position: absolute;
@@ -1087,7 +1090,7 @@ h2 {
 	cursor: pointer;
 	display: inline-block;
 	font-family: "Montserrat", sans-serif;
-	font-size: 11px;
+	font-size: 14px;
 	font-weight: 800;
 	list-style: none;
 	padding: 1px 5px;
