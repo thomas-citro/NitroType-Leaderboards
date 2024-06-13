@@ -1248,6 +1248,22 @@ h2 {
 	height: 820px;
 }
 
+#admin-msg-inside {
+	margin-top: 15px;
+	margin-bottom: 30px;
+	
+	font-family: "Montserrat", sans-serif;
+	font-size: 16px;
+	color: #fff;
+	font-weight: 500;
+	background-color: #3B3D4C;
+	padding: 10px;
+	border-radius: 8px;
+	border-style: solid;
+	border-color: #FF1E1E;
+	border-width: 0.5px;
+}
+
 @font-face {
 	font-family: 'nitrocash';
 	/*src: url(/static/fonts/nitro-cash.ttf) format("ttf");*/

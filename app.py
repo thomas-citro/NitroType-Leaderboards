@@ -34,7 +34,14 @@ def get_tab_content(tabName):
 @app.route('/data_update_timestamp')
 def get_data_update_timestamp():
 	try:
-		return render_template(f'last_data_update_timestamp.html')
+		return render_template('last_data_update_timestamp.html')
+	except Exception as e:
+		return "N/A"
+
+@app.route('/get_admin_msg')
+def get_admin_message():
+	try:
+		return render_template('admin_msg.html')
 	except Exception as e:
 		return "N/A"
 	

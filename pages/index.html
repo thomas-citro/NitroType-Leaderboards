@@ -71,10 +71,20 @@
 				.catch(error => console.error('Error:', error));
 		}
 
+		function loadAdminMsg() {
+			fetch(`/get_admin_msg`)
+				.then(response => response.text())
+				.then(data => {
+					document.getElementById('admin-msg').innerHTML = data;
+				})
+				.catch(error => console.error('Error:', error));
+		}
+
 		window.onload = function() {
 			searchSelection = "none";
 			changeTab('top_racers_season');
 			loadDataUpdateTimestamp();
+			loadAdminMsg();
 		}
 
 		function userSearch() {
@@ -523,6 +533,9 @@
 		<img class="logo-img" src="/static/images/logo.png"/>
 	</div>
 	<main class="content">
+		<div id="admin-msg">
+			<!-- Content to be dynamically displayed here -->
+		</div>
 		<div class="banner">
 			<div class="banner-text">Leaderboards</div>
 			<div class="last-data-update" id="last-data-update">
