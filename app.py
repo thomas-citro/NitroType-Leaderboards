@@ -13,6 +13,16 @@ filePath = os.path.join(app.root_path, 'data', 'teams_in_lbs.json')
 with open(filePath, 'r') as file:
 	teamsInLbs = json.load(file)
 
+filePath = os.path.join(app.root_path, 'data', 'banned_users.json')
+with open(filePath, 'r') as file:
+	bannedUsers = json.load(file)
+
+filePath = os.path.join(app.root_path, 'data', 'banned_teams.json')
+with open(filePath, 'r') as file:
+	bannedTeams = json.load(file)
+
+bannedUsers = set(bannedUsers)
+bannedTeams = set(bannedTeams)
 teams = teamsInLbs.keys()
 teams = [team for team in teams if team.isupper()]
 usernames = usersInLbs.keys()
@@ -58,7 +68,21 @@ def get_team_in_lb(tag):
 		return teamsInLbs[tag]
 	else:
 		return "N/A"
-	
+
+@app.route('/is_user_banned/<username>')
+def is_user_banned(username):
+	if username in bannedUsers:
+		return "Y"
+	else:
+		return "N"
+
+@app.route('/is_team_banned/<tag>')
+def is_team_banned(tag):
+	if tag in bannedTeams:
+		return "Y"
+	else:
+		return "N"
+
 @app.route('/user_suggestions/<text>')
 def user_suggestions(text):
 	suggestions = []
@@ -119,7 +143,6 @@ def team_suggestions(text):
 		return "N/A"
 	else:
 		return suggestions
-
 
 
 if __name__ == '__main__':

@@ -58,7 +58,7 @@
 				</div>
 			</button>
 	
-			<button class="tab not-active" onclick="openSiteStatsPage([277690, 1318365, 833341, 750922, 601328, 453534, 334033, 248201, 185602, 137113, 102040, 76541, 99548, 54032, 29049, 15465, 9286, 50293, 31473, 1387, 2315], [1910, 39678, 41771, 47616, 46942, 41228, 33796, 27345, 21373, 16606, 12498, 9643, 12937, 7037, 3970, 2111, 1160, 1110, 246, 96, 128], [55, 1157, 1581, 2149, 2400, 2284, 2207, 2024, 1912, 1752, 1577, 1429, 2492, 1937, 1534, 1038, 707, 693, 165, 53, 51])">
+			<button class="tab not-active" onclick="openSiteStatsPage([282843, 1344522, 852744, 770108, 618942, 468018, 345673, 257390, 192784, 142709, 106457, 79998, 103955, 56800, 30573, 16257, 9601, 50725, 31544, 1468, 2383], [402, 8470, 9458, 10605, 10513, 9334, 7969, 6747, 5421, 4469, 3803, 3047, 4696, 3043, 2077, 1326, 799, 875, 216, 110, 84], [74, 1279, 1681, 2261, 2523, 2432, 2301, 2062, 1997, 1857, 1681, 1471, 2608, 2038, 1613, 1102, 726, 750, 171, 62, 55])">
 				<div class="icon-text-container">
 					<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" id="icon-chart" width="18" height="18" fill="white">
 						<path d="M7 19H1V8h6v11zm8-18H9v18h6V1zm8 11h-6v7h6v-7zm1 9H0v2h24v-2z" />
@@ -115,28 +115,28 @@
 					</div>
 					<div id="search-results-container" style="display: none;">
 						<div id="search-results-user-not-found" style="display: none;">
-							<div class="search-not-found-text">There are no users in the leaderboards with the username: <span class="search-entry not-found-search"></span></div>
+							<div class="search-not-found-text">There are no users in the leaderboards with the username: <span class="search-entry not-found-search"></span><span id="user-search-banned-not-found" style="display: none;">. This user is <span style="font-weight: bold;">banned</span> from the leaderboards.</span></div>
 						</div>
 
 						<div id="search-results-user-found" style="display: none;">
-							<div class="search-found-header">The user <span class="search-entry found-search"></span> appears on the following leaderboards:</div>
+							<div class="search-found-header">The user <span class="search-entry found-search"></span><span id="user-search-banned-found" style="display: none;"><span> is </span><span style="font-weight: bold;">banned</span><span> from non-archived leaderboards. The user</span></span> appears on the following leaderboards:</div>
 							<div id="user-search-found-list"></div>
 						</div>
 
 						<div id="search-results-team-not-found" style="display: none;">
-							<div class="search-not-found-text">There are no teams in the leaderboards with the tag: <span class="search-entry not-found-search"></span></div>
+							<div class="search-not-found-text">There are no teams in the leaderboards with the tag: <span class="search-entry not-found-search"></span><span id="team-search-banned-not-found" style="display: none;">. This team is <span style="font-weight: bold;">banned</span> from the leaderboards.</span></div>
 						</div>
 
 						<div id="search-results-team-found" style="display: none;">
-							<div class="search-found-header">The team <span class="search-entry found-search"></span> appears on the following leaderboards:</div>
+							<div class="search-found-header">The team <span class="search-entry found-search"></span><span id="team-search-banned-found" style="display: none;"> is <span style="font-weight: bold;">banned</span> from non-archived leaderboards. The team</span> appears on the following leaderboards:</div>
 							<div id="team-search-found-list"></div>
 						</div>
 					</div>
 				</div>
 				<br/>
-				<h2>Data Updates</h2>
+				<h2>Discord</h2>
 				<ul class="after-header">
-					<li>Data updates are performed daily. Join our Discord server to receive daily update pings: <a class="my-profile-link" href="https://discord.gg/wTmzbRm5eS" target="_blank">https://discord.gg/wTmzbRm5eS</a></li>
+					<li>Join our Discord server to win cash giveaways, see item shop leaks, receive leaderboard update pings, and chat with others in the Nitro Type community! Join link: <a class="my-profile-link" href="https://discord.gg/wTmzbRm5eS" target="_blank">https://discord.gg/wTmzbRm5eS</a></li>
 				</ul>
 				<br/>
 				<h2>Special Requirements</h2>
@@ -144,106 +144,114 @@
 				<ul class="no-top-margin">
 					<li><span style="font-weight: bold;">Player Leaderboards</span></li>
 					<ul>
-						<li>Top Racers (Season)</li>
+						<li><span style="text-decoration: underline;">For <span style="font-weight: bold;">ALL</span> Player Leaderboards</span>:</li>
 						<ul>
-							<li>Account must be at least two months old.</li>
+							<li>Minimum 1,000 alltime races.</li>
+							<li>Minimum 3 months old.</li>
+							<li>Must not be banned by my database. Here's <span style="text-decoration: underline;">why a player might be banned by my database</span>:</li>
+							<ol>
+								<li>Player was banned by Nitro Type in the past.</li>
+								<li>Player was a captain of a team that was banned by Nitro Type or by my database.</li>
+								<li>Player was automatically detected of exhibiting cheating behavior (botting, account stealing, etc) via algorithms that analyze user data.</li>
+								<li>Player was manually banned by me for exhibiting cheating behavior.</li>
+							</ol>
 						</ul>
-						<li>Top Racers (Weekly)</li>
+						<li><span style="text-decoration: underline;">Fastest Racers (Season)</span>:</li>
 						<ul>
-							<li>Account must be at least two months old.</li>
+							<li>Minimum 2,000 alltime races.</li>
+							<li>Minimum 5 months old.</li>
+							<li>Minimum 100 season races.</li>
+							<li>Maximum 230 average wpm.</li>
+							<li>Maximum 250 highest wpm.</li>
+							<li>+ Additional hidden requirements.</li>
 						</ul>
-						<li>Top Racers (Daily)</li>
+						<li><span style="text-decoration: underline;">Fastest Racers (Alltime)</span>:</li>
 						<ul>
-							<li>Account must be at least two months old.</li>
+							<li>Minimum 2,000 alltime races.</li>
+							<li>Minimum 5 months old.</li>
+							<li>Maximum 230 average wpm.</li>
+							<li>Maximum 250 highest wpm.</li>
+							<li>+ Additional hidden requirements.</li>
 						</ul>
-						<li>Fastest Racers (Season)</li>
+						<li><span style="text-decoration: underline;">Most Races Per Day</span>:</li>
 						<ul>
-							<li>Can't be over 250 average wpm.</li>
-							<li>Must have at least 500 alltime races.</li>
-							<li>Must have at least 100 season races.</li>
-							<li>Account must be at least a month old.</li>
+							<li>Minimum 5 months old.</li>
+							<li>+ Additional hidden requirements.</li>
 						</ul>
-						<li>Fastest Racers (Alltime)</li>
+						<li><span style="text-decoration: underline;">Oldest Active Players</span>:</li>
 						<ul>
-							<li>Can't be over 250 average wpm.</li>
-							<li>Can't be over 285 highest wpm.</li>
-							<li>Must have at least 500 alltime races.</li>
-							<li>Account must be at least a month old.</li>
+							<li>Minimum level 2 for the season.</li>
+							<li>+ Additional hidden requirements.</li>
 						</ul>
-						<li>Longest Sessions</li>
+						<li><span style="text-decoration: underline;">Longest Sessions</span>:</li>
 						<ul>
-							<li>Account must be at least a month old.</li>
-						</ul>
-						<li>Oldest Active Players</li>
-						<ul>
-							<li>To be considered active, a player must be higher than level 1 for the season.</li>
-						</ul>
-						<li>Most Races Per Day</li>
-						<ul>
-							<li>Account must be at least two months old.</li>
+							<li>Maximum 7,500 longest session.</li>
+							<li>+ Additional hidden requirements.</li>
 						</ul>
 					</ul>
 					<li><span style="font-weight: bold;">Team Leaderboards</span></li>
 					<ul>
-						<li>Top Teams (Season)</li>
+						<li><span style="text-decoration: underline;">For <span style="font-weight: bold;">ALL</span> Team Leaderboards</span>:</li>
 						<ul>
-							<li>Team must be at least a month old.</li>
+							<li>Minimum 1,000 alltime races.</li>
+							<li>Minimum 3 months old.</li>
+							<li>Must not be banned by my database. Here's <span style="text-decoration: underline;">why a team might be banned by my database</span>:</li>
+							<ol>
+								<li>Team was banned by Nitro Type in the past.</li>
+								<li>Team captain was banned by Nitro Type or by my database.</li>
+								<li>Four or more team members were banned by Nitro Type in the past.</li>
+								<li>Team was automatically detected of exhibiting cheating behavior (botting, account stealing, etc) via algorithms that analyze team data.</li>
+								<li>Team was manually banned by me for exhibiting cheating behavior.</li>
+							</ol>
 						</ul>
-						<li>Top Teams (Weekly)</li>
+						<li><span style="text-decoration: underline;">Most Active Teams</span>:</li>
 						<ul>
-							<li>Team must be at least a month old.</li>
+							<li>Minimum 5 months old.</li>
 						</ul>
-						<li>Top Teams (Daily)</li>
+						<li><span style="text-decoration: underline;">Fastest Teams (Season)</span>:</li>
 						<ul>
-							<li>Team must be at least a month old.</li>
+							<li>Minimum 2,000 alltime races.</li>
+							<li>Minimum 300 season races.</li>
+							<li>Minimum 5 months old.</li>
+							<li>Minimum 15 team members.</li>
+							<li>Maximum 175 average wpm.</li>
+							<li>Minimum 40% of team active.</li>
 						</ul>
-						<li>Fastest Teams (Season)</li>
+						<li><span style="text-decoration: underline;">Fastest Teams (Alltime)</span>:</li>
 						<ul>
-							<li>Can't be over 250 average wpm.</li>
-							<li>Must have at least 10 members on team.</li>
-							<li>Must have at least 1,000 alltime races.</li>
-							<li>Must have at least 300 season races.</li>
-							<li>Team must be at least a month old.</li>
+							<li>Minimum 2,000 alltime races.</li>
+							<li>Minimum 5 months old.</li>
+							<li>Minimum 15 team members.</li>
+							<li>Maximum 175 average wpm.</li>
+							<li>Minimum 15% of team active.</li>
 						</ul>
-						<li>Fastest Teams (Alltime)</li>
+						<li><span style="text-decoration: underline;">Most Accurate Teams (Season)</span>:</li>
 						<ul>
-							<li>Can't be over 250 average wpm.</li>
-							<li>Must have at least 10 members on team.</li>
-							<li>Must have at least 1,000 alltime races.</li>
-							<li>Team must be at least a month old.</li>
+							<li>Minimum 2,000 alltime races.</li>
+							<li>Minimum 300 season races.</li>
+							<li>Minimum 5 months old.</li>
+							<li>Minimum 15 team members.</li>
+							<li>Minimum 40% of team active.</li>
 						</ul>
-						<li>Most Accurate Teams (Season)</li>
+						<li><span style="text-decoration: underline;">Most Accurate Teams (Season)</span>:</li>
 						<ul>
-							<li>Must have at least 10 members on team.</li>
-							<li>Must have at least 1,000 alltime races.</li>
-							<li>Must have at least 300 season races.</li>
-							<li>Team must be at least a month old.</li>
+							<li>Minimum 2,000 alltime races.</li>
+							<li>Minimum 5 months old.</li>
+							<li>Minimum 15 team members.</li>
+							<li>Minimum 15% of team active.</li>
 						</ul>
-						<li>Most Accurate Teams (Alltime)</li>
+						<li><span style="text-decoration: underline;">Most Races Per Day</span>:</li>
 						<ul>
-							<li>Must have at least 10 members on team.</li>
-							<li>Must have at least 1,000 alltime races.</li>
-							<li>Team must be at least a month old.</li>
+							<li>Minimum 5 months old.</li>
+							<li>Minimum 10 team members.</li>
 						</ul>
-						<li>Oldest Active Teams</li>
+						<li><span style="text-decoration: underline;">Oldest Active Teams</span>:</li>
 						<ul>
-							<li>To be considered active, a team must have at least 100 season races.</li>
-						</ul>
-						<li>Most Races Per Day</li>
-						<ul>
-							<li>Team must be at least two months old.</li>
+							<li>Minimum 100 season races.</li>
+							<li>Minimum 10 team members.</li>
+							<li>Minimum 40% of team active.</li>
 						</ul>
 					</ul>
-				</ul>
-				<br/>
-				<h2>Missing Users or Teams?</h2>
-				<ul class="after-header">
-					<li>If you believe there are any users or teams missing from these leaderboards, please complete the following steps:
-					<ol>
-						<li>Verify the user/team meets the special requirements listed above.</li>
-						<li>If the user/team meets the special requirements but is still not on the leaderboards, then contact me via Discord and send me the username and/or team tag and the specific leaderboard(s) that they are missing from.</li>
-						<li>My Discord username is: <span style="color: #F9D034;">thomas_1213</span></li>
-					</ol>
 				</ul>
 				<br/>
 				<h2>Credits</h2>
@@ -256,9 +264,13 @@
 				<br/>
 				<h2>Upcoming Updates</h2>
 				<ul class="after-header">
-					<li>Adding 'Most Leaderboards Placed' leaderboards for players and teams in hall of fame.</li>
-					<li>Adding 'Rarest Equipped Titles' (similar to the 'Rarest Cars' page).</li>
-					<li>Adding 'Wall of Shame' leaderboard that showcases recently banned users.</li>
+					<li>Adding players' and teams' league icons to the leaderboards.</li>
+					<li>Adding a bunch of more stats to "Site Stats" page such as stats on leagues.</li>
+					<li>Adding "Most Leaderboards Placed" leaderboards for players and teams in hall of fame.</li>
+					<li>Adding "Most Accurate Racers" leaderboards for both season and alltime.</li>
+					<li>Changing "Rarest Cars" page to be called "Rarest Loot" and adding sections in it for the least equipped cars, least equipped titles, least equipped trails, and least equipped nametags.</li>
+					<li>Adding Nitro Math leaderboards.</li>
+					<li>Adding "Wall of Shame" leaderboard that showcases recently banned users.</li>
 				</ul>
 				<br/>
 				<h2>Site Update History</h2>
@@ -471,6 +483,11 @@
 					<ul>
 						<li>Edits made to the updater script so that the timebased racer leaderboards (weekly/daily) will be more accurate.</li>
 						<li>Removed 'Availability' column in 'Rarest Cars' page, and changed position of 'Show Owners' buttons.</li>
+					</ul>
+					<li>V3.3 (7/12/24)</li>
+					<ul>
+						<li>Leaderboard updates finally return! As of now, I am only able to manually update the leaderboards about once a week. But hopefully, in the near future, daily updates will be restored.</li>
+						<li>Some major revamps have been made to encourage fair leaderboards. Extensive measures (and more to come) have been implemented to keep cheaters off of the leaderboards. You can see a general overview of changes made to the 'Special Requirements' section.</li>
 					</ul>
 				</ul>
 			</div>

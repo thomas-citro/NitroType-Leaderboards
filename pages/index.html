@@ -24,6 +24,7 @@
 		var lastSearch = '';
 		var carOwnersPageNums = [];
 		var searchResultRowFound = false;
+		var suggestionsLoading = false;
 
 		function changeTab(tabName, pageUp = false) {
 			fetch(`/tab/${tabName}`)
@@ -158,6 +159,7 @@
 
 		function searchSubmit(searchType) {
 			var filePath = "";
+			suggestionsLoading = false;
 			getSearchSuggestions('', searchType);
 			if (searchType == "user") {
 				var inputBox = document.getElementById("user-search-input");
@@ -166,7 +168,12 @@
 				fetch(`/users_in_lbs/${username}`)
 					.then(response => response.text())
 					.then(data => {
-						displayResults('user', data, username);
+						fetch(`/is_user_banned/${username}`)
+							.then(response => response.text())
+							.then(isBanned => {
+								displayResults('user', data, username, isBanned);
+							})
+							.catch(error => console.error('Error:', error));
 					})
 					.catch(error => console.error('Error:', error));
 			} else {
@@ -176,11 +183,15 @@
 				fetch(`/teams_in_lbs/${teamTag}`)
 					.then(response => response.text())
 					.then(data => {
-						displayResults('team', data, teamTag);
+						fetch(`/is_team_banned/${teamTag}`)
+							.then(response => response.text())
+							.then(isBanned => {
+								displayResults('team', data, teamTag, isBanned);
+							})
+							.catch(error => console.error('Error:', error));
 					})
 					.catch(error => console.error('Error:', error));
 			}
-
 		}
 
 		function handleKeyPress(event, searchType) {
@@ -211,26 +222,43 @@
 				newValue = value.toUpperCase().substring(0, 6);
 			}
 			input.value = newValue;
+			suggestionsLoading = true;
 			getSearchSuggestions(newValue, searchType);
 		}
 
-		function displayResults(searchType, response, searchInput) {
+		function displayResults(searchType, response, searchInput, isBanned) {
 			var searchResultsBox = document.getElementById("search-results-container");
 			searchResultsBox.style.display = "none"; // We don't want to display it until after we've formatted the results
+			// Get elements
 			var userNotFound = document.getElementById("search-results-user-not-found");
+			var userNotFoundBanned = document.getElementById("user-search-banned-not-found");
 			var userFound = document.getElementById("search-results-user-found");
+			var userFoundBanned = document.getElementById("user-search-banned-found");
 			var teamNotFound = document.getElementById("search-results-team-not-found");
+			var teamNotFoundBanned = document.getElementById("team-search-banned-not-found");
 			var teamFound = document.getElementById("search-results-team-found");
+			var teamFoundBanned = document.getElementById("team-search-banned-found");
 			var searchInputDisplay = searchInput;
+			// Reset all to none
 			userNotFound.style.display = "none";
+			userNotFoundBanned.style.display = "none";
 			userFound.style.display = "none";
+			userFoundBanned.style.display = "none";
 			teamNotFound.style.display = "none";
+			teamNotFoundBanned.style.display = "none";
 			teamFound.style.display = "none";
+			teamFoundBanned.style.display = "none";
 			if (response == "N/A") {
 				if (searchType == "user") {
 					userNotFound.style.display = "block";
+					if (isBanned == 'Y') {
+						userNotFoundBanned.style.display = "inline";
+					}
 				} else {
 					teamNotFound.style.display = "block";
+					if (isBanned == 'Y') {
+						teamNotFoundBanned.style.display = "inline";
+					}
 				}
 			} else {
 				var responseObj = JSON.parse(response);
@@ -241,11 +269,17 @@
 				if (searchType == "user") {
 					responseObjList = responseObj.rankings
 					userFound.style.display = "block";
+					if (isBanned == 'Y') {
+						userFoundBanned.style.display = "inline";
+					}
 					searchInputDisplay += ' (' + responseObj.display_name + ')'
 					resultsListHtml = document.getElementById("user-search-found-list");
 				} else {
 					responseObjList = responseObj
 					teamFound.style.display = "block";
+					if (isBanned == 'Y') {
+						teamFoundBanned.style.display = "inline";
+					}
 					resultsListHtml = document.getElementById("team-search-found-list");
 				}
 				for (var i = 0; i < responseObjList.length; i++) {
@@ -374,14 +408,18 @@
 				fetch(`/user_suggestions/${currentInput}`)
 					.then(response => response.text())
 					.then(data => {
-						showSearchSuggestions('user', data, currentInput);
+						if (suggestionsLoading) {
+							showSearchSuggestions('user', data, currentInput);
+						}
 					})
 					.catch(error => console.error('Error:', error));
 			} else {
 				fetch(`/team_suggestions/${currentInput}`)
 					.then(response => response.text())
 					.then(data => {
-						showSearchSuggestions('team', data, currentInput);
+						if (suggestionsLoading) {
+							showSearchSuggestions('team', data, currentInput);
+						}
 					})
 					.catch(error => console.error('Error:', error));
 			}
