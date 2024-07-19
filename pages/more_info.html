@@ -58,7 +58,7 @@
 				</div>
 			</button>
 	
-			<button class="tab not-active" onclick="openSiteStatsPage([282843, 1344522, 852744, 770108, 618942, 468018, 345673, 257390, 192784, 142709, 106457, 79998, 103955, 56800, 30573, 16257, 9601, 50725, 31544, 1468, 2383], [402, 8470, 9458, 10605, 10513, 9334, 7969, 6747, 5421, 4469, 3803, 3047, 4696, 3043, 2077, 1326, 799, 875, 216, 110, 84], [74, 1279, 1681, 2261, 2523, 2432, 2301, 2062, 1997, 1857, 1681, 1471, 2608, 2038, 1613, 1102, 726, 750, 171, 62, 55])">
+			<button class="tab not-active" onclick="openSiteStatsPage([282156, 1344357, 854080, 771569, 621156, 470033, 347550, 258710, 194093, 143685, 107161, 80602, 104537, 57106, 30735, 16233, 9416, 50538, 31464, 1476, 2288], [524, 10559, 11522, 12902, 12986, 11398, 9705, 8092, 6679, 5426, 4673, 3691, 5442, 3565, 2296, 1379, 685, 743, 135, 108, 45], [75, 1258, 1672, 2223, 2502, 2388, 2263, 2040, 1977, 1813, 1629, 1448, 2481, 1901, 1528, 972, 588, 619, 147, 55, 46])">
 				<div class="icon-text-container">
 					<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" id="icon-chart" width="18" height="18" fill="white">
 						<path d="M7 19H1V8h6v11zm8-18H9v18h6V1zm8 11h-6v7h6v-7zm1 9H0v2h24v-2z" />
@@ -83,7 +83,7 @@
 		<div class="page-text-box">
 			<div class="page-text">
 				<div class="search-container" style="display: block;">
-					<h2>Search</h2>
+					<h2><span class="header-icon">🔍</span>Search</h2>
 					<p style="margin-bottom: 6px; margin-top: 6px; margin-left: 5px;">Search to see if a user or team is on any of the leaderboards:</p>
 					<div class="search-buttons">
 						<button id="user-search-button" class="search-button not-active-search-button" onclick="userSearch()">User Search</button>
@@ -134,12 +134,12 @@
 					</div>
 				</div>
 				<br/>
-				<h2>Discord</h2>
+				<h2><img class="discord-icon" src="/static/images/discord-logo.png"/>Discord</h2>
 				<ul class="after-header">
 					<li>Join our Discord server to win cash giveaways, see item shop leaks, receive leaderboard update pings, and chat with others in the Nitro Type community! Join link: <a class="my-profile-link" href="https://discord.gg/wTmzbRm5eS" target="_blank">https://discord.gg/wTmzbRm5eS</a></li>
 				</ul>
 				<br/>
-				<h2>Special Requirements</h2>
+				<h2><span class="header-icon">🔒</span>Special Requirements</h2>
 				<p class="after-header indent-paragraph">In order to promote fairness of the leaderboards, I have some special requirements for users/teams to be included:</p>
 				<ul class="no-top-margin">
 					<li><span style="font-weight: bold;">Player Leaderboards</span></li>
@@ -165,6 +165,12 @@
 							<li>Maximum 250 highest wpm.</li>
 							<li>+ Additional hidden requirements.</li>
 						</ul>
+						<li><span style="text-decoration: underline;">Most Accurate Racers (Season)</span>:</li>
+						<ul>
+							<li>Minimum 2,000 alltime races.</li>
+							<li>Minimum 5 months old.</li>
+							<li>Minimum 100 season races.</li>
+						</ul>
 						<li><span style="text-decoration: underline;">Fastest Racers (Alltime)</span>:</li>
 						<ul>
 							<li>Minimum 2,000 alltime races.</li>
@@ -172,6 +178,11 @@
 							<li>Maximum 230 average wpm.</li>
 							<li>Maximum 250 highest wpm.</li>
 							<li>+ Additional hidden requirements.</li>
+						</ul>
+						<li><span style="text-decoration: underline;">Most Accurate Racers (Alltime)</span>:</li>
+						<ul>
+							<li>Minimum 2,000 alltime races.</li>
+							<li>Minimum 5 months old.</li>
 						</ul>
 						<li><span style="text-decoration: underline;">Most Races Per Day</span>:</li>
 						<ul>
@@ -223,7 +234,7 @@
 							<li>Minimum 5 months old.</li>
 							<li>Minimum 15 team members.</li>
 							<li>Maximum 175 average wpm.</li>
-							<li>Minimum 15% of team active.</li>
+							<li>Minimum 10 team members with 100+ team races.</li>
 						</ul>
 						<li><span style="text-decoration: underline;">Most Accurate Teams (Season)</span>:</li>
 						<ul>
@@ -233,12 +244,12 @@
 							<li>Minimum 15 team members.</li>
 							<li>Minimum 40% of team active.</li>
 						</ul>
-						<li><span style="text-decoration: underline;">Most Accurate Teams (Season)</span>:</li>
+						<li><span style="text-decoration: underline;">Most Accurate Teams (Alltime)</span>:</li>
 						<ul>
 							<li>Minimum 2,000 alltime races.</li>
 							<li>Minimum 5 months old.</li>
 							<li>Minimum 15 team members.</li>
-							<li>Minimum 15% of team active.</li>
+							<li>Minimum 10 team members with 100+ team races.</li>
 						</ul>
 						<li><span style="text-decoration: underline;">Most Races Per Day</span>:</li>
 						<ul>
@@ -254,7 +265,7 @@
 					</ul>
 				</ul>
 				<br/>
-				<h2>Credits</h2>
+				<h2><span class="header-icon">📢</span>Credits</h2>
 				<ul class="after-header">
 					<li>Leaderboards website created by: <a class="my-profile-link" href="https://www.nitrotype.com/racer/tommy_14" target="_blank">Tommy_14</a> (Subscribe to my YouTube <a class="my-profile-link" href="https://www.youtube.com/channel/UChyGLs8F5APn4MAfhp7TPNg">here</a>).</li>
 					<li>Artwork such as cars, logo, background created by: Nitro Type.</li>
@@ -262,18 +273,14 @@
 					<li><span style="color: #F9D034;">Nate Dogg</span> for archiving the top teams of seasons 36 - 42.</li>
 				</ul>
 				<br/>
-				<h2>Upcoming Updates</h2>
+				<h2><span class="header-icon">🛠️</span>Upcoming Updates</h2>
 				<ul class="after-header">
-					<li>Adding players' and teams' league icons to the leaderboards.</li>
-					<li>Adding a bunch of more stats to "Site Stats" page such as stats on leagues.</li>
-					<li>Adding "Most Leaderboards Placed" leaderboards for players and teams in hall of fame.</li>
-					<li>Adding "Most Accurate Racers" leaderboards for both season and alltime.</li>
-					<li>Changing "Rarest Cars" page to be called "Rarest Loot" and adding sections in it for the least equipped cars, least equipped titles, least equipped trails, and least equipped nametags.</li>
+					<li>Changing "Rarest Cars" page to be called "Rarest Loot" with the following sections in it: rarest owned cars, rarest equipped cars, rarest equipped titles, rarest equipped trails, and rarest equipped nametags.</li>
 					<li>Adding Nitro Math leaderboards.</li>
 					<li>Adding "Wall of Shame" leaderboard that showcases recently banned users.</li>
 				</ul>
 				<br/>
-				<h2>Site Update History</h2>
+				<h2><span class="header-icon">📋</span>Update History</h2>
 				<ul class="after-header">
 					<li>V1.0 (1/10/24)</li>
 					<ul>
@@ -488,6 +495,17 @@
 					<ul>
 						<li>Leaderboard updates finally return! As of now, I am only able to manually update the leaderboards about once a week. But hopefully, in the near future, daily updates will be restored.</li>
 						<li>Some major revamps have been made to encourage fair leaderboards. Extensive measures (and more to come) have been implemented to keep cheaters off of the leaderboards. You can see a general overview of changes made to the 'Special Requirements' section.</li>
+					</ul>
+					<li>V4.0 (7/18/24)</li>
+					<ul>
+						<li>Added league icons to the leaderboards.</li>
+						<li>Added "Most Accurate Racers" and "Most Accurate Racers (This Season)" leaderboards.</li>
+						<li>Added "Most Devoted Team Members" leaderboard.</li>
+						<li>Added "Most Leaderboards Placed" leaderboards for players and teams.</li>
+						<li>Several improvements made to the anti-cheat system.</li>
+						<li>Patched bug where some leaderboards would expand the width of the page view.</li>
+						<li>Some styling tweaks including icons added to the section headers on the More Info page.</li>
+						<li>Added more statistics to the "Site Stats" page.</li>
 					</ul>
 				</ul>
 			</div>

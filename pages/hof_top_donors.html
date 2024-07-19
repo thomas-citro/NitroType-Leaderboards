@@ -58,7 +58,7 @@
 				</div>
 			</button>
 	
-			<button class="tab not-active" onclick="openSiteStatsPage([282843, 1344522, 852744, 770108, 618942, 468018, 345673, 257390, 192784, 142709, 106457, 79998, 103955, 56800, 30573, 16257, 9601, 50725, 31544, 1468, 2383], [402, 8470, 9458, 10605, 10513, 9334, 7969, 6747, 5421, 4469, 3803, 3047, 4696, 3043, 2077, 1326, 799, 875, 216, 110, 84], [74, 1279, 1681, 2261, 2523, 2432, 2301, 2062, 1997, 1857, 1681, 1471, 2608, 2038, 1613, 1102, 726, 750, 171, 62, 55])">
+			<button class="tab not-active" onclick="openSiteStatsPage([282156, 1344357, 854080, 771569, 621156, 470033, 347550, 258710, 194093, 143685, 107161, 80602, 104537, 57106, 30735, 16233, 9416, 50538, 31464, 1476, 2288], [524, 10559, 11522, 12902, 12986, 11398, 9705, 8092, 6679, 5426, 4673, 3691, 5442, 3565, 2296, 1379, 685, 743, 135, 108, 45], [75, 1258, 1672, 2223, 2502, 2388, 2263, 2040, 1977, 1813, 1629, 1448, 2481, 1901, 1528, 972, 588, 619, 147, 55, 46])">
 				<div class="icon-text-container">
 					<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" id="icon-chart" width="18" height="18" fill="white">
 						<path d="M7 19H1V8h6v11zm8-18H9v18h6V1zm8 11h-6v7h6v-7zm1 9H0v2h24v-2z" />
@@ -84,26 +84,34 @@
 	
 			<div class="hall-of-fame-buttons">
 				<div class="hof-heading-container"><div class="hof-heading">Player Hall of Fame</div></div>
-				<button type="button" class="hall-of-fame-button not-active-button" onclick="changeTab('hof_most_active_racers')">Most Active Racers</button>
-				<button type="button" class="hall-of-fame-button not-active-button" onclick="changeTab('hof_fastest_racers')">Fastest Racers</button>
-				<button type="button" class="hall-of-fame-button not-active-button" onclick="changeTab('hof_verified_fastest_racers')">Verified Fastest Racers</button>
-				<button type="button" class="hall-of-fame-button not-active-button" onclick="changeTab('hof_longest_session')">Longest Sessions</button>
-				<button type="button" class="hall-of-fame-button not-active-button" onclick="changeTab('hof_most_cars_owned')">Most Cars Owned</button>
-				<button type="button" class="hall-of-fame-button not-active-button" onclick="changeTab('hof_most_profile_views')">Most Profile Views</button>
-				<button type="button" class="hall-of-fame-button not-active-button" onclick="changeTab('hof_oldest_active_players')">Oldest Active Players</button>
-				<button type="button" class="hall-of-fame-button not-active-button" onclick="changeTab('hof_most_player_races_per_day')">Most Races Per Day</button>
-				<button type="button" class="hall-of-fame-button active-button">Top Donors</button>
-				<button type="button" class="hall-of-fame-button not-visible-button"></button>
-				<button type="button" class="hall-of-fame-button not-visible-button"></button>
-				<button type="button" class="hall-of-fame-button not-visible-button"></button>
-				<button type="button" class="hall-of-fame-button not-visible-button"></button>
+				<div class="hof-button-row">
+					<button type="button" class="hall-of-fame-button not-active-button" onclick="changeTab('hof_most_active_racers')">Most Active Racers</button>
+					<button type="button" class="hall-of-fame-button not-active-button" onclick="changeTab('hof_fastest_racers')">Fastest Racers</button>
+					<button type="button" class="hall-of-fame-button not-active-button" onclick="changeTab('hof_verified_fastest_racers')">Verified Fastest Racers</button>
+					<button type="button" class="hall-of-fame-button not-active-button" onclick="changeTab('hof_most_accurate_racers')">Most Accurate Racers</button>
+					<button type="button" class="hall-of-fame-button not-active-button" onclick="changeTab('hof_longest_session')">Longest Sessions</button>
+					<button type="button" class="hall-of-fame-button not-active-button" onclick="changeTab('hof_most_cars_owned')">Most Cars Owned</button>
+				</div>
+				<div class="hof-button-row">
+					<button type="button" class="hall-of-fame-button not-active-button" onclick="changeTab('hof_most_profile_views')">Most Profile Views</button>
+					<button type="button" class="hall-of-fame-button not-active-button" onclick="changeTab('hof_oldest_active_players')">Oldest Active Players</button>
+					<button type="button" class="hall-of-fame-button not-active-button" onclick="changeTab('hof_most_player_races_per_day')">Most Races Per Day</button>
+					<button type="button" class="hall-of-fame-button active-button">Top Donors</button>
+					<button type="button" class="hall-of-fame-button not-active-button" onclick="changeTab('hof_most_devoted_team_members')">Most Devoted Team Members</button>
+					<button type="button" class="hall-of-fame-button not-active-button" onclick="changeTab('hof_most_leaderboards_placed_users')">Most Leaderboards Placed</button>
+				</div>
 				<div class="hof-heading-container"><div class="hof-heading">Team Hall of Fame</div></div>
-				<button type="button" class="hall-of-fame-button not-active-button" onclick="changeTab('hof_most_active_teams')">Most Active Teams</button>
-				<button type="button" class="hall-of-fame-button not-active-button" onclick="changeTab('hof_fastest_teams')">Fastest Teams</button>
-				<button type="button" class="hall-of-fame-button not-active-button" onclick="changeTab('hof_most_accurate_teams')">Most Accurate Teams</button>
-				<button type="button" class="hall-of-fame-button not-active-button" onclick="changeTab('hof_most_team_views')">Most Team Page Views</button>
-				<button type="button" class="hall-of-fame-button not-active-button" onclick="changeTab('hof_oldest_active_teams')">Oldest Active Teams</button>
-				<button type="button" class="hall-of-fame-button not-active-button" onclick="changeTab('hof_most_team_races_per_day')">Most Races Per Day</button>
+				<div class="hof-button-row">
+					<button type="button" class="hall-of-fame-button not-active-button" onclick="changeTab('hof_most_active_teams')">Most Active Teams</button>
+					<button type="button" class="hall-of-fame-button not-active-button" onclick="changeTab('hof_fastest_teams')">Fastest Teams</button>
+					<button type="button" class="hall-of-fame-button not-active-button" onclick="changeTab('hof_most_accurate_teams')">Most Accurate Teams</button>
+					<button type="button" class="hall-of-fame-button not-active-button" onclick="changeTab('hof_most_team_views')">Most Team Page Views</button>
+					<button type="button" class="hall-of-fame-button not-active-button" onclick="changeTab('hof_oldest_active_teams')">Oldest Active Teams</button>
+					<button type="button" class="hall-of-fame-button not-active-button" onclick="changeTab('hof_most_team_races_per_day')">Most Races Per Day</button>
+				</div>
+				<div class="hof-button-row">
+					<button type="button" class="hall-of-fame-button not-active-button" onclick="changeTab('hof_most_leaderboards_placed_teams')">Most Leaderboards Placed</button>
+				</div>
 			</div>
 	
 		</div>
@@ -529,17 +537,14 @@
 	20</td>
 	
 					<td class="table-cell" style="width: 12%;"><img class="car-img" src="/static/images/cars/
-	50.png"/></td>
+	264.png"/></td>
 	
 					<td class="table-cell" style="width: 31%;">
 	
-						<img class="gold-img" src="/static/images/gold-membership.png"/>
-	
-						<span class="team-tag" style="color: #436fb6;">[<a class="team-tag user-team-tag-link" style="color: #436fb6;" href="https://www.nitrotype.com/team/LV" target="_blank">LV</a>]</span>
-	
-	<span class="deactivated-display-name">	
-	Isaac</span>
-						<br><span class="title">"Competitor Team"</span>
+						<a class="display-name display-name-basic" href="https://www.nitrotype.com/racer/
+	isaac_rocks" target="_blank">
+	check racer bionic4</a>
+						<br><span class="title">"Raw Racing Recruit"</span>
 					</td>
 					<td class="table-cell" style="width: 32%;"><span class="donor-message"></span></td>				<td class="table-cell" style="width: 16%;"><span class="cash-symbol">$</span><span class="cash">110,100,001</span></td>
 				</tr>
@@ -622,13 +627,15 @@
 	25</td>
 	
 					<td class="table-cell" style="width: 12%;"><img class="car-img" src="/static/images/cars/painted/
-	demon_large_200.png"/></td>
+	215_large_1_260.png"/></td>
 	
 					<td class="table-cell" style="width: 31%;">
 	<span style="color: #D2042D; font-size: 20px; font-weight: bold;">*</span>
+						<img class="gold-img" src="/static/images/gold-membership.png"/>
+	
 						<span class="team-tag" style="color: #71c6a5;">[<a class="team-tag user-team-tag-link" style="color: #71c6a5;" href="https://www.nitrotype.com/team/7RT" target="_blank">7RT</a>]</span>
 	
-						<a class="display-name display-name-basic" href="https://www.nitrotype.com/racer/
+						<a class="display-name display-name-gold" href="https://www.nitrotype.com/racer/
 	xjemaxyt" target="_blank">
 	xJEMAx</a>
 						<br><span class="title">"Verified Twitch Streamer"</span>
@@ -660,7 +667,7 @@
 	27</td>
 	
 					<td class="table-cell" style="width: 12%;"><img class="car-img" src="/static/images/cars/painted/
-	124_large_1_260.png"/></td>
+	137_large_1_140.png"/></td>
 	
 					<td class="table-cell" style="width: 31%;">
 	<span style="color: #D2042D; font-size: 20px; font-weight: bold;">*</span>
@@ -701,7 +708,7 @@
 	29</td>
 	
 					<td class="table-cell" style="width: 12%;"><img class="car-img" src="/static/images/cars/painted/
-	153_large_1_320.png"/></td>
+	102_large_1_260.png"/></td>
 	
 					<td class="table-cell" style="width: 31%;">
 	<span style="color: #D2042D; font-size: 20px; font-weight: bold;">*</span>
@@ -712,7 +719,7 @@
 						<a class="display-name display-name-gold" href="https://www.nitrotype.com/racer/
 	kureizukraze" target="_blank">
 	 Kraze </a>
-						<br><span class="title">"Single-tracker"</span>
+						<br><span class="title">"Champion Chaser"</span>
 					</td>
 					<td class="table-cell" style="width: 32%;"><span class="donor-message"></span></td>				<td class="table-cell" style="width: 16%;"><span class="cash-symbol">$</span><span class="cash">100,000,000</span></td>
 				</tr>
@@ -842,8 +849,9 @@
 	
 						<span class="team-tag" style="color: #ea1979;">[<a class="team-tag user-team-tag-link" style="color: #ea1979;" href="https://www.nitrotype.com/team/PR2W" target="_blank">PR2W</a>]</span>
 	
-	<span class="deactivated-display-name">	
-	Summer Mateo</span>
+						<a class="display-name display-name-gold" href="https://www.nitrotype.com/racer/
+	nicasio567" target="_blank">
+	Mateo road to 100k</a>
 						<br><span class="title">"Lucky Number 7"</span>
 					</td>
 					<td class="table-cell" style="width: 32%;"><span class="donor-message">"I Love This LeaderBoard"</span></td>				<td class="table-cell" style="width: 16%;"><span class="cash-symbol">$</span><span class="cash">65,000,001</span></td>
@@ -1007,7 +1015,7 @@
 	45</td>
 	
 					<td class="table-cell" style="width: 12%;"><img class="car-img" src="/static/images/cars/painted/
-	155_large_1_340.png"/></td>
+	155_large_1_220.png"/></td>
 	
 					<td class="table-cell" style="width: 31%;">
 	<span style="color: #D2042D; font-size: 20px; font-weight: bold;">*</span>
@@ -1017,8 +1025,8 @@
 	
 						<a class="display-name display-name-gold" href="https://www.nitrotype.com/racer/
 	vgaming22" target="_blank">
-	Toxicity</a>
-						<br><span class="title">"Keyboard Cat"</span>
+	 Rock </a>
+						<br><span class="title">"Grim Reaper"</span>
 					</td>
 					<td class="table-cell" style="width: 32%;"><span class="donor-message"></span></td>				<td class="table-cell" style="width: 16%;"><span class="cash-symbol">$</span><span class="cash">47,850,000</span></td>
 				</tr>
@@ -1047,7 +1055,7 @@
 	47</td>
 	
 					<td class="table-cell" style="width: 12%;"><img class="car-img" src="/static/images/cars/painted/
-	137_large_1_220.png"/></td>
+	129_large_1_200.png"/></td>
 	
 					<td class="table-cell" style="width: 31%;">
 	<span style="color: #D2042D; font-size: 20px; font-weight: bold;">*</span>
@@ -1058,7 +1066,7 @@
 						<a class="display-name display-name-gold" href="https://www.nitrotype.com/racer/
 	eriiy_" target="_blank">
 	eriiy_</a>
-						<br><span class="title">"Ray of Sunshine"</span>
+						<br><span class="title">"*sparkle*"</span>
 					</td>
 					<td class="table-cell" style="width: 32%;"><span class="donor-message"></span></td>				<td class="table-cell" style="width: 16%;"><span class="cash-symbol">$</span><span class="cash">45,000,000</span></td>
 				</tr>
@@ -1320,7 +1328,7 @@
 	61</td>
 	
 					<td class="table-cell" style="width: 12%;"><img class="car-img" src="/static/images/cars/
-	368.png"/></td>
+	29.png"/></td>
 	
 					<td class="table-cell" style="width: 31%;">
 	<span style="color: #D2042D; font-size: 20px; font-weight: bold;">*</span>
@@ -1360,7 +1368,7 @@
 	63</td>
 	
 					<td class="table-cell" style="width: 12%;"><img class="car-img" src="/static/images/cars/painted/
-	46_large_1_180.png"/></td>
+	144_large_1_180.png"/></td>
 	
 					<td class="table-cell" style="width: 31%;">
 	<span style="color: #D2042D; font-size: 20px; font-weight: bold;">*</span>
@@ -1370,7 +1378,7 @@
 	
 						<a class="display-name display-name-gold" href="https://www.nitrotype.com/racer/
 	mirciy" target="_blank">
-	LuckyYellowCod</a>
+	Pink Tape</a>
 						<br><span class="title">"Bug Smasher"</span>
 					</td>
 					<td class="table-cell" style="width: 32%;"><span class="donor-message">"Flooded The Face"</span></td>				<td class="table-cell" style="width: 16%;"><span class="cash-symbol">$</span><span class="cash">25,999,999</span></td>
@@ -1381,7 +1389,7 @@
 	64</td>
 	
 					<td class="table-cell" style="width: 12%;"><img class="car-img" src="/static/images/cars/painted/
-	105_large_1_20.png"/></td>
+	hammerwheels_large_160.png"/></td>
 	
 					<td class="table-cell" style="width: 31%;">
 	
@@ -1690,8 +1698,8 @@
 					<td class="table-cell table-cell--place place-number" style="width: 9%;">
 	80</td>
 	
-					<td class="table-cell" style="width: 12%;"><img class="car-img" src="/static/images/cars/painted/
-	candycar_large_20.png"/></td>
+					<td class="table-cell" style="width: 12%;"><img class="car-img" src="/static/images/cars/
+	302.png"/></td>
 	
 					<td class="table-cell" style="width: 31%;">
 	
@@ -1701,8 +1709,8 @@
 	
 						<a class="display-name display-name-gold" href="https://www.nitrotype.com/racer/
 	rainbowspyro2022" target="_blank">
-	-rainbow-</a>
-						<br><span class="title">"Trail Angel"</span>
+	I-RainBoW-I</a>
+						<br><span class="title">"Rookie Racer"</span>
 					</td>
 					<td class="table-cell" style="width: 32%;"><span class="donor-message">"Let's be kind to everyone here in the NT Community!"</span></td>				<td class="table-cell" style="width: 16%;"><span class="cash-symbol">$</span><span class="cash">16,000,000</span></td>
 				</tr>
@@ -1904,7 +1912,7 @@
 	91</td>
 	
 					<td class="table-cell" style="width: 12%;"><img class="car-img" src="/static/images/cars/painted/
-	137_large_1_180.png"/></td>
+	137_large_1_200.png"/></td>
 	
 					<td class="table-cell" style="width: 31%;">
 	<span style="color: #D2042D; font-size: 20px; font-weight: bold;">*</span>
@@ -1992,7 +2000,7 @@
 	
 						<a class="display-name display-name-gold" href="https://www.nitrotype.com/racer/
 	ashwat255" target="_blank">
-	100KRaceTarif</a>
+	Tariffic Typist</a>
 						<br><span class="title">"Battle Beast"</span>
 					</td>
 					<td class="table-cell" style="width: 32%;"><span class="donor-message">"Raw Racing Recruit"</span></td>				<td class="table-cell" style="width: 16%;"><span class="cash-symbol">$</span><span class="cash">11,750,000</span></td>
@@ -2043,8 +2051,8 @@
 					<td class="table-cell table-cell--place place-number" style="width: 9%;">
 	98</td>
 	
-					<td class="table-cell" style="width: 12%;"><img class="car-img" src="/static/images/cars/painted/
-	105_large_1_240.png"/></td>
+					<td class="table-cell" style="width: 12%;"><img class="car-img" src="/static/images/cars/
+	24.png"/></td>
 	
 					<td class="table-cell" style="width: 31%;">
 	<span style="color: #D2042D; font-size: 20px; font-weight: bold;">*</span>
@@ -2054,8 +2062,8 @@
 	
 						<a class="display-name display-name-gold" href="https://www.nitrotype.com/racer/
 	venomswrld" target="_blank">
-	DarkNightYT</a>
-						<br><span class="title">"The Mad Hatter"</span>
+	FriendlyAmethystPony</a>
+						<br><span class="title">"Heart & Solstice"</span>
 					</td>
 					<td class="table-cell" style="width: 32%;"><span class="donor-message"></span></td>				<td class="table-cell" style="width: 16%;"><span class="cash-symbol">$</span><span class="cash">11,000,000</span></td>
 				</tr>
@@ -2070,8 +2078,6 @@
 					<td class="table-cell" style="width: 31%;">
 	<span style="color: #D2042D; font-size: 20px; font-weight: bold;">*</span>
 						<img class="gold-img" src="/static/images/gold-membership.png"/>
-	
-						<span class="team-tag" style="color: #40b8ea;">[<a class="team-tag user-team-tag-link" style="color: #40b8ea;" href="https://www.nitrotype.com/team/MANTIS" target="_blank">MANTIS</a>]</span>
 	
 						<a class="display-name display-name-gold" href="https://www.nitrotype.com/racer/
 	mantisman4087" target="_blank">

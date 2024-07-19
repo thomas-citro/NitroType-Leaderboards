@@ -142,11 +142,29 @@ body {
 }
 
 .car-img {
-	transform: scaleX(-1);
+	/*transform: scaleX(-1);*/
+	transform: scale(-1, -1);
 	max-width: 80%;
 	height: auto;
 	display: block;
 	text-align: center;
+}
+
+.league-icon {
+	width: 45px;
+	height: 45px;
+}
+
+.discord-icon {
+	width: 32px;
+	height: 32px;
+	text-align: center;
+	vertical-align: bottom;
+	margin-right: 5px;
+}
+
+.header-icon {
+	margin-right: 5px;
 }
 
 .stats-car {
@@ -652,6 +670,7 @@ button {
 	padding-bottom: 17px;
 	box-shadow:inset 0px -2px 0px 0px #61626E;
 	display: flex;
+	max-width: 926px;
 }
 
 .divider2 {
@@ -659,6 +678,7 @@ button {
 	padding-top: 15px;
 	padding-bottom: 0;
 	display: flex;
+	max-width: 926px;
 }
 
 .divider2-w-bottom-margin {
@@ -666,6 +686,7 @@ button {
 	padding-top: 15px;
 	padding-bottom: 15px;
 	display: flex;
+	max-width: 926px;
 }
 
 .divider3 {
@@ -673,6 +694,7 @@ button {
 	padding: 0;
 	box-shadow:inset 0px -2px 0px 0px #61626E;
 	display: flex;
+	max-width: 926px;
 }
 
 .divider3-w-bottom-margin {
@@ -680,6 +702,7 @@ button {
 	padding-bottom: 17px;
 	box-shadow:inset 0px -2px 0px 0px #61626E;
 	display: flex;
+	max-width: 926px;
 }
 
 form {
@@ -714,6 +737,7 @@ form {
 	color: #CDCDCD;
 	font-family: "Montserrat", sans-serif;
 	font-size: 14px;
+	max-width: 901px;
 }
 
 .board-description-donors {
@@ -725,6 +749,11 @@ form {
 	color: #CDCDCD;
 	font-family: "Montserrat", sans-serif;
 	font-size: 14px;
+	max-width: 926px;
+}
+
+table {
+	max-width: 926px;
 }
 
 .width100 {
@@ -856,6 +885,7 @@ form {
 .page-text-box {
 	background: #3B3D4C;
 	padding: 20px;
+	max-width: 886px;
 }
 
 .page-text {
@@ -904,27 +934,39 @@ h2 {
 }
 
 .hall-of-fame-button {
+	/*
 	flex: 1 0 14%;
+	box-sizing: border-box;
+	*/
 	margin-left: 8px;
 	margin-right: 8px;
+	height: 43px;
+	width: 135px;
 	margin-bottom: 4px;
 	margin-top: 4px;
-	padding: 4px;
+	padding: 3px;
 	font-family: "Montserrat", sans-serif;
-	font-size: 14px;
+	font-size: 13px;
 	border-width: 1px;
     border-style: solid;
 	border-radius: 5px;
-	box-sizing: border-box;
+}
+
+.hof-button-row {
+	display: flex;
+	flex-direction: row;
 }
 
 .hall-of-fame-buttons {
+	/*
 	overflow: visible;
+	box-sizing: inherit;
+	flex-wrap: wrap;
+	*/
 	padding-left: 10px;
 	padding-right: 10px;
 	display: flex;
-	box-sizing: inherit;
-	flex-wrap: wrap;
+	flex-direction: column;
 }
 
 .hof-heading {
@@ -997,6 +1039,7 @@ h2 {
 	box-sizing: border-box;
 	text-size-adjust: 100%;
 	line-height: 1.6;
+	max-width: 926px;
 }
 
 .split-div {
