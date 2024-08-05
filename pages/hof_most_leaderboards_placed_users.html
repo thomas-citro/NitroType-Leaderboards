@@ -3,7 +3,7 @@
 	
 		<div class="tabs">
 	
-			<button class="tab not-active" onclick="changeTab('top_racers_season')">
+			<button class="tab not-active" onclick="changeTabPage('top_racers')">
 				<div class="icon-text-container">
 					<svg xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd" viewBox="0 0 24 24" id="icon-rank" width="18" height="18" fill="white">
 						<path
@@ -14,7 +14,7 @@
 				</div>
 			</button>
 	
-			<button class="tab not-active" onclick="changeTab('top_teams_season')">
+			<button class="tab not-active" onclick="changeTabPage('top_teams')">
 				<div class="icon-text-container">
 					<svg xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd" viewBox="0 0 24 24" id="icon-rank-team" width="18" height="18" fill="white">
 						<path
@@ -25,7 +25,7 @@
 				</div>
 			</button>
 	
-			<button class="tab not-active" onclick="changeTab('season_52_racers')">
+			<button class="tab not-active" onclick="changeTabPage('past_seasons')">
 				<div class="icon-text-container">
 					<svg xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd" width="18px" height="18px" id="icon-wreath" viewBox="0 0 512 512" fill="white">
 						<path 
@@ -58,7 +58,7 @@
 				</div>
 			</button>
 	
-			<button class="tab not-active" onclick="openSiteStatsPage([282168, 1344446, 854997, 773059, 622880, 471748, 349031, 259982, 195117, 144684, 107907, 81313, 105284, 57546, 31059, 16336, 9507, 50592, 31495, 1533, 2293], [597, 11582, 12382, 14031, 14178, 12444, 10550, 8875, 7351, 6098, 5195, 4161, 6038, 3964, 2568, 1500, 798, 781, 163, 165, 51], [81, 1266, 1680, 2221, 2521, 2410, 2234, 2081, 1969, 1821, 1621, 1457, 2515, 1905, 1541, 971, 593, 627, 151, 66, 44])">
+			<button class="tab not-active" onclick="openSiteStatsPage([282395, 1345357, 855831, 773860, 623595, 472350, 349563, 260274, 195566, 144911, 108141, 81507, 105506, 57744, 31099, 16399, 9510, 50601, 31511, 1549, 2292], [624, 11921, 12804, 14436, 14661, 12827, 10886, 9120, 7699, 6264, 5372, 4355, 6250, 4152, 2609, 1567, 810, 795, 178, 183, 54], [80, 1273, 1677, 2232, 2536, 2402, 2234, 2078, 2000, 1817, 1630, 1460, 2509, 1938, 1507, 988, 594, 609, 158, 65, 44])">
 				<div class="icon-text-container">
 					<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" id="icon-chart" width="18" height="18" fill="white">
 						<path d="M7 19H1V8h6v11zm8-18H9v18h6V1zm8 11h-6v7h6v-7zm1 9H0v2h24v-2z" />
@@ -81,42 +81,7 @@
 		</div>
 	
 		<div class="divider">
-	
-			<div class="hall-of-fame-buttons">
-				<div class="hof-heading-container"><div class="hof-heading">Player Hall of Fame</div></div>
-				<div class="hof-button-row">
-					<button type="button" class="hall-of-fame-button not-active-button" onclick="changeTab('hof_most_active_racers')">Most Active Racers</button>
-					<button type="button" class="hall-of-fame-button not-active-button" onclick="changeTab('hof_fastest_racers')">Fastest Racers</button>
-					<button type="button" class="hall-of-fame-button not-active-button" onclick="changeTab('hof_verified_fastest_racers')">Verified Fastest Racers</button>
-					<button type="button" class="hall-of-fame-button not-active-button" onclick="changeTab('hof_most_accurate_racers')">Most Accurate Racers</button>
-					<button type="button" class="hall-of-fame-button not-active-button" onclick="changeTab('hof_longest_session')">Longest Sessions</button>
-					<button type="button" class="hall-of-fame-button not-active-button" onclick="changeTab('hof_most_cars_owned')">Most Cars Owned</button>
-				</div>
-				<div class="hof-button-row">
-					<button type="button" class="hall-of-fame-button not-active-button" onclick="changeTab('hof_most_profile_views')">Most Profile Views</button>
-					<button type="button" class="hall-of-fame-button not-active-button" onclick="changeTab('hof_oldest_active_players')">Oldest Active Players</button>
-					<button type="button" class="hall-of-fame-button not-active-button" onclick="changeTab('hof_most_player_races_per_day')">Most Races Per Day</button>
-					<button type="button" class="hall-of-fame-button not-active-button" onclick="changeTab('hof_top_donors')">Top Donors</button>
-					<button type="button" class="hall-of-fame-button not-active-button" onclick="changeTab('hof_most_devoted_team_members')">Most Devoted Team Members</button>
-					<button type="button" class="hall-of-fame-button not-active-button" onclick="changeTab('hof_oldest_active_team_members')">Oldest Active Team Members</button>
-				</div>
-				<div class="hof-button-row">
-					<button type="button" class="hall-of-fame-button active-button">Most Leaderboards Placed</button>
-				</div>
-				<div class="hof-heading-container"><div class="hof-heading">Team Hall of Fame</div></div>
-				<div class="hof-button-row">
-					<button type="button" class="hall-of-fame-button not-active-button" onclick="changeTab('hof_most_active_teams')">Most Active Teams</button>
-					<button type="button" class="hall-of-fame-button not-active-button" onclick="changeTab('hof_fastest_teams')">Fastest Teams</button>
-					<button type="button" class="hall-of-fame-button not-active-button" onclick="changeTab('hof_most_accurate_teams')">Most Accurate Teams</button>
-					<button type="button" class="hall-of-fame-button not-active-button" onclick="changeTab('hof_most_team_views')">Most Team Page Views</button>
-					<button type="button" class="hall-of-fame-button not-active-button" onclick="changeTab('hof_oldest_active_teams')">Oldest Active Teams</button>
-					<button type="button" class="hall-of-fame-button not-active-button" onclick="changeTab('hof_most_team_races_per_day')">Most Races Per Day</button>
-				</div>
-				<div class="hof-button-row">
-					<button type="button" class="hall-of-fame-button not-active-button" onclick="changeTab('hof_most_leaderboards_placed_teams')">Most Leaderboards Placed</button>
-				</div>
-			</div>
-	
+	<div class="hall-of-fame-buttons"><div class="hof-heading-container"><div class="hof-heading">Player Hall of Fame</div></div><div class="hof-button-row"><button type="button" class="hall-of-fame-button not-active-button" onclick="changeTab('hof_most_active_racers')">Most Active Racers</button><button type="button" class="hall-of-fame-button not-active-button" onclick="changeTab('hof_fastest_racers')">Fastest Racers</button><button type="button" class="hall-of-fame-button not-active-button" onclick="changeTab('hof_verified_fastest_racers')">Verified Fastest Racers</button><button type="button" class="hall-of-fame-button not-active-button" onclick="changeTab('hof_most_accurate_racers')">Most Accurate Racers</button><button type="button" class="hall-of-fame-button not-active-button" onclick="changeTab('hof_longest_session')">Longest Sessions</button><button type="button" class="hall-of-fame-button not-active-button" onclick="changeTab('hof_most_cars_owned')">Most Cars Owned</button></div><div class="hof-button-row"><button type="button" class="hall-of-fame-button not-active-button" onclick="changeTab('hof_most_profile_views')">Most Profile Views</button><button type="button" class="hall-of-fame-button not-active-button" onclick="changeTab('hof_oldest_active_players')">Oldest Active Players</button><button type="button" class="hall-of-fame-button not-active-button" onclick="changeTab('hof_most_player_races_per_day')">Most Races Per Day</button><button type="button" class="hall-of-fame-button not-active-button" onclick="changeTab('hof_top_donors')">Top Donors</button><button type="button" class="hall-of-fame-button not-active-button" onclick="changeTab('hof_most_devoted_team_members')">Most Devoted Team Members</button><button type="button" class="hall-of-fame-button not-active-button" onclick="changeTab('hof_oldest_active_team_members')">Oldest Active Team Members</button></div><div class="hof-button-row"><button type="button" class="hall-of-fame-button active-button">Most Leaderboards Placed</button></div><div class="hof-heading-container"><div class="hof-heading">Team Hall of Fame</div></div><div class="hof-button-row"><button type="button" class="hall-of-fame-button not-active-button" onclick="changeTab('hof_most_active_teams')">Most Active Teams</button><button type="button" class="hall-of-fame-button not-active-button" onclick="changeTab('hof_fastest_teams')">Fastest Teams</button><button type="button" class="hall-of-fame-button not-active-button" onclick="changeTab('hof_most_accurate_teams')">Most Accurate Teams</button><button type="button" class="hall-of-fame-button not-active-button" onclick="changeTab('hof_most_team_views')">Most Team Page Views</button><button type="button" class="hall-of-fame-button not-active-button" onclick="changeTab('hof_oldest_active_teams')">Oldest Active Teams</button><button type="button" class="hall-of-fame-button not-active-button" onclick="changeTab('hof_most_team_races_per_day')">Most Races Per Day</button></div><div class="hof-button-row"><button type="button" class="hall-of-fame-button not-active-button" onclick="changeTab('hof_most_leaderboards_placed_teams')">Most Leaderboards Placed</button></div></div>
 		</div>
 	
 		<table class="table">
@@ -136,7 +101,7 @@
 				<tr class="table-row table-row--gold" lookupID="moilyn">
 					<td class="table-cell table-cell--place" style="width: 9%;"><img class="medal" src="/static/images/gold.png"/></td>
 	
-					<td class="table-cell" style="width: 7%;"><img class="league-icon" src="/static/images/leagues/users/10.png"/></td>
+					<td class="table-cell" style="width: 7%;"><img class="league-icon" src="/static/images/leagues/users/11.png"/></td>
 	
 					<td class="table-cell" style="width: 12%;"><img class="car-img" src="/static/images/cars/painted/
 	flowerpower_large_260.png"/></td>
@@ -147,21 +112,20 @@
 	
 						<span class="team-tag" style="color: #ea1979;">[<a class="team-tag user-team-tag-link" style="color: #ea1979;" href="https://www.nitrotype.com/team/PR2W" target="_blank">PR2W</a>]</span>
 	
-						<a class="display-name display-name-gold" href="https://www.nitrotype.com/racer/
-	moilyn" target="_blank">
+						<a class="display-name display-name-gold" href="https://www.nitrotype.com/racer/moilyn" target="_blank">
 	✨꧁⚽WF⚽꧂✨</a>
-						<br><span class="title">"Epic Engager"</span>
+						<br><span class="title">"Legendary Lapper"</span>
 					</td>
 	
 					<td class="table-cell" style="width: 21%;">
-	40</td>
+	41</td>
 	
 				</tr>
 	
 				<tr class="table-row table-row--silver" lookupID="mickeyblueeyes">
 					<td class="table-cell table-cell--place" style="width: 9%;"><img class="medal" src="/static/images/silver.png" /></td>
 	
-					<td class="table-cell" style="width: 7%;"><img class="league-icon" src="/static/images/leagues/users/6.png"/></td>
+					<td class="table-cell" style="width: 7%;"><img class="league-icon" src="/static/images/leagues/users/7.png"/></td>
 	
 					<td class="table-cell" style="width: 12%;"><img class="car-img" src="/static/images/cars/
 	370.png"/></td>
@@ -172,10 +136,9 @@
 	
 						<span class="team-tag" style="color: #ee1f25;">[<a class="team-tag user-team-tag-link" style="color: #ee1f25;" href="https://www.nitrotype.com/team/FBSLCH" target="_blank">FBSLCH</a>]</span>
 	
-						<a class="display-name display-name-gold" href="https://www.nitrotype.com/racer/
-	mickeyblueeyes" target="_blank">
+						<a class="display-name display-name-gold" href="https://www.nitrotype.com/racer/mickeyblueeyes" target="_blank">
 	Ⓢlider☯nTheBlack</a>
-						<br><span class="title">"Just Roll With It"</span>
+						<br><span class="title">"Expert Extraordinaire"</span>
 					</td>
 	
 					<td class="table-cell" style="width: 21%;">
@@ -197,8 +160,7 @@
 	
 						<span class="team-tag" style="color: #f5eb21;">[<a class="team-tag user-team-tag-link" style="color: #f5eb21;" href="https://www.nitrotype.com/team/ENTR" target="_blank">ENTR</a>]</span>
 	
-						<a class="display-name display-name-gold" href="https://www.nitrotype.com/racer/
-	kriskarm" target="_blank">
+						<a class="display-name display-name-gold" href="https://www.nitrotype.com/racer/kriskarm" target="_blank">
 	✨M-☯-1-S-Σ-S✨</a>
 						<br><span class="title">"Grab the Popcorn!"</span>
 					</td>
@@ -223,8 +185,7 @@
 	
 						<span class="team-tag" style="color: #436fb6;">[<a class="team-tag user-team-tag-link" style="color: #436fb6;" href="https://www.nitrotype.com/team/SSH" target="_blank">SSH</a>]</span>
 	
-						<a class="display-name display-name-gold" href="https://www.nitrotype.com/racer/
-	volatile" target="_blank">
+						<a class="display-name display-name-gold" href="https://www.nitrotype.com/racer/volatile" target="_blank">
 	volatile</a>
 						<br><span class="title">"Momatile"</span>
 					</td>
@@ -249,8 +210,7 @@
 	
 						<span class="team-tag" style="color: #f15b40;">[<a class="team-tag user-team-tag-link" style="color: #f15b40;" href="https://www.nitrotype.com/team/DOG" target="_blank">DOG</a>]</span>
 	
-						<a class="display-name display-name-gold" href="https://www.nitrotype.com/racer/
-	petromax" target="_blank">
+						<a class="display-name display-name-gold" href="https://www.nitrotype.com/racer/petromax" target="_blank">
 	Level800petromax</a>
 						<br><span class="title">"2016 Bronze Olympian"</span>
 					</td>
@@ -275,8 +235,7 @@
 	
 						<span class="team-tag" style="color: #8750a0;">[<a class="team-tag user-team-tag-link" style="color: #8750a0;" href="https://www.nitrotype.com/team/NTA3" target="_blank">NTA3</a>]</span>
 	
-						<a class="display-name display-name-gold" href="https://www.nitrotype.com/racer/
-	jjohnson757" target="_blank">
+						<a class="display-name display-name-gold" href="https://www.nitrotype.com/racer/jjohnson757" target="_blank">
 	iloveshoes2</a>
 						<br><span class="title">"Sorcerer of Speed"</span>
 					</td>
@@ -290,7 +249,7 @@
 					<td class="table-cell table-cell--place place-number" style="width: 9%;">
 	7</td>
 	
-					<td class="table-cell" style="width: 7%;"><img class="league-icon" src="/static/images/leagues/users/2.png"/></td>
+					<td class="table-cell" style="width: 7%;"><img class="league-icon" src="/static/images/leagues/users/1.png"/></td>
 	
 					<td class="table-cell" style="width: 12%;"><img class="car-img" src="/static/images/cars/painted/
 	error503_large_340.png"/></td>
@@ -301,8 +260,7 @@
 	
 						<span class="team-tag" style="color: #5b52a3;">[<a class="team-tag user-team-tag-link" style="color: #5b52a3;" href="https://www.nitrotype.com/team/LIN0" target="_blank">LIN0</a>]</span>
 	
-						<a class="display-name display-name-gold" href="https://www.nitrotype.com/racer/
-	mal123wt" target="_blank">
+						<a class="display-name display-name-gold" href="https://www.nitrotype.com/racer/mal123wt" target="_blank">
 	Clancy</a>
 						<br><span class="title">"Rival"</span>
 					</td>
@@ -325,8 +283,7 @@
 	
 						<img class="gold-img" src="/static/images/gold-membership.png"/>
 	
-						<a class="display-name display-name-gold" href="https://www.nitrotype.com/racer/
-	typemefantastic" target="_blank">
+						<a class="display-name display-name-gold" href="https://www.nitrotype.com/racer/typemefantastic" target="_blank">
 	TYPEMEFANTASTIC</a>
 						<br><span class="title">"I Have Fans!"</span>
 					</td>
@@ -351,8 +308,7 @@
 	
 						<span class="team-tag" style="color: #71c055;">[<a class="team-tag user-team-tag-link" style="color: #71c055;" href="https://www.nitrotype.com/team/NTDT" target="_blank">NTDT</a>]</span>
 	
-						<a class="display-name display-name-gold" href="https://www.nitrotype.com/racer/
-	thegoldenator" target="_blank">
+						<a class="display-name display-name-gold" href="https://www.nitrotype.com/racer/thegoldenator" target="_blank">
 	Cliffy</a>
 						<br><span class="title">"Motorcycle Rider"</span>
 					</td>
@@ -377,8 +333,7 @@
 	
 						<span class="team-tag" style="color: #71c055;">[<a class="team-tag user-team-tag-link" style="color: #71c055;" href="https://www.nitrotype.com/team/FLL" target="_blank">FLL</a>]</span>
 	
-						<a class="display-name display-name-gold" href="https://www.nitrotype.com/racer/
-	lizard856" target="_blank">
+						<a class="display-name display-name-gold" href="https://www.nitrotype.com/racer/lizard856" target="_blank">
 	Dragon_YouTube</a>
 						<br><span class="title">"Verified YouTuber"</span>
 					</td>
@@ -401,8 +356,7 @@
 	
 						<img class="gold-img" src="/static/images/gold-membership.png"/>
 	
-						<a class="display-name display-name-gold" href="https://www.nitrotype.com/racer/
-	tracy" target="_blank">
+						<a class="display-name display-name-gold" href="https://www.nitrotype.com/racer/tracy" target="_blank">
 	Tracy</a>
 						<br><span class="title">"Champion"</span>
 					</td>
@@ -427,8 +381,7 @@
 	
 						<span class="team-tag" style="color: #96d1f3;">[<a class="team-tag user-team-tag-link" style="color: #96d1f3;" href="https://www.nitrotype.com/team/5HRK" target="_blank">5HRK</a>]</span>
 	
-						<a class="display-name display-name-gold" href="https://www.nitrotype.com/racer/
-	antonija" target="_blank">
+						<a class="display-name display-name-gold" href="https://www.nitrotype.com/racer/antonija" target="_blank">
 	anTstein</a>
 						<br><span class="title">"Olympic Gold Medalist"</span>
 					</td>
@@ -451,8 +404,7 @@
 	
 						<img class="gold-img" src="/static/images/gold-membership.png"/>
 	
-						<a class="display-name display-name-gold" href="https://www.nitrotype.com/racer/
-	puppykisses" target="_blank">
+						<a class="display-name display-name-gold" href="https://www.nitrotype.com/racer/puppykisses" target="_blank">
 	sorry am blind now</a>
 						<br><span class="title">"Oh Em Gee!"</span>
 					</td>
@@ -477,8 +429,7 @@
 	
 						<span class="team-tag" style="color: #436fb6;">[<a class="team-tag user-team-tag-link" style="color: #436fb6;" href="https://www.nitrotype.com/team/SSH" target="_blank">SSH</a>]</span>
 	
-						<a class="display-name display-name-gold" href="https://www.nitrotype.com/racer/
-	quickfox" target="_blank">
+						<a class="display-name display-name-gold" href="https://www.nitrotype.com/racer/quickfox" target="_blank">
 	Raspb3rry</a>
 						<br><span class="title">"Bubbly!"</span>
 					</td>
@@ -501,8 +452,7 @@
 	
 						<img class="gold-img" src="/static/images/gold-membership.png"/>
 	
-						<a class="display-name display-name-gold" href="https://www.nitrotype.com/racer/
-	jsmith4492" target="_blank">
+						<a class="display-name display-name-gold" href="https://www.nitrotype.com/racer/jsmith4492" target="_blank">
 	☀️Smithy☀️</a>
 						<br><span class="title">"Champion Team"</span>
 					</td>
@@ -525,11 +475,10 @@
 	
 						<img class="gold-img" src="/static/images/gold-membership.png"/>
 	
-						<span class="team-tag" style="color: #436fb6;">[<a class="team-tag user-team-tag-link" style="color: #436fb6;" href="https://www.nitrotype.com/team/EL1TE" target="_blank">EL1TE</a>]</span>
+						<span class="team-tag" style="color: #ee1f25;">[<a class="team-tag user-team-tag-link" style="color: #ee1f25;" href="https://www.nitrotype.com/team/EL1TE" target="_blank">EL1TE</a>]</span>
 	
-						<a class="display-name display-name-gold" href="https://www.nitrotype.com/racer/
-	dean3333322" target="_blank">
-	Dean-NEW HIGH SPEED</a>
+						<a class="display-name display-name-gold" href="https://www.nitrotype.com/racer/dean3333322" target="_blank">
+	Dean 92k</a>
 						<br><span class="title">"Contestant"</span>
 					</td>
 	
@@ -545,7 +494,7 @@
 					<td class="table-cell" style="width: 7%;"><img class="league-icon" src="/static/images/leagues/users/5.png"/></td>
 	
 					<td class="table-cell" style="width: 12%;"><img class="car-img" src="/static/images/cars/painted/
-	129_large_1_340.png"/></td>
+	77_large_1_320.png"/></td>
 	
 					<td class="table-cell" style="width: 51%;">
 	
@@ -553,8 +502,7 @@
 	
 						<span class="team-tag" style="color: #f9f18c;">[<a class="team-tag user-team-tag-link" style="color: #f9f18c;" href="https://www.nitrotype.com/team/PROTON" target="_blank">PROTON</a>]</span>
 	
-						<a class="display-name display-name-gold" href="https://www.nitrotype.com/racer/
-	paulamirada2" target="_blank">
+						<a class="display-name display-name-gold" href="https://www.nitrotype.com/racer/paulamirada2" target="_blank">
 	Switching2Primes</a>
 						<br><span class="title">"Peace, Love, Nitros"</span>
 					</td>
@@ -579,8 +527,7 @@
 	
 						<span class="team-tag" style="color: #ee1f25;">[<a class="team-tag user-team-tag-link" style="color: #ee1f25;" href="https://www.nitrotype.com/team/TALK" target="_blank">TALK</a>]</span>
 	
-						<a class="display-name display-name-gold" href="https://www.nitrotype.com/racer/
-	10020156" target="_blank">
+						<a class="display-name display-name-gold" href="https://www.nitrotype.com/racer/10020156" target="_blank">
 	Join_TALK</a>
 						<br><span class="title">"Typing Demon"</span>
 					</td>
@@ -597,7 +544,7 @@
 					<td class="table-cell" style="width: 7%;"><img class="league-icon" src="/static/images/leagues/users/6.png"/></td>
 	
 					<td class="table-cell" style="width: 12%;"><img class="car-img" src="/static/images/cars/
-	361.png"/></td>
+	126.png"/></td>
 	
 					<td class="table-cell" style="width: 51%;">
 	
@@ -605,10 +552,9 @@
 	
 						<span class="team-tag" style="color: #daedfa;">[<a class="team-tag user-team-tag-link" style="color: #daedfa;" href="https://www.nitrotype.com/team/TOPGOD" target="_blank">TOPGOD</a>]</span>
 	
-						<a class="display-name display-name-gold" href="https://www.nitrotype.com/racer/
-	orochi453" target="_blank">
+						<a class="display-name display-name-gold" href="https://www.nitrotype.com/racer/orochi453" target="_blank">
 	octav453</a>
-						<br><span class="title">"Batty"</span>
+						<br><span class="title">"Sea Captain"</span>
 					</td>
 	
 					<td class="table-cell" style="width: 21%;">
@@ -629,8 +575,7 @@
 	
 						<img class="gold-img" src="/static/images/gold-membership.png"/>
 	
-						<a class="display-name display-name-gold" href="https://www.nitrotype.com/racer/
-	jari2" target="_blank">
+						<a class="display-name display-name-gold" href="https://www.nitrotype.com/racer/jari2" target="_blank">
 	Minkgear</a>
 						<br><span class="title">"April Ace"</span>
 					</td>
@@ -655,8 +600,7 @@
 	
 						<span class="team-tag" style="color: #71c055;">[<a class="team-tag user-team-tag-link" style="color: #71c055;" href="https://www.nitrotype.com/team/WPS2" target="_blank">WPS2</a>]</span>
 	
-						<a class="display-name display-name-gold" href="https://www.nitrotype.com/racer/
-	boaz9" target="_blank">
+						<a class="display-name display-name-gold" href="https://www.nitrotype.com/racer/boaz9" target="_blank">
 	Bremitorix</a>
 						<br><span class="title">"Record Keeper"</span>
 					</td>
@@ -681,8 +625,7 @@
 	
 						<span class="team-tag" style="color: #d1499b;">[<a class="team-tag user-team-tag-link" style="color: #d1499b;" href="https://www.nitrotype.com/team/CAFE" target="_blank">CAFE</a>]</span>
 	
-						<a class="display-name display-name-gold" href="https://www.nitrotype.com/racer/
-	sjtyping" target="_blank">
+						<a class="display-name display-name-gold" href="https://www.nitrotype.com/racer/sjtyping" target="_blank">
 	HadMyCoffee☕</a>
 						<br><span class="title">"Champion Team"</span>
 					</td>
@@ -705,8 +648,7 @@
 	
 						<img class="gold-img" src="/static/images/gold-membership.png"/>
 	
-						<a class="display-name display-name-gold" href="https://www.nitrotype.com/racer/
-	rlepardo" target="_blank">
+						<a class="display-name display-name-gold" href="https://www.nitrotype.com/racer/rlepardo" target="_blank">
 	ghoul majesty NIKE</a>
 						<br><span class="title">"I-Scream"</span>
 					</td>
@@ -731,10 +673,9 @@
 	
 						<span class="team-tag" style="color: #436fb6;">[<a class="team-tag user-team-tag-link" style="color: #436fb6;" href="https://www.nitrotype.com/team/SSH" target="_blank">SSH</a>]</span>
 	
-						<a class="display-name display-name-gold" href="https://www.nitrotype.com/racer/
-	jangroovy1" target="_blank">
-	Madam President</a>
-						<br><span class="title">"World's Best Boss"</span>
+						<a class="display-name display-name-gold" href="https://www.nitrotype.com/racer/jangroovy1" target="_blank">
+	BrownCoralKoala</a>
+						<br><span class="title">"I Love Cats"</span>
 					</td>
 	
 					<td class="table-cell" style="width: 21%;">
@@ -757,8 +698,7 @@
 	
 						<span class="team-tag" style="color: #96d1f3;">[<a class="team-tag user-team-tag-link" style="color: #96d1f3;" href="https://www.nitrotype.com/team/5HRK" target="_blank">5HRK</a>]</span>
 	
-						<a class="display-name display-name-gold" href="https://www.nitrotype.com/racer/
-	sharkkey" target="_blank">
+						<a class="display-name display-name-gold" href="https://www.nitrotype.com/racer/sharkkey" target="_blank">
 	SharkKey</a>
 						<br><span class="title">"Empress"</span>
 					</td>
@@ -783,8 +723,7 @@
 	
 						<span class="team-tag" style="color: #436fb6;">[<a class="team-tag user-team-tag-link" style="color: #436fb6;" href="https://www.nitrotype.com/team/SSH" target="_blank">SSH</a>]</span>
 	
-						<a class="display-name display-name-gold" href="https://www.nitrotype.com/racer/
-	tranq_" target="_blank">
+						<a class="display-name display-name-gold" href="https://www.nitrotype.com/racer/tranq_" target="_blank">
 	 ONE1 </a>
 						<br><span class="title">"Pharaoh"</span>
 					</td>
@@ -809,8 +748,7 @@
 	
 						<span class="team-tag" style="color: #ee1f25;">[<a class="team-tag user-team-tag-link" style="color: #ee1f25;" href="https://www.nitrotype.com/team/TALK" target="_blank">TALK</a>]</span>
 	
-						<a class="display-name display-name-gold" href="https://www.nitrotype.com/racer/
-	dragoncityjose" target="_blank">
+						<a class="display-name display-name-gold" href="https://www.nitrotype.com/racer/dragoncityjose" target="_blank">
 	CHEESE FREE</a>
 						<br><span class="title">"Speed Demon"</span>
 					</td>
@@ -833,8 +771,7 @@
 	
 						<img class="gold-img" src="/static/images/gold-membership.png"/>
 	
-						<a class="display-name display-name-gold" href="https://www.nitrotype.com/racer/
-	theluckyknight" target="_blank">
+						<a class="display-name display-name-gold" href="https://www.nitrotype.com/racer/theluckyknight" target="_blank">
 	zetria</a>
 						<br><span class="title">"Olympic Bronze Medalist"</span>
 					</td>
@@ -859,8 +796,7 @@
 	
 						<span class="team-tag" style="color: #96d1f3;">[<a class="team-tag user-team-tag-link" style="color: #96d1f3;" href="https://www.nitrotype.com/team/5HRK" target="_blank">5HRK</a>]</span>
 	
-						<a class="display-name display-name-gold" href="https://www.nitrotype.com/racer/
-	maikey25" target="_blank">
+						<a class="display-name display-name-gold" href="https://www.nitrotype.com/racer/maikey25" target="_blank">
 	maikey</a>
 						<br><span class="title">"Brainfreeze"</span>
 					</td>
@@ -885,8 +821,7 @@
 	
 						<span class="team-tag" style="color: #436fb6;">[<a class="team-tag user-team-tag-link" style="color: #436fb6;" href="https://www.nitrotype.com/team/SSH" target="_blank">SSH</a>]</span>
 	
-						<a class="display-name display-name-gold" href="https://www.nitrotype.com/racer/
-	nikelastof99" target="_blank">
+						<a class="display-name display-name-gold" href="https://www.nitrotype.com/racer/nikelastof99" target="_blank">
 	Nikeee</a>
 						<br><span class="title">"Typing Nightmare"</span>
 					</td>
@@ -909,8 +844,7 @@
 	
 						<img class="gold-img" src="/static/images/gold-membership.png"/>
 	
-						<a class="display-name display-name-gold" href="https://www.nitrotype.com/racer/
-	zfhkaz1ngtimcml" target="_blank">
+						<a class="display-name display-name-gold" href="https://www.nitrotype.com/racer/zfhkaz1ngtimcml" target="_blank">
 	*r$jZX_W</a>
 						<br><span class="title">"Easy Rider"</span>
 					</td>
@@ -933,8 +867,7 @@
 	
 						<img class="gold-img" src="/static/images/gold-membership.png"/>
 	
-						<a class="display-name display-name-gold" href="https://www.nitrotype.com/racer/
-	ghostrider98765" target="_blank">
+						<a class="display-name display-name-gold" href="https://www.nitrotype.com/racer/ghostrider98765" target="_blank">
 	GhostRider98765</a>
 						<br><span class="title">"Typing Demon"</span>
 					</td>
@@ -959,8 +892,7 @@
 	
 						<span class="team-tag" style="color: #71c055;">[<a class="team-tag user-team-tag-link" style="color: #71c055;" href="https://www.nitrotype.com/team/DSNT" target="_blank">DSNT</a>]</span>
 	
-						<a class="display-name display-name-gold" href="https://www.nitrotype.com/racer/
-	mfjheffh" target="_blank">
+						<a class="display-name display-name-gold" href="https://www.nitrotype.com/racer/mfjheffh" target="_blank">
 	꧁✨SunShine✨꧂</a>
 						<br><span class="title">"Grab the Popcorn!"</span>
 					</td>
@@ -970,9 +902,34 @@
 	
 				</tr>
 	
-				<tr class="table-row table-row--nonpodium" lookupID="henryv70">
+				<tr class="table-row table-row--nonpodium" lookupID="ashwat255">
 					<td class="table-cell table-cell--place place-number" style="width: 9%;">
 	34</td>
+	
+					<td class="table-cell" style="width: 7%;"><img class="league-icon" src="/static/images/leagues/users/7.png"/></td>
+	
+					<td class="table-cell" style="width: 12%;"><img class="car-img" src="/static/images/cars/painted/
+	107_large_1_240.png"/></td>
+	
+					<td class="table-cell" style="width: 51%;">
+	
+						<img class="gold-img" src="/static/images/gold-membership.png"/>
+	
+						<span class="team-tag" style="color: #ee1f25;">[<a class="team-tag user-team-tag-link" style="color: #ee1f25;" href="https://www.nitrotype.com/team/TALK" target="_blank">TALK</a>]</span>
+	
+						<a class="display-name display-name-gold" href="https://www.nitrotype.com/racer/ashwat255" target="_blank">
+	Tariffic Typist</a>
+						<br><span class="title">"Battle Beast"</span>
+					</td>
+	
+					<td class="table-cell" style="width: 21%;">
+	12</td>
+	
+				</tr>
+	
+				<tr class="table-row table-row--nonpodium" lookupID="henryv70">
+					<td class="table-cell table-cell--place place-number" style="width: 9%;">
+	35</td>
 	
 					<td class="table-cell" style="width: 7%;"><img class="league-icon" src="/static/images/leagues/users/6.png"/></td>
 	
@@ -985,8 +942,7 @@
 	
 						<span class="team-tag" style="color: #40b8ea;">[<a class="team-tag user-team-tag-link" style="color: #40b8ea;" href="https://www.nitrotype.com/team/ESOTD" target="_blank">ESOTD</a>]</span>
 	
-						<a class="display-name display-name-gold" href="https://www.nitrotype.com/racer/
-	henryv70" target="_blank">
+						<a class="display-name display-name-gold" href="https://www.nitrotype.com/racer/henryv70" target="_blank">
 	TheProdigyHenry</a>
 						<br><span class="title">"California Dreamin'"</span>
 					</td>
@@ -996,979 +952,9 @@
 	
 				</tr>
 	
-				<tr class="table-row table-row--nonpodium" lookupID="feveredbasilisk">
-					<td class="table-cell table-cell--place place-number" style="width: 9%;">
-	35</td>
-	
-					<td class="table-cell" style="width: 7%;"><img class="league-icon" src="/static/images/leagues/users/3.png"/></td>
-	
-					<td class="table-cell" style="width: 12%;"><img class="car-img" src="/static/images/cars/
-	106.png"/></td>
-	
-					<td class="table-cell" style="width: 51%;">
-	
-						<img class="gold-img" src="/static/images/gold-membership.png"/>
-	
-						<a class="display-name display-name-gold" href="https://www.nitrotype.com/racer/
-	feveredbasilisk" target="_blank">
-	Niki Atom</a>
-						<br><span class="title">"Three Commas Club"</span>
-					</td>
-	
-					<td class="table-cell" style="width: 21%;">
-	12</td>
-	
-				</tr>
-	
-				<tr class="table-row table-row--nonpodium" lookupID="hollow_man">
-					<td class="table-cell table-cell--place place-number" style="width: 9%;">
-	36</td>
-	
-					<td class="table-cell" style="width: 7%;"><img class="league-icon" src="/static/images/leagues/users/0.png"/></td>
-	
-					<td class="table-cell" style="width: 12%;"><img class="car-img" src="/static/images/cars/
-	209.png"/></td>
-	
-					<td class="table-cell" style="width: 51%;">
-	
-						<img class="gold-img" src="/static/images/gold-membership.png"/>
-	
-						<a class="display-name display-name-gold" href="https://www.nitrotype.com/racer/
-	hollow_man" target="_blank">
-	HollowManNoToNitros!</a>
-						<br><span class="title">"In the Spirit"</span>
-					</td>
-	
-					<td class="table-cell" style="width: 21%;">
-	12</td>
-	
-				</tr>
-	
-				<tr class="table-row table-row--nonpodium" lookupID="tobeatyper">
-					<td class="table-cell table-cell--place place-number" style="width: 9%;">
-	37</td>
-	
-					<td class="table-cell" style="width: 7%;"><img class="league-icon" src="/static/images/leagues/users/0.png"/></td>
-	
-					<td class="table-cell" style="width: 12%;"><img class="car-img" src="/static/images/cars/
-	277.png"/></td>
-	
-					<td class="table-cell" style="width: 51%;">
-	
-						<img class="gold-img" src="/static/images/gold-membership.png"/>
-	
-						<a class="display-name display-name-gold" href="https://www.nitrotype.com/racer/
-	tobeatyper" target="_blank">
-	Thaityper</a>
-						<br><span class="title">"The Caped Crusader"</span>
-					</td>
-	
-					<td class="table-cell" style="width: 21%;">
-	12</td>
-	
-				</tr>
-	
-				<tr class="table-row table-row--nonpodium" lookupID="randora">
-					<td class="table-cell table-cell--place place-number" style="width: 9%;">
-	38</td>
-	
-					<td class="table-cell" style="width: 7%;"><img class="league-icon" src="/static/images/leagues/users/1.png"/></td>
-	
-					<td class="table-cell" style="width: 12%;"><img class="car-img" src="/static/images/cars/
-	72.png"/></td>
-	
-					<td class="table-cell" style="width: 51%;">
-	
-						<img class="gold-img" src="/static/images/gold-membership.png"/>
-	
-						<a class="display-name display-name-gold" href="https://www.nitrotype.com/racer/
-	randora" target="_blank">
-	Randora</a>
-						<br><span class="title">"Typing Demon"</span>
-					</td>
-	
-					<td class="table-cell" style="width: 21%;">
-	12</td>
-	
-				</tr>
-	
-				<tr class="table-row table-row--nonpodium" lookupID="jojokesie">
-					<td class="table-cell table-cell--place place-number" style="width: 9%;">
-	39</td>
-	
-					<td class="table-cell" style="width: 7%;"><img class="league-icon" src="/static/images/leagues/users/0.png"/></td>
-	
-					<td class="table-cell" style="width: 12%;"><img class="car-img" src="/static/images/cars/
-	95.png"/></td>
-	
-					<td class="table-cell" style="width: 51%;">
-	
-						<img class="gold-img" src="/static/images/gold-membership.png"/>
-	
-						<span class="team-tag" style="color: #f15b40;">[<a class="team-tag user-team-tag-link" style="color: #f15b40;" href="https://www.nitrotype.com/team/DOG" target="_blank">DOG</a>]</span>
-	
-						<a class="display-name display-name-gold" href="https://www.nitrotype.com/racer/
-	jojokesie" target="_blank">
-	PantherJosh!</a>
-						<br><span class="title">"Challenger"</span>
-					</td>
-	
-					<td class="table-cell" style="width: 21%;">
-	12</td>
-	
-				</tr>
-	
-				<tr class="table-row table-row--nonpodium" lookupID="siell">
-					<td class="table-cell table-cell--place place-number" style="width: 9%;">
-	40</td>
-	
-					<td class="table-cell" style="width: 7%;"><img class="league-icon" src="/static/images/leagues/users/4.png"/></td>
-	
-					<td class="table-cell" style="width: 12%;"><img class="car-img" src="/static/images/cars/
-	71.png"/></td>
-	
-					<td class="table-cell" style="width: 51%;">
-	
-						<img class="gold-img" src="/static/images/gold-membership.png"/>
-	
-						<span class="team-tag" style="color: #8750a0;">[<a class="team-tag user-team-tag-link" style="color: #8750a0;" href="https://www.nitrotype.com/team/SECT" target="_blank">SECT</a>]</span>
-	
-						<a class="display-name display-name-gold" href="https://www.nitrotype.com/racer/
-	siell" target="_blank">
-	Jisoo­</a>
-						<br><span class="title">"Typing Nightmare"</span>
-					</td>
-	
-					<td class="table-cell" style="width: 21%;">
-	11</td>
-	
-				</tr>
-	
-				<tr class="table-row table-row--nonpodium" lookupID="melikepi">
-					<td class="table-cell table-cell--place place-number" style="width: 9%;">
-	41</td>
-	
-					<td class="table-cell" style="width: 7%;"><img class="league-icon" src="/static/images/leagues/users/4.png"/></td>
-	
-					<td class="table-cell" style="width: 12%;"><img class="car-img" src="/static/images/cars/painted/
-	xmaxxhyper_large_240.png"/></td>
-	
-					<td class="table-cell" style="width: 51%;">
-	
-						<img class="gold-img" src="/static/images/gold-membership.png"/>
-	
-						<span class="team-tag" style="color: #fba51a;">[<a class="team-tag user-team-tag-link" style="color: #fba51a;" href="https://www.nitrotype.com/team/TPX" target="_blank">TPX</a>]</span>
-	
-						<a class="display-name display-name-gold" href="https://www.nitrotype.com/racer/
-	melikepi" target="_blank">
-	melikepi</a>
-						<br><span class="title">"Surf n' Turf"</span>
-					</td>
-	
-					<td class="table-cell" style="width: 21%;">
-	11</td>
-	
-				</tr>
-	
-				<tr class="table-row table-row--nonpodium" lookupID="aceez">
-					<td class="table-cell table-cell--place place-number" style="width: 9%;">
-	42</td>
-	
-					<td class="table-cell" style="width: 7%;"><img class="league-icon" src="/static/images/leagues/users/4.png"/></td>
-	
-					<td class="table-cell" style="width: 12%;"><img class="car-img" src="/static/images/cars/painted/
-	198_large_1_160.png"/></td>
-	
-					<td class="table-cell" style="width: 51%;">
-	
-						<img class="gold-img" src="/static/images/gold-membership.png"/>
-	
-						<span class="team-tag" style="color: #e6b3d3;">[<a class="team-tag user-team-tag-link" style="color: #e6b3d3;" href="https://www.nitrotype.com/team/NOLESS" target="_blank">NOLESS</a>]</span>
-	
-						<a class="display-name display-name-gold" href="https://www.nitrotype.com/racer/
-	aceez" target="_blank">
-	0</a>
-						<br><span class="title">"Rookie Racer"</span>
-					</td>
-	
-					<td class="table-cell" style="width: 21%;">
-	11</td>
-	
-				</tr>
-	
-				<tr class="table-row table-row--nonpodium" lookupID="racingredrose1">
-					<td class="table-cell table-cell--place place-number" style="width: 9%;">
-	43</td>
-	
-					<td class="table-cell" style="width: 7%;"><img class="league-icon" src="/static/images/leagues/users/3.png"/></td>
-	
-					<td class="table-cell" style="width: 12%;"><img class="car-img" src="/static/images/cars/painted/
-	209_large_1_280.png"/></td>
-	
-					<td class="table-cell" style="width: 51%;">
-	
-						<img class="gold-img" src="/static/images/gold-membership.png"/>
-	
-						<span class="team-tag" style="color: #f5eb21;">[<a class="team-tag user-team-tag-link" style="color: #f5eb21;" href="https://www.nitrotype.com/team/TCHR" target="_blank">TCHR</a>]</span>
-	
-						<a class="display-name display-name-gold" href="https://www.nitrotype.com/racer/
-	racingredrose1" target="_blank">
-	RacingRedRose1</a>
-						<br><span class="title">"BOOM!"</span>
-					</td>
-	
-					<td class="table-cell" style="width: 21%;">
-	11</td>
-	
-				</tr>
-	
-				<tr class="table-row table-row--nonpodium" lookupID="venky160376">
-					<td class="table-cell table-cell--place place-number" style="width: 9%;">
-	44</td>
-	
-					<td class="table-cell" style="width: 7%;"><img class="league-icon" src="/static/images/leagues/users/5.png"/></td>
-	
-					<td class="table-cell" style="width: 12%;"><img class="car-img" src="/static/images/cars/
-	137.png"/></td>
-	
-					<td class="table-cell" style="width: 51%;">
-	
-						<img class="gold-img" src="/static/images/gold-membership.png"/>
-	
-						<span class="team-tag" style="color: #436fb6;">[<a class="team-tag user-team-tag-link" style="color: #436fb6;" href="https://www.nitrotype.com/team/SSH" target="_blank">SSH</a>]</span>
-	
-						<a class="display-name display-name-gold" href="https://www.nitrotype.com/racer/
-	venky160376" target="_blank">
-	«Venky»</a>
-						<br><span class="title">"Endurance Racer"</span>
-					</td>
-	
-					<td class="table-cell" style="width: 21%;">
-	11</td>
-	
-				</tr>
-	
-				<tr class="table-row table-row--nonpodium" lookupID="ikandoit">
-					<td class="table-cell table-cell--place place-number" style="width: 9%;">
-	45</td>
-	
-					<td class="table-cell" style="width: 7%;"><img class="league-icon" src="/static/images/leagues/users/0.png"/></td>
-	
-					<td class="table-cell" style="width: 12%;"><img class="car-img" src="/static/images/cars/painted/
-	137_large_1_80.png"/></td>
-	
-					<td class="table-cell" style="width: 51%;">
-	
-						<span class="team-tag" style="color: #96d1f3;">[<a class="team-tag user-team-tag-link" style="color: #96d1f3;" href="https://www.nitrotype.com/team/5HRK" target="_blank">5HRK</a>]</span>
-	
-						<a class="display-name display-name-basic" href="https://www.nitrotype.com/racer/
-	ikandoit" target="_blank">
-	⚡Ⱳîzard⚡</a>
-						<br><span class="title">"Olympic Gold Medalist"</span>
-					</td>
-	
-					<td class="table-cell" style="width: 21%;">
-	11</td>
-	
-				</tr>
-	
-				<tr class="table-row table-row--nonpodium" lookupID="cz31">
-					<td class="table-cell table-cell--place place-number" style="width: 9%;">
-	46</td>
-	
-					<td class="table-cell" style="width: 7%;"><img class="league-icon" src="/static/images/leagues/users/0.png"/></td>
-	
-					<td class="table-cell" style="width: 12%;"><img class="car-img" src="/static/images/cars/painted/
-	107_large_1_160.png"/></td>
-	
-					<td class="table-cell" style="width: 51%;">
-	
-						<img class="gold-img" src="/static/images/gold-membership.png"/>
-	
-						<a class="display-name display-name-gold" href="https://www.nitrotype.com/racer/
-	cz31" target="_blank">
-	꧁⛳ℂz31⛳꧂</a>
-						<br><span class="title">"Typing Nightmare"</span>
-					</td>
-	
-					<td class="table-cell" style="width: 21%;">
-	11</td>
-	
-				</tr>
-	
-				<tr class="table-row table-row--nonpodium" lookupID="mike_shadows">
-					<td class="table-cell table-cell--place place-number" style="width: 9%;">
-	47</td>
-	
-					<td class="table-cell" style="width: 7%;"><img class="league-icon" src="/static/images/leagues/users/0.png"/></td>
-	
-					<td class="table-cell" style="width: 12%;"><img class="car-img" src="/static/images/cars/painted/
-	78_large_1_260.png"/></td>
-	
-					<td class="table-cell" style="width: 51%;">
-	
-						<a class="display-name display-name-basic" href="https://www.nitrotype.com/racer/
-	mike_shadows" target="_blank">
-	View of Halfway Down</a>
-						<br><span class="title">"Motorcycle Rider"</span>
-					</td>
-	
-					<td class="table-cell" style="width: 21%;">
-	11</td>
-	
-				</tr>
-	
-				<tr class="table-row table-row--nonpodium" lookupID="scottee">
-					<td class="table-cell table-cell--place place-number" style="width: 9%;">
-	48</td>
-	
-					<td class="table-cell" style="width: 7%;"><img class="league-icon" src="/static/images/leagues/users/1.png"/></td>
-	
-					<td class="table-cell" style="width: 12%;"><img class="car-img" src="/static/images/cars/painted/
-	amg_large_300.png"/></td>
-	
-					<td class="table-cell" style="width: 51%;">
-	
-						<a class="display-name display-name-basic" href="https://www.nitrotype.com/racer/
-	scottee" target="_blank">
-	NorCalmotors</a>
-						<br><span class="title">"Eggstra Speedy"</span>
-					</td>
-	
-					<td class="table-cell" style="width: 21%;">
-	11</td>
-	
-				</tr>
-	
-				<tr class="table-row table-row--nonpodium" lookupID="carriepirc">
-					<td class="table-cell table-cell--place place-number" style="width: 9%;">
-	49</td>
-	
-					<td class="table-cell" style="width: 7%;"><img class="league-icon" src="/static/images/leagues/users/3.png"/></td>
-	
-					<td class="table-cell" style="width: 12%;"><img class="car-img" src="/static/images/cars/painted/
-	77_large_1_340.png"/></td>
-	
-					<td class="table-cell" style="width: 51%;">
-	
-						<img class="gold-img" src="/static/images/gold-membership.png"/>
-	
-						<span class="team-tag" style="color: #f9a98e;">[<a class="team-tag user-team-tag-link" style="color: #f9a98e;" href="https://www.nitrotype.com/team/WHEELT" target="_blank">WHEELT</a>]</span>
-	
-						<a class="display-name display-name-gold" href="https://www.nitrotype.com/racer/
-	carriepirc" target="_blank">
-	CarriePirc</a>
-						<br><span class="title">"Drift Queen"</span>
-					</td>
-	
-					<td class="table-cell" style="width: 21%;">
-	11</td>
-	
-				</tr>
-	
-				<tr class="table-row table-row--nonpodium" lookupID="missmary13601">
-					<td class="table-cell table-cell--place place-number" style="width: 9%;">
-	50</td>
-	
-					<td class="table-cell" style="width: 7%;"><img class="league-icon" src="/static/images/leagues/users/5.png"/></td>
-	
-					<td class="table-cell" style="width: 12%;"><img class="car-img" src="/static/images/cars/
-	79.png"/></td>
-	
-					<td class="table-cell" style="width: 51%;">
-	
-						<img class="gold-img" src="/static/images/gold-membership.png"/>
-	
-						<span class="team-tag" style="color: #436fb6;">[<a class="team-tag user-team-tag-link" style="color: #436fb6;" href="https://www.nitrotype.com/team/SSH" target="_blank">SSH</a>]</span>
-	
-						<a class="display-name display-name-gold" href="https://www.nitrotype.com/racer/
-	missmary13601" target="_blank">
-	missmary13601</a>
-						<br><span class="title">"I Love Dogs"</span>
-					</td>
-	
-					<td class="table-cell" style="width: 21%;">
-	11</td>
-	
-				</tr>
-	
-				<tr class="table-row table-row--nonpodium" lookupID="koeyleung9900">
-					<td class="table-cell table-cell--place place-number" style="width: 9%;">
-	51</td>
-	
-					<td class="table-cell" style="width: 7%;"><img class="league-icon" src="/static/images/leagues/users/1.png"/></td>
-	
-					<td class="table-cell" style="width: 12%;"><img class="car-img" src="/static/images/cars/painted/
-	mongoose_large_180.png"/></td>
-	
-					<td class="table-cell" style="width: 51%;">
-	
-						<img class="gold-img" src="/static/images/gold-membership.png"/>
-	
-						<a class="display-name display-name-gold" href="https://www.nitrotype.com/racer/
-	koeyleung9900" target="_blank">
-	DarkMagicianGirl9900</a>
-						<br><span class="title">"Merry Christmas!"</span>
-					</td>
-	
-					<td class="table-cell" style="width: 21%;">
-	11</td>
-	
-				</tr>
-	
-				<tr class="table-row table-row--nonpodium" lookupID="prodot21">
-					<td class="table-cell table-cell--place place-number" style="width: 9%;">
-	52</td>
-	
-					<td class="table-cell" style="width: 7%;"><img class="league-icon" src="/static/images/leagues/users/0.png"/></td>
-	
-					<td class="table-cell" style="width: 12%;"><img class="car-img" src="/static/images/cars/
-	367.png"/></td>
-	
-					<td class="table-cell" style="width: 51%;">
-	
-						<img class="gold-img" src="/static/images/gold-membership.png"/>
-	
-						<a class="display-name display-name-gold" href="https://www.nitrotype.com/racer/
-	prodot21" target="_blank">
-	S_н_α_ι_ℓ.</a>
-						<br><span class="title">"The Silent Knight"</span>
-					</td>
-	
-					<td class="table-cell" style="width: 21%;">
-	11</td>
-	
-				</tr>
-	
-				<tr class="table-row table-row--nonpodium" lookupID="conniey25">
-					<td class="table-cell table-cell--place place-number" style="width: 9%;">
-	53</td>
-	
-					<td class="table-cell" style="width: 7%;"><img class="league-icon" src="/static/images/leagues/users/0.png"/></td>
-	
-					<td class="table-cell" style="width: 12%;"><img class="car-img" src="/static/images/cars/painted/
-	77_large_1_280.png"/></td>
-	
-					<td class="table-cell" style="width: 51%;">
-	
-						<img class="gold-img" src="/static/images/gold-membership.png"/>
-	
-						<a class="display-name display-name-gold" href="https://www.nitrotype.com/racer/
-	conniey25" target="_blank">
-	tsukimeiji</a>
-						<br><span class="title">"Raw Racing Recruit"</span>
-					</td>
-	
-					<td class="table-cell" style="width: 21%;">
-	11</td>
-	
-				</tr>
-	
-				<tr class="table-row table-row--nonpodium" lookupID="itspickles">
-					<td class="table-cell table-cell--place place-number" style="width: 9%;">
-	54</td>
-	
-					<td class="table-cell" style="width: 7%;"><img class="league-icon" src="/static/images/leagues/users/9.png"/></td>
-	
-					<td class="table-cell" style="width: 12%;"><img class="car-img" src="/static/images/cars/painted/
-	78_large_1_40.png"/></td>
-	
-					<td class="table-cell" style="width: 51%;">
-	
-						<img class="gold-img" src="/static/images/gold-membership.png"/>
-	
-						<span class="team-tag" style="color: #436fb6;">[<a class="team-tag user-team-tag-link" style="color: #436fb6;" href="https://www.nitrotype.com/team/SSH" target="_blank">SSH</a>]</span>
-	
-						<a class="display-name display-name-gold" href="https://www.nitrotype.com/racer/
-	itspickles" target="_blank">
-	pickles123wt</a>
-						<br><span class="title">"Master Motorist"</span>
-					</td>
-	
-					<td class="table-cell" style="width: 21%;">
-	10</td>
-	
-				</tr>
-	
-				<tr class="table-row table-row--nonpodium" lookupID="ashwat255">
-					<td class="table-cell table-cell--place place-number" style="width: 9%;">
-	55</td>
-	
-					<td class="table-cell" style="width: 7%;"><img class="league-icon" src="/static/images/leagues/users/7.png"/></td>
-	
-					<td class="table-cell" style="width: 12%;"><img class="car-img" src="/static/images/cars/
-	95.png"/></td>
-	
-					<td class="table-cell" style="width: 51%;">
-	
-						<img class="gold-img" src="/static/images/gold-membership.png"/>
-	
-						<span class="team-tag" style="color: #ee1f25;">[<a class="team-tag user-team-tag-link" style="color: #ee1f25;" href="https://www.nitrotype.com/team/TALK" target="_blank">TALK</a>]</span>
-	
-						<a class="display-name display-name-gold" href="https://www.nitrotype.com/racer/
-	ashwat255" target="_blank">
-	Tariffic Typist</a>
-						<br><span class="title">"Battle Beast"</span>
-					</td>
-	
-					<td class="table-cell" style="width: 21%;">
-	10</td>
-	
-				</tr>
-	
-				<tr class="table-row table-row--nonpodium" lookupID="ily2thestars">
-					<td class="table-cell table-cell--place place-number" style="width: 9%;">
-	56</td>
-	
-					<td class="table-cell" style="width: 7%;"><img class="league-icon" src="/static/images/leagues/users/6.png"/></td>
-	
-					<td class="table-cell" style="width: 12%;"><img class="car-img" src="/static/images/cars/painted/
-	141_large_1_280.png"/></td>
-	
-					<td class="table-cell" style="width: 51%;">
-	
-						<img class="gold-img" src="/static/images/gold-membership.png"/>
-	
-						<span class="team-tag" style="color: #436fb6;">[<a class="team-tag user-team-tag-link" style="color: #436fb6;" href="https://www.nitrotype.com/team/SSH" target="_blank">SSH</a>]</span>
-	
-						<a class="display-name display-name-gold" href="https://www.nitrotype.com/racer/
-	ily2thestars" target="_blank">
-	theDepthsOfmyDreams</a>
-						<br><span class="title">"Rival Team"</span>
-					</td>
-	
-					<td class="table-cell" style="width: 21%;">
-	10</td>
-	
-				</tr>
-	
-				<tr class="table-row table-row--nonpodium" lookupID="jeromethebeast">
-					<td class="table-cell table-cell--place place-number" style="width: 9%;">
-	57</td>
-	
-					<td class="table-cell" style="width: 7%;"><img class="league-icon" src="/static/images/leagues/users/7.png"/></td>
-	
-					<td class="table-cell" style="width: 12%;"><img class="car-img" src="/static/images/cars/painted/
-	124_large_1_180.png"/></td>
-	
-					<td class="table-cell" style="width: 51%;">
-	
-						<img class="gold-img" src="/static/images/gold-membership.png"/>
-	
-						<span class="team-tag" style="color: #40b8ea;">[<a class="team-tag user-team-tag-link" style="color: #40b8ea;" href="https://www.nitrotype.com/team/TESM" target="_blank">TESM</a>]</span>
-	
-						<a class="display-name display-name-gold" href="https://www.nitrotype.com/racer/
-	jeromethebeast" target="_blank">
-	Wild Savage</a>
-						<br><span class="title">"Keyboard Smasher"</span>
-					</td>
-	
-					<td class="table-cell" style="width: 21%;">
-	10</td>
-	
-				</tr>
-	
-				<tr class="table-row table-row--nonpodium" lookupID="atrg">
-					<td class="table-cell table-cell--place place-number" style="width: 9%;">
-	58</td>
-	
-					<td class="table-cell" style="width: 7%;"><img class="league-icon" src="/static/images/leagues/users/3.png"/></td>
-	
-					<td class="table-cell" style="width: 12%;"><img class="car-img" src="/static/images/cars/
-	124.png"/></td>
-	
-					<td class="table-cell" style="width: 51%;">
-	
-						<img class="gold-img" src="/static/images/gold-membership.png"/>
-	
-						<span class="team-tag" style="color: #ea1979;">[<a class="team-tag user-team-tag-link" style="color: #ea1979;" href="https://www.nitrotype.com/team/WAMZ" target="_blank">WAMZ</a>]</span>
-	
-						<a class="display-name display-name-gold" href="https://www.nitrotype.com/racer/
-	atrg" target="_blank">
-	atrg                                              </a>
-						<br><span class="title">"Ferocious Finisher"</span>
-					</td>
-	
-					<td class="table-cell" style="width: 21%;">
-	10</td>
-	
-				</tr>
-	
-				<tr class="table-row table-row--nonpodium" lookupID="145442">
-					<td class="table-cell table-cell--place place-number" style="width: 9%;">
-	59</td>
-	
-					<td class="table-cell" style="width: 7%;"><img class="league-icon" src="/static/images/leagues/users/1.png"/></td>
-	
-					<td class="table-cell" style="width: 12%;"><img class="car-img" src="/static/images/cars/painted/
-	hang11_large_240.png"/></td>
-	
-					<td class="table-cell" style="width: 51%;">
-	
-						<img class="gold-img" src="/static/images/gold-membership.png"/>
-	
-						<span class="team-tag" style="color: #746bb0;">[<a class="team-tag user-team-tag-link" style="color: #746bb0;" href="https://www.nitrotype.com/team/PHA" target="_blank">PHA</a>]</span>
-	
-						<a class="display-name display-name-gold" href="https://www.nitrotype.com/racer/
-	145442" target="_blank">
-	Starstruck</a>
-						<br><span class="title">":D"</span>
-					</td>
-	
-					<td class="table-cell" style="width: 21%;">
-	10</td>
-	
-				</tr>
-	
-				<tr class="table-row table-row--nonpodium" lookupID="billy33">
-					<td class="table-cell table-cell--place place-number" style="width: 9%;">
-	60</td>
-	
-					<td class="table-cell" style="width: 7%;"><img class="league-icon" src="/static/images/leagues/users/0.png"/></td>
-	
-					<td class="table-cell" style="width: 12%;"><img class="car-img" src="/static/images/cars/
-	76.png"/></td>
-	
-					<td class="table-cell" style="width: 51%;">
-	
-						<img class="gold-img" src="/static/images/gold-membership.png"/>
-	
-						<span class="team-tag" style="color: #40b8ea;">[<a class="team-tag user-team-tag-link" style="color: #40b8ea;" href="https://www.nitrotype.com/team/N8TE" target="_blank">N8TE</a>]</span>
-	
-						<a class="display-name display-name-gold" href="https://www.nitrotype.com/racer/
-	billy33" target="_blank">
-	billy33</a>
-						<br><span class="title">"On Thin Ice"</span>
-					</td>
-	
-					<td class="table-cell" style="width: 21%;">
-	10</td>
-	
-				</tr>
-	
-				<tr class="table-row table-row--nonpodium" lookupID="amadmadworld">
-					<td class="table-cell table-cell--place place-number" style="width: 9%;">
-	61</td>
-	
-					<td class="table-cell" style="width: 7%;"><img class="league-icon" src="/static/images/leagues/users/0.png"/></td>
-	
-					<td class="table-cell" style="width: 12%;"><img class="car-img" src="/static/images/cars/
-	77.png"/></td>
-	
-					<td class="table-cell" style="width: 51%;">
-	
-						<img class="gold-img" src="/static/images/gold-membership.png"/>
-	
-						<a class="display-name display-name-gold" href="https://www.nitrotype.com/racer/
-	amadmadworld" target="_blank">
-	amadmadworld</a>
-						<br><span class="title">"Peace, Love, Nitros"</span>
-					</td>
-	
-					<td class="table-cell" style="width: 21%;">
-	10</td>
-	
-				</tr>
-	
-				<tr class="table-row table-row--nonpodium" lookupID="riddle">
-					<td class="table-cell table-cell--place place-number" style="width: 9%;">
-	62</td>
-	
-					<td class="table-cell" style="width: 7%;"><img class="league-icon" src="/static/images/leagues/users/0.png"/></td>
-	
-					<td class="table-cell" style="width: 12%;"><img class="car-img" src="/static/images/cars/
-	249.png"/></td>
-	
-					<td class="table-cell" style="width: 51%;">
-	
-						<img class="gold-img" src="/static/images/gold-membership.png"/>
-	
-						<a class="display-name display-name-gold" href="https://www.nitrotype.com/racer/
-	riddle" target="_blank">
-	riddle</a>
-						<br><span class="title">"Typing Nightmare"</span>
-					</td>
-	
-					<td class="table-cell" style="width: 21%;">
-	10</td>
-	
-				</tr>
-	
-				<tr class="table-row table-row--nonpodium" lookupID="cf4eb8ead5e1b4af30e22a0aecd5630c">
-					<td class="table-cell table-cell--place place-number" style="width: 9%;">
-	63</td>
-	
-					<td class="table-cell" style="width: 7%;"><img class="league-icon" src="/static/images/leagues/users/0.png"/></td>
-	
-					<td class="table-cell" style="width: 12%;"><img class="car-img" src="/static/images/cars/
-	71.png"/></td>
-	
-					<td class="table-cell" style="width: 51%;">
-	
-						<img class="gold-img" src="/static/images/gold-membership.png"/>
-	
-						<a class="display-name display-name-gold" href="https://www.nitrotype.com/racer/
-	cf4eb8ead5e1b4af30e22a0aecd5630c" target="_blank">
-	√∑n¡§øN</a>
-						<br><span class="title">"Nitro Type Master"</span>
-					</td>
-	
-					<td class="table-cell" style="width: 21%;">
-	10</td>
-	
-				</tr>
-	
-				<tr class="table-row table-row--nonpodium" lookupID="joshua728">
-					<td class="table-cell table-cell--place place-number" style="width: 9%;">
-	64</td>
-	
-					<td class="table-cell" style="width: 7%;"><img class="league-icon" src="/static/images/leagues/users/1.png"/></td>
-	
-					<td class="table-cell" style="width: 12%;"><img class="car-img" src="/static/images/cars/
-	122.png"/></td>
-	
-					<td class="table-cell" style="width: 51%;">
-	
-						<img class="gold-img" src="/static/images/gold-membership.png"/>
-	
-						<a class="display-name display-name-gold" href="https://www.nitrotype.com/racer/
-	joshua728" target="_blank">
-	joshuu</a>
-						<br><span class="title">"Speed Champion"</span>
-					</td>
-	
-					<td class="table-cell" style="width: 21%;">
-	10</td>
-	
-				</tr>
-	
-				<tr class="table-row table-row--nonpodium" lookupID="hi_i_am_epic">
-					<td class="table-cell table-cell--place place-number" style="width: 9%;">
-	65</td>
-	
-					<td class="table-cell" style="width: 7%;"><img class="league-icon" src="/static/images/leagues/users/2.png"/></td>
-	
-					<td class="table-cell" style="width: 12%;"><img class="car-img" src="/static/images/cars/
-	332.png"/></td>
-	
-					<td class="table-cell" style="width: 51%;">
-	
-						<img class="gold-img" src="/static/images/gold-membership.png"/>
-	
-						<a class="display-name display-name-gold" href="https://www.nitrotype.com/racer/
-	hi_i_am_epic" target="_blank">
-	NoThisIsJohn</a>
-						<br><span class="title">"Verified YouTuber"</span>
-					</td>
-	
-					<td class="table-cell" style="width: 21%;">
-	10</td>
-	
-				</tr>
-	
-				<tr class="table-row table-row--nonpodium" lookupID="food05">
-					<td class="table-cell table-cell--place place-number" style="width: 9%;">
-	66</td>
-	
-					<td class="table-cell" style="width: 7%;"><img class="league-icon" src="/static/images/leagues/users/2.png"/></td>
-	
-					<td class="table-cell" style="width: 12%;"><img class="car-img" src="/static/images/cars/painted/
-	77_large_1_300.png"/></td>
-	
-					<td class="table-cell" style="width: 51%;">
-	
-						<img class="gold-img" src="/static/images/gold-membership.png"/>
-	
-						<a class="display-name display-name-gold" href="https://www.nitrotype.com/racer/
-	food05" target="_blank">
-	food05</a>
-						<br><span class="title">"Empress"</span>
-					</td>
-	
-					<td class="table-cell" style="width: 21%;">
-	10</td>
-	
-				</tr>
-	
-				<tr class="table-row table-row--nonpodium" lookupID="aid1337">
-					<td class="table-cell table-cell--place place-number" style="width: 9%;">
-	67</td>
-	
-					<td class="table-cell" style="width: 7%;"><img class="league-icon" src="/static/images/leagues/users/0.png"/></td>
-	
-					<td class="table-cell" style="width: 12%;"><img class="car-img" src="/static/images/cars/
-	101.png"/></td>
-	
-					<td class="table-cell" style="width: 51%;">
-	
-						<img class="gold-img" src="/static/images/gold-membership.png"/>
-	
-						<span class="team-tag" style="color: #96d1f3;">[<a class="team-tag user-team-tag-link" style="color: #96d1f3;" href="https://www.nitrotype.com/team/5HRK" target="_blank">5HRK</a>]</span>
-	
-						<a class="display-name display-name-gold" href="https://www.nitrotype.com/racer/
-	aid1337" target="_blank">
-	Jack Morton</a>
-						<br><span class="title">":D"</span>
-					</td>
-	
-					<td class="table-cell" style="width: 21%;">
-	10</td>
-	
-				</tr>
-	
-				<tr class="table-row table-row--nonpodium" lookupID="spintowin">
-					<td class="table-cell table-cell--place place-number" style="width: 9%;">
-	68</td>
-	
-					<td class="table-cell" style="width: 7%;"><img class="league-icon" src="/static/images/leagues/users/0.png"/></td>
-	
-					<td class="table-cell" style="width: 12%;"><img class="car-img" src="/static/images/cars/
-	72.png"/></td>
-	
-					<td class="table-cell" style="width: 51%;">
-	
-						<img class="gold-img" src="/static/images/gold-membership.png"/>
-	
-						<a class="display-name display-name-gold" href="https://www.nitrotype.com/racer/
-	spintowin" target="_blank">
-	ILuvYouAll!</a>
-						<br><span class="title">"Nitro Dog"</span>
-					</td>
-	
-					<td class="table-cell" style="width: 21%;">
-	10</td>
-	
-				</tr>
-	
-				<tr class="table-row table-row--nonpodium" lookupID="j1j1o1k1">
-					<td class="table-cell table-cell--place place-number" style="width: 9%;">
-	69</td>
-	
-					<td class="table-cell" style="width: 7%;"><img class="league-icon" src="/static/images/leagues/users/0.png"/></td>
-	
-					<td class="table-cell" style="width: 12%;"><img class="car-img" src="/static/images/cars/painted/
-	53_large_1_260.png"/></td>
-	
-					<td class="table-cell" style="width: 51%;">
-	
-						<img class="gold-img" src="/static/images/gold-membership.png"/>
-	
-						<a class="display-name display-name-gold" href="https://www.nitrotype.com/racer/
-	j1j1o1k1" target="_blank">
-	TrueToTheBlue</a>
-						<br><span class="title">"Lighting Up The Night"</span>
-					</td>
-	
-					<td class="table-cell" style="width: 21%;">
-	10</td>
-	
-				</tr>
-	
-				<tr class="table-row table-row--nonpodium" lookupID="omarkhattab">
-					<td class="table-cell table-cell--place place-number" style="width: 9%;">
-	70</td>
-	
-					<td class="table-cell" style="width: 7%;"><img class="league-icon" src="/static/images/leagues/users/6.png"/></td>
-	
-					<td class="table-cell" style="width: 12%;"><img class="car-img" src="/static/images/cars/painted/
-	demon_large_340.png"/></td>
-	
-					<td class="table-cell" style="width: 51%;">
-	
-						<img class="gold-img" src="/static/images/gold-membership.png"/>
-	
-						<span class="team-tag" style="color: #f389a7;">[<a class="team-tag user-team-tag-link" style="color: #f389a7;" href="https://www.nitrotype.com/team/MUSLIM" target="_blank">MUSLIM</a>]</span>
-	
-						<a class="display-name display-name-gold" href="https://www.nitrotype.com/racer/
-	omarkhattab" target="_blank">
-	Omar KH</a>
-						<br><span class="title">"Fast Track Flyer"</span>
-					</td>
-	
-					<td class="table-cell" style="width: 21%;">
-	10</td>
-	
-				</tr>
-	
-				<tr class="table-row table-row--nonpodium" lookupID="manlio">
-					<td class="table-cell table-cell--place place-number" style="width: 9%;">
-	71</td>
-	
-					<td class="table-cell" style="width: 7%;"><img class="league-icon" src="/static/images/leagues/users/0.png"/></td>
-	
-					<td class="table-cell" style="width: 12%;"><img class="car-img" src="/static/images/cars/
-	340.png"/></td>
-	
-					<td class="table-cell" style="width: 51%;">
-	
-						<img class="gold-img" src="/static/images/gold-membership.png"/>
-	
-						<a class="display-name display-name-gold" href="https://www.nitrotype.com/racer/
-	manlio" target="_blank">
-	Yee⚜️Haw</a>
-						<br><span class="title">"Fleece Navidad"</span>
-					</td>
-	
-					<td class="table-cell" style="width: 21%;">
-	10</td>
-	
-				</tr>
-	
-				<tr class="table-row table-row--nonpodium" lookupID="youyouyouyou111">
-					<td class="table-cell table-cell--place place-number" style="width: 9%;">
-	72</td>
-	
-					<td class="table-cell" style="width: 7%;"><img class="league-icon" src="/static/images/leagues/users/8.png"/></td>
-	
-					<td class="table-cell" style="width: 12%;"><img class="car-img" src="/static/images/cars/
-	153.png"/></td>
-	
-					<td class="table-cell" style="width: 51%;">
-	
-						<img class="gold-img" src="/static/images/gold-membership.png"/>
-	
-						<span class="team-tag" style="color: #ea1979;">[<a class="team-tag user-team-tag-link" style="color: #ea1979;" href="https://www.nitrotype.com/team/PR2W" target="_blank">PR2W</a>]</span>
-	
-						<a class="display-name display-name-gold" href="https://www.nitrotype.com/racer/
-	youyouyouyou111" target="_blank">
-	AllstateRacing4Ava</a>
-						<br><span class="title">"May The 4th Be With You"</span>
-					</td>
-	
-					<td class="table-cell" style="width: 21%;">
-	9</td>
-	
-				</tr>
-	
-				<tr class="table-row table-row--nonpodium" lookupID="philliesmagic">
-					<td class="table-cell table-cell--place place-number" style="width: 9%;">
-	73</td>
-	
-					<td class="table-cell" style="width: 7%;"><img class="league-icon" src="/static/images/leagues/users/5.png"/></td>
-	
-					<td class="table-cell" style="width: 12%;"><img class="car-img" src="/static/images/cars/
-	98.png"/></td>
-	
-					<td class="table-cell" style="width: 51%;">
-	
-						<img class="gold-img" src="/static/images/gold-membership.png"/>
-	
-						<span class="team-tag" style="color: #436fb6;">[<a class="team-tag user-team-tag-link" style="color: #436fb6;" href="https://www.nitrotype.com/team/SSH" target="_blank">SSH</a>]</span>
-	
-						<a class="display-name display-name-gold" href="https://www.nitrotype.com/racer/
-	philliesmagic" target="_blank">
-	PhilliesMagic</a>
-						<br><span class="title">"Champion Team"</span>
-					</td>
-	
-					<td class="table-cell" style="width: 21%;">
-	9</td>
-	
-				</tr>
-	
 				<tr class="table-row table-row--nonpodium" lookupID="vielle">
 					<td class="table-cell table-cell--place place-number" style="width: 9%;">
-	74</td>
+	36</td>
 	
 					<td class="table-cell" style="width: 7%;"><img class="league-icon" src="/static/images/leagues/users/3.png"/></td>
 	
@@ -1981,10 +967,963 @@
 	
 						<span class="team-tag" style="color: #8750a0;">[<a class="team-tag user-team-tag-link" style="color: #8750a0;" href="https://www.nitrotype.com/team/NTM" target="_blank">NTM</a>]</span>
 	
-						<a class="display-name display-name-gold" href="https://www.nitrotype.com/racer/
-	vielle" target="_blank">
+						<a class="display-name display-name-gold" href="https://www.nitrotype.com/racer/vielle" target="_blank">
 	Vielle</a>
 						<br><span class="title">"Legendary"</span>
+					</td>
+	
+					<td class="table-cell" style="width: 21%;">
+	12</td>
+	
+				</tr>
+	
+				<tr class="table-row table-row--nonpodium" lookupID="feveredbasilisk">
+					<td class="table-cell table-cell--place place-number" style="width: 9%;">
+	37</td>
+	
+					<td class="table-cell" style="width: 7%;"><img class="league-icon" src="/static/images/leagues/users/2.png"/></td>
+	
+					<td class="table-cell" style="width: 12%;"><img class="car-img" src="/static/images/cars/
+	106.png"/></td>
+	
+					<td class="table-cell" style="width: 51%;">
+	
+						<img class="gold-img" src="/static/images/gold-membership.png"/>
+	
+						<a class="display-name display-name-gold" href="https://www.nitrotype.com/racer/feveredbasilisk" target="_blank">
+	Niki Atom</a>
+						<br><span class="title">"Three Commas Club"</span>
+					</td>
+	
+					<td class="table-cell" style="width: 21%;">
+	12</td>
+	
+				</tr>
+	
+				<tr class="table-row table-row--nonpodium" lookupID="hollow_man">
+					<td class="table-cell table-cell--place place-number" style="width: 9%;">
+	38</td>
+	
+					<td class="table-cell" style="width: 7%;"><img class="league-icon" src="/static/images/leagues/users/0.png"/></td>
+	
+					<td class="table-cell" style="width: 12%;"><img class="car-img" src="/static/images/cars/
+	209.png"/></td>
+	
+					<td class="table-cell" style="width: 51%;">
+	
+						<img class="gold-img" src="/static/images/gold-membership.png"/>
+	
+						<a class="display-name display-name-gold" href="https://www.nitrotype.com/racer/hollow_man" target="_blank">
+	HollowManNoToNitros!</a>
+						<br><span class="title">"In the Spirit"</span>
+					</td>
+	
+					<td class="table-cell" style="width: 21%;">
+	12</td>
+	
+				</tr>
+	
+				<tr class="table-row table-row--nonpodium" lookupID="tobeatyper">
+					<td class="table-cell table-cell--place place-number" style="width: 9%;">
+	39</td>
+	
+					<td class="table-cell" style="width: 7%;"><img class="league-icon" src="/static/images/leagues/users/0.png"/></td>
+	
+					<td class="table-cell" style="width: 12%;"><img class="car-img" src="/static/images/cars/
+	277.png"/></td>
+	
+					<td class="table-cell" style="width: 51%;">
+	
+						<img class="gold-img" src="/static/images/gold-membership.png"/>
+	
+						<a class="display-name display-name-gold" href="https://www.nitrotype.com/racer/tobeatyper" target="_blank">
+	Thaityper</a>
+						<br><span class="title">"The Caped Crusader"</span>
+					</td>
+	
+					<td class="table-cell" style="width: 21%;">
+	12</td>
+	
+				</tr>
+	
+				<tr class="table-row table-row--nonpodium" lookupID="randora">
+					<td class="table-cell table-cell--place place-number" style="width: 9%;">
+	40</td>
+	
+					<td class="table-cell" style="width: 7%;"><img class="league-icon" src="/static/images/leagues/users/1.png"/></td>
+	
+					<td class="table-cell" style="width: 12%;"><img class="car-img" src="/static/images/cars/
+	72.png"/></td>
+	
+					<td class="table-cell" style="width: 51%;">
+	
+						<img class="gold-img" src="/static/images/gold-membership.png"/>
+	
+						<a class="display-name display-name-gold" href="https://www.nitrotype.com/racer/randora" target="_blank">
+	Randora</a>
+						<br><span class="title">"Typing Demon"</span>
+					</td>
+	
+					<td class="table-cell" style="width: 21%;">
+	12</td>
+	
+				</tr>
+	
+				<tr class="table-row table-row--nonpodium" lookupID="jojokesie">
+					<td class="table-cell table-cell--place place-number" style="width: 9%;">
+	41</td>
+	
+					<td class="table-cell" style="width: 7%;"><img class="league-icon" src="/static/images/leagues/users/0.png"/></td>
+	
+					<td class="table-cell" style="width: 12%;"><img class="car-img" src="/static/images/cars/
+	95.png"/></td>
+	
+					<td class="table-cell" style="width: 51%;">
+	
+						<img class="gold-img" src="/static/images/gold-membership.png"/>
+	
+						<span class="team-tag" style="color: #f15b40;">[<a class="team-tag user-team-tag-link" style="color: #f15b40;" href="https://www.nitrotype.com/team/DOG" target="_blank">DOG</a>]</span>
+	
+						<a class="display-name display-name-gold" href="https://www.nitrotype.com/racer/jojokesie" target="_blank">
+	PantherJosh!</a>
+						<br><span class="title">"Challenger"</span>
+					</td>
+	
+					<td class="table-cell" style="width: 21%;">
+	12</td>
+	
+				</tr>
+	
+				<tr class="table-row table-row--nonpodium" lookupID="itspickles">
+					<td class="table-cell table-cell--place place-number" style="width: 9%;">
+	42</td>
+	
+					<td class="table-cell" style="width: 7%;"><img class="league-icon" src="/static/images/leagues/users/10.png"/></td>
+	
+					<td class="table-cell" style="width: 12%;"><img class="car-img" src="/static/images/cars/painted/
+	grid_large_260.png"/></td>
+	
+					<td class="table-cell" style="width: 51%;">
+	
+						<img class="gold-img" src="/static/images/gold-membership.png"/>
+	
+						<span class="team-tag" style="color: #436fb6;">[<a class="team-tag user-team-tag-link" style="color: #436fb6;" href="https://www.nitrotype.com/team/SSH" target="_blank">SSH</a>]</span>
+	
+						<a class="display-name display-name-gold" href="https://www.nitrotype.com/racer/itspickles" target="_blank">
+	hi, im pickles</a>
+						<br><span class="title">"Shattered"</span>
+					</td>
+	
+					<td class="table-cell" style="width: 21%;">
+	11</td>
+	
+				</tr>
+	
+				<tr class="table-row table-row--nonpodium" lookupID="siell">
+					<td class="table-cell table-cell--place place-number" style="width: 9%;">
+	43</td>
+	
+					<td class="table-cell" style="width: 7%;"><img class="league-icon" src="/static/images/leagues/users/4.png"/></td>
+	
+					<td class="table-cell" style="width: 12%;"><img class="car-img" src="/static/images/cars/
+	71.png"/></td>
+	
+					<td class="table-cell" style="width: 51%;">
+	
+						<img class="gold-img" src="/static/images/gold-membership.png"/>
+	
+						<span class="team-tag" style="color: #8750a0;">[<a class="team-tag user-team-tag-link" style="color: #8750a0;" href="https://www.nitrotype.com/team/SECT" target="_blank">SECT</a>]</span>
+	
+						<a class="display-name display-name-gold" href="https://www.nitrotype.com/racer/siell" target="_blank">
+	Jisoo­</a>
+						<br><span class="title">"Typing Nightmare"</span>
+					</td>
+	
+					<td class="table-cell" style="width: 21%;">
+	11</td>
+	
+				</tr>
+	
+				<tr class="table-row table-row--nonpodium" lookupID="melikepi">
+					<td class="table-cell table-cell--place place-number" style="width: 9%;">
+	44</td>
+	
+					<td class="table-cell" style="width: 7%;"><img class="league-icon" src="/static/images/leagues/users/4.png"/></td>
+	
+					<td class="table-cell" style="width: 12%;"><img class="car-img" src="/static/images/cars/painted/
+	xmaxxhyper_large_240.png"/></td>
+	
+					<td class="table-cell" style="width: 51%;">
+	
+						<img class="gold-img" src="/static/images/gold-membership.png"/>
+	
+						<span class="team-tag" style="color: #fba51a;">[<a class="team-tag user-team-tag-link" style="color: #fba51a;" href="https://www.nitrotype.com/team/TPX" target="_blank">TPX</a>]</span>
+	
+						<a class="display-name display-name-gold" href="https://www.nitrotype.com/racer/melikepi" target="_blank">
+	melikepi</a>
+						<br><span class="title">"Surf n' Turf"</span>
+					</td>
+	
+					<td class="table-cell" style="width: 21%;">
+	11</td>
+	
+				</tr>
+	
+				<tr class="table-row table-row--nonpodium" lookupID="aceez">
+					<td class="table-cell table-cell--place place-number" style="width: 9%;">
+	45</td>
+	
+					<td class="table-cell" style="width: 7%;"><img class="league-icon" src="/static/images/leagues/users/4.png"/></td>
+	
+					<td class="table-cell" style="width: 12%;"><img class="car-img" src="/static/images/cars/painted/
+	203_large_1_140.png"/></td>
+	
+					<td class="table-cell" style="width: 51%;">
+	
+						<img class="gold-img" src="/static/images/gold-membership.png"/>
+	
+						<span class="team-tag" style="color: #e6b3d3;">[<a class="team-tag user-team-tag-link" style="color: #e6b3d3;" href="https://www.nitrotype.com/team/NOLESS" target="_blank">NOLESS</a>]</span>
+	
+						<a class="display-name display-name-gold" href="https://www.nitrotype.com/racer/aceez" target="_blank">
+	0</a>
+						<br><span class="title">"Rookie Racer"</span>
+					</td>
+	
+					<td class="table-cell" style="width: 21%;">
+	11</td>
+	
+				</tr>
+	
+				<tr class="table-row table-row--nonpodium" lookupID="racingredrose1">
+					<td class="table-cell table-cell--place place-number" style="width: 9%;">
+	46</td>
+	
+					<td class="table-cell" style="width: 7%;"><img class="league-icon" src="/static/images/leagues/users/4.png"/></td>
+	
+					<td class="table-cell" style="width: 12%;"><img class="car-img" src="/static/images/cars/
+	48.png"/></td>
+	
+					<td class="table-cell" style="width: 51%;">
+	
+						<img class="gold-img" src="/static/images/gold-membership.png"/>
+	
+						<span class="team-tag" style="color: #f5eb21;">[<a class="team-tag user-team-tag-link" style="color: #f5eb21;" href="https://www.nitrotype.com/team/TCHR" target="_blank">TCHR</a>]</span>
+	
+						<a class="display-name display-name-gold" href="https://www.nitrotype.com/racer/racingredrose1" target="_blank">
+	RacingRedRose1</a>
+						<br><span class="title">"God Mode"</span>
+					</td>
+	
+					<td class="table-cell" style="width: 21%;">
+	11</td>
+	
+				</tr>
+	
+				<tr class="table-row table-row--nonpodium" lookupID="venky160376">
+					<td class="table-cell table-cell--place place-number" style="width: 9%;">
+	47</td>
+	
+					<td class="table-cell" style="width: 7%;"><img class="league-icon" src="/static/images/leagues/users/6.png"/></td>
+	
+					<td class="table-cell" style="width: 12%;"><img class="car-img" src="/static/images/cars/
+	137.png"/></td>
+	
+					<td class="table-cell" style="width: 51%;">
+	
+						<img class="gold-img" src="/static/images/gold-membership.png"/>
+	
+						<span class="team-tag" style="color: #436fb6;">[<a class="team-tag user-team-tag-link" style="color: #436fb6;" href="https://www.nitrotype.com/team/SSH" target="_blank">SSH</a>]</span>
+	
+						<a class="display-name display-name-gold" href="https://www.nitrotype.com/racer/venky160376" target="_blank">
+	«Venky»</a>
+						<br><span class="title">"Endurance Racer"</span>
+					</td>
+	
+					<td class="table-cell" style="width: 21%;">
+	11</td>
+	
+				</tr>
+	
+				<tr class="table-row table-row--nonpodium" lookupID="ikandoit">
+					<td class="table-cell table-cell--place place-number" style="width: 9%;">
+	48</td>
+	
+					<td class="table-cell" style="width: 7%;"><img class="league-icon" src="/static/images/leagues/users/0.png"/></td>
+	
+					<td class="table-cell" style="width: 12%;"><img class="car-img" src="/static/images/cars/painted/
+	137_large_1_80.png"/></td>
+	
+					<td class="table-cell" style="width: 51%;">
+	
+						<span class="team-tag" style="color: #96d1f3;">[<a class="team-tag user-team-tag-link" style="color: #96d1f3;" href="https://www.nitrotype.com/team/5HRK" target="_blank">5HRK</a>]</span>
+	
+						<a class="display-name display-name-basic" href="https://www.nitrotype.com/racer/ikandoit" target="_blank">
+	⚡Ⱳîzard⚡</a>
+						<br><span class="title">"Olympic Gold Medalist"</span>
+					</td>
+	
+					<td class="table-cell" style="width: 21%;">
+	11</td>
+	
+				</tr>
+	
+				<tr class="table-row table-row--nonpodium" lookupID="cz31">
+					<td class="table-cell table-cell--place place-number" style="width: 9%;">
+	49</td>
+	
+					<td class="table-cell" style="width: 7%;"><img class="league-icon" src="/static/images/leagues/users/0.png"/></td>
+	
+					<td class="table-cell" style="width: 12%;"><img class="car-img" src="/static/images/cars/painted/
+	107_large_1_160.png"/></td>
+	
+					<td class="table-cell" style="width: 51%;">
+	
+						<img class="gold-img" src="/static/images/gold-membership.png"/>
+	
+						<a class="display-name display-name-gold" href="https://www.nitrotype.com/racer/cz31" target="_blank">
+	꧁⛳ℂz31⛳꧂</a>
+						<br><span class="title">"Typing Nightmare"</span>
+					</td>
+	
+					<td class="table-cell" style="width: 21%;">
+	11</td>
+	
+				</tr>
+	
+				<tr class="table-row table-row--nonpodium" lookupID="mike_shadows">
+					<td class="table-cell table-cell--place place-number" style="width: 9%;">
+	50</td>
+	
+					<td class="table-cell" style="width: 7%;"><img class="league-icon" src="/static/images/leagues/users/0.png"/></td>
+	
+					<td class="table-cell" style="width: 12%;"><img class="car-img" src="/static/images/cars/painted/
+	78_large_1_260.png"/></td>
+	
+					<td class="table-cell" style="width: 51%;">
+	
+						<a class="display-name display-name-basic" href="https://www.nitrotype.com/racer/mike_shadows" target="_blank">
+	View of Halfway Down</a>
+						<br><span class="title">"Motorcycle Rider"</span>
+					</td>
+	
+					<td class="table-cell" style="width: 21%;">
+	11</td>
+	
+				</tr>
+	
+				<tr class="table-row table-row--nonpodium" lookupID="537565">
+					<td class="table-cell table-cell--place place-number" style="width: 9%;">
+	51</td>
+	
+					<td class="table-cell" style="width: 7%;"><img class="league-icon" src="/static/images/leagues/users/3.png"/></td>
+	
+					<td class="table-cell" style="width: 12%;"><img class="car-img" src="/static/images/cars/
+	203.png"/></td>
+	
+					<td class="table-cell" style="width: 51%;">
+	
+						<img class="gold-img" src="/static/images/gold-membership.png"/>
+	
+						<a class="display-name display-name-gold" href="https://www.nitrotype.com/racer/537565" target="_blank">
+	Sub2NitroTypistYT</a>
+						<br><span class="title">"Verified YouTuber"</span>
+					</td>
+	
+					<td class="table-cell" style="width: 21%;">
+	11</td>
+	
+				</tr>
+	
+				<tr class="table-row table-row--nonpodium" lookupID="scottee">
+					<td class="table-cell table-cell--place place-number" style="width: 9%;">
+	52</td>
+	
+					<td class="table-cell" style="width: 7%;"><img class="league-icon" src="/static/images/leagues/users/1.png"/></td>
+	
+					<td class="table-cell" style="width: 12%;"><img class="car-img" src="/static/images/cars/painted/
+	amg_large_300.png"/></td>
+	
+					<td class="table-cell" style="width: 51%;">
+	
+						<a class="display-name display-name-basic" href="https://www.nitrotype.com/racer/scottee" target="_blank">
+	NorCalmotors</a>
+						<br><span class="title">"Eggstra Speedy"</span>
+					</td>
+	
+					<td class="table-cell" style="width: 21%;">
+	11</td>
+	
+				</tr>
+	
+				<tr class="table-row table-row--nonpodium" lookupID="carriepirc">
+					<td class="table-cell table-cell--place place-number" style="width: 9%;">
+	53</td>
+	
+					<td class="table-cell" style="width: 7%;"><img class="league-icon" src="/static/images/leagues/users/3.png"/></td>
+	
+					<td class="table-cell" style="width: 12%;"><img class="car-img" src="/static/images/cars/painted/
+	77_large_1_340.png"/></td>
+	
+					<td class="table-cell" style="width: 51%;">
+	
+						<img class="gold-img" src="/static/images/gold-membership.png"/>
+	
+						<span class="team-tag" style="color: #f9a98e;">[<a class="team-tag user-team-tag-link" style="color: #f9a98e;" href="https://www.nitrotype.com/team/WHEELT" target="_blank">WHEELT</a>]</span>
+	
+						<a class="display-name display-name-gold" href="https://www.nitrotype.com/racer/carriepirc" target="_blank">
+	CarriePirc</a>
+						<br><span class="title">"Drift Queen"</span>
+					</td>
+	
+					<td class="table-cell" style="width: 21%;">
+	11</td>
+	
+				</tr>
+	
+				<tr class="table-row table-row--nonpodium" lookupID="missmary13601">
+					<td class="table-cell table-cell--place place-number" style="width: 9%;">
+	54</td>
+	
+					<td class="table-cell" style="width: 7%;"><img class="league-icon" src="/static/images/leagues/users/6.png"/></td>
+	
+					<td class="table-cell" style="width: 12%;"><img class="car-img" src="/static/images/cars/
+	79.png"/></td>
+	
+					<td class="table-cell" style="width: 51%;">
+	
+						<img class="gold-img" src="/static/images/gold-membership.png"/>
+	
+						<span class="team-tag" style="color: #436fb6;">[<a class="team-tag user-team-tag-link" style="color: #436fb6;" href="https://www.nitrotype.com/team/SSH" target="_blank">SSH</a>]</span>
+	
+						<a class="display-name display-name-gold" href="https://www.nitrotype.com/racer/missmary13601" target="_blank">
+	missmary13601</a>
+						<br><span class="title">"I Love Dogs"</span>
+					</td>
+	
+					<td class="table-cell" style="width: 21%;">
+	11</td>
+	
+				</tr>
+	
+				<tr class="table-row table-row--nonpodium" lookupID="koeyleung9900">
+					<td class="table-cell table-cell--place place-number" style="width: 9%;">
+	55</td>
+	
+					<td class="table-cell" style="width: 7%;"><img class="league-icon" src="/static/images/leagues/users/1.png"/></td>
+	
+					<td class="table-cell" style="width: 12%;"><img class="car-img" src="/static/images/cars/painted/
+	mongoose_large_180.png"/></td>
+	
+					<td class="table-cell" style="width: 51%;">
+	
+						<img class="gold-img" src="/static/images/gold-membership.png"/>
+	
+						<a class="display-name display-name-gold" href="https://www.nitrotype.com/racer/koeyleung9900" target="_blank">
+	DarkMagicianGirl9900</a>
+						<br><span class="title">"Merry Christmas!"</span>
+					</td>
+	
+					<td class="table-cell" style="width: 21%;">
+	11</td>
+	
+				</tr>
+	
+				<tr class="table-row table-row--nonpodium" lookupID="prodot21">
+					<td class="table-cell table-cell--place place-number" style="width: 9%;">
+	56</td>
+	
+					<td class="table-cell" style="width: 7%;"><img class="league-icon" src="/static/images/leagues/users/0.png"/></td>
+	
+					<td class="table-cell" style="width: 12%;"><img class="car-img" src="/static/images/cars/
+	367.png"/></td>
+	
+					<td class="table-cell" style="width: 51%;">
+	
+						<img class="gold-img" src="/static/images/gold-membership.png"/>
+	
+						<a class="display-name display-name-gold" href="https://www.nitrotype.com/racer/prodot21" target="_blank">
+	S_н_α_ι_ℓ.</a>
+						<br><span class="title">"The Silent Knight"</span>
+					</td>
+	
+					<td class="table-cell" style="width: 21%;">
+	11</td>
+	
+				</tr>
+	
+				<tr class="table-row table-row--nonpodium" lookupID="conniey25">
+					<td class="table-cell table-cell--place place-number" style="width: 9%;">
+	57</td>
+	
+					<td class="table-cell" style="width: 7%;"><img class="league-icon" src="/static/images/leagues/users/0.png"/></td>
+	
+					<td class="table-cell" style="width: 12%;"><img class="car-img" src="/static/images/cars/painted/
+	77_large_1_280.png"/></td>
+	
+					<td class="table-cell" style="width: 51%;">
+	
+						<img class="gold-img" src="/static/images/gold-membership.png"/>
+	
+						<a class="display-name display-name-gold" href="https://www.nitrotype.com/racer/conniey25" target="_blank">
+	tsukimeiji</a>
+						<br><span class="title">"Raw Racing Recruit"</span>
+					</td>
+	
+					<td class="table-cell" style="width: 21%;">
+	11</td>
+	
+				</tr>
+	
+				<tr class="table-row table-row--nonpodium" lookupID="ily2thestars">
+					<td class="table-cell table-cell--place place-number" style="width: 9%;">
+	58</td>
+	
+					<td class="table-cell" style="width: 7%;"><img class="league-icon" src="/static/images/leagues/users/7.png"/></td>
+	
+					<td class="table-cell" style="width: 12%;"><img class="car-img" src="/static/images/cars/painted/
+	114_large_1_120.png"/></td>
+	
+					<td class="table-cell" style="width: 51%;">
+	
+						<img class="gold-img" src="/static/images/gold-membership.png"/>
+	
+						<span class="team-tag" style="color: #436fb6;">[<a class="team-tag user-team-tag-link" style="color: #436fb6;" href="https://www.nitrotype.com/team/SSH" target="_blank">SSH</a>]</span>
+	
+						<a class="display-name display-name-gold" href="https://www.nitrotype.com/racer/ily2thestars" target="_blank">
+	theFinalEpis0de X3</a>
+						<br><span class="title">"Battle Beast"</span>
+					</td>
+	
+					<td class="table-cell" style="width: 21%;">
+	10</td>
+	
+				</tr>
+	
+				<tr class="table-row table-row--nonpodium" lookupID="jeromethebeast">
+					<td class="table-cell table-cell--place place-number" style="width: 9%;">
+	59</td>
+	
+					<td class="table-cell" style="width: 7%;"><img class="league-icon" src="/static/images/leagues/users/7.png"/></td>
+	
+					<td class="table-cell" style="width: 12%;"><img class="car-img" src="/static/images/cars/
+	163.png"/></td>
+	
+					<td class="table-cell" style="width: 51%;">
+	
+						<img class="gold-img" src="/static/images/gold-membership.png"/>
+	
+						<span class="team-tag" style="color: #40b8ea;">[<a class="team-tag user-team-tag-link" style="color: #40b8ea;" href="https://www.nitrotype.com/team/TESM" target="_blank">TESM</a>]</span>
+	
+						<a class="display-name display-name-gold" href="https://www.nitrotype.com/racer/jeromethebeast" target="_blank">
+	Wild Savage</a>
+						<br><span class="title">"Keyboard Smasher"</span>
+					</td>
+	
+					<td class="table-cell" style="width: 21%;">
+	10</td>
+	
+				</tr>
+	
+				<tr class="table-row table-row--nonpodium" lookupID="atrg">
+					<td class="table-cell table-cell--place place-number" style="width: 9%;">
+	60</td>
+	
+					<td class="table-cell" style="width: 7%;"><img class="league-icon" src="/static/images/leagues/users/3.png"/></td>
+	
+					<td class="table-cell" style="width: 12%;"><img class="car-img" src="/static/images/cars/
+	124.png"/></td>
+	
+					<td class="table-cell" style="width: 51%;">
+	
+						<img class="gold-img" src="/static/images/gold-membership.png"/>
+	
+						<span class="team-tag" style="color: #ea1979;">[<a class="team-tag user-team-tag-link" style="color: #ea1979;" href="https://www.nitrotype.com/team/WAMZ" target="_blank">WAMZ</a>]</span>
+	
+						<a class="display-name display-name-gold" href="https://www.nitrotype.com/racer/atrg" target="_blank">
+	atrg                                              </a>
+						<br><span class="title">"Ferocious Finisher"</span>
+					</td>
+	
+					<td class="table-cell" style="width: 21%;">
+	10</td>
+	
+				</tr>
+	
+				<tr class="table-row table-row--nonpodium" lookupID="145442">
+					<td class="table-cell table-cell--place place-number" style="width: 9%;">
+	61</td>
+	
+					<td class="table-cell" style="width: 7%;"><img class="league-icon" src="/static/images/leagues/users/1.png"/></td>
+	
+					<td class="table-cell" style="width: 12%;"><img class="car-img" src="/static/images/cars/painted/
+	hang11_large_240.png"/></td>
+	
+					<td class="table-cell" style="width: 51%;">
+	
+						<img class="gold-img" src="/static/images/gold-membership.png"/>
+	
+						<span class="team-tag" style="color: #746bb0;">[<a class="team-tag user-team-tag-link" style="color: #746bb0;" href="https://www.nitrotype.com/team/PHA" target="_blank">PHA</a>]</span>
+	
+						<a class="display-name display-name-gold" href="https://www.nitrotype.com/racer/145442" target="_blank">
+	Starstruck</a>
+						<br><span class="title">":D"</span>
+					</td>
+	
+					<td class="table-cell" style="width: 21%;">
+	10</td>
+	
+				</tr>
+	
+				<tr class="table-row table-row--nonpodium" lookupID="billy33">
+					<td class="table-cell table-cell--place place-number" style="width: 9%;">
+	62</td>
+	
+					<td class="table-cell" style="width: 7%;"><img class="league-icon" src="/static/images/leagues/users/0.png"/></td>
+	
+					<td class="table-cell" style="width: 12%;"><img class="car-img" src="/static/images/cars/
+	76.png"/></td>
+	
+					<td class="table-cell" style="width: 51%;">
+	
+						<img class="gold-img" src="/static/images/gold-membership.png"/>
+	
+						<span class="team-tag" style="color: #40b8ea;">[<a class="team-tag user-team-tag-link" style="color: #40b8ea;" href="https://www.nitrotype.com/team/N8TE" target="_blank">N8TE</a>]</span>
+	
+						<a class="display-name display-name-gold" href="https://www.nitrotype.com/racer/billy33" target="_blank">
+	billy33</a>
+						<br><span class="title">"On Thin Ice"</span>
+					</td>
+	
+					<td class="table-cell" style="width: 21%;">
+	10</td>
+	
+				</tr>
+	
+				<tr class="table-row table-row--nonpodium" lookupID="amadmadworld">
+					<td class="table-cell table-cell--place place-number" style="width: 9%;">
+	63</td>
+	
+					<td class="table-cell" style="width: 7%;"><img class="league-icon" src="/static/images/leagues/users/0.png"/></td>
+	
+					<td class="table-cell" style="width: 12%;"><img class="car-img" src="/static/images/cars/
+	77.png"/></td>
+	
+					<td class="table-cell" style="width: 51%;">
+	
+						<img class="gold-img" src="/static/images/gold-membership.png"/>
+	
+						<a class="display-name display-name-gold" href="https://www.nitrotype.com/racer/amadmadworld" target="_blank">
+	amadmadworld</a>
+						<br><span class="title">"Peace, Love, Nitros"</span>
+					</td>
+	
+					<td class="table-cell" style="width: 21%;">
+	10</td>
+	
+				</tr>
+	
+				<tr class="table-row table-row--nonpodium" lookupID="riddle">
+					<td class="table-cell table-cell--place place-number" style="width: 9%;">
+	64</td>
+	
+					<td class="table-cell" style="width: 7%;"><img class="league-icon" src="/static/images/leagues/users/0.png"/></td>
+	
+					<td class="table-cell" style="width: 12%;"><img class="car-img" src="/static/images/cars/
+	249.png"/></td>
+	
+					<td class="table-cell" style="width: 51%;">
+	
+						<img class="gold-img" src="/static/images/gold-membership.png"/>
+	
+						<a class="display-name display-name-gold" href="https://www.nitrotype.com/racer/riddle" target="_blank">
+	riddle</a>
+						<br><span class="title">"Typing Nightmare"</span>
+					</td>
+	
+					<td class="table-cell" style="width: 21%;">
+	10</td>
+	
+				</tr>
+	
+				<tr class="table-row table-row--nonpodium" lookupID="cf4eb8ead5e1b4af30e22a0aecd5630c">
+					<td class="table-cell table-cell--place place-number" style="width: 9%;">
+	65</td>
+	
+					<td class="table-cell" style="width: 7%;"><img class="league-icon" src="/static/images/leagues/users/0.png"/></td>
+	
+					<td class="table-cell" style="width: 12%;"><img class="car-img" src="/static/images/cars/
+	71.png"/></td>
+	
+					<td class="table-cell" style="width: 51%;">
+	
+						<img class="gold-img" src="/static/images/gold-membership.png"/>
+	
+						<a class="display-name display-name-gold" href="https://www.nitrotype.com/racer/cf4eb8ead5e1b4af30e22a0aecd5630c" target="_blank">
+	√∑n¡§øN</a>
+						<br><span class="title">"Nitro Type Master"</span>
+					</td>
+	
+					<td class="table-cell" style="width: 21%;">
+	10</td>
+	
+				</tr>
+	
+				<tr class="table-row table-row--nonpodium" lookupID="joshua728">
+					<td class="table-cell table-cell--place place-number" style="width: 9%;">
+	66</td>
+	
+					<td class="table-cell" style="width: 7%;"><img class="league-icon" src="/static/images/leagues/users/1.png"/></td>
+	
+					<td class="table-cell" style="width: 12%;"><img class="car-img" src="/static/images/cars/
+	122.png"/></td>
+	
+					<td class="table-cell" style="width: 51%;">
+	
+						<img class="gold-img" src="/static/images/gold-membership.png"/>
+	
+						<a class="display-name display-name-gold" href="https://www.nitrotype.com/racer/joshua728" target="_blank">
+	joshuu</a>
+						<br><span class="title">"Speed Champion"</span>
+					</td>
+	
+					<td class="table-cell" style="width: 21%;">
+	10</td>
+	
+				</tr>
+	
+				<tr class="table-row table-row--nonpodium" lookupID="hi_i_am_epic">
+					<td class="table-cell table-cell--place place-number" style="width: 9%;">
+	67</td>
+	
+					<td class="table-cell" style="width: 7%;"><img class="league-icon" src="/static/images/leagues/users/2.png"/></td>
+	
+					<td class="table-cell" style="width: 12%;"><img class="car-img" src="/static/images/cars/
+	332.png"/></td>
+	
+					<td class="table-cell" style="width: 51%;">
+	
+						<img class="gold-img" src="/static/images/gold-membership.png"/>
+	
+						<a class="display-name display-name-gold" href="https://www.nitrotype.com/racer/hi_i_am_epic" target="_blank">
+	NoThisIsJohn</a>
+						<br><span class="title">"Verified YouTuber"</span>
+					</td>
+	
+					<td class="table-cell" style="width: 21%;">
+	10</td>
+	
+				</tr>
+	
+				<tr class="table-row table-row--nonpodium" lookupID="food05">
+					<td class="table-cell table-cell--place place-number" style="width: 9%;">
+	68</td>
+	
+					<td class="table-cell" style="width: 7%;"><img class="league-icon" src="/static/images/leagues/users/2.png"/></td>
+	
+					<td class="table-cell" style="width: 12%;"><img class="car-img" src="/static/images/cars/painted/
+	77_large_1_300.png"/></td>
+	
+					<td class="table-cell" style="width: 51%;">
+	
+						<img class="gold-img" src="/static/images/gold-membership.png"/>
+	
+						<a class="display-name display-name-gold" href="https://www.nitrotype.com/racer/food05" target="_blank">
+	food05</a>
+						<br><span class="title">"Empress"</span>
+					</td>
+	
+					<td class="table-cell" style="width: 21%;">
+	10</td>
+	
+				</tr>
+	
+				<tr class="table-row table-row--nonpodium" lookupID="aid1337">
+					<td class="table-cell table-cell--place place-number" style="width: 9%;">
+	69</td>
+	
+					<td class="table-cell" style="width: 7%;"><img class="league-icon" src="/static/images/leagues/users/0.png"/></td>
+	
+					<td class="table-cell" style="width: 12%;"><img class="car-img" src="/static/images/cars/
+	101.png"/></td>
+	
+					<td class="table-cell" style="width: 51%;">
+	
+						<img class="gold-img" src="/static/images/gold-membership.png"/>
+	
+						<span class="team-tag" style="color: #96d1f3;">[<a class="team-tag user-team-tag-link" style="color: #96d1f3;" href="https://www.nitrotype.com/team/5HRK" target="_blank">5HRK</a>]</span>
+	
+						<a class="display-name display-name-gold" href="https://www.nitrotype.com/racer/aid1337" target="_blank">
+	Jack Morton</a>
+						<br><span class="title">":D"</span>
+					</td>
+	
+					<td class="table-cell" style="width: 21%;">
+	10</td>
+	
+				</tr>
+	
+				<tr class="table-row table-row--nonpodium" lookupID="spintowin">
+					<td class="table-cell table-cell--place place-number" style="width: 9%;">
+	70</td>
+	
+					<td class="table-cell" style="width: 7%;"><img class="league-icon" src="/static/images/leagues/users/0.png"/></td>
+	
+					<td class="table-cell" style="width: 12%;"><img class="car-img" src="/static/images/cars/
+	72.png"/></td>
+	
+					<td class="table-cell" style="width: 51%;">
+	
+						<img class="gold-img" src="/static/images/gold-membership.png"/>
+	
+						<a class="display-name display-name-gold" href="https://www.nitrotype.com/racer/spintowin" target="_blank">
+	ILuvYouAll!</a>
+						<br><span class="title">"Nitro Dog"</span>
+					</td>
+	
+					<td class="table-cell" style="width: 21%;">
+	10</td>
+	
+				</tr>
+	
+				<tr class="table-row table-row--nonpodium" lookupID="j1j1o1k1">
+					<td class="table-cell table-cell--place place-number" style="width: 9%;">
+	71</td>
+	
+					<td class="table-cell" style="width: 7%;"><img class="league-icon" src="/static/images/leagues/users/0.png"/></td>
+	
+					<td class="table-cell" style="width: 12%;"><img class="car-img" src="/static/images/cars/painted/
+	53_large_1_260.png"/></td>
+	
+					<td class="table-cell" style="width: 51%;">
+	
+						<img class="gold-img" src="/static/images/gold-membership.png"/>
+	
+						<a class="display-name display-name-gold" href="https://www.nitrotype.com/racer/j1j1o1k1" target="_blank">
+	TrueToTheBlue</a>
+						<br><span class="title">"Lighting Up The Night"</span>
+					</td>
+	
+					<td class="table-cell" style="width: 21%;">
+	10</td>
+	
+				</tr>
+	
+				<tr class="table-row table-row--nonpodium" lookupID="omarkhattab">
+					<td class="table-cell table-cell--place place-number" style="width: 9%;">
+	72</td>
+	
+					<td class="table-cell" style="width: 7%;"><img class="league-icon" src="/static/images/leagues/users/6.png"/></td>
+	
+					<td class="table-cell" style="width: 12%;"><img class="car-img" src="/static/images/cars/painted/
+	demon_large_340.png"/></td>
+	
+					<td class="table-cell" style="width: 51%;">
+	
+						<img class="gold-img" src="/static/images/gold-membership.png"/>
+	
+						<span class="team-tag" style="color: #f389a7;">[<a class="team-tag user-team-tag-link" style="color: #f389a7;" href="https://www.nitrotype.com/team/MUSLIM" target="_blank">MUSLIM</a>]</span>
+	
+						<a class="display-name display-name-gold" href="https://www.nitrotype.com/racer/omarkhattab" target="_blank">
+	Omar KH</a>
+						<br><span class="title">"Fast Track Flyer"</span>
+					</td>
+	
+					<td class="table-cell" style="width: 21%;">
+	10</td>
+	
+				</tr>
+	
+				<tr class="table-row table-row--nonpodium" lookupID="manlio">
+					<td class="table-cell table-cell--place place-number" style="width: 9%;">
+	73</td>
+	
+					<td class="table-cell" style="width: 7%;"><img class="league-icon" src="/static/images/leagues/users/0.png"/></td>
+	
+					<td class="table-cell" style="width: 12%;"><img class="car-img" src="/static/images/cars/
+	340.png"/></td>
+	
+					<td class="table-cell" style="width: 51%;">
+	
+						<img class="gold-img" src="/static/images/gold-membership.png"/>
+	
+						<a class="display-name display-name-gold" href="https://www.nitrotype.com/racer/manlio" target="_blank">
+	Yee⚜️Haw</a>
+						<br><span class="title">"Fleece Navidad"</span>
+					</td>
+	
+					<td class="table-cell" style="width: 21%;">
+	10</td>
+	
+				</tr>
+	
+				<tr class="table-row table-row--nonpodium" lookupID="youyouyouyou111">
+					<td class="table-cell table-cell--place place-number" style="width: 9%;">
+	74</td>
+	
+					<td class="table-cell" style="width: 7%;"><img class="league-icon" src="/static/images/leagues/users/7.png"/></td>
+	
+					<td class="table-cell" style="width: 12%;"><img class="car-img" src="/static/images/cars/painted/
+	166_large_1_200.png"/></td>
+	
+					<td class="table-cell" style="width: 51%;">
+	
+						<img class="gold-img" src="/static/images/gold-membership.png"/>
+	
+						<span class="team-tag" style="color: #ea1979;">[<a class="team-tag user-team-tag-link" style="color: #ea1979;" href="https://www.nitrotype.com/team/PR2W" target="_blank">PR2W</a>]</span>
+	
+						<a class="display-name display-name-gold" href="https://www.nitrotype.com/racer/youyouyouyou111" target="_blank">
+	AllstateRacing4Ava</a>
+						<br><span class="title">"May The 4th Be With You"</span>
+					</td>
+	
+					<td class="table-cell" style="width: 21%;">
+	9</td>
+	
+				</tr>
+	
+				<tr class="table-row table-row--nonpodium" lookupID="philliesmagic">
+					<td class="table-cell table-cell--place place-number" style="width: 9%;">
+	75</td>
+	
+					<td class="table-cell" style="width: 7%;"><img class="league-icon" src="/static/images/leagues/users/6.png"/></td>
+	
+					<td class="table-cell" style="width: 12%;"><img class="car-img" src="/static/images/cars/
+	98.png"/></td>
+	
+					<td class="table-cell" style="width: 51%;">
+	
+						<img class="gold-img" src="/static/images/gold-membership.png"/>
+	
+						<span class="team-tag" style="color: #436fb6;">[<a class="team-tag user-team-tag-link" style="color: #436fb6;" href="https://www.nitrotype.com/team/SSH" target="_blank">SSH</a>]</span>
+	
+						<a class="display-name display-name-gold" href="https://www.nitrotype.com/racer/philliesmagic" target="_blank">
+	PhilliesMagic</a>
+						<br><span class="title">"Champion Team"</span>
+					</td>
+	
+					<td class="table-cell" style="width: 21%;">
+	9</td>
+	
+				</tr>
+	
+				<tr class="table-row table-row--nonpodium" lookupID="25isaac_tower">
+					<td class="table-cell table-cell--place place-number" style="width: 9%;">
+	76</td>
+	
+					<td class="table-cell" style="width: 7%;"><img class="league-icon" src="/static/images/leagues/users/6.png"/></td>
+	
+					<td class="table-cell" style="width: 12%;"><img class="car-img" src="/static/images/cars/
+	84.png"/></td>
+	
+					<td class="table-cell" style="width: 51%;">
+	
+						<img class="gold-img" src="/static/images/gold-membership.png"/>
+	
+						<span class="team-tag" style="color: #f5eb21;">[<a class="team-tag user-team-tag-link" style="color: #f5eb21;" href="https://www.nitrotype.com/team/NTRO" target="_blank">NTRO</a>]</span>
+	
+						<a class="display-name display-name-gold" href="https://www.nitrotype.com/racer/25isaac_tower" target="_blank">
+	-Isaac-</a>
+						<br><span class="title">"Verified YouTuber"</span>
 					</td>
 	
 					<td class="table-cell" style="width: 21%;">
@@ -1994,7 +1933,7 @@
 	
 				<tr class="table-row table-row--nonpodium" lookupID="kels_world">
 					<td class="table-cell table-cell--place place-number" style="width: 9%;">
-	75</td>
+	77</td>
 	
 					<td class="table-cell" style="width: 7%;"><img class="league-icon" src="/static/images/leagues/users/4.png"/></td>
 	
@@ -2007,8 +1946,7 @@
 	
 						<span class="team-tag" style="color: #ea1979;">[<a class="team-tag user-team-tag-link" style="color: #ea1979;" href="https://www.nitrotype.com/team/P2BB" target="_blank">P2BB</a>]</span>
 	
-						<a class="display-name display-name-gold" href="https://www.nitrotype.com/racer/
-	kels_world" target="_blank">
+						<a class="display-name display-name-gold" href="https://www.nitrotype.com/racer/kels_world" target="_blank">
 	Back2Basics</a>
 						<br><span class="title">"Nitro Rich"</span>
 					</td>
@@ -2018,21 +1956,45 @@
 	
 				</tr>
 	
-				<tr class="table-row table-row--nonpodium" lookupID="chippy">
+				<tr class="table-row table-row--nonpodium" lookupID="adudemanbro">
 					<td class="table-cell table-cell--place place-number" style="width: 9%;">
-	76</td>
+	78</td>
 	
-					<td class="table-cell" style="width: 7%;"><img class="league-icon" src="/static/images/leagues/users/0.png"/></td>
+					<td class="table-cell" style="width: 7%;"><img class="league-icon" src="/static/images/leagues/users/6.png"/></td>
 	
 					<td class="table-cell" style="width: 12%;"><img class="car-img" src="/static/images/cars/painted/
-	hammerwheels_large_80.png"/></td>
+	38_large_1_40.png"/></td>
 	
 					<td class="table-cell" style="width: 51%;">
 	
 						<img class="gold-img" src="/static/images/gold-membership.png"/>
 	
-						<a class="display-name display-name-gold" href="https://www.nitrotype.com/racer/
-	chippy" target="_blank">
+						<span class="team-tag" style="color: #f5eb21;">[<a class="team-tag user-team-tag-link" style="color: #f5eb21;" href="https://www.nitrotype.com/team/BEEHVE" target="_blank">BEEHVE</a>]</span>
+	
+						<a class="display-name display-name-gold" href="https://www.nitrotype.com/racer/adudemanbro" target="_blank">
+	Oreo :D</a>
+						<br><span class="title">"Sp3llchekcer"</span>
+					</td>
+	
+					<td class="table-cell" style="width: 21%;">
+	9</td>
+	
+				</tr>
+	
+				<tr class="table-row table-row--nonpodium" lookupID="chippy">
+					<td class="table-cell table-cell--place place-number" style="width: 9%;">
+	79</td>
+	
+					<td class="table-cell" style="width: 7%;"><img class="league-icon" src="/static/images/leagues/users/1.png"/></td>
+	
+					<td class="table-cell" style="width: 12%;"><img class="car-img" src="/static/images/cars/painted/
+	grid_large_280.png"/></td>
+	
+					<td class="table-cell" style="width: 51%;">
+	
+						<img class="gold-img" src="/static/images/gold-membership.png"/>
+	
+						<a class="display-name display-name-gold" href="https://www.nitrotype.com/racer/chippy" target="_blank">
 	Chippy</a>
 						<br><span class="title">"Empress"</span>
 					</td>
@@ -2044,9 +2006,9 @@
 	
 				<tr class="table-row table-row--nonpodium" lookupID="itz_lion">
 					<td class="table-cell table-cell--place place-number" style="width: 9%;">
-	77</td>
+	80</td>
 	
-					<td class="table-cell" style="width: 7%;"><img class="league-icon" src="/static/images/leagues/users/5.png"/></td>
+					<td class="table-cell" style="width: 7%;"><img class="league-icon" src="/static/images/leagues/users/6.png"/></td>
 	
 					<td class="table-cell" style="width: 12%;"><img class="car-img" src="/static/images/cars/painted/
 	137_large_1_80.png"/></td>
@@ -2057,8 +2019,7 @@
 	
 						<span class="team-tag" style="color: #8750a0;">[<a class="team-tag user-team-tag-link" style="color: #8750a0;" href="https://www.nitrotype.com/team/NTA3" target="_blank">NTA3</a>]</span>
 	
-						<a class="display-name display-name-gold" href="https://www.nitrotype.com/racer/
-	itz_lion" target="_blank">
+						<a class="display-name display-name-gold" href="https://www.nitrotype.com/racer/itz_lion" target="_blank">
 	♔shawnC♔</a>
 						<br><span class="title">"Ready Racer One"</span>
 					</td>
@@ -2068,33 +2029,9 @@
 	
 				</tr>
 	
-				<tr class="table-row table-row--nonpodium" lookupID="537565">
-					<td class="table-cell table-cell--place place-number" style="width: 9%;">
-	78</td>
-	
-					<td class="table-cell" style="width: 7%;"><img class="league-icon" src="/static/images/leagues/users/3.png"/></td>
-	
-					<td class="table-cell" style="width: 12%;"><img class="car-img" src="/static/images/cars/
-	203.png"/></td>
-	
-					<td class="table-cell" style="width: 51%;">
-	
-						<img class="gold-img" src="/static/images/gold-membership.png"/>
-	
-						<a class="display-name display-name-gold" href="https://www.nitrotype.com/racer/
-	537565" target="_blank">
-	Sub2NitroTypistYT</a>
-						<br><span class="title">"Verified YouTuber"</span>
-					</td>
-	
-					<td class="table-cell" style="width: 21%;">
-	9</td>
-	
-				</tr>
-	
 				<tr class="table-row table-row--nonpodium" lookupID="sgregers">
 					<td class="table-cell table-cell--place place-number" style="width: 9%;">
-	79</td>
+	81</td>
 	
 					<td class="table-cell" style="width: 7%;"><img class="league-icon" src="/static/images/leagues/users/5.png"/></td>
 	
@@ -2107,8 +2044,7 @@
 	
 						<span class="team-tag" style="color: #71c055;">[<a class="team-tag user-team-tag-link" style="color: #71c055;" href="https://www.nitrotype.com/team/HWS" target="_blank">HWS</a>]</span>
 	
-						<a class="display-name display-name-gold" href="https://www.nitrotype.com/racer/
-	sgregers" target="_blank">
+						<a class="display-name display-name-gold" href="https://www.nitrotype.com/racer/sgregers" target="_blank">
 	homerow_jedi</a>
 						<br><span class="title">"The Force"</span>
 					</td>
@@ -2120,7 +2056,7 @@
 	
 				<tr class="table-row table-row--nonpodium" lookupID="usa_uk">
 					<td class="table-cell table-cell--place place-number" style="width: 9%;">
-	80</td>
+	82</td>
 	
 					<td class="table-cell" style="width: 7%;"><img class="league-icon" src="/static/images/leagues/users/6.png"/></td>
 	
@@ -2133,8 +2069,7 @@
 	
 						<span class="team-tag" style="color: #436fb6;">[<a class="team-tag user-team-tag-link" style="color: #436fb6;" href="https://www.nitrotype.com/team/ISRAEL" target="_blank">ISRAEL</a>]</span>
 	
-						<a class="display-name display-name-gold" href="https://www.nitrotype.com/racer/
-	usa_uk" target="_blank">
+						<a class="display-name display-name-gold" href="https://www.nitrotype.com/racer/usa_uk" target="_blank">
 	SSH-АгентСША</a>
 						<br><span class="title">"Happy 4th of July!"</span>
 					</td>
@@ -2146,7 +2081,7 @@
 	
 				<tr class="table-row table-row--nonpodium" lookupID="badly_turtle">
 					<td class="table-cell table-cell--place place-number" style="width: 9%;">
-	81</td>
+	83</td>
 	
 					<td class="table-cell" style="width: 7%;"><img class="league-icon" src="/static/images/leagues/users/0.png"/></td>
 	
@@ -2157,8 +2092,7 @@
 	
 						<img class="gold-img" src="/static/images/gold-membership.png"/>
 	
-						<a class="display-name display-name-gold" href="https://www.nitrotype.com/racer/
-	badly_turtle" target="_blank">
+						<a class="display-name display-name-gold" href="https://www.nitrotype.com/racer/badly_turtle" target="_blank">
 	Narrative_Style</a>
 						<br><span class="title">"Typing Nightmare"</span>
 					</td>
@@ -2170,7 +2104,7 @@
 	
 				<tr class="table-row table-row--nonpodium" lookupID="ryan250">
 					<td class="table-cell table-cell--place place-number" style="width: 9%;">
-	82</td>
+	84</td>
 	
 					<td class="table-cell" style="width: 7%;"><img class="league-icon" src="/static/images/leagues/users/1.png"/></td>
 	
@@ -2181,8 +2115,7 @@
 	
 						<img class="gold-img" src="/static/images/gold-membership.png"/>
 	
-						<a class="display-name display-name-gold" href="https://www.nitrotype.com/racer/
-	ryan250" target="_blank">
+						<a class="display-name display-name-gold" href="https://www.nitrotype.com/racer/ryan250" target="_blank">
 	Racer 1</a>
 						<br><span class="title">"Heatwave Hero"</span>
 					</td>
@@ -2194,7 +2127,7 @@
 	
 				<tr class="table-row table-row--nonpodium" lookupID="puzzilator7">
 					<td class="table-cell table-cell--place place-number" style="width: 9%;">
-	83</td>
+	85</td>
 	
 					<td class="table-cell" style="width: 7%;"><img class="league-icon" src="/static/images/leagues/users/0.png"/></td>
 	
@@ -2205,8 +2138,7 @@
 	
 						<img class="gold-img" src="/static/images/gold-membership.png"/>
 	
-						<a class="display-name display-name-gold" href="https://www.nitrotype.com/racer/
-	puzzilator7" target="_blank">
+						<a class="display-name display-name-gold" href="https://www.nitrotype.com/racer/puzzilator7" target="_blank">
 	Pixel8z</a>
 						<br><span class="title">"Typing Nightmare"</span>
 					</td>
@@ -2216,9 +2148,34 @@
 	
 				</tr>
 	
+				<tr class="table-row table-row--nonpodium" lookupID="bobvila">
+					<td class="table-cell table-cell--place place-number" style="width: 9%;">
+	86</td>
+	
+					<td class="table-cell" style="width: 7%;"><img class="league-icon" src="/static/images/leagues/users/8.png"/></td>
+	
+					<td class="table-cell" style="width: 12%;"><img class="car-img" src="/static/images/cars/
+	305.png"/></td>
+	
+					<td class="table-cell" style="width: 51%;">
+	
+						<img class="gold-img" src="/static/images/gold-membership.png"/>
+	
+						<span class="team-tag" style="color: #daedfa;">[<a class="team-tag user-team-tag-link" style="color: #daedfa;" href="https://www.nitrotype.com/team/HV" target="_blank">HV</a>]</span>
+	
+						<a class="display-name display-name-gold" href="https://www.nitrotype.com/racer/bobvila" target="_blank">
+	bobvila</a>
+						<br><span class="title">"Happy Vibes :)"</span>
+					</td>
+	
+					<td class="table-cell" style="width: 21%;">
+	8</td>
+	
+				</tr>
+	
 				<tr class="table-row table-row--nonpodium" lookupID="dc8f553ba2b638a2f5b399bc619e36f7">
 					<td class="table-cell table-cell--place place-number" style="width: 9%;">
-	84</td>
+	87</td>
 	
 					<td class="table-cell" style="width: 7%;"><img class="league-icon" src="/static/images/leagues/users/7.png"/></td>
 	
@@ -2231,8 +2188,7 @@
 	
 						<span class="team-tag" style="color: #ee1f25;">[<a class="team-tag user-team-tag-link" style="color: #ee1f25;" href="https://www.nitrotype.com/team/RCKTS" target="_blank">RCKTS</a>]</span>
 	
-						<a class="display-name display-name-gold" href="https://www.nitrotype.com/racer/
-	dc8f553ba2b638a2f5b399bc619e36f7" target="_blank">
+						<a class="display-name display-name-gold" href="https://www.nitrotype.com/racer/dc8f553ba2b638a2f5b399bc619e36f7" target="_blank">
 	ScarletStreak</a>
 						<br><span class="title">"I Love Cats"</span>
 					</td>
@@ -2242,9 +2198,34 @@
 	
 				</tr>
 	
+				<tr class="table-row table-row--nonpodium" lookupID="arlan2000">
+					<td class="table-cell table-cell--place place-number" style="width: 9%;">
+	88</td>
+	
+					<td class="table-cell" style="width: 7%;"><img class="league-icon" src="/static/images/leagues/users/7.png"/></td>
+	
+					<td class="table-cell" style="width: 12%;"><img class="car-img" src="/static/images/cars/painted/
+	129_large_1_220.png"/></td>
+	
+					<td class="table-cell" style="width: 51%;">
+	
+						<img class="gold-img" src="/static/images/gold-membership.png"/>
+	
+						<span class="team-tag" style="color: #ea1979;">[<a class="team-tag user-team-tag-link" style="color: #ea1979;" href="https://www.nitrotype.com/team/PR2W" target="_blank">PR2W</a>]</span>
+	
+						<a class="display-name display-name-gold" href="https://www.nitrotype.com/racer/arlan2000" target="_blank">
+	Arlz Typzta 150k</a>
+						<br><span class="title">"Expert Extraordinaire"</span>
+					</td>
+	
+					<td class="table-cell" style="width: 21%;">
+	8</td>
+	
+				</tr>
+	
 				<tr class="table-row table-row--nonpodium" lookupID="12d1f013ee9e2bbba1c0e5d809487efa">
 					<td class="table-cell table-cell--place place-number" style="width: 9%;">
-	85</td>
+	89</td>
 	
 					<td class="table-cell" style="width: 7%;"><img class="league-icon" src="/static/images/leagues/users/7.png"/></td>
 	
@@ -2257,8 +2238,7 @@
 	
 						<span class="team-tag" style="color: #ea1979;">[<a class="team-tag user-team-tag-link" style="color: #ea1979;" href="https://www.nitrotype.com/team/PR2W" target="_blank">PR2W</a>]</span>
 	
-						<a class="display-name display-name-gold" href="https://www.nitrotype.com/racer/
-	12d1f013ee9e2bbba1c0e5d809487efa" target="_blank">
+						<a class="display-name display-name-gold" href="https://www.nitrotype.com/racer/12d1f013ee9e2bbba1c0e5d809487efa" target="_blank">
 	-Danny-</a>
 						<br><span class="title">"Sp3llchekcer"</span>
 					</td>
@@ -2268,35 +2248,9 @@
 	
 				</tr>
 	
-				<tr class="table-row table-row--nonpodium" lookupID="25isaac_tower">
-					<td class="table-cell table-cell--place place-number" style="width: 9%;">
-	86</td>
-	
-					<td class="table-cell" style="width: 7%;"><img class="league-icon" src="/static/images/leagues/users/6.png"/></td>
-	
-					<td class="table-cell" style="width: 12%;"><img class="car-img" src="/static/images/cars/painted/
-	yacht_large_200.png"/></td>
-	
-					<td class="table-cell" style="width: 51%;">
-	
-						<img class="gold-img" src="/static/images/gold-membership.png"/>
-	
-						<span class="team-tag" style="color: #f5eb21;">[<a class="team-tag user-team-tag-link" style="color: #f5eb21;" href="https://www.nitrotype.com/team/NTRO" target="_blank">NTRO</a>]</span>
-	
-						<a class="display-name display-name-gold" href="https://www.nitrotype.com/racer/
-	25isaac_tower" target="_blank">
-	-Isaac-</a>
-						<br><span class="title">"Verified YouTuber"</span>
-					</td>
-	
-					<td class="table-cell" style="width: 21%;">
-	8</td>
-	
-				</tr>
-	
 				<tr class="table-row table-row--nonpodium" lookupID="melodylove">
 					<td class="table-cell table-cell--place place-number" style="width: 9%;">
-	87</td>
+	90</td>
 	
 					<td class="table-cell" style="width: 7%;"><img class="league-icon" src="/static/images/leagues/users/6.png"/></td>
 	
@@ -2309,8 +2263,7 @@
 	
 						<span class="team-tag" style="color: #436fb6;">[<a class="team-tag user-team-tag-link" style="color: #436fb6;" href="https://www.nitrotype.com/team/SSH" target="_blank">SSH</a>]</span>
 	
-						<a class="display-name display-name-gold" href="https://www.nitrotype.com/racer/
-	melodylove" target="_blank">
+						<a class="display-name display-name-gold" href="https://www.nitrotype.com/racer/melodylove" target="_blank">
 	MissTyper</a>
 						<br><span class="title">"Titan of the Track"</span>
 					</td>
@@ -2322,9 +2275,9 @@
 	
 				<tr class="table-row table-row--nonpodium" lookupID="toadsmash">
 					<td class="table-cell table-cell--place place-number" style="width: 9%;">
-	88</td>
+	91</td>
 	
-					<td class="table-cell" style="width: 7%;"><img class="league-icon" src="/static/images/leagues/users/2.png"/></td>
+					<td class="table-cell" style="width: 7%;"><img class="league-icon" src="/static/images/leagues/users/3.png"/></td>
 	
 					<td class="table-cell" style="width: 12%;"><img class="car-img" src="/static/images/cars/painted/
 	darkstar_large_260.png"/></td>
@@ -2335,8 +2288,7 @@
 	
 						<span class="team-tag" style="color: #d2d7ed;">[<a class="team-tag user-team-tag-link" style="color: #d2d7ed;" href="https://www.nitrotype.com/team/PATCHY" target="_blank">PATCHY</a>]</span>
 	
-						<a class="display-name display-name-gold" href="https://www.nitrotype.com/racer/
-	toadsmash" target="_blank">
+						<a class="display-name display-name-gold" href="https://www.nitrotype.com/racer/toadsmash" target="_blank">
 	Toadsmash</a>
 						<br><span class="title">"I Hate Words"</span>
 					</td>
@@ -2348,9 +2300,9 @@
 	
 				<tr class="table-row table-row--nonpodium" lookupID="cannecannelle">
 					<td class="table-cell table-cell--place place-number" style="width: 9%;">
-	89</td>
+	92</td>
 	
-					<td class="table-cell" style="width: 7%;"><img class="league-icon" src="/static/images/leagues/users/7.png"/></td>
+					<td class="table-cell" style="width: 7%;"><img class="league-icon" src="/static/images/leagues/users/8.png"/></td>
 	
 					<td class="table-cell" style="width: 12%;"><img class="car-img" src="/static/images/cars/painted/
 	77_large_1_200.png"/></td>
@@ -2361,8 +2313,7 @@
 	
 						<span class="team-tag" style="color: #40b8ea;">[<a class="team-tag user-team-tag-link" style="color: #40b8ea;" href="https://www.nitrotype.com/team/S0RC" target="_blank">S0RC</a>]</span>
 	
-						<a class="display-name display-name-gold" href="https://www.nitrotype.com/racer/
-	cannecannelle" target="_blank">
+						<a class="display-name display-name-gold" href="https://www.nitrotype.com/racer/cannecannelle" target="_blank">
 	Comet 1</a>
 						<br><span class="title">"Heart & Solstice"</span>
 					</td>
@@ -2374,7 +2325,7 @@
 	
 				<tr class="table-row table-row--nonpodium" lookupID="josephdacool">
 					<td class="table-cell table-cell--place place-number" style="width: 9%;">
-	90</td>
+	93</td>
 	
 					<td class="table-cell" style="width: 7%;"><img class="league-icon" src="/static/images/leagues/users/3.png"/></td>
 	
@@ -2385,8 +2336,7 @@
 	
 						<span class="team-tag" style="color: #ee1f25;">[<a class="team-tag user-team-tag-link" style="color: #ee1f25;" href="https://www.nitrotype.com/team/TALK" target="_blank">TALK</a>]</span>
 	
-						<a class="display-name display-name-basic" href="https://www.nitrotype.com/racer/
-	josephdacool" target="_blank">
+						<a class="display-name display-name-basic" href="https://www.nitrotype.com/racer/josephdacool" target="_blank">
 	ilikefrenchfries</a>
 						<br><span class="title">"Small Fry"</span>
 					</td>
@@ -2398,12 +2348,12 @@
 	
 				<tr class="table-row table-row--nonpodium" lookupID="hihellooo000">
 					<td class="table-cell table-cell--place place-number" style="width: 9%;">
-	91</td>
+	94</td>
 	
-					<td class="table-cell" style="width: 7%;"><img class="league-icon" src="/static/images/leagues/users/5.png"/></td>
+					<td class="table-cell" style="width: 7%;"><img class="league-icon" src="/static/images/leagues/users/6.png"/></td>
 	
 					<td class="table-cell" style="width: 12%;"><img class="car-img" src="/static/images/cars/
-	198.png"/></td>
+	370.png"/></td>
 	
 					<td class="table-cell" style="width: 51%;">
 	
@@ -2411,8 +2361,7 @@
 	
 						<span class="team-tag" style="color: #f5eb21;">[<a class="team-tag user-team-tag-link" style="color: #f5eb21;" href="https://www.nitrotype.com/team/TCHR" target="_blank">TCHR</a>]</span>
 	
-						<a class="display-name display-name-gold" href="https://www.nitrotype.com/racer/
-	hihellooo000" target="_blank">
+						<a class="display-name display-name-gold" href="https://www.nitrotype.com/racer/hihellooo000" target="_blank">
 	hihellooo000</a>
 						<br><span class="title">"404 Not Found"</span>
 					</td>
@@ -2424,7 +2373,7 @@
 	
 				<tr class="table-row table-row--nonpodium" lookupID="622965">
 					<td class="table-cell table-cell--place place-number" style="width: 9%;">
-	92</td>
+	95</td>
 	
 					<td class="table-cell" style="width: 7%;"><img class="league-icon" src="/static/images/leagues/users/1.png"/></td>
 	
@@ -2435,8 +2384,7 @@
 	
 						<span class="team-tag" style="color: #ee1f25;">[<a class="team-tag user-team-tag-link" style="color: #ee1f25;" href="https://www.nitrotype.com/team/AGE" target="_blank">AGE</a>]</span>
 	
-						<a class="display-name display-name-basic" href="https://www.nitrotype.com/racer/
-	622965" target="_blank">
+						<a class="display-name display-name-basic" href="https://www.nitrotype.com/racer/622965" target="_blank">
 	UNiVEⱤSAl⭕LEGEND</a>
 						<br><span class="title">"Original Gangster"</span>
 					</td>
@@ -2448,7 +2396,7 @@
 	
 				<tr class="table-row table-row--nonpodium" lookupID="jrboyz">
 					<td class="table-cell table-cell--place place-number" style="width: 9%;">
-	93</td>
+	96</td>
 	
 					<td class="table-cell" style="width: 7%;"><img class="league-icon" src="/static/images/leagues/users/0.png"/></td>
 	
@@ -2459,8 +2407,7 @@
 	
 						<img class="gold-img" src="/static/images/gold-membership.png"/>
 	
-						<a class="display-name display-name-gold" href="https://www.nitrotype.com/racer/
-	jrboyz" target="_blank">
+						<a class="display-name display-name-gold" href="https://www.nitrotype.com/racer/jrboyz" target="_blank">
 	Jrboyz</a>
 						<br><span class="title">"Competitor"</span>
 					</td>
@@ -2472,7 +2419,7 @@
 	
 				<tr class="table-row table-row--nonpodium" lookupID="irufflefeathers">
 					<td class="table-cell table-cell--place place-number" style="width: 9%;">
-	94</td>
+	97</td>
 	
 					<td class="table-cell" style="width: 7%;"><img class="league-icon" src="/static/images/leagues/users/0.png"/></td>
 	
@@ -2483,8 +2430,7 @@
 	
 						<img class="gold-img" src="/static/images/gold-membership.png"/>
 	
-						<a class="display-name display-name-gold" href="https://www.nitrotype.com/racer/
-	irufflefeathers" target="_blank">
+						<a class="display-name display-name-gold" href="https://www.nitrotype.com/racer/irufflefeathers" target="_blank">
 	Skittles</a>
 						<br><span class="title">"Little Monster"</span>
 					</td>
@@ -2496,7 +2442,7 @@
 	
 				<tr class="table-row table-row--nonpodium" lookupID="nevergiveupa1">
 					<td class="table-cell table-cell--place place-number" style="width: 9%;">
-	95</td>
+	98</td>
 	
 					<td class="table-cell" style="width: 7%;"><img class="league-icon" src="/static/images/leagues/users/0.png"/></td>
 	
@@ -2507,8 +2453,7 @@
 	
 						<img class="gold-img" src="/static/images/gold-membership.png"/>
 	
-						<a class="display-name display-name-gold" href="https://www.nitrotype.com/racer/
-	nevergiveupa1" target="_blank">
+						<a class="display-name display-name-gold" href="https://www.nitrotype.com/racer/nevergiveupa1" target="_blank">
 	Super61418Best4A1</a>
 						<br><span class="title">"Challenger"</span>
 					</td>
@@ -2520,9 +2465,9 @@
 	
 				<tr class="table-row table-row--nonpodium" lookupID="thedestroyist">
 					<td class="table-cell table-cell--place place-number" style="width: 9%;">
-	96</td>
+	99</td>
 	
-					<td class="table-cell" style="width: 7%;"><img class="league-icon" src="/static/images/leagues/users/9.png"/></td>
+					<td class="table-cell" style="width: 7%;"><img class="league-icon" src="/static/images/leagues/users/10.png"/></td>
 	
 					<td class="table-cell" style="width: 12%;"><img class="car-img" src="/static/images/cars/painted/
 	129_large_1_280.png"/></td>
@@ -2533,8 +2478,7 @@
 	
 						<span class="team-tag" style="color: #436fb6;">[<a class="team-tag user-team-tag-link" style="color: #436fb6;" href="https://www.nitrotype.com/team/SSH" target="_blank">SSH</a>]</span>
 	
-						<a class="display-name display-name-gold" href="https://www.nitrotype.com/racer/
-	thedestroyist" target="_blank">
+						<a class="display-name display-name-gold" href="https://www.nitrotype.com/racer/thedestroyist" target="_blank">
 	TheDestroyist</a>
 						<br><span class="title">"Sp3llchekcer"</span>
 					</td>
@@ -2546,7 +2490,7 @@
 	
 				<tr class="table-row table-row--nonpodium" lookupID="kureizukraze">
 					<td class="table-cell table-cell--place place-number" style="width: 9%;">
-	97</td>
+	100</td>
 	
 					<td class="table-cell" style="width: 7%;"><img class="league-icon" src="/static/images/leagues/users/9.png"/></td>
 	
@@ -2559,88 +2503,9 @@
 	
 						<span class="team-tag" style="color: #f5eb21;">[<a class="team-tag user-team-tag-link" style="color: #f5eb21;" href="https://www.nitrotype.com/team/DTR" target="_blank">DTR</a>]</span>
 	
-						<a class="display-name display-name-gold" href="https://www.nitrotype.com/racer/
-	kureizukraze" target="_blank">
+						<a class="display-name display-name-gold" href="https://www.nitrotype.com/racer/kureizukraze" target="_blank">
 	 Kraze </a>
 						<br><span class="title">"RIP"</span>
-					</td>
-	
-					<td class="table-cell" style="width: 21%;">
-	7</td>
-	
-				</tr>
-	
-				<tr class="table-row table-row--nonpodium" lookupID="willowgoldfinch">
-					<td class="table-cell table-cell--place place-number" style="width: 9%;">
-	98</td>
-	
-					<td class="table-cell" style="width: 7%;"><img class="league-icon" src="/static/images/leagues/users/6.png"/></td>
-	
-					<td class="table-cell" style="width: 12%;"><img class="car-img" src="/static/images/cars/painted/
-	demon_large_280.png"/></td>
-	
-					<td class="table-cell" style="width: 51%;">
-	
-						<img class="gold-img" src="/static/images/gold-membership.png"/>
-	
-						<span class="team-tag" style="color: #40b8ea;">[<a class="team-tag user-team-tag-link" style="color: #40b8ea;" href="https://www.nitrotype.com/team/S0RC" target="_blank">S0RC</a>]</span>
-	
-						<a class="display-name display-name-gold" href="https://www.nitrotype.com/racer/
-	willowgoldfinch" target="_blank">
-	willowgoldfinch</a>
-						<br><span class="title">"*sparkle*"</span>
-					</td>
-	
-					<td class="table-cell" style="width: 21%;">
-	7</td>
-	
-				</tr>
-	
-				<tr class="table-row table-row--nonpodium" lookupID="9b9ddeab319223c91d1f5828440cd35b">
-					<td class="table-cell table-cell--place place-number" style="width: 9%;">
-	99</td>
-	
-					<td class="table-cell" style="width: 7%;"><img class="league-icon" src="/static/images/leagues/users/7.png"/></td>
-	
-					<td class="table-cell" style="width: 12%;"><img class="car-img" src="/static/images/cars/painted/
-	107_large_1_300.png"/></td>
-	
-					<td class="table-cell" style="width: 51%;">
-	
-						<img class="gold-img" src="/static/images/gold-membership.png"/>
-	
-						<span class="team-tag" style="color: #8750a0;">[<a class="team-tag user-team-tag-link" style="color: #8750a0;" href="https://www.nitrotype.com/team/T3X" target="_blank">T3X</a>]</span>
-	
-						<a class="display-name display-name-gold" href="https://www.nitrotype.com/racer/
-	9b9ddeab319223c91d1f5828440cd35b" target="_blank">
-	PerfectStorm</a>
-						<br><span class="title">"The Diamond Racer"</span>
-					</td>
-	
-					<td class="table-cell" style="width: 21%;">
-	7</td>
-	
-				</tr>
-	
-				<tr class="table-row table-row--nonpodium" lookupID="bobvila">
-					<td class="table-cell table-cell--place place-number" style="width: 9%;">
-	100</td>
-	
-					<td class="table-cell" style="width: 7%;"><img class="league-icon" src="/static/images/leagues/users/7.png"/></td>
-	
-					<td class="table-cell" style="width: 12%;"><img class="car-img" src="/static/images/cars/
-	305.png"/></td>
-	
-					<td class="table-cell" style="width: 51%;">
-	
-						<img class="gold-img" src="/static/images/gold-membership.png"/>
-	
-						<span class="team-tag" style="color: #daedfa;">[<a class="team-tag user-team-tag-link" style="color: #daedfa;" href="https://www.nitrotype.com/team/HV" target="_blank">HV</a>]</span>
-	
-						<a class="display-name display-name-gold" href="https://www.nitrotype.com/racer/
-	bobvila" target="_blank">
-	bobvila</a>
-						<br><span class="title">"Happy Vibes :)"</span>
 					</td>
 	
 					<td class="table-cell" style="width: 21%;">

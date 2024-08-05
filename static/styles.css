@@ -24,17 +24,73 @@ body {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
+
+.banner-right {
+	width: 40%;
+	display: flex;
+	align-items: center;
+}
+
+.leaderboard-type-slider {
+	background: rgba(2, 2, 2, 0.5);
+	border-radius: 5px;
+	border: 1px solid #303343;
+	height: 36px;
+	width: 250px;
+	margin-right: 25px;
+	margin-left: auto;
+	z-index: 0;
+	display: flex;
+	flex-direction: row;
+}
+
+.switch-label {
+	cursor: pointer;
+	font-family: "Montserrat", sans-serif;
+	font-size: 18px;
+	color: #acacac;
+	z-index: 2;
+	text-align: center;
+}
+
+.switch-label:hover {
+    color: #fff;
+}
+
+.switch-input:checked + .switch-label {
+	font-weight: 600;
+	color: #fff; 
+}
+
+.switch-input {
+	display: none; 
+}
+
+.slider-option {
+	width: 50%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
 .banner {
 	line-height: 1.6;
 	background: linear-gradient(90deg, #1C99F4 60%, #167ac3 100%);
 	padding: 20px;
 	border-radius: 20px 20px 0 0;
 	display: flex;
+	flex-direction: row;
 }
 
-.banner-text {
+.banner-left {
 	display: flex;
-	width: 50%;
+	flex-direction: column;
+	width: 60%;
+}
+
+.banner-header {
+	display: flex;
+	width: 100%;
 	color: #fff;
 	box-sizing: inherit;
 	margin: 0.67em 0;
@@ -43,7 +99,7 @@ body {
 	line-height: 1.2;
 	margin-top: 0;
 	transition: all 0.25s ease-in-out;
-	font-size: 25px;
+	font-size: 35px;
 	margin-bottom: 0;
 	text-shadow: 0 2px 2px rgba(2, 2, 2, 0.25);
 }
@@ -57,10 +113,10 @@ body {
 
 .last-data-update {
 	display: flex;
-	width: 50%;
-	justify-content: right;
+	width: 100%;
+	justify-content: left;
 	font-weight: 400;
-	font-size: 18px;
+	font-size: 16px;
 	font-family: "Montserrat", sans-serif;
 	color: #fff;
 }
@@ -967,6 +1023,7 @@ h2 {
 	padding-right: 10px;
 	display: flex;
 	flex-direction: column;
+	width: 100%;
 }
 
 .hof-heading {
