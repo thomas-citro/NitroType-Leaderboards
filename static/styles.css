@@ -844,12 +844,46 @@ table {
 .dropdown-speed {
 	text-align: left;
 	color: #fff;
-	font-size: 100%;
 	font-family: "Montserrat", sans-serif;
 	font-weight: 300;
-	line-height: 1.6;
 	box-sizing: inherit;
 	margin-left: 10px;
+	font-size: 16px;
+	/*font-size: 100%;
+	line-height: 1.6;*/
+}
+
+.dropdown-milestones {
+	text-align: left;
+	color: #fff;
+	font-family: "Montserrat", sans-serif;
+	font-weight: 300;
+	box-sizing: inherit;
+	margin-left: 10px;
+	font-size: 16px;
+	/*font-size: 100%;
+	line-height: 1.6;*/
+}
+
+label[for="dropdown-milestones"] {
+	color: #fff;
+	font-family: "Montserrat", sans-serif;
+	font-weight: 300;
+	font-size: 16px;
+}
+
+label[for="dropdown-avg-speed"] {
+	color: #fff;
+	font-family: "Montserrat", sans-serif;
+	font-weight: 300;
+	font-size: 16px;
+}
+
+label[for="dropdown-high-speed"] {
+	color: #fff;
+	font-family: "Montserrat", sans-serif;
+	font-weight: 300;
+	font-size: 16px;
 }
 
 .cash-label {
@@ -871,6 +905,12 @@ table {
 }
 
 .speed-form {
+	display: flex;
+	align-items: center;
+	margin-right: 0;
+}
+
+.form-milestones {
 	display: flex;
 	align-items: center;
 	margin-right: 0;
@@ -932,6 +972,10 @@ table {
 
 .dropdown-select-speed {
 	padding-right: 80px;
+}
+
+.dropdown-select-milestones {
+	padding-right: 45px;
 }
 
 .dropdown-select-donations {
