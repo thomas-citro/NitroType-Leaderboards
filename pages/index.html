@@ -107,7 +107,7 @@
 							ntSelection.checked = false;
 							nmSelection.checked = true;
 							handleLbTypeChange(justChangeSlider = true);
-						} else if (!ntSelection.checked || nmSelection.checked) {
+						} else if (!tabName.startsWith('nm_') && (!ntSelection.checked || nmSelection.checked)) {
 							ntSelection.checked = true;
 							nmSelection.checked = false;
 							handleLbTypeChange(justChangeSlider = true);
