@@ -664,6 +664,10 @@
 						changeTab('hof_most_active_teams');
 					} else if (curTab == 'nm_hof_most_team_views') {
 						changeTab('hof_most_team_views');
+					} else if (curTab.startsWith('nm_hof_first_milestones_teams')) {
+						changeTab('hof_first_milestones_teams_reach_legend');
+					} else if (curTab.startsWith('nm_hof_first_milestones')) {
+						changeTab('hof_first_milestones_users_reach_legend');
 					} else {
 						changeTab('hof_most_active_racers');
 					}
@@ -695,6 +699,10 @@
 						changeTab('nm_hof_most_active_teams');
 					} else if (curTab == 'hof_most_team_views') {
 						changeTab('nm_hof_most_team_views');
+					} else if (curTab.startsWith('hof_first_milestones_teams')) {
+						changeTab('nm_hof_first_milestones_teams_reach_legend');
+					} else if (curTab.startsWith('hof_first_milestones')) {
+						changeTab('nm_hof_first_milestones_users_reach_legend');
 					} else {
 						changeTab('nm_hof_most_active_racers');
 					}
