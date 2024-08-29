@@ -995,6 +995,15 @@ label[for="dropdown-high-speed"] {
 	padding-bottom: 15px;
 }
 
+.my-profile-admin-msg-link {
+	text-decoration: none;
+	color: #F9D034;
+}
+
+.my-profile-admin-msg-link:hover {
+	text-decoration: underline;
+}
+
 .my-profile-link {
 	text-decoration: none;
 	color: #92daf7;
