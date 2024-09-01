@@ -54,7 +54,7 @@
 							d="M18 1H6.084L0 8l12 15L24 8.083 18 1zM6.333 9l3.231 7.753L3.361 9h2.972zM15.5 9L12 17.4 8.5 9h7zM9.135 7L12 3.562 14.865 7h-5.73zm8.532 2h3.028l-6.283 7.811L17.667 9zm2.794-2h-2.992l-3.334-4h2.938l3.388 4zM6.996 3h2.869L6.531 7H3.52l3.476-4z"
 						/>
 					</svg>
-					<div class="tab--text">Rarest Cars</div>
+					<div class="tab--text">Rarest Loot</div>
 				</div>
 			</button>
 	
@@ -89,6 +89,14 @@
 				<button type="button" class="page-button not-active-button" onclick="changeTab('rarest_cars_3')">3</button>
 				<button type="button" class="page-button active-button">4</button>
 			</div>
+			<form>
+				<div class="dropdown" onchange="handleDropdownChange()">
+					<select class="dropdown-select dropdown-select-rarest-loot">
+						<option value="rarest_cars" selected>Rarest Cars Owned</option>
+						<option value="rarest_titles">Rarest Titles Equipped</option>
+					</select>
+				</div>
+			</form>
 	
 		</div>
 	

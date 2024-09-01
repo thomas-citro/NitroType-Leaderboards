@@ -80,7 +80,7 @@
 						}
 					}
 					const lbTypeSlider = document.getElementById("leaderboard-type-slider");
-					if (tabName == 'more_info' || tabName == 'site_stats' || tabName.startsWith('rarest_cars')) {
+					if (tabName == 'more_info' || tabName == 'site_stats' || tabName.startsWith('rarest_')) {
 						lbTypeSlider.style.display = "none";
 					} else {
 						lbTypeSlider.style.display = "flex";
@@ -89,8 +89,8 @@
 						curTabPage = 'more_info';
 					} else if (tabName == 'site_stats') {
 						curTabPage = 'site_stats';
-					} else if (tabName.startsWith('rarest_cars')) {
-						curTabPage = 'rarest_cars';
+					} else if (tabName.startsWith('rarest_')) {
+						curTabPage = 'rarest_loot';
 					} else if (tabName.startsWith('hof_') || tabName.startsWith('nm_hof_')) {
 						curTabPage = 'hall_of_fame';
 					} else if (tabName.startsWith('top_racers_') || tabName.startsWith('nm_top_racers_') || ['fastest_racers_season', 'most_accurate_racers_season'].includes(tabName)) {

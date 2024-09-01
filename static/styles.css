@@ -269,6 +269,13 @@ li {
 	font-size: 13px;
 }
 
+.rarest-title {
+	font-family: "Montserrat", sans-serif;
+	color: #F9D034;
+	font-size: 18px;
+	padding-left: 15px;
+}
+
 .gold-img {
 	width: 20px;
 }
@@ -978,6 +985,10 @@ label[for="dropdown-high-speed"] {
 	padding-right: 45px;
 }
 
+.dropdown-select-rarest-loot {
+	padding-right: 60px;
+}
+
 .dropdown-select-donations {
 	padding-right: 70px;
 }
@@ -1226,7 +1237,8 @@ h2 {
 	/*bottom: 12px;
 	left: 43%;
 	right: 0;*/
-	bottom: 33.5px;
+	/*bottom: 33.5px;*/
+	bottom: 29.5px;
 	left: 82%;
 	right: 0;
 	width: fit-content;
@@ -1246,7 +1258,7 @@ h2 {
 	font-size: 14px;
 	font-weight: 800;
 	list-style: none;
-	padding: 1px 5px;
+	padding: 5px 5px;
 	transition: background-color 0.2s cubic-bezier(0.3, 0, 0.5, 1);
 	user-select: none;
 	-webkit-user-select: none;
