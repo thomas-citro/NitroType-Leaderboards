@@ -44,9 +44,9 @@
 				}
 			} else if (tabPage == 'past_seasons') {
 				if (curLbType == 'nt') {
-					changeTab('season_52_racers');
+					changeTab('season_53_racers');
 				} else {
-					changeTab('nm_past_seasons');
+					changeTab('nm_season_53_racers');
 				}
 			} else if (tabPage == 'hall_of_fame') {
 				if (curLbType == 'nt') {
@@ -654,7 +654,11 @@
 				} else if (curTabPage == 'top_teams') {
 					changeTab('top_teams_season');
 				} else if (curTabPage == 'past_seasons') {
-					changeTab('season_52_racers');
+					if (curTab.endsWith('teams')) {
+						changeTab('season_53_teams');
+					} else {
+						changeTab('season_53_racers');
+					}
 				} else if (curTabPage == 'hall_of_fame') {
 					if (curTab == 'nm_hof_longest_session') {
 						changeTab('hof_longest_session');
@@ -689,7 +693,11 @@
 				} else if (curTabPage == 'top_teams') {
 					changeTab('nm_top_teams_season');
 				} else if (curTabPage == 'past_seasons') {
-					changeTab('nm_past_seasons');
+					if (curTab.endsWith('teams')) {
+						changeTab('nm_season_53_teams');
+					} else {
+						changeTab('nm_season_53_racers');
+					}
 				} else if (curTabPage == 'hall_of_fame') {
 					if (curTab == 'hof_longest_session') {
 						changeTab('nm_hof_longest_session');
