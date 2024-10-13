@@ -615,12 +615,19 @@
 				}
 			};
 
+			// Disable touch interactions to allow scrolling on mobile
+			var config = {
+				scrollZoom: false,
+				displayModeBar: false,
+				responsive: true
+			};
+
 			var observer = new MutationObserver(function(mutations) {
 				mutations.forEach(function(mutation) {
 					if (document.getElementById('speed-zones-graph-div')) {
 						observer.disconnect();
 						divForGraph = document.getElementById('speed-zones-graph-div');
-						Plotly.newPlot(divForGraph, data, layout);
+						Plotly.newPlot(divForGraph, data, layout, config);
 					}
 				});
 			});
