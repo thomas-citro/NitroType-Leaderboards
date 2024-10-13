@@ -80,31 +80,21 @@
 	
 		</div>
 	
-		<div class="divider2-w-bottom-margin">
+		<div class="divider">
 	
 			<div class="timeframe-buttons">
-				<button type="button" class="timeframe-button not-active-button" onclick="changeTab('top_racers_season')">This Season</button>
+				<button type="button" class="timeframe-button not-active-button" onclick="changeTab('nm_top_racers_season')">This Season</button>
+				<button type="button" class="timeframe-button not-active-button" onclick="changeTab('nm_top_racers_week')">Last 7 Days</button>
+				<button type="button" class="timeframe-button active-button">Last 24 Hours</button>
 			</div>
 			<form>
 				<div class="dropdown">
 					<select class="dropdown-select dropdown-select-racers" onchange="handleDropdownChange()">
-						<option value="top_racers_season" selected>Top Racers</option>
-						<option value="fastest_racers_season">Fastest Racers</option>
-						<option value="most_accurate_racers_season">Most Accurate Racers</option>
+						<option value="nm_top_racers_day" selected>Top Racers</option>
+						<option value="nm_highest_scoring_racers_season">Highest Scoring Racers</option>
 					</select>
 				</div>
 			</form>
-	
-		</div>
-	
-		<div class="divider3-w-bottom-margin">
-	
-			<div class="page-buttons">
-				<div class="multi-page-title">Page</div>
-				<button type="button" class="page-button active-button">1</button>
-				<button type="button" class="page-button not-active-button" onclick="changeTab('top_racers_daily_2')">2</button>
-				<button type="button" class="page-button not-active-button" onclick="changeTab('top_racers_daily_3')">3</button>
-			</div>
 	
 		</div>
 	

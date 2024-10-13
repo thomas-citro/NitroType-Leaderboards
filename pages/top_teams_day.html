@@ -3,7 +3,7 @@
 	
 		<div class="tabs">
 	
-			<button class="tab is-active">
+			<button class="tab not-active" onclick="changeTabPage('top_racers')">
 				<div class="icon-text-container">
 					<svg xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd" viewBox="0 0 24 24" id="icon-rank" width="18" height="18" fill="white">
 						<path
@@ -14,7 +14,7 @@
 				</div>
 			</button>
 	
-			<button class="tab not-active" onclick="changeTabPage('top_teams')">
+			<button class="tab is-active">
 				<div class="icon-text-container">
 					<svg xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd" viewBox="0 0 24 24" id="icon-rank-team" width="18" height="18" fill="white">
 						<path
@@ -80,31 +80,22 @@
 	
 		</div>
 	
-		<div class="divider2-w-bottom-margin">
+		<div class="divider">
 	
 			<div class="timeframe-buttons">
-				<button type="button" class="timeframe-button not-active-button" onclick="changeTab('top_racers_season')">This Season</button>
+				<button type="button" class="timeframe-button not-active-button" onclick="changeTab('top_teams_season')">This Season</button>
+				<button type="button" class="timeframe-button not-active-button" onclick="changeTab('top_teams_week')">Last 7 Days</button>
+				<button type="button" class="timeframe-button active-button">Last 24 Hours</button>
 			</div>
 			<form>
 				<div class="dropdown">
-					<select class="dropdown-select dropdown-select-racers" onchange="handleDropdownChange()">
-						<option value="top_racers_season" selected>Top Racers</option>
-						<option value="fastest_racers_season">Fastest Racers</option>
-						<option value="most_accurate_racers_season">Most Accurate Racers</option>
+					<select class="dropdown-select dropdown-select-teams" onchange="handleDropdownChange()">
+						<option value="top_teams_week" selected>Top Teams</option>
+						<option value="fastest_teams_season">Fastest Teams</option>
+						<option value="most_accurate_teams_season">Most Accurate Teams</option>
 					</select>
 				</div>
 			</form>
-	
-		</div>
-	
-		<div class="divider3-w-bottom-margin">
-	
-			<div class="page-buttons">
-				<div class="multi-page-title">Page</div>
-				<button type="button" class="page-button active-button">1</button>
-				<button type="button" class="page-button not-active-button" onclick="changeTab('top_racers_daily_2')">2</button>
-				<button type="button" class="page-button not-active-button" onclick="changeTab('top_racers_daily_3')">3</button>
-			</div>
 	
 		</div>
 	
