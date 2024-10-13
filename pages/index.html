@@ -612,14 +612,8 @@
 				margin: {
 					l: 85,
 					r: 10
-				}
-			};
-
-			// Disable touch interactions to allow scrolling on mobile
-			var config = {
-				scrollZoom: false,
-				displayModeBar: false,
-				responsive: true
+				},
+				dragmode: false
 			};
 
 			var observer = new MutationObserver(function(mutations) {
@@ -627,7 +621,7 @@
 					if (document.getElementById('speed-zones-graph-div')) {
 						observer.disconnect();
 						divForGraph = document.getElementById('speed-zones-graph-div');
-						Plotly.newPlot(divForGraph, data, layout, config);
+						Plotly.newPlot(divForGraph, data, layout);
 					}
 				});
 			});
