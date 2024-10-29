@@ -546,9 +546,15 @@ button {
 	}
 }
 
+.user-flagged-text {
+	font-family: "Montserrat", sans-serif;
+	font-size: 16px;
+	color: #FF1E1E;
+}
+
 .search-not-found-text {
 	font-family: "Montserrat", sans-serif;
-	font-size: 14px;
+	font-size: 16px;
 	color: #FF1E1E;
 }
 

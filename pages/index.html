@@ -304,6 +304,7 @@
 			var teamNotFoundBanned = document.getElementById("team-search-banned-not-found");
 			var teamFound = document.getElementById("search-results-team-found");
 			var teamFoundBanned = document.getElementById("team-search-banned-found");
+			var userFlagged = document.getElementById("search-results-user-flagged");
 			var searchInputDisplay = searchInput;
 			// Reset all to none
 			userNotFound.style.display = "none";
@@ -314,10 +315,16 @@
 			teamNotFoundBanned.style.display = "none";
 			teamFound.style.display = "none";
 			teamFoundBanned.style.display = "none";
+			userFlagged.style.display = "none";
+			if (searchType == "user") {
+				if (isBanned == "Y (flag)" || isBanned ==  "Y (ban+flag)") {
+					userFlagged.style.display = "block";
+				}
+			}
 			if (response == "N/A") {
 				if (searchType == "user") {
 					userNotFound.style.display = "block";
-					if (isBanned == 'Y') {
+					if (isBanned == "Y (ban)" || isBanned == "Y (ban+flag)") {
 						userNotFoundBanned.style.display = "inline";
 					}
 				} else {
@@ -335,7 +342,7 @@
 				if (searchType == "user") {
 					responseObjList = responseObj.rankings
 					userFound.style.display = "block";
-					if (isBanned == 'Y') {
+					if (isBanned == "Y (ban)" || isBanned == "Y (ban+flag)") {
 						userFoundBanned.style.display = "inline";
 					}
 					searchInputDisplay += ' (' + responseObj.display_name + ')'

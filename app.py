@@ -21,8 +21,13 @@ filePath = os.path.join(app.root_path, 'data', 'banned_teams.json')
 with open(filePath, 'r') as file:
 	bannedTeams = json.load(file)
 
+filePath = os.path.join(app.root_path, 'data', 'flagged_users.json')
+with open(filePath, 'r') as file:
+	flaggedUsers = json.load(file)
+
 bannedUsers = set(bannedUsers)
 bannedTeams = set(bannedTeams)
+flaggedUsers = set(flaggedUsers)
 teams = teamsInLbs.keys()
 teams = [team for team in teams if team.isupper()]
 usernames = usersInLbs.keys()
@@ -71,10 +76,22 @@ def get_team_in_lb(tag):
 
 @app.route('/is_user_banned/<username>')
 def is_user_banned(username):
+	isBanned = False
+	isFlagged = False
 	if username in bannedUsers:
-		return "Y"
-	else:
+		isBanned = True
+	if username in flaggedUsers:
+		isFlagged = True
+	
+	if not isBanned and not isFlagged:
 		return "N"
+	if isBanned and isFlagged:
+		return "Y (ban+flag)"
+	if isBanned and not isFlagged:
+		return "Y (ban)"
+	if not isBanned and isFlagged:
+		return "Y (flag)"
+
 
 @app.route('/is_team_banned/<tag>')
 def is_team_banned(tag):
