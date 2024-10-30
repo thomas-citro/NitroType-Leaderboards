@@ -160,6 +160,19 @@ body {
 	background: #292C3B;
 }
 
+.donor-perks-table {
+	border: 2px solid black;
+}
+
+.donor-perks-table-header {
+	height: 40px;
+}
+
+.donor-perks-table-row {
+	height: auto;
+	border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
 .table-row--gold {
 	box-shadow:inset 0px 0px 0px 1px #9D873B;
 	background: rgba(249, 208, 52, 0.08);
@@ -300,6 +313,35 @@ li {
 	width: 20px;
 }
 
+.donor-badge-img {
+	height: 20px;
+	vertical-align: bottom;
+}
+
+.donor-badge-td-parent {
+	display: flex;
+}
+
+.donor-badge-td-img {
+	padding-left: 5px;
+	padding-right: 5px;
+	min-width: 40px;
+	text-align: center;
+}
+
+.donor-badge-td-name {
+	width: 100%;
+	height: 40px;
+	text-align: left;
+	display: flex;
+	align-items: center;
+}
+
+.donor-badge-img-perks-tbl {
+	height: 40px;
+	vertical-align: middle;
+}
+
 .admin-img {
 	width: 70px;
 	margin-left: 4px;
@@ -316,6 +358,22 @@ li {
 
 .display-name:hover {
 	text-decoration: underline;
+}
+
+.perk-sel-basic {
+	color: #F9D034;
+	font-weight: bold;
+}
+
+.perk-sel-premier {
+	color: #92daf7;
+	font-weight: bold;
+}
+
+.donor-perks-list {
+	margin-top: 2px;
+	margin-bottom: 2px;
+	padding-left: 20px;
 }
 
 .display-name-gold {
@@ -620,6 +678,10 @@ button {
 
 .search-buttons {
 	overflow: visible;
+	display: flex;
+}
+
+.font-color-buttons {
 	display: flex;
 }
 
@@ -1489,8 +1551,140 @@ h2 {
 
 @font-face {
 	font-family: 'nitrocash';
-	/*src: url(/static/fonts/nitro-cash.ttf) format("ttf");*/
 	src: url(/static/fonts/nitro-cash.ttf) format("truetype");
+	font-weight: 400;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'custom-comic-sans';
+	src: url(/static/fonts/comic-sans.ttf) format("truetype");
+	font-weight: 400;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'custom-arial-black';
+	src: url(/static/fonts/arial-black.ttf) format("truetype");
+	font-weight: 400;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'custom-agency';
+	src: url(/static/fonts/agency.ttf) format("truetype");
+	font-weight: 400;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'custom-gothic';
+	src: url(/static/fonts/gothic.ttf) format("truetype");
+	font-weight: 400;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'custom-impact';
+	src: url(/static/fonts/impact.ttf) format("truetype");
+	font-weight: 400;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'custom-poor-richard';
+	src: url(/static/fonts/poor-richard.ttf) format("truetype");
+	font-weight: 400;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'custom-becak';
+	src: url(/static/fonts/becak.otf) format("opentype");
+	font-weight: 400;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'custom-florida-island';
+	src: url(/static/fonts/florida-island.otf) format("opentype");
+	font-weight: 400;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'custom-grobold';
+	src: url(/static/fonts/grobold.ttf) format("truetype");
+	font-weight: 400;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'custom-harlow';
+	src: url(/static/fonts/harlow.ttf) format("truetype");
+	font-weight: 400;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'custom-freestyle-script';
+	src: url(/static/fonts/freestyle-script.ttf) format("truetype");
+	font-weight: 400;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'custom-magneto';
+	src: url(/static/fonts/magneto.ttf) format("truetype");
+	font-weight: 400;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'custom-monotype-corsiva';
+	src: url(/static/fonts/monotype-corsiva.ttf) format("truetype");
+	font-weight: 400;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'custom-mainstay';
+	src: url(/static/fonts/mainstay.ttf) format("truetype");
+	font-weight: 400;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'custom-aero';
+	src: url(/static/fonts/aero.ttf) format("truetype");
+	font-weight: 400;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'custom-comfy-feeling';
+	src: url(/static/fonts/comfy-feeling.otf) format("opentype");
+	font-weight: 400;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'custom-jambo';
+	src: url(/static/fonts/jambo.otf) format("opentype");
+	font-weight: 400;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'custom-melted-monster';
+	src: url(/static/fonts/melted-monster.ttf) format("truetype");
+	font-weight: 400;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'custom-techno-race';
+	src: url(/static/fonts/techno-race.otf) format("opentype");
 	font-weight: 400;
 	font-style: normal;
 }
