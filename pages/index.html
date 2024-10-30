@@ -26,8 +26,9 @@
 		var searchResultRowFound = false;
 		var suggestionsLoading = false;
 		var curLbType = 'nt';
-		var curTabPage = 'top_racers'
-		var curTab = 'top_racers_season'
+		var curTabPage = 'top_racers';
+		var curTab = 'top_racers_season';
+		var fontColorSelection = "none";
 
 		function changeTabPage(tabPage) {
 			if (tabPage == 'top_racers') {
@@ -152,6 +153,66 @@
 			changeTab('top_racers_season');
 			loadDataUpdateTimestamp();
 			loadAdminMsg();
+		}
+
+		function colorSelection() {
+			if (fontColorSelection == "color") {
+				fontColorSelection = "none";
+			} else {
+				fontColorSelection = "color";
+			}
+			toggleFontColorBtnClasses();
+			toggleFontColorContainers();
+		}
+
+		function fontSelection() {
+			if (fontColorSelection == "font") {
+				fontColorSelection = "none";
+			} else {
+				fontColorSelection = "font";
+			}
+			toggleFontColorBtnClasses();
+			toggleFontColorContainers();
+		}
+
+		function toggleFontColorBtnClasses() {
+			var fontBtn = document.getElementById("font-selection-button");
+			var colorBtn = document.getElementById("color-selection-button");
+			if (fontColorSelection == "font") {
+				colorBtn.classList.remove("active-search-button");
+				colorBtn.classList.add("not-active-search-button");
+				fontBtn.classList.remove("not-active-search-button");
+				fontBtn.classList.add("active-search-button");
+			} else if (fontColorSelection == "color") {
+				fontBtn.classList.remove("active-search-button");
+				fontBtn.classList.add("not-active-search-button");
+				colorBtn.classList.remove("not-active-search-button");
+				colorBtn.classList.add("active-search-button");
+			} else {
+				fontBtn.classList.remove("active-search-button");
+				fontBtn.classList.add("not-active-search-button");
+				colorBtn.classList.remove("active-search-button");
+				colorBtn.classList.add("not-active-search-button");
+			}
+		}
+
+		function toggleFontColorContainers() {
+			var fontContainer = document.getElementById("font-selection");
+			var colorContainer = document.getElementById("color-selection");
+			var contactInfo = document.getElementById("font-color-selection-contact-details");
+			if (fontColorSelection == "font") {
+				colorContainer.style.display = "none";
+				fontContainer.style.display = "block";
+				contactInfo.style.display = "block";
+			} else if (fontColorSelection == "color") {
+				colorContainer.style.display = "block";
+				fontContainer.style.display = "none";
+				contactInfo.style.display = "block";
+			} else {
+				colorContainer.style.display = "none";
+				fontContainer.style.display = "none";
+				contactInfo.style.display = "none";
+			}
 		}
 
 		function userSearch() {

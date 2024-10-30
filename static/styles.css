@@ -160,6 +160,10 @@ body {
 	background: #292C3B;
 }
 
+.font-color-selection-tbl {
+	width: 35%;
+}
+
 .donor-perks-table {
 	border: 2px solid black;
 }
@@ -331,7 +335,6 @@ li {
 
 .donor-badge-td-name {
 	width: 100%;
-	height: 40px;
 	text-align: left;
 	display: flex;
 	align-items: center;
@@ -340,6 +343,8 @@ li {
 .donor-badge-img-perks-tbl {
 	height: 40px;
 	vertical-align: middle;
+	padding-top: 10px;
+	padding-bottom: 10px;
 }
 
 .admin-img {
