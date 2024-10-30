@@ -1569,6 +1569,13 @@ h2 {
 }
 
 @font-face {
+	font-family: 'custom-comic-sans-tag'; /* Non-bold version for team tag */
+	src: url(/static/fonts/comic-sans-tag.ttf) format("truetype");
+	font-weight: 400;
+	font-style: normal;
+}
+
+@font-face {
 	font-family: 'custom-arial-black';
 	src: url(/static/fonts/arial-black.ttf) format("truetype");
 	font-weight: 400;
