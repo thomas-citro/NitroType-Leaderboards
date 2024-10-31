@@ -30,6 +30,21 @@
 		var curTab = 'top_racers_season';
 		var fontColorSelection = "none";
 
+		function announcementToggle() {
+			var adminMsgButton = document.getElementById("collapsible-admin-msg-button");
+			var adminMsg = document.getElementById("collapsible-admin-msg-content");
+			adminMsgButton.classList.toggle("admin-msg-active");
+			if (adminMsg.style.display == "none") {
+				adminMsg.style.display = "block";
+				adminMsgButton.style.borderBottomLeftRadius = "0px";
+				adminMsgButton.style.borderBottomRightRadius = "0px";
+			} else {
+				adminMsg.style.display = "none";
+				adminMsgButton.style.borderBottomLeftRadius = "10px";
+				adminMsgButton.style.borderBottomRightRadius = "10px";
+			}
+		}
+
 		function changeTabPage(tabPage) {
 			if (tabPage == 'top_racers') {
 				if (curLbType == 'nt') {
@@ -640,7 +655,7 @@
 			};
 			var data = [trace1, trace2, trace3];
 			var layout = {
-				width: 886,
+				width: 910,
 				barmode: 'group',
 				legend: {
 					orientation: 'h',
@@ -800,30 +815,32 @@
 		<div id="admin-msg">
 			<!-- Content to be dynamically displayed here -->
 		</div>
-		<div class="banner">
-			<div class="banner-left">
-				<div class="banner-header">Leaderboards</div>
-				<div class="last-data-update" id="last-data-update">
-					<!-- Content to be dynamically displayed here -->
-				</div>
-			</div>
-			<div class="banner-right">
-				<div class="leaderboard-type-slider" id="leaderboard-type-slider">
-					<div class="slider-option" id="slider-option-nt" 
-						style="background-color: #2d8050; border-radius: 3px; box-shadow: inset 0px -3px 0px 0px rgba(2, 2, 2, 0.15);"
-					>
-						<input class="switch-input" type="radio" id="ntSlider" name="lbTypeSlider" value="nitrotype" onclick="handleLbTypeChange()" checked>
-						<label class="switch-label" for="ntSlider">Nitro Type</label>
-					</div>
-					<div class="slider-option" id="slider-option-nm">
-						<input class="switch-input" type="radio" id="nmSlider" name="lbTypeSlider" value="nitromath" onclick="handleLbTypeChange()">
-						<label class="switch-label" for="nmSlider">Nitro Math</label>
+		<div class="lbs-content">
+			<div class="banner">
+				<div class="banner-left">
+					<div class="banner-header">Leaderboards</div>
+					<div class="last-data-update" id="last-data-update">
+						<!-- Content to be dynamically displayed here -->
 					</div>
 				</div>
+				<div class="banner-right">
+					<div class="leaderboard-type-slider" id="leaderboard-type-slider">
+						<div class="slider-option" id="slider-option-nt" 
+							style="background-color: #2d8050; border-radius: 3px; box-shadow: inset 0px -3px 0px 0px rgba(2, 2, 2, 0.15);"
+						>
+							<input class="switch-input" type="radio" id="ntSlider" name="lbTypeSlider" value="nitrotype" onclick="handleLbTypeChange()" checked>
+							<label class="switch-label" for="ntSlider">Nitro Type</label>
+						</div>
+						<div class="slider-option" id="slider-option-nm">
+							<input class="switch-input" type="radio" id="nmSlider" name="lbTypeSlider" value="nitromath" onclick="handleLbTypeChange()">
+							<label class="switch-label" for="nmSlider">Nitro Math</label>
+						</div>
+					</div>
+				</div>
 			</div>
-		</div>
-		<div class="background-box" id="background-box">
-			<!-- Content to be dynamically displayed here -->
+			<div class="background-box" id="background-box">
+				<!-- Content to be dynamically displayed here -->
+			</div>
 		</div>
 	</main>
 </body>
