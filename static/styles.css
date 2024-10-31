@@ -1,3 +1,7 @@
+* {
+	text-size-adjust: none;
+}
+
 body {
 	background: url(/static/images/background.png),linear-gradient(130deg,#2e3141,#2e3141 20%,#303343 0,#303343 25%,#2e3141 0,#2e3141 27%,#303343 0,#303343 50%,#2e3141 0,#2e3141 85%,#303343 0,#303343 90%,#2e3141 0);
 	background-repeat: repeat-x;
