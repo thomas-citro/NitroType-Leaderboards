@@ -15,9 +15,13 @@ body {
 }
 
 .logo {
-	margin-top: 20px;
-	text-align: center;
-	margin-bottom: 20px;
+	margin-top: 17px;
+	margin-bottom: 17px;
+	text-align: center;	
+}
+
+.logo-img {
+	height: 60px;
 }
 
 .collapsible-admin-msg {
@@ -81,8 +85,8 @@ body {
 }
 
 #admin-msg-inside {
-	margin-top: 20px;
-	margin-bottom: 20px;
+	margin-top: 15px;
+	margin-bottom: 15px;
 	border-style: solid;
 	border-width: 0.5px;
 	border-color: #fff;
@@ -153,8 +157,8 @@ body {
 	background: linear-gradient(90deg, #1C99F4 60%, #167ac3 100%);
 	padding-left: 25px;
 	padding-right: 25px;
-	padding-bottom: 12px;
-	padding-top: 15px;
+	padding-top: 13px;
+	padding-bottom: 10px;
 	border-radius: 20px 20px 0 0;
 	display: flex;
 	flex-direction: row;
@@ -227,7 +231,7 @@ body {
 	font-family: "Montserrat", sans-serif;
 	font-weight: 300;
 	color: #fff;
-	height: 60px;
+	height: 53px;
 }
 
 .table-row {
@@ -239,7 +243,7 @@ body {
 }
 
 .font-color-selection-tbl {
-	width: 35%;
+	width: 40%;
 }
 
 .donor-perks-table {
@@ -595,7 +599,7 @@ button {
 .background-box {
 	display: flex;
 	justify-content: center;
-	padding-top: 10px;
+	padding-top: 5px;
     background: url(/static/images/noise-overlay.png);
     background-color: #20222E; /*Or:2E3141*/ 
 	position: relative;
@@ -748,12 +752,11 @@ button {
 .page-button {
 	margin-left: 5px;
 	margin-right: 5px;
-	padding-top: 13px;
-	padding-bottom: 13px;
-	padding-left: 15px;
-	padding-right: 15px;
+	padding-top: 9px;
+	padding-bottom: 9px;
+	min-width: 45px;
 	font-family: "Montserrat", sans-serif;
-	font-size: 14px;
+	font-size: 18px;
 	border-width: 1px;
     border-style: solid;
 	border-radius: 5px;
@@ -937,7 +940,7 @@ button {
 
 .divider3-w-bottom-margin {
 	background: #3B3D4C;
-	padding-bottom: 15px;
+	padding-bottom: 13px;
 	box-shadow:inset 0px -2px 0px 0px #61626E;
 	display: flex;
 	width: 950px;
@@ -965,8 +968,8 @@ form {
 
 .board-description {
 	background: #3B3D4C;
-	padding-top: 15px;
-	padding-bottom: 15px;
+	padding-top: 10px;
+	padding-bottom: 10px;
 	padding-left: 0;
 	padding-right: 25px;
 	margin: 0;
@@ -1111,9 +1114,9 @@ label[for="dropdown-high-speed"] {
 .board-description-flexbox {
 	display: flex;
 	width: 67%;
-	padding-right: 10px;
-	padding-top: 15px;
-	padding-bottom: 15px;
+	padding-right: 0px;
+	padding-top: 10px;
+	padding-bottom: 10px;
 }
 
 .dropdown-select {
@@ -1237,10 +1240,10 @@ h2 {
 	flex: 1 0 14%;
 	box-sizing: border-box;
 	*/
-	margin-left: 8px;
-	margin-right: 8px;
+	margin-left: 7px;
+	margin-right: 7px;
 	height: 43px;
-	width: 135px;
+	width: 140px;
 	margin-bottom: 4px;
 	margin-top: 4px;
 	padding: 3px;
@@ -1279,8 +1282,8 @@ h2 {
 	border-bottom: 1px solid #fff;
 	margin-left: auto;
 	margin-right: auto;
-	margin-top: 5px;
-	margin-bottom: 3px;
+	margin-top: 0px;
+	margin-bottom: 2px;
 	width: 20%;
 }
 
