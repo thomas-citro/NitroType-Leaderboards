@@ -3,7 +3,7 @@
 }
 
 body {
-	background: url(/static/images/background.png),linear-gradient(130deg,#2e3141,#2e3141 20%,#303343 0,#303343 25%,#2e3141 0,#2e3141 27%,#303343 0,#303343 50%,#2e3141 0,#2e3141 85%,#303343 0,#303343 90%,#2e3141 0);
+	background: url(/static/images/background.webp),linear-gradient(130deg,#2e3141,#2e3141 20%,#303343 0,#303343 25%,#2e3141 0,#2e3141 27%,#303343 0,#303343 50%,#2e3141 0,#2e3141 85%,#303343 0,#303343 90%,#2e3141 0);
 	background-repeat: repeat-x;
 	background-attachment: fixed;
 	font-size: 100%;
@@ -600,7 +600,7 @@ button {
 	display: flex;
 	justify-content: center;
 	padding-top: 5px;
-    background: url(/static/images/noise-overlay.png);
+    background: url(/static/images/noise-overlay.webp);
     background-color: #20222E; /*Or:2E3141*/ 
 	position: relative;
 }
@@ -808,7 +808,7 @@ button {
 }
 
 .search-input-box {
-	background-image: url(/static/images/searchicon.png);
+	background-image: url(/static/images/searchicon.webp);
 	background-repeat: no-repeat;
 	padding-left: 30px;
 	background-position-x: 3px;
@@ -1333,7 +1333,7 @@ h2 {
 	background-attachment: scroll, scroll;
 	background-clip: border-box;
 	background-color: rgba(0, 0, 0, 0);
-	background-image: url(/static/images/seasons-banner.png), linear-gradient(to right, rgb(41, 44, 59), rgba(2, 2, 2, 0.8));
+	background-image: url(/static/images/seasons-banner.webp), linear-gradient(to right, rgb(41, 44, 59), rgba(2, 2, 2, 0.8));
 	background-origin: padding-box, padding-box;
 	background-position-x: 85%, 0%;
 	background-position-y: 0%, 0%;
@@ -1629,147 +1629,147 @@ h2 {
 
 @font-face {
 	font-family: 'nitrocash';
-	src: url(/static/fonts/nitro-cash.ttf) format("truetype");
+	src: url(/static/fonts/nitro-cash.woff2) format("woff2");
 	font-weight: 400;
 	font-style: normal;
 }
 
 @font-face {
 	font-family: 'custom-comic-sans';
-	src: url(/static/fonts/comic-sans.ttf) format("truetype");
+	src: url(/static/fonts/comic-sans.woff2) format("woff2");
 	font-weight: 400;
 	font-style: normal;
 }
 
 @font-face {
 	font-family: 'custom-comic-sans-tag'; /* Non-bold version for team tag */
-	src: url(/static/fonts/comic-sans-tag.ttf) format("truetype");
+	src: url(/static/fonts/comic-sans-tag.woff2) format("woff2");
 	font-weight: 400;
 	font-style: normal;
 }
 
 @font-face {
 	font-family: 'custom-arial-black';
-	src: url(/static/fonts/arial-black.ttf) format("truetype");
+	src: url(/static/fonts/arial-black.woff2) format("woff2");
 	font-weight: 400;
 	font-style: normal;
 }
 
 @font-face {
 	font-family: 'custom-agency';
-	src: url(/static/fonts/agency.ttf) format("truetype");
+	src: url(/static/fonts/agency.woff2) format("woff2");
 	font-weight: 400;
 	font-style: normal;
 }
 
 @font-face {
 	font-family: 'custom-gothic';
-	src: url(/static/fonts/gothic.ttf) format("truetype");
+	src: url(/static/fonts/gothic.woff2) format("woff2");
 	font-weight: 400;
 	font-style: normal;
 }
 
 @font-face {
 	font-family: 'custom-impact';
-	src: url(/static/fonts/impact.ttf) format("truetype");
+	src: url(/static/fonts/impact.woff2) format("woff2");
 	font-weight: 400;
 	font-style: normal;
 }
 
 @font-face {
 	font-family: 'custom-poor-richard';
-	src: url(/static/fonts/poor-richard.ttf) format("truetype");
+	src: url(/static/fonts/poor-richard.woff2) format("woff2");
 	font-weight: 400;
 	font-style: normal;
 }
 
 @font-face {
 	font-family: 'custom-becak';
-	src: url(/static/fonts/becak.otf) format("opentype");
+	src: url(/static/fonts/becak.woff2) format("woff2");
 	font-weight: 400;
 	font-style: normal;
 }
 
 @font-face {
 	font-family: 'custom-florida-island';
-	src: url(/static/fonts/florida-island.otf) format("opentype");
+	src: url(/static/fonts/florida-island.woff2) format("woff2");
 	font-weight: 400;
 	font-style: normal;
 }
 
 @font-face {
 	font-family: 'custom-grobold';
-	src: url(/static/fonts/grobold.ttf) format("truetype");
+	src: url(/static/fonts/grobold.woff2) format("woff2");
 	font-weight: 400;
 	font-style: normal;
 }
 
 @font-face {
 	font-family: 'custom-harlow';
-	src: url(/static/fonts/harlow.ttf) format("truetype");
+	src: url(/static/fonts/harlow.woff2) format("woff2");
 	font-weight: 400;
 	font-style: normal;
 }
 
 @font-face {
 	font-family: 'custom-freestyle-script';
-	src: url(/static/fonts/freestyle-script.ttf) format("truetype");
+	src: url(/static/fonts/freestyle-script.woff2) format("woff2");
 	font-weight: 400;
 	font-style: normal;
 }
 
 @font-face {
 	font-family: 'custom-magneto';
-	src: url(/static/fonts/magneto.ttf) format("truetype");
+	src: url(/static/fonts/magneto.woff2) format("woff2");
 	font-weight: 400;
 	font-style: normal;
 }
 
 @font-face {
 	font-family: 'custom-monotype-corsiva';
-	src: url(/static/fonts/monotype-corsiva.ttf) format("truetype");
+	src: url(/static/fonts/monotype-corsiva.woff2) format("woff2");
 	font-weight: 400;
 	font-style: normal;
 }
 
 @font-face {
 	font-family: 'custom-mainstay';
-	src: url(/static/fonts/mainstay.ttf) format("truetype");
+	src: url(/static/fonts/mainstay.woff2) format("woff2");
 	font-weight: 400;
 	font-style: normal;
 }
 
 @font-face {
 	font-family: 'custom-aero';
-	src: url(/static/fonts/aero.ttf) format("truetype");
+	src: url(/static/fonts/aero.woff2) format("woff2");
 	font-weight: 400;
 	font-style: normal;
 }
 
 @font-face {
 	font-family: 'custom-comfy-feeling';
-	src: url(/static/fonts/comfy-feeling.otf) format("opentype");
+	src: url(/static/fonts/comfy-feeling.woff2) format("woff2");
 	font-weight: 400;
 	font-style: normal;
 }
 
 @font-face {
 	font-family: 'custom-jambo';
-	src: url(/static/fonts/jambo.otf) format("opentype");
+	src: url(/static/fonts/jambo.woff2) format("woff2");
 	font-weight: 400;
 	font-style: normal;
 }
 
 @font-face {
 	font-family: 'custom-melted-monster';
-	src: url(/static/fonts/melted-monster.ttf) format("truetype");
+	src: url(/static/fonts/melted-monster.woff2) format("woff2");
 	font-weight: 400;
 	font-style: normal;
 }
 
 @font-face {
 	font-family: 'custom-techno-race';
-	src: url(/static/fonts/techno-race.otf) format("opentype");
+	src: url(/static/fonts/techno-race.woff2) format("woff2");
 	font-weight: 400;
 	font-style: normal;
 }
