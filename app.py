@@ -59,7 +59,14 @@ def get_admin_message():
 		return render_template('admin_msg.html')
 	except Exception as e:
 		return "N/A"
-	
+
+@app.route('/get_all_flagged_botters')
+def get_all_flagged_botters():
+	try:
+		return list(flaggedUsers)
+	except Exception as e:
+		return "N/A"
+
 @app.route('/users_in_lbs/<username>')
 def get_user_in_lb(username):
 	if username in usersInLbs:
