@@ -25,6 +25,10 @@ filePath = os.path.join(app.root_path, 'data', 'flagged_users.json')
 with open(filePath, 'r') as file:
 	flaggedUsers = json.load(file)
 
+filePath = os.path.join(app.root_path, 'data', 'users_keywords.json')
+with open(filePath, 'r') as file:
+	usersKeywordsList = json.load(file)
+
 bannedUsers = set(bannedUsers)
 bannedTeams = set(bannedTeams)
 flaggedUsers = set(flaggedUsers)
@@ -34,6 +38,10 @@ usernames = usersInLbs.keys()
 users = []
 for username in usernames:
 	users.append({'username': username, 'display_name': usersInLbs[username]['display_name']})
+usersKeywords = []
+for keyword in usersKeywordsList:
+	if keyword['username'] in usernames:
+		usersKeywords.append({'keyword': keyword['keyword'], 'username': keyword['username'], 'display_name': usersInLbs[keyword['username']]['display_name']})
 
 @app.route('/')
 def index():
@@ -99,7 +107,6 @@ def is_user_banned(username):
 	if not isBanned and isFlagged:
 		return "Y (flag)"
 
-
 @app.route('/is_team_banned/<tag>')
 def is_team_banned(tag):
 	if tag in bannedTeams:
@@ -128,6 +135,14 @@ def user_suggestions(text):
 			suggestions.append(user['username'] + ' (' + user['display_name'] + ')')
 			alreadySuggested.append(user['username'])
 			numSuggestions += 1
+	# keyword contains txt
+	for keyword in usersKeywords:
+		if numSuggestions >= 5:
+			return suggestions
+		if text in keyword['keyword'] and keyword['username'] not in alreadySuggested:
+			suggestions.append(keyword['username'] + ' (' + keyword['display_name'] + ')')
+			alreadySuggested.append(keyword['username'])
+			numSuggestions += 1
 	# username or display name contains txt
 	for user in users:
 		if numSuggestions >= 5:
@@ -140,7 +155,6 @@ def user_suggestions(text):
 		return "N/A"
 	else:
 		return suggestions
-
 
 @app.route('/team_suggestions/<text>')
 def team_suggestions(text):
@@ -167,7 +181,6 @@ def team_suggestions(text):
 		return "N/A"
 	else:
 		return suggestions
-
 
 if __name__ == '__main__':
 	app.run()

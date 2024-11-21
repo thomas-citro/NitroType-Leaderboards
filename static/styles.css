@@ -130,6 +130,8 @@ body {
 	color: #acacac;
 	z-index: 2;
 	text-align: center;
+	width: 100%;
+	user-select: none;
 }
 
 .switch-label:hover {
@@ -142,7 +144,7 @@ body {
 }
 
 .switch-input {
-	display: none; 
+	display: none;
 }
 
 .slider-option {
