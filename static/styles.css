@@ -240,8 +240,45 @@ body {
 	font-family: "Montserrat", sans-serif;
 	font-weight: 300;
 	color: #fff;
-	height: 85px;
+	height: 80px;
+	/*background: #292C3B;*/
+}
+
+.table-row--odd {
 	background: #292C3B;
+}
+
+.rank-change {
+	color: #666;
+	position: relative;
+	text-align: center;
+	font-size: 14px;
+}
+
+.rank-change--up {
+	color: #59FFA0;
+}
+
+.rank-change--down {
+	color: #D62F3A;
+}
+
+.icon-arrow-up {
+	height: 8px;
+	width: 8px;
+	position: absolute;
+	left: 50%;
+	fill: #59FFA0;
+	transform: translate(-50%, -100%) scale(1.8, 1);
+}
+
+.icon-arrow-down {
+	height: 8px;
+	width: 8px;
+	position: absolute;
+	left: 50%;
+	fill: #D62F3A;
+	transform: translate(-50%, 0) scale(1.8, 1);
 }
 
 .font-color-selection-tbl {

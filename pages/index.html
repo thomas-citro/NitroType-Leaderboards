@@ -28,6 +28,20 @@
 		var curTabPage = 'top_racers';
 		var curTab = 'top_racers_season';
 		var fontColorSelection = "none";
+		var topRacersLbs = [
+			'top_racers_season', 'top_racers_week', 'top_racers_day', 
+			'fastest_racers_season', 'fastest_racers_week', 'fastest_racers_day',
+			'most_accurate_racers_season', 'most_accurate_racers_week', 'most_accurate_racers_day',
+			'nm_top_racers_season', 'nm_top_racers_week', 'nm_top_racers_day',
+			'nm_highest_scoring_racers_season'
+		]
+		var topTeamsLbs = [
+			'top_teams_season', 'top_teams_week', 'top_teams_day', 
+			'fastest_teams_season', 
+			'most_accurate_teams_season', 
+			'nm_top_teams_season', 'nm_top_teams_week', 'nm_top_teams_day',
+			'nm_highest_scoring_teams_season'
+		]
 
 		function announcementToggle() {
 			var adminMsgButton = document.getElementById("collapsible-admin-msg-button");
@@ -108,9 +122,9 @@
 						curTabPage = 'rarest_loot';
 					} else if (tabName.startsWith('hof_') || tabName.startsWith('nm_hof_')) {
 						curTabPage = 'hall_of_fame';
-					} else if (tabName.startsWith('top_racers_') || tabName.startsWith('nm_top_racers_') || ['fastest_racers_season', 'most_accurate_racers_season'].includes(tabName)) {
+					} else if (topRacersLbs.includes(tabName)) {
 						curTabPage = 'top_racers';
-					} else if (tabName.startsWith('top_teams_') || tabName.startsWith('nm_top_teams_') || ['fastest_teams_season', 'most_accurate_teams_season'].includes(tabName)) {
+					} else if (topTeamsLbs.includes(tabName)) {
 						curTabPage = 'top_teams';
 					} else {
 						curTabPage = 'past_seasons';
