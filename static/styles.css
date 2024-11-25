@@ -1456,7 +1456,8 @@ h2 {
 }
 
 .flag-button {
-	bottom: 29.5px;
+	/*bottom: 29.5px;*/
+	bottom: 25.1px;
 	left: 93%;
 	right: 0;
 	width: fit-content;
@@ -1491,7 +1492,8 @@ h2 {
 	left: 43%;
 	right: 0;*/
 	/*bottom: 33.5px;*/
-	bottom: 29.5px;
+	/*bottom: 29.5px;*/
+	bottom: 25.1px;
 	left: 82%;
 	right: 0;
 	width: fit-content;
