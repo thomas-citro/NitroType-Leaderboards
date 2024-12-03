@@ -1814,3 +1814,10 @@ h2 {
 	font-weight: 400;
 	font-style: normal;
 }
+
+@font-face {
+	font-family: 'custom-times-new-roman';
+	src: url(/static/fonts/times-new-roman.woff2) format("woff2");
+	font-weight: 400;
+	font-style: normal;
+}
