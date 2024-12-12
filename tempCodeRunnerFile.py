@@ -1,1 +1,1 @@
-temp
+banned_teams
