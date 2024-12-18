@@ -496,10 +496,13 @@ li {
 
 .tooltip {
 	position: relative;
-	font-size: 22px;
+	font-size: 18px;
 	font-weight: 800;
 	cursor: help;
 	color: #1e1e1e; /*color: #292C3B;*/
+	background-color: #fff;
+	padding: 1.5px 7px;
+	border-radius: 100%;
 }
 
 .tooltip-after-col-name {
@@ -526,7 +529,22 @@ li {
 	margin-left: -8px;
 }
 
-.tooltip::after{
+.tooltip-nm-total-score::after {
+	margin-left: -237px;
+	transform: translateY(-100%);
+}
+
+.tooltip-points::after {
+	margin-left: -357px;
+	transform: translateY(-100%);
+}
+
+.tooltip-rank-changes::after {
+	margin-left: -50px;
+	transform: translateY(-100%);
+}
+
+.tooltip::after {
 	content: attr(data-tooltip);
 	background: rgba(22, 122, 195, 0.85); /* same as #167AC3 apart from opacity */
 	color: #fff;
@@ -538,10 +556,8 @@ li {
 	padding-bottom: 6px;
 	padding-left: 16px;
 	padding-right: 16px;
-	margin-left: -150px;
 	border-radius: 5px;
 	top: -5px;
-	transform: translateY(-100%);
 	/*border-style: solid;
 	border-width: 1px;
 	border-color: #000;*/
