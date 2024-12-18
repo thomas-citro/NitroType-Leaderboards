@@ -1,14 +1,15 @@
 <div id="admin-msg-inside">
 	<!-- class="collapsible-admin-msg admin-msg-active" -->
-	<button class="collapsible-admin-msg admin-msg-active" id="collapsible-admin-msg-button" onclick="announcementToggle()" style="border-bottom-left-radius: 8px; border-bottom-right-radius: 8px;">
+	<button class="collapsible-admin-msg" id="collapsible-admin-msg-button" onclick="announcementToggle()" style="border-bottom-left-radius: 8px; border-bottom-right-radius: 8px;">
 		📣 Announcement (12/17/24)
 	</button>
-	<div id="collapsible-admin-msg-content" style="display: block;"><p style="margin: 0px;">
+	<!-- style="display: block;" --- OR --- style="display: none;" -->
+	<div id="collapsible-admin-msg-content" style="display: none;"><p style="margin: 0px;">
 		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 		I'm glad to announce that the leaderboards have returned! However, due to the new 
 		restrictions made to Nitro Type's API, I've had to make some changes.. On the plus 
-		side: season/24hour/7day leaderboards will still be functional as before and be updated 
-		daily. On the down side: hall of fame, rarest loot, site stats, and some other 
+		side: season, 7-day, and 24-hour leaderboards will still be updated daily. On 
+		the down side: hall of fame, rarest loot, site stats, and some other 
 		things will be updated less frequently in order to stay within the allowed number 
 		of API requests. I have it set up so that data gets updated in a queue. So, some 
 		user/team data will be updated one day, and then other user/team data gets updated 
