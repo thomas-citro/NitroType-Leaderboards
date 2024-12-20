@@ -29,6 +29,10 @@ filePath = os.path.join(app.root_path, 'data', 'users_keywords.json')
 with open(filePath, 'r') as file:
 	usersKeywordsList = json.load(file)
 
+filePath = os.path.join(app.root_path, 'data', 'active_teams_info.json')
+with open(filePath, 'r') as file:
+	activeTeamsInfo = json.load(file)
+
 bannedUsers = set(bannedUsers)
 bannedTeams = set(bannedTeams)
 flaggedUsers = set(flaggedUsers)
@@ -73,6 +77,13 @@ def get_all_flagged_botters():
 	try:
 		return list(flaggedUsers)
 	except Exception as e:
+		return "N/A"
+
+@app.route('/active_teams_info/<tag>')
+def get_active_team_info(tag):
+	if tag in activeTeamsInfo:
+		return activeTeamsInfo[tag]
+	else:
 		return "N/A"
 
 @app.route('/users_in_lbs/<username>')
