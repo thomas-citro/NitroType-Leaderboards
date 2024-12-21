@@ -113,6 +113,17 @@
 							</div>
 						</form>
 					</div>
+					<div id="active-team-header" style="display: none;">
+						<span id="active-team-header-tag"></span>
+						<span id="active-team-header-name"></span>
+					</div>
+					<div id="active-team-buttons" style="display: none;">
+						<button id="active-team-button-lbs" class="search-button not-active-search-button" onclick="activeTeamPage('leaderboards')">🏆 Leaderboards Placed</button>
+						<button id="active-team-button-flags" class="search-button not-active-search-button" onclick="activeTeamPage('flags')">🚩 Flagged Members</button>
+						<button id="active-team-button-stats" class="search-button not-active-search-button" onclick="activeTeamPage('stats')">📊 Team Stats</button>
+					</div>
+					<div id="active-team-flags" style="display: none;"></div>
+					<div id="active-team-stats" style="display: none;"></div>
 					<div id="search-results-container" style="display: none;">
 						<div id="search-results-user-flagged" style="display: none;">
 							<div class="user-flagged-text">This user is flagged for detected botting.</div>
@@ -516,9 +527,7 @@
 				<br/>
 				<h2><span class="header-icon">🛠️</span>Upcoming Updates</h2>
 				<ul class="after-header">
-					<li>Adding info boxes for team searching so that you can see a team's: general stats, flagged team members, & leaderboards placed.</li>
 					<li>Adding boards to display recently banned, unbanned, and warned players on Nitro Type.</li>
-					<li>Restructuring layout of Site Stats and More Info pages.</li>
 					<li>Adding 'Rarest Trails Equipped' leaderboard to Rarest Loot page.</li>
 					<li>Adding 'Rarest Nametags Equipped' leaderboard to Rarest Loot page.</li>
 				</ul>
@@ -851,6 +860,13 @@
 						<li>Added 'Bans, Flags, & Appeals' section to 'More Info' page to answer common questions related to leaderboard bans.</li>
 						<li>Added custom domain so you can visit ntleaderboards via: <a class="my-profile-link" href="https://ntleaderboards.com">https://ntleaderboards.com</a></li>
 						<li>Added tooltips on leaderboard headers to explain things like rank change indicators and points.</li>
+					</ul>
+					<li>V5.7 (12/21/24)</li>
+					<ul>
+						<li>Added ability to see the flagged members and stats of teams from the team search.</li>
+						<ul>
+							<li><b>NOTE</b>: This feature is only available for teams older than 3 weeks old and with at least 500 season races.</li>
+						</ul>
 					</ul>
 				</ul>
 			</div>

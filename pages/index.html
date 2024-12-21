@@ -28,6 +28,7 @@
 		var curTabPage = 'top_racers';
 		var curTab = 'top_racers_season';
 		var fontColorSelection = "none";
+		var activeTeamInfoPage = "leaderboards";
 		var topRacersLbs = [
 			'top_racers_season', 'top_racers_week', 'top_racers_day', 
 			'fastest_racers_season', 'fastest_racers_week', 'fastest_racers_day',
@@ -183,6 +184,59 @@
 			loadAdminMsg(); // Comment out when there's no announcement to display
 		}
 
+		function activeTeamPage(page) {
+			activeTeamInfoPage = page;
+			toggleActiveTeamBtnClasses();
+			toggleActiveTeamPageContainers();
+		}
+
+		function toggleActiveTeamBtnClasses() {
+			var lbsBtn = document.getElementById("active-team-button-lbs");
+			var flagsBtn = document.getElementById("active-team-button-flags");
+			var statsBtn = document.getElementById("active-team-button-stats");
+			if (activeTeamInfoPage == "leaderboards") {
+				lbsBtn.classList.remove("not-active-search-button");
+				lbsBtn.classList.add("active-search-button");
+				flagsBtn.classList.remove("active-search-button");
+				flagsBtn.classList.add("not-active-search-button");
+				statsBtn.classList.remove("active-search-button");
+				statsBtn.classList.add("not-active-search-button");
+			} else if (activeTeamInfoPage == "flags") {
+				lbsBtn.classList.remove("active-search-button");
+				lbsBtn.classList.add("not-active-search-button");
+				flagsBtn.classList.remove("not-active-search-button");
+				flagsBtn.classList.add("active-search-button");
+				statsBtn.classList.remove("active-search-button");
+				statsBtn.classList.add("not-active-search-button");
+			} else {
+				lbsBtn.classList.remove("active-search-button");
+				lbsBtn.classList.add("not-active-search-button");
+				flagsBtn.classList.remove("active-search-button");
+				flagsBtn.classList.add("not-active-search-button");
+				statsBtn.classList.remove("not-active-search-button");
+				statsBtn.classList.add("active-search-button");
+			}
+		}
+
+		function toggleActiveTeamPageContainers() {
+			var lbsContainer = document.getElementById("search-results-container");
+			var flagsContainer = document.getElementById("active-team-flags");
+			var statsContainer = document.getElementById("active-team-stats");
+			if (activeTeamInfoPage == "leaderboards") {
+				lbsContainer.style.display = "block";
+				flagsContainer.style.display = "none";
+				statsContainer.style.display = "none";
+			} else if (activeTeamInfoPage == "flags") {
+				lbsContainer.style.display = "none";
+				flagsContainer.style.display = "block";
+				statsContainer.style.display = "none";
+			} else {
+				lbsContainer.style.display = "none";
+				flagsContainer.style.display = "none";
+				statsContainer.style.display = "block";
+			}
+		}
+
 		function colorSelection() {
 			if (fontColorSelection == "color") {
 				fontColorSelection = "none";
@@ -292,8 +346,14 @@
 			var userContainer = document.getElementById("user-search-container");
 			var teamContainer = document.getElementById("team-search-container");
 			var searchResultsBox = document.getElementById("search-results-container");
+			var activeTeamButtons = document.getElementById("active-team-buttons");
+			var flagsContainer = document.getElementById("active-team-flags");
+			var statsContainer = document.getElementById("active-team-stats");
 			var inputBox;
 			searchResultsBox.style.display = "none";
+			activeTeamButtons.style.display = "none";
+			statsContainer.style.display = "none";
+			flagsContainer.style.display = "none";
 			if (searchSelection == "team") {
 				userContainer.style.display = "none";
 				teamContainer.style.display = "block";
@@ -326,7 +386,7 @@
 						fetch(`/is_user_banned/${username}`)
 							.then(response => response.text())
 							.then(isBanned => {
-								displayResults('user', data, username, isBanned);
+								displayResults('user', data, username, isBanned, "N/A");
 							})
 							.catch(error => console.error('Error:', error));
 					})
@@ -341,7 +401,12 @@
 						fetch(`/is_team_banned/${teamTag}`)
 							.then(response => response.text())
 							.then(isBanned => {
-								displayResults('team', data, teamTag, isBanned);
+								fetch(`/active_teams_info/${teamTag}`)
+									.then(response => response.text())
+									.then(activeTeamInfo => {
+										displayResults('team', data, teamTag, isBanned, activeTeamInfo);
+									})
+									.catch(error => console.error('Error:', error));
 							})
 							.catch(error => console.error('Error:', error));
 					})
@@ -381,7 +446,7 @@
 			getSearchSuggestions(newValue, searchType);
 		}
 
-		function displayResults(searchType, response, searchInput, isBanned) {
+		function displayResults(searchType, response, searchInput, isBanned, activeTeamInfo) {
 			var searchResultsBox = document.getElementById("search-results-container");
 			searchResultsBox.style.display = "none"; // We don't want to display it until after we've formatted the results
 			// Get elements
@@ -394,6 +459,10 @@
 			var teamFound = document.getElementById("search-results-team-found");
 			var teamFoundBanned = document.getElementById("team-search-banned-found");
 			var userFlagged = document.getElementById("search-results-user-flagged");
+			var activeTeamHeader = document.getElementById("active-team-header");
+			var activeTeamButtons = document.getElementById("active-team-buttons");
+			var flagsContainer = document.getElementById("active-team-flags");
+			var statsContainer = document.getElementById("active-team-stats");
 			var searchInputDisplay = searchInput;
 			// Reset all to none
 			userNotFound.style.display = "none";
@@ -405,9 +474,86 @@
 			teamFound.style.display = "none";
 			teamFoundBanned.style.display = "none";
 			userFlagged.style.display = "none";
+			activeTeamHeader.style.display = "none";
+			activeTeamButtons.style.display = "none";
+			flagsContainer.style.display = "none";
+			statsContainer.style.display = "none";
 			if (searchType == "user") {
 				if (isBanned == "Y (flag)" || isBanned ==  "Y (ban+flag)") {
 					userFlagged.style.display = "block";
+				}
+			} else {
+				if (activeTeamInfo != "N/A") {
+					// Parse active team info
+					var parsedTeamInfo = JSON.parse(activeTeamInfo);
+					activeTeamInfoPage = "leaderboards";
+					toggleActiveTeamBtnClasses();
+
+					// Create header --> DECIDED NOT TO USE HEADER
+					/*var teamTagDiv = document.getElementById("active-team-header-tag");
+					var teamNameDiv = document.getElementById("active-team-header-name");
+					teamTagDiv.textContent = "[" + searchInput + "]";
+					teamNameDiv.textContent = '"' + parsedTeamInfo.name + '"';
+					teamTagDiv.style.color = "#" + parsedTeamInfo.color;
+					activeTeamHeader.style.display = "block"; */ 
+
+					// Create html for flags tab
+					var flaggedMembersHtmlToWrite = '<div>The team <span class="active-team-tag-non-header">' + searchInput + '</span> ';
+					var flaggedMembers = parsedTeamInfo.flagged_members;
+					if (flaggedMembers.length == 0) {
+						flaggedMembersHtmlToWrite += 'has no members flagged for botting.</div>';
+					} else {
+						if (flaggedMembers.length == 1) {
+							flaggedMembersHtmlToWrite += 'has ' + flaggedMembers.length.toString() + ' member flagged for botting:</div>';
+						} else {
+							flaggedMembersHtmlToWrite += 'has ' + flaggedMembers.length.toString() + ' members flagged for botting:</div>';
+						}
+						flaggedMembersHtmlToWrite += '<ol style="margin-top: 6px;">';
+						for (var i = 0; i < flaggedMembers.length; i++) {
+							var flaggedMember = flaggedMembers[i];
+							var flaggedUsername = flaggedMember[0];
+							var flaggedDisplayName = flaggedMember[1];
+							if (flaggedDisplayName == "") {
+								flaggedDisplayName = flaggedUsername;
+							}
+							var flaggedMemberHtml = '<li><a class="active-team-flagged-member" href="https://www.nitrotype.com/racer/';
+							flaggedMemberHtml += flaggedUsername + '" target="_blank">';
+							flaggedMemberHtml += flaggedDisplayName + '</a></li>';
+							flaggedMembersHtmlToWrite += flaggedMemberHtml;
+						}
+						flaggedMembersHtmlToWrite += "</ol>";
+					}
+					flagsContainer.innerHTML = flaggedMembersHtmlToWrite;
+					
+					// Create html for stats tab
+					var teamStatsHtmlToWrite = '<div>The team <span class="active-team-tag-non-header">' + searchInput + '</span> has the following stats:</div>';
+					teamStatsHtmlToWrite += '<ul style="margin-top: 6px;">';
+					teamStatsHtmlToWrite += '<li><span class="team-stat">Alltime Races</span></li><ul>';
+					teamStatsHtmlToWrite += '<li>Legit: <span class="legit-team-stat">';
+					teamStatsHtmlToWrite +=  parsedTeamInfo.alltime_valid_races.toLocaleString();
+					teamStatsHtmlToWrite += '</span></li>';
+					teamStatsHtmlToWrite += '<li>Botted: <span class="botted-team-stat">';
+					teamStatsHtmlToWrite +=  parsedTeamInfo.alltime_botted_races.toLocaleString();
+					teamStatsHtmlToWrite += '</span></li></ul>';
+					teamStatsHtmlToWrite += '<li><span class="team-stat">Season Races</span></li><ul>';
+					teamStatsHtmlToWrite += '<li>Legit: <span class="legit-team-stat">';
+					teamStatsHtmlToWrite +=  parsedTeamInfo.season_valid_races.toLocaleString();
+					teamStatsHtmlToWrite += '</span></li>';
+					teamStatsHtmlToWrite += '<li>Botted: <span class="botted-team-stat">';
+					teamStatsHtmlToWrite +=  parsedTeamInfo.season_botted_races.toLocaleString();
+					teamStatsHtmlToWrite += '</span></li></ul>';
+					teamStatsHtmlToWrite += '<li><span class="team-stat">Season Points</span></li><ul>';
+					teamStatsHtmlToWrite += '<li>Legit: <span class="legit-team-stat">';
+					teamStatsHtmlToWrite +=  parsedTeamInfo.season_valid_points.toLocaleString();
+					teamStatsHtmlToWrite += '</span></li>';
+					teamStatsHtmlToWrite += '<li>Botted: <span class="botted-team-stat">';
+					teamStatsHtmlToWrite +=  parsedTeamInfo.season_botted_points.toLocaleString();
+					teamStatsHtmlToWrite += '</span></li></ul>';
+					teamStatsHtmlToWrite += '</ul>';
+					statsContainer.innerHTML = teamStatsHtmlToWrite;
+
+					// Done
+					activeTeamButtons.style.display = "block";
 				}
 			}
 			if (response == "N/A") {
@@ -429,15 +575,15 @@
 				var resultsList;
 				htmlToWrite += '<ol style="margin-top: 6px;">';
 				if (searchType == "user") {
-					responseObjList = responseObj.rankings
+					responseObjList = responseObj.rankings;
 					userFound.style.display = "block";
 					if (isBanned == "Y (ban)" || isBanned == "Y (ban+flag)") {
 						userFoundBanned.style.display = "inline";
 					}
-					searchInputDisplay += ' (' + responseObj.display_name + ')'
+					searchInputDisplay += ' (' + responseObj.display_name + ')';
 					resultsListHtml = document.getElementById("user-search-found-list");
 				} else {
-					responseObjList = responseObj
+					responseObjList = responseObj;
 					teamFound.style.display = "block";
 					if (isBanned == 'Y') {
 						teamFoundBanned.style.display = "inline";

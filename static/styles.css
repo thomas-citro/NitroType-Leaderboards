@@ -248,6 +248,42 @@ body {
 	background: #292C3B;
 }
 
+.team-stat {
+	color: #F9D034;
+}
+
+.legit-team-stat {
+	color: #00FF21;
+}
+
+.botted-team-stat {
+	color: #FF1E1E;
+}
+
+#active-team-buttons {
+	margin-top: 6px;
+}
+
+#active-team-header {
+	margin-top: 10px;
+	margin-bottom: 6px;
+	font-size: 20px;
+	color: #F9D034;
+	font-weight: bold;
+}
+
+.active-team-tag-non-header {
+	color:#00FF21;
+}
+
+#active-team-header-name {
+	margin-left: 5px;
+}
+
+#active-team-header-tag {
+	margin-left: 15px;
+}
+
 .rank-change {
 	color: #666;
 	position: relative;
@@ -835,6 +871,16 @@ button {
 	margin-top: 5px;
 }
 
+#active-team-flags {
+	margin-left: 5px;
+	margin-top: 5px;
+}
+
+#active-team-stats {
+	margin-left: 5px;
+	margin-top: 5px;
+}
+
 .found-search {
 	color: #00FF21;
 }
@@ -1321,6 +1367,15 @@ label[for="dropdown-high-speed"] {
 }
 
 .my-profile-admin-msg-link:hover {
+	text-decoration: underline;
+}
+
+.active-team-flagged-member {
+	text-decoration: none;
+	color: #92daf7;
+}
+
+.active-team-flagged-member:hover {
 	text-decoration: underline;
 }
 
