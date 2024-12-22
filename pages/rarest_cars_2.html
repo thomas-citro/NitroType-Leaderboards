@@ -58,7 +58,7 @@
 				</div>
 			</button>
 	
-			<button class="tab not-active" onclick="openSiteStatsPage([305377, 1459259, 942870, 863240, 704545, 539690, 403186, 302123, 228265, 170200, 126910, 96260, 124670, 68121, 36695, 19067, 10804, 51395, 31956, 2611, 2482], [1430, 27802, 32379, 39725, 41707, 37857, 32516, 26760, 21949, 17198, 13324, 10390, 14123, 8071, 4512, 2409, 1080, 852, 342, 875, 79], [85, 1417, 1857, 2390, 2743, 2582, 2442, 2175, 2152, 2016, 1747, 1607, 2780, 2159, 1668, 1113, 664, 636, 168, 133, 43])">
+			<button class="tab not-active" onclick="changeTab('site_stats_general')">
 				<div class="icon-text-container">
 					<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" id="icon-chart" width="18" height="18" fill="white">
 						<path d="M7 19H1V8h6v11zm8-18H9v18h6V1zm8 11h-6v7h6v-7zm1 9H0v2h24v-2z" />
@@ -94,6 +94,8 @@
 					<select class="dropdown-select dropdown-select-rarest-loot">
 						<option value="rarest_cars" selected>Rarest Cars Owned</option>
 						<option value="rarest_titles">Rarest Titles Equipped</option>
+						<option value="rarest_trails">Rarest Trails Equipped</option>
+						<option value="rarest_nametags">Rarest Nametags Equipped</option>
 					</select>
 				</div>
 			</form>
@@ -162,7 +164,7 @@
 	Flux Capacitor</td>
 	
 					<td class="table-cell" style="width: 15%;">
-	11,806</td>
+	11,807</td>
 	
 					<td class="table-cell" style="width: 32%;">
 	0.15%</td>
@@ -180,7 +182,7 @@
 	Timber Speeder</td>
 	
 					<td class="table-cell" style="width: 15%;">
-	11,824</td>
+	11,825</td>
 	
 					<td class="table-cell" style="width: 32%;">
 	0.15%</td>
@@ -216,7 +218,7 @@
 	Fonicci Zucchero</td>
 	
 					<td class="table-cell" style="width: 15%;">
-	11,987</td>
+	11,988</td>
 	
 					<td class="table-cell" style="width: 32%;">
 	0.16%</td>
@@ -234,7 +236,7 @@
 	Nitreux F1</td>
 	
 					<td class="table-cell" style="width: 15%;">
-	12,048</td>
+	12,049</td>
 	
 					<td class="table-cell" style="width: 32%;">
 	0.16%</td>
@@ -270,7 +272,7 @@
 	The Nitro Machine</td>
 	
 					<td class="table-cell" style="width: 15%;">
-	12,241</td>
+	12,242</td>
 	
 					<td class="table-cell" style="width: 32%;">
 	0.16%</td>
@@ -306,7 +308,7 @@
 	The Covenant</td>
 	
 					<td class="table-cell" style="width: 15%;">
-	13,332</td>
+	13,341</td>
 	
 					<td class="table-cell" style="width: 32%;">
 	0.17%</td>
@@ -324,7 +326,7 @@
 	Winson Velox</td>
 	
 					<td class="table-cell" style="width: 15%;">
-	13,551</td>
+	13,552</td>
 	
 					<td class="table-cell" style="width: 32%;">
 	0.18%</td>
@@ -342,7 +344,7 @@
 	F-35 JSF</td>
 	
 					<td class="table-cell" style="width: 15%;">
-	13,565</td>
+	13,566</td>
 	
 					<td class="table-cell" style="width: 32%;">
 	0.18%</td>
@@ -360,7 +362,7 @@
 	Frostbite XT</td>
 	
 					<td class="table-cell" style="width: 15%;">
-	14,140</td>
+	14,141</td>
 	
 					<td class="table-cell" style="width: 32%;">
 	0.18%</td>
@@ -396,7 +398,7 @@
 	Sour Truck</td>
 	
 					<td class="table-cell" style="width: 15%;">
-	14,308</td>
+	14,320</td>
 	
 					<td class="table-cell" style="width: 32%;">
 	0.19%</td>
@@ -414,7 +416,7 @@
 	Missile Toe</td>
 	
 					<td class="table-cell" style="width: 15%;">
-	14,346</td>
+	14,353</td>
 	
 					<td class="table-cell" style="width: 32%;">
 	0.19%</td>
@@ -432,7 +434,7 @@
 	X1 Eclipse</td>
 	
 					<td class="table-cell" style="width: 15%;">
-	14,584</td>
+	14,601</td>
 	
 					<td class="table-cell" style="width: 32%;">
 	0.19%</td>
@@ -450,7 +452,7 @@
 	Liberty Model H</td>
 	
 					<td class="table-cell" style="width: 15%;">
-	14,637</td>
+	14,639</td>
 	
 					<td class="table-cell" style="width: 32%;">
 	0.19%</td>
@@ -468,7 +470,7 @@
 	Blitz Tetra S1</td>
 	
 					<td class="table-cell" style="width: 15%;">
-	14,637</td>
+	14,639</td>
 	
 					<td class="table-cell" style="width: 32%;">
 	0.19%</td>
@@ -504,7 +506,7 @@
 	Sandstorm</td>
 	
 					<td class="table-cell" style="width: 15%;">
-	15,064</td>
+	15,065</td>
 	
 					<td class="table-cell" style="width: 32%;">
 	0.2%</td>
@@ -522,7 +524,7 @@
 	Flux M300</td>
 	
 					<td class="table-cell" style="width: 15%;">
-	15,101</td>
+	15,107</td>
 	
 					<td class="table-cell" style="width: 32%;">
 	0.2%</td>
@@ -540,7 +542,7 @@
 	Feline Fury</td>
 	
 					<td class="table-cell" style="width: 15%;">
-	15,280</td>
+	15,279</td>
 	
 					<td class="table-cell" style="width: 32%;">
 	0.2%</td>
@@ -576,7 +578,7 @@
 	Liberty S7</td>
 	
 					<td class="table-cell" style="width: 15%;">
-	15,757</td>
+	15,768</td>
 	
 					<td class="table-cell" style="width: 32%;">
 	0.2%</td>
@@ -612,7 +614,7 @@
 	Liberty Travosaurus</td>
 	
 					<td class="table-cell" style="width: 15%;">
-	15,892</td>
+	15,900</td>
 	
 					<td class="table-cell" style="width: 32%;">
 	0.21%</td>
@@ -630,7 +632,7 @@
 	Liberty Glamrod</td>
 	
 					<td class="table-cell" style="width: 15%;">
-	15,979</td>
+	16,042</td>
 	
 					<td class="table-cell" style="width: 32%;">
 	0.21%</td>
@@ -648,7 +650,7 @@
 	Blitz Slipstream</td>
 	
 					<td class="table-cell" style="width: 15%;">
-	16,297</td>
+	16,299</td>
 	
 					<td class="table-cell" style="width: 32%;">
 	0.21%</td>
@@ -666,7 +668,7 @@
 	Shock Value</td>
 	
 					<td class="table-cell" style="width: 15%;">
-	16,384</td>
+	16,398</td>
 	
 					<td class="table-cell" style="width: 32%;">
 	0.21%</td>
@@ -702,7 +704,7 @@
 	Lucky Number 7</td>
 	
 					<td class="table-cell" style="width: 15%;">
-	17,363</td>
+	17,364</td>
 	
 					<td class="table-cell" style="width: 32%;">
 	0.23%</td>
@@ -720,7 +722,7 @@
 	Blitz Nebula</td>
 	
 					<td class="table-cell" style="width: 15%;">
-	17,400</td>
+	17,399</td>
 	
 					<td class="table-cell" style="width: 32%;">
 	0.23%</td>
@@ -738,7 +740,7 @@
 	Egg Beater</td>
 	
 					<td class="table-cell" style="width: 15%;">
-	17,452</td>
+	17,453</td>
 	
 					<td class="table-cell" style="width: 32%;">
 	0.23%</td>
@@ -756,7 +758,7 @@
 	Liberty Shellback "Firestorm"</td>
 	
 					<td class="table-cell" style="width: 15%;">
-	17,509</td>
+	17,510</td>
 	
 					<td class="table-cell" style="width: 32%;">
 	0.23%</td>
@@ -774,7 +776,7 @@
 	Floaty Blue</td>
 	
 					<td class="table-cell" style="width: 15%;">
-	18,233</td>
+	18,235</td>
 	
 					<td class="table-cell" style="width: 32%;">
 	0.24%</td>
@@ -792,7 +794,7 @@
 	Gingerbread Racer</td>
 	
 					<td class="table-cell" style="width: 15%;">
-	18,542</td>
+	18,615</td>
 	
 					<td class="table-cell" style="width: 32%;">
 	0.24%</td>
@@ -810,7 +812,7 @@
 	The Gotham</td>
 	
 					<td class="table-cell" style="width: 15%;">
-	18,880</td>
+	18,883</td>
 	
 					<td class="table-cell" style="width: 32%;">
 	0.25%</td>
@@ -828,7 +830,7 @@
 	Flux Heartbreaker LV-2</td>
 	
 					<td class="table-cell" style="width: 15%;">
-	19,028</td>
+	19,034</td>
 	
 					<td class="table-cell" style="width: 32%;">
 	0.25%</td>
@@ -846,7 +848,7 @@
 	Wrapped Wracer</td>
 	
 					<td class="table-cell" style="width: 15%;">
-	19,308</td>
+	19,313</td>
 	
 					<td class="table-cell" style="width: 32%;">
 	0.25%</td>
@@ -864,7 +866,7 @@
 	Liberty Six Four Plus Three</td>
 	
 					<td class="table-cell" style="width: 15%;">
-	19,663</td>
+	19,665</td>
 	
 					<td class="table-cell" style="width: 32%;">
 	0.26%</td>
@@ -876,13 +878,13 @@
 	143</td>
 	
 					<td class="table-cell" style="width: 12%;"><img class="car-img" src="/static/images/cars/
-	258.webp"/></td>
+	250.webp"/></td>
 	
 					<td class="table-cell" style="width: 32%;">
-	Sprinter '90 Vapor</td>
+	Koromoto NRX</td>
 	
 					<td class="table-cell" style="width: 15%;">
-	19,727</td>
+	19,729</td>
 	
 					<td class="table-cell" style="width: 32%;">
 	0.26%</td>
@@ -894,13 +896,13 @@
 	144</td>
 	
 					<td class="table-cell" style="width: 12%;"><img class="car-img" src="/static/images/cars/
-	250.webp"/></td>
+	112.webp"/></td>
 	
 					<td class="table-cell" style="width: 32%;">
-	Koromoto NRX</td>
+	Buddy's Snowmobile</td>
 	
 					<td class="table-cell" style="width: 15%;">
-	19,728</td>
+	19,753</td>
 	
 					<td class="table-cell" style="width: 32%;">
 	0.26%</td>
@@ -912,13 +914,13 @@
 	145</td>
 	
 					<td class="table-cell" style="width: 12%;"><img class="car-img" src="/static/images/cars/
-	112.webp"/></td>
+	258.webp"/></td>
 	
 					<td class="table-cell" style="width: 32%;">
-	Buddy's Snowmobile</td>
+	Sprinter '90 Vapor</td>
 	
 					<td class="table-cell" style="width: 15%;">
-	19,737</td>
+	19,761</td>
 	
 					<td class="table-cell" style="width: 32%;">
 	0.26%</td>
@@ -936,7 +938,7 @@
 	Blitz M6</td>
 	
 					<td class="table-cell" style="width: 15%;">
-	19,839</td>
+	19,840</td>
 	
 					<td class="table-cell" style="width: 32%;">
 	0.26%</td>
@@ -972,7 +974,7 @@
 	Cartrod</td>
 	
 					<td class="table-cell" style="width: 15%;">
-	20,169</td>
+	20,171</td>
 	
 					<td class="table-cell" style="width: 32%;">
 	0.26%</td>
@@ -990,7 +992,7 @@
 	Shimura Jolly GTX LG</td>
 	
 					<td class="table-cell" style="width: 15%;">
-	20,201</td>
+	20,203</td>
 	
 					<td class="table-cell" style="width: 32%;">
 	0.26%</td>
@@ -1026,7 +1028,7 @@
 	Titan Sentinel</td>
 	
 					<td class="table-cell" style="width: 15%;">
-	20,302</td>
+	20,311</td>
 	
 					<td class="table-cell" style="width: 32%;">
 	0.26%</td>
@@ -1044,7 +1046,7 @@
 	Fonicci Rego</td>
 	
 					<td class="table-cell" style="width: 15%;">
-	20,425</td>
+	20,437</td>
 	
 					<td class="table-cell" style="width: 32%;">
 	0.27%</td>
@@ -1062,7 +1064,7 @@
 	Easy Breezy</td>
 	
 					<td class="table-cell" style="width: 15%;">
-	20,806</td>
+	20,814</td>
 	
 					<td class="table-cell" style="width: 32%;">
 	0.27%</td>
@@ -1080,7 +1082,7 @@
 	Nitreux Independence</td>
 	
 					<td class="table-cell" style="width: 15%;">
-	20,835</td>
+	20,847</td>
 	
 					<td class="table-cell" style="width: 32%;">
 	0.27%</td>
@@ -1098,7 +1100,7 @@
 	Gotham Guardian</td>
 	
 					<td class="table-cell" style="width: 15%;">
-	20,864</td>
+	20,863</td>
 	
 					<td class="table-cell" style="width: 32%;">
 	0.27%</td>
@@ -1116,7 +1118,7 @@
 	Blitz R11</td>
 	
 					<td class="table-cell" style="width: 15%;">
-	21,217</td>
+	21,219</td>
 	
 					<td class="table-cell" style="width: 32%;">
 	0.28%</td>
@@ -1134,7 +1136,7 @@
 	Stingtec Thunderboat</td>
 	
 					<td class="table-cell" style="width: 15%;">
-	21,337</td>
+	21,342</td>
 	
 					<td class="table-cell" style="width: 32%;">
 	0.28%</td>
@@ -1170,7 +1172,7 @@
 	Hang Eleven</td>
 	
 					<td class="table-cell" style="width: 15%;">
-	22,426</td>
+	22,427</td>
 	
 					<td class="table-cell" style="width: 32%;">
 	0.29%</td>
@@ -1224,7 +1226,7 @@
 	Liberty Wraptor GG</td>
 	
 					<td class="table-cell" style="width: 15%;">
-	23,759</td>
+	23,758</td>
 	
 					<td class="table-cell" style="width: 32%;">
 	0.31%</td>
@@ -1242,7 +1244,7 @@
 	Mini Sherman</td>
 	
 					<td class="table-cell" style="width: 15%;">
-	24,152</td>
+	24,168</td>
 	
 					<td class="table-cell" style="width: 32%;">
 	0.31%</td>
@@ -1260,7 +1262,7 @@
 	Choppa</td>
 	
 					<td class="table-cell" style="width: 15%;">
-	24,368</td>
+	24,369</td>
 	
 					<td class="table-cell" style="width: 32%;">
 	0.32%</td>
@@ -1278,7 +1280,7 @@
 	Nitreux Zephyrus</td>
 	
 					<td class="table-cell" style="width: 15%;">
-	25,023</td>
+	25,027</td>
 	
 					<td class="table-cell" style="width: 32%;">
 	0.33%</td>
@@ -1296,7 +1298,7 @@
 	Graffiti Tank</td>
 	
 					<td class="table-cell" style="width: 15%;">
-	25,031</td>
+	25,032</td>
 	
 					<td class="table-cell" style="width: 32%;">
 	0.33%</td>
@@ -1314,7 +1316,7 @@
 	Nitr-o'-Lantern</td>
 	
 					<td class="table-cell" style="width: 15%;">
-	25,457</td>
+	25,458</td>
 	
 					<td class="table-cell" style="width: 32%;">
 	0.33%</td>
@@ -1332,7 +1334,7 @@
 	Liberty Warrior NRX</td>
 	
 					<td class="table-cell" style="width: 15%;">
-	25,698</td>
+	25,710</td>
 	
 					<td class="table-cell" style="width: 32%;">
 	0.33%</td>
@@ -1350,7 +1352,7 @@
 	Corsa XMaxx LT</td>
 	
 					<td class="table-cell" style="width: 15%;">
-	26,120</td>
+	26,121</td>
 	
 					<td class="table-cell" style="width: 32%;">
 	0.34%</td>
@@ -1368,7 +1370,7 @@
 	The Underachiever</td>
 	
 					<td class="table-cell" style="width: 15%;">
-	26,272</td>
+	26,273</td>
 	
 					<td class="table-cell" style="width: 32%;">
 	0.34%</td>
@@ -1386,7 +1388,7 @@
 	Corsa Mystica</td>
 	
 					<td class="table-cell" style="width: 15%;">
-	26,728</td>
+	26,746</td>
 	
 					<td class="table-cell" style="width: 32%;">
 	0.35%</td>
@@ -1404,7 +1406,7 @@
 	Corsa Contacc</td>
 	
 					<td class="table-cell" style="width: 15%;">
-	26,795</td>
+	26,815</td>
 	
 					<td class="table-cell" style="width: 32%;">
 	0.35%</td>
@@ -1422,7 +1424,7 @@
 	Liberty Broadwing</td>
 	
 					<td class="table-cell" style="width: 15%;">
-	26,944</td>
+	26,946</td>
 	
 					<td class="table-cell" style="width: 32%;">
 	0.35%</td>
@@ -1440,7 +1442,7 @@
 	Ice Cream Truck</td>
 	
 					<td class="table-cell" style="width: 15%;">
-	27,110</td>
+	27,115</td>
 	
 					<td class="table-cell" style="width: 32%;">
 	0.35%</td>
@@ -1458,7 +1460,7 @@
 	Mongoose SU-5</td>
 	
 					<td class="table-cell" style="width: 15%;">
-	27,442</td>
+	27,456</td>
 	
 					<td class="table-cell" style="width: 32%;">
 	0.36%</td>
@@ -1476,7 +1478,7 @@
 	Liberty '68 Roadtripper</td>
 	
 					<td class="table-cell" style="width: 15%;">
-	27,696</td>
+	27,698</td>
 	
 					<td class="table-cell" style="width: 32%;">
 	0.36%</td>
@@ -1494,7 +1496,7 @@
 	Stingtec Wells GT</td>
 	
 					<td class="table-cell" style="width: 15%;">
-	28,206</td>
+	28,205</td>
 	
 					<td class="table-cell" style="width: 32%;">
 	0.37%</td>
@@ -1512,7 +1514,7 @@
 	Wambulance</td>
 	
 					<td class="table-cell" style="width: 15%;">
-	28,299</td>
+	28,323</td>
 	
 					<td class="table-cell" style="width: 32%;">
 	0.37%</td>
@@ -1530,7 +1532,7 @@
 	Buddy's Snowmorocket</td>
 	
 					<td class="table-cell" style="width: 15%;">
-	28,360</td>
+	28,359</td>
 	
 					<td class="table-cell" style="width: 32%;">
 	0.37%</td>
@@ -1548,7 +1550,7 @@
 	Winson Track'd</td>
 	
 					<td class="table-cell" style="width: 15%;">
-	29,136</td>
+	29,137</td>
 	
 					<td class="table-cell" style="width: 32%;">
 	0.38%</td>
@@ -1566,7 +1568,7 @@
 	Nitreux Vyrus LR</td>
 	
 					<td class="table-cell" style="width: 15%;">
-	29,632</td>
+	29,633</td>
 	
 					<td class="table-cell" style="width: 32%;">
 	0.39%</td>
@@ -1602,7 +1604,7 @@
 	Fully Leaded</td>
 	
 					<td class="table-cell" style="width: 15%;">
-	30,698</td>
+	30,701</td>
 	
 					<td class="table-cell" style="width: 32%;">
 	0.4%</td>
@@ -1638,7 +1640,7 @@
 	Typiano Delivery Van</td>
 	
 					<td class="table-cell" style="width: 15%;">
-	31,681</td>
+	31,684</td>
 	
 					<td class="table-cell" style="width: 32%;">
 	0.41%</td>
@@ -1656,7 +1658,7 @@
 	Winson Dark Elf</td>
 	
 					<td class="table-cell" style="width: 15%;">
-	33,712</td>
+	34,092</td>
 	
 					<td class="table-cell" style="width: 32%;">
 	0.44%</td>
@@ -1674,7 +1676,7 @@
 	Winson Gator Ayd</td>
 	
 					<td class="table-cell" style="width: 15%;">
-	34,625</td>
+	34,657</td>
 	
 					<td class="table-cell" style="width: 32%;">
 	0.45%</td>
@@ -1692,7 +1694,7 @@
 	Liberty Redux</td>
 	
 					<td class="table-cell" style="width: 15%;">
-	35,395</td>
+	35,396</td>
 	
 					<td class="table-cell" style="width: 32%;">
 	0.46%</td>
@@ -1728,7 +1730,7 @@
 	Shimura Jolly RS</td>
 	
 					<td class="table-cell" style="width: 15%;">
-	35,953</td>
+	35,955</td>
 	
 					<td class="table-cell" style="width: 32%;">
 	0.47%</td>
@@ -1776,13 +1778,13 @@
 	193</td>
 	
 					<td class="table-cell" style="width: 12%;"><img class="car-img" src="/static/images/cars/
-	290.webp"/></td>
+	165.webp"/></td>
 	
 					<td class="table-cell" style="width: 32%;">
-	Bobby Ricky #3</td>
+	The Overachiever</td>
 	
 					<td class="table-cell" style="width: 15%;">
-	36,451</td>
+	36,484</td>
 	
 					<td class="table-cell" style="width: 32%;">
 	0.47%</td>
@@ -1794,16 +1796,16 @@
 	194</td>
 	
 					<td class="table-cell" style="width: 12%;"><img class="car-img" src="/static/images/cars/
-	165.webp"/></td>
+	290.webp"/></td>
 	
 					<td class="table-cell" style="width: 32%;">
-	The Overachiever</td>
+	Bobby Ricky #3</td>
 	
 					<td class="table-cell" style="width: 15%;">
-	36,484</td>
+	36,550</td>
 	
 					<td class="table-cell" style="width: 32%;">
-	0.47%</td>
+	0.48%</td>
 	
 				</tr>
 	
@@ -1818,7 +1820,7 @@
 	Matchbox</td>
 	
 					<td class="table-cell" style="width: 15%;">
-	36,763</td>
+	36,766</td>
 	
 					<td class="table-cell" style="width: 32%;">
 	0.48%</td>
@@ -1836,7 +1838,7 @@
 	Corsa Vengeance</td>
 	
 					<td class="table-cell" style="width: 15%;">
-	36,959</td>
+	36,964</td>
 	
 					<td class="table-cell" style="width: 32%;">
 	0.48%</td>
@@ -1854,7 +1856,7 @@
 	B.O.A.T.</td>
 	
 					<td class="table-cell" style="width: 15%;">
-	38,165</td>
+	38,169</td>
 	
 					<td class="table-cell" style="width: 32%;">
 	0.5%</td>
@@ -1890,7 +1892,7 @@
 	Lit Locomotive</td>
 	
 					<td class="table-cell" style="width: 15%;">
-	38,942</td>
+	38,993</td>
 	
 					<td class="table-cell" style="width: 32%;">
 	0.51%</td>

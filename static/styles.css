@@ -387,6 +387,22 @@ body {
 	text-align: center;
 }
 
+.trail-img {
+	max-width: 80%;
+	max-height: 80px;
+	height: auto;
+	display: block;
+	text-align: center;
+}
+
+.nametag-img {
+	max-width: 80%;
+	max-height: 80px;
+	height: auto;
+	display: block;
+	text-align: center;
+}
+
 .league-icon {
 	width: 45px;
 	height: 45px;
@@ -1341,7 +1357,7 @@ label[for="dropdown-high-speed"] {
 }
 
 .dropdown-select-rarest-loot {
-	padding-right: 60px;
+	padding-right: 70px;
 }
 
 .dropdown-select-donations {

@@ -110,14 +110,14 @@
 						}
 					}
 					const lbTypeSlider = document.getElementById("leaderboard-type-slider");
-					if (tabName == 'more_info' || tabName == 'site_stats' || tabName.startsWith('rarest_')) {
+					if (tabName == 'more_info' || tabName.startsWith('site_stats') || tabName.startsWith('rarest_')) {
 						lbTypeSlider.style.display = "none";
 					} else {
 						lbTypeSlider.style.display = "flex";
 					}
 					if (tabName == 'more_info') {
 						curTabPage = 'more_info';
-					} else if (tabName == 'site_stats') {
+					} else if (tabName.startsWith('site_stats')) {
 						curTabPage = 'site_stats';
 					} else if (tabName.startsWith('rarest_')) {
 						curTabPage = 'rarest_loot';
@@ -770,8 +770,8 @@
 			container.style.display = "block";
 		}
 
-		function openSiteStatsPage(speedZonesAll, speedZonesActive, speedZonesGold) {
-			changeTab('site_stats');
+		function openSiteStatsFurtherAnalysis(speedZonesAll, speedZonesActive, speedZonesGold) {
+			changeTab('site_stats_further_analysis');
 			var zoneLabels = [
 				'1-10 wpm ', '11-20 wpm ', '21-25 wpm ', '26-30 wpm ', '31-35 wpm ', '36-40 wpm ', 
 				'41-45 wpm ', '46-50 wpm ', '51-55 wpm ', '56-60 wpm ', '61-65 wpm ', '66-70 wpm ', 

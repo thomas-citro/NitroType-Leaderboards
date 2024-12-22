@@ -58,7 +58,7 @@
 				</div>
 			</button>
 	
-			<button class="tab not-active" onclick="openSiteStatsPage([305377, 1459259, 942870, 863240, 704545, 539690, 403186, 302123, 228265, 170200, 126910, 96260, 124670, 68121, 36695, 19067, 10804, 51395, 31956, 2611, 2482], [1430, 27802, 32379, 39725, 41707, 37857, 32516, 26760, 21949, 17198, 13324, 10390, 14123, 8071, 4512, 2409, 1080, 852, 342, 875, 79], [85, 1417, 1857, 2390, 2743, 2582, 2442, 2175, 2152, 2016, 1747, 1607, 2780, 2159, 1668, 1113, 664, 636, 168, 133, 43])">
+			<button class="tab not-active" onclick="changeTab('site_stats_general')">
 				<div class="icon-text-container">
 					<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" id="icon-chart" width="18" height="18" fill="white">
 						<path d="M7 19H1V8h6v11zm8-18H9v18h6V1zm8 11h-6v7h6v-7zm1 9H0v2h24v-2z" />
@@ -85,12 +85,10 @@
 			<form>
 				<div class="dropdown" onchange="handleDropdownChange()">
 					<select class="dropdown-select dropdown-select-rarest-loot">
-						<option value="rarest_cars">Rarest Cars Owned</option>
-						<option value="rarest_titles" selected>Rarest Titles Equipped</option>
+						<option value="rarest_cars">Rarest Cars Owned</option><option value="rarest_titles" selected>Rarest Titles Equipped</option><option value="rarest_trails">Rarest Trails Equipped</option><option value="rarest_nametags">Rarest Nametags Equipped</option>
 					</select>
 				</div>
 			</form>
-	
 		</div>
 	
 		<table class="table">
@@ -114,7 +112,7 @@
 	<a class="rarest-title" href="https://nitro.fandom.com/wiki/Elfie_(Title)" target="_blank">"#elfie"</a></td>
 	
 					<td class="table-cell" style="width: 30%;">
-	1,956</td>
+	2,035</td>
 	
 				</tr>
 	
@@ -126,7 +124,7 @@
 	<a class="rarest-title" href="https://nitro.fandom.com/wiki/Yeah,_Buoy!" target="_blank">"Yeah, Buoy!"</a></td>
 	
 					<td class="table-cell" style="width: 30%;">
-	2,041</td>
+	2,042</td>
 	
 				</tr>
 	
@@ -138,7 +136,7 @@
 	<a class="rarest-title" href="https://nitro.fandom.com/wiki/Where%27s_the_remote%3F" target="_blank">"Where's the remote?"</a></td>
 	
 					<td class="table-cell" style="width: 30%;">
-	2,053</td>
+	2,051</td>
 	
 				</tr>
 	
@@ -150,7 +148,7 @@
 	<a class="rarest-title" href="https://nitro.fandom.com/wiki/Sorcerer_of_Speed" target="_blank">"Sorcerer of Speed"</a></td>
 	
 					<td class="table-cell" style="width: 30%;">
-	2,055</td>
+	2,052</td>
 	
 				</tr>
 	
@@ -162,7 +160,7 @@
 	<a class="rarest-title" href="https://nitro.fandom.com/wiki/Pumpkin_Peddler" target="_blank">"Pumpkin Peddler"</a></td>
 	
 					<td class="table-cell" style="width: 30%;">
-	2,065</td>
+	2,063</td>
 	
 				</tr>
 	
@@ -174,7 +172,7 @@
 	<a class="rarest-title" href="https://nitro.fandom.com/wiki/Happy_Vibes_:)" target="_blank">"Happy Vibes :)"</a></td>
 	
 					<td class="table-cell" style="width: 30%;">
-	2,097</td>
+	2,098</td>
 	
 				</tr>
 	
@@ -186,7 +184,7 @@
 	<a class="rarest-title" href="https://nitro.fandom.com/wiki/Ghoul%27s_Gold" target="_blank">"Ghoul's Gold"</a></td>
 	
 					<td class="table-cell" style="width: 30%;">
-	2,101</td>
+	2,103</td>
 	
 				</tr>
 	
@@ -195,10 +193,10 @@
 	408</td>
 	
 					<td class="table-cell" style="width: 61%;">
-	<a class="rarest-title" href="https://nitro.fandom.com/wiki/Spring_into_Speed" target="_blank">"Spring into Speed"</a></td>
+	<a class="rarest-title" href="https://nitro.fandom.com/wiki/Gear_Grinder" target="_blank">"Gear Grinder"</a></td>
 	
 					<td class="table-cell" style="width: 30%;">
-	2,158</td>
+	2,152</td>
 	
 				</tr>
 	
@@ -207,10 +205,10 @@
 	409</td>
 	
 					<td class="table-cell" style="width: 61%;">
-	<a class="rarest-title" href="https://nitro.fandom.com/wiki/Gear_Grinder" target="_blank">"Gear Grinder"</a></td>
+	<a class="rarest-title" href="https://nitro.fandom.com/wiki/Spring_into_Speed" target="_blank">"Spring into Speed"</a></td>
 	
 					<td class="table-cell" style="width: 30%;">
-	2,169</td>
+	2,157</td>
 	
 				</tr>
 	
@@ -222,7 +220,7 @@
 	<a class="rarest-title" href="https://nitro.fandom.com/wiki/Mechanic" target="_blank">"Mechanic"</a></td>
 	
 					<td class="table-cell" style="width: 30%;">
-	2,194</td>
+	2,176</td>
 	
 				</tr>
 	
@@ -234,7 +232,7 @@
 	<a class="rarest-title" href="https://nitro.fandom.com/wiki/Secret_Admirer" target="_blank">"Secret Admirer"</a></td>
 	
 					<td class="table-cell" style="width: 30%;">
-	2,213</td>
+	2,209</td>
 	
 				</tr>
 	
@@ -246,7 +244,7 @@
 	<a class="rarest-title" href="https://nitro.fandom.com/wiki/2024_Grad" target="_blank">"2024 Grad"</a></td>
 	
 					<td class="table-cell" style="width: 30%;">
-	2,288</td>
+	2,273</td>
 	
 				</tr>
 	
@@ -258,7 +256,7 @@
 	<a class="rarest-title" href="https://nitro.fandom.com/wiki/God_Mode" target="_blank">"God Mode"</a></td>
 	
 					<td class="table-cell" style="width: 30%;">
-	2,321</td>
+	2,322</td>
 	
 				</tr>
 	
@@ -270,7 +268,7 @@
 	<a class="rarest-title" href="https://nitro.fandom.com/wiki/Hydraulic_Hero" target="_blank">"Hydraulic Hero"</a></td>
 	
 					<td class="table-cell" style="width: 30%;">
-	2,373</td>
+	2,362</td>
 	
 				</tr>
 	
@@ -282,7 +280,7 @@
 	<a class="rarest-title" href="https://nitro.fandom.com/wiki/Extraterrestrial" target="_blank">"Extraterrestrial"</a></td>
 	
 					<td class="table-cell" style="width: 30%;">
-	2,383</td>
+	2,381</td>
 	
 				</tr>
 	
@@ -294,7 +292,7 @@
 	<a class="rarest-title" href="https://nitro.fandom.com/wiki/Shanty_Life_4_Me" target="_blank">"Shanty Life 4 Me"</a></td>
 	
 					<td class="table-cell" style="width: 30%;">
-	2,414</td>
+	2,407</td>
 	
 				</tr>
 	
@@ -306,7 +304,7 @@
 	<a class="rarest-title" href="https://nitro.fandom.com/wiki/California_Dreamin%27" target="_blank">"California Dreamin'"</a></td>
 	
 					<td class="table-cell" style="width: 30%;">
-	2,431</td>
+	2,428</td>
 	
 				</tr>
 	
@@ -327,10 +325,10 @@
 	419</td>
 	
 					<td class="table-cell" style="width: 61%;">
-	<a class="rarest-title" href="https://nitro.fandom.com/wiki/I_Love_Frogs" target="_blank">"I Love Frogs"</a></td>
+	<a class="rarest-title" href="https://nitro.fandom.com/wiki/Let%27s_Gooooo!" target="_blank">"Let's Gooooo!"</a></td>
 	
 					<td class="table-cell" style="width: 30%;">
-	2,466</td>
+	2,520</td>
 	
 				</tr>
 	
@@ -339,10 +337,10 @@
 	420</td>
 	
 					<td class="table-cell" style="width: 61%;">
-	<a class="rarest-title" href="https://nitro.fandom.com/wiki/Let%27s_Gooooo!" target="_blank">"Let's Gooooo!"</a></td>
+	<a class="rarest-title" href="https://nitro.fandom.com/wiki/I_Love_Frogs" target="_blank">"I Love Frogs"</a></td>
 	
 					<td class="table-cell" style="width: 30%;">
-	2,526</td>
+	2,540</td>
 	
 				</tr>
 	
@@ -354,7 +352,7 @@
 	<a class="rarest-title" href="https://nitro.fandom.com/wiki/Insert_Title_Here" target="_blank">"Insert Title Here"</a></td>
 	
 					<td class="table-cell" style="width: 30%;">
-	2,556</td>
+	2,553</td>
 	
 				</tr>
 	
@@ -366,7 +364,7 @@
 	<a class="rarest-title" href="https://nitro.fandom.com/wiki/Clutch_Typer" target="_blank">"Clutch Typer"</a></td>
 	
 					<td class="table-cell" style="width: 30%;">
-	2,572</td>
+	2,567</td>
 	
 				</tr>
 	
@@ -378,7 +376,7 @@
 	<a class="rarest-title" href="https://nitro.fandom.com/wiki/Scallywag" target="_blank">"Scallywag"</a></td>
 	
 					<td class="table-cell" style="width: 30%;">
-	2,591</td>
+	2,587</td>
 	
 				</tr>
 	
@@ -390,7 +388,7 @@
 	<a class="rarest-title" href="https://nitro.fandom.com/wiki/Vroooom%3F" target="_blank">"Vroooom?"</a></td>
 	
 					<td class="table-cell" style="width: 30%;">
-	2,742</td>
+	2,731</td>
 	
 				</tr>
 	
@@ -402,7 +400,7 @@
 	<a class="rarest-title" href="https://nitro.fandom.com/wiki/Keyboard_Smasher" target="_blank">"Keyboard Smasher"</a></td>
 	
 					<td class="table-cell" style="width: 30%;">
-	2,791</td>
+	2,879</td>
 	
 				</tr>
 	
@@ -414,7 +412,7 @@
 	<a class="rarest-title" href="https://nitro.fandom.com/wiki/Ghost_Getter" target="_blank">"Ghost Getter"</a></td>
 	
 					<td class="table-cell" style="width: 30%;">
-	2,911</td>
+	2,909</td>
 	
 				</tr>
 	
@@ -426,7 +424,7 @@
 	<a class="rarest-title" href="https://nitro.fandom.com/wiki/Expert_Extraordinaire" target="_blank">"Expert Extraordinaire"</a></td>
 	
 					<td class="table-cell" style="width: 30%;">
-	2,911</td>
+	2,947</td>
 	
 				</tr>
 	
@@ -438,7 +436,7 @@
 	<a class="rarest-title" href="https://nitro.fandom.com/wiki/Ninja" target="_blank">"Ninja"</a></td>
 	
 					<td class="table-cell" style="width: 30%;">
-	3,009</td>
+	3,005</td>
 	
 				</tr>
 	
@@ -462,7 +460,7 @@
 	<a class="rarest-title" href="https://nitro.fandom.com/wiki/Dragon_Tamer" target="_blank">"Dragon Tamer"</a></td>
 	
 					<td class="table-cell" style="width: 30%;">
-	3,029</td>
+	3,026</td>
 	
 				</tr>
 	
@@ -474,7 +472,7 @@
 	<a class="rarest-title" href="https://nitro.fandom.com/wiki/Loco_Motive_(Title)" target="_blank">"Loco Motive"</a></td>
 	
 					<td class="table-cell" style="width: 30%;">
-	3,122</td>
+	3,104</td>
 	
 				</tr>
 	
@@ -486,7 +484,7 @@
 	<a class="rarest-title" href="https://nitro.fandom.com/wiki/Nitro_Rich" target="_blank">"Nitro Rich"</a></td>
 	
 					<td class="table-cell" style="width: 30%;">
-	3,238</td>
+	3,241</td>
 	
 				</tr>
 	
@@ -495,10 +493,10 @@
 	433</td>
 	
 					<td class="table-cell" style="width: 61%;">
-	<a class="rarest-title" href="https://nitro.fandom.com/wiki/Yo" target="_blank">"Yo"</a></td>
+	<a class="rarest-title" href="https://nitro.fandom.com/wiki/Drift_King" target="_blank">"Drift King"</a></td>
 	
 					<td class="table-cell" style="width: 30%;">
-	3,315</td>
+	3,307</td>
 	
 				</tr>
 	
@@ -507,10 +505,10 @@
 	434</td>
 	
 					<td class="table-cell" style="width: 61%;">
-	<a class="rarest-title" href="https://nitro.fandom.com/wiki/Drift_King" target="_blank">"Drift King"</a></td>
+	<a class="rarest-title" href="https://nitro.fandom.com/wiki/Yo" target="_blank">"Yo"</a></td>
 	
 					<td class="table-cell" style="width: 30%;">
-	3,315</td>
+	3,318</td>
 	
 				</tr>
 	
@@ -534,7 +532,7 @@
 	<a class="rarest-title" href="https://nitro.fandom.com/wiki/Wampus%27_Little_Helper" target="_blank">"Wampus' Little Helper"</a></td>
 	
 					<td class="table-cell" style="width: 30%;">
-	3,725</td>
+	3,727</td>
 	
 				</tr>
 	
@@ -558,7 +556,7 @@
 	<a class="rarest-title" href="https://nitro.fandom.com/wiki/Oops!_(Title)" target="_blank">"Oops!"</a></td>
 	
 					<td class="table-cell" style="width: 30%;">
-	3,829</td>
+	3,823</td>
 	
 				</tr>
 	
@@ -582,7 +580,7 @@
 	<a class="rarest-title" href="https://nitro.fandom.com/wiki/May_The_4th_Be_With_You" target="_blank">"May The 4th Be With You"</a></td>
 	
 					<td class="table-cell" style="width: 30%;">
-	4,215</td>
+	4,217</td>
 	
 				</tr>
 	
@@ -594,7 +592,7 @@
 	<a class="rarest-title" href="https://nitro.fandom.com/wiki/Unda_da_Sea" target="_blank">"Unda da Sea"</a></td>
 	
 					<td class="table-cell" style="width: 30%;">
-	4,273</td>
+	4,271</td>
 	
 				</tr>
 	
@@ -606,7 +604,7 @@
 	<a class="rarest-title" href="https://nitro.fandom.com/wiki/Not_a_Bot" target="_blank">"Not a Bot"</a></td>
 	
 					<td class="table-cell" style="width: 30%;">
-	4,543</td>
+	4,545</td>
 	
 				</tr>
 	
@@ -618,7 +616,7 @@
 	<a class="rarest-title" href="https://nitro.fandom.com/wiki/Taco_Lover" target="_blank">"Taco Lover"</a></td>
 	
 					<td class="table-cell" style="width: 30%;">
-	4,590</td>
+	4,591</td>
 	
 				</tr>
 	
@@ -630,7 +628,7 @@
 	<a class="rarest-title" href="https://nitro.fandom.com/wiki/Eggstra_Speedy" target="_blank">"Eggstra Speedy"</a></td>
 	
 					<td class="table-cell" style="width: 30%;">
-	4,983</td>
+	4,979</td>
 	
 				</tr>
 	
@@ -654,7 +652,7 @@
 	<a class="rarest-title" href="https://nitro.fandom.com/wiki/Speed_Demon" target="_blank">"Speed Demon"</a></td>
 	
 					<td class="table-cell" style="width: 30%;">
-	5,144</td>
+	5,320</td>
 	
 				</tr>
 	
@@ -666,7 +664,7 @@
 	<a class="rarest-title" href="https://nitro.fandom.com/wiki/Celebrity" target="_blank">"Celebrity"</a></td>
 	
 					<td class="table-cell" style="width: 30%;">
-	5,542</td>
+	5,543</td>
 	
 				</tr>
 	
@@ -678,7 +676,7 @@
 	<a class="rarest-title" href="https://nitro.fandom.com/wiki/RIP" target="_blank">"RIP"</a></td>
 	
 					<td class="table-cell" style="width: 30%;">
-	5,669</td>
+	5,661</td>
 	
 				</tr>
 	
@@ -690,7 +688,7 @@
 	<a class="rarest-title" href="https://nitro.fandom.com/wiki/Box_Collector" target="_blank">"Box Collector"</a></td>
 	
 					<td class="table-cell" style="width: 30%;">
-	5,805</td>
+	5,806</td>
 	
 				</tr>
 	
@@ -699,10 +697,10 @@
 	450</td>
 	
 					<td class="table-cell" style="width: 61%;">
-	<a class="rarest-title" href="https://nitro.fandom.com/wiki/Ace_Accelerator" target="_blank">"Ace Accelerator"</a></td>
+	<a class="rarest-title" href="https://nitro.fandom.com/wiki/NITRO.EXE" target="_blank">"NITRO.EXE"</a></td>
 	
 					<td class="table-cell" style="width: 30%;">
-	6,189</td>
+	6,269</td>
 	
 				</tr>
 	
@@ -711,10 +709,10 @@
 	451</td>
 	
 					<td class="table-cell" style="width: 61%;">
-	<a class="rarest-title" href="https://nitro.fandom.com/wiki/NITRO.EXE" target="_blank">"NITRO.EXE"</a></td>
+	<a class="rarest-title" href="https://nitro.fandom.com/wiki/Ace_Accelerator" target="_blank">"Ace Accelerator"</a></td>
 	
 					<td class="table-cell" style="width: 30%;">
-	6,274</td>
+	6,275</td>
 	
 				</tr>
 	
@@ -726,7 +724,7 @@
 	<a class="rarest-title" href="https://nitro.fandom.com/wiki/Potaytoes" target="_blank">"Potaytoes"</a></td>
 	
 					<td class="table-cell" style="width: 30%;">
-	6,485</td>
+	6,487</td>
 	
 				</tr>
 	
@@ -738,7 +736,7 @@
 	<a class="rarest-title" href="https://nitro.fandom.com/wiki/A_E_S_T_H_E_T_I_C" target="_blank">"A E S T H E T I C"</a></td>
 	
 					<td class="table-cell" style="width: 30%;">
-	6,598</td>
+	6,570</td>
 	
 				</tr>
 	
@@ -750,7 +748,7 @@
 	<a class="rarest-title" href="https://nitro.fandom.com/wiki/I_Love_Cats" target="_blank">"I Love Cats"</a></td>
 	
 					<td class="table-cell" style="width: 30%;">
-	6,687</td>
+	6,686</td>
 	
 				</tr>
 	
@@ -762,7 +760,7 @@
 	<a class="rarest-title" href="https://nitro.fandom.com/wiki/Super_Sport_Driver" target="_blank">"Super Sport Driver"</a></td>
 	
 					<td class="table-cell" style="width: 30%;">
-	6,764</td>
+	6,765</td>
 	
 				</tr>
 	
@@ -774,7 +772,7 @@
 	<a class="rarest-title" href="https://nitro.fandom.com/wiki/Nitro_Burnout_(Title)" target="_blank">"Nitro Burnout"</a></td>
 	
 					<td class="table-cell" style="width: 30%;">
-	7,203</td>
+	7,170</td>
 	
 				</tr>
 	
@@ -786,7 +784,7 @@
 	<a class="rarest-title" href="https://nitro.fandom.com/wiki/Phantom_Fingers" target="_blank">"Phantom Fingers"</a></td>
 	
 					<td class="table-cell" style="width: 30%;">
-	7,498</td>
+	7,495</td>
 	
 				</tr>
 	
@@ -798,7 +796,7 @@
 	<a class="rarest-title" href="https://nitro.fandom.com/wiki/NitroFurze_(Title)" target="_blank">"#NitroFurze"</a></td>
 	
 					<td class="table-cell" style="width: 30%;">
-	8,531</td>
+	8,534</td>
 	
 				</tr>
 	
@@ -810,7 +808,7 @@
 	<a class="rarest-title" href="https://nitro.fandom.com/wiki/Endurance_Racer_(Title)" target="_blank">"Endurance Racer"</a></td>
 	
 					<td class="table-cell" style="width: 30%;">
-	8,874</td>
+	8,879</td>
 	
 				</tr>
 	
@@ -822,7 +820,7 @@
 	<a class="rarest-title" href="https://nitro.fandom.com/wiki/Motorcycle_Rider" target="_blank">"Motorcycle Rider"</a></td>
 	
 					<td class="table-cell" style="width: 30%;">
-	8,974</td>
+	8,975</td>
 	
 				</tr>
 	
@@ -834,7 +832,7 @@
 	<a class="rarest-title" href="https://nitro.fandom.com/wiki/I_Love_Dogs" target="_blank">"I Love Dogs"</a></td>
 	
 					<td class="table-cell" style="width: 30%;">
-	8,983</td>
+	8,977</td>
 	
 				</tr>
 	
@@ -858,7 +856,7 @@
 	<a class="rarest-title" href="https://nitro.fandom.com/wiki/Ultimate_Racer" target="_blank">"Ultimate Racer"</a></td>
 	
 					<td class="table-cell" style="width: 30%;">
-	9,438</td>
+	9,437</td>
 	
 				</tr>
 	
@@ -882,7 +880,7 @@
 	<a class="rarest-title" href="https://nitro.fandom.com/wiki/Epic_Nitro_User" target="_blank">"Epic Nitro User"</a></td>
 	
 					<td class="table-cell" style="width: 30%;">
-	11,585</td>
+	11,577</td>
 	
 				</tr>
 	
@@ -894,7 +892,7 @@
 	<a class="rarest-title" href="https://nitro.fandom.com/wiki/D" target="_blank">":D"</a></td>
 	
 					<td class="table-cell" style="width: 30%;">
-	11,778</td>
+	11,768</td>
 	
 				</tr>
 	
@@ -930,7 +928,7 @@
 	<a class="rarest-title" href="https://nitro.fandom.com/wiki/Comeback_Kid" target="_blank">"Comeback Kid"</a></td>
 	
 					<td class="table-cell" style="width: 30%;">
-	13,819</td>
+	13,817</td>
 	
 				</tr>
 	
@@ -942,7 +940,7 @@
 	<a class="rarest-title" href="https://nitro.fandom.com/wiki/Lucky_Number_7_(Title)" target="_blank">"Lucky Number 7"</a></td>
 	
 					<td class="table-cell" style="width: 30%;">
-	14,838</td>
+	14,937</td>
 	
 				</tr>
 	
@@ -954,7 +952,7 @@
 	<a class="rarest-title" href="https://nitro.fandom.com/wiki/Rookie_Racer" target="_blank">"Rookie Racer"</a></td>
 	
 					<td class="table-cell" style="width: 30%;">
-	15,184</td>
+	15,246</td>
 	
 				</tr>
 	
@@ -966,7 +964,7 @@
 	<a class="rarest-title" href="https://nitro.fandom.com/wiki/Pro_Pacer" target="_blank">"Pro Pacer"</a></td>
 	
 					<td class="table-cell" style="width: 30%;">
-	15,399</td>
+	15,432</td>
 	
 				</tr>
 	
@@ -990,7 +988,7 @@
 	<a class="rarest-title" href="https://nitro.fandom.com/wiki/Used_Car_Salesman_(Title)" target="_blank">"Used Car Salesman"</a></td>
 	
 					<td class="table-cell" style="width: 30%;">
-	17,884</td>
+	17,886</td>
 	
 				</tr>
 	
@@ -1002,7 +1000,7 @@
 	<a class="rarest-title" href="https://nitro.fandom.com/wiki/Truck_Driver_(Title)" target="_blank">"Truck Driver"</a></td>
 	
 					<td class="table-cell" style="width: 30%;">
-	18,192</td>
+	18,191</td>
 	
 				</tr>
 	
@@ -1026,7 +1024,7 @@
 	<a class="rarest-title" href="https://nitro.fandom.com/wiki/Luxury_Car_Driver_(Title)" target="_blank">"Luxury Car Driver"</a></td>
 	
 					<td class="table-cell" style="width: 30%;">
-	19,401</td>
+	19,402</td>
 	
 				</tr>
 	
@@ -1038,7 +1036,7 @@
 	<a class="rarest-title" href="https://nitro.fandom.com/wiki/Mega_Winner" target="_blank">"Mega Winner"</a></td>
 	
 					<td class="table-cell" style="width: 30%;">
-	26,364</td>
+	26,363</td>
 	
 				</tr>
 	
@@ -1050,7 +1048,7 @@
 	<a class="rarest-title" href="https://nitro.fandom.com/wiki/Epic_Word_Skippage_(Title)" target="_blank">"Epic Word Skippage"</a></td>
 	
 					<td class="table-cell" style="width: 30%;">
-	28,111</td>
+	28,130</td>
 	
 				</tr>
 	
@@ -1062,7 +1060,7 @@
 	<a class="rarest-title" href="https://nitro.fandom.com/wiki/Novice_Navigator" target="_blank">"Novice Navigator"</a></td>
 	
 					<td class="table-cell" style="width: 30%;">
-	31,600</td>
+	31,626</td>
 	
 				</tr>
 	
@@ -1074,7 +1072,7 @@
 	<a class="rarest-title" href="https://nitro.fandom.com/wiki/In_the_Spirit_(Title)" target="_blank">"In the Spirit"</a></td>
 	
 					<td class="table-cell" style="width: 30%;">
-	32,022</td>
+	32,024</td>
 	
 				</tr>
 	
@@ -1086,7 +1084,7 @@
 	<a class="rarest-title" href="https://nitro.fandom.com/wiki/Sports_Car_Driver_(Title)" target="_blank">"Sports Car Driver"</a></td>
 	
 					<td class="table-cell" style="width: 30%;">
-	40,192</td>
+	40,191</td>
 	
 				</tr>
 	
@@ -1098,7 +1096,7 @@
 	<a class="rarest-title" href="https://nitro.fandom.com/wiki/I_Love_Nitros" target="_blank">"I Love Nitros"</a></td>
 	
 					<td class="table-cell" style="width: 30%;">
-	41,274</td>
+	41,303</td>
 	
 				</tr>
 	
@@ -1110,7 +1108,7 @@
 	<a class="rarest-title" href="https://nitro.fandom.com/wiki/Catty_Wampus_(Title)" target="_blank">"Catty Wampus"</a></td>
 	
 					<td class="table-cell" style="width: 30%;">
-	43,943</td>
+	43,958</td>
 	
 				</tr>
 	
@@ -1122,7 +1120,7 @@
 	<a class="rarest-title" href="https://nitro.fandom.com/wiki/Learner_Leader" target="_blank">"Learner Leader"</a></td>
 	
 					<td class="table-cell" style="width: 30%;">
-	49,169</td>
+	49,208</td>
 	
 				</tr>
 	
@@ -1134,7 +1132,7 @@
 	<a class="rarest-title" href="https://nitro.fandom.com/wiki/The_Mad_Hatter" target="_blank">"The Mad Hatter"</a></td>
 	
 					<td class="table-cell" style="width: 30%;">
-	61,969</td>
+	61,967</td>
 	
 				</tr>
 	
@@ -1146,7 +1144,7 @@
 	<a class="rarest-title" href="https://nitro.fandom.com/wiki/Muscle_Car_Driver_(Title)" target="_blank">"Muscle Car Driver"</a></td>
 	
 					<td class="table-cell" style="width: 30%;">
-	64,882</td>
+	64,884</td>
 	
 				</tr>
 	
@@ -1158,7 +1156,7 @@
 	<a class="rarest-title" href="https://nitro.fandom.com/wiki/Crazy_About_Typing" target="_blank">"Crazy About Typing"</a></td>
 	
 					<td class="table-cell" style="width: 30%;">
-	88,100</td>
+	88,144</td>
 	
 				</tr>
 	
@@ -1170,7 +1168,7 @@
 	<a class="rarest-title" href="https://nitro.fandom.com/wiki/First_Trimester" target="_blank">"First Trimester"</a></td>
 	
 					<td class="table-cell" style="width: 30%;">
-	94,487</td>
+	94,565</td>
 	
 				</tr>
 	
@@ -1182,7 +1180,7 @@
 	<a class="rarest-title" href="https://nitro.fandom.com/wiki/SKIPWRD_(Title)" target="_blank">"[SKIPWRD]"</a></td>
 	
 					<td class="table-cell" style="width: 30%;">
-	98,199</td>
+	98,196</td>
 	
 				</tr>
 	
@@ -1194,7 +1192,7 @@
 	<a class="rarest-title" href="https://nitro.fandom.com/wiki/Mystery_Man" target="_blank">"Mystery Man"</a></td>
 	
 					<td class="table-cell" style="width: 30%;">
-	109,150</td>
+	109,177</td>
 	
 				</tr>
 	
@@ -1206,7 +1204,7 @@
 	<a class="rarest-title" href="https://nitro.fandom.com/wiki/I_Hate_Words" target="_blank">"I Hate Words"</a></td>
 	
 					<td class="table-cell" style="width: 30%;">
-	115,638</td>
+	115,708</td>
 	
 				</tr>
 	
@@ -1218,7 +1216,7 @@
 	<a class="rarest-title" href="https://nitro.fandom.com/wiki/Big_Spender_(Title)" target="_blank">"Big Spender"</a></td>
 	
 					<td class="table-cell" style="width: 30%;">
-	176,505</td>
+	176,532</td>
 	
 				</tr>
 	
@@ -1230,7 +1228,7 @@
 	<a class="rarest-title" href="https://nitro.fandom.com/wiki/Olde_School" target="_blank">"Olde School"</a></td>
 	
 					<td class="table-cell" style="width: 30%;">
-	183,475</td>
+	183,595</td>
 	
 				</tr>
 	
@@ -1242,7 +1240,7 @@
 	<a class="rarest-title" href="https://nitro.fandom.com/wiki/Word_Skipper" target="_blank">"Word Skipper"</a></td>
 	
 					<td class="table-cell" style="width: 30%;">
-	188,720</td>
+	188,783</td>
 	
 				</tr>
 	
@@ -1254,7 +1252,7 @@
 	<a class="rarest-title" href="https://nitro.fandom.com/wiki/Filthy_Rich" target="_blank">"Filthy Rich"</a></td>
 	
 					<td class="table-cell" style="width: 30%;">
-	190,738</td>
+	190,802</td>
 	
 				</tr>
 	
@@ -1266,7 +1264,7 @@
 	<a class="rarest-title" href="https://nitro.fandom.com/wiki/Wampus_Thwamper_(Title)" target="_blank">"Wampus Thwamper"</a></td>
 	
 					<td class="table-cell" style="width: 30%;">
-	192,909</td>
+	192,998</td>
 	
 				</tr>
 	
@@ -1278,7 +1276,7 @@
 	<a class="rarest-title" href="https://nitro.fandom.com/wiki/The_ATM_Machine" target="_blank">"The ATM Machine"</a></td>
 	
 					<td class="table-cell" style="width: 30%;">
-	234,583</td>
+	234,684</td>
 	
 				</tr>
 	
@@ -1290,7 +1288,7 @@
 	<a class="rarest-title" href="https://nitro.fandom.com/wiki/Millionaire" target="_blank">"Millionaire"</a></td>
 	
 					<td class="table-cell" style="width: 30%;">
-	254,225</td>
+	254,364</td>
 	
 				</tr>
 	
@@ -1302,7 +1300,7 @@
 	<a class="rarest-title" href="https://nitro.fandom.com/wiki/Original_Gangster" target="_blank">"Original Gangster"</a></td>
 	
 					<td class="table-cell" style="width: 30%;">
-	333,390</td>
+	333,517</td>
 	
 				</tr>
 	
