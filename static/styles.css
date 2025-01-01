@@ -248,6 +248,14 @@ body {
 	background: #292C3B;
 }
 
+.appeal-denied {
+	color: #FF1E1E;
+}
+
+.appeal-pending {
+	color: #F9D034;
+}
+
 .team-stat {
 	color: #F9D034;
 }

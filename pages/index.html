@@ -500,6 +500,7 @@
 					// Create html for flags tab
 					var flaggedMembersHtmlToWrite = '<div>The team <span class="active-team-tag-non-header">' + searchInput + '</span> ';
 					var flaggedMembers = parsedTeamInfo.flagged_members;
+					var flaggedMembersAppeals = parsedTeamInfo.flagged_members_appeals;
 					if (flaggedMembers.length == 0) {
 						flaggedMembersHtmlToWrite += 'has no members flagged for botting.</div>';
 					} else {
@@ -518,7 +519,22 @@
 							}
 							var flaggedMemberHtml = '<li><a class="active-team-flagged-member" href="https://www.nitrotype.com/racer/';
 							flaggedMemberHtml += flaggedUsername + '" target="_blank">';
-							flaggedMemberHtml += flaggedDisplayName + '</a></li>';
+							flaggedMemberHtml += flaggedDisplayName + '</a>';
+							for (var j = 0; j < flaggedMembersAppeals.length; j++) {
+								if (flaggedMembersAppeals[j][0] == flaggedUsername) {
+									var appealStatus = flaggedMembersAppeals[j][1];
+									var submissionDate = flaggedMembersAppeals[j][2];
+									flaggedMemberHtml += " (" + submissionDate + " flag appeal: ";
+									if (appealStatus == "Denied") {
+										flaggedMemberHtml += '<span class="appeal-denied">Denied</span>';
+									} else if (appealStatus == "Pending") {
+										flaggedMemberHtml += '<span class="appeal-pending">Pending Review</span>';
+									}
+									flaggedMemberHtml += ")";
+									break;
+								}
+							}
+							flaggedMemberHtml += '</li>';
 							flaggedMembersHtmlToWrite += flaggedMemberHtml;
 						}
 						flaggedMembersHtmlToWrite += "</ol>";
