@@ -915,6 +915,21 @@ button {
 	color: #fff;
 }
 
+.timeframe-buttons.site-stats-buttons {
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+.timeframe-button.site-stats-button {
+	width: 143px;
+	margin-left: 6px;
+	margin-right: 6px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-left: 5px;
+	padding-right: 5px;
+}
+
 .timeframe-buttons {
 	overflow: visible;
 	padding-left: 20px;
