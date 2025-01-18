@@ -220,20 +220,13 @@ body {
 }
 
 .table {
+	table-layout: fixed;
     width: 100%;
     border: 0;
 	border-collapse: collapse;
 	border-spacing: 0px;
     background: #303343;
     border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-}
-
-.table-header {
-	background: #4F505E; /*before: #3b3d4c*/
-	font-family: "Montserrat", sans-serif;
-	font-weight: 300;
-	color: #fff;
-	height: 53px;
 }
 
 .table-row {
@@ -246,6 +239,10 @@ body {
 
 .table-row--odd {
 	background: #292C3B;
+}
+
+.table-row--slim {
+	height: 60px;
 }
 
 .appeal-denied {
@@ -378,6 +375,20 @@ body {
 	font-family: "Montserrat", sans-serif;
 	text-align: left;
 	font-size: 16px;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+.table-cell--strict-width {
+	white-space: nowrap;
+}
+
+.table-header {
+	background: #4F505E; /*before: #3b3d4c*/
+	font-family: "Montserrat", sans-serif;
+	font-weight: 300;
+	color: #fff;
+	height: 53px;
 	overflow: visible;
 }
 
@@ -917,17 +928,17 @@ button {
 
 .timeframe-buttons.site-stats-buttons {
 	padding-left: 10px;
-	padding-right: 10px;
+	padding-right: 9px;
 }
 
 .timeframe-button.site-stats-button {
-	width: 143px;
-	margin-left: 6px;
-	margin-right: 6px;
-	padding-top: 10px;
-	padding-bottom: 10px;
-	padding-left: 5px;
-	padding-right: 5px;
+	width: 123px;
+	margin-left: 5px;
+	margin-right: 5px;
+	padding-top: 6px;
+	padding-bottom: 6px;
+	padding-left: 3px;
+	padding-right: 3px;
 }
 
 .timeframe-buttons {
