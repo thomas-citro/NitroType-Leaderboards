@@ -7,7 +7,6 @@
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
-	<!-- Google tag (gtag.js) -->
 	<script async src="https://www.googletagmanager.com/gtag/js?id=G-62TWY6L47K"></script>
 	<script>
 		window.dataLayer = window.dataLayer || [];
@@ -15,9 +14,11 @@
 		gtag('js', new Date());
 		gtag('config', 'G-62TWY6L47K');
 	</script>
-	<!-- Plotly.js -->
 	<script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
 	<script>
+		/*************** VARIABLES TO MANUALLY UPDATE ***************/
+		var lastSeason = '54';
+		/************************************************************/
 		var loadingHTML = '<div class="lds-spinner"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>';
 		var searchSelection;
 		var lastSearch = '';
@@ -112,6 +113,40 @@
 			'nm_top_teams_day': 'nm_top_racers_day',
 			'nm_highest_scoring_teams_season': 'nm_highest_scoring_racers_season',
 		}
+		var lbRacerTeamToPastSeasonSwitches = {
+			// Racer leaderboards:
+			'top_racers_season': 'season_' + lastSeason + '_racers',
+			'top_racers_week': 'season_' + lastSeason + '_racers',
+			'top_racers_week_2': 'season_' + lastSeason + '_racers',
+			'top_racers_week_3': 'season_' + lastSeason + '_racers',
+			'top_racers_day': 'season_' + lastSeason + '_racers',
+			'top_racers_day_2': 'season_' + lastSeason + '_racers',
+			'top_racers_day_3': 'season_' + lastSeason + '_racers',
+			'fastest_racers_season': 'season_' + lastSeason + '_fastest_racers',
+			'fastest_racers_week': 'season_' + lastSeason + '_fastest_racers',
+			'fastest_racers_day': 'season_' + lastSeason + '_fastest_racers',
+			'most_accurate_racers_season': 'season_' + lastSeason + '_most_accurate_racers',
+			'most_accurate_racers_week': 'season_' + lastSeason + '_most_accurate_racers',
+			'most_accurate_racers_day': 'season_' + lastSeason + '_most_accurate_racers',
+			'nm_top_racers_season': 'nm_season_' + lastSeason + '_racers',
+			'nm_top_racers_week': 'nm_season_' + lastSeason + '_racers',
+			'nm_top_racers_day': 'nm_season_' + lastSeason + '_racers',
+			'nm_highest_scoring_racers_season': 'nm_season_' + lastSeason + '_highest_scoring_racers',
+			// Team leaderboards:
+			'top_teams_season': 'season_' + lastSeason + '_teams',
+			'top_teams_week': 'season_' + lastSeason + '_teams',
+			'top_teams_day': 'season_' + lastSeason + '_teams',
+			'fastest_teams_season': 'season_' + lastSeason + '_fastest_teams',
+			'fastest_teams_week': 'season_' + lastSeason + '_fastest_teams',
+			'fastest_teams_day': 'season_' + lastSeason + '_fastest_teams',
+			'most_accurate_teams_season': 'season_' + lastSeason + '_most_accurate_teams',
+			'most_accurate_teams_week': 'season_' + lastSeason + '_most_accurate_teams',
+			'most_accurate_teams_day': 'season_' + lastSeason + '_most_accurate_teams',
+			'nm_top_teams_season': 'nm_season_' + lastSeason + '_teams',
+			'nm_top_teams_week': 'nm_season_' + lastSeason + '_teams',
+			'nm_top_teams_day': 'nm_season_' + lastSeason + '_teams',
+			'nm_highest_scoring_teams_season': 'nm_season_' + lastSeason + '_highest_scoring_teams',
+		}
 
 		function announcementToggle() {
 			var adminMsgButton = document.getElementById("collapsible-admin-msg-button");
@@ -136,22 +171,34 @@
 					return 'nm_hof_most_active_racers';
 				}
 			} else if (tabPage == 'past_seasons') {
-				if (curLbType == 'nt') {
-					if (curTabPage == 'top_teams') {
-						return 'season_54_teams';
-					} else {
-						return 'season_54_racers';
-					}
+				if (curTabPage == 'top_racers' || curTabPage == 'top_teams') {
+					return lbRacerTeamToPastSeasonSwitches[curTab];
 				} else {
-					if (curTabPage == 'top_teams') {
-						return 'nm_season_54_teams';
+					if (curLbType == 'nt') {
+						return 'season_' + lastSeason + '_racers';
 					} else {
-						return 'nm_season_54_racers';
+						return 'nm_season_' + lastSeason + '_racers';
 					}
 				}
 			} else if (tabPage == 'top_racers') {
 				if (curTabPage == 'top_teams') {
 					return lbRacerTeamSwitches[curTab];
+				} else if (curTabPage == 'past_seasons') {
+					if (curLbType == 'nt') {
+						if (curTab.includes('fastest') || curTab.includes('speed')) {
+							return 'fastest_racers_season'
+						} else if (curTab.includes('most_accurate') || curTab.includes('accuracy')) {
+							return 'most_accurate_racers_season';
+						} else {
+							return 'top_racers_season';
+						}
+					} else {
+						if (curTab.includes('highest_scoring')) {
+							return 'nm_highest_scoring_racers_season';
+						} else {
+							return 'nm_top_racers_season';
+						}
+					}
 				} else {
 					if (curLbType == 'nt') {
 						return 'top_racers_season';
@@ -162,6 +209,22 @@
 			} else if (tabPage == 'top_teams') {
 				if (curTabPage == 'top_racers') {
 					return lbRacerTeamSwitches[curTab];
+				} else if (curTabPage == 'past_seasons') {
+					if (curLbType == 'nt') {
+						if (curTab.includes('fastest') || curTab.includes('speed')) {
+							return 'fastest_teams_season'
+						} else if (curTab.includes('most_accurate') || curTab.includes('accuracy')) {
+							return 'most_accurate_teams_season';
+						} else {
+							return 'top_teams_season';
+						}
+					} else {
+						if (curTab.includes('highest_scoring')) {
+							return 'nm_highest_scoring_teams_season';
+						} else {
+							return 'nm_top_teams_season';
+						}
+					}
 				} else {
 					if (curLbType == 'nt') {
 						return 'top_teams_season';
