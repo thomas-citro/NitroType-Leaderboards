@@ -67,7 +67,7 @@
 				</div>
 			</button>
 	
-			<button class="tab not-active" onclick="changeTab('more_info')">
+			<button class="tab not-active" onclick="changeTab('more_info_general')">
 				<div class="icon-text-container">
 					<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" id="icon-info" width="18" height="18" fill="white">
 						<path
@@ -81,20 +81,7 @@
 		</div>
 	
 		<div class="divider2">
-	
-			<div class="timeframe-buttons">
-				<button type="button" class="timeframe-button active-button">This Season</button>
-			</div>
-			<form>
-				<div class="dropdown" onchange="handleDropdownChange()">
-					<select class="dropdown-select dropdown-select-teams">
-						<option value="top_teams_season">Top Teams</option>
-						<option value="fastest_teams_season">Fastest Teams</option>
-						<option value="most_accurate_teams_season" selected>Most Accurate Teams</option>
-					</select>
-				</div>
-			</form>
-	
+	<div class="timeframe-buttons"><button type="button" class="timeframe-button active-button">This Season</button><button type="button" class="timeframe-button not-active-button" onclick="changeTab('most_accurate_teams_week')">Last 7 Days</button><button type="button" class="timeframe-button not-active-button" onclick="changeTab('most_accurate_teams_day')">Last 24 Hours</button></div><form><div class="dropdown"><select class="dropdown-select" onchange="handleDropdownChange()"><option value="top_teams_season">Top Teams</option><option value="fastest_teams_season">Fastest Teams</option><option value="most_accurate_teams_season" selected>Most Accurate Teams</option></select></div></form>
 		</div>
 	
 	<div class="board-description">
@@ -138,23 +125,23 @@
 	17</td>
 	
 					<td class="table-cell" style="width: 18%;">
-	98.587%</td>
+	98.59%</td>
 	
 				</tr>
 	</tbody></table>
 		<div class="relative-box">
-			<button class="flag-button" onclick="showCarOwners(195, 1, 481)" id="show-owners-button-195">
+			<button class="flag-button" onclick="showCarOwners(249, 1, 583)" id="show-owners-button-249">
 				🚩
 			</button>
-			<button class="flag-button" onclick="hideCarOwners(195, 1, 481)" style="display: none;" id="hide-owners-button-195">
+			<button class="flag-button" onclick="hideCarOwners(249, 1, 583)" style="display: none;" id="hide-owners-button-249">
 				🚩
 			</button>
 		</div>
-		<div class="car-owners-display-box" style="display: none;" id="owners-box-195">
+		<div class="car-owners-display-box" style="display: none;" id="owners-box-249">
 			<div class="car-owners-header">
 				Players flagged for botting on team <span style="color: #F9D034;">[MUNAF]</span>
 			</div>
-	<div class="car-owners" style="display: none;" id="car-owners-195-1"><div class="car-owner">1. <a class="car-owner-name" href="https://www.nitrotype.com/racer/05519998be7f41730a27635b15ca66a7" target="_blank">OrdinaryGerbil</a></div></div></div><table class="table"><tbody>
+	<div class="car-owners" style="display: none;" id="car-owners-249-1"><div class="car-owner">1. <a class="car-owner-name" href="https://www.nitrotype.com/racer/05519998be7f41730a27635b15ca66a7" target="_blank">OrdinaryGerbil</a></div></div></div><table class="table"><tbody>
 				<tr class="table-row table-row--silver" lookupID="TSCG">
 					<td class="table-cell table-cell--place" style="width: 9%;"><img class="medal" src="/static/images/silver.webp" /></td>
 	
@@ -166,23 +153,23 @@
 	49</td>
 	
 					<td class="table-cell" style="width: 18%;">
-	98.577%</td>
+	98.58%</td>
 	
 				</tr>
 	</tbody></table>
 		<div class="relative-box">
-			<button class="flag-button" onclick="showCarOwners(196, 1, 481)" id="show-owners-button-196">
+			<button class="flag-button" onclick="showCarOwners(250, 1, 583)" id="show-owners-button-250">
 				🚩
 			</button>
-			<button class="flag-button" onclick="hideCarOwners(196, 1, 481)" style="display: none;" id="hide-owners-button-196">
+			<button class="flag-button" onclick="hideCarOwners(250, 1, 583)" style="display: none;" id="hide-owners-button-250">
 				🚩
 			</button>
 		</div>
-		<div class="car-owners-display-box" style="display: none;" id="owners-box-196">
+		<div class="car-owners-display-box" style="display: none;" id="owners-box-250">
 			<div class="car-owners-header">
 				Players flagged for botting on team <span style="color: #F9D034;">[TSCG]</span>
 			</div>
-	<div class="car-owners" style="display: none;" id="car-owners-196-1"><div class="car-owner">1. <a class="car-owner-name" href="https://www.nitrotype.com/racer/9af5aa4a4dfe824ea5a6ee2bc41d0ae8" target="_blank">tagluv wizzhavinn</a></div></div></div><table class="table"><tbody>
+	<div class="car-owners" style="display: none;" id="car-owners-250-1"><div class="car-owner">1. <a class="car-owner-name" href="https://www.nitrotype.com/racer/9af5aa4a4dfe824ea5a6ee2bc41d0ae8" target="_blank">tagluv wizzhavinn</a></div></div></div><table class="table"><tbody>
 				<tr class="table-row table-row--bronze" lookupID="6M">
 					<td class="table-cell table-cell--place" style="width: 9%;"><img class="medal" src="/static/images/bronze.webp" /></td>
 	
@@ -191,26 +178,26 @@
 					<td class="table-cell" style="width: 12%;"><span class="tag-text" style="color: #f5eb21;">[<a class="tag-text tag-text-link" style="color: #f5eb21;" href="https://www.nitrotype.com/team/6M" target="_blank">6M</a>]</span></td>
 					<td class="table-cell" style="width: 39%; whitespace: nowrap;"><a href="https://www.nitrotype.com/team/6M" target="_blank" class="team-text">"NitroType VIP Team"</a></td>
 					<td class="table-cell" style="width: 15%;">
-	19</td>
+	18</td>
 	
 					<td class="table-cell" style="width: 18%;">
-	98.157%</td>
+	98.15%</td>
 	
 				</tr>
 	</tbody></table>
 		<div class="relative-box">
-			<button class="flag-button" onclick="showCarOwners(197, 1, 481)" id="show-owners-button-197">
+			<button class="flag-button" onclick="showCarOwners(251, 1, 583)" id="show-owners-button-251">
 				🚩
 			</button>
-			<button class="flag-button" onclick="hideCarOwners(197, 1, 481)" style="display: none;" id="hide-owners-button-197">
+			<button class="flag-button" onclick="hideCarOwners(251, 1, 583)" style="display: none;" id="hide-owners-button-251">
 				🚩
 			</button>
 		</div>
-		<div class="car-owners-display-box" style="display: none;" id="owners-box-197">
+		<div class="car-owners-display-box" style="display: none;" id="owners-box-251">
 			<div class="car-owners-header">
 				Players flagged for botting on team <span style="color: #F9D034;">[6M]</span>
 			</div>
-	<div class="car-owners" style="display: none;" id="car-owners-197-1"><div class="car-owner">1. <a class="car-owner-name" href="https://www.nitrotype.com/racer/536696d2e49aad6f9994572a10763413" target="_blank">elicowtastic0345</a></div><div class="car-owner">2. <a class="car-owner-name" href="https://www.nitrotype.com/racer/vipwapus" target="_blank">The Wapus</a></div><div class="car-owner">3. <a class="car-owner-name" href="https://www.nitrotype.com/racer/xxnot_a_hackerxx" target="_blank">xxnot_a_hackerxx</a></div></div></div><table class="table"><tbody>
+	<div class="car-owners" style="display: none;" id="car-owners-251-1"><div class="car-owner">1. <a class="car-owner-name" href="https://www.nitrotype.com/racer/536696d2e49aad6f9994572a10763413" target="_blank">elicowtastic0345</a></div><div class="car-owner">2. <a class="car-owner-name" href="https://www.nitrotype.com/racer/vipwapus" target="_blank">The Wapus</a></div><div class="car-owner">3. <a class="car-owner-name" href="https://www.nitrotype.com/racer/xxnot_a_hackerxx" target="_blank">xxnot_a_hackerxx</a></div></div></div><table class="table"><tbody>
 				<tr class="table-row table-row--nonpodium" lookupID="EZ">
 					<td class="table-cell table-cell--place place-number" style="width: 9%;">
 	4</td>
@@ -223,7 +210,7 @@
 	15</td>
 	
 					<td class="table-cell" style="width: 18%;">
-	98.058%</td>
+	98.05%</td>
 	
 				</tr>
 	
@@ -239,7 +226,7 @@
 	17</td>
 	
 					<td class="table-cell" style="width: 18%;">
-	97.995%</td>
+	98.0%</td>
 	
 				</tr>
 	
@@ -252,26 +239,26 @@
 					<td class="table-cell" style="width: 12%;"><span class="tag-text" style="color: #d1499b;">[<a class="tag-text tag-text-link" style="color: #d1499b;" href="https://www.nitrotype.com/team/SSW" target="_blank">SSW</a>]</span></td>
 					<td class="table-cell" style="width: 39%; whitespace: nowrap;"><a href="https://www.nitrotype.com/team/SSW" target="_blank" class="team-text">"bbtisthe best"</a></td>
 					<td class="table-cell" style="width: 15%;">
-	49</td>
+	50</td>
 	
 					<td class="table-cell" style="width: 18%;">
-	97.724%</td>
+	97.74%</td>
 	
 				</tr>
 	</tbody></table>
 		<div class="relative-box">
-			<button class="flag-button" onclick="showCarOwners(198, 1, 481)" id="show-owners-button-198">
+			<button class="flag-button" onclick="showCarOwners(252, 1, 583)" id="show-owners-button-252">
 				🚩
 			</button>
-			<button class="flag-button" onclick="hideCarOwners(198, 1, 481)" style="display: none;" id="hide-owners-button-198">
+			<button class="flag-button" onclick="hideCarOwners(252, 1, 583)" style="display: none;" id="hide-owners-button-252">
 				🚩
 			</button>
 		</div>
-		<div class="car-owners-display-box" style="display: none;" id="owners-box-198">
+		<div class="car-owners-display-box" style="display: none;" id="owners-box-252">
 			<div class="car-owners-header">
 				Players flagged for botting on team <span style="color: #F9D034;">[SSW]</span>
 			</div>
-	<div class="car-owners" style="display: none;" id="car-owners-198-1"><div class="car-owner">1. <a class="car-owner-name" href="https://www.nitrotype.com/racer/seekucci" target="_blank">BBTDIDTHAT</a></div></div></div><table class="table"><tbody>
+	<div class="car-owners" style="display: none;" id="car-owners-252-1"><div class="car-owner">1. <a class="car-owner-name" href="https://www.nitrotype.com/racer/seekucci" target="_blank">BBTDIDTHAT</a></div></div></div><table class="table"><tbody>
 				<tr class="table-row table-row--odd table-row--nonpodium" lookupID="J3SUSS">
 					<td class="table-cell table-cell--place place-number" style="width: 9%;">
 	7</td>
@@ -284,68 +271,68 @@
 	40</td>
 	
 					<td class="table-cell" style="width: 18%;">
-	97.652%</td>
+	97.72%</td>
 	
 				</tr>
 	</tbody></table>
 		<div class="relative-box">
-			<button class="flag-button" onclick="showCarOwners(199, 1, 481)" id="show-owners-button-199">
+			<button class="flag-button" onclick="showCarOwners(253, 1, 583)" id="show-owners-button-253">
 				🚩
 			</button>
-			<button class="flag-button" onclick="hideCarOwners(199, 1, 481)" style="display: none;" id="hide-owners-button-199">
+			<button class="flag-button" onclick="hideCarOwners(253, 1, 583)" style="display: none;" id="hide-owners-button-253">
 				🚩
 			</button>
 		</div>
-		<div class="car-owners-display-box" style="display: none;" id="owners-box-199">
+		<div class="car-owners-display-box" style="display: none;" id="owners-box-253">
 			<div class="car-owners-header">
 				Players flagged for botting on team <span style="color: #F9D034;">[J3SUSS]</span>
 			</div>
-	<div class="car-owners" style="display: none;" id="car-owners-199-1"><div class="car-owner">1. <a class="car-owner-name" href="https://www.nitrotype.com/racer/538c1fbfe5cbf49c1f6ed171b58e610e" target="_blank">--FL4WL3SS--</a></div></div></div><table class="table"><tbody>
-				<tr class="table-row table-row--nonpodium" lookupID="GTYPZ">
+	<div class="car-owners" style="display: none;" id="car-owners-253-1"><div class="car-owner">1. <a class="car-owner-name" href="https://www.nitrotype.com/racer/538c1fbfe5cbf49c1f6ed171b58e610e" target="_blank">--FL4WL3SS--</a></div></div></div><table class="table"><tbody>
+				<tr class="table-row table-row--nonpodium" lookupID="TGNM">
 					<td class="table-cell table-cell--place place-number" style="width: 9%;">
 	8</td>
-	
-					<td class="table-cell" style="width: 7%;"><img class="league-icon" src="/static/images/leagues/teams/12.webp"/></td>
-	
-					<td class="table-cell" style="width: 12%;"><span class="tag-text" style="color: #f5eb21;">[<a class="tag-text tag-text-link" style="color: #f5eb21;" href="https://www.nitrotype.com/team/GTYPZ" target="_blank">GTYPZ</a>]</span></td>
-					<td class="table-cell" style="width: 39%; whitespace: nowrap;"><a href="https://www.nitrotype.com/team/GTYPZ" target="_blank" class="team-text">"THEGOLDENTYPERZ"</a></td>
-					<td class="table-cell" style="width: 15%;">
-	25</td>
-	
-					<td class="table-cell" style="width: 18%;">
-	97.59%</td>
-	
-				</tr>
-	</tbody></table>
-		<div class="relative-box">
-			<button class="flag-button" onclick="showCarOwners(200, 1, 481)" id="show-owners-button-200">
-				🚩
-			</button>
-			<button class="flag-button" onclick="hideCarOwners(200, 1, 481)" style="display: none;" id="hide-owners-button-200">
-				🚩
-			</button>
-		</div>
-		<div class="car-owners-display-box" style="display: none;" id="owners-box-200">
-			<div class="car-owners-header">
-				Players flagged for botting on team <span style="color: #F9D034;">[GTYPZ]</span>
-			</div>
-	<div class="car-owners" style="display: none;" id="car-owners-200-1"><div class="car-owner">1. <a class="car-owner-name" href="https://www.nitrotype.com/racer/f0oled" target="_blank">prayxd</a></div><div class="car-owner">2. <a class="car-owner-name" href="https://www.nitrotype.com/racer/xledetx" target="_blank">-_,XledetX,_-</a></div></div></div><table class="table"><tbody>
-				<tr class="table-row table-row--odd table-row--nonpodium" lookupID="TGNM">
-					<td class="table-cell table-cell--place place-number" style="width: 9%;">
-	9</td>
 	
 					<td class="table-cell" style="width: 7%;"><img class="league-icon" src="/static/images/leagues/teams/11.webp"/></td>
 	
 					<td class="table-cell" style="width: 12%;"><span class="tag-text" style="color: #8750a0;">[<a class="tag-text tag-text-link" style="color: #8750a0;" href="https://www.nitrotype.com/team/TGNM" target="_blank">TGNM</a>]</span></td>
 					<td class="table-cell" style="width: 39%; whitespace: nowrap;"><a href="https://www.nitrotype.com/team/TGNM" target="_blank" class="team-text">"Typing Nightmare"</a></td>
 					<td class="table-cell" style="width: 15%;">
-	39</td>
+	40</td>
 	
 					<td class="table-cell" style="width: 18%;">
-	97.58%</td>
+	97.57%</td>
 	
 				</tr>
 	
+				<tr class="table-row table-row--odd table-row--nonpodium" lookupID="GTYPZ">
+					<td class="table-cell table-cell--place place-number" style="width: 9%;">
+	9</td>
+	
+					<td class="table-cell" style="width: 7%;"><img class="league-icon" src="/static/images/leagues/teams/12.webp"/></td>
+	
+					<td class="table-cell" style="width: 12%;"><span class="tag-text" style="color: #f5eb21;">[<a class="tag-text tag-text-link" style="color: #f5eb21;" href="https://www.nitrotype.com/team/GTYPZ" target="_blank">GTYPZ</a>]</span></td>
+					<td class="table-cell" style="width: 39%; whitespace: nowrap;"><a href="https://www.nitrotype.com/team/GTYPZ" target="_blank" class="team-text">"THEGOLDENTYPERZ"</a></td>
+					<td class="table-cell" style="width: 15%;">
+	24</td>
+	
+					<td class="table-cell" style="width: 18%;">
+	97.57%</td>
+	
+				</tr>
+	</tbody></table>
+		<div class="relative-box">
+			<button class="flag-button" onclick="showCarOwners(254, 1, 583)" id="show-owners-button-254">
+				🚩
+			</button>
+			<button class="flag-button" onclick="hideCarOwners(254, 1, 583)" style="display: none;" id="hide-owners-button-254">
+				🚩
+			</button>
+		</div>
+		<div class="car-owners-display-box" style="display: none;" id="owners-box-254">
+			<div class="car-owners-header">
+				Players flagged for botting on team <span style="color: #F9D034;">[GTYPZ]</span>
+			</div>
+	<div class="car-owners" style="display: none;" id="car-owners-254-1"><div class="car-owner">1. <a class="car-owner-name" href="https://www.nitrotype.com/racer/f0oled" target="_blank">prayxd</a></div><div class="car-owner">2. <a class="car-owner-name" href="https://www.nitrotype.com/racer/xledetx" target="_blank">-_,XledetX,_-</a></div></div></div><table class="table"><tbody>
 				<tr class="table-row table-row--nonpodium" lookupID="R2L">
 					<td class="table-cell table-cell--place place-number" style="width: 9%;">
 	10</td>
@@ -358,23 +345,23 @@
 	47</td>
 	
 					<td class="table-cell" style="width: 18%;">
-	97.481%</td>
+	97.51%</td>
 	
 				</tr>
 	</tbody></table>
 		<div class="relative-box">
-			<button class="flag-button" onclick="showCarOwners(201, 1, 481)" id="show-owners-button-201">
+			<button class="flag-button" onclick="showCarOwners(255, 1, 583)" id="show-owners-button-255">
 				🚩
 			</button>
-			<button class="flag-button" onclick="hideCarOwners(201, 1, 481)" style="display: none;" id="hide-owners-button-201">
+			<button class="flag-button" onclick="hideCarOwners(255, 1, 583)" style="display: none;" id="hide-owners-button-255">
 				🚩
 			</button>
 		</div>
-		<div class="car-owners-display-box" style="display: none;" id="owners-box-201">
+		<div class="car-owners-display-box" style="display: none;" id="owners-box-255">
 			<div class="car-owners-header">
 				Players flagged for botting on team <span style="color: #F9D034;">[R2L]</span>
 			</div>
-	<div class="car-owners" style="display: none;" id="car-owners-201-1"><div class="car-owner">1. <a class="car-owner-name" href="https://www.nitrotype.com/racer/2imamhacking2" target="_blank">1 0 0 iq</a></div><div class="car-owner">2. <a class="car-owner-name" href="https://www.nitrotype.com/racer/583100" target="_blank">King Darth Vader S</a></div><div class="car-owner">3. <a class="car-owner-name" href="https://www.nitrotype.com/racer/b5606b88de3b0e3ebfcf37b681e5a027" target="_blank">YouTube_SpinsFN</a></div><div class="car-owner">4. <a class="car-owner-name" href="https://www.nitrotype.com/racer/calebmayo11" target="_blank">XMAS-DRAGON</a></div><div class="car-owner">5. <a class="car-owner-name" href="https://www.nitrotype.com/racer/doodlesofficial" target="_blank">D o o d l e s Y T</a></div><div class="car-owner">6. <a class="car-owner-name" href="https://www.nitrotype.com/racer/monkeyono3" target="_blank">_Sub to typing catYT</a></div><div class="car-owner">7. <a class="car-owner-name" href="https://www.nitrotype.com/racer/signupwitgoogle1" target="_blank">GRinding for R2L</a></div></div></div><table class="table"><tbody>
+	<div class="car-owners" style="display: none;" id="car-owners-255-1"><div class="car-owner">1. <a class="car-owner-name" href="https://www.nitrotype.com/racer/2imamhacking2" target="_blank">1 0 0 iq</a></div><div class="car-owner">2. <a class="car-owner-name" href="https://www.nitrotype.com/racer/583100" target="_blank">King Darth Vader S</a></div><div class="car-owner">3. <a class="car-owner-name" href="https://www.nitrotype.com/racer/b5606b88de3b0e3ebfcf37b681e5a027" target="_blank">YouTube_SpinsFN</a></div><div class="car-owner">4. <a class="car-owner-name" href="https://www.nitrotype.com/racer/calebmayo11" target="_blank">XMAS-DRAGON</a></div><div class="car-owner">5. <a class="car-owner-name" href="https://www.nitrotype.com/racer/doodlesofficial" target="_blank">D o o d l e s Y T</a></div><div class="car-owner">6. <a class="car-owner-name" href="https://www.nitrotype.com/racer/signupwitgoogle1" target="_blank">GRinding for R2L</a></div></div></div><table class="table"><tbody>
 				<tr class="table-row table-row--odd table-row--nonpodium" lookupID="CRISMA">
 					<td class="table-cell table-cell--place place-number" style="width: 9%;">
 	11</td>
@@ -387,23 +374,23 @@
 	30</td>
 	
 					<td class="table-cell" style="width: 18%;">
-	97.472%</td>
+	97.48%</td>
 	
 				</tr>
 	</tbody></table>
 		<div class="relative-box">
-			<button class="flag-button" onclick="showCarOwners(202, 1, 481)" id="show-owners-button-202">
+			<button class="flag-button" onclick="showCarOwners(256, 1, 583)" id="show-owners-button-256">
 				🚩
 			</button>
-			<button class="flag-button" onclick="hideCarOwners(202, 1, 481)" style="display: none;" id="hide-owners-button-202">
+			<button class="flag-button" onclick="hideCarOwners(256, 1, 583)" style="display: none;" id="hide-owners-button-256">
 				🚩
 			</button>
 		</div>
-		<div class="car-owners-display-box" style="display: none;" id="owners-box-202">
+		<div class="car-owners-display-box" style="display: none;" id="owners-box-256">
 			<div class="car-owners-header">
 				Players flagged for botting on team <span style="color: #F9D034;">[CRISMA]</span>
 			</div>
-	<div class="car-owners" style="display: none;" id="car-owners-202-1"><div class="car-owner">1. <a class="car-owner-name" href="https://www.nitrotype.com/racer/nitrogaming727" target="_blank">NitroGaming727</a></div></div></div><table class="table"><tbody>
+	<div class="car-owners" style="display: none;" id="car-owners-256-1"><div class="car-owner">1. <a class="car-owner-name" href="https://www.nitrotype.com/racer/nitrogaming727" target="_blank">NitroGaming727</a></div></div></div><table class="table"><tbody>
 				<tr class="table-row table-row--nonpodium" lookupID="OPNTL">
 					<td class="table-cell table-cell--place place-number" style="width: 9%;">
 	12</td>
@@ -416,7 +403,7 @@
 	25</td>
 	
 					<td class="table-cell" style="width: 18%;">
-	97.463%</td>
+	97.46%</td>
 	
 				</tr>
 	
@@ -432,23 +419,23 @@
 	44</td>
 	
 					<td class="table-cell" style="width: 18%;">
-	97.448%</td>
+	97.45%</td>
 	
 				</tr>
 	</tbody></table>
 		<div class="relative-box">
-			<button class="flag-button" onclick="showCarOwners(203, 1, 481)" id="show-owners-button-203">
+			<button class="flag-button" onclick="showCarOwners(257, 1, 583)" id="show-owners-button-257">
 				🚩
 			</button>
-			<button class="flag-button" onclick="hideCarOwners(203, 1, 481)" style="display: none;" id="hide-owners-button-203">
+			<button class="flag-button" onclick="hideCarOwners(257, 1, 583)" style="display: none;" id="hide-owners-button-257">
 				🚩
 			</button>
 		</div>
-		<div class="car-owners-display-box" style="display: none;" id="owners-box-203">
+		<div class="car-owners-display-box" style="display: none;" id="owners-box-257">
 			<div class="car-owners-header">
 				Players flagged for botting on team <span style="color: #F9D034;">[LORD5]</span>
 			</div>
-	<div class="car-owners" style="display: none;" id="car-owners-203-1"><div class="car-owner">1. <a class="car-owner-name" href="https://www.nitrotype.com/racer/56b485386657aa510066b46f412c4326" target="_blank">Rishabh the prime</a></div><div class="car-owner">2. <a class="car-owner-name" href="https://www.nitrotype.com/racer/cb20a1476e65a7ced06fde7bd0c19316" target="_blank">H-cker_HDK</a></div></div></div><table class="table"><tbody>
+	<div class="car-owners" style="display: none;" id="car-owners-257-1"><div class="car-owner">1. <a class="car-owner-name" href="https://www.nitrotype.com/racer/56b485386657aa510066b46f412c4326" target="_blank">Rishabh the prime</a></div><div class="car-owner">2. <a class="car-owner-name" href="https://www.nitrotype.com/racer/cb20a1476e65a7ced06fde7bd0c19316" target="_blank">H-cker_HDK</a></div></div></div><table class="table"><tbody>
 				<tr class="table-row table-row--nonpodium" lookupID="2EZBTA">
 					<td class="table-cell table-cell--place place-number" style="width: 9%;">
 	14</td>
@@ -461,23 +448,23 @@
 	34</td>
 	
 					<td class="table-cell" style="width: 18%;">
-	97.422%</td>
+	97.42%</td>
 	
 				</tr>
 	</tbody></table>
 		<div class="relative-box">
-			<button class="flag-button" onclick="showCarOwners(204, 1, 481)" id="show-owners-button-204">
+			<button class="flag-button" onclick="showCarOwners(258, 1, 583)" id="show-owners-button-258">
 				🚩
 			</button>
-			<button class="flag-button" onclick="hideCarOwners(204, 1, 481)" style="display: none;" id="hide-owners-button-204">
+			<button class="flag-button" onclick="hideCarOwners(258, 1, 583)" style="display: none;" id="hide-owners-button-258">
 				🚩
 			</button>
 		</div>
-		<div class="car-owners-display-box" style="display: none;" id="owners-box-204">
+		<div class="car-owners-display-box" style="display: none;" id="owners-box-258">
 			<div class="car-owners-header">
 				Players flagged for botting on team <span style="color: #F9D034;">[2EZBTA]</span>
 			</div>
-	<div class="car-owners" style="display: none;" id="car-owners-204-1"><div class="car-owner">1. <a class="car-owner-name" href="https://www.nitrotype.com/racer/3fc01bfe0c32bf396890889c0306eb55" target="_blank">Wise Old Man</a></div><div class="car-owner">2. <a class="car-owner-name" href="https://www.nitrotype.com/racer/43c0049d50cb116be072ade1ca733ea1" target="_blank">GoldAzureGerbil</a></div><div class="car-owner">3. <a class="car-owner-name" href="https://www.nitrotype.com/racer/jason_xu_hiyah" target="_blank">AREAe_Jason_Xu</a></div></div></div><table class="table"><tbody>
+	<div class="car-owners" style="display: none;" id="car-owners-258-1"><div class="car-owner">1. <a class="car-owner-name" href="https://www.nitrotype.com/racer/3fc01bfe0c32bf396890889c0306eb55" target="_blank">Wise Old Man</a></div><div class="car-owner">2. <a class="car-owner-name" href="https://www.nitrotype.com/racer/43c0049d50cb116be072ade1ca733ea1" target="_blank">GoldAzureGerbil</a></div><div class="car-owner">3. <a class="car-owner-name" href="https://www.nitrotype.com/racer/jason_xu_hiyah" target="_blank">AREAe_Jason_Xu</a></div></div></div><table class="table"><tbody>
 				<tr class="table-row table-row--odd table-row--nonpodium" lookupID="SHMUPY">
 					<td class="table-cell table-cell--place place-number" style="width: 9%;">
 	15</td>
@@ -490,55 +477,26 @@
 	30</td>
 	
 					<td class="table-cell" style="width: 18%;">
-	97.344%</td>
+	97.34%</td>
 	
 				</tr>
 	</tbody></table>
 		<div class="relative-box">
-			<button class="flag-button" onclick="showCarOwners(205, 1, 481)" id="show-owners-button-205">
+			<button class="flag-button" onclick="showCarOwners(259, 1, 583)" id="show-owners-button-259">
 				🚩
 			</button>
-			<button class="flag-button" onclick="hideCarOwners(205, 1, 481)" style="display: none;" id="hide-owners-button-205">
+			<button class="flag-button" onclick="hideCarOwners(259, 1, 583)" style="display: none;" id="hide-owners-button-259">
 				🚩
 			</button>
 		</div>
-		<div class="car-owners-display-box" style="display: none;" id="owners-box-205">
+		<div class="car-owners-display-box" style="display: none;" id="owners-box-259">
 			<div class="car-owners-header">
 				Players flagged for botting on team <span style="color: #F9D034;">[SHMUPY]</span>
 			</div>
-	<div class="car-owners" style="display: none;" id="car-owners-205-1"><div class="car-owner">1. <a class="car-owner-name" href="https://www.nitrotype.com/racer/48d2d5c865d18d429c4aa50881b6e58e" target="_blank">GerardoJclever</a></div><div class="car-owner">2. <a class="car-owner-name" href="https://www.nitrotype.com/racer/5909cbfc43bc9acfdacf478b5cbf8c05" target="_blank">SnowyZ</a></div><div class="car-owner">3. <a class="car-owner-name" href="https://www.nitrotype.com/racer/brookylyn42" target="_blank">brooklyn42</a></div></div></div><table class="table"><tbody>
-				<tr class="table-row table-row--nonpodium" lookupID="10XLOJ">
+	<div class="car-owners" style="display: none;" id="car-owners-259-1"><div class="car-owner">1. <a class="car-owner-name" href="https://www.nitrotype.com/racer/48d2d5c865d18d429c4aa50881b6e58e" target="_blank">GerardoJclever</a></div><div class="car-owner">2. <a class="car-owner-name" href="https://www.nitrotype.com/racer/5909cbfc43bc9acfdacf478b5cbf8c05" target="_blank">SnowyZ</a></div><div class="car-owner">3. <a class="car-owner-name" href="https://www.nitrotype.com/racer/brookylyn42" target="_blank">brooklyn42</a></div></div></div><table class="table"><tbody>
+				<tr class="table-row table-row--nonpodium" lookupID="7CROWN">
 					<td class="table-cell table-cell--place place-number" style="width: 9%;">
 	16</td>
-	
-					<td class="table-cell" style="width: 7%;"><img class="league-icon" src="/static/images/leagues/teams/13.webp"/></td>
-	
-					<td class="table-cell" style="width: 12%;"><span class="tag-text" style="color: #f15b40;">[<a class="tag-text tag-text-link" style="color: #f15b40;" href="https://www.nitrotype.com/team/10XLOJ" target="_blank">10XLOJ</a>]</span></td>
-					<td class="table-cell" style="width: 39%; whitespace: nowrap;"><a href="https://www.nitrotype.com/team/10XLOJ" target="_blank" class="team-text">"Lions of Judah"</a></td>
-					<td class="table-cell" style="width: 15%;">
-	50</td>
-	
-					<td class="table-cell" style="width: 18%;">
-	97.166%</td>
-	
-				</tr>
-	</tbody></table>
-		<div class="relative-box">
-			<button class="flag-button" onclick="showCarOwners(206, 1, 481)" id="show-owners-button-206">
-				🚩
-			</button>
-			<button class="flag-button" onclick="hideCarOwners(206, 1, 481)" style="display: none;" id="hide-owners-button-206">
-				🚩
-			</button>
-		</div>
-		<div class="car-owners-display-box" style="display: none;" id="owners-box-206">
-			<div class="car-owners-header">
-				Players flagged for botting on team <span style="color: #F9D034;">[10XLOJ]</span>
-			</div>
-	<div class="car-owners" style="display: none;" id="car-owners-206-1"><div class="car-owner">1. <a class="car-owner-name" href="https://www.nitrotype.com/racer/369bfa018b43892b3c6b4e2ad0e85565" target="_blank">Alrightythen</a></div><div class="car-owner">2. <a class="car-owner-name" href="https://www.nitrotype.com/racer/fef70e2433a31e0efda85843da1966ac" target="_blank">LIKE HIM</a></div><div class="car-owner">3. <a class="car-owner-name" href="https://www.nitrotype.com/racer/orphanstabber1" target="_blank">iamtheknight</a></div></div></div><table class="table"><tbody>
-				<tr class="table-row table-row--odd table-row--nonpodium" lookupID="7CROWN">
-					<td class="table-cell table-cell--place place-number" style="width: 9%;">
-	17</td>
 	
 					<td class="table-cell" style="width: 7%;"><img class="league-icon" src="/static/images/leagues/teams/9.webp"/></td>
 	
@@ -548,13 +506,71 @@
 	19</td>
 	
 					<td class="table-cell" style="width: 18%;">
-	97.165%</td>
+	97.17%</td>
 	
 				</tr>
 	
-				<tr class="table-row table-row--nonpodium" lookupID="TB1K">
+				<tr class="table-row table-row--odd table-row--nonpodium" lookupID="TOPGOD">
+					<td class="table-cell table-cell--place place-number" style="width: 9%;">
+	17</td>
+	
+					<td class="table-cell" style="width: 7%;"><img class="league-icon" src="/static/images/leagues/teams/11.webp"/></td>
+	
+					<td class="table-cell" style="width: 12%;"><span class="tag-text" style="color: #daedfa;">[<a class="tag-text tag-text-link" style="color: #daedfa;" href="https://www.nitrotype.com/team/TOPGOD" target="_blank">TOPGOD</a>]</span></td>
+					<td class="table-cell" style="width: 39%; whitespace: nowrap;"><a href="https://www.nitrotype.com/team/TOPGOD" target="_blank" class="team-text">"NitroType Gods"</a></td>
+					<td class="table-cell" style="width: 15%;">
+	31</td>
+	
+					<td class="table-cell" style="width: 18%;">
+	97.14%</td>
+	
+				</tr>
+	</tbody></table>
+		<div class="relative-box">
+			<button class="flag-button" onclick="showCarOwners(260, 1, 583)" id="show-owners-button-260">
+				🚩
+			</button>
+			<button class="flag-button" onclick="hideCarOwners(260, 1, 583)" style="display: none;" id="hide-owners-button-260">
+				🚩
+			</button>
+		</div>
+		<div class="car-owners-display-box" style="display: none;" id="owners-box-260">
+			<div class="car-owners-header">
+				Players flagged for botting on team <span style="color: #F9D034;">[TOPGOD]</span>
+			</div>
+	<div class="car-owners" style="display: none;" id="car-owners-260-1"><div class="car-owner">1. <a class="car-owner-name" href="https://www.nitrotype.com/racer/dkingabdu1" target="_blank">dkingabdu1</a></div></div></div><table class="table"><tbody>
+				<tr class="table-row table-row--nonpodium" lookupID="10XLOJ">
 					<td class="table-cell table-cell--place place-number" style="width: 9%;">
 	18</td>
+	
+					<td class="table-cell" style="width: 7%;"><img class="league-icon" src="/static/images/leagues/teams/13.webp"/></td>
+	
+					<td class="table-cell" style="width: 12%;"><span class="tag-text" style="color: #f15b40;">[<a class="tag-text tag-text-link" style="color: #f15b40;" href="https://www.nitrotype.com/team/10XLOJ" target="_blank">10XLOJ</a>]</span></td>
+					<td class="table-cell" style="width: 39%; whitespace: nowrap;"><a href="https://www.nitrotype.com/team/10XLOJ" target="_blank" class="team-text">"Lions of Judah"</a></td>
+					<td class="table-cell" style="width: 15%;">
+	40</td>
+	
+					<td class="table-cell" style="width: 18%;">
+	97.13%</td>
+	
+				</tr>
+	</tbody></table>
+		<div class="relative-box">
+			<button class="flag-button" onclick="showCarOwners(261, 1, 583)" id="show-owners-button-261">
+				🚩
+			</button>
+			<button class="flag-button" onclick="hideCarOwners(261, 1, 583)" style="display: none;" id="hide-owners-button-261">
+				🚩
+			</button>
+		</div>
+		<div class="car-owners-display-box" style="display: none;" id="owners-box-261">
+			<div class="car-owners-header">
+				Players flagged for botting on team <span style="color: #F9D034;">[10XLOJ]</span>
+			</div>
+	<div class="car-owners" style="display: none;" id="car-owners-261-1"><div class="car-owner">1. <a class="car-owner-name" href="https://www.nitrotype.com/racer/369bfa018b43892b3c6b4e2ad0e85565" target="_blank">Alrightythen</a></div><div class="car-owner">2. <a class="car-owner-name" href="https://www.nitrotype.com/racer/fef70e2433a31e0efda85843da1966ac" target="_blank">LIKE HIM</a></div><div class="car-owner">3. <a class="car-owner-name" href="https://www.nitrotype.com/racer/orphanstabber1" target="_blank">iamtheknight</a></div></div></div><table class="table"><tbody>
+				<tr class="table-row table-row--odd table-row--nonpodium" lookupID="TB1K">
+					<td class="table-cell table-cell--place place-number" style="width: 9%;">
+	19</td>
 	
 					<td class="table-cell" style="width: 7%;"><img class="league-icon" src="/static/images/leagues/teams/8.webp"/></td>
 	
@@ -568,35 +584,6 @@
 	
 				</tr>
 	
-				<tr class="table-row table-row--odd table-row--nonpodium" lookupID="TOPGOD">
-					<td class="table-cell table-cell--place place-number" style="width: 9%;">
-	19</td>
-	
-					<td class="table-cell" style="width: 7%;"><img class="league-icon" src="/static/images/leagues/teams/11.webp"/></td>
-	
-					<td class="table-cell" style="width: 12%;"><span class="tag-text" style="color: #daedfa;">[<a class="tag-text tag-text-link" style="color: #daedfa;" href="https://www.nitrotype.com/team/TOPGOD" target="_blank">TOPGOD</a>]</span></td>
-					<td class="table-cell" style="width: 39%; whitespace: nowrap;"><a href="https://www.nitrotype.com/team/TOPGOD" target="_blank" class="team-text">"NitroType Gods"</a></td>
-					<td class="table-cell" style="width: 15%;">
-	31</td>
-	
-					<td class="table-cell" style="width: 18%;">
-	97.11%</td>
-	
-				</tr>
-	</tbody></table>
-		<div class="relative-box">
-			<button class="flag-button" onclick="showCarOwners(207, 1, 481)" id="show-owners-button-207">
-				🚩
-			</button>
-			<button class="flag-button" onclick="hideCarOwners(207, 1, 481)" style="display: none;" id="hide-owners-button-207">
-				🚩
-			</button>
-		</div>
-		<div class="car-owners-display-box" style="display: none;" id="owners-box-207">
-			<div class="car-owners-header">
-				Players flagged for botting on team <span style="color: #F9D034;">[TOPGOD]</span>
-			</div>
-	<div class="car-owners" style="display: none;" id="car-owners-207-1"><div class="car-owner">1. <a class="car-owner-name" href="https://www.nitrotype.com/racer/dkingabdu1" target="_blank">dkingabdu1</a></div></div></div><table class="table"><tbody>
 				<tr class="table-row table-row--nonpodium" lookupID="WAZB">
 					<td class="table-cell table-cell--place place-number" style="width: 9%;">
 	20</td>
@@ -609,23 +596,23 @@
 	46</td>
 	
 					<td class="table-cell" style="width: 18%;">
-	97.099%</td>
+	97.09%</td>
 	
 				</tr>
 	</tbody></table>
 		<div class="relative-box">
-			<button class="flag-button" onclick="showCarOwners(208, 1, 481)" id="show-owners-button-208">
+			<button class="flag-button" onclick="showCarOwners(262, 1, 583)" id="show-owners-button-262">
 				🚩
 			</button>
-			<button class="flag-button" onclick="hideCarOwners(208, 1, 481)" style="display: none;" id="hide-owners-button-208">
+			<button class="flag-button" onclick="hideCarOwners(262, 1, 583)" style="display: none;" id="hide-owners-button-262">
 				🚩
 			</button>
 		</div>
-		<div class="car-owners-display-box" style="display: none;" id="owners-box-208">
+		<div class="car-owners-display-box" style="display: none;" id="owners-box-262">
 			<div class="car-owners-header">
 				Players flagged for botting on team <span style="color: #F9D034;">[WAZB]</span>
 			</div>
-	<div class="car-owners" style="display: none;" id="car-owners-208-1"><div class="car-owner">1. <a class="car-owner-name" href="https://www.nitrotype.com/racer/50351d2026cd49293c43d4d81924f540" target="_blank">timmeh2539</a></div></div></div><table class="table"><tbody>
+	<div class="car-owners" style="display: none;" id="car-owners-262-1"><div class="car-owner">1. <a class="car-owner-name" href="https://www.nitrotype.com/racer/50351d2026cd49293c43d4d81924f540" target="_blank">timmeh2539</a></div></div></div><table class="table"><tbody>
 				<tr class="table-row table-row--odd table-row--nonpodium" lookupID="ER4SED">
 					<td class="table-cell table-cell--place place-number" style="width: 9%;">
 	21</td>
@@ -635,26 +622,26 @@
 					<td class="table-cell" style="width: 12%;"><span class="tag-text" style="color: #daedfa;">[<a class="tag-text tag-text-link" style="color: #daedfa;" href="https://www.nitrotype.com/team/ER4SED" target="_blank">ER4SED</a>]</span></td>
 					<td class="table-cell" style="width: 39%; whitespace: nowrap;"><a href="https://www.nitrotype.com/team/ER4SED" target="_blank" class="team-text">"50M COMP TODAY"</a></td>
 					<td class="table-cell" style="width: 15%;">
-	24</td>
+	23</td>
 	
 					<td class="table-cell" style="width: 18%;">
-	96.927%</td>
+	96.93%</td>
 	
 				</tr>
 	</tbody></table>
 		<div class="relative-box">
-			<button class="flag-button" onclick="showCarOwners(209, 1, 481)" id="show-owners-button-209">
+			<button class="flag-button" onclick="showCarOwners(263, 1, 583)" id="show-owners-button-263">
 				🚩
 			</button>
-			<button class="flag-button" onclick="hideCarOwners(209, 1, 481)" style="display: none;" id="hide-owners-button-209">
+			<button class="flag-button" onclick="hideCarOwners(263, 1, 583)" style="display: none;" id="hide-owners-button-263">
 				🚩
 			</button>
 		</div>
-		<div class="car-owners-display-box" style="display: none;" id="owners-box-209">
+		<div class="car-owners-display-box" style="display: none;" id="owners-box-263">
 			<div class="car-owners-header">
 				Players flagged for botting on team <span style="color: #F9D034;">[ER4SED]</span>
 			</div>
-	<div class="car-owners" style="display: none;" id="car-owners-209-1"><div class="car-owner">1. <a class="car-owner-name" href="https://www.nitrotype.com/racer/687250f9efd6f4ff4f48e2e22a3cfea9" target="_blank">-_- two fingers -_-</a></div><div class="car-owner">2. <a class="car-owner-name" href="https://www.nitrotype.com/racer/effectzam" target="_blank">EffectzAM</a></div><div class="car-owner">3. <a class="car-owner-name" href="https://www.nitrotype.com/racer/evnontop2" target="_blank">EvnOnTop</a></div><div class="car-owner">4. <a class="car-owner-name" href="https://www.nitrotype.com/racer/hi24cool" target="_blank">Master 19k</a></div><div class="car-owner">5. <a class="car-owner-name" href="https://www.nitrotype.com/racer/iliketohack784924" target="_blank">ApricotAmethystBedbug</a></div></div></div><table class="table"><tbody>
+	<div class="car-owners" style="display: none;" id="car-owners-263-1"><div class="car-owner">1. <a class="car-owner-name" href="https://www.nitrotype.com/racer/687250f9efd6f4ff4f48e2e22a3cfea9" target="_blank">-_- two fingers -_-</a></div><div class="car-owner">2. <a class="car-owner-name" href="https://www.nitrotype.com/racer/effectzam" target="_blank">EffectzAM</a></div><div class="car-owner">3. <a class="car-owner-name" href="https://www.nitrotype.com/racer/evnontop2" target="_blank">EvnOnTop</a></div><div class="car-owner">4. <a class="car-owner-name" href="https://www.nitrotype.com/racer/hi24cool" target="_blank">Master 19k</a></div><div class="car-owner">5. <a class="car-owner-name" href="https://www.nitrotype.com/racer/iliketohack784924" target="_blank">ApricotAmethystBedbug</a></div></div></div><table class="table"><tbody>
 				<tr class="table-row table-row--nonpodium" lookupID="VAMOS7">
 					<td class="table-cell table-cell--place place-number" style="width: 9%;">
 	22</td>
@@ -667,23 +654,23 @@
 	31</td>
 	
 					<td class="table-cell" style="width: 18%;">
-	96.919%</td>
+	96.92%</td>
 	
 				</tr>
 	</tbody></table>
 		<div class="relative-box">
-			<button class="flag-button" onclick="showCarOwners(210, 1, 481)" id="show-owners-button-210">
+			<button class="flag-button" onclick="showCarOwners(264, 1, 583)" id="show-owners-button-264">
 				🚩
 			</button>
-			<button class="flag-button" onclick="hideCarOwners(210, 1, 481)" style="display: none;" id="hide-owners-button-210">
+			<button class="flag-button" onclick="hideCarOwners(264, 1, 583)" style="display: none;" id="hide-owners-button-264">
 				🚩
 			</button>
 		</div>
-		<div class="car-owners-display-box" style="display: none;" id="owners-box-210">
+		<div class="car-owners-display-box" style="display: none;" id="owners-box-264">
 			<div class="car-owners-header">
 				Players flagged for botting on team <span style="color: #F9D034;">[VAMOS7]</span>
 			</div>
-	<div class="car-owners" style="display: none;" id="car-owners-210-1"><div class="car-owner">1. <a class="car-owner-name" href="https://www.nitrotype.com/racer/51a4f24d696443eed63a10fd456dbfd7" target="_blank">Shuey123</a></div><div class="car-owner">2. <a class="car-owner-name" href="https://www.nitrotype.com/racer/ecbc9e740585122cc72c910819a8e513" target="_blank">HalaMadridSuiiiiiiii</a></div></div></div><table class="table"><tbody>
+	<div class="car-owners" style="display: none;" id="car-owners-264-1"><div class="car-owner">1. <a class="car-owner-name" href="https://www.nitrotype.com/racer/51a4f24d696443eed63a10fd456dbfd7" target="_blank">Shuey123</a></div><div class="car-owner">2. <a class="car-owner-name" href="https://www.nitrotype.com/racer/ecbc9e740585122cc72c910819a8e513" target="_blank">HalaMadridSuiiiiiiii</a></div></div></div><table class="table"><tbody>
 				<tr class="table-row table-row--odd table-row--nonpodium" lookupID="2S">
 					<td class="table-cell table-cell--place place-number" style="width: 9%;">
 	23</td>
@@ -693,26 +680,26 @@
 					<td class="table-cell" style="width: 12%;"><span class="tag-text" style="color: #ded2e8;">[<a class="tag-text tag-text-link" style="color: #ded2e8;" href="https://www.nitrotype.com/team/2S" target="_blank">2S</a>]</span></td>
 					<td class="table-cell" style="width: 39%; whitespace: nowrap;"><a href="https://www.nitrotype.com/team/2S" target="_blank" class="team-text">"2 Swift"</a></td>
 					<td class="table-cell" style="width: 15%;">
-	31</td>
+	28</td>
 	
 					<td class="table-cell" style="width: 18%;">
-	96.892%</td>
+	96.91%</td>
 	
 				</tr>
 	</tbody></table>
 		<div class="relative-box">
-			<button class="flag-button" onclick="showCarOwners(211, 1, 481)" id="show-owners-button-211">
+			<button class="flag-button" onclick="showCarOwners(265, 1, 583)" id="show-owners-button-265">
 				🚩
 			</button>
-			<button class="flag-button" onclick="hideCarOwners(211, 1, 481)" style="display: none;" id="hide-owners-button-211">
+			<button class="flag-button" onclick="hideCarOwners(265, 1, 583)" style="display: none;" id="hide-owners-button-265">
 				🚩
 			</button>
 		</div>
-		<div class="car-owners-display-box" style="display: none;" id="owners-box-211">
+		<div class="car-owners-display-box" style="display: none;" id="owners-box-265">
 			<div class="car-owners-header">
 				Players flagged for botting on team <span style="color: #F9D034;">[2S]</span>
 			</div>
-	<div class="car-owners" style="display: none;" id="car-owners-211-1"><div class="car-owner">1. <a class="car-owner-name" href="https://www.nitrotype.com/racer/1a22ec8abe5ee92fda0ca870835dfea8" target="_blank">yotyperson</a></div><div class="car-owner">2. <a class="car-owner-name" href="https://www.nitrotype.com/racer/aba7b057c57f8fd9ed502aa5f0741dbc" target="_blank">Santas lil helper</a></div><div class="car-owner">3. <a class="car-owner-name" href="https://www.nitrotype.com/racer/ademgb" target="_blank">Sub to Ademgb on YT</a></div><div class="car-owner">4. <a class="car-owner-name" href="https://www.nitrotype.com/racer/cr4zy4rm1d1lo" target="_blank">Cr4zyBoyz-YT</a></div><div class="car-owner">5. <a class="car-owner-name" href="https://www.nitrotype.com/racer/eb26750d79531500a904c20f8dab9043" target="_blank">Elite_pxlarized</a></div><div class="car-owner">6. <a class="car-owner-name" href="https://www.nitrotype.com/racer/equ1libr1um" target="_blank">Equ1libr1um</a></div><div class="car-owner">7. <a class="car-owner-name" href="https://www.nitrotype.com/racer/gp756891" target="_blank">SleepyDreOnYT</a></div><div class="car-owner">8. <a class="car-owner-name" href="https://www.nitrotype.com/racer/greenbaline" target="_blank">SwiftCrimsonWeasel</a></div><div class="car-owner">9. <a class="car-owner-name" href="https://www.nitrotype.com/racer/jmoney12757" target="_blank">-C for Cookies 60k</a></div><div class="car-owner">10. <a class="car-owner-name" href="https://www.nitrotype.com/racer/p_l_a_y_e_r_1" target="_blank">P_L_A_Y_E_R_1_</a></div><div class="car-owner">11. <a class="car-owner-name" href="https://www.nitrotype.com/racer/pls_give_judson56_ng" target="_blank">2S-4-Life</a></div><div class="car-owner">12. <a class="car-owner-name" href="https://www.nitrotype.com/racer/stron5678" target="_blank">RationalBeigeSloth</a></div><div class="car-owner">13. <a class="car-owner-name" href="https://www.nitrotype.com/racer/th3rm0matter" target="_blank">Matt3r</a></div></div></div><table class="table"><tbody>
+	<div class="car-owners" style="display: none;" id="car-owners-265-1"><div class="car-owner">1. <a class="car-owner-name" href="https://www.nitrotype.com/racer/1a22ec8abe5ee92fda0ca870835dfea8" target="_blank">yotyperson</a></div><div class="car-owner">2. <a class="car-owner-name" href="https://www.nitrotype.com/racer/aba7b057c57f8fd9ed502aa5f0741dbc" target="_blank">Santas lil helper</a></div><div class="car-owner">3. <a class="car-owner-name" href="https://www.nitrotype.com/racer/ademgb" target="_blank">Sub to Ademgb on YT</a></div><div class="car-owner">4. <a class="car-owner-name" href="https://www.nitrotype.com/racer/eb26750d79531500a904c20f8dab9043" target="_blank">Elite_pxlarized</a></div><div class="car-owner">5. <a class="car-owner-name" href="https://www.nitrotype.com/racer/equ1libr1um" target="_blank">Equ1libr1um</a></div><div class="car-owner">6. <a class="car-owner-name" href="https://www.nitrotype.com/racer/gp756891" target="_blank">SleepyDreOnYT</a></div><div class="car-owner">7. <a class="car-owner-name" href="https://www.nitrotype.com/racer/greenbaline" target="_blank">SwiftCrimsonWeasel</a></div><div class="car-owner">8. <a class="car-owner-name" href="https://www.nitrotype.com/racer/jmoney12757" target="_blank">-C for Cookies 60k</a></div><div class="car-owner">9. <a class="car-owner-name" href="https://www.nitrotype.com/racer/p_l_a_y_e_r_1" target="_blank">P_L_A_Y_E_R_1_</a></div><div class="car-owner">10. <a class="car-owner-name" href="https://www.nitrotype.com/racer/pls_give_judson56_ng" target="_blank">2S-4-Life</a></div><div class="car-owner">11. <a class="car-owner-name" href="https://www.nitrotype.com/racer/stron5678" target="_blank">RationalBeigeSloth</a></div><div class="car-owner">12. <a class="car-owner-name" href="https://www.nitrotype.com/racer/th3rm0matter" target="_blank">Matt3r</a></div></div></div><table class="table"><tbody>
 				<tr class="table-row table-row--nonpodium" lookupID="TH1CCC">
 					<td class="table-cell table-cell--place place-number" style="width: 9%;">
 	24</td>
@@ -725,23 +712,23 @@
 	31</td>
 	
 					<td class="table-cell" style="width: 18%;">
-	96.767%</td>
+	96.77%</td>
 	
 				</tr>
 	</tbody></table>
 		<div class="relative-box">
-			<button class="flag-button" onclick="showCarOwners(212, 1, 481)" id="show-owners-button-212">
+			<button class="flag-button" onclick="showCarOwners(266, 1, 583)" id="show-owners-button-266">
 				🚩
 			</button>
-			<button class="flag-button" onclick="hideCarOwners(212, 1, 481)" style="display: none;" id="hide-owners-button-212">
+			<button class="flag-button" onclick="hideCarOwners(266, 1, 583)" style="display: none;" id="hide-owners-button-266">
 				🚩
 			</button>
 		</div>
-		<div class="car-owners-display-box" style="display: none;" id="owners-box-212">
+		<div class="car-owners-display-box" style="display: none;" id="owners-box-266">
 			<div class="car-owners-header">
 				Players flagged for botting on team <span style="color: #F9D034;">[TH1CCC]</span>
 			</div>
-	<div class="car-owners" style="display: none;" id="car-owners-212-1"><div class="car-owner">1. <a class="car-owner-name" href="https://www.nitrotype.com/racer/bdb1b235480768ec4751e6c0fe64d799" target="_blank">GreenTruck</a></div><div class="car-owner">2. <a class="car-owner-name" href="https://www.nitrotype.com/racer/d37dece30c34068f6588edd3ae5fe92f" target="_blank">NotJacob</a></div></div></div><table class="table"><tbody>
+	<div class="car-owners" style="display: none;" id="car-owners-266-1"><div class="car-owner">1. <a class="car-owner-name" href="https://www.nitrotype.com/racer/bdb1b235480768ec4751e6c0fe64d799" target="_blank">GreenTruck</a></div><div class="car-owner">2. <a class="car-owner-name" href="https://www.nitrotype.com/racer/d37dece30c34068f6588edd3ae5fe92f" target="_blank">NotJacob</a></div></div></div><table class="table"><tbody>
 				<tr class="table-row table-row--odd table-row--nonpodium" lookupID="KING44">
 					<td class="table-cell table-cell--place place-number" style="width: 9%;">
 	25</td>
@@ -754,26 +741,42 @@
 	36</td>
 	
 					<td class="table-cell" style="width: 18%;">
-	96.759%</td>
+	96.76%</td>
 	
 				</tr>
 	</tbody></table>
 		<div class="relative-box">
-			<button class="flag-button" onclick="showCarOwners(213, 1, 481)" id="show-owners-button-213">
+			<button class="flag-button" onclick="showCarOwners(267, 1, 583)" id="show-owners-button-267">
 				🚩
 			</button>
-			<button class="flag-button" onclick="hideCarOwners(213, 1, 481)" style="display: none;" id="hide-owners-button-213">
+			<button class="flag-button" onclick="hideCarOwners(267, 1, 583)" style="display: none;" id="hide-owners-button-267">
 				🚩
 			</button>
 		</div>
-		<div class="car-owners-display-box" style="display: none;" id="owners-box-213">
+		<div class="car-owners-display-box" style="display: none;" id="owners-box-267">
 			<div class="car-owners-header">
 				Players flagged for botting on team <span style="color: #F9D034;">[KING44]</span>
 			</div>
-	<div class="car-owners" style="display: none;" id="car-owners-213-1"><div class="car-owner">1. <a class="car-owner-name" href="https://www.nitrotype.com/racer/ab3425db82861b023f8500c565e4799a" target="_blank">FriendlyAzureGorilla</a></div><div class="car-owner">2. <a class="car-owner-name" href="https://www.nitrotype.com/racer/c73fbc9d7fe71ab78fa8a77997bb6a65" target="_blank">JEFF THE LAND SHARK</a></div><div class="car-owner">3. <a class="car-owner-name" href="https://www.nitrotype.com/racer/dumbahhnoah" target="_blank">noahfv</a></div></div></div><table class="table"><tbody>
-				<tr class="table-row table-row--nonpodium" lookupID="DRACOF">
+	<div class="car-owners" style="display: none;" id="car-owners-267-1"><div class="car-owner">1. <a class="car-owner-name" href="https://www.nitrotype.com/racer/ab3425db82861b023f8500c565e4799a" target="_blank">FriendlyAzureGorilla</a></div><div class="car-owner">2. <a class="car-owner-name" href="https://www.nitrotype.com/racer/c73fbc9d7fe71ab78fa8a77997bb6a65" target="_blank">JEFF THE LAND SHARK</a></div><div class="car-owner">3. <a class="car-owner-name" href="https://www.nitrotype.com/racer/dumbahhnoah" target="_blank">noahfv</a></div></div></div><table class="table"><tbody>
+				<tr class="table-row table-row--nonpodium" lookupID="S0RC">
 					<td class="table-cell table-cell--place place-number" style="width: 9%;">
 	26</td>
+	
+					<td class="table-cell" style="width: 7%;"><img class="league-icon" src="/static/images/leagues/teams/11.webp"/></td>
+	
+					<td class="table-cell" style="width: 12%;"><span class="tag-text" style="color: #40b8ea;">[<a class="tag-text tag-text-link" style="color: #40b8ea;" href="https://www.nitrotype.com/team/S0RC" target="_blank">S0RC</a>]</span></td>
+					<td class="table-cell" style="width: 39%; whitespace: nowrap;"><a href="https://www.nitrotype.com/team/S0RC" target="_blank" class="team-text">"Solar   Racers"</a></td>
+					<td class="table-cell" style="width: 15%;">
+	36</td>
+	
+					<td class="table-cell" style="width: 18%;">
+	96.76%</td>
+	
+				</tr>
+	
+				<tr class="table-row table-row--odd table-row--nonpodium" lookupID="DRACOF">
+					<td class="table-cell table-cell--place place-number" style="width: 9%;">
+	27</td>
 	
 					<td class="table-cell" style="width: 7%;"><img class="league-icon" src="/static/images/leagues/teams/9.webp"/></td>
 	
@@ -783,39 +786,23 @@
 	27</td>
 	
 					<td class="table-cell" style="width: 18%;">
-	96.754%</td>
+	96.74%</td>
 	
 				</tr>
 	</tbody></table>
 		<div class="relative-box">
-			<button class="flag-button" onclick="showCarOwners(214, 1, 481)" id="show-owners-button-214">
+			<button class="flag-button" onclick="showCarOwners(268, 1, 583)" id="show-owners-button-268">
 				🚩
 			</button>
-			<button class="flag-button" onclick="hideCarOwners(214, 1, 481)" style="display: none;" id="hide-owners-button-214">
+			<button class="flag-button" onclick="hideCarOwners(268, 1, 583)" style="display: none;" id="hide-owners-button-268">
 				🚩
 			</button>
 		</div>
-		<div class="car-owners-display-box" style="display: none;" id="owners-box-214">
+		<div class="car-owners-display-box" style="display: none;" id="owners-box-268">
 			<div class="car-owners-header">
 				Players flagged for botting on team <span style="color: #F9D034;">[DRACOF]</span>
 			</div>
-	<div class="car-owners" style="display: none;" id="car-owners-214-1"><div class="car-owner">1. <a class="car-owner-name" href="https://www.nitrotype.com/racer/797249" target="_blank">797249</a></div><div class="car-owner">2. <a class="car-owner-name" href="https://www.nitrotype.com/racer/r12345678" target="_blank">r12345678</a></div></div></div><table class="table"><tbody>
-				<tr class="table-row table-row--odd table-row--nonpodium" lookupID="S0RC">
-					<td class="table-cell table-cell--place place-number" style="width: 9%;">
-	27</td>
-	
-					<td class="table-cell" style="width: 7%;"><img class="league-icon" src="/static/images/leagues/teams/11.webp"/></td>
-	
-					<td class="table-cell" style="width: 12%;"><span class="tag-text" style="color: #40b8ea;">[<a class="tag-text tag-text-link" style="color: #40b8ea;" href="https://www.nitrotype.com/team/S0RC" target="_blank">S0RC</a>]</span></td>
-					<td class="table-cell" style="width: 39%; whitespace: nowrap;"><a href="https://www.nitrotype.com/team/S0RC" target="_blank" class="team-text">"Solar   Racers"</a></td>
-					<td class="table-cell" style="width: 15%;">
-	37</td>
-	
-					<td class="table-cell" style="width: 18%;">
-	96.731%</td>
-	
-				</tr>
-	
+	<div class="car-owners" style="display: none;" id="car-owners-268-1"><div class="car-owner">1. <a class="car-owner-name" href="https://www.nitrotype.com/racer/797249" target="_blank">797249</a></div><div class="car-owner">2. <a class="car-owner-name" href="https://www.nitrotype.com/racer/r12345678" target="_blank">r12345678</a></div></div></div><table class="table"><tbody>
 				<tr class="table-row table-row--nonpodium" lookupID="L3GCY">
 					<td class="table-cell table-cell--place place-number" style="width: 9%;">
 	28</td>
@@ -828,23 +815,23 @@
 	50</td>
 	
 					<td class="table-cell" style="width: 18%;">
-	96.724%</td>
+	96.72%</td>
 	
 				</tr>
 	</tbody></table>
 		<div class="relative-box">
-			<button class="flag-button" onclick="showCarOwners(215, 1, 481)" id="show-owners-button-215">
+			<button class="flag-button" onclick="showCarOwners(269, 1, 583)" id="show-owners-button-269">
 				🚩
 			</button>
-			<button class="flag-button" onclick="hideCarOwners(215, 1, 481)" style="display: none;" id="hide-owners-button-215">
+			<button class="flag-button" onclick="hideCarOwners(269, 1, 583)" style="display: none;" id="hide-owners-button-269">
 				🚩
 			</button>
 		</div>
-		<div class="car-owners-display-box" style="display: none;" id="owners-box-215">
+		<div class="car-owners-display-box" style="display: none;" id="owners-box-269">
 			<div class="car-owners-header">
 				Players flagged for botting on team <span style="color: #F9D034;">[L3GCY]</span>
 			</div>
-	<div class="car-owners" style="display: none;" id="car-owners-215-1"><div class="car-owner">1. <a class="car-owner-name" href="https://www.nitrotype.com/racer/0a8c52317fae37c08a841dfda1b84ae5" target="_blank">AArndt</a></div><div class="car-owner">2. <a class="car-owner-name" href="https://www.nitrotype.com/racer/bdd959a1dcb1a26cd0fe58aaad4baec7" target="_blank">Bbett1</a></div><div class="car-owner">3. <a class="car-owner-name" href="https://www.nitrotype.com/racer/eliasbarrios100" target="_blank">LIVE ONLY FOR JESUS</a></div><div class="car-owner">4. <a class="car-owner-name" href="https://www.nitrotype.com/racer/lucas1234user" target="_blank">lucas1234user</a></div></div></div><table class="table"><tbody>
+	<div class="car-owners" style="display: none;" id="car-owners-269-1"><div class="car-owner">1. <a class="car-owner-name" href="https://www.nitrotype.com/racer/0a8c52317fae37c08a841dfda1b84ae5" target="_blank">AArndt</a></div><div class="car-owner">2. <a class="car-owner-name" href="https://www.nitrotype.com/racer/bdd959a1dcb1a26cd0fe58aaad4baec7" target="_blank">Bbett1</a></div><div class="car-owner">3. <a class="car-owner-name" href="https://www.nitrotype.com/racer/eliasbarrios100" target="_blank">LIVE ONLY FOR JESUS</a></div><div class="car-owner">4. <a class="car-owner-name" href="https://www.nitrotype.com/racer/lucas1234user" target="_blank">lucas1234user</a></div></div></div><table class="table"><tbody>
 				<tr class="table-row table-row--odd table-row--nonpodium" lookupID="NTPD1">
 					<td class="table-cell table-cell--place place-number" style="width: 9%;">
 	29</td>
@@ -854,10 +841,10 @@
 					<td class="table-cell" style="width: 12%;"><span class="tag-text" style="color: #40b8ea;">[<a class="tag-text tag-text-link" style="color: #40b8ea;" href="https://www.nitrotype.com/team/NTPD1" target="_blank">NTPD1</a>]</span></td>
 					<td class="table-cell" style="width: 39%; whitespace: nowrap;"><a href="https://www.nitrotype.com/team/NTPD1" target="_blank" class="team-text">"Nitro Type Police"</a></td>
 					<td class="table-cell" style="width: 15%;">
-	49</td>
+	50</td>
 	
 					<td class="table-cell" style="width: 18%;">
-	96.681%</td>
+	96.68%</td>
 	
 				</tr>
 	
@@ -873,23 +860,23 @@
 	33</td>
 	
 					<td class="table-cell" style="width: 18%;">
-	96.681%</td>
+	96.68%</td>
 	
 				</tr>
 	</tbody></table>
 		<div class="relative-box">
-			<button class="flag-button" onclick="showCarOwners(216, 1, 481)" id="show-owners-button-216">
+			<button class="flag-button" onclick="showCarOwners(270, 1, 583)" id="show-owners-button-270">
 				🚩
 			</button>
-			<button class="flag-button" onclick="hideCarOwners(216, 1, 481)" style="display: none;" id="hide-owners-button-216">
+			<button class="flag-button" onclick="hideCarOwners(270, 1, 583)" style="display: none;" id="hide-owners-button-270">
 				🚩
 			</button>
 		</div>
-		<div class="car-owners-display-box" style="display: none;" id="owners-box-216">
+		<div class="car-owners-display-box" style="display: none;" id="owners-box-270">
 			<div class="car-owners-header">
 				Players flagged for botting on team <span style="color: #F9D034;">[VEGAS]</span>
 			</div>
-	<div class="car-owners" style="display: none;" id="car-owners-216-1"><div class="car-owner">1. <a class="car-owner-name" href="https://www.nitrotype.com/racer/ba1cd12af583b08a751305f3ca01845b" target="_blank">richarmyofone</a></div></div></div><table class="table"><tbody>
+	<div class="car-owners" style="display: none;" id="car-owners-270-1"><div class="car-owner">1. <a class="car-owner-name" href="https://www.nitrotype.com/racer/ba1cd12af583b08a751305f3ca01845b" target="_blank">richarmyofone</a></div></div></div><table class="table"><tbody>
 				<tr class="table-row table-row--odd table-row--nonpodium" lookupID="RIZ3IN">
 					<td class="table-cell table-cell--place place-number" style="width: 9%;">
 	31</td>
@@ -902,23 +889,23 @@
 	39</td>
 	
 					<td class="table-cell" style="width: 18%;">
-	96.676%</td>
+	96.68%</td>
 	
 				</tr>
 	</tbody></table>
 		<div class="relative-box">
-			<button class="flag-button" onclick="showCarOwners(217, 1, 481)" id="show-owners-button-217">
+			<button class="flag-button" onclick="showCarOwners(271, 1, 583)" id="show-owners-button-271">
 				🚩
 			</button>
-			<button class="flag-button" onclick="hideCarOwners(217, 1, 481)" style="display: none;" id="hide-owners-button-217">
+			<button class="flag-button" onclick="hideCarOwners(271, 1, 583)" style="display: none;" id="hide-owners-button-271">
 				🚩
 			</button>
 		</div>
-		<div class="car-owners-display-box" style="display: none;" id="owners-box-217">
+		<div class="car-owners-display-box" style="display: none;" id="owners-box-271">
 			<div class="car-owners-header">
 				Players flagged for botting on team <span style="color: #F9D034;">[RIZ3IN]</span>
 			</div>
-	<div class="car-owners" style="display: none;" id="car-owners-217-1"><div class="car-owner">1. <a class="car-owner-name" href="https://www.nitrotype.com/racer/agoatgdk" target="_blank">PeriwinkleCoffeeElephant</a></div></div></div><table class="table"><tbody>
+	<div class="car-owners" style="display: none;" id="car-owners-271-1"><div class="car-owner">1. <a class="car-owner-name" href="https://www.nitrotype.com/racer/agoatgdk" target="_blank">PeriwinkleCoffeeElephant</a></div></div></div><table class="table"><tbody>
 				<tr class="table-row table-row--nonpodium" lookupID="B000M">
 					<td class="table-cell table-cell--place place-number" style="width: 9%;">
 	32</td>
@@ -931,55 +918,26 @@
 	47</td>
 	
 					<td class="table-cell" style="width: 18%;">
-	96.636%</td>
+	96.64%</td>
 	
 				</tr>
 	</tbody></table>
 		<div class="relative-box">
-			<button class="flag-button" onclick="showCarOwners(218, 1, 481)" id="show-owners-button-218">
+			<button class="flag-button" onclick="showCarOwners(272, 1, 583)" id="show-owners-button-272">
 				🚩
 			</button>
-			<button class="flag-button" onclick="hideCarOwners(218, 1, 481)" style="display: none;" id="hide-owners-button-218">
+			<button class="flag-button" onclick="hideCarOwners(272, 1, 583)" style="display: none;" id="hide-owners-button-272">
 				🚩
 			</button>
 		</div>
-		<div class="car-owners-display-box" style="display: none;" id="owners-box-218">
+		<div class="car-owners-display-box" style="display: none;" id="owners-box-272">
 			<div class="car-owners-header">
 				Players flagged for botting on team <span style="color: #F9D034;">[B000M]</span>
 			</div>
-	<div class="car-owners" style="display: none;" id="car-owners-218-1"><div class="car-owner">1. <a class="car-owner-name" href="https://www.nitrotype.com/racer/164cd6ec31ebb50e1c1ad48b82274981" target="_blank">coley D</a></div><div class="car-owner">2. <a class="car-owner-name" href="https://www.nitrotype.com/racer/64b7c710cb1095ee4285794289d607ad" target="_blank">Dingerboy5</a></div><div class="car-owner">3. <a class="car-owner-name" href="https://www.nitrotype.com/racer/7bd303c2ad62712c127a5fe88c0b58c0" target="_blank">i have a honda 250</a></div></div></div><table class="table"><tbody>
-				<tr class="table-row table-row--odd table-row--nonpodium" lookupID="LILBRO">
+	<div class="car-owners" style="display: none;" id="car-owners-272-1"><div class="car-owner">1. <a class="car-owner-name" href="https://www.nitrotype.com/racer/164cd6ec31ebb50e1c1ad48b82274981" target="_blank">coley D</a></div><div class="car-owner">2. <a class="car-owner-name" href="https://www.nitrotype.com/racer/64b7c710cb1095ee4285794289d607ad" target="_blank">Dingerboy5</a></div><div class="car-owner">3. <a class="car-owner-name" href="https://www.nitrotype.com/racer/7bd303c2ad62712c127a5fe88c0b58c0" target="_blank">i have a honda 250</a></div></div></div><table class="table"><tbody>
+				<tr class="table-row table-row--odd table-row--nonpodium" lookupID="TMS2">
 					<td class="table-cell table-cell--place place-number" style="width: 9%;">
 	33</td>
-	
-					<td class="table-cell" style="width: 7%;"><img class="league-icon" src="/static/images/leagues/teams/10.webp"/></td>
-	
-					<td class="table-cell" style="width: 12%;"><span class="tag-text" style="color: #fba51a;">[<a class="tag-text tag-text-link" style="color: #fba51a;" href="https://www.nitrotype.com/team/LILBRO" target="_blank">LILBRO</a>]</span></td>
-					<td class="table-cell" style="width: 39%; whitespace: nowrap;"><a href="https://www.nitrotype.com/team/LILBRO" target="_blank" class="team-text">"We are better ten U"</a></td>
-					<td class="table-cell" style="width: 15%;">
-	43</td>
-	
-					<td class="table-cell" style="width: 18%;">
-	96.587%</td>
-	
-				</tr>
-	</tbody></table>
-		<div class="relative-box">
-			<button class="flag-button" onclick="showCarOwners(219, 1, 481)" id="show-owners-button-219">
-				🚩
-			</button>
-			<button class="flag-button" onclick="hideCarOwners(219, 1, 481)" style="display: none;" id="hide-owners-button-219">
-				🚩
-			</button>
-		</div>
-		<div class="car-owners-display-box" style="display: none;" id="owners-box-219">
-			<div class="car-owners-header">
-				Players flagged for botting on team <span style="color: #F9D034;">[LILBRO]</span>
-			</div>
-	<div class="car-owners" style="display: none;" id="car-owners-219-1"><div class="car-owner">1. <a class="car-owner-name" href="https://www.nitrotype.com/racer/elementalchance1221" target="_blank">RIP_WAMPS12</a></div><div class="car-owner">2. <a class="car-owner-name" href="https://www.nitrotype.com/racer/jtgandshad" target="_blank">Cool Nerd Kid</a></div></div></div><table class="table"><tbody>
-				<tr class="table-row table-row--nonpodium" lookupID="TMS2">
-					<td class="table-cell table-cell--place place-number" style="width: 9%;">
-	34</td>
 	
 					<td class="table-cell" style="width: 7%;"><img class="league-icon" src="/static/images/leagues/teams/11.webp"/></td>
 	
@@ -989,26 +947,26 @@
 	49</td>
 	
 					<td class="table-cell" style="width: 18%;">
-	96.578%</td>
+	96.57%</td>
 	
 				</tr>
 	</tbody></table>
 		<div class="relative-box">
-			<button class="flag-button" onclick="showCarOwners(220, 1, 481)" id="show-owners-button-220">
+			<button class="flag-button" onclick="showCarOwners(273, 1, 583)" id="show-owners-button-273">
 				🚩
 			</button>
-			<button class="flag-button" onclick="hideCarOwners(220, 1, 481)" style="display: none;" id="hide-owners-button-220">
+			<button class="flag-button" onclick="hideCarOwners(273, 1, 583)" style="display: none;" id="hide-owners-button-273">
 				🚩
 			</button>
 		</div>
-		<div class="car-owners-display-box" style="display: none;" id="owners-box-220">
+		<div class="car-owners-display-box" style="display: none;" id="owners-box-273">
 			<div class="car-owners-header">
 				Players flagged for botting on team <span style="color: #F9D034;">[TMS2]</span>
 			</div>
-	<div class="car-owners" style="display: none;" id="car-owners-220-1"><div class="car-owner">1. <a class="car-owner-name" href="https://www.nitrotype.com/racer/gadget_ontop" target="_blank">Gadget</a></div><div class="car-owner">2. <a class="car-owner-name" href="https://www.nitrotype.com/racer/mavericks90" target="_blank">mavericks77</a></div></div></div><table class="table"><tbody>
-				<tr class="table-row table-row--odd table-row--nonpodium" lookupID="NTSL">
+	<div class="car-owners" style="display: none;" id="car-owners-273-1"><div class="car-owner">1. <a class="car-owner-name" href="https://www.nitrotype.com/racer/gadget_ontop" target="_blank">Gadget</a></div><div class="car-owner">2. <a class="car-owner-name" href="https://www.nitrotype.com/racer/mavericks90" target="_blank">mavericks77</a></div></div></div><table class="table"><tbody>
+				<tr class="table-row table-row--nonpodium" lookupID="NTSL">
 					<td class="table-cell table-cell--place place-number" style="width: 9%;">
-	35</td>
+	34</td>
 	
 					<td class="table-cell" style="width: 7%;"><img class="league-icon" src="/static/images/leagues/teams/10.webp"/></td>
 	
@@ -1018,23 +976,52 @@
 	32</td>
 	
 					<td class="table-cell" style="width: 18%;">
-	96.551%</td>
+	96.55%</td>
 	
 				</tr>
 	</tbody></table>
 		<div class="relative-box">
-			<button class="flag-button" onclick="showCarOwners(221, 1, 481)" id="show-owners-button-221">
+			<button class="flag-button" onclick="showCarOwners(274, 1, 583)" id="show-owners-button-274">
 				🚩
 			</button>
-			<button class="flag-button" onclick="hideCarOwners(221, 1, 481)" style="display: none;" id="hide-owners-button-221">
+			<button class="flag-button" onclick="hideCarOwners(274, 1, 583)" style="display: none;" id="hide-owners-button-274">
 				🚩
 			</button>
 		</div>
-		<div class="car-owners-display-box" style="display: none;" id="owners-box-221">
+		<div class="car-owners-display-box" style="display: none;" id="owners-box-274">
 			<div class="car-owners-header">
 				Players flagged for botting on team <span style="color: #F9D034;">[NTSL]</span>
 			</div>
-	<div class="car-owners" style="display: none;" id="car-owners-221-1"><div class="car-owner">1. <a class="car-owner-name" href="https://www.nitrotype.com/racer/63ab85867f239ffdc0d13610c98197c5" target="_blank">Therealphapack</a></div></div></div><table class="table"><tbody>
+	<div class="car-owners" style="display: none;" id="car-owners-274-1"><div class="car-owner">1. <a class="car-owner-name" href="https://www.nitrotype.com/racer/63ab85867f239ffdc0d13610c98197c5" target="_blank">Therealphapack</a></div></div></div><table class="table"><tbody>
+				<tr class="table-row table-row--odd table-row--nonpodium" lookupID="LILBRO">
+					<td class="table-cell table-cell--place place-number" style="width: 9%;">
+	35</td>
+	
+					<td class="table-cell" style="width: 7%;"><img class="league-icon" src="/static/images/leagues/teams/10.webp"/></td>
+	
+					<td class="table-cell" style="width: 12%;"><span class="tag-text" style="color: #fba51a;">[<a class="tag-text tag-text-link" style="color: #fba51a;" href="https://www.nitrotype.com/team/LILBRO" target="_blank">LILBRO</a>]</span></td>
+					<td class="table-cell" style="width: 39%; whitespace: nowrap;"><a href="https://www.nitrotype.com/team/LILBRO" target="_blank" class="team-text">"We are better ten U"</a></td>
+					<td class="table-cell" style="width: 15%;">
+	45</td>
+	
+					<td class="table-cell" style="width: 18%;">
+	96.52%</td>
+	
+				</tr>
+	</tbody></table>
+		<div class="relative-box">
+			<button class="flag-button" onclick="showCarOwners(275, 1, 583)" id="show-owners-button-275">
+				🚩
+			</button>
+			<button class="flag-button" onclick="hideCarOwners(275, 1, 583)" style="display: none;" id="hide-owners-button-275">
+				🚩
+			</button>
+		</div>
+		<div class="car-owners-display-box" style="display: none;" id="owners-box-275">
+			<div class="car-owners-header">
+				Players flagged for botting on team <span style="color: #F9D034;">[LILBRO]</span>
+			</div>
+	<div class="car-owners" style="display: none;" id="car-owners-275-1"><div class="car-owner">1. <a class="car-owner-name" href="https://www.nitrotype.com/racer/elementalchance1221" target="_blank">RIP_WAMPS12</a></div><div class="car-owner">2. <a class="car-owner-name" href="https://www.nitrotype.com/racer/jtgandshad" target="_blank">Cool Nerd Kid</a></div></div></div><table class="table"><tbody>
 				<tr class="table-row table-row--nonpodium" lookupID="RYAY">
 					<td class="table-cell table-cell--place place-number" style="width: 9%;">
 	36</td>
@@ -1047,55 +1034,26 @@
 	15</td>
 	
 					<td class="table-cell" style="width: 18%;">
-	96.508%</td>
+	96.51%</td>
 	
 				</tr>
 	</tbody></table>
 		<div class="relative-box">
-			<button class="flag-button" onclick="showCarOwners(222, 1, 481)" id="show-owners-button-222">
+			<button class="flag-button" onclick="showCarOwners(276, 1, 583)" id="show-owners-button-276">
 				🚩
 			</button>
-			<button class="flag-button" onclick="hideCarOwners(222, 1, 481)" style="display: none;" id="hide-owners-button-222">
+			<button class="flag-button" onclick="hideCarOwners(276, 1, 583)" style="display: none;" id="hide-owners-button-276">
 				🚩
 			</button>
 		</div>
-		<div class="car-owners-display-box" style="display: none;" id="owners-box-222">
+		<div class="car-owners-display-box" style="display: none;" id="owners-box-276">
 			<div class="car-owners-header">
 				Players flagged for botting on team <span style="color: #F9D034;">[RYAY]</span>
 			</div>
-	<div class="car-owners" style="display: none;" id="car-owners-222-1"><div class="car-owner">1. <a class="car-owner-name" href="https://www.nitrotype.com/racer/monkeygud" target="_blank">monkeygud</a></div></div></div><table class="table"><tbody>
-				<tr class="table-row table-row--odd table-row--nonpodium" lookupID="NOLS">
+	<div class="car-owners" style="display: none;" id="car-owners-276-1"><div class="car-owner">1. <a class="car-owner-name" href="https://www.nitrotype.com/racer/monkeygud" target="_blank">monkeygud</a></div></div></div><table class="table"><tbody>
+				<tr class="table-row table-row--odd table-row--nonpodium" lookupID="PRDTOR">
 					<td class="table-cell table-cell--place place-number" style="width: 9%;">
 	37</td>
-	
-					<td class="table-cell" style="width: 7%;"><img class="league-icon" src="/static/images/leagues/teams/10.webp"/></td>
-	
-					<td class="table-cell" style="width: 12%;"><span class="tag-text" style="color: #8750a0;">[<a class="tag-text tag-text-link" style="color: #8750a0;" href="https://www.nitrotype.com/team/NOLS" target="_blank">NOLS</a>]</span></td>
-					<td class="table-cell" style="width: 39%; whitespace: nowrap;"><a href="https://www.nitrotype.com/team/NOLS" target="_blank" class="team-text">"Night Owls"</a></td>
-					<td class="table-cell" style="width: 15%;">
-	17</td>
-	
-					<td class="table-cell" style="width: 18%;">
-	96.5%</td>
-	
-				</tr>
-	</tbody></table>
-		<div class="relative-box">
-			<button class="flag-button" onclick="showCarOwners(223, 1, 481)" id="show-owners-button-223">
-				🚩
-			</button>
-			<button class="flag-button" onclick="hideCarOwners(223, 1, 481)" style="display: none;" id="hide-owners-button-223">
-				🚩
-			</button>
-		</div>
-		<div class="car-owners-display-box" style="display: none;" id="owners-box-223">
-			<div class="car-owners-header">
-				Players flagged for botting on team <span style="color: #F9D034;">[NOLS]</span>
-			</div>
-	<div class="car-owners" style="display: none;" id="car-owners-223-1"><div class="car-owner">1. <a class="car-owner-name" href="https://www.nitrotype.com/racer/arkthegoathim" target="_blank">arkthegoat</a></div><div class="car-owner">2. <a class="car-owner-name" href="https://www.nitrotype.com/racer/mastertim418" target="_blank">MaestroChrono</a></div></div></div><table class="table"><tbody>
-				<tr class="table-row table-row--nonpodium" lookupID="PRDTOR">
-					<td class="table-cell table-cell--place place-number" style="width: 9%;">
-	38</td>
 	
 					<td class="table-cell" style="width: 7%;"><img class="league-icon" src="/static/images/leagues/teams/11.webp"/></td>
 	
@@ -1105,26 +1063,71 @@
 	48</td>
 	
 					<td class="table-cell" style="width: 18%;">
-	96.493%</td>
+	96.49%</td>
 	
 				</tr>
 	</tbody></table>
 		<div class="relative-box">
-			<button class="flag-button" onclick="showCarOwners(224, 1, 481)" id="show-owners-button-224">
+			<button class="flag-button" onclick="showCarOwners(277, 1, 583)" id="show-owners-button-277">
 				🚩
 			</button>
-			<button class="flag-button" onclick="hideCarOwners(224, 1, 481)" style="display: none;" id="hide-owners-button-224">
+			<button class="flag-button" onclick="hideCarOwners(277, 1, 583)" style="display: none;" id="hide-owners-button-277">
 				🚩
 			</button>
 		</div>
-		<div class="car-owners-display-box" style="display: none;" id="owners-box-224">
+		<div class="car-owners-display-box" style="display: none;" id="owners-box-277">
 			<div class="car-owners-header">
 				Players flagged for botting on team <span style="color: #F9D034;">[PRDTOR]</span>
 			</div>
-	<div class="car-owners" style="display: none;" id="car-owners-224-1"><div class="car-owner">1. <a class="car-owner-name" href="https://www.nitrotype.com/racer/thatrealmrmeowgame8r" target="_blank">ThatRealMrMeoww</a></div></div></div><table class="table"><tbody>
-				<tr class="table-row table-row--odd table-row--nonpodium" lookupID="W2V">
+	<div class="car-owners" style="display: none;" id="car-owners-277-1"><div class="car-owner">1. <a class="car-owner-name" href="https://www.nitrotype.com/racer/thatrealmrmeowgame8r" target="_blank">ThatRealMrMeoww</a></div></div></div><table class="table"><tbody>
+				<tr class="table-row table-row--nonpodium" lookupID="NOLS">
+					<td class="table-cell table-cell--place place-number" style="width: 9%;">
+	38</td>
+	
+					<td class="table-cell" style="width: 7%;"><img class="league-icon" src="/static/images/leagues/teams/10.webp"/></td>
+	
+					<td class="table-cell" style="width: 12%;"><span class="tag-text" style="color: #8750a0;">[<a class="tag-text tag-text-link" style="color: #8750a0;" href="https://www.nitrotype.com/team/NOLS" target="_blank">NOLS</a>]</span></td>
+					<td class="table-cell" style="width: 39%; whitespace: nowrap;"><a href="https://www.nitrotype.com/team/NOLS" target="_blank" class="team-text">"Night Owls"</a></td>
+					<td class="table-cell" style="width: 15%;">
+	17</td>
+	
+					<td class="table-cell" style="width: 18%;">
+	96.49%</td>
+	
+				</tr>
+	</tbody></table>
+		<div class="relative-box">
+			<button class="flag-button" onclick="showCarOwners(278, 1, 583)" id="show-owners-button-278">
+				🚩
+			</button>
+			<button class="flag-button" onclick="hideCarOwners(278, 1, 583)" style="display: none;" id="hide-owners-button-278">
+				🚩
+			</button>
+		</div>
+		<div class="car-owners-display-box" style="display: none;" id="owners-box-278">
+			<div class="car-owners-header">
+				Players flagged for botting on team <span style="color: #F9D034;">[NOLS]</span>
+			</div>
+	<div class="car-owners" style="display: none;" id="car-owners-278-1"><div class="car-owner">1. <a class="car-owner-name" href="https://www.nitrotype.com/racer/arkthegoathim" target="_blank">arkthegoat</a></div><div class="car-owner">2. <a class="car-owner-name" href="https://www.nitrotype.com/racer/mastertim418" target="_blank">MaestroChrono</a></div></div></div><table class="table"><tbody>
+				<tr class="table-row table-row--odd table-row--nonpodium" lookupID="T0WER">
 					<td class="table-cell table-cell--place place-number" style="width: 9%;">
 	39</td>
+	
+					<td class="table-cell" style="width: 7%;"><img class="league-icon" src="/static/images/leagues/teams/12.webp"/></td>
+	
+					<td class="table-cell" style="width: 12%;"><span class="tag-text" style="color: #6783c2;">[<a class="tag-text tag-text-link" style="color: #6783c2;" href="https://www.nitrotype.com/team/T0WER" target="_blank">T0WER</a>]</span></td>
+					<td class="table-cell" style="width: 39%; whitespace: nowrap;"><a href="https://www.nitrotype.com/team/T0WER" target="_blank" class="team-text">"WatchTower"</a></td>
+					<td class="table-cell" style="width: 15%;">
+	45</td>
+	
+					<td class="table-cell" style="width: 18%;">
+	96.45%</td>
+	
+				</tr>
+	
+				<tr class="table-row table-row--nonpodium" lookupID="W2V">
+					<td class="table-cell table-cell--place place-number" style="width: 9%;">
+	40</td>
 	
 					<td class="table-cell" style="width: 7%;"><img class="league-icon" src="/static/images/leagues/teams/11.webp"/></td>
 	
@@ -1134,13 +1137,13 @@
 	36</td>
 	
 					<td class="table-cell" style="width: 18%;">
-	96.447%</td>
+	96.45%</td>
 	
 				</tr>
 	
-				<tr class="table-row table-row--nonpodium" lookupID="FTINT">
+				<tr class="table-row table-row--odd table-row--nonpodium" lookupID="FTINT">
 					<td class="table-cell table-cell--place place-number" style="width: 9%;">
-	40</td>
+	41</td>
 	
 					<td class="table-cell" style="width: 7%;"><img class="league-icon" src="/static/images/leagues/teams/10.webp"/></td>
 	
@@ -1150,23 +1153,7 @@
 	50</td>
 	
 					<td class="table-cell" style="width: 18%;">
-	96.443%</td>
-	
-				</tr>
-	
-				<tr class="table-row table-row--odd table-row--nonpodium" lookupID="T0WER">
-					<td class="table-cell table-cell--place place-number" style="width: 9%;">
-	41</td>
-	
-					<td class="table-cell" style="width: 7%;"><img class="league-icon" src="/static/images/leagues/teams/12.webp"/></td>
-	
-					<td class="table-cell" style="width: 12%;"><span class="tag-text" style="color: #6783c2;">[<a class="tag-text tag-text-link" style="color: #6783c2;" href="https://www.nitrotype.com/team/T0WER" target="_blank">T0WER</a>]</span></td>
-					<td class="table-cell" style="width: 39%; whitespace: nowrap;"><a href="https://www.nitrotype.com/team/T0WER" target="_blank" class="team-text">"WatchTower"</a></td>
-					<td class="table-cell" style="width: 15%;">
-	46</td>
-	
-					<td class="table-cell" style="width: 18%;">
-	96.438%</td>
+	96.44%</td>
 	
 				</tr>
 	
@@ -1182,26 +1169,55 @@
 	39</td>
 	
 					<td class="table-cell" style="width: 18%;">
-	96.415%</td>
+	96.41%</td>
 	
 				</tr>
 	</tbody></table>
 		<div class="relative-box">
-			<button class="flag-button" onclick="showCarOwners(225, 1, 481)" id="show-owners-button-225">
+			<button class="flag-button" onclick="showCarOwners(279, 1, 583)" id="show-owners-button-279">
 				🚩
 			</button>
-			<button class="flag-button" onclick="hideCarOwners(225, 1, 481)" style="display: none;" id="hide-owners-button-225">
+			<button class="flag-button" onclick="hideCarOwners(279, 1, 583)" style="display: none;" id="hide-owners-button-279">
 				🚩
 			</button>
 		</div>
-		<div class="car-owners-display-box" style="display: none;" id="owners-box-225">
+		<div class="car-owners-display-box" style="display: none;" id="owners-box-279">
 			<div class="car-owners-header">
 				Players flagged for botting on team <span style="color: #F9D034;">[DDWT]</span>
 			</div>
-	<div class="car-owners" style="display: none;" id="car-owners-225-1"><div class="car-owner">1. <a class="car-owner-name" href="https://www.nitrotype.com/racer/antfrmdav" target="_blank">IM RANKED</a></div></div></div><table class="table"><tbody>
-				<tr class="table-row table-row--odd table-row--nonpodium" lookupID="ZENR">
+	<div class="car-owners" style="display: none;" id="car-owners-279-1"><div class="car-owner">1. <a class="car-owner-name" href="https://www.nitrotype.com/racer/antfrmdav" target="_blank">IM RANKED</a></div></div></div><table class="table"><tbody>
+				<tr class="table-row table-row--odd table-row--nonpodium" lookupID="TESLA6">
 					<td class="table-cell table-cell--place place-number" style="width: 9%;">
 	43</td>
+	
+					<td class="table-cell" style="width: 7%;"><img class="league-icon" src="/static/images/leagues/teams/11.webp"/></td>
+	
+					<td class="table-cell" style="width: 12%;"><span class="tag-text" style="color: #436fb6;">[<a class="tag-text tag-text-link" style="color: #436fb6;" href="https://www.nitrotype.com/team/TESLA6" target="_blank">TESLA6</a>]</span></td>
+					<td class="table-cell" style="width: 39%; whitespace: nowrap;"><a href="https://www.nitrotype.com/team/TESLA6" target="_blank" class="team-text">"free teslas"</a></td>
+					<td class="table-cell" style="width: 15%;">
+	49</td>
+	
+					<td class="table-cell" style="width: 18%;">
+	96.4%</td>
+	
+				</tr>
+	</tbody></table>
+		<div class="relative-box">
+			<button class="flag-button" onclick="showCarOwners(280, 1, 583)" id="show-owners-button-280">
+				🚩
+			</button>
+			<button class="flag-button" onclick="hideCarOwners(280, 1, 583)" style="display: none;" id="hide-owners-button-280">
+				🚩
+			</button>
+		</div>
+		<div class="car-owners-display-box" style="display: none;" id="owners-box-280">
+			<div class="car-owners-header">
+				Players flagged for botting on team <span style="color: #F9D034;">[TESLA6]</span>
+			</div>
+	<div class="car-owners" style="display: none;" id="car-owners-280-1"><div class="car-owner">1. <a class="car-owner-name" href="https://www.nitrotype.com/racer/1897208" target="_blank">1897208</a></div><div class="car-owner">2. <a class="car-owner-name" href="https://www.nitrotype.com/racer/349afed40206880c2de48f65eb6e8c57" target="_blank">LivelySapphireLoon</a></div><div class="car-owner">3. <a class="car-owner-name" href="https://www.nitrotype.com/racer/eatmetonight_imyummy" target="_blank">Elon Musk 2</a></div><div class="car-owner">4. <a class="car-owner-name" href="https://www.nitrotype.com/racer/googlexbing" target="_blank">Franz von Holzhausen</a></div><div class="car-owner">5. <a class="car-owner-name" href="https://www.nitrotype.com/racer/i_am_50_years_old" target="_blank">i_am_50_years_old</a></div><div class="car-owner">6. <a class="car-owner-name" href="https://www.nitrotype.com/racer/johncenalscool" target="_blank">johncenalscool</a></div><div class="car-owner">7. <a class="car-owner-name" href="https://www.nitrotype.com/racer/joj0j0jo" target="_blank">JOj0J0jO</a></div></div></div><table class="table"><tbody>
+				<tr class="table-row table-row--nonpodium" lookupID="ZENR">
+					<td class="table-cell table-cell--place place-number" style="width: 9%;">
+	44</td>
 	
 					<td class="table-cell" style="width: 7%;"><img class="league-icon" src="/static/images/leagues/teams/9.webp"/></td>
 	
@@ -1211,26 +1227,26 @@
 	47</td>
 	
 					<td class="table-cell" style="width: 18%;">
-	96.327%</td>
+	96.33%</td>
 	
 				</tr>
 	</tbody></table>
 		<div class="relative-box">
-			<button class="flag-button" onclick="showCarOwners(226, 1, 481)" id="show-owners-button-226">
+			<button class="flag-button" onclick="showCarOwners(281, 1, 583)" id="show-owners-button-281">
 				🚩
 			</button>
-			<button class="flag-button" onclick="hideCarOwners(226, 1, 481)" style="display: none;" id="hide-owners-button-226">
+			<button class="flag-button" onclick="hideCarOwners(281, 1, 583)" style="display: none;" id="hide-owners-button-281">
 				🚩
 			</button>
 		</div>
-		<div class="car-owners-display-box" style="display: none;" id="owners-box-226">
+		<div class="car-owners-display-box" style="display: none;" id="owners-box-281">
 			<div class="car-owners-header">
 				Players flagged for botting on team <span style="color: #F9D034;">[ZENR]</span>
 			</div>
-	<div class="car-owners" style="display: none;" id="car-owners-226-1"><div class="car-owner">1. <a class="car-owner-name" href="https://www.nitrotype.com/racer/0c8a21782d7c47d73b221ebc56c5ed65" target="_blank">Dreuroaches</a></div><div class="car-owner">2. <a class="car-owner-name" href="https://www.nitrotype.com/racer/skerrigan" target="_blank">GILASINGILL</a></div></div></div><table class="table"><tbody>
-				<tr class="table-row table-row--nonpodium" lookupID="TNT">
+	<div class="car-owners" style="display: none;" id="car-owners-281-1"><div class="car-owner">1. <a class="car-owner-name" href="https://www.nitrotype.com/racer/0c8a21782d7c47d73b221ebc56c5ed65" target="_blank">Dreuroaches</a></div><div class="car-owner">2. <a class="car-owner-name" href="https://www.nitrotype.com/racer/skerrigan" target="_blank">GILASINGILL</a></div></div></div><table class="table"><tbody>
+				<tr class="table-row table-row--odd table-row--nonpodium" lookupID="TNT">
 					<td class="table-cell table-cell--place place-number" style="width: 9%;">
-	44</td>
+	45</td>
 	
 					<td class="table-cell" style="width: 7%;"><img class="league-icon" src="/static/images/leagues/teams/9.webp"/></td>
 	
@@ -1240,55 +1256,42 @@
 	40</td>
 	
 					<td class="table-cell" style="width: 18%;">
-	96.317%</td>
+	96.32%</td>
 	
 				</tr>
 	</tbody></table>
 		<div class="relative-box">
-			<button class="flag-button" onclick="showCarOwners(227, 1, 481)" id="show-owners-button-227">
+			<button class="flag-button" onclick="showCarOwners(282, 1, 583)" id="show-owners-button-282">
 				🚩
 			</button>
-			<button class="flag-button" onclick="hideCarOwners(227, 1, 481)" style="display: none;" id="hide-owners-button-227">
+			<button class="flag-button" onclick="hideCarOwners(282, 1, 583)" style="display: none;" id="hide-owners-button-282">
 				🚩
 			</button>
 		</div>
-		<div class="car-owners-display-box" style="display: none;" id="owners-box-227">
+		<div class="car-owners-display-box" style="display: none;" id="owners-box-282">
 			<div class="car-owners-header">
 				Players flagged for botting on team <span style="color: #F9D034;">[TNT]</span>
 			</div>
-	<div class="car-owners" style="display: none;" id="car-owners-227-1"><div class="car-owner">1. <a class="car-owner-name" href="https://www.nitrotype.com/racer/augxjas1" target="_blank">-kraze-</a></div></div></div><table class="table"><tbody>
-				<tr class="table-row table-row--odd table-row--nonpodium" lookupID="CAM0">
-					<td class="table-cell table-cell--place place-number" style="width: 9%;">
-	45</td>
-	
-					<td class="table-cell" style="width: 7%;"><img class="league-icon" src="/static/images/leagues/teams/13.webp"/></td>
-	
-					<td class="table-cell" style="width: 12%;"><span class="tag-text" style="color: #aad596;">[<a class="tag-text tag-text-link" style="color: #aad596;" href="https://www.nitrotype.com/team/CAM0" target="_blank">CAM0</a>]</span></td>
-					<td class="table-cell" style="width: 39%; whitespace: nowrap;"><a href="https://www.nitrotype.com/team/CAM0" target="_blank" class="team-text">"25mil n Gold CompNow"</a></td>
-					<td class="table-cell" style="width: 15%;">
-	49</td>
-	
-					<td class="table-cell" style="width: 18%;">
-	96.301%</td>
-	
-				</tr>
-	</tbody></table>
-		<div class="relative-box">
-			<button class="flag-button" onclick="showCarOwners(228, 1, 481)" id="show-owners-button-228">
-				🚩
-			</button>
-			<button class="flag-button" onclick="hideCarOwners(228, 1, 481)" style="display: none;" id="hide-owners-button-228">
-				🚩
-			</button>
-		</div>
-		<div class="car-owners-display-box" style="display: none;" id="owners-box-228">
-			<div class="car-owners-header">
-				Players flagged for botting on team <span style="color: #F9D034;">[CAM0]</span>
-			</div>
-	<div class="car-owners" style="display: none;" id="car-owners-228-1"><div class="car-owner">1. <a class="car-owner-name" href="https://www.nitrotype.com/racer/7rin17y" target="_blank">C00LKED</a></div><div class="car-owner">2. <a class="car-owner-name" href="https://www.nitrotype.com/racer/andx757" target="_blank">andx757</a></div><div class="car-owner">3. <a class="car-owner-name" href="https://www.nitrotype.com/racer/dakrsoul_90" target="_blank">dakrsoul</a></div><div class="car-owner">4. <a class="car-owner-name" href="https://www.nitrotype.com/racer/jugugaglu" target="_blank">jugugaluNT on YT</a></div></div></div><table class="table"><tbody>
-				<tr class="table-row table-row--nonpodium" lookupID="HRX">
+	<div class="car-owners" style="display: none;" id="car-owners-282-1"><div class="car-owner">1. <a class="car-owner-name" href="https://www.nitrotype.com/racer/augxjas1" target="_blank">-kraze-</a></div></div></div><table class="table"><tbody>
+				<tr class="table-row table-row--nonpodium" lookupID="VRK">
 					<td class="table-cell table-cell--place place-number" style="width: 9%;">
 	46</td>
+	
+					<td class="table-cell" style="width: 7%;"><img class="league-icon" src="/static/images/leagues/teams/6.webp"/></td>
+	
+					<td class="table-cell" style="width: 12%;"><span class="tag-text" style="color: #ee1f25;">[<a class="tag-text tag-text-link" style="color: #ee1f25;" href="https://www.nitrotype.com/team/VRK" target="_blank">VRK</a>]</span></td>
+					<td class="table-cell" style="width: 39%; whitespace: nowrap;"><a href="https://www.nitrotype.com/team/VRK" target="_blank" class="team-text">"Velocity Valkyries"</a></td>
+					<td class="table-cell" style="width: 15%;">
+	22</td>
+	
+					<td class="table-cell" style="width: 18%;">
+	96.3%</td>
+	
+				</tr>
+	
+				<tr class="table-row table-row--odd table-row--nonpodium" lookupID="HRX">
+					<td class="table-cell table-cell--place place-number" style="width: 9%;">
+	47</td>
 	
 					<td class="table-cell" style="width: 7%;"><img class="league-icon" src="/static/images/leagues/teams/10.webp"/></td>
 	
@@ -1302,9 +1305,38 @@
 	
 				</tr>
 	
+				<tr class="table-row table-row--nonpodium" lookupID="CAM0">
+					<td class="table-cell table-cell--place place-number" style="width: 9%;">
+	48</td>
+	
+					<td class="table-cell" style="width: 7%;"><img class="league-icon" src="/static/images/leagues/teams/13.webp"/></td>
+	
+					<td class="table-cell" style="width: 12%;"><span class="tag-text" style="color: #aad596;">[<a class="tag-text tag-text-link" style="color: #aad596;" href="https://www.nitrotype.com/team/CAM0" target="_blank">CAM0</a>]</span></td>
+					<td class="table-cell" style="width: 39%; whitespace: nowrap;"><a href="https://www.nitrotype.com/team/CAM0" target="_blank" class="team-text">"25mil n Gold CompNow"</a></td>
+					<td class="table-cell" style="width: 15%;">
+	49</td>
+	
+					<td class="table-cell" style="width: 18%;">
+	96.29%</td>
+	
+				</tr>
+	</tbody></table>
+		<div class="relative-box">
+			<button class="flag-button" onclick="showCarOwners(283, 1, 583)" id="show-owners-button-283">
+				🚩
+			</button>
+			<button class="flag-button" onclick="hideCarOwners(283, 1, 583)" style="display: none;" id="hide-owners-button-283">
+				🚩
+			</button>
+		</div>
+		<div class="car-owners-display-box" style="display: none;" id="owners-box-283">
+			<div class="car-owners-header">
+				Players flagged for botting on team <span style="color: #F9D034;">[CAM0]</span>
+			</div>
+	<div class="car-owners" style="display: none;" id="car-owners-283-1"><div class="car-owner">1. <a class="car-owner-name" href="https://www.nitrotype.com/racer/7rin17y" target="_blank">C00LKED</a></div><div class="car-owner">2. <a class="car-owner-name" href="https://www.nitrotype.com/racer/andx757" target="_blank">andx757</a></div><div class="car-owner">3. <a class="car-owner-name" href="https://www.nitrotype.com/racer/dakrsoul_90" target="_blank">dakrsoul</a></div><div class="car-owner">4. <a class="car-owner-name" href="https://www.nitrotype.com/racer/jugugaglu" target="_blank">jugugaluNT on YT</a></div></div></div><table class="table"><tbody>
 				<tr class="table-row table-row--odd table-row--nonpodium" lookupID="CYBERS">
 					<td class="table-cell table-cell--place place-number" style="width: 9%;">
-	47</td>
+	49</td>
 	
 					<td class="table-cell" style="width: 7%;"><img class="league-icon" src="/static/images/leagues/teams/10.webp"/></td>
 	
@@ -1314,90 +1346,74 @@
 	17</td>
 	
 					<td class="table-cell" style="width: 18%;">
-	96.285%</td>
+	96.29%</td>
 	
 				</tr>
 	
 				<tr class="table-row table-row--nonpodium" lookupID="SUSH1">
 					<td class="table-cell table-cell--place place-number" style="width: 9%;">
-	48</td>
+	50</td>
 	
 					<td class="table-cell" style="width: 7%;"><img class="league-icon" src="/static/images/leagues/teams/8.webp"/></td>
 	
 					<td class="table-cell" style="width: 12%;"><span class="tag-text" style="color: #436fb6;">[<a class="tag-text tag-text-link" style="color: #436fb6;" href="https://www.nitrotype.com/team/SUSH1" target="_blank">SUSH1</a>]</span></td>
 					<td class="table-cell" style="width: 39%; whitespace: nowrap;"><a href="https://www.nitrotype.com/team/SUSH1" target="_blank" class="team-text">"2019Blackfordmustang"</a></td>
 					<td class="table-cell" style="width: 15%;">
-	19</td>
+	18</td>
 	
 					<td class="table-cell" style="width: 18%;">
-	96.244%</td>
+	96.24%</td>
 	
 				</tr>
 	
 				<tr class="table-row table-row--odd table-row--nonpodium" lookupID="HONT">
 					<td class="table-cell table-cell--place place-number" style="width: 9%;">
-	49</td>
+	51</td>
 	
 					<td class="table-cell" style="width: 7%;"><img class="league-icon" src="/static/images/leagues/teams/12.webp"/></td>
 	
 					<td class="table-cell" style="width: 12%;"><span class="tag-text" style="color: #40b8ea;">[<a class="tag-text tag-text-link" style="color: #40b8ea;" href="https://www.nitrotype.com/team/HONT" target="_blank">HONT</a>]</span></td>
 					<td class="table-cell" style="width: 39%; whitespace: nowrap;"><a href="https://www.nitrotype.com/team/HONT" target="_blank" class="team-text">"Hammers of NT"</a></td>
 					<td class="table-cell" style="width: 15%;">
-	48</td>
+	46</td>
 	
 					<td class="table-cell" style="width: 18%;">
-	96.231%</td>
+	96.23%</td>
 	
 				</tr>
 	</tbody></table>
 		<div class="relative-box">
-			<button class="flag-button" onclick="showCarOwners(229, 1, 481)" id="show-owners-button-229">
+			<button class="flag-button" onclick="showCarOwners(284, 1, 583)" id="show-owners-button-284">
 				🚩
 			</button>
-			<button class="flag-button" onclick="hideCarOwners(229, 1, 481)" style="display: none;" id="hide-owners-button-229">
+			<button class="flag-button" onclick="hideCarOwners(284, 1, 583)" style="display: none;" id="hide-owners-button-284">
 				🚩
 			</button>
 		</div>
-		<div class="car-owners-display-box" style="display: none;" id="owners-box-229">
+		<div class="car-owners-display-box" style="display: none;" id="owners-box-284">
 			<div class="car-owners-header">
 				Players flagged for botting on team <span style="color: #F9D034;">[HONT]</span>
 			</div>
-	<div class="car-owners" style="display: none;" id="car-owners-229-1"><div class="car-owner">1. <a class="car-owner-name" href="https://www.nitrotype.com/racer/82f09cc27ef6778a9c5f3e7234c79d74" target="_blank">Racer_Acer - 8k</a></div><div class="car-owner">2. <a class="car-owner-name" href="https://www.nitrotype.com/racer/cf1bfdd869f6c236e148338fa0db5a05" target="_blank">Aetherion</a></div><div class="car-owner">3. <a class="car-owner-name" href="https://www.nitrotype.com/racer/nicholasl13" target="_blank">saintn1ck</a></div></div></div><table class="table"><tbody>
+	<div class="car-owners" style="display: none;" id="car-owners-284-1"><div class="car-owner">1. <a class="car-owner-name" href="https://www.nitrotype.com/racer/cf1bfdd869f6c236e148338fa0db5a05" target="_blank">Aetherion</a></div><div class="car-owner">2. <a class="car-owner-name" href="https://www.nitrotype.com/racer/nicholasl13" target="_blank">saintn1ck</a></div></div></div><table class="table"><tbody>
 				<tr class="table-row table-row--nonpodium" lookupID="VXL">
 					<td class="table-cell table-cell--place place-number" style="width: 9%;">
-	50</td>
+	52</td>
 	
 					<td class="table-cell" style="width: 7%;"><img class="league-icon" src="/static/images/leagues/teams/10.webp"/></td>
 	
 					<td class="table-cell" style="width: 12%;"><span class="tag-text" style="color: #ee1f25;">[<a class="tag-text tag-text-link" style="color: #ee1f25;" href="https://www.nitrotype.com/team/VXL" target="_blank">VXL</a>]</span></td>
 					<td class="table-cell" style="width: 39%; whitespace: nowrap;"><a href="https://www.nitrotype.com/team/VXL" target="_blank" class="team-text">"10 Mil Comp"</a></td>
 					<td class="table-cell" style="width: 15%;">
-	48</td>
+	47</td>
 	
 					<td class="table-cell" style="width: 18%;">
-	96.223%</td>
+	96.23%</td>
 	
 				</tr>
 	
-				<tr class="table-row table-row--odd table-row--nonpodium" lookupID="CRO5S">
+				<tr class="table-row table-row--odd table-row--nonpodium" lookupID="SLAYAJ">
 					<td class="table-cell table-cell--place place-number" style="width: 9%;">
-	51</td>
-	
-					<td class="table-cell" style="width: 7%;"><img class="league-icon" src="/static/images/leagues/teams/9.webp"/></td>
-	
-					<td class="table-cell" style="width: 12%;"><span class="tag-text" style="color: #71c6a5;">[<a class="tag-text tag-text-link" style="color: #71c6a5;" href="https://www.nitrotype.com/team/CRO5S" target="_blank">CRO5S</a>]</span></td>
-					<td class="table-cell" style="width: 39%; whitespace: nowrap;"><a href="https://www.nitrotype.com/team/CRO5S" target="_blank" class="team-text">"Pick Up Your Cross"</a></td>
-					<td class="table-cell" style="width: 15%;">
-	42</td>
-	
-					<td class="table-cell" style="width: 18%;">
-	96.212%</td>
-	
-				</tr>
-	
-				<tr class="table-row table-row--nonpodium" lookupID="SLAYAJ">
-					<td class="table-cell table-cell--place place-number" style="width: 9%;">
-	52</td>
+	53</td>
 	
 					<td class="table-cell" style="width: 7%;"><img class="league-icon" src="/static/images/leagues/teams/7.webp"/></td>
 	
@@ -1407,26 +1423,42 @@
 	18</td>
 	
 					<td class="table-cell" style="width: 18%;">
-	96.196%</td>
+	96.2%</td>
 	
 				</tr>
 	</tbody></table>
 		<div class="relative-box">
-			<button class="flag-button" onclick="showCarOwners(230, 1, 481)" id="show-owners-button-230">
+			<button class="flag-button" onclick="showCarOwners(285, 1, 583)" id="show-owners-button-285">
 				🚩
 			</button>
-			<button class="flag-button" onclick="hideCarOwners(230, 1, 481)" style="display: none;" id="hide-owners-button-230">
+			<button class="flag-button" onclick="hideCarOwners(285, 1, 583)" style="display: none;" id="hide-owners-button-285">
 				🚩
 			</button>
 		</div>
-		<div class="car-owners-display-box" style="display: none;" id="owners-box-230">
+		<div class="car-owners-display-box" style="display: none;" id="owners-box-285">
 			<div class="car-owners-header">
 				Players flagged for botting on team <span style="color: #F9D034;">[SLAYAJ]</span>
 			</div>
-	<div class="car-owners" style="display: none;" id="car-owners-230-1"><div class="car-owner">1. <a class="car-owner-name" href="https://www.nitrotype.com/racer/helloder123456789" target="_blank">helloder123456789</a></div></div></div><table class="table"><tbody>
+	<div class="car-owners" style="display: none;" id="car-owners-285-1"><div class="car-owner">1. <a class="car-owner-name" href="https://www.nitrotype.com/racer/helloder123456789" target="_blank">helloder123456789</a></div></div></div><table class="table"><tbody>
+				<tr class="table-row table-row--nonpodium" lookupID="CRO5S">
+					<td class="table-cell table-cell--place place-number" style="width: 9%;">
+	54</td>
+	
+					<td class="table-cell" style="width: 7%;"><img class="league-icon" src="/static/images/leagues/teams/9.webp"/></td>
+	
+					<td class="table-cell" style="width: 12%;"><span class="tag-text" style="color: #71c6a5;">[<a class="tag-text tag-text-link" style="color: #71c6a5;" href="https://www.nitrotype.com/team/CRO5S" target="_blank">CRO5S</a>]</span></td>
+					<td class="table-cell" style="width: 39%; whitespace: nowrap;"><a href="https://www.nitrotype.com/team/CRO5S" target="_blank" class="team-text">"Pick Up Your Cross"</a></td>
+					<td class="table-cell" style="width: 15%;">
+	41</td>
+	
+					<td class="table-cell" style="width: 18%;">
+	96.16%</td>
+	
+				</tr>
+	
 				<tr class="table-row table-row--odd table-row--nonpodium" lookupID="NEXO">
 					<td class="table-cell table-cell--place place-number" style="width: 9%;">
-	53</td>
+	55</td>
 	
 					<td class="table-cell" style="width: 7%;"><img class="league-icon" src="/static/images/leagues/teams/6.webp"/></td>
 	
@@ -1436,26 +1468,26 @@
 	22</td>
 	
 					<td class="table-cell" style="width: 18%;">
-	96.153%</td>
+	96.15%</td>
 	
 				</tr>
 	</tbody></table>
 		<div class="relative-box">
-			<button class="flag-button" onclick="showCarOwners(231, 1, 481)" id="show-owners-button-231">
+			<button class="flag-button" onclick="showCarOwners(286, 1, 583)" id="show-owners-button-286">
 				🚩
 			</button>
-			<button class="flag-button" onclick="hideCarOwners(231, 1, 481)" style="display: none;" id="hide-owners-button-231">
+			<button class="flag-button" onclick="hideCarOwners(286, 1, 583)" style="display: none;" id="hide-owners-button-286">
 				🚩
 			</button>
 		</div>
-		<div class="car-owners-display-box" style="display: none;" id="owners-box-231">
+		<div class="car-owners-display-box" style="display: none;" id="owners-box-286">
 			<div class="car-owners-header">
 				Players flagged for botting on team <span style="color: #F9D034;">[NEXO]</span>
 			</div>
-	<div class="car-owners" style="display: none;" id="car-owners-231-1"><div class="car-owner">1. <a class="car-owner-name" href="https://www.nitrotype.com/racer/iamgonnawin09" target="_blank">iamgonnawin09</a></div></div></div><table class="table"><tbody>
+	<div class="car-owners" style="display: none;" id="car-owners-286-1"><div class="car-owner">1. <a class="car-owner-name" href="https://www.nitrotype.com/racer/iamgonnawin09" target="_blank">iamgonnawin09</a></div></div></div><table class="table"><tbody>
 				<tr class="table-row table-row--nonpodium" lookupID="STOCK">
 					<td class="table-cell table-cell--place place-number" style="width: 9%;">
-	54</td>
+	56</td>
 	
 					<td class="table-cell" style="width: 7%;"><img class="league-icon" src="/static/images/leagues/teams/6.webp"/></td>
 	
@@ -1465,13 +1497,13 @@
 	32</td>
 	
 					<td class="table-cell" style="width: 18%;">
-	96.142%</td>
+	96.14%</td>
 	
 				</tr>
 	
 				<tr class="table-row table-row--odd table-row--nonpodium" lookupID="LMOTIV">
 					<td class="table-cell table-cell--place place-number" style="width: 9%;">
-	55</td>
+	57</td>
 	
 					<td class="table-cell" style="width: 7%;"><img class="league-icon" src="/static/images/leagues/teams/11.webp"/></td>
 	
@@ -1481,26 +1513,26 @@
 	50</td>
 	
 					<td class="table-cell" style="width: 18%;">
-	96.121%</td>
+	96.11%</td>
 	
 				</tr>
 	</tbody></table>
 		<div class="relative-box">
-			<button class="flag-button" onclick="showCarOwners(232, 1, 481)" id="show-owners-button-232">
+			<button class="flag-button" onclick="showCarOwners(287, 1, 583)" id="show-owners-button-287">
 				🚩
 			</button>
-			<button class="flag-button" onclick="hideCarOwners(232, 1, 481)" style="display: none;" id="hide-owners-button-232">
+			<button class="flag-button" onclick="hideCarOwners(287, 1, 583)" style="display: none;" id="hide-owners-button-287">
 				🚩
 			</button>
 		</div>
-		<div class="car-owners-display-box" style="display: none;" id="owners-box-232">
+		<div class="car-owners-display-box" style="display: none;" id="owners-box-287">
 			<div class="car-owners-header">
 				Players flagged for botting on team <span style="color: #F9D034;">[LMOTIV]</span>
 			</div>
-	<div class="car-owners" style="display: none;" id="car-owners-232-1"><div class="car-owner">1. <a class="car-owner-name" href="https://www.nitrotype.com/racer/crumble_2020" target="_blank">cheese</a></div></div></div><table class="table"><tbody>
+	<div class="car-owners" style="display: none;" id="car-owners-287-1"><div class="car-owner">1. <a class="car-owner-name" href="https://www.nitrotype.com/racer/crumble_2020" target="_blank">cheese</a></div></div></div><table class="table"><tbody>
 				<tr class="table-row table-row--nonpodium" lookupID="AAAC">
 					<td class="table-cell table-cell--place place-number" style="width: 9%;">
-	56</td>
+	58</td>
 	
 					<td class="table-cell" style="width: 7%;"><img class="league-icon" src="/static/images/leagues/teams/7.webp"/></td>
 	
@@ -1510,13 +1542,42 @@
 	32</td>
 	
 					<td class="table-cell" style="width: 18%;">
-	96.082%</td>
+	96.08%</td>
 	
 				</tr>
 	
-				<tr class="table-row table-row--odd table-row--nonpodium" lookupID="GILMOR">
+				<tr class="table-row table-row--odd table-row--nonpodium" lookupID="MYRCS">
 					<td class="table-cell table-cell--place place-number" style="width: 9%;">
-	57</td>
+	59</td>
+	
+					<td class="table-cell" style="width: 7%;"><img class="league-icon" src="/static/images/leagues/teams/10.webp"/></td>
+	
+					<td class="table-cell" style="width: 12%;"><span class="tag-text" style="color: #d1499b;">[<a class="tag-text tag-text-link" style="color: #d1499b;" href="https://www.nitrotype.com/team/MYRCS" target="_blank">MYRCS</a>]</span></td>
+					<td class="table-cell" style="width: 39%; whitespace: nowrap;"><a href="https://www.nitrotype.com/team/MYRCS" target="_blank" class="team-text">"RCS Eagles"</a></td>
+					<td class="table-cell" style="width: 15%;">
+	26</td>
+	
+					<td class="table-cell" style="width: 18%;">
+	96.08%</td>
+	
+				</tr>
+	</tbody></table>
+		<div class="relative-box">
+			<button class="flag-button" onclick="showCarOwners(288, 1, 583)" id="show-owners-button-288">
+				🚩
+			</button>
+			<button class="flag-button" onclick="hideCarOwners(288, 1, 583)" style="display: none;" id="hide-owners-button-288">
+				🚩
+			</button>
+		</div>
+		<div class="car-owners-display-box" style="display: none;" id="owners-box-288">
+			<div class="car-owners-header">
+				Players flagged for botting on team <span style="color: #F9D034;">[MYRCS]</span>
+			</div>
+	<div class="car-owners" style="display: none;" id="car-owners-288-1"><div class="car-owner">1. <a class="car-owner-name" href="https://www.nitrotype.com/racer/418ff8694b1f9840aea0ec2b63b5afc9" target="_blank">BILLIE EILISH</a></div></div></div><table class="table"><tbody>
+				<tr class="table-row table-row--nonpodium" lookupID="GILMOR">
+					<td class="table-cell table-cell--place place-number" style="width: 9%;">
+	60</td>
 	
 					<td class="table-cell" style="width: 7%;"><img class="league-icon" src="/static/images/leagues/teams/8.webp"/></td>
 	
@@ -1531,21 +1592,21 @@
 				</tr>
 	</tbody></table>
 		<div class="relative-box">
-			<button class="flag-button" onclick="showCarOwners(233, 1, 481)" id="show-owners-button-233">
+			<button class="flag-button" onclick="showCarOwners(289, 1, 583)" id="show-owners-button-289">
 				🚩
 			</button>
-			<button class="flag-button" onclick="hideCarOwners(233, 1, 481)" style="display: none;" id="hide-owners-button-233">
+			<button class="flag-button" onclick="hideCarOwners(289, 1, 583)" style="display: none;" id="hide-owners-button-289">
 				🚩
 			</button>
 		</div>
-		<div class="car-owners-display-box" style="display: none;" id="owners-box-233">
+		<div class="car-owners-display-box" style="display: none;" id="owners-box-289">
 			<div class="car-owners-header">
 				Players flagged for botting on team <span style="color: #F9D034;">[GILMOR]</span>
 			</div>
-	<div class="car-owners" style="display: none;" id="car-owners-233-1"><div class="car-owner">1. <a class="car-owner-name" href="https://www.nitrotype.com/racer/razorhawk86" target="_blank">Razorhawk86</a></div></div></div><table class="table"><tbody>
-				<tr class="table-row table-row--nonpodium" lookupID="LANDOL">
+	<div class="car-owners" style="display: none;" id="car-owners-289-1"><div class="car-owner">1. <a class="car-owner-name" href="https://www.nitrotype.com/racer/razorhawk86" target="_blank">Razorhawk86</a></div></div></div><table class="table"><tbody>
+				<tr class="table-row table-row--odd table-row--nonpodium" lookupID="LANDOL">
 					<td class="table-cell table-cell--place place-number" style="width: 9%;">
-	58</td>
+	61</td>
 	
 					<td class="table-cell" style="width: 7%;"><img class="league-icon" src="/static/images/leagues/teams/10.webp"/></td>
 	
@@ -1555,13 +1616,13 @@
 	46</td>
 	
 					<td class="table-cell" style="width: 18%;">
-	96.04%</td>
+	96.05%</td>
 	
 				</tr>
 	
-				<tr class="table-row table-row--odd table-row--nonpodium" lookupID="SMCS">
+				<tr class="table-row table-row--nonpodium" lookupID="SMCS">
 					<td class="table-cell table-cell--place place-number" style="width: 9%;">
-	59</td>
+	62</td>
 	
 					<td class="table-cell" style="width: 7%;"><img class="league-icon" src="/static/images/leagues/teams/10.webp"/></td>
 	
@@ -1571,13 +1632,13 @@
 	48</td>
 	
 					<td class="table-cell" style="width: 18%;">
-	96.035%</td>
+	96.03%</td>
 	
 				</tr>
 	
-				<tr class="table-row table-row--nonpodium" lookupID="SNIFFF">
+				<tr class="table-row table-row--odd table-row--nonpodium" lookupID="SNIFFF">
 					<td class="table-cell table-cell--place place-number" style="width: 9%;">
-	60</td>
+	63</td>
 	
 					<td class="table-cell" style="width: 7%;"><img class="league-icon" src="/static/images/leagues/teams/7.webp"/></td>
 	
@@ -1587,13 +1648,13 @@
 	21</td>
 	
 					<td class="table-cell" style="width: 18%;">
-	96.034%</td>
+	96.03%</td>
 	
 				</tr>
 	
-				<tr class="table-row table-row--odd table-row--nonpodium" lookupID="DUCXYZ">
+				<tr class="table-row table-row--nonpodium" lookupID="DUCXYZ">
 					<td class="table-cell table-cell--place place-number" style="width: 9%;">
-	61</td>
+	64</td>
 	
 					<td class="table-cell" style="width: 7%;"><img class="league-icon" src="/static/images/leagues/teams/7.webp"/></td>
 	
@@ -1603,13 +1664,13 @@
 	27</td>
 	
 					<td class="table-cell" style="width: 18%;">
-	96.028%</td>
+	96.03%</td>
 	
 				</tr>
 	
-				<tr class="table-row table-row--nonpodium" lookupID="E119">
+				<tr class="table-row table-row--odd table-row--nonpodium" lookupID="E119">
 					<td class="table-cell table-cell--place place-number" style="width: 9%;">
-	62</td>
+	65</td>
 	
 					<td class="table-cell" style="width: 7%;"><img class="league-icon" src="/static/images/leagues/teams/8.webp"/></td>
 	
@@ -1619,103 +1680,58 @@
 	18</td>
 	
 					<td class="table-cell" style="width: 18%;">
-	96.021%</td>
+	96.02%</td>
 	
 				</tr>
 	
-				<tr class="table-row table-row--odd table-row--nonpodium" lookupID="MYRCS">
+				<tr class="table-row table-row--nonpodium" lookupID="N8TE">
 					<td class="table-cell table-cell--place place-number" style="width: 9%;">
-	63</td>
-	
-					<td class="table-cell" style="width: 7%;"><img class="league-icon" src="/static/images/leagues/teams/10.webp"/></td>
-	
-					<td class="table-cell" style="width: 12%;"><span class="tag-text" style="color: #d1499b;">[<a class="tag-text tag-text-link" style="color: #d1499b;" href="https://www.nitrotype.com/team/MYRCS" target="_blank">MYRCS</a>]</span></td>
-					<td class="table-cell" style="width: 39%; whitespace: nowrap;"><a href="https://www.nitrotype.com/team/MYRCS" target="_blank" class="team-text">"RCS Eagles"</a></td>
-					<td class="table-cell" style="width: 15%;">
-	27</td>
-	
-					<td class="table-cell" style="width: 18%;">
-	96.011%</td>
-	
-				</tr>
-	</tbody></table>
-		<div class="relative-box">
-			<button class="flag-button" onclick="showCarOwners(234, 1, 481)" id="show-owners-button-234">
-				🚩
-			</button>
-			<button class="flag-button" onclick="hideCarOwners(234, 1, 481)" style="display: none;" id="hide-owners-button-234">
-				🚩
-			</button>
-		</div>
-		<div class="car-owners-display-box" style="display: none;" id="owners-box-234">
-			<div class="car-owners-header">
-				Players flagged for botting on team <span style="color: #F9D034;">[MYRCS]</span>
-			</div>
-	<div class="car-owners" style="display: none;" id="car-owners-234-1"><div class="car-owner">1. <a class="car-owner-name" href="https://www.nitrotype.com/racer/418ff8694b1f9840aea0ec2b63b5afc9" target="_blank">BILLIE EILISH</a></div></div></div><table class="table"><tbody>
-				<tr class="table-row table-row--nonpodium" lookupID="VMXS">
-					<td class="table-cell table-cell--place place-number" style="width: 9%;">
-	64</td>
-	
-					<td class="table-cell" style="width: 7%;"><img class="league-icon" src="/static/images/leagues/teams/11.webp"/></td>
-	
-					<td class="table-cell" style="width: 12%;"><span class="tag-text" style="color: #96d1f3;">[<a class="tag-text tag-text-link" style="color: #96d1f3;" href="https://www.nitrotype.com/team/VMXS" target="_blank">VMXS</a>]</span></td>
-					<td class="table-cell" style="width: 39%; whitespace: nowrap;"><a href="https://www.nitrotype.com/team/VMXS" target="_blank" class="team-text">"Velocity Monarchs"</a></td>
-					<td class="table-cell" style="width: 15%;">
-	15</td>
-	
-					<td class="table-cell" style="width: 18%;">
-	96.0%</td>
-	
-				</tr>
-	
-				<tr class="table-row table-row--odd table-row--nonpodium" lookupID="N8TE">
-					<td class="table-cell table-cell--place place-number" style="width: 9%;">
-	65</td>
+	66</td>
 	
 					<td class="table-cell" style="width: 7%;"><img class="league-icon" src="/static/images/leagues/teams/11.webp"/></td>
 	
 					<td class="table-cell" style="width: 12%;"><span class="tag-text" style="color: #40b8ea;">[<a class="tag-text tag-text-link" style="color: #40b8ea;" href="https://www.nitrotype.com/team/N8TE" target="_blank">N8TE</a>]</span></td>
 					<td class="table-cell" style="width: 39%; whitespace: nowrap;"><a href="https://www.nitrotype.com/team/N8TE" target="_blank" class="team-text">"Lets DomiN8TE"</a></td>
 					<td class="table-cell" style="width: 15%;">
-	38</td>
+	39</td>
 	
 					<td class="table-cell" style="width: 18%;">
-	95.986%</td>
+	96.02%</td>
 	
 				</tr>
 	</tbody></table>
 		<div class="relative-box">
-			<button class="flag-button" onclick="showCarOwners(235, 1, 481)" id="show-owners-button-235">
+			<button class="flag-button" onclick="showCarOwners(290, 1, 583)" id="show-owners-button-290">
 				🚩
 			</button>
-			<button class="flag-button" onclick="hideCarOwners(235, 1, 481)" style="display: none;" id="hide-owners-button-235">
+			<button class="flag-button" onclick="hideCarOwners(290, 1, 583)" style="display: none;" id="hide-owners-button-290">
 				🚩
 			</button>
 		</div>
-		<div class="car-owners-display-box" style="display: none;" id="owners-box-235">
+		<div class="car-owners-display-box" style="display: none;" id="owners-box-290">
 			<div class="car-owners-header">
 				Players flagged for botting on team <span style="color: #F9D034;">[N8TE]</span>
 			</div>
-	<div class="car-owners" style="display: none;" id="car-owners-235-1"><div class="car-owner">1. <a class="car-owner-name" href="https://www.nitrotype.com/racer/a4ebe577d455c102ed6ef8620230c4d9" target="_blank">-Silis- 20K</a></div><div class="car-owner">2. <a class="car-owner-name" href="https://www.nitrotype.com/racer/billy33" target="_blank">billy33</a></div><div class="car-owner">3. <a class="car-owner-name" href="https://www.nitrotype.com/racer/chatterbox_cam" target="_blank">Chatterbox Cam</a></div><div class="car-owner">4. <a class="car-owner-name" href="https://www.nitrotype.com/racer/donp1" target="_blank">L2trappy1</a></div><div class="car-owner">5. <a class="car-owner-name" href="https://www.nitrotype.com/racer/panther_plays" target="_blank">PantherSpeed_14K</a></div><div class="car-owner">6. <a class="car-owner-name" href="https://www.nitrotype.com/racer/youmadxdd" target="_blank">Michael Scofield 5K</a></div></div></div><table class="table"><tbody>
-				<tr class="table-row table-row--nonpodium" lookupID="RYSNC">
+	<div class="car-owners" style="display: none;" id="car-owners-290-1"><div class="car-owner">1. <a class="car-owner-name" href="https://www.nitrotype.com/racer/a4ebe577d455c102ed6ef8620230c4d9" target="_blank">-Silis- 20K</a></div><div class="car-owner">2. <a class="car-owner-name" href="https://www.nitrotype.com/racer/billy33" target="_blank">billy33</a></div><div class="car-owner">3. <a class="car-owner-name" href="https://www.nitrotype.com/racer/chatterbox_cam" target="_blank">Chatterbox Cam</a></div><div class="car-owner">4. <a class="car-owner-name" href="https://www.nitrotype.com/racer/donp1" target="_blank">L2trappy1</a></div><div class="car-owner">5. <a class="car-owner-name" href="https://www.nitrotype.com/racer/panther_plays" target="_blank">PantherSpeed_14K</a></div><div class="car-owner">6. <a class="car-owner-name" href="https://www.nitrotype.com/racer/youmadxdd" target="_blank">Michael Scofield 5K</a></div></div></div><table class="table"><tbody>
+				<tr class="table-row table-row--odd table-row--nonpodium" lookupID="VMXS">
 					<td class="table-cell table-cell--place place-number" style="width: 9%;">
-	66</td>
+	67</td>
 	
-					<td class="table-cell" style="width: 7%;"><img class="league-icon" src="/static/images/leagues/teams/6.webp"/></td>
+					<td class="table-cell" style="width: 7%;"><img class="league-icon" src="/static/images/leagues/teams/11.webp"/></td>
 	
-					<td class="table-cell" style="width: 12%;"><span class="tag-text" style="color: #d1499b;">[<a class="tag-text tag-text-link" style="color: #d1499b;" href="https://www.nitrotype.com/team/RYSNC" target="_blank">RYSNC</a>]</span></td>
-					<td class="table-cell" style="width: 39%; whitespace: nowrap;"><a href="https://www.nitrotype.com/team/RYSNC" target="_blank" class="team-text">"The Royals NC"</a></td>
+					<td class="table-cell" style="width: 12%;"><span class="tag-text" style="color: #96d1f3;">[<a class="tag-text tag-text-link" style="color: #96d1f3;" href="https://www.nitrotype.com/team/VMXS" target="_blank">VMXS</a>]</span></td>
+					<td class="table-cell" style="width: 39%; whitespace: nowrap;"><a href="https://www.nitrotype.com/team/VMXS" target="_blank" class="team-text">"Velocity Monarchs"</a></td>
 					<td class="table-cell" style="width: 15%;">
-	49</td>
+	16</td>
 	
 					<td class="table-cell" style="width: 18%;">
-	95.975%</td>
+	95.98%</td>
 	
 				</tr>
 	
-				<tr class="table-row table-row--odd table-row--nonpodium" lookupID="IRISH7">
+				<tr class="table-row table-row--nonpodium" lookupID="IRISH7">
 					<td class="table-cell table-cell--place place-number" style="width: 9%;">
-	67</td>
+	68</td>
 	
 					<td class="table-cell" style="width: 7%;"><img class="league-icon" src="/static/images/leagues/teams/8.webp"/></td>
 	
@@ -1725,26 +1741,42 @@
 	50</td>
 	
 					<td class="table-cell" style="width: 18%;">
-	95.955%</td>
+	95.96%</td>
 	
 				</tr>
 	</tbody></table>
 		<div class="relative-box">
-			<button class="flag-button" onclick="showCarOwners(236, 1, 481)" id="show-owners-button-236">
+			<button class="flag-button" onclick="showCarOwners(291, 1, 583)" id="show-owners-button-291">
 				🚩
 			</button>
-			<button class="flag-button" onclick="hideCarOwners(236, 1, 481)" style="display: none;" id="hide-owners-button-236">
+			<button class="flag-button" onclick="hideCarOwners(291, 1, 583)" style="display: none;" id="hide-owners-button-291">
 				🚩
 			</button>
 		</div>
-		<div class="car-owners-display-box" style="display: none;" id="owners-box-236">
+		<div class="car-owners-display-box" style="display: none;" id="owners-box-291">
 			<div class="car-owners-header">
 				Players flagged for botting on team <span style="color: #F9D034;">[IRISH7]</span>
 			</div>
-	<div class="car-owners" style="display: none;" id="car-owners-236-1"><div class="car-owner">1. <a class="car-owner-name" href="https://www.nitrotype.com/racer/firestar23882" target="_blank">firestar23882</a></div></div></div><table class="table"><tbody>
+	<div class="car-owners" style="display: none;" id="car-owners-291-1"><div class="car-owner">1. <a class="car-owner-name" href="https://www.nitrotype.com/racer/firestar23882" target="_blank">firestar23882</a></div></div></div><table class="table"><tbody>
+				<tr class="table-row table-row--odd table-row--nonpodium" lookupID="BHST">
+					<td class="table-cell table-cell--place place-number" style="width: 9%;">
+	69</td>
+	
+					<td class="table-cell" style="width: 7%;"><img class="league-icon" src="/static/images/leagues/teams/7.webp"/></td>
+	
+					<td class="table-cell" style="width: 12%;"><span class="tag-text" style="color: #436fb6;">[<a class="tag-text tag-text-link" style="color: #436fb6;" href="https://www.nitrotype.com/team/BHST" target="_blank">BHST</a>]</span></td>
+					<td class="table-cell" style="width: 39%; whitespace: nowrap;"><a href="https://www.nitrotype.com/team/BHST" target="_blank" class="team-text">"Bengal Typists"</a></td>
+					<td class="table-cell" style="width: 15%;">
+	17</td>
+	
+					<td class="table-cell" style="width: 18%;">
+	95.95%</td>
+	
+				</tr>
+	
 				<tr class="table-row table-row--nonpodium" lookupID="NTRO">
 					<td class="table-cell table-cell--place place-number" style="width: 9%;">
-	68</td>
+	70</td>
 	
 					<td class="table-cell" style="width: 7%;"><img class="league-icon" src="/static/images/leagues/teams/11.webp"/></td>
 	
@@ -1754,42 +1786,103 @@
 	25</td>
 	
 					<td class="table-cell" style="width: 18%;">
-	95.94%</td>
+	95.91%</td>
 	
 				</tr>
 	
 				<tr class="table-row table-row--odd table-row--nonpodium" lookupID="I457">
 					<td class="table-cell table-cell--place place-number" style="width: 9%;">
-	69</td>
+	71</td>
 	
 					<td class="table-cell" style="width: 7%;"><img class="league-icon" src="/static/images/leagues/teams/9.webp"/></td>
 	
 					<td class="table-cell" style="width: 12%;"><span class="tag-text" style="color: #40b8ea;">[<a class="tag-text tag-text-link" style="color: #40b8ea;" href="https://www.nitrotype.com/team/I457" target="_blank">I457</a>]</span></td>
 					<td class="table-cell" style="width: 39%; whitespace: nowrap;"><a href="https://www.nitrotype.com/team/I457" target="_blank" class="team-text">"THUNDER BOLTS"</a></td>
 					<td class="table-cell" style="width: 15%;">
-	36</td>
+	34</td>
 	
 					<td class="table-cell" style="width: 18%;">
-	95.908%</td>
+	95.91%</td>
 	
 				</tr>
 	</tbody></table>
 		<div class="relative-box">
-			<button class="flag-button" onclick="showCarOwners(237, 1, 481)" id="show-owners-button-237">
+			<button class="flag-button" onclick="showCarOwners(292, 1, 583)" id="show-owners-button-292">
 				🚩
 			</button>
-			<button class="flag-button" onclick="hideCarOwners(237, 1, 481)" style="display: none;" id="hide-owners-button-237">
+			<button class="flag-button" onclick="hideCarOwners(292, 1, 583)" style="display: none;" id="hide-owners-button-292">
 				🚩
 			</button>
 		</div>
-		<div class="car-owners-display-box" style="display: none;" id="owners-box-237">
+		<div class="car-owners-display-box" style="display: none;" id="owners-box-292">
 			<div class="car-owners-header">
 				Players flagged for botting on team <span style="color: #F9D034;">[I457]</span>
 			</div>
-	<div class="car-owners" style="display: none;" id="car-owners-237-1"><div class="car-owner">1. <a class="car-owner-name" href="https://www.nitrotype.com/racer/28223a041156ef0841eef8414067836b" target="_blank">DASH005</a></div></div></div><table class="table"><tbody>
-				<tr class="table-row table-row--nonpodium" lookupID="RIV4L">
+	<div class="car-owners" style="display: none;" id="car-owners-292-1"><div class="car-owner">1. <a class="car-owner-name" href="https://www.nitrotype.com/racer/28223a041156ef0841eef8414067836b" target="_blank">DASH005</a></div></div></div><table class="table"><tbody>
+				<tr class="table-row table-row--nonpodium" lookupID="HOGGS">
 					<td class="table-cell table-cell--place place-number" style="width: 9%;">
-	70</td>
+	72</td>
+	
+					<td class="table-cell" style="width: 7%;"><img class="league-icon" src="/static/images/leagues/teams/8.webp"/></td>
+	
+					<td class="table-cell" style="width: 12%;"><span class="tag-text" style="color: #d1499b;">[<a class="tag-text tag-text-link" style="color: #d1499b;" href="https://www.nitrotype.com/team/HOGGS" target="_blank">HOGGS</a>]</span></td>
+					<td class="table-cell" style="width: 39%; whitespace: nowrap;"><a href="https://www.nitrotype.com/team/HOGGS" target="_blank" class="team-text">"Hogging the Wins"</a></td>
+					<td class="table-cell" style="width: 15%;">
+	24</td>
+	
+					<td class="table-cell" style="width: 18%;">
+	95.89%</td>
+	
+				</tr>
+	
+				<tr class="table-row table-row--odd table-row--nonpodium" lookupID="SER">
+					<td class="table-cell table-cell--place place-number" style="width: 9%;">
+	73</td>
+	
+					<td class="table-cell" style="width: 7%;"><img class="league-icon" src="/static/images/leagues/teams/12.webp"/></td>
+	
+					<td class="table-cell" style="width: 12%;"><span class="tag-text" style="color: #b8def5;">[<a class="tag-text tag-text-link" style="color: #b8def5;" href="https://www.nitrotype.com/team/SER" target="_blank">SER</a>]</span></td>
+					<td class="table-cell" style="width: 39%; whitespace: nowrap;"><a href="https://www.nitrotype.com/team/SER" target="_blank" class="team-text">"Supreme Elite Racerz"</a></td>
+					<td class="table-cell" style="width: 15%;">
+	42</td>
+	
+					<td class="table-cell" style="width: 18%;">
+	95.87%</td>
+	
+				</tr>
+	</tbody></table>
+		<div class="relative-box">
+			<button class="flag-button" onclick="showCarOwners(293, 1, 583)" id="show-owners-button-293">
+				🚩
+			</button>
+			<button class="flag-button" onclick="hideCarOwners(293, 1, 583)" style="display: none;" id="hide-owners-button-293">
+				🚩
+			</button>
+		</div>
+		<div class="car-owners-display-box" style="display: none;" id="owners-box-293">
+			<div class="car-owners-header">
+				Players flagged for botting on team <span style="color: #F9D034;">[SER]</span>
+			</div>
+	<div class="car-owners" style="display: none;" id="car-owners-293-1"><div class="car-owner">1. <a class="car-owner-name" href="https://www.nitrotype.com/racer/9219baa5708843ceacfabdd371014513" target="_blank">Im cool</a></div><div class="car-owner">2. <a class="car-owner-name" href="https://www.nitrotype.com/racer/cc4b6df2a182f0de60499de90d6af7b6" target="_blank">Tyron-of-NitroType</a></div><div class="car-owner">3. <a class="car-owner-name" href="https://www.nitrotype.com/racer/corzair" target="_blank">_Kross_</a></div><div class="car-owner">4. <a class="car-owner-name" href="https://www.nitrotype.com/racer/ddformdd" target="_blank">rice_enthusiast</a></div><div class="car-owner">5. <a class="car-owner-name" href="https://www.nitrotype.com/racer/f4057374ac15a730632b18e397315ab6" target="_blank">I AM CHILL GUY</a></div><div class="car-owner">6. <a class="car-owner-name" href="https://www.nitrotype.com/racer/maxcorny12" target="_blank">-Mcorny12-</a></div><div class="car-owner">7. <a class="car-owner-name" href="https://www.nitrotype.com/racer/mystical_error" target="_blank">Winter Wind</a></div><div class="car-owner">8. <a class="car-owner-name" href="https://www.nitrotype.com/racer/visco_asher_yt" target="_blank">Asher26k</a></div><div class="car-owner">9. <a class="car-owner-name" href="https://www.nitrotype.com/racer/willrao837" target="_blank">seagull</a></div></div></div><table class="table"><tbody>
+				<tr class="table-row table-row--nonpodium" lookupID="RYSNC">
+					<td class="table-cell table-cell--place place-number" style="width: 9%;">
+	74</td>
+	
+					<td class="table-cell" style="width: 7%;"><img class="league-icon" src="/static/images/leagues/teams/6.webp"/></td>
+	
+					<td class="table-cell" style="width: 12%;"><span class="tag-text" style="color: #d1499b;">[<a class="tag-text tag-text-link" style="color: #d1499b;" href="https://www.nitrotype.com/team/RYSNC" target="_blank">RYSNC</a>]</span></td>
+					<td class="table-cell" style="width: 39%; whitespace: nowrap;"><a href="https://www.nitrotype.com/team/RYSNC" target="_blank" class="team-text">"The Royals NC"</a></td>
+					<td class="table-cell" style="width: 15%;">
+	50</td>
+	
+					<td class="table-cell" style="width: 18%;">
+	95.85%</td>
+	
+				</tr>
+	
+				<tr class="table-row table-row--odd table-row--nonpodium" lookupID="RIV4L">
+					<td class="table-cell table-cell--place place-number" style="width: 9%;">
+	75</td>
 	
 					<td class="table-cell" style="width: 7%;"><img class="league-icon" src="/static/images/leagues/teams/12.webp"/></td>
 	
@@ -1799,87 +1892,42 @@
 	50</td>
 	
 					<td class="table-cell" style="width: 18%;">
-	95.867%</td>
+	95.84%</td>
 	
 				</tr>
 	</tbody></table>
 		<div class="relative-box">
-			<button class="flag-button" onclick="showCarOwners(238, 1, 481)" id="show-owners-button-238">
+			<button class="flag-button" onclick="showCarOwners(294, 1, 583)" id="show-owners-button-294">
 				🚩
 			</button>
-			<button class="flag-button" onclick="hideCarOwners(238, 1, 481)" style="display: none;" id="hide-owners-button-238">
+			<button class="flag-button" onclick="hideCarOwners(294, 1, 583)" style="display: none;" id="hide-owners-button-294">
 				🚩
 			</button>
 		</div>
-		<div class="car-owners-display-box" style="display: none;" id="owners-box-238">
+		<div class="car-owners-display-box" style="display: none;" id="owners-box-294">
 			<div class="car-owners-header">
 				Players flagged for botting on team <span style="color: #F9D034;">[RIV4L]</span>
 			</div>
-	<div class="car-owners" style="display: none;" id="car-owners-238-1"><div class="car-owner">1. <a class="car-owner-name" href="https://www.nitrotype.com/racer/optimusprime12346" target="_blank">optimusprime </a></div></div></div><table class="table"><tbody>
-				<tr class="table-row table-row--odd table-row--nonpodium" lookupID="N1TR03">
+	<div class="car-owners" style="display: none;" id="car-owners-294-1"><div class="car-owner">1. <a class="car-owner-name" href="https://www.nitrotype.com/racer/optimusprime12346" target="_blank">optimusprime </a></div></div></div><table class="table"><tbody>
+				<tr class="table-row table-row--nonpodium" lookupID="N1TR03">
 					<td class="table-cell table-cell--place place-number" style="width: 9%;">
-	71</td>
+	76</td>
 	
 					<td class="table-cell" style="width: 7%;"><img class="league-icon" src="/static/images/leagues/teams/9.webp"/></td>
 	
 					<td class="table-cell" style="width: 12%;"><span class="tag-text" style="color: #436fb6;">[<a class="tag-text tag-text-link" style="color: #436fb6;" href="https://www.nitrotype.com/team/N1TR03" target="_blank">N1TR03</a>]</span></td>
 					<td class="table-cell" style="width: 39%; whitespace: nowrap;"><a href="https://www.nitrotype.com/team/N1TR03" target="_blank" class="team-text">"WE WINNING SPEEDERS"</a></td>
 					<td class="table-cell" style="width: 15%;">
-	24</td>
+	27</td>
 	
 					<td class="table-cell" style="width: 18%;">
-	95.865%</td>
+	95.83%</td>
 	
 				</tr>
 	
-				<tr class="table-row table-row--nonpodium" lookupID="SER">
+				<tr class="table-row table-row--odd table-row--nonpodium" lookupID="COCOWS">
 					<td class="table-cell table-cell--place place-number" style="width: 9%;">
-	72</td>
-	
-					<td class="table-cell" style="width: 7%;"><img class="league-icon" src="/static/images/leagues/teams/12.webp"/></td>
-	
-					<td class="table-cell" style="width: 12%;"><span class="tag-text" style="color: #b8def5;">[<a class="tag-text tag-text-link" style="color: #b8def5;" href="https://www.nitrotype.com/team/SER" target="_blank">SER</a>]</span></td>
-					<td class="table-cell" style="width: 39%; whitespace: nowrap;"><a href="https://www.nitrotype.com/team/SER" target="_blank" class="team-text">"Supreme Elite Racerz"</a></td>
-					<td class="table-cell" style="width: 15%;">
-	43</td>
-	
-					<td class="table-cell" style="width: 18%;">
-	95.841%</td>
-	
-				</tr>
-	</tbody></table>
-		<div class="relative-box">
-			<button class="flag-button" onclick="showCarOwners(239, 1, 481)" id="show-owners-button-239">
-				🚩
-			</button>
-			<button class="flag-button" onclick="hideCarOwners(239, 1, 481)" style="display: none;" id="hide-owners-button-239">
-				🚩
-			</button>
-		</div>
-		<div class="car-owners-display-box" style="display: none;" id="owners-box-239">
-			<div class="car-owners-header">
-				Players flagged for botting on team <span style="color: #F9D034;">[SER]</span>
-			</div>
-	<div class="car-owners" style="display: none;" id="car-owners-239-1"><div class="car-owner">1. <a class="car-owner-name" href="https://www.nitrotype.com/racer/9219baa5708843ceacfabdd371014513" target="_blank">Im cool</a></div><div class="car-owner">2. <a class="car-owner-name" href="https://www.nitrotype.com/racer/cc4b6df2a182f0de60499de90d6af7b6" target="_blank">Tyron-of-NitroType</a></div><div class="car-owner">3. <a class="car-owner-name" href="https://www.nitrotype.com/racer/corzair" target="_blank">_Kross_</a></div><div class="car-owner">4. <a class="car-owner-name" href="https://www.nitrotype.com/racer/ddformdd" target="_blank">rice_enthusiast</a></div><div class="car-owner">5. <a class="car-owner-name" href="https://www.nitrotype.com/racer/f4057374ac15a730632b18e397315ab6" target="_blank">I AM CHILL GUY</a></div><div class="car-owner">6. <a class="car-owner-name" href="https://www.nitrotype.com/racer/maxcorny12" target="_blank">-Mcorny12-</a></div><div class="car-owner">7. <a class="car-owner-name" href="https://www.nitrotype.com/racer/mystical_error" target="_blank">Winter Wind</a></div><div class="car-owner">8. <a class="car-owner-name" href="https://www.nitrotype.com/racer/visco_asher_yt" target="_blank">Asher26k</a></div><div class="car-owner">9. <a class="car-owner-name" href="https://www.nitrotype.com/racer/willrao837" target="_blank">seagull</a></div></div></div><table class="table"><tbody>
-				<tr class="table-row table-row--odd table-row--nonpodium" lookupID="HOGGS">
-					<td class="table-cell table-cell--place place-number" style="width: 9%;">
-	73</td>
-	
-					<td class="table-cell" style="width: 7%;"><img class="league-icon" src="/static/images/leagues/teams/8.webp"/></td>
-	
-					<td class="table-cell" style="width: 12%;"><span class="tag-text" style="color: #d1499b;">[<a class="tag-text tag-text-link" style="color: #d1499b;" href="https://www.nitrotype.com/team/HOGGS" target="_blank">HOGGS</a>]</span></td>
-					<td class="table-cell" style="width: 39%; whitespace: nowrap;"><a href="https://www.nitrotype.com/team/HOGGS" target="_blank" class="team-text">"Hogging the Wins"</a></td>
-					<td class="table-cell" style="width: 15%;">
-	23</td>
-	
-					<td class="table-cell" style="width: 18%;">
-	95.836%</td>
-	
-				</tr>
-	
-				<tr class="table-row table-row--nonpodium" lookupID="COCOWS">
-					<td class="table-cell table-cell--place place-number" style="width: 9%;">
-	74</td>
+	77</td>
 	
 					<td class="table-cell" style="width: 7%;"><img class="league-icon" src="/static/images/leagues/teams/9.webp"/></td>
 	
@@ -1889,26 +1937,71 @@
 	16</td>
 	
 					<td class="table-cell" style="width: 18%;">
-	95.832%</td>
+	95.83%</td>
 	
 				</tr>
 	</tbody></table>
 		<div class="relative-box">
-			<button class="flag-button" onclick="showCarOwners(240, 1, 481)" id="show-owners-button-240">
+			<button class="flag-button" onclick="showCarOwners(295, 1, 583)" id="show-owners-button-295">
 				🚩
 			</button>
-			<button class="flag-button" onclick="hideCarOwners(240, 1, 481)" style="display: none;" id="hide-owners-button-240">
+			<button class="flag-button" onclick="hideCarOwners(295, 1, 583)" style="display: none;" id="hide-owners-button-295">
 				🚩
 			</button>
 		</div>
-		<div class="car-owners-display-box" style="display: none;" id="owners-box-240">
+		<div class="car-owners-display-box" style="display: none;" id="owners-box-295">
 			<div class="car-owners-header">
 				Players flagged for botting on team <span style="color: #F9D034;">[COCOWS]</span>
 			</div>
-	<div class="car-owners" style="display: none;" id="car-owners-240-1"><div class="car-owner">1. <a class="car-owner-name" href="https://www.nitrotype.com/racer/notsoquicksilver" target="_blank">Wooosh</a></div></div></div><table class="table"><tbody>
-				<tr class="table-row table-row--odd table-row--nonpodium" lookupID="911000">
+	<div class="car-owners" style="display: none;" id="car-owners-295-1"><div class="car-owner">1. <a class="car-owner-name" href="https://www.nitrotype.com/racer/notsoquicksilver" target="_blank">Wooosh</a></div></div></div><table class="table"><tbody>
+				<tr class="table-row table-row--nonpodium" lookupID="BROCAW">
 					<td class="table-cell table-cell--place place-number" style="width: 9%;">
-	75</td>
+	78</td>
+	
+					<td class="table-cell" style="width: 7%;"><img class="league-icon" src="/static/images/leagues/teams/5.webp"/></td>
+	
+					<td class="table-cell" style="width: 12%;"><span class="tag-text" style="color: #ee1f25;">[<a class="tag-text tag-text-link" style="color: #ee1f25;" href="https://www.nitrotype.com/team/BROCAW" target="_blank">BROCAW</a>]</span></td>
+					<td class="table-cell" style="width: 39%; whitespace: nowrap;"><a href="https://www.nitrotype.com/team/BROCAW" target="_blank" class="team-text">"Brocaw Blazers"</a></td>
+					<td class="table-cell" style="width: 15%;">
+	28</td>
+	
+					<td class="table-cell" style="width: 18%;">
+	95.83%</td>
+	
+				</tr>
+	
+				<tr class="table-row table-row--odd table-row--nonpodium" lookupID="SNTL">
+					<td class="table-cell table-cell--place place-number" style="width: 9%;">
+	79</td>
+	
+					<td class="table-cell" style="width: 7%;"><img class="league-icon" src="/static/images/leagues/teams/11.webp"/></td>
+	
+					<td class="table-cell" style="width: 12%;"><span class="tag-text" style="color: #5b52a3;">[<a class="tag-text tag-text-link" style="color: #5b52a3;" href="https://www.nitrotype.com/team/SNTL" target="_blank">SNTL</a>]</span></td>
+					<td class="table-cell" style="width: 39%; whitespace: nowrap;"><a href="https://www.nitrotype.com/team/SNTL" target="_blank" class="team-text">"NT Sentinels"</a></td>
+					<td class="table-cell" style="width: 15%;">
+	49</td>
+	
+					<td class="table-cell" style="width: 18%;">
+	95.82%</td>
+	
+				</tr>
+	</tbody></table>
+		<div class="relative-box">
+			<button class="flag-button" onclick="showCarOwners(296, 1, 583)" id="show-owners-button-296">
+				🚩
+			</button>
+			<button class="flag-button" onclick="hideCarOwners(296, 1, 583)" style="display: none;" id="hide-owners-button-296">
+				🚩
+			</button>
+		</div>
+		<div class="car-owners-display-box" style="display: none;" id="owners-box-296">
+			<div class="car-owners-header">
+				Players flagged for botting on team <span style="color: #F9D034;">[SNTL]</span>
+			</div>
+	<div class="car-owners" style="display: none;" id="car-owners-296-1"><div class="car-owner">1. <a class="car-owner-name" href="https://www.nitrotype.com/racer/idk_what_to_write_rn" target="_blank">Golden Hikqiri - 7k</a></div></div></div><table class="table"><tbody>
+				<tr class="table-row table-row--nonpodium" lookupID="911000">
+					<td class="table-cell table-cell--place place-number" style="width: 9%;">
+	80</td>
 	
 					<td class="table-cell" style="width: 7%;"><img class="league-icon" src="/static/images/leagues/teams/10.webp"/></td>
 	
@@ -1918,84 +2011,71 @@
 	17</td>
 	
 					<td class="table-cell" style="width: 18%;">
-	95.824%</td>
+	95.81%</td>
 	
 				</tr>
 	</tbody></table>
 		<div class="relative-box">
-			<button class="flag-button" onclick="showCarOwners(241, 1, 481)" id="show-owners-button-241">
+			<button class="flag-button" onclick="showCarOwners(297, 1, 583)" id="show-owners-button-297">
 				🚩
 			</button>
-			<button class="flag-button" onclick="hideCarOwners(241, 1, 481)" style="display: none;" id="hide-owners-button-241">
+			<button class="flag-button" onclick="hideCarOwners(297, 1, 583)" style="display: none;" id="hide-owners-button-297">
 				🚩
 			</button>
 		</div>
-		<div class="car-owners-display-box" style="display: none;" id="owners-box-241">
+		<div class="car-owners-display-box" style="display: none;" id="owners-box-297">
 			<div class="car-owners-header">
 				Players flagged for botting on team <span style="color: #F9D034;">[911000]</span>
 			</div>
-	<div class="car-owners" style="display: none;" id="car-owners-241-1"><div class="car-owner">1. <a class="car-owner-name" href="https://www.nitrotype.com/racer/marsdenrules123" target="_blank">marsdenrules123</a></div></div></div><table class="table"><tbody>
-				<tr class="table-row table-row--nonpodium" lookupID="SNTL">
+	<div class="car-owners" style="display: none;" id="car-owners-297-1"><div class="car-owner">1. <a class="car-owner-name" href="https://www.nitrotype.com/racer/marsdenrules123" target="_blank">marsdenrules123</a></div></div></div><table class="table"><tbody>
+				<tr class="table-row table-row--odd table-row--nonpodium" lookupID="NTCREW">
 					<td class="table-cell table-cell--place place-number" style="width: 9%;">
-	76</td>
+	81</td>
 	
 					<td class="table-cell" style="width: 7%;"><img class="league-icon" src="/static/images/leagues/teams/11.webp"/></td>
 	
-					<td class="table-cell" style="width: 12%;"><span class="tag-text" style="color: #5b52a3;">[<a class="tag-text tag-text-link" style="color: #5b52a3;" href="https://www.nitrotype.com/team/SNTL" target="_blank">SNTL</a>]</span></td>
-					<td class="table-cell" style="width: 39%; whitespace: nowrap;"><a href="https://www.nitrotype.com/team/SNTL" target="_blank" class="team-text">"NT Sentinels"</a></td>
+					<td class="table-cell" style="width: 12%;"><span class="tag-text" style="color: #fba51a;">[<a class="tag-text tag-text-link" style="color: #fba51a;" href="https://www.nitrotype.com/team/NTCREW" target="_blank">NTCREW</a>]</span></td>
+					<td class="table-cell" style="width: 39%; whitespace: nowrap;"><a href="https://www.nitrotype.com/team/NTCREW" target="_blank" class="team-text">"WE ARE ZOOMY"</a></td>
 					<td class="table-cell" style="width: 15%;">
 	48</td>
 	
 					<td class="table-cell" style="width: 18%;">
-	95.82%</td>
+	95.81%</td>
 	
 				</tr>
 	</tbody></table>
 		<div class="relative-box">
-			<button class="flag-button" onclick="showCarOwners(242, 1, 481)" id="show-owners-button-242">
+			<button class="flag-button" onclick="showCarOwners(298, 1, 583)" id="show-owners-button-298">
 				🚩
 			</button>
-			<button class="flag-button" onclick="hideCarOwners(242, 1, 481)" style="display: none;" id="hide-owners-button-242">
+			<button class="flag-button" onclick="hideCarOwners(298, 1, 583)" style="display: none;" id="hide-owners-button-298">
 				🚩
 			</button>
 		</div>
-		<div class="car-owners-display-box" style="display: none;" id="owners-box-242">
+		<div class="car-owners-display-box" style="display: none;" id="owners-box-298">
 			<div class="car-owners-header">
-				Players flagged for botting on team <span style="color: #F9D034;">[SNTL]</span>
+				Players flagged for botting on team <span style="color: #F9D034;">[NTCREW]</span>
 			</div>
-	<div class="car-owners" style="display: none;" id="car-owners-242-1"><div class="car-owner">1. <a class="car-owner-name" href="https://www.nitrotype.com/racer/idk_what_to_write_rn" target="_blank">Golden Hikqiri - 7k</a></div></div></div><table class="table"><tbody>
-				<tr class="table-row table-row--odd table-row--nonpodium" lookupID="H2O">
+	<div class="car-owners" style="display: none;" id="car-owners-298-1"><div class="car-owner">1. <a class="car-owner-name" href="https://www.nitrotype.com/racer/3e99b412f8f537581efeaab99f7827e6" target="_blank">chillvicc</a></div><div class="car-owner">2. <a class="car-owner-name" href="https://www.nitrotype.com/racer/dogburgerblue" target="_blank">racers dream</a></div><div class="car-owner">3. <a class="car-owner-name" href="https://www.nitrotype.com/racer/ilynitrotype123" target="_blank">ilynitrotype123</a></div><div class="car-owner">4. <a class="car-owner-name" href="https://www.nitrotype.com/racer/imeweveryweek" target="_blank">imeweveryweek</a></div><div class="car-owner">5. <a class="car-owner-name" href="https://www.nitrotype.com/racer/myrestaurantisgood" target="_blank">myrestaurantisgood</a></div></div></div><table class="table"><tbody>
+				<tr class="table-row table-row--nonpodium" lookupID="TALK">
 					<td class="table-cell table-cell--place place-number" style="width: 9%;">
-	77</td>
+	82</td>
 	
 					<td class="table-cell" style="width: 7%;"><img class="league-icon" src="/static/images/leagues/teams/10.webp"/></td>
 	
-					<td class="table-cell" style="width: 12%;"><span class="tag-text" style="color: #fba51a;">[<a class="tag-text tag-text-link" style="color: #fba51a;" href="https://www.nitrotype.com/team/H2O" target="_blank">H2O</a>]</span></td>
-					<td class="table-cell" style="width: 39%; whitespace: nowrap;"><a href="https://www.nitrotype.com/team/H2O" target="_blank" class="team-text">"-GOLD_250_MIL_COMP-"</a></td>
+					<td class="table-cell" style="width: 12%;"><span class="tag-text" style="color: #ee1f25;">[<a class="tag-text tag-text-link" style="color: #ee1f25;" href="https://www.nitrotype.com/team/TALK" target="_blank">TALK</a>]</span></td>
+					<td class="table-cell" style="width: 39%; whitespace: nowrap;"><a href="https://www.nitrotype.com/team/TALK" target="_blank" class="team-text">"RIZE TO THE OCCASION"</a></td>
 					<td class="table-cell" style="width: 15%;">
-	47</td>
+	49</td>
 	
 					<td class="table-cell" style="width: 18%;">
-	95.797%</td>
+	95.79%</td>
 	
 				</tr>
-	</tbody></table>
-		<div class="relative-box">
-			<button class="flag-button" onclick="showCarOwners(243, 1, 481)" id="show-owners-button-243">
-				🚩
-			</button>
-			<button class="flag-button" onclick="hideCarOwners(243, 1, 481)" style="display: none;" id="hide-owners-button-243">
-				🚩
-			</button>
-		</div>
-		<div class="car-owners-display-box" style="display: none;" id="owners-box-243">
-			<div class="car-owners-header">
-				Players flagged for botting on team <span style="color: #F9D034;">[H2O]</span>
-			</div>
-	<div class="car-owners" style="display: none;" id="car-owners-243-1"><div class="car-owner">1. <a class="car-owner-name" href="https://www.nitrotype.com/racer/batkedev000" target="_blank">RC-XD____</a></div><div class="car-owner">2. <a class="car-owner-name" href="https://www.nitrotype.com/racer/cringe_crossy" target="_blank">SZ - Zava 1</a></div><div class="car-owner">3. <a class="car-owner-name" href="https://www.nitrotype.com/racer/zion_alistaire_10" target="_blank">B0O_10</a></div></div></div><table class="table"><tbody>
-				<tr class="table-row table-row--nonpodium" lookupID="ACUITY">
+	
+				<tr class="table-row table-row--odd table-row--nonpodium" lookupID="ACUITY">
 					<td class="table-cell table-cell--place place-number" style="width: 9%;">
-	78</td>
+	83</td>
 	
 					<td class="table-cell" style="width: 7%;"><img class="league-icon" src="/static/images/leagues/teams/10.webp"/></td>
 	
@@ -2005,42 +2085,42 @@
 	42</td>
 	
 					<td class="table-cell" style="width: 18%;">
-	95.779%</td>
+	95.77%</td>
 	
 				</tr>
 	</tbody></table>
 		<div class="relative-box">
-			<button class="flag-button" onclick="showCarOwners(244, 1, 481)" id="show-owners-button-244">
+			<button class="flag-button" onclick="showCarOwners(299, 1, 583)" id="show-owners-button-299">
 				🚩
 			</button>
-			<button class="flag-button" onclick="hideCarOwners(244, 1, 481)" style="display: none;" id="hide-owners-button-244">
+			<button class="flag-button" onclick="hideCarOwners(299, 1, 583)" style="display: none;" id="hide-owners-button-299">
 				🚩
 			</button>
 		</div>
-		<div class="car-owners-display-box" style="display: none;" id="owners-box-244">
+		<div class="car-owners-display-box" style="display: none;" id="owners-box-299">
 			<div class="car-owners-header">
 				Players flagged for botting on team <span style="color: #F9D034;">[ACUITY]</span>
 			</div>
-	<div class="car-owners" style="display: none;" id="car-owners-244-1"><div class="car-owner">1. <a class="car-owner-name" href="https://www.nitrotype.com/racer/254dcac4250dee452fb9c7e4d13c3192" target="_blank">LukeTheCreator</a></div></div></div><table class="table"><tbody>
-				<tr class="table-row table-row--odd table-row--nonpodium" lookupID="SSH">
+	<div class="car-owners" style="display: none;" id="car-owners-299-1"><div class="car-owner">1. <a class="car-owner-name" href="https://www.nitrotype.com/racer/254dcac4250dee452fb9c7e4d13c3192" target="_blank">LukeTheCreator</a></div></div></div><table class="table"><tbody>
+				<tr class="table-row table-row--nonpodium" lookupID="SSH">
 					<td class="table-cell table-cell--place place-number" style="width: 9%;">
-	79</td>
+	84</td>
 	
 					<td class="table-cell" style="width: 7%;"><img class="league-icon" src="/static/images/leagues/teams/10.webp"/></td>
 	
 					<td class="table-cell" style="width: 12%;"><span class="tag-text" style="color: #436fb6;">[<a class="tag-text tag-text-link" style="color: #436fb6;" href="https://www.nitrotype.com/team/SSH" target="_blank">SSH</a>]</span></td>
 					<td class="table-cell" style="width: 39%; whitespace: nowrap;"><a href="https://www.nitrotype.com/team/SSH" target="_blank" class="team-text">"Shell  Riders"</a></td>
 					<td class="table-cell" style="width: 15%;">
-	39</td>
+	35</td>
 	
 					<td class="table-cell" style="width: 18%;">
 	95.77%</td>
 	
 				</tr>
 	
-				<tr class="table-row table-row--nonpodium" lookupID="RG">
+				<tr class="table-row table-row--odd table-row--nonpodium" lookupID="RG">
 					<td class="table-cell table-cell--place place-number" style="width: 9%;">
-	80</td>
+	85</td>
 	
 					<td class="table-cell" style="width: 7%;"><img class="league-icon" src="/static/images/leagues/teams/10.webp"/></td>
 	
@@ -2055,21 +2135,21 @@
 				</tr>
 	</tbody></table>
 		<div class="relative-box">
-			<button class="flag-button" onclick="showCarOwners(245, 1, 481)" id="show-owners-button-245">
+			<button class="flag-button" onclick="showCarOwners(300, 1, 583)" id="show-owners-button-300">
 				🚩
 			</button>
-			<button class="flag-button" onclick="hideCarOwners(245, 1, 481)" style="display: none;" id="hide-owners-button-245">
+			<button class="flag-button" onclick="hideCarOwners(300, 1, 583)" style="display: none;" id="hide-owners-button-300">
 				🚩
 			</button>
 		</div>
-		<div class="car-owners-display-box" style="display: none;" id="owners-box-245">
+		<div class="car-owners-display-box" style="display: none;" id="owners-box-300">
 			<div class="car-owners-header">
 				Players flagged for botting on team <span style="color: #F9D034;">[RG]</span>
 			</div>
-	<div class="car-owners" style="display: none;" id="car-owners-245-1"><div class="car-owner">1. <a class="car-owner-name" href="https://www.nitrotype.com/racer/toogoatedfrfrnokizzy" target="_blank">ryxn</a></div></div></div><table class="table"><tbody>
-				<tr class="table-row table-row--odd table-row--nonpodium" lookupID="X1000">
+	<div class="car-owners" style="display: none;" id="car-owners-300-1"><div class="car-owner">1. <a class="car-owner-name" href="https://www.nitrotype.com/racer/toogoatedfrfrnokizzy" target="_blank">ryxn</a></div></div></div><table class="table"><tbody>
+				<tr class="table-row table-row--nonpodium" lookupID="X1000">
 					<td class="table-cell table-cell--place place-number" style="width: 9%;">
-	81</td>
+	86</td>
 	
 					<td class="table-cell" style="width: 7%;"><img class="league-icon" src="/static/images/leagues/teams/8.webp"/></td>
 	
@@ -2079,100 +2159,71 @@
 	50</td>
 	
 					<td class="table-cell" style="width: 18%;">
-	95.765%</td>
+	95.77%</td>
 	
 				</tr>
 	
-				<tr class="table-row table-row--nonpodium" lookupID="TALK">
+				<tr class="table-row table-row--odd table-row--nonpodium" lookupID="AMPX">
 					<td class="table-cell table-cell--place place-number" style="width: 9%;">
-	82</td>
+	87</td>
 	
-					<td class="table-cell" style="width: 7%;"><img class="league-icon" src="/static/images/leagues/teams/10.webp"/></td>
+					<td class="table-cell" style="width: 7%;"><img class="league-icon" src="/static/images/leagues/teams/13.webp"/></td>
 	
-					<td class="table-cell" style="width: 12%;"><span class="tag-text" style="color: #ee1f25;">[<a class="tag-text tag-text-link" style="color: #ee1f25;" href="https://www.nitrotype.com/team/TALK" target="_blank">TALK</a>]</span></td>
-					<td class="table-cell" style="width: 39%; whitespace: nowrap;"><a href="https://www.nitrotype.com/team/TALK" target="_blank" class="team-text">"RIZE TO THE OCCASION"</a></td>
+					<td class="table-cell" style="width: 12%;"><span class="tag-text" style="color: #ee1f25;">[<a class="tag-text tag-text-link" style="color: #ee1f25;" href="https://www.nitrotype.com/team/AMPX" target="_blank">AMPX</a>]</span></td>
+					<td class="table-cell" style="width: 39%; whitespace: nowrap;"><a href="https://www.nitrotype.com/team/AMPX" target="_blank" class="team-text">"Pressurized"</a></td>
 					<td class="table-cell" style="width: 15%;">
 	50</td>
 	
 					<td class="table-cell" style="width: 18%;">
-	95.754%</td>
+	95.75%</td>
 	
 				</tr>
 	</tbody></table>
 		<div class="relative-box">
-			<button class="flag-button" onclick="showCarOwners(246, 1, 481)" id="show-owners-button-246">
+			<button class="flag-button" onclick="showCarOwners(301, 1, 583)" id="show-owners-button-301">
 				🚩
 			</button>
-			<button class="flag-button" onclick="hideCarOwners(246, 1, 481)" style="display: none;" id="hide-owners-button-246">
+			<button class="flag-button" onclick="hideCarOwners(301, 1, 583)" style="display: none;" id="hide-owners-button-301">
 				🚩
 			</button>
 		</div>
-		<div class="car-owners-display-box" style="display: none;" id="owners-box-246">
+		<div class="car-owners-display-box" style="display: none;" id="owners-box-301">
 			<div class="car-owners-header">
-				Players flagged for botting on team <span style="color: #F9D034;">[TALK]</span>
+				Players flagged for botting on team <span style="color: #F9D034;">[AMPX]</span>
 			</div>
-	<div class="car-owners" style="display: none;" id="car-owners-246-1"><div class="car-owner">1. <a class="car-owner-name" href="https://www.nitrotype.com/racer/jungo99" target="_blank">OhioStJungoBaltimups</a></div></div></div><table class="table"><tbody>
-				<tr class="table-row table-row--odd table-row--nonpodium" lookupID="CATPLT">
+	<div class="car-owners" style="display: none;" id="car-owners-301-1"><div class="car-owner">1. <a class="car-owner-name" href="https://www.nitrotype.com/racer/43f839c2263dd6e45fbf2aa98c391c9d" target="_blank">XSET_Waldo</a></div><div class="car-owner">2. <a class="car-owner-name" href="https://www.nitrotype.com/racer/7b4a1864171857ed47152f4f398941c1" target="_blank">JKram47</a></div><div class="car-owner">3. <a class="car-owner-name" href="https://www.nitrotype.com/racer/8785277fd09dd745c2e930d2a666c7f1" target="_blank">ZestyGraySwordtail</a></div><div class="car-owner">4. <a class="car-owner-name" href="https://www.nitrotype.com/racer/929af9bdd53f4597435ca303c12b5d21" target="_blank">Cool 5</a></div><div class="car-owner">5. <a class="car-owner-name" href="https://www.nitrotype.com/racer/f7e5685e1cec5d31af1ce1a650250b2f" target="_blank">Plz gift me money</a></div><div class="car-owner">6. <a class="car-owner-name" href="https://www.nitrotype.com/racer/jamarcusgocrazy" target="_blank">jamarcus</a></div></div></div><table class="table"><tbody>
+				<tr class="table-row table-row--nonpodium" lookupID="CATPLT">
 					<td class="table-cell table-cell--place place-number" style="width: 9%;">
-	83</td>
+	88</td>
 	
 					<td class="table-cell" style="width: 7%;"><img class="league-icon" src="/static/images/leagues/teams/12.webp"/></td>
 	
 					<td class="table-cell" style="width: 12%;"><span class="tag-text" style="color: #f15b40;">[<a class="tag-text tag-text-link" style="color: #f15b40;" href="https://www.nitrotype.com/team/CATPLT" target="_blank">CATPLT</a>]</span></td>
 					<td class="table-cell" style="width: 39%; whitespace: nowrap;"><a href="https://www.nitrotype.com/team/CATPLT" target="_blank" class="team-text">"Cheetahs On The Rise"</a></td>
 					<td class="table-cell" style="width: 15%;">
-	46</td>
+	44</td>
 	
 					<td class="table-cell" style="width: 18%;">
-	95.747%</td>
+	95.75%</td>
 	
 				</tr>
 	</tbody></table>
 		<div class="relative-box">
-			<button class="flag-button" onclick="showCarOwners(247, 1, 481)" id="show-owners-button-247">
+			<button class="flag-button" onclick="showCarOwners(302, 1, 583)" id="show-owners-button-302">
 				🚩
 			</button>
-			<button class="flag-button" onclick="hideCarOwners(247, 1, 481)" style="display: none;" id="hide-owners-button-247">
+			<button class="flag-button" onclick="hideCarOwners(302, 1, 583)" style="display: none;" id="hide-owners-button-302">
 				🚩
 			</button>
 		</div>
-		<div class="car-owners-display-box" style="display: none;" id="owners-box-247">
+		<div class="car-owners-display-box" style="display: none;" id="owners-box-302">
 			<div class="car-owners-header">
 				Players flagged for botting on team <span style="color: #F9D034;">[CATPLT]</span>
 			</div>
-	<div class="car-owners" style="display: none;" id="car-owners-247-1"><div class="car-owner">1. <a class="car-owner-name" href="https://www.nitrotype.com/racer/imbottingforhrx" target="_blank">just a chill guy</a></div><div class="car-owner">2. <a class="car-owner-name" href="https://www.nitrotype.com/racer/nun2fastfau" target="_blank">kykb on dc</a></div></div></div><table class="table"><tbody>
-				<tr class="table-row table-row--nonpodium" lookupID="FOX109">
-					<td class="table-cell table-cell--place place-number" style="width: 9%;">
-	84</td>
-	
-					<td class="table-cell" style="width: 7%;"><img class="league-icon" src="/static/images/leagues/teams/9.webp"/></td>
-	
-					<td class="table-cell" style="width: 12%;"><span class="tag-text" style="color: #fba51a;">[<a class="tag-text tag-text-link" style="color: #fba51a;" href="https://www.nitrotype.com/team/FOX109" target="_blank">FOX109</a>]</span></td>
-					<td class="table-cell" style="width: 39%; whitespace: nowrap;"><a href="https://www.nitrotype.com/team/FOX109" target="_blank" class="team-text">"Legendary Team"</a></td>
-					<td class="table-cell" style="width: 15%;">
-	42</td>
-	
-					<td class="table-cell" style="width: 18%;">
-	95.742%</td>
-	
-				</tr>
-	</tbody></table>
-		<div class="relative-box">
-			<button class="flag-button" onclick="showCarOwners(248, 1, 481)" id="show-owners-button-248">
-				🚩
-			</button>
-			<button class="flag-button" onclick="hideCarOwners(248, 1, 481)" style="display: none;" id="hide-owners-button-248">
-				🚩
-			</button>
-		</div>
-		<div class="car-owners-display-box" style="display: none;" id="owners-box-248">
-			<div class="car-owners-header">
-				Players flagged for botting on team <span style="color: #F9D034;">[FOX109]</span>
-			</div>
-	<div class="car-owners" style="display: none;" id="car-owners-248-1"><div class="car-owner">1. <a class="car-owner-name" href="https://www.nitrotype.com/racer/garot5456" target="_blank">onebitracer</a></div></div></div><table class="table"><tbody>
+	<div class="car-owners" style="display: none;" id="car-owners-302-1"><div class="car-owner">1. <a class="car-owner-name" href="https://www.nitrotype.com/racer/nun2fastfau" target="_blank">kykb on dc</a></div></div></div><table class="table"><tbody>
 				<tr class="table-row table-row--odd table-row--nonpodium" lookupID="PR2W">
 					<td class="table-cell table-cell--place place-number" style="width: 9%;">
-	85</td>
+	89</td>
 	
 					<td class="table-cell" style="width: 7%;"><img class="league-icon" src="/static/images/leagues/teams/10.webp"/></td>
 	
@@ -2182,13 +2233,71 @@
 	50</td>
 	
 					<td class="table-cell" style="width: 18%;">
-	95.739%</td>
+	95.75%</td>
 	
 				</tr>
 	
+				<tr class="table-row table-row--nonpodium" lookupID="FOX109">
+					<td class="table-cell table-cell--place place-number" style="width: 9%;">
+	90</td>
+	
+					<td class="table-cell" style="width: 7%;"><img class="league-icon" src="/static/images/leagues/teams/9.webp"/></td>
+	
+					<td class="table-cell" style="width: 12%;"><span class="tag-text" style="color: #fba51a;">[<a class="tag-text tag-text-link" style="color: #fba51a;" href="https://www.nitrotype.com/team/FOX109" target="_blank">FOX109</a>]</span></td>
+					<td class="table-cell" style="width: 39%; whitespace: nowrap;"><a href="https://www.nitrotype.com/team/FOX109" target="_blank" class="team-text">"Legendary Team"</a></td>
+					<td class="table-cell" style="width: 15%;">
+	40</td>
+	
+					<td class="table-cell" style="width: 18%;">
+	95.74%</td>
+	
+				</tr>
+	</tbody></table>
+		<div class="relative-box">
+			<button class="flag-button" onclick="showCarOwners(303, 1, 583)" id="show-owners-button-303">
+				🚩
+			</button>
+			<button class="flag-button" onclick="hideCarOwners(303, 1, 583)" style="display: none;" id="hide-owners-button-303">
+				🚩
+			</button>
+		</div>
+		<div class="car-owners-display-box" style="display: none;" id="owners-box-303">
+			<div class="car-owners-header">
+				Players flagged for botting on team <span style="color: #F9D034;">[FOX109]</span>
+			</div>
+	<div class="car-owners" style="display: none;" id="car-owners-303-1"><div class="car-owner">1. <a class="car-owner-name" href="https://www.nitrotype.com/racer/garot5456" target="_blank">onebitracer</a></div></div></div><table class="table"><tbody>
+				<tr class="table-row table-row--odd table-row--nonpodium" lookupID="H2O">
+					<td class="table-cell table-cell--place place-number" style="width: 9%;">
+	91</td>
+	
+					<td class="table-cell" style="width: 7%;"><img class="league-icon" src="/static/images/leagues/teams/10.webp"/></td>
+	
+					<td class="table-cell" style="width: 12%;"><span class="tag-text" style="color: #fba51a;">[<a class="tag-text tag-text-link" style="color: #fba51a;" href="https://www.nitrotype.com/team/H2O" target="_blank">H2O</a>]</span></td>
+					<td class="table-cell" style="width: 39%; whitespace: nowrap;"><a href="https://www.nitrotype.com/team/H2O" target="_blank" class="team-text">"-GOLD_250_MIL_COMP-"</a></td>
+					<td class="table-cell" style="width: 15%;">
+	47</td>
+	
+					<td class="table-cell" style="width: 18%;">
+	95.73%</td>
+	
+				</tr>
+	</tbody></table>
+		<div class="relative-box">
+			<button class="flag-button" onclick="showCarOwners(304, 1, 583)" id="show-owners-button-304">
+				🚩
+			</button>
+			<button class="flag-button" onclick="hideCarOwners(304, 1, 583)" style="display: none;" id="hide-owners-button-304">
+				🚩
+			</button>
+		</div>
+		<div class="car-owners-display-box" style="display: none;" id="owners-box-304">
+			<div class="car-owners-header">
+				Players flagged for botting on team <span style="color: #F9D034;">[H2O]</span>
+			</div>
+	<div class="car-owners" style="display: none;" id="car-owners-304-1"><div class="car-owner">1. <a class="car-owner-name" href="https://www.nitrotype.com/racer/batkedev000" target="_blank">RC-XD____</a></div><div class="car-owner">2. <a class="car-owner-name" href="https://www.nitrotype.com/racer/cringe_crossy" target="_blank">SZ - Zava 1</a></div><div class="car-owner">3. <a class="car-owner-name" href="https://www.nitrotype.com/racer/zion_alistaire_10" target="_blank">B0O_10</a></div></div></div><table class="table"><tbody>
 				<tr class="table-row table-row--nonpodium" lookupID="AZABUA">
 					<td class="table-cell table-cell--place place-number" style="width: 9%;">
-	86</td>
+	92</td>
 	
 					<td class="table-cell" style="width: 7%;"><img class="league-icon" src="/static/images/leagues/teams/11.webp"/></td>
 	
@@ -2198,13 +2307,13 @@
 	49</td>
 	
 					<td class="table-cell" style="width: 18%;">
-	95.715%</td>
+	95.71%</td>
 	
 				</tr>
 	
 				<tr class="table-row table-row--odd table-row--nonpodium" lookupID="JUNUE">
 					<td class="table-cell table-cell--place place-number" style="width: 9%;">
-	87</td>
+	93</td>
 	
 					<td class="table-cell" style="width: 7%;"><img class="league-icon" src="/static/images/leagues/teams/10.webp"/></td>
 	
@@ -2214,100 +2323,13 @@
 	28</td>
 	
 					<td class="table-cell" style="width: 18%;">
-	95.703%</td>
+	95.71%</td>
 	
 				</tr>
 	
-				<tr class="table-row table-row--nonpodium" lookupID="CHESKS">
+				<tr class="table-row table-row--nonpodium" lookupID="AL3">
 					<td class="table-cell table-cell--place place-number" style="width: 9%;">
-	88</td>
-	
-					<td class="table-cell" style="width: 7%;"><img class="league-icon" src="/static/images/leagues/teams/11.webp"/></td>
-	
-					<td class="table-cell" style="width: 12%;"><span class="tag-text" style="color: #ee1f25;">[<a class="tag-text tag-text-link" style="color: #ee1f25;" href="https://www.nitrotype.com/team/CHESKS" target="_blank">CHESKS</a>]</span></td>
-					<td class="table-cell" style="width: 39%; whitespace: nowrap;"><a href="https://www.nitrotype.com/team/CHESKS" target="_blank" class="team-text">"Chess Kings"</a></td>
-					<td class="table-cell" style="width: 15%;">
-	49</td>
-	
-					<td class="table-cell" style="width: 18%;">
-	95.702%</td>
-	
-				</tr>
-	</tbody></table>
-		<div class="relative-box">
-			<button class="flag-button" onclick="showCarOwners(249, 1, 481)" id="show-owners-button-249">
-				🚩
-			</button>
-			<button class="flag-button" onclick="hideCarOwners(249, 1, 481)" style="display: none;" id="hide-owners-button-249">
-				🚩
-			</button>
-		</div>
-		<div class="car-owners-display-box" style="display: none;" id="owners-box-249">
-			<div class="car-owners-header">
-				Players flagged for botting on team <span style="color: #F9D034;">[CHESKS]</span>
-			</div>
-	<div class="car-owners" style="display: none;" id="car-owners-249-1"><div class="car-owner">1. <a class="car-owner-name" href="https://www.nitrotype.com/racer/7200d4be4ddf87f754e46dcc9eafe88e" target="_blank">LookAtMyProfile</a></div><div class="car-owner">2. <a class="car-owner-name" href="https://www.nitrotype.com/racer/eb66d6182422dc0b0fcae59e34ef09ce" target="_blank">WarmheartedTanDragon</a></div></div></div><table class="table"><tbody>
-				<tr class="table-row table-row--odd table-row--nonpodium" lookupID="WHYE">
-					<td class="table-cell table-cell--place place-number" style="width: 9%;">
-	89</td>
-	
-					<td class="table-cell" style="width: 7%;"><img class="league-icon" src="/static/images/leagues/teams/6.webp"/></td>
-	
-					<td class="table-cell" style="width: 12%;"><span class="tag-text" style="color: #f15b40;">[<a class="tag-text tag-text-link" style="color: #f15b40;" href="https://www.nitrotype.com/team/WHYE" target="_blank">WHYE</a>]</span></td>
-					<td class="table-cell" style="width: 39%; whitespace: nowrap;"><a href="https://www.nitrotype.com/team/WHYE" target="_blank" class="team-text">"We are the chosen"</a></td>
-					<td class="table-cell" style="width: 15%;">
-	16</td>
-	
-					<td class="table-cell" style="width: 18%;">
-	95.693%</td>
-	
-				</tr>
-	</tbody></table>
-		<div class="relative-box">
-			<button class="flag-button" onclick="showCarOwners(250, 1, 481)" id="show-owners-button-250">
-				🚩
-			</button>
-			<button class="flag-button" onclick="hideCarOwners(250, 1, 481)" style="display: none;" id="hide-owners-button-250">
-				🚩
-			</button>
-		</div>
-		<div class="car-owners-display-box" style="display: none;" id="owners-box-250">
-			<div class="car-owners-header">
-				Players flagged for botting on team <span style="color: #F9D034;">[WHYE]</span>
-			</div>
-	<div class="car-owners" style="display: none;" id="car-owners-250-1"><div class="car-owner">1. <a class="car-owner-name" href="https://www.nitrotype.com/racer/942126b7a2d023e547b53a840158bd3e" target="_blank">logus27</a></div></div></div><table class="table"><tbody>
-				<tr class="table-row table-row--nonpodium" lookupID="7OO">
-					<td class="table-cell table-cell--place place-number" style="width: 9%;">
-	90</td>
-	
-					<td class="table-cell" style="width: 7%;"><img class="league-icon" src="/static/images/leagues/teams/12.webp"/></td>
-	
-					<td class="table-cell" style="width: 12%;"><span class="tag-text" style="color: #fba51a;">[<a class="tag-text tag-text-link" style="color: #fba51a;" href="https://www.nitrotype.com/team/7OO" target="_blank">7OO</a>]</span></td>
-					<td class="table-cell" style="width: 39%; whitespace: nowrap;"><a href="https://www.nitrotype.com/team/7OO" target="_blank" class="team-text">"LUCKY 700"</a></td>
-					<td class="table-cell" style="width: 15%;">
-	27</td>
-	
-					<td class="table-cell" style="width: 18%;">
-	95.678%</td>
-	
-				</tr>
-	</tbody></table>
-		<div class="relative-box">
-			<button class="flag-button" onclick="showCarOwners(251, 1, 481)" id="show-owners-button-251">
-				🚩
-			</button>
-			<button class="flag-button" onclick="hideCarOwners(251, 1, 481)" style="display: none;" id="hide-owners-button-251">
-				🚩
-			</button>
-		</div>
-		<div class="car-owners-display-box" style="display: none;" id="owners-box-251">
-			<div class="car-owners-header">
-				Players flagged for botting on team <span style="color: #F9D034;">[7OO]</span>
-			</div>
-	<div class="car-owners" style="display: none;" id="car-owners-251-1"><div class="car-owner">1. <a class="car-owner-name" href="https://www.nitrotype.com/racer/z0ner" target="_blank">z0ner</a></div></div></div><table class="table"><tbody>
-				<tr class="table-row table-row--odd table-row--nonpodium" lookupID="AL3">
-					<td class="table-cell table-cell--place place-number" style="width: 9%;">
-	91</td>
+	94</td>
 	
 					<td class="table-cell" style="width: 7%;"><img class="league-icon" src="/static/images/leagues/teams/12.webp"/></td>
 	
@@ -2317,55 +2339,113 @@
 	40</td>
 	
 					<td class="table-cell" style="width: 18%;">
-	95.673%</td>
+	95.71%</td>
 	
 				</tr>
 	</tbody></table>
 		<div class="relative-box">
-			<button class="flag-button" onclick="showCarOwners(252, 1, 481)" id="show-owners-button-252">
+			<button class="flag-button" onclick="showCarOwners(305, 1, 583)" id="show-owners-button-305">
 				🚩
 			</button>
-			<button class="flag-button" onclick="hideCarOwners(252, 1, 481)" style="display: none;" id="hide-owners-button-252">
+			<button class="flag-button" onclick="hideCarOwners(305, 1, 583)" style="display: none;" id="hide-owners-button-305">
 				🚩
 			</button>
 		</div>
-		<div class="car-owners-display-box" style="display: none;" id="owners-box-252">
+		<div class="car-owners-display-box" style="display: none;" id="owners-box-305">
 			<div class="car-owners-header">
 				Players flagged for botting on team <span style="color: #F9D034;">[AL3]</span>
 			</div>
-	<div class="car-owners" style="display: none;" id="car-owners-252-1"><div class="car-owner">1. <a class="car-owner-name" href="https://www.nitrotype.com/racer/0ac5607477556871240c7bfedd6687ef" target="_blank">AAwastaken</a></div><div class="car-owner">2. <a class="car-owner-name" href="https://www.nitrotype.com/racer/886728a96160f05b7d6d1dfeb8563319" target="_blank">W GRINDER W</a></div><div class="car-owner">3. <a class="car-owner-name" href="https://www.nitrotype.com/racer/basketball7878" target="_blank">Zach Winter Arc</a></div><div class="car-owner">4. <a class="car-owner-name" href="https://www.nitrotype.com/racer/thekilla3000" target="_blank">-Ember-</a></div></div></div><table class="table"><tbody>
-				<tr class="table-row table-row--nonpodium" lookupID="NTCREW">
+	<div class="car-owners" style="display: none;" id="car-owners-305-1"><div class="car-owner">1. <a class="car-owner-name" href="https://www.nitrotype.com/racer/0ac5607477556871240c7bfedd6687ef" target="_blank">AAwastaken</a></div><div class="car-owner">2. <a class="car-owner-name" href="https://www.nitrotype.com/racer/886728a96160f05b7d6d1dfeb8563319" target="_blank">W GRINDER W</a></div><div class="car-owner">3. <a class="car-owner-name" href="https://www.nitrotype.com/racer/basketball7878" target="_blank">Zach Winter Arc</a></div><div class="car-owner">4. <a class="car-owner-name" href="https://www.nitrotype.com/racer/thekilla3000" target="_blank">-Ember-</a></div></div></div><table class="table"><tbody>
+				<tr class="table-row table-row--odd table-row--nonpodium" lookupID="CHESKS">
 					<td class="table-cell table-cell--place place-number" style="width: 9%;">
-	92</td>
+	95</td>
 	
 					<td class="table-cell" style="width: 7%;"><img class="league-icon" src="/static/images/leagues/teams/11.webp"/></td>
 	
-					<td class="table-cell" style="width: 12%;"><span class="tag-text" style="color: #fba51a;">[<a class="tag-text tag-text-link" style="color: #fba51a;" href="https://www.nitrotype.com/team/NTCREW" target="_blank">NTCREW</a>]</span></td>
-					<td class="table-cell" style="width: 39%; whitespace: nowrap;"><a href="https://www.nitrotype.com/team/NTCREW" target="_blank" class="team-text">"WE ARE ZOOMY"</a></td>
+					<td class="table-cell" style="width: 12%;"><span class="tag-text" style="color: #ee1f25;">[<a class="tag-text tag-text-link" style="color: #ee1f25;" href="https://www.nitrotype.com/team/CHESKS" target="_blank">CHESKS</a>]</span></td>
+					<td class="table-cell" style="width: 39%; whitespace: nowrap;"><a href="https://www.nitrotype.com/team/CHESKS" target="_blank" class="team-text">"Chess Kings"</a></td>
 					<td class="table-cell" style="width: 15%;">
 	49</td>
 	
 					<td class="table-cell" style="width: 18%;">
-	95.672%</td>
+	95.7%</td>
 	
 				</tr>
 	</tbody></table>
 		<div class="relative-box">
-			<button class="flag-button" onclick="showCarOwners(253, 1, 481)" id="show-owners-button-253">
+			<button class="flag-button" onclick="showCarOwners(306, 1, 583)" id="show-owners-button-306">
 				🚩
 			</button>
-			<button class="flag-button" onclick="hideCarOwners(253, 1, 481)" style="display: none;" id="hide-owners-button-253">
+			<button class="flag-button" onclick="hideCarOwners(306, 1, 583)" style="display: none;" id="hide-owners-button-306">
 				🚩
 			</button>
 		</div>
-		<div class="car-owners-display-box" style="display: none;" id="owners-box-253">
+		<div class="car-owners-display-box" style="display: none;" id="owners-box-306">
 			<div class="car-owners-header">
-				Players flagged for botting on team <span style="color: #F9D034;">[NTCREW]</span>
+				Players flagged for botting on team <span style="color: #F9D034;">[CHESKS]</span>
 			</div>
-	<div class="car-owners" style="display: none;" id="car-owners-253-1"><div class="car-owner">1. <a class="car-owner-name" href="https://www.nitrotype.com/racer/3e99b412f8f537581efeaab99f7827e6" target="_blank">chillvicc</a></div><div class="car-owner">2. <a class="car-owner-name" href="https://www.nitrotype.com/racer/dogburgerblue" target="_blank">racers dream</a></div><div class="car-owner">3. <a class="car-owner-name" href="https://www.nitrotype.com/racer/ilynitrotype123" target="_blank">ilynitrotype123</a></div><div class="car-owner">4. <a class="car-owner-name" href="https://www.nitrotype.com/racer/imeweveryweek" target="_blank">imeweveryweek</a></div><div class="car-owner">5. <a class="car-owner-name" href="https://www.nitrotype.com/racer/myrestaurantisgood" target="_blank">myrestaurantisgood</a></div></div></div><table class="table"><tbody>
-				<tr class="table-row table-row--odd table-row--nonpodium" lookupID="VS">
+	<div class="car-owners" style="display: none;" id="car-owners-306-1"><div class="car-owner">1. <a class="car-owner-name" href="https://www.nitrotype.com/racer/7200d4be4ddf87f754e46dcc9eafe88e" target="_blank">LookAtMyProfile</a></div><div class="car-owner">2. <a class="car-owner-name" href="https://www.nitrotype.com/racer/eb66d6182422dc0b0fcae59e34ef09ce" target="_blank">WarmheartedTanDragon</a></div></div></div><table class="table"><tbody>
+				<tr class="table-row table-row--nonpodium" lookupID="WHYE">
 					<td class="table-cell table-cell--place place-number" style="width: 9%;">
-	93</td>
+	96</td>
+	
+					<td class="table-cell" style="width: 7%;"><img class="league-icon" src="/static/images/leagues/teams/6.webp"/></td>
+	
+					<td class="table-cell" style="width: 12%;"><span class="tag-text" style="color: #f15b40;">[<a class="tag-text tag-text-link" style="color: #f15b40;" href="https://www.nitrotype.com/team/WHYE" target="_blank">WHYE</a>]</span></td>
+					<td class="table-cell" style="width: 39%; whitespace: nowrap;"><a href="https://www.nitrotype.com/team/WHYE" target="_blank" class="team-text">"We are the chosen"</a></td>
+					<td class="table-cell" style="width: 15%;">
+	16</td>
+	
+					<td class="table-cell" style="width: 18%;">
+	95.69%</td>
+	
+				</tr>
+	</tbody></table>
+		<div class="relative-box">
+			<button class="flag-button" onclick="showCarOwners(307, 1, 583)" id="show-owners-button-307">
+				🚩
+			</button>
+			<button class="flag-button" onclick="hideCarOwners(307, 1, 583)" style="display: none;" id="hide-owners-button-307">
+				🚩
+			</button>
+		</div>
+		<div class="car-owners-display-box" style="display: none;" id="owners-box-307">
+			<div class="car-owners-header">
+				Players flagged for botting on team <span style="color: #F9D034;">[WHYE]</span>
+			</div>
+	<div class="car-owners" style="display: none;" id="car-owners-307-1"><div class="car-owner">1. <a class="car-owner-name" href="https://www.nitrotype.com/racer/942126b7a2d023e547b53a840158bd3e" target="_blank">logus27</a></div></div></div><table class="table"><tbody>
+				<tr class="table-row table-row--odd table-row--nonpodium" lookupID="7OO">
+					<td class="table-cell table-cell--place place-number" style="width: 9%;">
+	97</td>
+	
+					<td class="table-cell" style="width: 7%;"><img class="league-icon" src="/static/images/leagues/teams/12.webp"/></td>
+	
+					<td class="table-cell" style="width: 12%;"><span class="tag-text" style="color: #fba51a;">[<a class="tag-text tag-text-link" style="color: #fba51a;" href="https://www.nitrotype.com/team/7OO" target="_blank">7OO</a>]</span></td>
+					<td class="table-cell" style="width: 39%; whitespace: nowrap;"><a href="https://www.nitrotype.com/team/7OO" target="_blank" class="team-text">"LUCKY 700"</a></td>
+					<td class="table-cell" style="width: 15%;">
+	27</td>
+	
+					<td class="table-cell" style="width: 18%;">
+	95.68%</td>
+	
+				</tr>
+	</tbody></table>
+		<div class="relative-box">
+			<button class="flag-button" onclick="showCarOwners(308, 1, 583)" id="show-owners-button-308">
+				🚩
+			</button>
+			<button class="flag-button" onclick="hideCarOwners(308, 1, 583)" style="display: none;" id="hide-owners-button-308">
+				🚩
+			</button>
+		</div>
+		<div class="car-owners-display-box" style="display: none;" id="owners-box-308">
+			<div class="car-owners-header">
+				Players flagged for botting on team <span style="color: #F9D034;">[7OO]</span>
+			</div>
+	<div class="car-owners" style="display: none;" id="car-owners-308-1"><div class="car-owner">1. <a class="car-owner-name" href="https://www.nitrotype.com/racer/z0ner" target="_blank">z0ner</a></div></div></div><table class="table"><tbody>
+				<tr class="table-row table-row--nonpodium" lookupID="VS">
+					<td class="table-cell table-cell--place place-number" style="width: 9%;">
+	98</td>
 	
 					<td class="table-cell" style="width: 7%;"><img class="league-icon" src="/static/images/leagues/teams/10.webp"/></td>
 	
@@ -2375,26 +2455,42 @@
 	43</td>
 	
 					<td class="table-cell" style="width: 18%;">
-	95.663%</td>
+	95.65%</td>
 	
 				</tr>
 	</tbody></table>
 		<div class="relative-box">
-			<button class="flag-button" onclick="showCarOwners(254, 1, 481)" id="show-owners-button-254">
+			<button class="flag-button" onclick="showCarOwners(309, 1, 583)" id="show-owners-button-309">
 				🚩
 			</button>
-			<button class="flag-button" onclick="hideCarOwners(254, 1, 481)" style="display: none;" id="hide-owners-button-254">
+			<button class="flag-button" onclick="hideCarOwners(309, 1, 583)" style="display: none;" id="hide-owners-button-309">
 				🚩
 			</button>
 		</div>
-		<div class="car-owners-display-box" style="display: none;" id="owners-box-254">
+		<div class="car-owners-display-box" style="display: none;" id="owners-box-309">
 			<div class="car-owners-header">
 				Players flagged for botting on team <span style="color: #F9D034;">[VS]</span>
 			</div>
-	<div class="car-owners" style="display: none;" id="car-owners-254-1"><div class="car-owner">1. <a class="car-owner-name" href="https://www.nitrotype.com/racer/01d2f6572287e2973f574be7d4f78979" target="_blank">RacialMagentaLeech</a></div></div></div><table class="table"><tbody>
+	<div class="car-owners" style="display: none;" id="car-owners-309-1"><div class="car-owner">1. <a class="car-owner-name" href="https://www.nitrotype.com/racer/01d2f6572287e2973f574be7d4f78979" target="_blank">RacialMagentaLeech</a></div></div></div><table class="table"><tbody>
+				<tr class="table-row table-row--odd table-row--nonpodium" lookupID="EPIKLY">
+					<td class="table-cell table-cell--place place-number" style="width: 9%;">
+	99</td>
+	
+					<td class="table-cell" style="width: 7%;"><img class="league-icon" src="/static/images/leagues/teams/11.webp"/></td>
+	
+					<td class="table-cell" style="width: 12%;"><span class="tag-text" style="color: #daedfa;">[<a class="tag-text tag-text-link" style="color: #daedfa;" href="https://www.nitrotype.com/team/EPIKLY" target="_blank">EPIKLY</a>]</span></td>
+					<td class="table-cell" style="width: 39%; whitespace: nowrap;"><a href="https://www.nitrotype.com/team/EPIKLY" target="_blank" class="team-text">"Racers Over Wampus"</a></td>
+					<td class="table-cell" style="width: 15%;">
+	39</td>
+	
+					<td class="table-cell" style="width: 18%;">
+	95.64%</td>
+	
+				</tr>
+	
 				<tr class="table-row table-row--nonpodium" lookupID="VTECH">
 					<td class="table-cell table-cell--place place-number" style="width: 9%;">
-	94</td>
+	100</td>
 	
 					<td class="table-cell" style="width: 7%;"><img class="league-icon" src="/static/images/leagues/teams/9.webp"/></td>
 	
@@ -2409,140 +2505,18 @@
 				</tr>
 	</tbody></table>
 		<div class="relative-box">
-			<button class="flag-button" onclick="showCarOwners(255, 1, 481)" id="show-owners-button-255">
+			<button class="flag-button" onclick="showCarOwners(310, 1, 583)" id="show-owners-button-310">
 				🚩
 			</button>
-			<button class="flag-button" onclick="hideCarOwners(255, 1, 481)" style="display: none;" id="hide-owners-button-255">
+			<button class="flag-button" onclick="hideCarOwners(310, 1, 583)" style="display: none;" id="hide-owners-button-310">
 				🚩
 			</button>
 		</div>
-		<div class="car-owners-display-box" style="display: none;" id="owners-box-255">
+		<div class="car-owners-display-box" style="display: none;" id="owners-box-310">
 			<div class="car-owners-header">
 				Players flagged for botting on team <span style="color: #F9D034;">[VTECH]</span>
 			</div>
-	<div class="car-owners" style="display: none;" id="car-owners-255-1"><div class="car-owner">1. <a class="car-owner-name" href="https://www.nitrotype.com/racer/4547a7d4c8eb2631fa3fe6268135e12c" target="_blank">williebear</a></div><div class="car-owner">2. <a class="car-owner-name" href="https://www.nitrotype.com/racer/9828e6ac2fe8f394229c9478a70ce391" target="_blank">Blakeisbetr</a></div></div></div><table class="table"><tbody>
-				<tr class="table-row table-row--odd table-row--nonpodium" lookupID="EPIKLY">
-					<td class="table-cell table-cell--place place-number" style="width: 9%;">
-	95</td>
-	
-					<td class="table-cell" style="width: 7%;"><img class="league-icon" src="/static/images/leagues/teams/11.webp"/></td>
-	
-					<td class="table-cell" style="width: 12%;"><span class="tag-text" style="color: #daedfa;">[<a class="tag-text tag-text-link" style="color: #daedfa;" href="https://www.nitrotype.com/team/EPIKLY" target="_blank">EPIKLY</a>]</span></td>
-					<td class="table-cell" style="width: 39%; whitespace: nowrap;"><a href="https://www.nitrotype.com/team/EPIKLY" target="_blank" class="team-text">"Racers Over Wampus"</a></td>
-					<td class="table-cell" style="width: 15%;">
-	39</td>
-	
-					<td class="table-cell" style="width: 18%;">
-	95.621%</td>
-	
-				</tr>
-	
-				<tr class="table-row table-row--nonpodium" lookupID="HAUK2A">
-					<td class="table-cell table-cell--place place-number" style="width: 9%;">
-	96</td>
-	
-					<td class="table-cell" style="width: 7%;"><img class="league-icon" src="/static/images/leagues/teams/4.webp"/></td>
-	
-					<td class="table-cell" style="width: 12%;"><span class="tag-text" style="color: #40b8ea;">[<a class="tag-text tag-text-link" style="color: #40b8ea;" href="https://www.nitrotype.com/team/HAUK2A" target="_blank">HAUK2A</a>]</span></td>
-					<td class="table-cell" style="width: 39%; whitespace: nowrap;"><a href="https://www.nitrotype.com/team/HAUK2A" target="_blank" class="team-text">"GOODPEOPLE"</a></td>
-					<td class="table-cell" style="width: 15%;">
-	16</td>
-	
-					<td class="table-cell" style="width: 18%;">
-	95.615%</td>
-	
-				</tr>
-	
-				<tr class="table-row table-row--odd table-row--nonpodium" lookupID="K100">
-					<td class="table-cell table-cell--place place-number" style="width: 9%;">
-	97</td>
-	
-					<td class="table-cell" style="width: 7%;"><img class="league-icon" src="/static/images/leagues/teams/12.webp"/></td>
-	
-					<td class="table-cell" style="width: 12%;"><span class="tag-text" style="color: #ded2e8;">[<a class="tag-text tag-text-link" style="color: #ded2e8;" href="https://www.nitrotype.com/team/K100" target="_blank">K100</a>]</span></td>
-					<td class="table-cell" style="width: 39%; whitespace: nowrap;"><a href="https://www.nitrotype.com/team/K100" target="_blank" class="team-text">"100 Grand"</a></td>
-					<td class="table-cell" style="width: 15%;">
-	49</td>
-	
-					<td class="table-cell" style="width: 18%;">
-	95.604%</td>
-	
-				</tr>
-	</tbody></table>
-		<div class="relative-box">
-			<button class="flag-button" onclick="showCarOwners(256, 1, 481)" id="show-owners-button-256">
-				🚩
-			</button>
-			<button class="flag-button" onclick="hideCarOwners(256, 1, 481)" style="display: none;" id="hide-owners-button-256">
-				🚩
-			</button>
-		</div>
-		<div class="car-owners-display-box" style="display: none;" id="owners-box-256">
-			<div class="car-owners-header">
-				Players flagged for botting on team <span style="color: #F9D034;">[K100]</span>
-			</div>
-	<div class="car-owners" style="display: none;" id="car-owners-256-1"><div class="car-owner">1. <a class="car-owner-name" href="https://www.nitrotype.com/racer/floresisgood" target="_blank">stx_flores</a></div><div class="car-owner">2. <a class="car-owner-name" href="https://www.nitrotype.com/racer/tyle_you12" target="_blank">- 1 0 0 0 i q -</a></div></div></div><table class="table"><tbody>
-				<tr class="table-row table-row--nonpodium" lookupID="NS7">
-					<td class="table-cell table-cell--place place-number" style="width: 9%;">
-	98</td>
-	
-					<td class="table-cell" style="width: 7%;"><img class="league-icon" src="/static/images/leagues/teams/9.webp"/></td>
-	
-					<td class="table-cell" style="width: 12%;"><span class="tag-text" style="color: #e2f2ea;">[<a class="tag-text tag-text-link" style="color: #e2f2ea;" href="https://www.nitrotype.com/team/NS7" target="_blank">NS7</a>]</span></td>
-					<td class="table-cell" style="width: 39%; whitespace: nowrap;"><a href="https://www.nitrotype.com/team/NS7" target="_blank" class="team-text">"nothing like uuu"</a></td>
-					<td class="table-cell" style="width: 15%;">
-	30</td>
-	
-					<td class="table-cell" style="width: 18%;">
-	95.595%</td>
-	
-				</tr>
-	</tbody></table>
-		<div class="relative-box">
-			<button class="flag-button" onclick="showCarOwners(257, 1, 481)" id="show-owners-button-257">
-				🚩
-			</button>
-			<button class="flag-button" onclick="hideCarOwners(257, 1, 481)" style="display: none;" id="hide-owners-button-257">
-				🚩
-			</button>
-		</div>
-		<div class="car-owners-display-box" style="display: none;" id="owners-box-257">
-			<div class="car-owners-header">
-				Players flagged for botting on team <span style="color: #F9D034;">[NS7]</span>
-			</div>
-	<div class="car-owners" style="display: none;" id="car-owners-257-1"><div class="car-owner">1. <a class="car-owner-name" href="https://www.nitrotype.com/racer/56970d407de5bebc2738ad974b9002f4" target="_blank">LukTzu3</a></div><div class="car-owner">2. <a class="car-owner-name" href="https://www.nitrotype.com/racer/65e9926aa640b3a4fc4161a3463a87d6" target="_blank">Lionheart</a></div><div class="car-owner">3. <a class="car-owner-name" href="https://www.nitrotype.com/racer/pokeml123" target="_blank">iloveshoes2</a></div></div></div><table class="table"><tbody>
-				<tr class="table-row table-row--odd table-row--nonpodium" lookupID="FJRDS">
-					<td class="table-cell table-cell--place place-number" style="width: 9%;">
-	99</td>
-	
-					<td class="table-cell" style="width: 7%;"><img class="league-icon" src="/static/images/leagues/teams/7.webp"/></td>
-	
-					<td class="table-cell" style="width: 12%;"><span class="tag-text" style="color: #ee1f25;">[<a class="tag-text tag-text-link" style="color: #ee1f25;" href="https://www.nitrotype.com/team/FJRDS" target="_blank">FJRDS</a>]</span></td>
-					<td class="table-cell" style="width: 39%; whitespace: nowrap;"><a href="https://www.nitrotype.com/team/FJRDS" target="_blank" class="team-text">"fjords club"</a></td>
-					<td class="table-cell" style="width: 15%;">
-	24</td>
-	
-					<td class="table-cell" style="width: 18%;">
-	95.576%</td>
-	
-				</tr>
-	
-				<tr class="table-row table-row--nonpodium" lookupID="BURNFI">
-					<td class="table-cell table-cell--place place-number" style="width: 9%;">
-	100</td>
-	
-					<td class="table-cell" style="width: 7%;"><img class="league-icon" src="/static/images/leagues/teams/10.webp"/></td>
-	
-					<td class="table-cell" style="width: 12%;"><span class="tag-text" style="color: #fba51a;">[<a class="tag-text tag-text-link" style="color: #fba51a;" href="https://www.nitrotype.com/team/BURNFI" target="_blank">BURNFI</a>]</span></td>
-					<td class="table-cell" style="width: 39%; whitespace: nowrap;"><a href="https://www.nitrotype.com/team/BURNFI" target="_blank" class="team-text">"Burning Fingers"</a></td>
-					<td class="table-cell" style="width: 15%;">
-	33</td>
-	
-					<td class="table-cell" style="width: 18%;">
-	95.559%</td>
-	
-				</tr>
-	
+	<div class="car-owners" style="display: none;" id="car-owners-310-1"><div class="car-owner">1. <a class="car-owner-name" href="https://www.nitrotype.com/racer/4547a7d4c8eb2631fa3fe6268135e12c" target="_blank">williebear</a></div><div class="car-owner">2. <a class="car-owner-name" href="https://www.nitrotype.com/racer/9828e6ac2fe8f394229c9478a70ce391" target="_blank">Blakeisbetr</a></div></div></div><table class="table"><tbody>
 			</tbody>
 	
 		</table>
