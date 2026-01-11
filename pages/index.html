@@ -26,8 +26,10 @@
 		var searchResultRowFound = false;
 		var suggestionsLoading = false;
 		var curLbType = 'nt';
-		var curTabPage = 'top_racers';
-		var curTab = 'top_racers_season';
+		var curTabPage = 'hall_of_fame';
+		var curTab = 'hof_most_active_racers';
+		//var curTabPage = 'top_racers';
+		//var curTab = 'top_racers_season';
 		var fontColorSelection = "none";
 		var activeTeamInfoPage = "leaderboards";
 		var topRacersLbs = [
@@ -333,7 +335,7 @@
 
 		window.onload = function() {
 			searchSelection = "none";
-			changeTab('top_racers_season');
+			changeTab('hof_most_active_racers');
 			loadDataUpdateTimestamp();
 			loadAdminMsg(); // Comment out when there's no announcement to display
 		}

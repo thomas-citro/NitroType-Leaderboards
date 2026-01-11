@@ -2,7 +2,6 @@ from flask import Flask, render_template
 import json
 import os
 
-homeTab = 'pages/top_racers_season.html'
 app = Flask(__name__, template_folder='pages')
 
 filePath = os.path.join(app.root_path, 'data', 'users_in_lbs.json')

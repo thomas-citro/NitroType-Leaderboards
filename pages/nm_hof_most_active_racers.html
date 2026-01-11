@@ -3,25 +3,14 @@
 	
 		<div class="tabs">
 	
-			<button class="tab not-active" onclick="changeTabPage('top_racers')">
+			<button class="tab is-active">
 				<div class="icon-text-container">
-					<svg xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd" viewBox="0 0 24 24" id="icon-rank" width="18" height="18" fill="white">
+					<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" id="icon-trophy" width="18" height="18" fill="white">
 						<path
-							d="M3.19 19.989L1 20.292l1.594 1.532L2.205 24l1.949-1.043L6.104 24l-.389-2.176 1.594-1.532-2.19-.303L4.154 18l-.964 1.989zm8 0L9 20.292l1.594 1.532L10.205 24l1.949-1.043L14.104 24l-.389-2.176 1.594-1.532-2.19-.303L12.154 18l-.964 1.989zm7.691 0l-2.19.303 1.594 1.532L17.896 24l1.949-1.043L21.795 24l-.389-2.176L23 20.292l-2.19-.303L19.845 18l-.964 1.989zm-.129-7.171c-2.436-.562-5.206-1.055-4.108-3.129C17.986 3.376 15.53 0 12 0 8.401 0 6.004 3.506 9.356 9.689c1.131 2.086-1.725 2.579-4.109 3.129-2.176.502-2.258 1.583-2.251 3.474L3 17h18l.003-.686c.008-1.904-.066-2.992-2.251-3.496z"
+							d="M13.408 18C13.906 14.053 19 10.803 19 1H5c0 9.803 5.105 13.053 5.604 17h2.804zM9.794 6.528l1.46-.202L11.897 5l.643 1.326 1.46.202-1.063 1.021.26 1.451-1.3-.695-1.3.695.26-1.451-1.063-1.021zm-3.803 4.128c.286.638.585 1.231.882 1.783C2.808 11.091.372 7.105 0 3h4.077c.036.482.08.955.139 1.405H1.527c.427 2.001 1.549 4.729 4.464 6.251zM16 21.619V23H8v-1.381c1.941 0 2.369-1.433 2.571-2.619h2.866c.193 1.187.565 2.619 2.563 2.619zM24 3c-.372 4.105-2.808 8.091-6.873 9.438.297-.552.596-1.145.882-1.783 2.915-1.521 4.037-4.25 4.464-6.251h-2.688c.059-.45.103-.922.139-1.405H24z"
 						/>
 					</svg>
-					<div class="tab--text">Top Racers</div>
-				</div>
-			</button>
-	
-			<button class="tab not-active" onclick="changeTabPage('top_teams')">
-				<div class="icon-text-container">
-					<svg xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd" viewBox="0 0 24 24" id="icon-rank-team" width="18" height="18" fill="white">
-						<path
-							d="M20.624 22.474L19 21.605l-1.625.869.324-1.813-1.328-1.277 1.825-.252.804-1.658.804 1.658 1.825.252-1.329 1.277.324 1.813zm-7 0L12 21.605l-1.625.869.325-1.813-1.329-1.277 1.825-.252.804-1.658.804 1.658 1.825.252-1.329 1.277.324 1.813zm-7 0L5 21.605l-1.625.869.325-1.813-1.329-1.277 1.825-.252L5 17.474l.804 1.658 1.825.252L6.3 20.661l.324 1.813zM23 15.974H1a1 1 0 00-1 1v6a1 1 0 001 1h22a1 1 0 001-1v-6a1 1 0 00-1-1zm-22.998-1H5c.008-1.214-.001-2.289 0-3.013.005-3.993 1.749-3.116 1.749-6.663 0-1.507-.983-2.324-2.248-2.324-1.869 0-3.169 1.787-1.399 5.129.581 1.099-.62 1.359-1.91 1.657C.074 10.018 0 10.807 0 11.753l.002 3.221zM22.808 9.76c-1.29-.298-2.491-.558-1.91-1.657 1.77-3.342.47-5.129-1.399-5.129-1.265 0-2.248.817-2.248 2.324 0 3.324 1.719 2.704 1.749 6.676.008.972-.009 1.311 0 3h4.998L24 11.753c0-.946-.074-1.735-1.192-1.993zm-4.811 5.214H6.002L6 11.848c0-1.258.1-2.482 1.588-2.826 1.684-.389 3.344-.736 2.545-2.209-2.366-4.364-.674-6.839 1.866-6.839 2.491 0 4.226 2.383 1.866 6.839-.775 1.464.826 1.812 2.545 2.209 1.49.344 1.589 1.569 1.589 2.829l-.002 3.123z"
-						/>
-					</svg>
-					<div class="tab--text">Top Teams</div>
+					<div class="tab--text">Hall of Fame</div>
 				</div>
 			</button>
 	
@@ -33,17 +22,6 @@
 						/>
 					</svg>
 					<div class="tab--text">Past Seasons</div>
-				</div>
-			</button>
-	
-			<button class="tab is-active">
-				<div class="icon-text-container">
-					<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" id="icon-trophy" width="18" height="18" fill="white">
-						<path
-							d="M13.408 18C13.906 14.053 19 10.803 19 1H5c0 9.803 5.105 13.053 5.604 17h2.804zM9.794 6.528l1.46-.202L11.897 5l.643 1.326 1.46.202-1.063 1.021.26 1.451-1.3-.695-1.3.695.26-1.451-1.063-1.021zm-3.803 4.128c.286.638.585 1.231.882 1.783C2.808 11.091.372 7.105 0 3h4.077c.036.482.08.955.139 1.405H1.527c.427 2.001 1.549 4.729 4.464 6.251zM16 21.619V23H8v-1.381c1.941 0 2.369-1.433 2.571-2.619h2.866c.193 1.187.565 2.619 2.563 2.619zM24 3c-.372 4.105-2.808 8.091-6.873 9.438.297-.552.596-1.145.882-1.783 2.915-1.521 4.037-4.25 4.464-6.251h-2.688c.059-.45.103-.922.139-1.405H24z"
-						/>
-					</svg>
-					<div class="tab--text">Hall of Fame</div>
 				</div>
 			</button>
 	
@@ -127,15 +105,13 @@
 					<td class="table-cell" style="width: 7%;"><img class="league-icon" src="/static/images/leagues/users/11.webp"/></td>
 	
 					<td class="table-cell" style="width: 12%;"><img class="car-img" src="/static/images/cars/painted/
-	4t345fx452f_large_220.webp"/></td>
+	77_large_1_200.webp"/></td>
 	
 					<td class="table-cell" style="width: 53%;">
 	
-						<img class="gold-img" src="/static/images/gold-membership.webp"/>
-	
 						<span class="team-tag" style="color: #8750a0;">[<a class="team-tag user-team-tag-link" style="color: #8750a0;" href="https://www.nitromath.com/team/WMDSM" target="_blank">WMDSM</a>]</span>
 	
-						<a class="display-name display-name-gold" href="https://www.nitromath.com/racer/loffafm" target="_blank">loffafm 10k</a> 					<br><span class="title">"Encore"</span>
+						<a class="display-name display-name-basic" href="https://www.nitromath.com/racer/loffafm" target="_blank">loffafm 36k</a> 					<br><span class="title">"Problem Solver"</span>
 					</td>
 	
 					<td class="table-cell" style="width: 19%;">
@@ -149,7 +125,7 @@
 					<td class="table-cell" style="width: 7%;"><img class="league-icon" src="/static/images/leagues/users/9.webp"/></td>
 	
 					<td class="table-cell" style="width: 12%;"><img class="car-img" src="/static/images/cars/
-	85.webp"/></td>
+	368.webp"/></td>
 	
 					<td class="table-cell" style="width: 53%;">
 	
@@ -322,8 +298,8 @@
 	
 					<td class="table-cell" style="width: 7%;"><img class="league-icon" src="/static/images/leagues/users/11.webp"/></td>
 	
-					<td class="table-cell" style="width: 12%;"><img class="car-img" src="/static/images/cars/
-	78.webp"/></td>
+					<td class="table-cell" style="width: 12%;"><img class="car-img" src="/static/images/cars/painted/
+	166_large_1_240.webp"/></td>
 	
 					<td class="table-cell" style="width: 53%;">
 	
@@ -331,7 +307,7 @@
 	
 						<span class="team-tag" style="color: #8750a0;">[<a class="team-tag user-team-tag-link" style="color: #8750a0;" href="https://www.nitromath.com/team/TR1" target="_blank">TR1</a>]</span>
 	
-						<a class="display-name display-name-gold" href="https://www.nitromath.com/racer/ashwat255" target="_blank" style="font-family: 'custom-monotype-corsiva'; font-size: 21px; font-weight: normal; color: #EE82EE;">Kochos Alt</a> <img class="donor-badge-img" src="/static/images/donor_badges/Emerald.webp" title="Emerald donor badge (see 'More Info' page to learn more!)" style="vertical-align: middle;"/>					<br><span class="title">"Bug Smasher"</span>
+						<a class="display-name display-name-gold" href="https://www.nitromath.com/racer/ashwat255" target="_blank" style="font-family: 'custom-monotype-corsiva'; font-size: 21px; font-weight: normal; color: #EE82EE;">Tarif  </a> <img class="donor-badge-img" src="/static/images/donor_badges/Emerald.webp" title="Emerald donor badge (see 'More Info' page to learn more!)" style="vertical-align: middle;"/>					<br><span class="title">"Bug Smasher"</span>
 					</td>
 	
 					<td class="table-cell" style="width: 19%;">
@@ -499,7 +475,7 @@
 	
 						<span class="team-tag" style="color: #daedfa;">[<a class="team-tag user-team-tag-link" style="color: #daedfa;" href="https://www.nitromath.com/team/JCL" target="_blank">JCL</a>]</span>
 	
-						<a class="display-name display-name-basic" href="https://www.nitromath.com/racer/729493" target="_blank">K l N G</a> 					<br><span class="title">"Olde School"</span>
+						<a class="display-name display-name-basic" href="https://www.nitromath.com/racer/729493" target="_blank">K l N G</a> 					<br><span class="title">"Nitro Rich"</span>
 					</td>
 	
 					<td class="table-cell" style="width: 19%;">
@@ -556,15 +532,13 @@
 					<td class="table-cell" style="width: 7%;"><img class="league-icon" src="/static/images/leagues/users/12.webp"/></td>
 	
 					<td class="table-cell" style="width: 12%;"><img class="car-img" src="/static/images/cars/painted/
-	dragon_large_80.webp"/></td>
+	dragon_large_180.webp"/></td>
 	
 					<td class="table-cell" style="width: 53%;">
 	
-						<img class="gold-img" src="/static/images/gold-membership.webp"/>
-	
 						<span class="team-tag" style="color: #436fb6;">[<a class="team-tag user-team-tag-link" style="color: #436fb6;" href="https://www.nitromath.com/team/NMGDS" target="_blank">NMGDS</a>]</span>
 	
-						<a class="display-name display-name-gold" href="https://www.nitromath.com/racer/t4l4n06" target="_blank">iiTM4C On Discord</a> 					<br><span class="title">"Sweaty Typer"</span>
+						<a class="display-name display-name-basic" href="https://www.nitromath.com/racer/t4l4n06" target="_blank">iiTM4C_Transcendence</a> 					<br><span class="title">"Comeback Kid"</span>
 					</td>
 	
 					<td class="table-cell" style="width: 19%;">
@@ -623,7 +597,7 @@
 					<td class="table-cell" style="width: 7%;"><img class="league-icon" src="/static/images/leagues/users/13.webp"/></td>
 	
 					<td class="table-cell" style="width: 12%;"><img class="car-img" src="/static/images/cars/
-	389.webp"/></td>
+	59.webp"/></td>
 	
 					<td class="table-cell" style="width: 53%;">
 	
@@ -708,8 +682,8 @@
 	
 					<td class="table-cell" style="width: 7%;"><img class="league-icon" src="/static/images/leagues/users/9.webp"/></td>
 	
-					<td class="table-cell" style="width: 12%;"><img class="car-img" src="/static/images/cars/
-	300.webp"/></td>
+					<td class="table-cell" style="width: 12%;"><img class="car-img" src="/static/images/cars/painted/
+	santasport_large_60.webp"/></td>
 	
 					<td class="table-cell" style="width: 53%;">
 	
@@ -717,7 +691,7 @@
 	
 						<span class="team-tag" style="color: #6783c2;">[<a class="team-tag user-team-tag-link" style="color: #6783c2;" href="https://www.nitromath.com/team/DKC" target="_blank">DKC</a>]</span>
 	
-						<a class="display-name display-name-gold" href="https://www.nitromath.com/racer/kelnorman" target="_blank">kelnorman 17K</a> 					<br><span class="title">"Aura Farmer"</span>
+						<a class="display-name display-name-gold" href="https://www.nitromath.com/racer/kelnorman" target="_blank">kelnorman 18K</a> 					<br><span class="title">"Ice Breaker"</span>
 					</td>
 	
 					<td class="table-cell" style="width: 19%;">
@@ -812,7 +786,7 @@
 					<td class="table-cell" style="width: 7%;"><img class="league-icon" src="/static/images/leagues/users/10.webp"/></td>
 	
 					<td class="table-cell" style="width: 12%;"><img class="car-img" src="/static/images/cars/painted/
-	174_large_1_180.webp"/></td>
+	jet_powered_truck_large_100.webp"/></td>
 	
 					<td class="table-cell" style="width: 53%;">
 	
@@ -820,7 +794,7 @@
 	
 						<span class="team-tag" style="color: #ee1f25;">[<a class="team-tag user-team-tag-link" style="color: #ee1f25;" href="https://www.nitromath.com/team/X3" target="_blank">X3</a>]</span>
 	
-						<a class="display-name display-name-gold" href="https://www.nitromath.com/racer/callsignbookworm" target="_blank">Bkwrm--Semi-Retired</a> <img class="donor-badge-img" src="/static/images/donor_badges/Ruby.webp" title="Ruby donor badge (see 'More Info' page to learn more!)" />					<br><span class="title">"On Thin Ice"</span>
+						<a class="display-name display-name-gold" href="https://www.nitromath.com/racer/callsignbookworm" target="_blank">Callsign-Bookworm</a> <img class="donor-badge-img" src="/static/images/donor_badges/Ruby.webp" title="Ruby donor badge (see 'More Info' page to learn more!)" />					<br><span class="title">"Operation: Typing"</span>
 					</td>
 	
 					<td class="table-cell" style="width: 19%;">
@@ -939,8 +913,8 @@
 	
 					<td class="table-cell" style="width: 7%;"><img class="league-icon" src="/static/images/leagues/users/9.webp"/></td>
 	
-					<td class="table-cell" style="width: 12%;"><img class="car-img" src="/static/images/cars/
-	146.webp"/></td>
+					<td class="table-cell" style="width: 12%;"><img class="car-img" src="/static/images/cars/painted/
+	105_large_1_220.webp"/></td>
 	
 					<td class="table-cell" style="width: 53%;">
 	
@@ -969,7 +943,7 @@
 	
 						<span class="team-tag" style="color: #436fb6;">[<a class="team-tag user-team-tag-link" style="color: #436fb6;" href="https://www.nitromath.com/team/OT" target="_blank">OT</a>]</span>
 	
-						<a class="display-name display-name-gold" href="https://www.nitromath.com/racer/pillowinyourface" target="_blank">Dreams</a> 					<br><span class="title">"Encore"</span>
+						<a class="display-name display-name-gold" href="https://www.nitromath.com/racer/pillowinyourface" target="_blank">Dreams</a> 					<br><span class="title">"Candy Cane Cruiser"</span>
 					</td>
 	
 					<td class="table-cell" style="width: 19%;">
@@ -1026,13 +1000,13 @@
 					<td class="table-cell" style="width: 7%;"><img class="league-icon" src="/static/images/leagues/users/10.webp"/></td>
 	
 					<td class="table-cell" style="width: 12%;"><img class="car-img" src="/static/images/cars/painted/
-	324rcds_large_220.webp"/></td>
+	1_large_1_180.webp"/></td>
 	
 					<td class="table-cell" style="width: 53%;">
 	
 						<span class="team-tag" style="color: #ee1f25;">[<a class="team-tag user-team-tag-link" style="color: #ee1f25;" href="https://www.nitromath.com/team/OGDAYS" target="_blank">OGDAYS</a>]</span>
 	
-						<a class="display-name display-name-basic" href="https://www.nitromath.com/racer/sldkfasd" target="_blank">airways</a> 					<br><span class="title">"Olde School"</span>
+						<a class="display-name display-name-basic" href="https://www.nitromath.com/racer/sldkfasd" target="_blank">airways</a> 					<br><span class="title">"Nitro Rich"</span>
 					</td>
 	
 					<td class="table-cell" style="width: 19%;">
@@ -1133,7 +1107,7 @@
 					<td class="table-cell" style="width: 7%;"><img class="league-icon" src="/static/images/leagues/users/5.webp"/></td>
 	
 					<td class="table-cell" style="width: 12%;"><img class="car-img" src="/static/images/cars/
-	210.webp"/></td>
+	397.webp"/></td>
 	
 					<td class="table-cell" style="width: 53%;">
 	
@@ -1324,13 +1298,13 @@
 					<td class="table-cell" style="width: 7%;"><img class="league-icon" src="/static/images/leagues/users/9.webp"/></td>
 	
 					<td class="table-cell" style="width: 12%;"><img class="car-img" src="/static/images/cars/
-	224.webp"/></td>
+	299.webp"/></td>
 	
 					<td class="table-cell" style="width: 53%;">
 	
 						<img class="gold-img" src="/static/images/gold-membership.webp"/>
 	
-						<a class="display-name display-name-gold" href="https://www.nitromath.com/racer/mohsen0" target="_blank">Mohsen</a> 					<br><span class="title">"Battle Beast"</span>
+						<a class="display-name display-name-gold" href="https://www.nitromath.com/racer/mohsen0" target="_blank">Mohsen</a> 					<br><span class="title">"Ooh, It's Cold In Here"</span>
 					</td>
 	
 					<td class="table-cell" style="width: 19%;">
@@ -1345,7 +1319,7 @@
 					<td class="table-cell" style="width: 7%;"><img class="league-icon" src="/static/images/leagues/users/3.webp"/></td>
 	
 					<td class="table-cell" style="width: 12%;"><img class="car-img" src="/static/images/cars/
-	297.webp"/></td>
+	69.webp"/></td>
 	
 					<td class="table-cell" style="width: 53%;">
 	
@@ -1408,7 +1382,7 @@
 					<td class="table-cell" style="width: 7%;"><img class="league-icon" src="/static/images/leagues/users/10.webp"/></td>
 	
 					<td class="table-cell" style="width: 12%;"><img class="car-img" src="/static/images/cars/
-	394.webp"/></td>
+	389.webp"/></td>
 	
 					<td class="table-cell" style="width: 53%;">
 	
@@ -1429,7 +1403,7 @@
 					<td class="table-cell" style="width: 7%;"><img class="league-icon" src="/static/images/leagues/users/5.webp"/></td>
 	
 					<td class="table-cell" style="width: 12%;"><img class="car-img" src="/static/images/cars/
-	390.webp"/></td>
+	394.webp"/></td>
 	
 					<td class="table-cell" style="width: 53%;">
 	
@@ -1437,7 +1411,7 @@
 	
 						<span class="team-tag" style="color: #40b8ea;">[<a class="team-tag user-team-tag-link" style="color: #40b8ea;" href="https://www.nitromath.com/team/WL" target="_blank">WL</a>]</span>
 	
-						<a class="display-name display-name-gold" href="https://www.nitromath.com/racer/epicinfinitewpm" target="_blank">-HyperTyper-</a> 					<br><span class="title">"#YuleBeSorry"</span>
+						<a class="display-name display-name-gold" href="https://www.nitromath.com/racer/epicinfinitewpm" target="_blank">ComposedIvoryDove</a> 					<br><span class="title">"Chasin’ The Chill"</span>
 					</td>
 	
 					<td class="table-cell" style="width: 19%;">
@@ -1641,13 +1615,13 @@
 					<td class="table-cell" style="width: 7%;"><img class="league-icon" src="/static/images/leagues/users/0.webp"/></td>
 	
 					<td class="table-cell" style="width: 12%;"><img class="car-img" src="/static/images/cars/
-	277.webp"/></td>
+	336.webp"/></td>
 	
 					<td class="table-cell" style="width: 53%;">
 	
 						<img class="gold-img" src="/static/images/gold-membership.webp"/>
 	
-						<a class="display-name display-name-gold" href="https://www.nitromath.com/racer/jjkkokjjjj" target="_blank">BeastlyTypistYT</a> 					<br><span class="title">"Olde School"</span>
+						<a class="display-name display-name-gold" href="https://www.nitromath.com/racer/jjkkokjjjj" target="_blank">BeastlyTypistYT</a> 					<br><span class="title">"Verified YouTuber"</span>
 					</td>
 	
 					<td class="table-cell" style="width: 19%;">
@@ -1784,13 +1758,13 @@
 					<td class="table-cell" style="width: 7%;"><img class="league-icon" src="/static/images/leagues/users/10.webp"/></td>
 	
 					<td class="table-cell" style="width: 12%;"><img class="car-img" src="/static/images/cars/painted/
-	demon_large_200.webp"/></td>
+	78gf4_large_300.webp"/></td>
 	
 					<td class="table-cell" style="width: 53%;">
 	
 						<span class="team-tag" style="color: #5b52a3;">[<a class="team-tag user-team-tag-link" style="color: #5b52a3;" href="https://www.nitromath.com/team/CC" target="_blank">CC</a>]</span>
 	
-						<a class="display-name display-name-basic" href="https://www.nitromath.com/racer/auburnblaze" target="_blank">auburnblaze</a> 					<br><span class="title">"♪ So Delightful ♪"</span>
+						<a class="display-name display-name-basic" href="https://www.nitromath.com/racer/auburnblaze" target="_blank">auburnblaze</a> 					<br><span class="title">"Trailblazer"</span>
 					</td>
 	
 					<td class="table-cell" style="width: 19%;">
@@ -1824,13 +1798,13 @@
 					<td class="table-cell" style="width: 7%;"><img class="league-icon" src="/static/images/leagues/users/10.webp"/></td>
 	
 					<td class="table-cell" style="width: 12%;"><img class="car-img" src="/static/images/cars/
-	71.webp"/></td>
+	391.webp"/></td>
 	
 					<td class="table-cell" style="width: 53%;">
 	
 						<img class="gold-img" src="/static/images/gold-membership.webp"/>
 	
-						<a class="display-name display-name-gold" href="https://www.nitromath.com/racer/iimarcosii" target="_blank">iIMarcosIi</a> 					<br><span class="title">"♪ Naughty or Nice ♪"</span>
+						<a class="display-name display-name-gold" href="https://www.nitromath.com/racer/iimarcosii" target="_blank">iIMarcosIi</a> 					<br><span class="title">"Merry Christmas!"</span>
 					</td>
 	
 					<td class="table-cell" style="width: 19%;">
@@ -1849,11 +1823,9 @@
 	
 					<td class="table-cell" style="width: 53%;">
 	
-						<img class="gold-img" src="/static/images/gold-membership.webp"/>
-	
 						<span class="team-tag" style="color: #8750a0;">[<a class="team-tag user-team-tag-link" style="color: #8750a0;" href="https://www.nitromath.com/team/NMGDS" target="_blank">NMGDS</a>]</span>
 	
-						<a class="display-name display-name-gold" href="https://www.nitromath.com/racer/angel6666" target="_blank">-Syntac-</a> 					<br><span class="title">"Original Gangster"</span>
+						<a class="display-name display-name-basic" href="https://www.nitromath.com/racer/angel6666" target="_blank">-Syntac-</a> 					<br><span class="title">"Original Gangster"</span>
 					</td>
 	
 					<td class="table-cell" style="width: 19%;">
@@ -1891,7 +1863,7 @@
 					<td class="table-cell" style="width: 7%;"><img class="league-icon" src="/static/images/leagues/users/9.webp"/></td>
 	
 					<td class="table-cell" style="width: 12%;"><img class="car-img" src="/static/images/cars/painted/
-	32dfscd_large_60.webp"/></td>
+	blizferr_large_200.webp"/></td>
 	
 					<td class="table-cell" style="width: 53%;">
 	
@@ -1899,7 +1871,7 @@
 	
 						<span class="team-tag" style="color: #ee1f25;">[<a class="team-tag user-team-tag-link" style="color: #ee1f25;" href="https://www.nitromath.com/team/J4UP" target="_blank">J4UP</a>]</span>
 	
-						<a class="display-name display-name-gold" href="https://www.nitromath.com/racer/arlan2000" target="_blank">Arlz 180k</a> 					<br><span class="title">"Frosty Fingers"</span>
+						<a class="display-name display-name-gold" href="https://www.nitromath.com/racer/arlan2000" target="_blank">Happy NY Arlz 180k</a> 					<br><span class="title">"Frosty Fingers"</span>
 					</td>
 	
 					<td class="table-cell" style="width: 19%;">
@@ -1914,13 +1886,15 @@
 					<td class="table-cell" style="width: 7%;"><img class="league-icon" src="/static/images/leagues/users/10.webp"/></td>
 	
 					<td class="table-cell" style="width: 12%;"><img class="car-img" src="/static/images/cars/
-	122.webp"/></td>
+	391.webp"/></td>
 	
 					<td class="table-cell" style="width: 53%;">
 	
+						<img class="gold-img" src="/static/images/gold-membership.webp"/>
+	
 						<span class="team-tag" style="color: #40b8ea;">[<a class="team-tag user-team-tag-link" style="color: #40b8ea;" href="https://www.nitromath.com/team/WL" target="_blank">WL</a>]</span>
 	
-						<a class="display-name display-name-basic" href="https://www.nitromath.com/racer/devadettpeeyush" target="_blank">Shinyracing for gold</a> 					<br><span class="title">"♪ Rockin’ Around the XMaxx Tree ♪"</span>
+						<a class="display-name display-name-gold" href="https://www.nitromath.com/racer/devadettpeeyush" target="_blank">Shiny road to 10k</a> 					<br><span class="title">"♪ Rockin’ Around the XMaxx Tree ♪"</span>
 					</td>
 	
 					<td class="table-cell" style="width: 19%;">
@@ -2099,7 +2073,7 @@
 					<td class="table-cell" style="width: 7%;"><img class="league-icon" src="/static/images/leagues/users/9.webp"/></td>
 	
 					<td class="table-cell" style="width: 12%;"><img class="car-img" src="/static/images/cars/painted/
-	ultima_large_240.webp"/></td>
+	59_large_1_220.webp"/></td>
 	
 					<td class="table-cell" style="width: 53%;">
 	
@@ -2107,7 +2081,7 @@
 	
 						<span class="team-tag" style="color: #436fb6;">[<a class="team-tag user-team-tag-link" style="color: #436fb6;" href="https://www.nitromath.com/team/PG18" target="_blank">PG18</a>]</span>
 	
-						<a class="display-name display-name-gold" href="https://www.nitromath.com/racer/okethan" target="_blank">BringBackKOTRCarsPlz</a> 					<br><span class="title">"League Champion"</span>
+						<a class="display-name display-name-gold" href="https://www.nitromath.com/racer/okethan" target="_blank">ChristianTypist34K</a> 					<br><span class="title">"Astronaut"</span>
 					</td>
 	
 					<td class="table-cell" style="width: 19%;">
@@ -2164,7 +2138,7 @@
 					<td class="table-cell" style="width: 7%;"><img class="league-icon" src="/static/images/leagues/users/10.webp"/></td>
 	
 					<td class="table-cell" style="width: 12%;"><img class="car-img" src="/static/images/cars/painted/
-	ultima_large_200.webp"/></td>
+	boxcar_large_180.webp"/></td>
 	
 					<td class="table-cell" style="width: 53%;">
 	
